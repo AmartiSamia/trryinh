@@ -1,0 +1,92 @@
+---
+/**
+ * Route map with Leaflet + OpenStreetMap tiles. Leaflet (~40 kB) is only
+ * downloaded when the map scrolls into view. The stops are also listed as
+ * text, which is what screen readers and the printed page use.
+ */
+import { t } from '../i18n/ui';
+import type { Lang } from '../i18n/routes';
+import type { Trip } from '../lib/trips';
+
+interface Props { trip: Trip; lang: Lang }
+const { trip, lang } = Astro.props;
+const s = t(lang);
+const stops = trip.data.mapStops;
+---
+<div class="grid gap-4 md:grid-cols-[1fr_15rem]">
+  <div class="route-map relative z-0 aspect-[4/3] overflow-hidden rounded-3xl bg-surface-2 md:aspect-auto md:min-h-96"
+    data-map={JSON.stringify(stops)} role="region" aria-label={s.trip.map} data-no-print>
+    <p class="absolute inset-0 grid place-items-center text-sm text-ink-3" data-map-loading>{s.trip.mapLoading}</p>
+  </div>
+  <div>
+    <h3 class="text-sm font-semibold">{s.trip.mapStops}</h3>
+    <ol class="mt-3 space-y-2 text-sm">
+      {stops.map((st, i) => (
+        <li class="flex items-start gap-3">
+          <span class:list={['mt-0.5 grid size-6 shrink-0 place-items-center rounded-full text-xs font-bold', st.kind === 'summit' ? 'bg-accent text-on-accent' : 'bg-brand text-on-brand']}>{i + 1}</span>
+          <span>{st.name}</span>
+        </li>
+      ))}
+    </ol>
+    <p class="mt-4 text-xs text-ink-3">{s.trip.mapNote}</p>
+  </div>
+</div>
+
+<style>
+  .route-map :global(.leaflet-container) {
+    font: inherit;
+    background: var(--surface-2);
+  }
+  :global([data-theme='dark']) .route-map :global(.leaflet-tile-pane) {
+    filter: brightness(0.75) contrast(1.1) saturate(0.85);
+  }
+  .route-map :global(.stop-num) {
+    display: grid;
+    place-items: center;
+    width: 26px !important;
+    height: 26px !important;
+    margin: -13px 0 0 -13px !important;
+    border-radius: 999px;
+    background: #1f2a5c;
+    color: #fff;
+    font: 700 12px/1 system-ui, sans-serif;
+    box-shadow: 0 0 0 2px #fff;
+  }
+  .route-map :global(.stop-num.summit) {
+    background: #e8a33d;
+    color: #1a1305;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-map]').forEach((el) => {
+    const load = async () => {
+      const [{ default: L }] = await Promise.all([import('leaflet'), import('leaflet/dist/leaflet.css')]);
+      const stops: { name: string; lat: number; lng: number; kind: string }[] = JSON.parse(el.dataset.map!);
+      el.querySelector('[data-map-loading]')?.remove();
+      const map = L.map(el, { scrollWheelZoom: false, attributionControl: true });
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 17,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(map);
+      const pts = stops.map((s) => L.latLng(s.lat, s.lng));
+      L.polyline(pts, { color: '#e8a33d', weight: 4, opacity: 0.9, dashArray: '8 8' }).addTo(map);
+      stops.forEach((s, i) =>
+        L.marker([s.lat, s.lng], {
+          icon: L.divIcon({ className: `stop-num ${s.kind === 'summit' ? 'summit' : ''}`, html: String(i + 1) }),
+          title: s.name,
+          alt: s.name,
+        })
+          .bindTooltip(s.name)
+          .addTo(map),
+      );
+      if (pts.length === 1) map.setView(pts[0], 13);
+      else map.fitBounds(L.latLngBounds(pts), { padding: [30, 30] });
+    };
+    if (!('IntersectionObserver' in window)) return void load();
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) { io.disconnect(); load(); }
+    }, { rootMargin: '300px' });
+    io.observe(el);
+  });
+</script>

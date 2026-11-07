@@ -49,3 +49,37 @@ export function faqJsonLd(items: { q: string; a: string }[]) {
     mainEntity: items.map((it) => ({ '@type': 'Question', name: it.q, acceptedAnswer: { '@type': 'Answer', text: it.a } })),
   };
 }
+
+/** TouristTrip with an Offer per option (prices in EUR for search engines). */
+export function tripJsonLd(opts: {
+  name: string;
+  description: string;
+  url: string;
+  image: string;
+  itinerary: string[];
+  offers: { name: string; priceEur: number }[];
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'TouristTrip',
+    name: opts.name,
+    description: opts.description,
+    url: opts.url,
+    image: opts.image,
+    touristType: 'Travellers to Morocco',
+    provider: { '@id': `${site.url}/#agency` },
+    itinerary: {
+      '@type': 'ItemList',
+      itemListElement: opts.itinerary.map((name, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'TouristAttraction', name } })),
+    },
+    offers: opts.offers.map((o) => ({
+      '@type': 'Offer',
+      name: o.name,
+      price: o.priceEur,
+      priceCurrency: 'EUR',
+      availability: 'https://schema.org/InStock',
+      url: opts.url,
+      seller: { '@id': `${site.url}/#agency` },
+    })),
+  };
+}

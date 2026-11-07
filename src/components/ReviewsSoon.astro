@@ -7,10 +7,10 @@ import type { Lang } from '../i18n/routes';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = t(lang);
-const links = [
-  social.googleBusiness && { href: social.googleBusiness, label: 'Google' },
-  social.tripadvisor && { href: social.tripadvisor, label: 'TripAdvisor' },
-].filter(Boolean) as { href: string; label: string }[];
+const links: { href: string; label: string }[] = [
+  { href: social.googleBusiness as string, label: 'Google' },
+  { href: social.tripadvisor as string, label: 'TripAdvisor' },
+].filter((l) => l.href);
 // Until the Google/TripAdvisor pages exist, reviews can be sent by email.
 const reviewHref = social.googleBusiness || `mailto:${contact.email}?subject=Review`;
 ---

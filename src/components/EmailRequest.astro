@@ -1,0 +1,132 @@
+---
+/** Email request dialog for a trip. Opened by the booking card with the current request summary. */
+import Icon from './Icon.astro';
+import { t } from '../i18n/ui';
+import { contact } from '../config';
+import type { Lang } from '../i18n/routes';
+
+interface Props { lang: Lang; tripTitle: string }
+const { lang, tripTitle } = Astro.props;
+const s = t(lang);
+const f = s.form;
+const b = s.booking;
+---
+<dialog class="email-dlg w-[min(34rem,calc(100%-2rem))] rounded-3xl bg-bg p-0 text-ink" data-email-dialog aria-labelledby="email-title"
+  data-s={JSON.stringify({ errName: f.errName, errEmail: f.errEmail, sending: f.sending, send: f.send, date: b.msgDate, adults: b.msgAdults, children: b.msgChildren, option: b.msgOption, total: b.msgTotal, shared: b.shared, private: b.private })}>
+  <form class="p-6" novalidate data-email-form>
+    <div class="flex items-start justify-between gap-4">
+      <h2 id="email-title" class="text-h3">{b.email}</h2>
+      <button type="button" class="-me-2 -mt-2 grid size-11 shrink-0 place-items-center rounded-full hover:bg-surface-2" data-email-close aria-label={s.trip.close}><Icon name="close" /></button>
+    </div>
+    <div class="mt-3 rounded-2xl bg-surface-2 p-4 text-sm">
+      <p class="font-semibold">{f.summary}: {tripTitle}</p>
+      <ul class="mt-1 text-ink-2" data-summary></ul>
+    </div>
+
+    <div class="mt-5 space-y-4">
+      <div>
+        <label for="em-name" class="text-sm font-semibold">{f.name} <span class="text-danger" aria-hidden="true">*</span></label>
+        <input id="em-name" name="name" autocomplete="name" required class="input mt-1.5" />
+      </div>
+      <div>
+        <label for="em-email" class="text-sm font-semibold">{f.email} <span class="text-danger" aria-hidden="true">*</span></label>
+        <input id="em-email" name="email" type="email" autocomplete="email" required class="input mt-1.5" />
+      </div>
+      <div>
+        <label for="em-phone" class="text-sm font-semibold">{f.phone}</label>
+        <input id="em-phone" name="phone" type="tel" autocomplete="tel" class="input mt-1.5" dir="ltr" />
+      </div>
+      <div>
+        <label for="em-msg" class="text-sm font-semibold">{f.message}</label>
+        <textarea id="em-msg" name="message" rows="3" class="input mt-1.5" placeholder={f.messagePlaceholder}></textarea>
+      </div>
+    </div>
+
+    <p class="mt-4 text-sm text-ink-2">{b.noPayment}</p>
+    <button type="submit" class="btn btn-brand mt-4 w-full" data-email-submit>{f.send}</button>
+    <div role="status" aria-live="polite" class="mt-3" data-email-status></div>
+    <p class="sr-only" data-email-strings data-success={f.success} data-error={f.error} data-nokey={f.noKey} data-mail={contact.email}></p>
+  </form>
+</dialog>
+
+<style>
+  .email-dlg::backdrop {
+    background: rgb(8 11 26 / 0.55);
+  }
+</style>
+
+<script>
+  import { emailConfigured, fieldError, isEmail, sendEmail } from '../scripts/send';
+  import type { BookingState } from '../scripts/booking';
+
+  const dlg = document.querySelector<HTMLDialogElement>('[data-email-dialog]');
+  if (dlg) {
+    const form = dlg.querySelector<HTMLFormElement>('[data-email-form]')!;
+    const s = JSON.parse(dlg.dataset.s!);
+    const status = dlg.querySelector<HTMLElement>('[data-email-status]')!;
+    const strings = dlg.querySelector<HTMLElement>('[data-email-strings]')!.dataset;
+    const submit = dlg.querySelector<HTMLButtonElement>('[data-email-submit]')!;
+    let state: BookingState | null = null;
+
+    const summaryLines = (st: BookingState) => [
+      `${s.date}: ${st.date}`,
+      `${s.adults}: ${st.adults}`,
+      ...(st.children ? [`${s.children}: ${st.children}`] : []),
+      `${s.option}: ${s[st.option]}`,
+      `${s.total}: ${st.totalText}`,
+    ];
+
+    window.addEventListener('openemailrequest', (e) => {
+      state = (e as CustomEvent<BookingState>).detail;
+      const ul = dlg.querySelector('[data-summary]')!;
+      ul.replaceChildren(...summaryLines(state).map((l) => Object.assign(document.createElement('li'), { textContent: l })));
+      status.replaceChildren();
+      dlg.showModal();
+    });
+    dlg.querySelector('[data-email-close]')!.addEventListener('click', () => dlg.close());
+
+    const nameI = form.elements.namedItem('name') as HTMLInputElement;
+    const emailI = form.elements.namedItem('email') as HTMLInputElement;
+    nameI.addEventListener('blur', () => nameI.value.trim() && fieldError(nameI, null));
+    emailI.addEventListener('blur', () => isEmail(emailI.value) && fieldError(emailI, null));
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const okName = fieldError(nameI, nameI.value.trim() ? null : s.errName);
+      const okEmail = fieldError(emailI, isEmail(emailI.value) ? null : s.errEmail);
+      if (!okName) return nameI.focus();
+      if (!okEmail) return emailI.focus();
+      if (!state) return;
+
+      const p = (cls: string, text: string) => Object.assign(document.createElement('p'), { className: cls, textContent: text });
+      if (!emailConfigured()) {
+        const msg = p('rounded-xl bg-surface-2 p-3 text-sm', `${strings.nokey} `);
+        const body = [state.title, ...summaryLines(state), '', form.message.value].join('\n');
+        msg.append(Object.assign(document.createElement('a'), {
+          href: `mailto:${strings.mail}?subject=${encodeURIComponent(state.title)}&body=${encodeURIComponent(body)}`,
+          textContent: strings.mail, className: 'link',
+        }));
+        return status.replaceChildren(msg);
+      }
+
+      submit.disabled = true;
+      submit.textContent = s.sending;
+      const ok = await sendEmail(`Trip request: ${state.title}`, {
+        name: nameI.value.trim(),
+        email: emailI.value.trim(),
+        phone: (form.elements.namedItem('phone') as HTMLInputElement).value,
+        message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
+        trip: state.title,
+        request: summaryLines(state).join('\n'),
+        page: state.url,
+        language: document.documentElement.lang,
+      });
+      submit.disabled = false;
+      submit.textContent = s.send;
+      status.replaceChildren(ok
+        ? p('rounded-xl bg-success-bg p-3 text-sm text-success', strings.success!)
+        : p('rounded-xl bg-danger-bg p-3 text-sm text-danger', strings.error!));
+      if (ok) form.reset();
+    });
+  }
+</script>

@@ -71,3 +71,9 @@ export const forms = {
 export const analytics = {
   plausibleDomain: '', // set to e.g. 'iberdan.com' to enable Plausible
 } as const;
+
+/** Booking estimate settings. */
+export const booking = {
+  /** Child price as a share of the adult price (1 = full price). */
+  childFactor: 1, // TODO(youssef): child discount (e.g. 0.5 for half price) and the age limit
+} as const;

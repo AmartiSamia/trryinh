@@ -1,0 +1,175 @@
+---
+/**
+ * Request card: date, travellers, shared/private, live estimate in the
+ * visitor's currency, then WhatsApp (pre-filled) or email. No payment.
+ * Desktop: sticky sidebar. Mobile: a bottom bar opens the same form in a
+ * bottom sheet (<dialog>), so there is only one form and one state.
+ */
+import Icon from './Icon.astro';
+import Price from './Price.astro';
+import EmailRequest from './EmailRequest.astro';
+import { t } from '../i18n/ui';
+import { booking, site } from '../config';
+import { url, type Lang } from '../i18n/routes';
+import { priceFrom, type Trip } from '../lib/trips';
+
+interface Props { trip: Trip; lang: Lang }
+const { trip, lang } = Astro.props;
+const s = t(lang);
+const b = s.booking;
+const { price, title } = trip.data;
+const both = !!(price.shared && price.private);
+const defaultOpt = price.shared ? 'shared' : 'private';
+const from = priceFrom(trip);
+const pageUrl = new URL(url(lang, 'trips', trip.id), site.url).href;
+const stepper = [
+  { name: 'adults', label: b.adults, min: 1, value: 2 },
+  { name: 'children', label: b.children, min: 0, value: 0 },
+];
+---
+<div data-booking-home class="lg:sticky lg:top-24">
+  <form class="booking card p-5 sm:p-6" data-booking novalidate
+    data-shared={price.shared ?? ''} data-private={price.private ?? ''} data-child={booking.childFactor}
+    data-title={title[lang]} data-url={pageUrl}
+    data-s={JSON.stringify({ hello: b.msgHello, date: b.msgDate, adults: b.msgAdults, children: b.msgChildren, option: b.msgOption, total: b.msgTotal, lang: b.msgLang, langName: b.msgLangName, link: b.msgLink, shared: b.shared, private: b.private, missing: b.dateMissing })}>
+    <h2 class="font-display text-lg font-semibold">{b.title}</h2>
+    <p class="mt-2 flex items-baseline gap-1.5">
+      <span class="text-sm text-ink-3">{s.common.from}</span>
+      <Price mad={from} lang={lang} class="font-display text-3xl font-semibold" />
+      <span class="text-sm text-ink-3">{s.common.perPerson}</span>
+    </p>
+    {!price.confirmed && <p class="mt-1 text-xs text-ink-3">{s.trip.priceUnconfirmed}</p>}
+
+    <div class="mt-5 space-y-4">
+      <div>
+        <label for={`bk-date`} class="text-sm font-semibold">{b.date}</label>
+        <input id="bk-date" name="date" type="date" class="input mt-1.5" data-min-today />
+      </div>
+
+      {stepper.map((st) => (
+        <div class="flex items-center justify-between gap-3">
+          <label for={`bk-${st.name}`} class="text-sm font-semibold">{st.label}</label>
+          <div class="flex items-center gap-1">
+            <button type="button" class="step" data-step={`-${st.name}`} aria-label={b.less.replace('{x}', st.label.toLowerCase())}>−</button>
+            <input id={`bk-${st.name}`} name={st.name} type="number" inputmode="numeric" min={st.min} max="30" value={st.value}
+              class="input !w-14 text-center tabular-nums" />
+            <button type="button" class="step" data-step={`+${st.name}`} aria-label={b.more.replace('{x}', st.label.toLowerCase())}>+</button>
+          </div>
+        </div>
+      ))}
+
+      {both ? (
+        <fieldset>
+          <legend class="text-sm font-semibold">{b.option}</legend>
+          <div class="mt-2 grid grid-cols-2 gap-2">
+            {(['shared', 'private'] as const).map((o) => (
+              <label class="opt">
+                <input type="radio" name="option" value={o} checked={o === defaultOpt} class="sr-only" />
+                <span class="font-semibold">{b[o]}</span>
+                <Price mad={price[o]!} lang={lang} class="text-sm" />
+                <span class="text-xs text-ink-3">{b[`${o}Help`]}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      ) : (
+        <input type="hidden" name="option" value={defaultOpt} />
+      )}
+    </div>
+
+    <div class="mt-5 rounded-2xl bg-surface-2 p-4">
+      <p class="flex items-baseline justify-between gap-2">
+        <span class="text-sm font-semibold">{b.estimate}</span>
+        <output class="font-display text-2xl font-semibold tabular-nums" dir="ltr" data-total aria-live="polite"></output>
+      </p>
+      {booking.childFactor === 1 && <p class="mt-1 text-xs text-ink-3" data-child-note hidden>{b.childNote}</p>}
+    </div>
+
+    <p class="mt-4 flex gap-2 text-sm text-ink-2"><Icon name="shield" size={18} class="mt-0.5 shrink-0 text-success" />{b.noPayment}</p>
+
+    <div class="mt-5 grid gap-2">
+      <a href="#" target="_blank" rel="noopener" class="btn btn-whatsapp w-full" data-wa><Icon name="whatsapp" /> {b.whatsapp}</a>
+      <button type="button" class="btn btn-ghost w-full" data-email-open><Icon name="mail" /> {b.email}</button>
+    </div>
+  </form>
+</div>
+
+<!-- Mobile bottom bar + sheet -->
+<div class="booking-bar fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur lg:hidden" data-no-print>
+  <div class="flex items-center justify-between gap-3">
+    <p class="leading-tight">
+      <span class="block text-xs text-ink-3">{s.common.from}</span>
+      <Price mad={from} lang={lang} class="font-display text-xl font-semibold" />
+      <span class="text-xs text-ink-3"> {s.common.perPerson}</span>
+    </p>
+    <button type="button" class="btn btn-accent" data-sheet-open aria-haspopup="dialog">{b.checkDates}</button>
+  </div>
+</div>
+<dialog class="sheet m-0 mt-auto max-h-[92dvh] w-full max-w-none overflow-y-auto rounded-t-3xl bg-bg p-0 text-ink" data-booking-sheet aria-label={b.sheetTitle}>
+  <div class="sticky top-0 z-10 flex items-center justify-between bg-bg px-4 py-2">
+    <span class="mx-auto h-1.5 w-12 rounded-full bg-line" aria-hidden="true"></span>
+    <button type="button" class="absolute end-2 top-1 grid size-11 place-items-center rounded-full hover:bg-surface-2" data-sheet-close aria-label={s.trip.close}><Icon name="close" /></button>
+  </div>
+  <div class="px-4 pb-6" data-sheet-slot></div>
+</dialog>
+
+<EmailRequest lang={lang} tripTitle={title[lang]} />
+
+<style>
+  .step {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .step:hover {
+    background: var(--surface-2);
+  }
+  .opt {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    border-radius: 1rem;
+    border: 1.5px solid var(--line);
+    padding: 0.75rem;
+    cursor: pointer;
+  }
+  .opt:has(input:checked) {
+    border-color: var(--brand-2);
+    box-shadow: inset 0 0 0 1px var(--brand-2);
+  }
+  .opt:has(input:focus-visible) {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+  .sheet::backdrop {
+    background: rgb(8 11 26 / 0.55);
+  }
+  .sheet[open] {
+    animation: sheet-up 0.3s var(--ease-out-soft);
+  }
+  .sheet :global(.booking) {
+    box-shadow: none;
+    padding: 0;
+    background: transparent;
+  }
+  @keyframes sheet-up {
+    from { transform: translateY(100%); }
+  }
+  /* Keep the floating WhatsApp button above the bottom bar. */
+  @media (max-width: 63.99rem) {
+    :global(body:has(.booking-bar)) {
+      --booking-bar-h: 4.5rem;
+      padding-bottom: 5rem;
+    }
+  }
+</style>
+
+<script>
+  import { initBooking } from '../scripts/booking';
+  initBooking();
+</script>

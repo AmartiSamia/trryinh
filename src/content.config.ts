@@ -22,7 +22,7 @@ const photos = defineCollection({
       author: z.string(),
       licence: z.string(),
       licenceUrl: z.string(),
-      source: z.string().url(),
+      source: z.url(),
       sourceName: z.string(),
       /** Tiny blurred preview (data URI) shown while the photo loads. */
       placeholder: z.string(),
@@ -134,7 +134,7 @@ const reviews = defineCollection({
     text: z.string(),
     lang: z.enum(['en', 'fr', 'ar']).optional(),
     source: z.enum(['google', 'tripadvisor', 'email', 'whatsapp']),
-    sourceUrl: z.string().url().optional(),
+    sourceUrl: z.url().optional(),
   }),
 });
 

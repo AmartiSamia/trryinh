@@ -1,0 +1,64 @@
+---
+/**
+ * Small cards rendered in the browser from /[lang]/trips-index.json.
+ * mode "recent": recently viewed trips. mode "wishlist": saved trips.
+ */
+import { t } from '../i18n/ui';
+import type { Lang } from '../i18n/routes';
+interface Props { lang: Lang; exclude?: string; track?: string; mode?: 'recent' | 'wishlist'; title?: string }
+const { lang, exclude = '', track = '', mode = 'recent', title } = Astro.props;
+const s = t(lang);
+---
+<section class="container-page mt-16" data-recent={mode} data-exclude={exclude} data-track={track} data-lang={lang}
+  data-from={s.common.from} aria-labelledby={`${mode}-title`} hidden data-no-print>
+  <h2 id={`${mode}-title`} class="text-h3">{title ?? s.trip.recent}</h2>
+  <ul class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" data-list></ul>
+</section>
+
+<script>
+  import { addRecent, getRecent, getWishlist } from '../scripts/wishlist';
+  import { convert, formatMoney } from '../lib/price';
+  import type { Currency } from '../config';
+  import type { Lang } from '../i18n/routes';
+
+  type Item = { slug: string; title: string; href: string; duration: string; priceMad: number; image: string; placeholder: string };
+  const cache: Partial<Record<string, Promise<Item[]>>> = {};
+  const index = (lang: string) => (cache[lang] ??= fetch(`/${lang}/trips-index.json`).then((r) => r.json()));
+
+  async function render(root: HTMLElement) {
+    const lang = root.dataset.lang as Lang;
+    const slugs = (root.dataset.recent === 'wishlist' ? getWishlist() : getRecent()).filter((x) => x !== root.dataset.exclude);
+    const list = root.querySelector('[data-list]')!;
+    const all = await index(lang);
+    const items = slugs.map((sl) => all.find((a: Item) => a.slug === sl)).filter(Boolean) as Item[];
+    root.hidden = items.length === 0 && root.dataset.recent === 'recent';
+    root.dispatchEvent(new CustomEvent('rendered', { detail: items.length, bubbles: true }));
+    const cur = (document.documentElement.dataset.currency ?? 'EUR') as Currency;
+    list.replaceChildren(
+      ...items.slice(0, root.dataset.recent === 'recent' ? 4 : 99).map((it) => {
+        const li = document.createElement('li');
+        li.className = 'card relative flex gap-3 overflow-hidden p-2';
+        li.innerHTML = `
+          <div class="h-20 w-24 shrink-0 overflow-hidden rounded-xl bg-cover bg-center" style="background-image:url(${it.placeholder})">
+            <img src="${it.image}" alt="" loading="lazy" class="size-full object-cover" />
+          </div>
+          <div class="min-w-0 py-1 pe-2">
+            <h3 class="font-display text-sm font-semibold leading-snug"><a class="after:absolute after:inset-0" href="${it.href}"></a></h3>
+            <p class="mt-1 text-xs text-ink-3"></p>
+            <p class="mt-0.5 text-sm font-semibold" dir="ltr"></p>
+          </div>`;
+        li.querySelector('a')!.textContent = it.title;
+        li.querySelectorAll('p')[0].textContent = it.duration;
+        li.querySelectorAll('p')[1].textContent = `${root.dataset.from} ${formatMoney(convert(it.priceMad, cur), cur, lang)}`;
+        return li;
+      }),
+    );
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-recent]').forEach((root) => {
+    render(root);
+    if (root.dataset.track) addRecent(root.dataset.track);
+    window.addEventListener('currencychange', () => render(root));
+    window.addEventListener('wishlistchange', () => render(root));
+  });
+</script>

@@ -1,0 +1,215 @@
+---
+import { getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import Gallery from '../components/Gallery.astro';
+import Itinerary from '../components/Itinerary.astro';
+import RouteMap from '../components/RouteMap.astro';
+import BookingCard from '../components/BookingCard.astro';
+import TripCard from '../components/TripCard.astro';
+import FaqList from '../components/FaqList.astro';
+import Icon from '../components/Icon.astro';
+import WishButton from '../components/WishButton.astro';
+import RecentTrips from '../components/RecentTrips.astro';
+import { alternates, url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { categoryLabels, cityLabel, difficultyHelp, difficultyLabels, items } from '../i18n/catalog';
+import { durationLabel, getTrips, tripPhotos, type Trip } from '../lib/trips';
+import { convert } from '../lib/price';
+import { site } from '../config';
+import { tripJsonLd } from '../lib/seo';
+
+interface Props { lang: Lang; trip: Trip }
+const { lang, trip } = Astro.props;
+const s = t(lang);
+const d = trip.data;
+const photos = await tripPhotos(trip);
+const text = (it: (typeof d.included)[number]) => (typeof it === 'string' ? items[it][lang] : it[lang]);
+
+const all = await getTrips();
+const related = [
+  ...all.filter((x) => x.id !== trip.id && x.data.category === d.category),
+  ...all.filter((x) => x.id !== trip.id && x.data.category !== d.category),
+].slice(0, 3);
+
+const og = await getImage({ src: photos[0].data.file, width: 1200, height: 630, fit: 'cover', format: 'jpg' });
+const pageUrl = new URL(url(lang, 'trips', trip.id), site.url).href;
+const jsonLd = tripJsonLd({
+  name: d.title[lang],
+  description: d.summary[lang],
+  url: pageUrl,
+  image: new URL(og.src, site.url).href,
+  itinerary: d.mapStops.map((m) => m.name),
+  offers: (['shared', 'private'] as const)
+    .filter((o) => d.price[o])
+    .map((o) => ({ name: s.booking[o], priceEur: convert(d.price[o]!, 'EUR') })),
+});
+
+const crumbs = [
+  { name: 'Iberdan', path: url(lang, 'home') },
+  { name: s.trips.title, path: url(lang, 'trips') },
+  { name: d.title[lang], path: url(lang, 'trips', trip.id) },
+];
+const tags = [
+  { icon: 'clock' as const, label: s.card.duration, value: durationLabel(trip, lang) },
+  { icon: 'mountain' as const, label: s.card.difficulty, value: difficultyLabels[d.difficulty][lang], help: difficultyHelp[d.difficulty][lang] },
+  ...(d.maxAltitude ? [{ icon: 'sunrise' as const, label: s.trip.maxAlt, value: `${d.maxAltitude.toLocaleString('en')} m`, ltr: true }] : []),
+  { icon: 'pin' as const, label: s.trip.startEnd, value: d.startCity === d.endCity ? cityLabel(d.startCity, lang) : `${cityLabel(d.startCity, lang)} → ${cityLabel(d.endCity, lang)}` },
+];
+---
+<Base lang={lang} title={d.title[lang]} description={d.summary[lang]} alternates={alternates('trips', trip.id)} ogImage={og.src} jsonLd={jsonLd} hideFab>
+  <article class="container-page pt-6" data-trip-page={trip.id}>
+    <Breadcrumb items={crumbs} lang={lang} />
+
+    <header class="mt-4 flex flex-wrap items-start justify-between gap-4">
+      <div class="max-w-3xl">
+        <p class="eyebrow">{categoryLabels[d.category][lang]}</p>
+        <h1 class="mt-2 text-h1">{d.title[lang]}</h1>
+        <p class="mt-3 text-lg text-ink-2">{d.summary[lang]}</p>
+      </div>
+      <div class="flex gap-2" data-no-print>
+        <WishButton slug={trip.id} lang={lang} class="!bg-surface-2 !text-ink hover:!bg-line" />
+        <button type="button" class="grid size-11 place-items-center rounded-full bg-surface-2 hover:bg-line" data-print aria-label={s.trip.print}><Icon name="print" /></button>
+      </div>
+    </header>
+
+    <dl class="mt-6 flex flex-wrap gap-2">
+      {tags.map((tg) => (
+        <div class="flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm" title={tg.help}>
+          <Icon name={tg.icon} size={18} class="text-accent-text" />
+          <dt class="sr-only">{tg.label}</dt>
+          <dd class="font-medium" dir={tg.ltr ? 'ltr' : undefined}>{tg.value}</dd>
+        </div>
+      ))}
+    </dl>
+
+    <div class="mt-6"><Gallery photos={photos} lang={lang} /></div>
+
+    <div class="mt-10 grid gap-12 lg:grid-cols-[1fr_22rem] xl:grid-cols-[1fr_24rem]">
+      <div class="min-w-0 space-y-14">
+        <section aria-labelledby="about">
+          <h2 id="about" class="text-h2">{s.trip.about}</h2>
+          <p class="mt-4 text-[1.0625rem] leading-relaxed text-ink-2">{d.about[lang]}</p>
+          <p class="mt-4 text-sm text-ink-3">{difficultyLabels[d.difficulty][lang]}: {difficultyHelp[d.difficulty][lang]}</p>
+        </section>
+
+        <section aria-labelledby="highlights">
+          <h2 id="highlights" class="text-h2">{s.trip.highlights}</h2>
+          <ul class="mt-5 grid gap-3 sm:grid-cols-2">
+            {d.highlights.map((h) => (
+              <li class="flex gap-3 rounded-2xl bg-surface p-4 shadow-card">
+                <Icon name="star" size={20} class="mt-0.5 shrink-0 text-accent-text" />
+                <span>{h[lang]}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section aria-labelledby="itinerary">
+          <h2 id="itinerary" class="text-h2">{s.trip.itinerary}</h2>
+          <div class="mt-6"><Itinerary trip={trip} lang={lang} /></div>
+        </section>
+
+        <section aria-labelledby="incl" class="grid gap-6 sm:grid-cols-2">
+          <h2 id="incl" class="sr-only">{s.trip.included} / {s.trip.excluded}</h2>
+          <div class="rounded-3xl bg-success-bg/60 p-6">
+            <h3 class="text-h3">{s.trip.included}</h3>
+            <ul class="mt-4 space-y-2.5">
+              {d.included.map((it) => <li class="flex gap-2.5"><Icon name="check" size={20} class="mt-0.5 shrink-0 text-success" />{text(it)}</li>)}
+            </ul>
+          </div>
+          <div class="rounded-3xl bg-surface-2 p-6">
+            <h3 class="text-h3">{s.trip.excluded}</h3>
+            <ul class="mt-4 space-y-2.5">
+              {d.excluded.map((it) => <li class="flex gap-2.5"><Icon name="x" size={20} class="mt-0.5 shrink-0 text-ink-3" />{text(it)}</li>)}
+            </ul>
+          </div>
+        </section>
+
+        <section aria-labelledby="gtk">
+          <h2 id="gtk" class="text-h2">{s.trip.goodToKnow}</h2>
+          <dl class="mt-5 grid gap-4 sm:grid-cols-2">
+            <div class="info"><dt><Icon name="pin" size={18} />{s.trip.meetingPoint}</dt><dd>{d.meetingPoint[lang]}</dd></div>
+            <div class="info"><dt><Icon name="clock" size={18} />{s.trip.pickup}</dt><dd><span dir="ltr">{d.pickupTime}</span>{d.pickupTime ? ` (${s.trip.pickupConfirm})` : s.trip.pickupConfirm}</dd></div>
+            <div class="info"><dt><Icon name="users" size={18} />{s.trip.groupSize}</dt><dd>{d.groupMax ? s.trip.groupMax.replace('{n}', String(d.groupMax)) : s.trip.groupSmall}</dd></div>
+            <div class="info"><dt><Icon name="shield" size={18} />{s.trip.cancellation}</dt><dd><a href={url(lang, 'cancellation')} class="link">{s.trip.cancellationText}</a></dd></div>
+          </dl>
+          {d.goodToKnow.length > 0 && (
+            <ul class="mt-5 space-y-3">
+              {d.goodToKnow.map((g) => <li class="flex gap-3"><Icon name="info" size={20} class="mt-0.5 shrink-0 text-accent-text" /><span class="text-ink-2">{g[lang]}</span></li>)}
+            </ul>
+          )}
+        </section>
+
+        {d.pack.length > 0 && (
+          <section aria-labelledby="pack">
+            <h2 id="pack" class="text-h2">{s.trip.pack}</h2>
+            <ul class="mt-5 grid gap-2 sm:grid-cols-2">
+              {d.pack.map((it) => <li class="flex gap-2.5"><Icon name="backpack" size={20} class="mt-0.5 shrink-0 text-ink-3" />{text(it)}</li>)}
+            </ul>
+          </section>
+        )}
+
+        <section aria-labelledby="map">
+          <h2 id="map" class="text-h2">{s.trip.map}</h2>
+          <div class="mt-5"><RouteMap trip={trip} lang={lang} /></div>
+        </section>
+
+        {d.faq.length > 0 && (
+          <section aria-labelledby="tfaq">
+            <h2 id="tfaq" class="text-h2">{s.trip.faq}</h2>
+            <div class="mt-5"><FaqList items={d.faq} lang={lang} /></div>
+          </section>
+        )}
+      </div>
+
+      <aside class="lg:order-none" data-no-print>
+        <BookingCard trip={trip} lang={lang} />
+      </aside>
+    </div>
+  </article>
+
+  <section class="container-page mt-20" aria-labelledby="related" data-no-print>
+    <h2 id="related" class="text-h2">{s.trip.related}</h2>
+    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {related.map((r) => <TripCard trip={r} lang={lang} />)}
+    </div>
+  </section>
+
+  <RecentTrips lang={lang} exclude={trip.id} track={trip.id} />
+</Base>
+
+<style>
+  .info {
+    border-radius: 1.25rem;
+    border: 1px solid var(--line);
+    padding: 1rem 1.25rem;
+  }
+  .info dt {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+  .info dt :global(svg) {
+    color: var(--accent-text);
+  }
+  .info dd {
+    margin-top: 0.375rem;
+    color: var(--ink-2);
+  }
+  @media print {
+    :global(.gallery) {
+      display: none;
+    }
+    :global(main) {
+      padding-top: 0 !important;
+    }
+  }
+</style>
+
+<script>
+  // Print: open collapsed timelines and FAQ first so everything is on paper.
+  document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach((d) => (d.open = true)));
+</script>
