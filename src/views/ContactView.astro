@@ -28,7 +28,7 @@ const a = contact.address;
 ---
 <Base lang={lang} title={c.title} description={c.intro} alternates={alternates('contact')}>
   <PageHeader lang={lang} title={c.title} intro={c.intro} path={url(lang, 'contact')} />
-  <div class="container-page grid gap-10 lg:grid-cols-[1fr_1.2fr]">
+  <div class="container-page grid gap-10 lg:grid-cols-[1fr_1.2fr] [&>*]:min-w-0">
     <div>
       <ul class="space-y-3">
         {ways.map((w) => (
@@ -36,7 +36,7 @@ const a = contact.address;
             <a href={w.href} target={w.ext ? '_blank' : undefined} rel={w.ext ? 'noopener' : undefined}
               class:list={['flex items-center gap-4 rounded-3xl p-5 transition', w.primary ? 'btn-whatsapp' : 'card hover:shadow-lg']}>
               <span class:list={['grid size-12 shrink-0 place-items-center rounded-2xl', w.primary ? 'bg-white/15' : 'bg-surface-2 text-accent-text']}><Icon name={w.icon} size={24} /></span>
-              <span><span class="block text-sm opacity-80">{w.label}</span><span class="font-display text-lg font-semibold" dir="ltr">{w.value}</span></span>
+              <span class="min-w-0"><span class="block text-sm opacity-80">{w.label}</span><span class="block break-words font-display text-lg font-semibold" dir="ltr">{w.value}</span></span>
             </a>
           </li>
         ))}
