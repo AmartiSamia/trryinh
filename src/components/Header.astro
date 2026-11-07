@@ -31,8 +31,8 @@ const wa = waLink(s.common.whatsappHello);
   class="site-header fixed inset-x-0 top-0 z-40"
 >
   <div class="container-page flex h-[var(--hh)] items-center gap-3 transition-[height] duration-300">
-    <a href={url(lang, 'home')} class="me-auto shrink-0 rounded-md" aria-label={s.a11y.home}>
-      <Logo />
+    <a href={url(lang, 'home')} class="me-auto shrink-0 rounded-md">
+      <Logo /><span class="sr-only">, {s.a11y.home}</span>
     </a>
 
     <nav aria-label={s.a11y.mainNav} class="hidden lg:block">

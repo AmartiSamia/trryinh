@@ -1,0 +1,39 @@
+---
+import Icon from './Icon.astro';
+import { t } from '../i18n/ui';
+import type { Lang } from '../i18n/routes';
+interface Props { slug: string; lang: Lang; class?: string }
+const { slug, lang, class: cls } = Astro.props;
+const s = t(lang);
+---
+<button
+  type="button"
+  data-wish={slug}
+  data-label-on={s.card.wishRemove}
+  data-label-off={s.card.wishAdd}
+  aria-pressed="false"
+  aria-label={s.card.wishAdd}
+  class:list={['wish grid size-11 place-items-center rounded-full bg-black/40 text-white backdrop-blur-sm transition hover:bg-black/60', cls]}
+>
+  <Icon name="heart" size={20} />
+</button>
+
+<style>
+  .wish[aria-pressed='true'] :global(svg) {
+    fill: #f2b252;
+    stroke: #f2b252;
+  }
+</style>
+
+<script>
+  import { syncHearts, toggleWish } from '../scripts/wishlist';
+  syncHearts();
+  document.addEventListener('click', (e) => {
+    const b = (e.target as Element).closest<HTMLButtonElement>('[data-wish]');
+    if (!b) return;
+    e.preventDefault();
+    toggleWish(b.dataset.wish!);
+    syncHearts();
+  });
+  window.addEventListener('storage', syncHearts);
+</script>

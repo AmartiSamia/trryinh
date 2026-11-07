@@ -2,6 +2,8 @@
 // Re-run after adding a photo: node scripts/build-photos.mjs
 // TODO(review-ar): Arabic alt texts need a native review.
 import { readFileSync, writeFileSync } from 'node:fs';
+import sharp from 'sharp';
+sharp.cache(false);
 const meta = JSON.parse(readFileSync('scripts/photo-meta.json', 'utf8'));
 const alt = {
   'toubkal-sunrise': ['Sunrise seen from the summit of Jebel Toubkal, with the metal summit pyramid in silhouette', 'Lever du soleil depuis le sommet du Toubkal, la pyramide métallique en contre-jour', 'شروق الشمس من قمة جبل توبقال مع ظل الهرم المعدني'],
@@ -67,10 +69,13 @@ const alt = {
   rabat: ['The Hassan Tower and its column field in Rabat', 'La tour Hassan et ses colonnes à Rabat', 'صومعة حسان وأعمدتها في الرباط'],
   meknes: ['The monumental Bab Mansour gate in Meknes', 'La porte monumentale de Bab Mansour à Meknès', 'باب منصور الضخم في مكناس'],
 };
-const out = Object.entries(meta).map(([id, m]) => {
+const out = [];
+for (const [id, m] of Object.entries(meta)) {
   const a = alt[id];
   if (!a) throw new Error('No alt text for ' + id);
-  return {
+  // 16px-wide blurred preview, inlined as the image background while it loads.
+  const tiny = await sharp(readFileSync(`src/assets/photos/${id}.jpg`)).resize(16).webp({ quality: 40 }).toBuffer();
+  out.push({
     id,
     file: `../assets/photos/${id}.jpg`,
     alt: { en: a[0], fr: a[1], ar: a[2] },
@@ -79,7 +84,8 @@ const out = Object.entries(meta).map(([id, m]) => {
     licenceUrl: m.licenceUrl || (/public domain|cc0/i.test(m.licence) ? 'https://creativecommons.org/publicdomain/mark/1.0/' : ''),
     source: m.source,
     sourceName: 'Wikimedia Commons',
-  };
-});
+    placeholder: `data:image/webp;base64,${tiny.toString('base64')}`,
+  });
+}
 writeFileSync('src/content/photos.json', JSON.stringify(out, null, 2) + '\n');
 console.log(out.length, 'photos written');

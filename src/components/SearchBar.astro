@@ -1,0 +1,88 @@
+---
+/**
+ * Hero search: destination/type + date + travellers. Submits to the trips
+ * list; the list reads the query string and applies the filters.
+ */
+import Icon from './Icon.astro';
+import { url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { categoryLabels } from '../i18n/catalog';
+import { categories } from '../content.config';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const places = ['Toubkal', 'Imlil', 'Merzouga', 'Zagora', 'Agafay', 'Essaouira', 'Ouzoud', 'Marrakech', 'Fes'];
+---
+<form action={url(lang, 'trips')} method="get" role="search" aria-label={s.search.label} data-search-form
+  class="search-bar grid grid-cols-2 gap-1 rounded-3xl bg-surface p-2 text-ink shadow-card sm:grid-cols-[1.6fr_1fr_0.8fr_auto] sm:gap-2 sm:rounded-full">
+  <label class="field col-span-2 sm:col-span-1">
+    <span class="field-label">{s.search.where}</span>
+    <select name="where" class="field-input">
+      <option value="">{s.search.whereAny}</option>
+      <optgroup label={s.search.types}>
+        {categories.map((c) => <option value={`cat:${c}`}>{categoryLabels[c][lang]}</option>)}
+      </optgroup>
+      <optgroup label={s.search.places}>
+        {places.map((p) => <option value={`q:${p}`}>{p}</option>)}
+      </optgroup>
+    </select>
+  </label>
+  <label class="field">
+    <span class="field-label">{s.search.date}</span>
+    <input type="date" name="date" class="field-input" data-min-today />
+  </label>
+  <label class="field">
+    <span class="field-label">{s.search.people}</span>
+    <input type="number" name="people" min="1" max="30" value="2" inputmode="numeric" class="field-input" />
+  </label>
+  <button type="submit" class="btn btn-accent col-span-2 !min-h-14 sm:col-span-1 sm:!px-7">
+    <Icon name="search" /> {s.search.submit}
+  </button>
+</form>
+
+<style>
+  .field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 3.5rem;
+    padding: 0.35rem 1rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .field:hover,
+  .field:focus-within {
+    background: var(--surface-2);
+  }
+  .field-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+  .field-input {
+    width: 100%;
+    background: transparent;
+    font-weight: 500;
+    outline: none;
+    color: var(--ink);
+  }
+  .field-input:focus-visible {
+    outline: none;
+  }
+  .field:focus-within {
+    box-shadow: inset 0 0 0 2px var(--focus);
+  }
+  @media (min-width: 40rem) {
+    .field {
+      border-radius: 999px;
+    }
+  }
+</style>
+
+<script>
+  // Static site: set today's date as the minimum in the browser, not at build time.
+  const today = new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+  document.querySelectorAll<HTMLInputElement>('[data-min-today]').forEach((i) => (i.min = today));
+</script>

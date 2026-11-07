@@ -1,0 +1,56 @@
+---
+/**
+ * Responsive photo from the photos collection: AVIF/WebP + JPEG fallback,
+ * lazy by default, with a blurred preview behind it while it loads.
+ */
+import { Picture } from 'astro:assets';
+import type { Photo as PhotoEntry } from '../lib/trips';
+import type { Lang } from '../i18n/routes';
+
+interface Props {
+  photo: PhotoEntry;
+  lang: Lang;
+  widths?: number[];
+  sizes: string;
+  class?: string;
+  imgClass?: string;
+  eager?: boolean;
+  /** Decorative use (e.g. behind text that already says the same): empty alt. */
+  decorative?: boolean;
+}
+const { photo, lang, widths = [400, 640, 960, 1280], sizes, class: cls, imgClass, eager = false, decorative = false } = Astro.props;
+const { file, alt, placeholder } = photo.data;
+---
+<div class:list={['photo relative overflow-hidden bg-surface-2', cls]} style={`background-image:url(${placeholder})`}>
+  <Picture
+    src={file}
+    alt={decorative ? '' : alt[lang]}
+    widths={widths.filter((w) => w <= file.width)}
+    sizes={sizes}
+    formats={['avif', 'webp']}
+    loading={eager ? 'eager' : 'lazy'}
+    fetchpriority={eager ? 'high' : 'auto'}
+    decoding={eager ? 'sync' : 'async'}
+    class:list={['size-full object-cover', imgClass]}
+    pictureAttributes={{ class: 'block size-full' }}
+  />
+</div>
+
+<style>
+  .photo {
+    background-size: cover;
+    background-position: center;
+  }
+  /* Blur the tiny preview without blurring the real image. */
+  .photo::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(14px);
+    transform: scale(1.15);
+  }
+  .photo :global(picture) {
+    position: relative;
+  }
+</style>

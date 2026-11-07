@@ -1,5 +1,8 @@
 # Site-wide FAQ. `home: true` shows the question on the home page.
 # TODO(review-ar): Arabic answers need a native review.
+# TODO(youssef): payment, deposit, cancellation, children and group-size answers
+#   are written to stay true without the numbers. Add the real figures when known.
+
 - id: how-to-book
   group: booking
   home: true
@@ -8,3 +11,118 @@
     en: "Choose a trip, pick your date and the number of travellers, then send the request on WhatsApp or by email. Youssef checks availability and replies himself with the final price. Nothing is paid online."
     fr: "Choisissez un voyage, une date et le nombre de voyageurs, puis envoyez la demande par WhatsApp ou par e-mail. Youssef vérifie la disponibilité et vous répond lui-même avec le prix final. Rien n’est payé en ligne."
     ar: "اختاروا الرحلة والتاريخ وعدد المسافرين، ثم أرسلوا الطلب عبر واتساب أو البريد الإلكتروني. يتحقق يوسف من التوفر ويجيبكم بنفسه بالسعر النهائي. لا يتم أي دفع عبر الإنترنت."
+
+- id: how-fast
+  group: booking
+  q: { en: "How quickly will I get an answer?", fr: "En combien de temps aurai-je une réponse ?", ar: "متى سأتلقى الرد؟" }
+  a:
+    en: "Usually within a few hours on WhatsApp. When Youssef is guiding in the mountains there may be no network for part of the day; he replies as soon as he is back in range."
+    fr: "En général en quelques heures sur WhatsApp. Quand Youssef guide en montagne, il n’y a parfois pas de réseau une partie de la journée ; il répond dès qu’il capte."
+    ar: "عادة في غضون ساعات قليلة على واتساب. عندما يكون يوسف في الجبل قد لا تتوفر الشبكة لجزء من اليوم، فيرد بمجرد عودة التغطية."
+
+- id: private-shared
+  group: booking
+  home: true
+  q: { en: "What is the difference between shared and private?", fr: "Quelle différence entre partagé et privé ?", ar: "ما الفرق بين الرحلة المشتركة والخاصة؟" }
+  a:
+    en: "On a shared trip you travel with other guests in a small group, which keeps the price low. A private trip is just you and your companions, with your own guide or driver and more freedom on timing."
+    fr: "En partagé, vous voyagez en petit groupe avec d’autres voyageurs, ce qui garde un prix bas. En privé, vous êtes seuls avec vos proches, avec votre guide ou chauffeur et plus de liberté sur les horaires."
+    ar: "في الرحلة المشتركة تسافرون مع ضيوف آخرين في مجموعة صغيرة، مما يبقي السعر منخفضا. أما الخاصة فهي لكم ولمرافقيكم فقط، مع مرشد أو سائق خاص ومرونة أكبر في المواعيد."
+
+- id: group-size
+  group: booking
+  q: { en: "How big are the groups?", fr: "Quelle est la taille des groupes ?", ar: "ما حجم المجموعات؟" }
+  a:
+    en: "Small. The exact maximum depends on the trip and is confirmed when you book. Ask Youssef if you want to know who else is on your date."
+    fr: "Petite. Le maximum exact dépend du voyage et est confirmé à la réservation. Demandez à Youssef si vous voulez savoir qui d’autre est inscrit à votre date."
+    ar: "صغير. الحد الأقصى بالضبط يختلف حسب الرحلة ويُؤكَّد عند الحجز. اسألوا يوسف إذا أردتم معرفة من سيكون معكم في نفس التاريخ."
+
+- id: payment
+  group: payment
+  home: true
+  q: { en: "How and when do I pay?", fr: "Comment et quand payer ?", ar: "كيف ومتى أدفع؟" }
+  a:
+    en: "Nothing is paid on this website. When Youssef confirms your trip he tells you the final price and how to pay. Ask him if you need a written quote first."
+    fr: "Rien ne se paie sur ce site. Quand Youssef confirme votre voyage, il vous indique le prix final et le mode de paiement. Demandez-lui un devis écrit si besoin."
+    ar: "لا يتم أي دفع على هذا الموقع. عندما يؤكد يوسف رحلتكم يخبركم بالسعر النهائي وطريقة الدفع. اطلبوا منه عرض سعر مكتوبا إذا احتجتم."
+
+- id: cancellation
+  group: payment
+  q: { en: "What if I need to cancel?", fr: "Et si je dois annuler ?", ar: "ماذا لو اضطررت إلى الإلغاء؟" }
+  a:
+    en: "Tell Youssef as early as possible on WhatsApp or by email. The conditions are on our cancellation page and confirmed with your booking. If we cancel for weather or safety, you choose another date or get your money back."
+    fr: "Prévenez Youssef le plus tôt possible par WhatsApp ou e-mail. Les conditions sont sur notre page annulation et confirmées avec votre réservation. Si nous annulons pour la météo ou la sécurité, vous choisissez une autre date ou êtes remboursé."
+    ar: "أخبروا يوسف في أقرب وقت عبر واتساب أو البريد الإلكتروني. الشروط موجودة في صفحة الإلغاء وتُؤكَّد مع الحجز. إذا ألغينا بسبب الطقس أو السلامة، تختارون تاريخا آخر أو تسترجعون أموالكم."
+
+- id: fitness
+  group: safety
+  home: true
+  q: { en: "Am I fit enough for Toubkal?", fr: "Suis-je assez en forme pour le Toubkal ?", ar: "هل لياقتي كافية لصعود توبقال؟" }
+  a:
+    en: "If you can walk 6 hours on hills with breaks, you can usually reach the summit. The hard part is the long summit day and the altitude, not technique. Tell Youssef about your experience and he will advise you honestly."
+    fr: "Si vous pouvez marcher 6 h en dénivelé avec des pauses, vous pouvez en général atteindre le sommet. Le plus dur, c’est la longue journée du sommet et l’altitude, pas la technique. Parlez de votre expérience à Youssef, il vous conseillera honnêtement."
+    ar: "إذا كنتم تستطيعون المشي 6 ساعات في مرتفعات مع استراحات، فيمكنكم عادة بلوغ القمة. الصعب هو يوم القمة الطويل والارتفاع، وليس التقنية. أخبروا يوسف بخبرتكم وسينصحكم بصدق."
+
+- id: safety-guide
+  group: safety
+  q: { en: "Who guides the treks?", fr: "Qui encadre les treks ?", ar: "من يرافق رحلات المشي؟" }
+  a:
+    en: "Mountain treks are led by Youssef or a licensed mountain guide from his team. The guide decides on safety: if the weather or the group is not right for the summit, you turn back."
+    fr: "Les treks en montagne sont encadrés par Youssef ou un guide de montagne diplômé de son équipe. Le guide décide pour la sécurité : si la météo ou le groupe ne permettent pas le sommet, on fait demi-tour."
+    ar: "يقود رحلات الجبل يوسف أو مرشد جبلي معتمد من فريقه. المرشد هو من يقرر في أمور السلامة: إذا لم يكن الطقس أو حالة المجموعة مناسبين للقمة، نعود أدراجنا."
+
+- id: insurance
+  group: safety
+  q: { en: "Do I need travel insurance?", fr: "Faut-il une assurance voyage ?", ar: "هل أحتاج إلى تأمين سفر؟" }
+  a:
+    en: "Yes, we strongly recommend insurance that covers trekking up to 4,200 m and medical evacuation."
+    fr: "Oui, nous recommandons vivement une assurance couvrant le trek jusqu’à 4 200 m et l’évacuation médicale."
+    ar: "نعم، ننصح بشدة بتأمين يغطي المشي حتى 4200 متر والإجلاء الطبي."
+
+- id: children-age
+  group: children
+  q: { en: "Can children come?", fr: "Les enfants peuvent-ils venir ?", ar: "هل يمكن للأطفال المشاركة؟" }
+  a:
+    en: "Yes, many trips work well with children: day trips, Agafay, the three valleys trek, the desert. Toubkal summit is better for teenagers who already walk. Ask Youssef about ages and child prices for your trip."
+    fr: "Oui, beaucoup de voyages conviennent aux enfants : excursions, Agafay, trek des trois vallées, désert. Le sommet du Toubkal convient mieux aux adolescents qui marchent déjà. Demandez à Youssef pour l’âge et les prix enfants."
+    ar: "نعم، كثير من الرحلات مناسبة للأطفال: الرحلات اليومية، أكفاي، رحلة الوديان الثلاثة، الصحراء. قمة توبقال أنسب للمراهقين المتعودين على المشي. اسألوا يوسف عن الأعمار وأسعار الأطفال."
+
+- id: children-mules
+  group: children
+  q: { en: "What if my child gets tired on a trek?", fr: "Et si mon enfant est fatigué pendant le trek ?", ar: "ماذا لو تعب طفلي خلال الرحلة؟" }
+  a:
+    en: "On village treks a mule can carry a tired child for part of the way. Tell us in advance so we plan for it."
+    fr: "Sur les treks de villages, une mule peut porter un enfant fatigué sur une partie du chemin. Prévenez-nous pour que nous l’organisions."
+    ar: "في رحلات القرى يمكن لبغل أن يحمل طفلا متعبا لجزء من الطريق. أخبرونا مسبقا لنستعد لذلك."
+
+- id: food-diet
+  group: food
+  q: { en: "Can you handle vegetarian or other diets?", fr: "Gérez-vous les régimes végétariens ou autres ?", ar: "هل يمكنكم مراعاة الأنظمة الغذائية النباتية أو غيرها؟" }
+  a:
+    en: "Yes. Vegetarian is easy in Morocco: tagines, couscous and salads. Tell us about allergies or other diets when you book."
+    fr: "Oui. Le végétarien est facile au Maroc : tajines, couscous et salades. Signalez allergies ou autres régimes à la réservation."
+    ar: "نعم. الطعام النباتي سهل في المغرب: الطواجن والكسكس والسلطات. أخبرونا بالحساسية أو الأنظمة الأخرى عند الحجز."
+
+- id: food-water
+  group: food
+  q: { en: "Is the water safe to drink?", fr: "L’eau est-elle potable ?", ar: "هل الماء صالح للشرب؟" }
+  a:
+    en: "Drink bottled or filtered water. In the mountains we fill bottles at springs and treat the water; bring a refillable bottle to avoid plastic."
+    fr: "Buvez de l’eau en bouteille ou filtrée. En montagne, nous remplissons aux sources et traitons l’eau ; prenez une gourde pour éviter le plastique."
+    ar: "اشربوا ماء معبأ أو مصفى. في الجبل نملأ القوارير من العيون ونعالج الماء، فأحضروا قارورة قابلة لإعادة التعبئة لتجنب البلاستيك."
+
+- id: weather-best
+  group: weather
+  q: { en: "When is the best time to visit?", fr: "Quelle est la meilleure période ?", ar: "ما أفضل وقت للزيارة؟" }
+  a:
+    en: "Spring (March–May) and autumn (September–November) suit almost everything. Summer is great for the mountains and the coast, winter for the desert and the cities, and for a snowy Toubkal."
+    fr: "Le printemps (mars–mai) et l’automne (septembre–novembre) conviennent à presque tout. L’été est idéal pour la montagne et la côte, l’hiver pour le désert, les villes et le Toubkal enneigé."
+    ar: "الربيع (مارس–ماي) والخريف (شتنبر–نونبر) يناسبان كل شيء تقريبا. الصيف ممتاز للجبل والساحل، والشتاء للصحراء والمدن ولتوبقال المثلج."
+
+- id: weather-change
+  group: weather
+  q: { en: "What happens if the weather is bad?", fr: "Que se passe-t-il s’il fait mauvais ?", ar: "ماذا يحدث إذا كان الطقس سيئا؟" }
+  a:
+    en: "In the mountains the guide adapts the route or the day. If a trip cannot run safely, we offer another date or a refund."
+    fr: "En montagne, le guide adapte l’itinéraire ou le jour. Si un voyage ne peut pas se faire en sécurité, nous proposons une autre date ou un remboursement."
+    ar: "في الجبل يكيّف المرشد المسار أو اليوم. إذا تعذر تنظيم الرحلة بأمان، نقترح تاريخا آخر أو استرجاع المبلغ."

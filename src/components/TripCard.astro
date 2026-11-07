@@ -1,0 +1,92 @@
+---
+import Photo from './Photo.astro';
+import Icon from './Icon.astro';
+import Price from './Price.astro';
+import WishButton from './WishButton.astro';
+import { url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { categoryLabels, difficultyLabels } from '../i18n/catalog';
+import { durationBucket, durationLabel, isPrivateOnly, priceFrom, tripPhotos, type Trip } from '../lib/trips';
+
+interface Props {
+  trip: Trip;
+  lang: Lang;
+  /** Heading level inside the page outline. */
+  level?: 'h2' | 'h3';
+  sizes?: string;
+}
+const { trip, lang, level = 'h3', sizes = '(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw' } = Astro.props;
+const s = t(lang);
+const d = trip.data;
+const [cover] = await tripPhotos(trip);
+const href = url(lang, 'trips', trip.id);
+const price = priceFrom(trip);
+const H = level;
+const inc = [
+  d.includes.meals && { icon: 'meal' as const, label: s.card.meals },
+  d.includes.transport && { icon: 'car' as const, label: s.card.transport },
+  d.includes.nights && { icon: 'bed' as const, label: s.card.nights },
+].filter(Boolean) as { icon: 'meal' | 'car' | 'bed'; label: string }[];
+// Data for client-side filters on the trips page.
+const search = [d.title.en, d.title.fr, d.title.ar, d.startCity, d.endCity, ...d.mapStops.map((m) => m.name)].join(' ').toLowerCase();
+---
+<article
+  class="trip-card card group relative flex flex-col overflow-hidden"
+  data-trip={trip.id}
+  data-cat={d.category}
+  data-dur={durationBucket(trip)}
+  data-diff={d.difficulty}
+  data-city={d.startCity}
+  data-price={price}
+  data-days={d.days}
+  data-pop={d.popularity}
+  data-private={d.price.private ? '1' : '0'}
+  data-search={search}
+>
+  <div class="relative aspect-[4/3]">
+    <Photo photo={cover} lang={lang} sizes={sizes} widths={[400, 640, 800]} class="size-full" imgClass="transition-transform duration-700 ease-[var(--ease-out-soft)] group-hover:scale-[1.04]" />
+    <span class="absolute start-3 top-3 rounded-full bg-black/55 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+      {categoryLabels[d.category][lang]}
+    </span>
+    <WishButton slug={trip.id} lang={lang} class="absolute end-2 top-2 z-10" />
+  </div>
+
+  <div class="flex flex-1 flex-col p-5">
+    {inc.length > 0 && (
+      <p class="mb-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-medium text-success">
+        <span class="sr-only">{s.card.included}:</span>
+        {inc.map((i) => (
+          <span class="inline-flex items-center gap-1"><Icon name={i.icon} size={15} />{i.label}</span>
+        ))}
+      </p>
+    )}
+    <H class="text-h3 font-display">
+      <a href={href} class="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none">{d.title[lang]}</a>
+    </H>
+    <dl class="mt-3 grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 text-sm text-ink-2">
+      <dt class="sr-only">{s.card.duration}</dt>
+      <dd class="col-span-2 flex items-center gap-2"><Icon name="clock" size={16} class="text-ink-3" />{durationLabel(trip, lang)}</dd>
+      <dt class="sr-only">{s.card.start}</dt>
+      <dd class="col-span-2 flex items-center gap-2"><Icon name="pin" size={16} class="text-ink-3" />{s.card.start} {d.startCity}</dd>
+      <dt class="sr-only">{s.card.difficulty}</dt>
+      <dd class="col-span-2 flex items-center gap-2"><Icon name="mountain" size={16} class="text-ink-3" />{difficultyLabels[d.difficulty][lang]}{d.maxAltitude && <span dir="ltr"> · {d.maxAltitude.toLocaleString('en')} m</span>}</dd>
+    </dl>
+    <div class="mt-auto flex items-end justify-between gap-3 pt-5">
+      <p class="leading-tight">
+        <span class="block text-xs text-ink-3">{s.common.from}{isPrivateOnly(trip) && ` · ${s.card.privateOnly}`}</span>
+        <Price mad={price} lang={lang} class="font-display text-xl font-semibold" />
+        <span class="block text-xs text-ink-3">{s.common.perPerson}</span>
+      </p>
+      <span class="btn btn-brand pointer-events-none !min-h-10 !px-4 text-sm" aria-hidden="true">
+        {s.common.viewDetails} <Icon name="arrow" size={16} flip />
+      </span>
+    </div>
+  </div>
+</article>
+
+<style>
+  .trip-card:focus-within {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+</style>

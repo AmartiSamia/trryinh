@@ -11,7 +11,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Sunrise_from_Jebel_Toubkal.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQAAwAA4BaJYwCw7EOyEnQgKAA9nLlR/QmIdZlIY73I4LUr+pJddlnX3HQY/ZpRufC+22NgAA="
   },
   {
     "id": "toubkal-hikers",
@@ -25,7 +26,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Jebel_Toubkal_and_a_group_of_hikers.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAwAA4BaJQBOgBuQ30b/BxlgAP6XHrN5F24paMoiymW/DLpAnpA9+OybWRwIQciOz2pRB/WVAQvONX+vvdyxdqYcB52izqkI0vExAAA="
   },
   {
     "id": "toubkal-massif",
@@ -39,7 +41,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Jebel_Toubkal_in_Atlas_Mountains,_31.10.2022.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAwAA4BaJZgCdAECpGU5AAD8snI5KNJjPY9mWGCYLRnki0GqRoi8LfZl1yqEIrxKLUJq4QLwCkbR4IINBilfzzGHH47wPWsXgAAA"
   },
   {
     "id": "toubkal-summit",
@@ -53,7 +56,8 @@
     "licence": "CC BY-SA 3.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:Toubkal_summit.JPG",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAkAA4BaJQBOgB6Xn/MUeWsAAP7nrzpw3vOczebGQEzLsI4RCsZ7xi8Uqg+2SteC4Zx9pabrs0wnGnNWGIgA"
   },
   {
     "id": "toubkal-pyramid",
@@ -67,7 +71,8 @@
     "licence": "Public domain",
     "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
     "source": "https://commons.wikimedia.org/wiki/File:Toubkalpyramid.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAsAA4BaJbACdADcmvRWQTAAAMqu5aGN+GcS7tJC0SmEDHFIoW4SuYubtR4ynhF14nKEGkgTnGUjglAqpD28m6muLzEtDv3awmsmub4AAA=="
   },
   {
     "id": "toubkal-refuge",
@@ -81,7 +86,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:The_Toubkal_Refuge.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAsAA4BaJQBOgMXr7ciy6cTgAAD+9QLLKYb107pYXPw/g5vrtuR/gDXeOlGWXwklF2Ic1KrPnv6nvCZqbOwwU2OdADFjjD4JCDndEl0EHg3YAAA="
   },
   {
     "id": "toubkal-refuge-2",
@@ -95,7 +101,8 @@
     "licence": "CC BY-SA 2.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Refuge_du_Toubkal,_Morocco_2017_(36996966614).jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAsAA4BaJZwAAv+/eNYx9gAA/ojxLYxvnY+vy/QV/mME3xB613VGQLfymm1BYTmrmXO1WwhtHQoAAAA="
   },
   {
     "id": "toubkal-winter",
@@ -109,7 +116,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Mount_Toubkal_in_Winter.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAsAA4BaJaQAAmd74h3HmAAA4jf1xodTQIfHoGfL9SxnVRnq9twLPgus8rxTRBsVYz4qaiNL0GasxAPAYdS5LoXXvIZeUV2FBQAA"
   },
   {
     "id": "village-snow",
@@ -123,7 +131,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Village_under_snow.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQAAwAA4BaJYwCdAYstqvKuU0AAP7cuKb6PHCZAttvpbnowdXvs6jU3bnSxP8KIRw/L5kFywe4zBFg67Svo/duceO+L/AdrwwZWvW/R3DNBHm64AZ69iSPcOVXoMziy6LbQAAA"
   },
   {
     "id": "imlil",
@@ -137,7 +146,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Imlil,_high_atlas_mountains.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAsAA4BaJbACdAC2qh014AAA4eXjhAIsGzDm0vL4LyZ2FC8jR3daJZZEpS6Op4G2HjnJMfcevs+j2Xy92yERrUYdLHobOAekNiysAAA="
   },
   {
     "id": "imlil-2",
@@ -151,7 +161,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Atlas_mountains,_Imlil,_2022_10_30.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAwAA4BaJZACdAENqRDC9owAAP5liYQK96xgoSInSfFuZTQvcHZVREmi+zZU8rRDWHJCfLTaC372zUbGQAAA"
   },
   {
     "id": "imlil-3",
@@ -165,7 +176,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Imlil_village,_High_Atlas_Mountains.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwAA4BaJbACdACZ6oc2moAA/rIOaajgn9LbtH9BMKuWD5yu35d6puODk5HlL9Y/+Ez97Uy4vq4PljE7U88Pcn5+/7ZJTOzFZSOZmwAAAA=="
   },
   {
     "id": "imlil-valley",
@@ -179,7 +191,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Imlil_and_its_valley_and_way_to_Jbel_Toubkal_23.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACQAQCdASoQAAwAA4BaJYgCdABNOYAA/XUH5mTIVy2n47eISfrSmeXHRWuP4vAtFLjY4LlFTYmN/aaCilCtM7eVhW9YVLNiLVFSoQGwoyz/6AAA"
   },
   {
     "id": "aroumd",
@@ -193,7 +206,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:View_of_Aroumd.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABQAgCdASoQAAwAA4BaJYgCdH8AGZZBlczrWYAA/vAJCHvpxOmoU64VrLSkM3N7arVqQRIc/ROf1N7J9HTRkPvMuK6SyK5qcorqBkzXAAA="
   },
   {
     "id": "imlil-from-aroumd",
@@ -207,7 +221,8 @@
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "source": "https://commons.wikimedia.org/wiki/File:Overview_of_Imlil_from_Aroumd,_Morocco,_2008.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAsAA4BaJYwC7AERCxdHWMAA/gX7bgUQoGd8YJ7Tm4SS00+NseitSkWTomW2xeIN1F2/wkO4SkCKJfUAAA=="
   },
   {
     "id": "chamharouch",
@@ -221,7 +236,8 @@
     "licence": "CC BY-SA 3.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:Chamharouch.JPG",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAwAA4BaJZACdAELztNuSxwAAP7gC9HiLsLWsuDaV+qoe6PzYoMtz3GV57E7WrodBq0NElngUns1NQIPd4Yww8knzoBpr5UZhT6ab96pK3Eu7mDgAA=="
   },
   {
     "id": "lake-ifni",
@@ -235,7 +251,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Lake_Ifni.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAsAA4BaJQBOgB5UAg2HAAD+4AsPpUYhXkKMDb4nyIN3TkWusS0LFVATvK5JX5re5ikEEaUOvOcvzgAAAA=="
   },
   {
     "id": "tacheddirt",
@@ -249,7 +266,8 @@
     "licence": "Public domain",
     "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
     "source": "https://commons.wikimedia.org/wiki/File:Tacheddirt_morning.JPG",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAwAA4BaJQBYdiBj738l2eBAAOGD4wC1OU8gU/xF8+6Z33lRAmL9LNMUhtC+zouEN9NO4RTBBJIvF8s7TUgpZuIo+1WZWcab7NPZjAa4AA=="
   },
   {
     "id": "lepinay-refuge",
@@ -263,7 +281,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Refuge_de_L%C3%A9pinay_(ou_de_Tazaghart).jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAwAA4BaJYgAD5DlKdHIAP6Dzb1G5q64ljvRCKuwNGaj4eKe9AkP0VlmbV4vAQFtkDnCyv7MUF3jf0kcz9RGyeHNL9OpzpIwAAAA"
   },
   {
     "id": "atlas-hiking",
@@ -277,7 +296,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Atlas_Mountains,_Hiking.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAA4AA4BaJQBOgMXcwOD+sItj4ADLI9qMC7wRnd/HCcnrgZsgEpq0hVrZ+D0LKUb+o9S8RkKkqm8wsPD/WzVxosdlz2E2Qb7U7iBwR+43WTmdWF7lz9avY3MPKhtqDU2ila4A"
   },
   {
     "id": "imlil-mountains",
@@ -291,7 +311,8 @@
     "licence": "CC BY-SA 2.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Imlil-mountains-wwhyte.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABwAgCdASoQAAwAA4BaJYwCdH8BjABz2a9lUL8AAP6RhOcPxF8QS4wKjCmZfqApi2rlzr7PzTh9ke8btVlTTHAkZj/AAA=="
   },
   {
     "id": "mgoun-peak",
@@ -305,7 +326,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Mgoun_mountain_peak.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAwAgCdASoQAAoAA4BaJYgCdH8AGETxqMwjAAD+7bLzt68PaY9QBHHy+2Mdpj7BXpRqJXfkjhZfCHTFSSDb2QFgO/id5lUAAAA="
   },
   {
     "id": "mgoun-camp",
@@ -319,7 +341,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Mgoun,_base_camp_in_the_valley.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAsAA4BaJbACdLoAAfxRd1AAAP1SJ/Vhac5BkudcYLo5fSDPr4eSeYXOGPjV1vE5yURtRdIFPmCr4g/9jdlNmQ591xjswAA="
   },
   {
     "id": "mgoun-arous",
@@ -333,7 +356,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Ighil_M%27Goun_vu_depuis_Arous.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAwAA4BaJQBYdh8moqTWH4AAzexCjcJdr+lIiozUhoBnVVoELQd/KldpzW1UfkSvrbFl878YAAAA"
   },
   {
     "id": "ourika",
@@ -347,7 +371,8 @@
     "licence": "CC BY-SA 2.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Ourika_Valley_in_autumn_(11278077005).jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAsAA4BaJZgCdGuAApRVB7+egAD+eL+Gc1AxxDz5HWNfdtjzJaLJCqpe5sp94BecU4HtMTHTE6hUk5bQrUEoTHIAAA=="
   },
   {
     "id": "ourika-2",
@@ -361,7 +386,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Ourika_Valley_1.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkAA4BaJbACdADdRH5RrAD9vr9joIDHcRaBzKC+K6Vp9MWgA1XZmt5iOz5AKEaePdmyHyc4n64OWAAAAA=="
   },
   {
     "id": "setti-fatma",
@@ -375,7 +401,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Ourika_-_Setti_Fatma_-_Maroc_05.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAQCdASoQAAwAA4BaJQAATQv/ZM4TAAD+7vMK4w/hLlyvTxPxojCliZ2NrwSQSmpkBvYBeZFGNJM+N+6Md/ReMH+2qavNVlNT3QcvCIf68+zgUNpLpGl1kyqDN9OmCgAAAA=="
   },
   {
     "id": "merzouga-dunes",
@@ -389,7 +416,8 @@
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "source": "https://commons.wikimedia.org/wiki/File:The_Merzouga_dunes_of_Morocco.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAsAA4BaJbACdAD1cnG1BRDAAP6qBI2aJm4ks/O5Vhclx6om2YGlGGu0PWnIUdeSLFnnix69fAGPLJhzbcpkJf6gwy6IAAA="
   },
   {
     "id": "merzouga-sunrise",
@@ -403,7 +431,8 @@
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "source": "https://commons.wikimedia.org/wiki/File:Sunrise_on_the_Merzouga_Dunes.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAAsAA4BaJbACdADpJ/1UsAD3HtcTeVhoMiesISvZ9F5ZW2T3j4Zgzb2M0ufTAAejvuzAAAA="
   },
   {
     "id": "erg-chebbi-camels",
@@ -417,7 +446,8 @@
     "licence": "CC BY-SA 3.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:Camel_Tour_on_Erg_Chebbi_riding_across_the_dunes.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAAsAA4BaJbACdADwQysX4AD+afZ1x9oxVx/MxPpcdUh9hC9x2q/xx6vfa/QfFsuBQr0AAAA="
   },
   {
     "id": "desert-camp-2",
@@ -431,7 +461,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Merzouga_desert_camp.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoQAAkAA4BaJbACdADyNG0QAP68m+x/3aTRF56DJ/8shK6mmeb1knNnsmRZmjqoIfp9EuOwISST91LEBDkKK3XN0wTG930c9dWXndv+QAA="
   },
   {
     "id": "zagora",
@@ -445,7 +476,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Rgabi_zagora_draa_valley.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABQAgCdASoQAAsAA4BaJZgCdH8IwABZch0TIKQA/pFysuvI1u39e3RbMDnSKs6Dj0d84Tp2aSg6VZaCFxSN+VMtM7Lu0R3PB20o05WreirxQNeYlmhAAA=="
   },
   {
     "id": "draa-valley",
@@ -459,7 +491,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Draa_vally_in_Morocco_just_west_of_the_city_of_Zagora2.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAgCdASoQAAwAA4BaJbACdAEXfpOm97Yz0AAA/cEc/EMZNUQTaZRG6dis2xIX5I4M6ObAxQTCJPQGGqYFAnGt3BqP1PwgAw7oDawmiLRYbffYsWuj26lzz8jAAA=="
   },
   {
     "id": "agafay",
@@ -473,7 +506,8 @@
     "licence": "CC BY 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Agafay_Desert,_Morocco,_20250125_1752_7275.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQAAsAA4BaJZgCdAD0u1mjhAAA/ugzGveeEg3h0zLtKdE6dazMIxDmlRoG4y0TlAAAAA=="
   },
   {
     "id": "agafay-camels",
@@ -487,7 +521,8 @@
     "licence": "CC BY 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Dromedaries_in_the_Agafay_Desert,_Morocco,_20250125_1751_7271.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoQAAsAA4BaJZgCdH8AGBVUgBWAAP7e2qguaIFfs28X60yWMnMj/rkGxnxyEH0+bdH+LzQAAAA="
   },
   {
     "id": "ouzoud",
@@ -501,7 +536,8 @@
     "licence": "CC BY 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Ouzoud_Falls,_Morocco,_20250126_1357_7467.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAA4BaJYgCdAC4n6FJL6QA/Xjb+T0i7w9iYe05PKvqTV9hpDjqgNO28kzWPEKgrDzdA/lGxyRbUF8qHmA4hG+H1HLv/1THPlhITBQtGBYjP+WAAA=="
   },
   {
     "id": "ouzoud-2",
@@ -515,7 +551,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Ouzoud_waterfalls_In_spring-Morocco.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAwAA4BaJZQCdAEW09DkbXM2FAD+oQwwV5bqaKXSNmNBoxQF2rvgwYIP9UgKVXSYWWNJoI1uBEnuerk7B2UCASXartkRNByMAA=="
   },
   {
     "id": "essaouira",
@@ -529,7 +566,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Skala_du_Port,_Essaouira_01.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoQAAsAA4BaJYwCdAD0Y69hUAD+sBsCTeMtwmHTUTpjfwD1NfbRnDmI4hh6t8mAAAA="
   },
   {
     "id": "essaouira-port",
@@ -543,7 +581,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Port_of_Essaouira_02.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAsAA4BaJYwCdAEOy/g4o+AA/tc6AN4v9wT/XFHn8hp+WT9apOJmuflVHCTq29N+WATpPrSV4wU15xr2fwBJJRU5aLGMlzXAUk7An+V9Ui1QAAA="
   },
   {
     "id": "ait-benhaddou",
@@ -557,7 +596,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Ksar_A%C3%AFt_Benhaddou,_Marocco_(%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8,_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93).jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABwAgCdASoQAAoAA4BaJZgCdH8IwABVlBUqrQoAANv4Dn71oHOF1bSNRjbD2aqT/kQOooU3Uus80FKkzenIY4UuajK4MRumkhvwAA=="
   },
   {
     "id": "ait-benhaddou-camels",
@@ -571,7 +611,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Camels_at_A%C3%AFt_Benhaddou,_Saharan_caravan_route,_Morocco_(%D8%A2%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%91%D9%88,_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93).jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAA0AA4BaJZgCdAD7K7H+izAAAP6+aN4w4OsxwJnofeswYteYXj3Jp/F4a0MuV2yY+qVRgN+FWMfUCn1HLeGti3thpf4WZHFjVdDzHlmLBAAA"
   },
   {
     "id": "dades",
@@ -585,7 +626,8 @@
     "licence": "CC BY 2.0",
     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Dades_Gorge_-_Flickr_-_gailhampshire.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAkAA4BaJQBOgB6P9HP0MAD+5gbm/UcFroAM12VCWBijg4KzdFtA1JpOOOgYS0kbQjDRrBNrKFUAAAA="
   },
   {
     "id": "todra",
@@ -599,7 +641,8 @@
     "licence": "CC BY-SA 3.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:Todra_Gorge_Morning_2011.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAsAA4BaJaACdADcXFh7utQAAPKhj6EijLBwv4UbpspmO8l5xy338kGi3jR1C/gp1IhHnNMcm7BQq28dWN0xR5/ia4Z/NqpUWVMbBQzSTkTUa4mTClELvyagAA=="
   },
   {
     "id": "jemaa-sunset",
@@ -613,7 +656,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Jemaa_el-Fnaa_Marrakech_at_sunset.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAwAA4BaJYwC7AEVmrVHL/aAAP5kzZuuZHsTzgp+9xXwYe95FkU3yyuCKUO2Rdr+322Uiw4Haw0PP67W1Y5DTtAAAA=="
   },
   {
     "id": "jemaa-night",
@@ -627,7 +671,8 @@
     "licence": "CC BY 2.0",
     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Jemaa_el-Fnaa_at_night.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAsAA4BaJaACdAEPDVBU56AA/tBz66zLGCm3w1NaiAI0XfvLmdZ6v66zQg9SBsIJ3TgcRivIFEazAAA="
   },
   {
     "id": "bahia",
@@ -641,7 +686,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Bahia_Palace_large_court.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAsAA4BaJagCdAD8BOTVAADgNokdTt1NyCVmPDb99lmYk0A87rq7UNx613oY5snb86Tn3jNsTyRHxsQTNswK5ZoU3BamDdV50AAA"
   },
   {
     "id": "bahia-2",
@@ -655,7 +701,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Bahia_Palace_006.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAsAA4BaJZQCdAEPBLe70AAA/tzj9T3i3sY8ZB2Ok7+XrLwh9lL6m376yM2YtUY8n3rLxGUAAA=="
   },
   {
     "id": "souk-lanterns",
@@ -669,7 +716,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Oriental_hanging_lanterns._Souk_Haddadine,_Marrakech_Medina_(%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D8%AD%D8%AF%D8%A7%D8%AF%D9%8A%D9%86_%D9%85%D8%B1%D8%A7%D9%83%D8%B4).jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAQCdASoQAAwAA4BaJbACdADxrGAAAP71ocYGs3SBR69hNUoXqyQPaIj8KTWQnmnpG4BomAWoCVOp+yYqp6972WdSKhMbxnfwpgkTghljhWkT4qH9j4LQAAA="
   },
   {
     "id": "fes-tannery",
@@ -683,7 +731,8 @@
     "licence": "CC BY 2.0",
     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Fez_Chouara_Tannery_(54238811661).jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAAsAA4BaJaACdADPub98CQAA/sllR5ZkuIeDIDCYVdaFHBQcOpudcHWy/sCKqs0GVv46A2ftcko9goBxecX65UASATHZHUGZRH6Sg6S6XVOhgeN+1LMQAAA="
   },
   {
     "id": "fes-medina",
@@ -697,7 +746,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Medina_of_Fes,_Marocco.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAkAA4BaJZACdADhKdMsAADz81oAe04qzq6WIe2XHxsVvSXUpA1DjQ8Ry6qFluuonLIbJsrmGFnwAAA="
   },
   {
     "id": "chefchaouen",
@@ -711,7 +761,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Chefchaouen-the-blue-city-of-morocco-with-the-mountain-view-in-the-backrgound.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAsAA4BaJbACdACqa/qxESiAAP1CualrbxF35zlK5VHQIebRfrNohH91T+rkLHdsA4HW90ShL9cc8D19EBf3lbOZJXd0kFay//nI+bvg9/ou7lqOZkuAAAA="
   },
   {
     "id": "chefchaouen-2",
@@ -725,7 +776,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:2018_01_(Blue)_-_Chaouen.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsAA4BaJbACdAC5wvjQAAD8sm/pdgyCgmY0ecIvaIWmMbjIOu+WqVB8/flcVb7XD7PBLPP9e0FC09zlRlHBIBOHwAAA"
   },
   {
     "id": "tagine",
@@ -739,7 +791,8 @@
     "licence": "CC BY 2.0",
     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Moroccan_food-Chicken_tagine_with_preserved_lemons_and_olives-01.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQAgCdASoQAAwAA4BaJbACdADRs595miXAAP7yfUCrSossNhfkh+DDBXg5jHlbaW4hIDw51weZh3GmBZOzA3ZiLThCJ7sR2OxMXL+4OffHer/op60Yo5cbfPfIhWYVLyiEbwrdmyBOh2B0ctQYBIMWUZDEoAAA"
   },
   {
     "id": "mint-tea",
@@ -753,7 +806,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Mint_tea,_Marrakesh.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAsAA4BaJQBOgCKVTYnaShNoAP7vlGoSUDDZccx2XcYggnIbSTbFfAIGDOfkc6GJuuUquVViC42nErYm6cfdZW2pPYll2KYG6CEOEIudcAAA"
   },
   {
     "id": "balloon",
@@ -767,7 +821,8 @@
     "licence": "CC BY-SA 3.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:Ciel_d%27Afrique,_Royal_Ballooning_Flight_over_Marrakech.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAwAA4BaJZQCdBHABVJQ0ZgAAP64J6ifbaWn7kVim8wDaGKGNLYv5P/YkhfxI0YZj0aqwSPewawAslKBi8cW0uoZhh+yD6fJZV4B2YgqsQTXVTCCJH5lpQAAAA=="
   },
   {
     "id": "quad",
@@ -781,7 +836,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Merzouga_dune_quad_tour.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAwAA4BaJbACdAENpV/Bap5AAP72EKpMTVslK8hP3vMh6F98duMBpnS57nNc7JEOO0ZV3N1DFok21thW55iR9rfEZrM2af3tTxWtb7npAgVMVfd9JbuAAAA="
   },
   {
     "id": "hammam",
@@ -795,7 +851,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Hammam_Saffarin_DSCF6564.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAwAA4BaJQBOgMXSw2yp0YyAAPEtRWHISb9m5KUkfcDJBJ/HnJo4sG2i0N6UQea5kIujJpskbi2lANhKBR3kwVoKtMUpV898phXbEFkfQs/EAu4AAA=="
   },
   {
     "id": "horse-essaouira",
@@ -809,7 +866,8 @@
     "licence": "CC BY 2.0",
     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Horse_riding,_Essaouira,_Morocco.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAsAA4BaJZACdAEQLqSEJUAA/sX+QqUr+yhqZmnfkx7GX9VEA7nojTaHyjsrIQLvzS1uYi024AAA"
   },
   {
     "id": "palmeraie",
@@ -823,7 +881,8 @@
     "licence": "CC BY-SA 3.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:Palmeraie_de_Marrakech.JPG",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAwAA4BaJQBOgB9CkysJyTAA9m9ZtD23IR7wuCyg9XEH5RSP5+UQvvJknxGsbsmokO+dsRJ9riNyOv0a+HWtpmitnNjab5tVRsVrvDm9iYWQAAA="
   },
   {
     "id": "volubilis",
@@ -837,7 +896,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Ruins_of_Volubilis_Morocco.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsAA4BaJQBOgCHZf1lAxgAA/uq0QDnQblxnFMiHOdUI4Bm9ka7xgT1t0bWsbqkzBCR0HqcaIL3bFf3NNAoh0cqFZcoAAAA="
   },
   {
     "id": "rabat",
@@ -851,7 +911,8 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Rabat_-_Hassan_Tower_-_20170909103739.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQAAwAA4BaJbACdDBRAPcD49gA/qLq2NzKe3aClLVAxtWji3IjQ+t4WkZuCfwz9/RYg/dJ+KcQ/sn8uH4m29AHp25B2fhb2PW1IvyeuHJ91ABLZ5nZUQgLH2c2O/Y3IU6zNQjPgAA="
   },
   {
     "id": "meknes",
@@ -865,6 +926,7 @@
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Bab_Mansour_Meknes_2018_1.jpg",
-    "sourceName": "Wikimedia Commons"
+    "sourceName": "Wikimedia Commons",
+    "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAsAA4BaJYwCdADHfVUuogAAzh98Gl7xXmvav+USerE/mWzgoyPvonhaktJt0P6/BnwflhWxrbFTTesNIrHP/bcOzrQD4p2JJWr/JTMz4AAA"
   }
 ]

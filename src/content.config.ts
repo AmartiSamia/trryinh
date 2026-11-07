@@ -24,6 +24,8 @@ const photos = defineCollection({
       licenceUrl: z.string(),
       source: z.string().url(),
       sourceName: z.string(),
+      /** Tiny blurred preview (data URI) shown while the photo loads. */
+      placeholder: z.string(),
     }),
 });
 
