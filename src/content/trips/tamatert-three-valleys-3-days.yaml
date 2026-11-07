@@ -1,0 +1,82 @@
+# Source: hikingtoatlas.com "Tamatert Trek": 3 days, 2 guesthouse nights, from €138.
+# TODO(youssef): confirm price (1,450 MAD?), villages and walking times.
+category: trekking
+popularity: 60
+title:
+  en: Tamatert and the three valleys, 3 days
+  fr: Tamatert et les trois vallées, 3 jours
+  ar: تماترت والوديان الثلاثة، 3 أيام
+summary:
+  en: Village to village through the Imlil, Imnane and Ourika valleys. Guesthouse nights, terraced fields and easy-going mountain paths.
+  fr: De village en village entre les vallées d’Imlil, d’Imnane et de l’Ourika. Nuits en gîte, cultures en terrasses et sentiers de montagne sans difficulté.
+  ar: من قرية إلى قرية عبر وديان إمليل وإمنان وأوريكا. ليالٍ في دور الضيافة، حقول مدرجة ومسالك جبلية سهلة.
+about:
+  en: >-
+    The best trek if you want to see how people live in the High Atlas. You cross Tizi n’Tamatert
+    from Imlil into the Imnane valley, then over to the upper Ourika valley, sleeping in family
+    guesthouses. Walks are 4–6 hours a day on good paths, with tea stops in villages and views of
+    the Toubkal peaks behind you.
+  fr: >-
+    Le meilleur trek pour voir comment on vit dans le Haut Atlas. Vous passez le Tizi n’Tamatert
+    d’Imlil vers la vallée d’Imnane, puis rejoignez la haute vallée de l’Ourika, en dormant dans des
+    gîtes familiaux. 4 à 6 h de marche par jour sur de bons sentiers, avec des pauses thé dans les
+    villages et les sommets du Toubkal derrière vous.
+  ar: >-
+    أفضل رحلة لرؤية كيف يعيش الناس في الأطلس الكبير. تعبرون تيزي نتماترت من إمليل إلى وادي إمنان، ثم إلى
+    أعالي وادي أوريكا، وتبيتون في دور ضيافة عائلية. من 4 إلى 6 ساعات من المشي يوميا على مسالك جيدة، مع
+    استراحات شاي في القرى وقمم توبقال خلفكم.
+days: 3
+nights: 2
+difficulty: moderate
+startCity: Marrakech
+endCity: Marrakech
+maxAltitude: 2600
+bestMonths: [3, 4, 5, 6, 9, 10, 11]
+price: { shared: 1450 }
+includes: { meals: true, transport: true, nights: true }
+photos: [imlil-2, tacheddirt, imlil-3, ourika]
+highlights:
+  - { en: "Three valleys in three days", fr: "Trois vallées en trois jours", ar: "ثلاثة وديان في ثلاثة أيام" }
+  - { en: "Nights with Amazigh families", fr: "Nuits chez des familles amazighes", ar: "ليالٍ عند عائلات أمازيغية" }
+  - { en: "Good for families and first treks", fr: "Idéal en famille ou pour un premier trek", ar: "مناسبة للعائلات ولأول تجربة مشي" }
+itinerary:
+  - title: { en: "Imlil to the Imnane valley", fr: "D’Imlil à la vallée d’Imnane", ar: "من إمليل إلى وادي إمنان" }
+    text:
+      en: "Drive to Imlil, then walk up to Tizi n’Tamatert (2,279 m) and down into the Imnane valley."
+      fr: "Route vers Imlil, puis montée au Tizi n’Tamatert (2 279 m) et descente dans la vallée d’Imnane."
+      ar: "التوجه إلى إمليل، ثم الصعود إلى تيزي نتماترت (2279 م) والنزول إلى وادي إمنان."
+    drive: 1 h 45
+    walk: 4 h
+    altitude: 2279
+    sleep: { type: guesthouse, place: Imnane valley }
+    meals: [lunch, dinner]
+  - title: { en: "Over to the Ourika side", fr: "Vers le versant de l’Ourika", ar: "نحو جهة أوريكا" }
+    text:
+      en: "A higher pass towards the Ourika valley, through shepherds’ summer pastures."
+      fr: "Un col plus haut vers la vallée de l’Ourika, à travers les pâturages d’été des bergers."
+      ar: "ممر أعلى نحو وادي أوريكا عبر المراعي الصيفية للرعاة."
+    walk: 5–6 h
+    altitude: 2600
+    sleep: { type: guesthouse, place: Ourika valley }
+    meals: [breakfast, lunch, dinner]
+  - title: { en: "Down the valley to Marrakech", fr: "Descente de la vallée et Marrakech", ar: "النزول في الوادي إلى مراكش" }
+    text:
+      en: "A last morning walk down through the villages, then the car back to Marrakech."
+      fr: "Une dernière marche matinale à travers les villages, puis retour en voiture à Marrakech."
+      ar: "مشي صباحي أخير عبر القرى، ثم العودة بالسيارة إلى مراكش."
+    walk: 3 h
+    drive: 1 h 30
+    meals: [breakfast, lunch]
+included: [transport-marrakech, guide-mountain, meals-all, accommodation, muleteer]
+excluded: [drinks, tips, insurance, personal]
+pack: [boots, layers, rain-jacket, sun-kit, bottle, daypack]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "08:00"
+mapStops:
+  - { name: "Imlil", lat: 31.1366, lng: -7.9196, kind: start }
+  - { name: "Tizi n’Tamatert", lat: 31.1430, lng: -7.8960, kind: stop }
+  - { name: "Imnane valley", lat: 31.1560, lng: -7.8700, kind: sleep }
+  - { name: "Ourika valley", lat: 31.1900, lng: -7.7900, kind: sleep }

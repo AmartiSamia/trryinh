@@ -1,0 +1,80 @@
+# From the original site's TREKS list (zip not received; itinerary rebuilt from the standard route).
+# Market: ~€90–130 per person shared, from Marrakech.
+# TODO(youssef): confirm price, pickup time and that you run this 2-day version.
+category: trekking
+featured: true
+popularity: 90
+title:
+  en: Toubkal summit trek, 2 days
+  fr: Ascension du Toubkal en 2 jours
+  ar: صعود قمة توبقال في يومين
+summary:
+  en: The fast version of the Toubkal climb for fit walkers short on time. Up to the refuge on day one, summit and back to Marrakech on day two.
+  fr: La version rapide de l’ascension du Toubkal pour marcheurs en forme et pressés. Montée au refuge le premier jour, sommet et retour à Marrakech le second.
+  ar: النسخة السريعة لصعود توبقال للمتنزهين ذوي اللياقة الجيدة والوقت القصير. الصعود إلى الملجأ في اليوم الأول، ثم القمة والعودة إلى مراكش في اليوم الثاني.
+about:
+  en: >-
+    An early pickup in Marrakech gets you to Imlil for breakfast, then you walk up the Mizane valley
+    to the Toubkal refuge. The next morning you leave before dawn for the summit, come back to the
+    refuge and walk down to Imlil, where the car waits to take you back to Marrakech. Two big days:
+    choose this version only if you walk in the mountains regularly.
+  fr: >-
+    Départ tôt de Marrakech pour un petit-déjeuner à Imlil, puis montée par la vallée de la Mizane
+    jusqu’au refuge du Toubkal. Le lendemain, départ avant l’aube pour le sommet, retour au refuge et
+    descente à Imlil, où la voiture vous attend pour Marrakech. Deux grosses journées : à choisir
+    seulement si vous marchez régulièrement en montagne.
+  ar: >-
+    انطلاق مبكر من مراكش لتناول الفطور في إمليل، ثم الصعود عبر وادي ميزان إلى ملجأ توبقال. في الصباح
+    الموالي تنطلقون قبل الفجر نحو القمة، ثم تعودون إلى الملجأ وتنزلون إلى إمليل حيث تنتظركم السيارة
+    للعودة إلى مراكش. يومان شاقان: اختاروا هذه النسخة فقط إذا كنتم تمشون في الجبال بانتظام.
+days: 2
+nights: 1
+difficulty: hard
+startCity: Marrakech
+endCity: Marrakech
+maxAltitude: 4167
+bestMonths: [5, 6, 7, 8, 9, 10]
+price: { shared: 1150 }
+includes: { meals: true, transport: true, nights: true }
+photos: [toubkal-hikers, toubkal-refuge-2, toubkal-pyramid, imlil-valley]
+highlights:
+  - { en: "Toubkal summit (4,167 m) in a weekend", fr: "Le sommet du Toubkal (4 167 m) en un week-end", ar: "قمة توبقال (4167 م) في عطلة نهاية الأسبوع" }
+  - { en: "Night at the Toubkal refuge", fr: "Nuit au refuge du Toubkal", ar: "ليلة في ملجأ توبقال" }
+  - { en: "Transport, guide and meals included", fr: "Transport, guide et repas inclus", ar: "النقل والمرشد والوجبات مشمولة" }
+itinerary:
+  - title: { en: "Marrakech, Imlil and the refuge", fr: "Marrakech, Imlil et le refuge", ar: "مراكش، إمليل والملجأ" }
+    text:
+      en: "Early drive to Imlil, then a long climb through Aroumd and Sidi Chamharouch to the refuge. Lunch on the way, dinner and night at the refuge."
+      fr: "Route matinale vers Imlil, puis longue montée par Aroumd et Sidi Chamharouch jusqu’au refuge. Déjeuner en chemin, dîner et nuit au refuge."
+      ar: "انطلاق مبكر نحو إمليل، ثم صعود طويل عبر أرومد وسيدي شمهروش إلى الملجأ. الغداء في الطريق، والعشاء والمبيت في الملجأ."
+    drive: 1 h 45
+    walk: 6 h
+    altitude: 3207
+    sleep: { type: refuge, place: Toubkal refuge }
+    meals: [breakfast, lunch, dinner]
+  - title: { en: "Summit and back to Marrakech", fr: "Sommet et retour à Marrakech", ar: "القمة والعودة إلى مراكش" }
+    text:
+      en: "Pre-dawn start to the summit, back to the refuge for a late breakfast, then down to Imlil and drive to Marrakech in the evening."
+      fr: "Départ avant l’aube pour le sommet, retour au refuge pour un petit-déjeuner tardif, puis descente à Imlil et retour à Marrakech en soirée."
+      ar: "انطلاق قبل الفجر نحو القمة، العودة إلى الملجأ لفطور متأخر، ثم النزول إلى إمليل والعودة إلى مراكش مساءً."
+    walk: 9–10 h
+    altitude: 4167
+    meals: [breakfast, lunch]
+included: [transport-marrakech, guide-mountain, meals-all, refuge-night, muleteer]
+excluded: [drinks, sleeping-bag, tips, insurance, personal]
+pack: [boots, layers, rain-jacket, gloves-hat, headlamp, sun-kit, bottle, daypack, poles]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "06:30"
+goodToKnow:
+  - en: "Only for experienced walkers: you climb about 2,400 m in two days. If in doubt, take the 3-day trek."
+    fr: "Réservé aux marcheurs expérimentés : environ 2 400 m de dénivelé en deux jours. En cas de doute, choisissez le trek de 3 jours."
+    ar: "للمتنزهين ذوي الخبرة فقط: صعود حوالي 2400 متر في يومين. إذا كنتم مترددين، اختاروا رحلة الأيام الثلاثة."
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Imlil", lat: 31.1366, lng: -7.9196, kind: stop }
+  - { name: "Sidi Chamharouch", lat: 31.0958, lng: -7.9112, kind: stop }
+  - { name: "Toubkal refuge", lat: 31.0713, lng: -7.9139, kind: sleep }
+  - { name: "Toubkal summit", lat: 31.0597, lng: -7.9156, kind: summit }

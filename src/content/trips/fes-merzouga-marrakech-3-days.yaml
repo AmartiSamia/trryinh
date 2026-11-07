@@ -1,0 +1,81 @@
+# Market: not researched in the brief; typical shared offers ~€120–180.
+# TODO(youssef): confirm price, and whether you also run the 4-day version.
+category: desert
+popularity: 70
+title:
+  en: Fes to Marrakech via the Merzouga desert, 3 days
+  fr: De Fès à Marrakech par le désert de Merzouga, 3 jours
+  ar: من فاس إلى مراكش عبر صحراء مرزوكة، 3 أيام
+summary:
+  en: The best way to travel between Fes and Marrakech. Cedar forests of the Middle Atlas, a night in the Erg Chebbi dunes and the road of the kasbahs.
+  fr: La plus belle façon de relier Fès à Marrakech. Forêts de cèdres du Moyen Atlas, nuit dans les dunes de l’erg Chebbi et route des kasbahs.
+  ar: أجمل طريقة للتنقل بين فاس ومراكش. غابات الأرز في الأطلس المتوسط، ليلة في كثبان عرق الشبي وطريق القصبات.
+about:
+  en: >-
+    Instead of the train, cross the country. You leave Fes through Ifrane and the cedar forests of
+    the Middle Atlas, follow the Ziz valley down to the Sahara and ride camels to a camp in Erg
+    Chebbi. Then the Todra and Dades gorges, Ouarzazate and the Tichka pass bring you to Marrakech.
+    A 4-day version with more time on the way is possible on request.
+  fr: >-
+    Plutôt que le train, traversez le pays. Vous quittez Fès par Ifrane et les cèdres du Moyen Atlas,
+    suivez la vallée du Ziz jusqu’au Sahara et rejoignez à dos de dromadaire un camp de l’erg Chebbi.
+    Puis les gorges du Todra et du Dadès, Ouarzazate et le col du Tichka vous mènent à Marrakech.
+    Une version en 4 jours, plus tranquille, est possible sur demande.
+  ar: >-
+    بدلا من القطار، اعبروا البلد. تغادرون فاس عبر إفران وغابات الأرز في الأطلس المتوسط، وتتبعون وادي زيز
+    حتى الصحراء، ثم تركبون الجمال إلى مخيم في عرق الشبي. بعد ذلك تقودكم مضايق تودغى ودادس وورزازات وممر
+    تيشكا إلى مراكش. نسخة من 4 أيام بوقت أكثر في الطريق ممكنة عند الطلب.
+days: 3
+nights: 2
+difficulty: easy
+startCity: Fes
+endCity: Marrakech
+bestMonths: [3, 4, 5, 9, 10, 11, 12]
+price: { shared: 1500, private: 3200 }
+includes: { meals: true, transport: true, nights: true }
+photos: [merzouga-dunes, erg-chebbi-camels, todra, fes-medina]
+highlights:
+  - { en: "Fes to Marrakech without backtracking", fr: "De Fès à Marrakech sans retour en arrière", ar: "من فاس إلى مراكش دون عودة إلى الوراء" }
+  - { en: "Cedar forests and Barbary macaques near Azrou", fr: "Forêts de cèdres et macaques près d’Azrou", ar: "غابات الأرز وقردة المكاك قرب أزرو" }
+  - { en: "A night in the Erg Chebbi dunes", fr: "Une nuit dans les dunes de l’erg Chebbi", ar: "ليلة في كثبان عرق الشبي" }
+itinerary:
+  - title: { en: "Fes, Middle Atlas and Merzouga", fr: "Fès, Moyen Atlas et Merzouga", ar: "فاس، الأطلس المتوسط ومرزوكة" }
+    text:
+      en: "Via Ifrane, the cedar forest, Midelt and the Ziz valley to Merzouga. Camel ride at sunset and night at camp."
+      fr: "Par Ifrane, la forêt de cèdres, Midelt et la vallée du Ziz jusqu’à Merzouga. Dromadaires au coucher du soleil et nuit au camp."
+      ar: "عبر إفران وغابة الأرز وميدلت ووادي زيز إلى مرزوكة. جولة على الجمال عند الغروب ومبيت في المخيم."
+    drive: 8–9 h with stops
+    sleep: { type: camp, place: Erg Chebbi }
+    meals: [dinner]
+  - title: { en: "Todra and Dades gorges", fr: "Gorges du Todra et du Dadès", ar: "مضايق تودغى ودادس" }
+    text:
+      en: "Sunrise on the dunes, then west to the Todra gorge and the Dades valley."
+      fr: "Lever du soleil sur les dunes, puis vers l’ouest par les gorges du Todra jusqu’à la vallée du Dadès."
+      ar: "الشروق فوق الكثبان، ثم غربا عبر مضيق تودغى إلى وادي دادس."
+    drive: 5 h
+    sleep: { type: hotel, place: Dades valley }
+    meals: [breakfast, dinner]
+  - title: { en: "Ouarzazate, Aït Benhaddou and Marrakech", fr: "Ouarzazate, Aït Benhaddou et Marrakech", ar: "ورزازات، آيت بن حدو ومراكش" }
+    text:
+      en: "Through the Valley of Roses and Ouarzazate, a stop at Aït Benhaddou, and over the Tichka pass to Marrakech."
+      fr: "Par la vallée des Roses et Ouarzazate, arrêt à Aït Benhaddou, puis le col du Tichka jusqu’à Marrakech."
+      ar: "عبر وادي الورود وورزازات، توقف في آيت بن حدو، ثم ممر تيشكا إلى مراكش."
+    drive: 7–8 h with stops
+    meals: [breakfast]
+included: [pickup-hotel, transport, driver, camel, desert-camp, breakfast-dinner, accommodation]
+excluded: [lunches, drinks, entrance-fees-ex, tips, insurance, personal]
+pack: [scarf, sun-kit, warm-night, comfy-shoes, passport, cash]
+meetingPoint:
+  en: "Your riad or hotel in Fes."
+  fr: "Votre riad ou hôtel à Fès."
+  ar: "الرياض أو الفندق في فاس."
+pickupTime: "07:30"
+mapStops:
+  - { name: "Fes", lat: 34.0331, lng: -5.0003, kind: start }
+  - { name: "Ifrane", lat: 33.5228, lng: -5.1100, kind: stop }
+  - { name: "Midelt", lat: 32.6852, lng: -4.7451, kind: stop }
+  - { name: "Merzouga, Erg Chebbi", lat: 31.1300, lng: -4.0000, kind: sleep }
+  - { name: "Todra gorge", lat: 31.5890, lng: -5.5900, kind: stop }
+  - { name: "Dades valley", lat: 31.4580, lng: -5.9280, kind: sleep }
+  - { name: "Aït Benhaddou", lat: 31.0472, lng: -7.1319, kind: stop }
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: end }

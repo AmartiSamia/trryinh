@@ -1,0 +1,54 @@
+# Market: not given in the brief; typical private day ~€90–150 per car.
+# TODO(youssef): confirm prices.
+category: culture
+popularity: 68
+title:
+  en: Chefchaouen day trip from Fes
+  fr: Excursion à Chefchaouen depuis Fès
+  ar: رحلة يومية إلى شفشاون من فاس
+summary:
+  en: The blue town of the Rif mountains. A day of free wandering in Chefchaouen’s painted lanes, with a viewpoint walk to the Spanish mosque at sunset.
+  fr: La ville bleue des montagnes du Rif. Une journée libre dans les ruelles peintes de Chefchaouen, avec une marche jusqu’à la mosquée espagnole au coucher du soleil.
+  ar: المدينة الزرقاء في جبال الريف. يوم حر في أزقة شفشاون الملونة، مع مشي إلى المسجد الإسباني عند الغروب.
+about:
+  en: >-
+    About three and a half hours from Fes through olive groves and the Rif foothills. In
+    Chefchaouen you have the day to explore the blue medina, the kasbah and the Outa el-Hammam
+    square, and to walk up to the Spanish mosque for the view. Drive back to Fes in the evening.
+  fr: >-
+    Environ trois heures et demie depuis Fès, à travers oliveraies et contreforts du Rif. À Chefchaouen,
+    la journée est à vous pour explorer la médina bleue, la kasbah et la place Outa el-Hammam, et
+    monter à la mosquée espagnole pour la vue. Retour à Fès le soir.
+  ar: >-
+    حوالي ثلاث ساعات ونصف من فاس عبر حقول الزيتون وسفوح الريف. في شفشاون لديكم اليوم لاستكشاف المدينة
+    الزرقاء والقصبة وساحة وطاء الحمام، والصعود إلى المسجد الإسباني للاستمتاع بالمنظر. العودة إلى فاس مساءً.
+days: 1
+difficulty: easy
+startCity: Fes
+endCity: Fes
+bestMonths: [3, 4, 5, 6, 9, 10, 11]
+price: { private: 1300 }
+includes: { meals: false, transport: true, nights: false }
+photos: [chefchaouen, chefchaouen-2]
+highlights:
+  - { en: "The blue medina of Chefchaouen", fr: "La médina bleue de Chefchaouen", ar: "مدينة شفشاون الزرقاء" }
+  - { en: "Sunset from the Spanish mosque", fr: "Coucher de soleil depuis la mosquée espagnole", ar: "الغروب من المسجد الإسباني" }
+  - { en: "Private car and driver", fr: "Voiture privée avec chauffeur", ar: "سيارة خاصة مع سائق" }
+itinerary:
+  - title: { en: "Chefchaouen", fr: "Chefchaouen", ar: "شفشاون" }
+    text:
+      en: "Drive to Chefchaouen, free day in the medina, viewpoint walk, drive back to Fes."
+      fr: "Route vers Chefchaouen, journée libre dans la médina, marche au point de vue, retour à Fès."
+      ar: "الطريق إلى شفشاون، يوم حر في المدينة، مشي إلى نقطة المشاهدة، ثم العودة إلى فاس."
+    drive: 3 h 30 each way
+included: [pickup-hotel, transport, driver]
+excluded: [guide-local, lunch, drinks, tips]
+pack: [comfy-shoes, sun-kit, layers, cash]
+meetingPoint:
+  en: "Your riad or hotel in Fes."
+  fr: "Votre riad ou hôtel à Fès."
+  ar: "الرياض أو الفندق في فاس."
+pickupTime: "08:00"
+mapStops:
+  - { name: "Fes", lat: 34.0331, lng: -5.0003, kind: start }
+  - { name: "Chefchaouen", lat: 35.1688, lng: -5.2636, kind: stop }

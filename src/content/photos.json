@@ -1,0 +1,870 @@
+[
+  {
+    "id": "toubkal-sunrise",
+    "file": "../assets/photos/toubkal-sunrise.jpg",
+    "alt": {
+      "en": "Sunrise seen from the summit of Jebel Toubkal, with the metal summit pyramid in silhouette",
+      "fr": "Lever du soleil depuis le sommet du Toubkal, la pyramide métallique en contre-jour",
+      "ar": "شروق الشمس من قمة جبل توبقال مع ظل الهرم المعدني"
+    },
+    "author": "WoodlWizard77",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sunrise_from_Jebel_Toubkal.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "toubkal-hikers",
+    "file": "../assets/photos/toubkal-hikers.jpg",
+    "alt": {
+      "en": "A group of hikers on the trail below the snowy ridges of Jebel Toubkal",
+      "fr": "Un groupe de randonneurs sur le sentier sous les crêtes enneigées du Toubkal",
+      "ar": "مجموعة من المتنزهين على المسار تحت قمم توبقال المكسوة بالثلج"
+    },
+    "author": "Kurinurm",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jebel_Toubkal_and_a_group_of_hikers.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "toubkal-massif",
+    "file": "../assets/photos/toubkal-massif.jpg",
+    "alt": {
+      "en": "The Toubkal massif with snow on its high ridges under a blue sky",
+      "fr": "Le massif du Toubkal, crêtes enneigées sous un ciel bleu",
+      "ar": "جبال توبقال وقممها المكسوة بالثلج تحت سماء زرقاء"
+    },
+    "author": "Kaur Virunurm",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jebel_Toubkal_in_Atlas_Mountains,_31.10.2022.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "toubkal-summit",
+    "file": "../assets/photos/toubkal-summit.jpg",
+    "alt": {
+      "en": "View from the summit of Toubkal over a sea of clouds and the High Atlas ridges",
+      "fr": "Vue du sommet du Toubkal sur une mer de nuages et les crêtes du Haut Atlas",
+      "ar": "منظر من قمة توبقال فوق بحر من الغيوم وقمم الأطلس الكبير"
+    },
+    "author": "Knocklee",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Toubkal_summit.JPG",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "toubkal-pyramid",
+    "file": "../assets/photos/toubkal-pyramid.jpg",
+    "alt": {
+      "en": "The metal pyramid that marks the 4,167 m summit of Toubkal",
+      "fr": "La pyramide métallique qui marque le sommet du Toubkal à 4 167 m",
+      "ar": "الهرم المعدني الذي يحدد قمة توبقال على ارتفاع 4167 مترا"
+    },
+    "author": "Pebrinic at English Wikipedia",
+    "licence": "Public domain",
+    "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Toubkalpyramid.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "toubkal-refuge",
+    "file": "../assets/photos/toubkal-refuge.jpg",
+    "alt": {
+      "en": "The stone Toubkal refuge at 3,207 m, below rocky slopes",
+      "fr": "Le refuge du Toubkal en pierre, à 3 207 m, sous des pentes rocheuses",
+      "ar": "ملجأ توبقال الحجري على ارتفاع 3207 أمتار تحت منحدرات صخرية"
+    },
+    "author": "Mohamed Ilyas Errami",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Toubkal_Refuge.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "toubkal-refuge-2",
+    "file": "../assets/photos/toubkal-refuge-2.jpg",
+    "alt": {
+      "en": "The Toubkal refuges at the head of the valley, seen from the trail",
+      "fr": "Les refuges du Toubkal au fond de la vallée, vus depuis le sentier",
+      "ar": "ملاجئ توبقال في أعلى الوادي كما تُرى من المسار"
+    },
+    "author": "::ErWin",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Refuge_du_Toubkal,_Morocco_2017_(36996966614).jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "toubkal-winter",
+    "file": "../assets/photos/toubkal-winter.jpg",
+    "alt": {
+      "en": "Climbers crossing deep snow on the way up Toubkal in winter",
+      "fr": "Des alpinistes dans la neige profonde en montant vers le Toubkal en hiver",
+      "ar": "متسلقون يعبرون الثلج العميق في الطريق إلى توبقال شتاءً"
+    },
+    "author": "Anass ERRIHANI",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mount_Toubkal_in_Winter.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "village-snow",
+    "file": "../assets/photos/village-snow.jpg",
+    "alt": {
+      "en": "A snowy street in a High Atlas village in winter",
+      "fr": "Une rue enneigée d’un village du Haut Atlas en hiver",
+      "ar": "شارع مغطى بالثلج في قرية من قرى الأطلس الكبير في الشتاء"
+    },
+    "author": "Musguide",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Village_under_snow.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "imlil",
+    "file": "../assets/photos/imlil.jpg",
+    "alt": {
+      "en": "Imlil and its walnut trees below the snow-capped peaks of the High Atlas",
+      "fr": "Imlil et ses noyers sous les sommets enneigés du Haut Atlas",
+      "ar": "إمليل وأشجار الجوز تحت قمم الأطلس الكبير المكسوة بالثلج"
+    },
+    "author": "amine iken",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Imlil,_high_atlas_mountains.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "imlil-2",
+    "file": "../assets/photos/imlil-2.jpg",
+    "alt": {
+      "en": "The Imlil valley with terraced villages and red mountain slopes",
+      "fr": "La vallée d’Imlil, ses villages en terrasses et ses pentes rouges",
+      "ar": "وادي إمليل بقراه المدرجة ومنحدراته الحمراء"
+    },
+    "author": "Kaur Virunurm",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Atlas_mountains,_Imlil,_2022_10_30.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "imlil-3",
+    "file": "../assets/photos/imlil-3.jpg",
+    "alt": {
+      "en": "Earth houses of an Imlil village built on the hillside",
+      "fr": "Maisons en terre d’un village d’Imlil accrochées à la pente",
+      "ar": "بيوت طينية في قرية بإمليل مبنية على سفح الجبل"
+    },
+    "author": "Mounir Neddi",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Imlil_village,_High_Atlas_Mountains.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "imlil-valley",
+    "file": "../assets/photos/imlil-valley.jpg",
+    "alt": {
+      "en": "The valley above Imlil on the way to Toubkal",
+      "fr": "La vallée au-dessus d’Imlil sur la route du Toubkal",
+      "ar": "الوادي فوق إمليل في الطريق إلى توبقال"
+    },
+    "author": "Erokhin",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Imlil_and_its_valley_and_way_to_Jbel_Toubkal_23.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "aroumd",
+    "file": "../assets/photos/aroumd.jpg",
+    "alt": {
+      "en": "The village of Aroumd on its rocky spur above the valley",
+      "fr": "Le village d’Aroumd sur son éperon rocheux au-dessus de la vallée",
+      "ar": "قرية أرومد على نتوئها الصخري فوق الوادي"
+    },
+    "author": "Macabe5387",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:View_of_Aroumd.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "imlil-from-aroumd",
+    "file": "../assets/photos/imlil-from-aroumd.jpg",
+    "alt": {
+      "en": "A village with green terraces, seen from the trail near Aroumd",
+      "fr": "Un village et ses terrasses vertes, vu depuis le sentier près d’Aroumd",
+      "ar": "قرية بمدرجاتها الخضراء كما تُرى من المسار قرب أرومد"
+    },
+    "author": "DimiTalen",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Overview_of_Imlil_from_Aroumd,_Morocco,_2008.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "chamharouch",
+    "file": "../assets/photos/chamharouch.jpg",
+    "alt": {
+      "en": "The shrine of Sidi Chamharouch and its white rock in the Mizane valley",
+      "fr": "Le sanctuaire de Sidi Chamharouch et son rocher blanc dans la vallée de la Mizane",
+      "ar": "ضريح سيدي شمهروش وصخرته البيضاء في وادي ميزان"
+    },
+    "author": "Knocklee",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chamharouch.JPG",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "lake-ifni",
+    "file": "../assets/photos/lake-ifni.jpg",
+    "alt": {
+      "en": "Lake Ifni, a turquoise lake between steep mountain walls",
+      "fr": "Le lac d’Ifni, turquoise entre de hautes parois",
+      "ar": "بحيرة إفني الفيروزية بين جدران جبلية شاهقة"
+    },
+    "author": "Anass ERRIHANI",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lake_Ifni.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "tacheddirt",
+    "file": "../assets/photos/tacheddirt.jpg",
+    "alt": {
+      "en": "The terraced village of Tacheddirt in the morning light",
+      "fr": "Le village en terrasses de Tacheddirt dans la lumière du matin",
+      "ar": "قرية تاشديرت المدرجة في ضوء الصباح"
+    },
+    "author": "Michael Smith Lionfishy at English Wikipedia",
+    "licence": "Public domain",
+    "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Tacheddirt_morning.JPG",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "lepinay-refuge",
+    "file": "../assets/photos/lepinay-refuge.jpg",
+    "alt": {
+      "en": "A small stone refuge on a green slope in the Azzaden valley area",
+      "fr": "Un petit refuge en pierre sur une pente verte, vers la vallée d’Azzaden",
+      "ar": "ملجأ حجري صغير على منحدر أخضر قرب وادي أزادن"
+    },
+    "author": "Belkasry",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Refuge_de_L%C3%A9pinay_(ou_de_Tazaghart).jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "atlas-hiking",
+    "file": "../assets/photos/atlas-hiking.jpg",
+    "alt": {
+      "en": "A hiker on a rocky path in a snowy High Atlas valley",
+      "fr": "Un randonneur sur un sentier rocheux dans une vallée enneigée du Haut Atlas",
+      "ar": "متنزه على مسار صخري في وادٍ مثلج من الأطلس الكبير"
+    },
+    "author": "Elh.yassine",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Atlas_Mountains,_Hiking.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "imlil-mountains",
+    "file": "../assets/photos/imlil-mountains.jpg",
+    "alt": {
+      "en": "Rocky mountains and a village above Imlil",
+      "fr": "Montagnes rocheuses et village au-dessus d’Imlil",
+      "ar": "جبال صخرية وقرية فوق إمليل"
+    },
+    "author": "William Whyte from Dublin, Ireland",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Imlil-mountains-wwhyte.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "mgoun-peak",
+    "file": "../assets/photos/mgoun-peak.jpg",
+    "alt": {
+      "en": "The long ridge of M’Goun under a pink evening sky",
+      "fr": "La longue crête du M’Goun sous un ciel rose du soir",
+      "ar": "السلسلة الطويلة لجبل مكون تحت سماء المساء الوردية"
+    },
+    "author": "AndyScott",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mgoun_mountain_peak.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "mgoun-camp",
+    "file": "../assets/photos/mgoun-camp.jpg",
+    "alt": {
+      "en": "Tents in a green valley at the foot of M’Goun",
+      "fr": "Tentes dans une vallée verte au pied du M’Goun",
+      "ar": "خيام في وادٍ أخضر عند سفح مكون"
+    },
+    "author": "AndyScott",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mgoun,_base_camp_in_the_valley.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "mgoun-arous",
+    "file": "../assets/photos/mgoun-arous.jpg",
+    "alt": {
+      "en": "Snowy M’Goun seen from a valley with green fields",
+      "fr": "Le M’Goun enneigé vu depuis une vallée aux champs verts",
+      "ar": "جبل مكون المكسو بالثلج من وادٍ ذي حقول خضراء"
+    },
+    "author": "Migeo53",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ighil_M%27Goun_vu_depuis_Arous.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "ourika",
+    "file": "../assets/photos/ourika.jpg",
+    "alt": {
+      "en": "The Ourika valley in autumn, with a village among trees",
+      "fr": "La vallée de l’Ourika en automne, un village parmi les arbres",
+      "ar": "وادي أوريكا في الخريف وقرية بين الأشجار"
+    },
+    "author": "Mzximvs VdB from Brussels, belgium",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ourika_Valley_in_autumn_(11278077005).jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "ourika-2",
+    "file": "../assets/photos/ourika-2.jpg",
+    "alt": {
+      "en": "Wooded slopes of the Ourika valley under a blue sky",
+      "fr": "Pentes boisées de la vallée de l’Ourika sous un ciel bleu",
+      "ar": "منحدرات وادي أوريكا المشجرة تحت سماء زرقاء"
+    },
+    "author": "Zahra IMEHLI",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ourika_Valley_1.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "setti-fatma",
+    "file": "../assets/photos/setti-fatma.jpg",
+    "alt": {
+      "en": "A waterfall tumbling over rocks near Setti Fatma",
+      "fr": "Une cascade sur les rochers près de Setti Fatma",
+      "ar": "شلال يتدفق فوق الصخور قرب ستي فاطمة"
+    },
+    "author": "Abbas9",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ourika_-_Setti_Fatma_-_Maroc_05.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "merzouga-dunes",
+    "file": "../assets/photos/merzouga-dunes.jpg",
+    "alt": {
+      "en": "Orange sand dunes of Erg Chebbi near Merzouga",
+      "fr": "Les dunes orangées de l’erg Chebbi près de Merzouga",
+      "ar": "كثبان رملية برتقالية في عرق الشبي قرب مرزوكة"
+    },
+    "author": "Mustang Joe",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Merzouga_dunes_of_Morocco.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "merzouga-sunrise",
+    "file": "../assets/photos/merzouga-sunrise.jpg",
+    "alt": {
+      "en": "A high dune of Erg Chebbi glowing at sunrise",
+      "fr": "Une haute dune de l’erg Chebbi au lever du soleil",
+      "ar": "كثيب مرتفع في عرق الشبي عند شروق الشمس"
+    },
+    "author": "Mustang Joe",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Sunrise_on_the_Merzouga_Dunes.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "erg-chebbi-camels",
+    "file": "../assets/photos/erg-chebbi-camels.jpg",
+    "alt": {
+      "en": "The shadows of a camel caravan on the dunes of Erg Chebbi",
+      "fr": "Les ombres d’une caravane de dromadaires sur les dunes de l’erg Chebbi",
+      "ar": "ظلال قافلة جمال على كثبان عرق الشبي"
+    },
+    "author": "Johannes K Becker",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Camel_Tour_on_Erg_Chebbi_riding_across_the_dunes.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "desert-camp-2",
+    "file": "../assets/photos/desert-camp-2.jpg",
+    "alt": {
+      "en": "White tents of a desert camp among the dunes near Merzouga",
+      "fr": "Les tentes blanches d’un camp dans les dunes près de Merzouga",
+      "ar": "خيام بيضاء لمخيم صحراوي بين الكثبان قرب مرزوكة"
+    },
+    "author": "Isabeldianamadrid",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Merzouga_desert_camp.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "zagora",
+    "file": "../assets/photos/zagora.jpg",
+    "alt": {
+      "en": "An earth kasbah among palm trees in the Draa valley near Zagora",
+      "fr": "Une kasbah en terre parmi les palmiers de la vallée du Drâa, près de Zagora",
+      "ar": "قصبة طينية بين النخيل في وادي درعة قرب زاكورة"
+    },
+    "author": "Hammou bakkass",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rgabi_zagora_draa_valley.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "draa-valley",
+    "file": "../assets/photos/draa-valley.jpg",
+    "alt": {
+      "en": "An old earth tower in the stony landscape of the Draa valley",
+      "fr": "Une vieille tour en terre dans le paysage de la vallée du Drâa",
+      "ar": "برج طيني قديم في وادي درعة"
+    },
+    "author": "Sonty567",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Draa_vally_in_Morocco_just_west_of_the_city_of_Zagora2.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "agafay",
+    "file": "../assets/photos/agafay.jpg",
+    "alt": {
+      "en": "The stony hills of the Agafay desert with a camel caravan in the distance",
+      "fr": "Les collines caillouteuses du désert d’Agafay, une caravane au loin",
+      "ar": "تلال صحراء أكفاي الحجرية وقافلة جمال في الأفق"
+    },
+    "author": "Jakub Hałun",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Agafay_Desert,_Morocco,_20250125_1752_7275.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "agafay-camels",
+    "file": "../assets/photos/agafay-camels.jpg",
+    "alt": {
+      "en": "Resting camels in the Agafay desert near Marrakech",
+      "fr": "Dromadaires au repos dans le désert d’Agafay, près de Marrakech",
+      "ar": "جمال تستريح في صحراء أكفاي قرب مراكش"
+    },
+    "author": "Jakub Hałun",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dromedaries_in_the_Agafay_Desert,_Morocco,_20250125_1751_7271.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "ouzoud",
+    "file": "../assets/photos/ouzoud.jpg",
+    "alt": {
+      "en": "The Ouzoud waterfalls falling into a rocky gorge",
+      "fr": "Les cascades d’Ouzoud tombant dans une gorge rocheuse",
+      "ar": "شلالات أوزود تنحدر في مضيق صخري"
+    },
+    "author": "Jakub Hałun",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ouzoud_Falls,_Morocco,_20250126_1357_7467.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "ouzoud-2",
+    "file": "../assets/photos/ouzoud-2.jpg",
+    "alt": {
+      "en": "Ouzoud waterfalls framed by green vegetation in spring",
+      "fr": "Les cascades d’Ouzoud entourées de verdure au printemps",
+      "ar": "شلالات أوزود تحيط بها الخضرة في الربيع"
+    },
+    "author": "Kasmii",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ouzoud_waterfalls_In_spring-Morocco.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "essaouira",
+    "file": "../assets/photos/essaouira.jpg",
+    "alt": {
+      "en": "The sea bastion of the port of Essaouira with seagulls",
+      "fr": "Le bastion de la Skala du port d’Essaouira et ses mouettes",
+      "ar": "برج الميناء البحري في الصويرة والنوارس"
+    },
+    "author": "Adam Harangozó",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Skala_du_Port,_Essaouira_01.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "essaouira-port",
+    "file": "../assets/photos/essaouira-port.jpg",
+    "alt": {
+      "en": "Fish stalls and people at the port of Essaouira",
+      "fr": "Étals de poisson et passants au port d’Essaouira",
+      "ar": "أكشاك السمك والمارة في ميناء الصويرة"
+    },
+    "author": "Adam Harangozó",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Port_of_Essaouira_02.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "ait-benhaddou",
+    "file": "../assets/photos/ait-benhaddou.jpg",
+    "alt": {
+      "en": "The earth ksar of Aït Benhaddou rising above palm trees",
+      "fr": "Le ksar en terre d’Aït Benhaddou au-dessus des palmiers",
+      "ar": "قصر آيت بن حدو الطيني يعلو فوق النخيل"
+    },
+    "author": "Petar Milošević",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ksar_A%C3%AFt_Benhaddou,_Marocco_(%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8,_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93).jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "ait-benhaddou-camels",
+    "file": "../assets/photos/ait-benhaddou-camels.jpg",
+    "alt": {
+      "en": "Two camels in front of the ksar of Aït Benhaddou",
+      "fr": "Deux dromadaires devant le ksar d’Aït Benhaddou",
+      "ar": "جملان أمام قصر آيت بن حدو"
+    },
+    "author": "Petar Milošević",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Camels_at_A%C3%AFt_Benhaddou,_Saharan_caravan_route,_Morocco_(%D8%A2%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%91%D9%88,_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93).jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "dades",
+    "file": "../assets/photos/dades.jpg",
+    "alt": {
+      "en": "Red rock walls of the Dades gorges",
+      "fr": "Les parois de roche rouge des gorges du Dadès",
+      "ar": "جدران صخرية حمراء في مضايق دادس"
+    },
+    "author": "gailhampshire from Cradley, Malvern, U.K",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dades_Gorge_-_Flickr_-_gailhampshire.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "todra",
+    "file": "../assets/photos/todra.jpg",
+    "alt": {
+      "en": "The high red cliffs of the Todra gorge under a blue sky",
+      "fr": "Les hautes falaises rouges des gorges du Todra",
+      "ar": "جروف مضيق تودغى الحمراء العالية"
+    },
+    "author": "Bjørn Christian Tørrissen",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Todra_Gorge_Morning_2011.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "jemaa-sunset",
+    "file": "../assets/photos/jemaa-sunset.jpg",
+    "alt": {
+      "en": "Jemaa el-Fna square at dusk with the Koutoubia minaret behind",
+      "fr": "La place Jemaa el-Fna au crépuscule, la Koutoubia au fond",
+      "ar": "ساحة جامع الفنا عند الغروب وصومعة الكتبية في الخلف"
+    },
+    "author": "Herokk",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jemaa_el-Fnaa_Marrakech_at_sunset.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "jemaa-night",
+    "file": "../assets/photos/jemaa-night.jpg",
+    "alt": {
+      "en": "Food stalls and lights on Jemaa el-Fna square at night",
+      "fr": "Les stands et lumières de la place Jemaa el-Fna la nuit",
+      "ar": "أكشاك الطعام وأضواء ساحة جامع الفنا ليلاً"
+    },
+    "author": "procsilas",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jemaa_el-Fnaa_at_night.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "bahia",
+    "file": "../assets/photos/bahia.jpg",
+    "alt": {
+      "en": "The large marble courtyard of the Bahia Palace in Marrakech",
+      "fr": "La grande cour en marbre du palais de la Bahia à Marrakech",
+      "ar": "الساحة الرخامية الكبيرة في قصر الباهية بمراكش"
+    },
+    "author": "Val Traveler",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bahia_Palace_large_court.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "bahia-2",
+    "file": "../assets/photos/bahia-2.jpg",
+    "alt": {
+      "en": "Carved plaster and cedar arches inside the Bahia Palace",
+      "fr": "Arcs en plâtre sculpté et cèdre au palais de la Bahia",
+      "ar": "أقواس من الجبس المنقوش وخشب الأرز في قصر الباهية"
+    },
+    "author": "Adam Harangozó",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bahia_Palace_006.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "souk-lanterns",
+    "file": "../assets/photos/souk-lanterns.jpg",
+    "alt": {
+      "en": "Brass lanterns hanging in a souk of the Marrakech medina",
+      "fr": "Lanternes en cuivre suspendues dans un souk de la médina de Marrakech",
+      "ar": "فوانيس نحاسية معلقة في سوق بمدينة مراكش العتيقة"
+    },
+    "author": "Petar Milošević",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Oriental_hanging_lanterns._Souk_Haddadine,_Marrakech_Medina_(%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D8%AD%D8%AF%D8%A7%D8%AF%D9%8A%D9%86_%D9%85%D8%B1%D8%A7%D9%83%D8%B4).jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "fes-tannery",
+    "file": "../assets/photos/fes-tannery.jpg",
+    "alt": {
+      "en": "The dye pits of the Chouara tannery in Fes",
+      "fr": "Les cuves de teinture de la tannerie Chouara à Fès",
+      "ar": "أحواض الصباغة في دار الدباغة شوارة بفاس"
+    },
+    "author": "Jorge Franganillo",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fez_Chouara_Tannery_(54238811661).jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "fes-medina",
+    "file": "../assets/photos/fes-medina.jpg",
+    "alt": {
+      "en": "The rooftops and minarets of the Fes medina",
+      "fr": "Les toits et minarets de la médina de Fès",
+      "ar": "أسطح وصوامع مدينة فاس العتيقة"
+    },
+    "author": "Petar Milošević",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Medina_of_Fes,_Marocco.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "chefchaouen",
+    "file": "../assets/photos/chefchaouen.jpg",
+    "alt": {
+      "en": "Chefchaouen, the blue town, at the foot of the Rif mountains",
+      "fr": "Chefchaouen, la ville bleue, au pied du Rif",
+      "ar": "شفشاون، المدينة الزرقاء، عند سفح جبال الريف"
+    },
+    "author": "Badr Rachadi",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chefchaouen-the-blue-city-of-morocco-with-the-mountain-view-in-the-backrgound.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "chefchaouen-2",
+    "file": "../assets/photos/chefchaouen-2.jpg",
+    "alt": {
+      "en": "A blue-painted stairway in the Chefchaouen medina",
+      "fr": "Un escalier peint en bleu dans la médina de Chefchaouen",
+      "ar": "درج مطلي بالأزرق في مدينة شفشاون العتيقة"
+    },
+    "author": "Fbrandao.1963",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2018_01_(Blue)_-_Chaouen.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "tagine",
+    "file": "../assets/photos/tagine.jpg",
+    "alt": {
+      "en": "A chicken tagine with preserved lemon and olives",
+      "fr": "Un tajine de poulet aux citrons confits et olives",
+      "ar": "طاجين دجاج بالليمون المصبر والزيتون"
+    },
+    "author": "Foodista",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Moroccan_food-Chicken_tagine_with_preserved_lemons_and_olives-01.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "mint-tea",
+    "file": "../assets/photos/mint-tea.jpg",
+    "alt": {
+      "en": "A glass of Moroccan mint tea in the sun",
+      "fr": "Un verre de thé à la menthe au soleil",
+      "ar": "كأس شاي مغربي بالنعناع في الشمس"
+    },
+    "author": "Adam Harangozó",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mint_tea,_Marrakesh.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "balloon",
+    "file": "../assets/photos/balloon.jpg",
+    "alt": {
+      "en": "Breakfast in a hot-air balloon basket above the plains near Marrakech",
+      "fr": "Petit-déjeuner dans la nacelle d’une montgolfière au-dessus des plaines de Marrakech",
+      "ar": "فطور في سلة منطاد فوق السهول قرب مراكش"
+    },
+    "author": "Imaneb82",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ciel_d%27Afrique,_Royal_Ballooning_Flight_over_Marrakech.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "quad",
+    "file": "../assets/photos/quad.jpg",
+    "alt": {
+      "en": "Two quad bikes riding over golden sand dunes",
+      "fr": "Deux quads sur des dunes de sable doré",
+      "ar": "دراجتان رباعيتان فوق كثبان رملية ذهبية"
+    },
+    "author": "SaharaADV",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Merzouga_dune_quad_tour.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "hammam",
+    "file": "../assets/photos/hammam.jpg",
+    "alt": {
+      "en": "The tiled entrance hall of a traditional hammam",
+      "fr": "Le hall carrelé d’un hammam traditionnel",
+      "ar": "القاعة المزلّجة لحمام تقليدي"
+    },
+    "author": "R Prazeres",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hammam_Saffarin_DSCF6564.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "horse-essaouira",
+    "file": "../assets/photos/horse-essaouira.jpg",
+    "alt": {
+      "en": "A rider on horseback on the wide beach of Essaouira",
+      "fr": "Un cavalier sur la grande plage d’Essaouira",
+      "ar": "فارس على الشاطئ الواسع في الصويرة"
+    },
+    "author": "flowcomm",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Horse_riding,_Essaouira,_Morocco.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "palmeraie",
+    "file": "../assets/photos/palmeraie.jpg",
+    "alt": {
+      "en": "Palm trees in the Palmeraie of Marrakech",
+      "fr": "Les palmiers de la Palmeraie de Marrakech",
+      "ar": "أشجار النخيل في نخيل مراكش"
+    },
+    "author": "Alex",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Palmeraie_de_Marrakech.JPG",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "volubilis",
+    "file": "../assets/photos/volubilis.jpg",
+    "alt": {
+      "en": "Roman ruins of Volubilis with green hills behind",
+      "fr": "Les ruines romaines de Volubilis devant des collines vertes",
+      "ar": "أطلال وليلي الرومانية والتلال الخضراء خلفها"
+    },
+    "author": "FuriousYogi",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ruins_of_Volubilis_Morocco.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "rabat",
+    "file": "../assets/photos/rabat.jpg",
+    "alt": {
+      "en": "The Hassan Tower and its column field in Rabat",
+      "fr": "La tour Hassan et ses colonnes à Rabat",
+      "ar": "صومعة حسان وأعمدتها في الرباط"
+    },
+    "author": "OHamama",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rabat_-_Hassan_Tower_-_20170909103739.jpg",
+    "sourceName": "Wikimedia Commons"
+  },
+  {
+    "id": "meknes",
+    "file": "../assets/photos/meknes.jpg",
+    "alt": {
+      "en": "The monumental Bab Mansour gate in Meknes",
+      "fr": "La porte monumentale de Bab Mansour à Meknès",
+      "ar": "باب منصور الضخم في مكناس"
+    },
+    "author": "Steven Lek",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bab_Mansour_Meknes_2018_1.jpg",
+    "sourceName": "Wikimedia Commons"
+  }
+]

@@ -1,0 +1,91 @@
+# Market: ~€95–115 per person shared (group bus), private 4x4 much higher.
+# TODO(youssef): confirm shared and private prices, group size and the camp you use.
+category: desert
+featured: true
+popularity: 95
+title:
+  en: Marrakech to Merzouga desert, 3 days
+  fr: Désert de Merzouga depuis Marrakech, 3 jours
+  ar: صحراء مرزوكة من مراكش، 3 أيام
+summary:
+  en: Over the Atlas to the Sahara. Aït Benhaddou, the Dades and Todra gorges, a camel ride into the Erg Chebbi dunes and a night in a desert camp.
+  fr: Par l’Atlas jusqu’au Sahara. Aït Benhaddou, les gorges du Dadès et du Todra, balade à dos de dromadaire dans les dunes de l’erg Chebbi et nuit en camp.
+  ar: عبر الأطلس إلى الصحراء الكبرى. آيت بن حدو، مضايق دادس وتودغى، جولة على الجمال في كثبان عرق الشبي وليلة في مخيم صحراوي.
+about:
+  en: >-
+    The classic desert journey from Marrakech. Day one crosses the Tizi n’Tichka pass and stops at the
+    earth ksar of Aït Benhaddou before the night in the Dades valley. Day two follows the road of the
+    kasbahs to the Todra gorge and on to Merzouga, where camels take you into the dunes for sunset
+    and a night at camp. On day three you watch the sun rise over the sand and drive back to
+    Marrakech. It is a lot of driving, but the landscapes change every hour.
+  fr: >-
+    Le voyage classique vers le désert depuis Marrakech. Le premier jour passe le col du Tizi n’Tichka
+    et s’arrête au ksar en terre d’Aït Benhaddou avant la nuit dans la vallée du Dadès. Le deuxième
+    jour suit la route des kasbahs jusqu’aux gorges du Todra puis Merzouga, où les dromadaires vous
+    emmènent dans les dunes pour le coucher du soleil et la nuit au camp. Le troisième jour, lever du
+    soleil sur le sable et retour à Marrakech. Beaucoup de route, mais le paysage change à chaque heure.
+  ar: >-
+    الرحلة الكلاسيكية إلى الصحراء من مراكش. في اليوم الأول تعبرون ممر تيزي نتيشكا وتتوقفون عند قصر آيت بن
+    حدو الطيني قبل المبيت في وادي دادس. في اليوم الثاني تتبعون طريق القصبات إلى مضيق تودغى ثم مرزوكة،
+    حيث تأخذكم الجمال إلى الكثبان لمشاهدة الغروب والمبيت في المخيم. في اليوم الثالث تشاهدون شروق الشمس
+    فوق الرمال وتعودون إلى مراكش. الطريق طويل، لكن المناظر تتغير كل ساعة.
+days: 3
+nights: 2
+difficulty: easy
+startCity: Marrakech
+endCity: Marrakech
+bestMonths: [3, 4, 5, 9, 10, 11, 12]
+price: { shared: 1100, private: 2600 }
+includes: { meals: true, transport: true, nights: true }
+photos: [erg-chebbi-camels, merzouga-sunrise, desert-camp-2, ait-benhaddou, todra, dades]
+highlights:
+  - { en: "Camel ride into the Erg Chebbi dunes", fr: "Balade à dos de dromadaire dans l’erg Chebbi", ar: "جولة على الجمال في كثبان عرق الشبي" }
+  - { en: "Night in a desert camp, sunrise on the dunes", fr: "Nuit en camp, lever de soleil sur les dunes", ar: "ليلة في مخيم صحراوي وشروق فوق الكثبان" }
+  - { en: "Aït Benhaddou, a UNESCO World Heritage site", fr: "Aït Benhaddou, classé au patrimoine mondial de l’UNESCO", ar: "آيت بن حدو، موقع تراث عالمي لليونسكو" }
+  - { en: "The Dades and Todra gorges", fr: "Les gorges du Dadès et du Todra", ar: "مضايق دادس وتودغى" }
+itinerary:
+  - title: { en: "Marrakech, Tizi n’Tichka, Aït Benhaddou and Dades", fr: "Marrakech, Tizi n’Tichka, Aït Benhaddou et Dadès", ar: "مراكش، تيزي نتيشكا، آيت بن حدو ودادس" }
+    text:
+      en: "Cross the High Atlas by the Tichka pass (2,260 m), visit the ksar of Aït Benhaddou, then continue past Ouarzazate and the Valley of Roses to the Dades valley."
+      fr: "Traversée du Haut Atlas par le col du Tichka (2 260 m), visite du ksar d’Aït Benhaddou, puis Ouarzazate et la vallée des Roses jusqu’au Dadès."
+      ar: "عبور الأطلس الكبير من ممر تيشكا (2260 م)، زيارة قصر آيت بن حدو، ثم المرور بورزازات ووادي الورود حتى وادي دادس."
+    drive: 8 h with stops
+    sleep: { type: hotel, place: Dades valley }
+    meals: [dinner]
+  - title: { en: "Todra gorge and the Merzouga dunes", fr: "Gorges du Todra et dunes de Merzouga", ar: "مضيق تودغى وكثبان مرزوكة" }
+    text:
+      en: "Walk in the Todra gorge, then drive to Merzouga. Camels at sunset into the dunes; dinner, drums and the night at camp."
+      fr: "Balade dans les gorges du Todra, puis route vers Merzouga. Dromadaires au coucher du soleil dans les dunes ; dîner, tambours et nuit au camp."
+      ar: "جولة في مضيق تودغى، ثم الطريق إلى مرزوكة. الجمال عند الغروب نحو الكثبان، ثم العشاء والطبول والمبيت في المخيم."
+    drive: 5 h
+    sleep: { type: camp, place: Erg Chebbi }
+    meals: [breakfast, dinner]
+  - title: { en: "Sunrise and back to Marrakech", fr: "Lever du soleil et retour à Marrakech", ar: "الشروق والعودة إلى مراكش" }
+    text:
+      en: "Sunrise from the dunes, camel ride back to Merzouga, then the long drive to Marrakech, arriving in the evening."
+      fr: "Lever du soleil depuis les dunes, retour à dos de dromadaire à Merzouga, puis longue route vers Marrakech, arrivée le soir."
+      ar: "الشروق من الكثبان، العودة على الجمال إلى مرزوكة، ثم طريق طويل إلى مراكش والوصول مساءً."
+    drive: 9–10 h with stops
+    meals: [breakfast]
+included: [pickup-hotel, transport, driver, camel, desert-camp, breakfast-dinner, accommodation]
+excluded: [lunches, drinks, entrance-fees-ex, tips, insurance, personal]
+pack: [scarf, sun-kit, warm-night, comfy-shoes, passport, cash]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "07:00"
+goodToKnow:
+  - en: "Shared tours travel in a minibus with other travellers. The private option is your own car and driver, and you can stop where you like."
+    fr: "Les circuits partagés voyagent en minibus avec d’autres voyageurs. L’option privée, c’est votre voiture et votre chauffeur, avec des arrêts où vous voulez."
+    ar: "الرحلات المشتركة تكون في حافلة صغيرة مع مسافرين آخرين. الخيار الخاص يعني سيارتكم وسائقكم، مع التوقف حيث تشاؤون."
+  - en: "Desert nights are cold from November to March. Bring a warm layer."
+    fr: "Les nuits du désert sont froides de novembre à mars. Prévoyez une couche chaude."
+    ar: "ليالي الصحراء باردة من نونبر إلى مارس. أحضروا ملابس دافئة."
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Tizi n’Tichka", lat: 31.2860, lng: -7.3790, kind: stop }
+  - { name: "Aït Benhaddou", lat: 31.0472, lng: -7.1319, kind: stop }
+  - { name: "Dades valley", lat: 31.4580, lng: -5.9280, kind: sleep }
+  - { name: "Todra gorge", lat: 31.5890, lng: -5.5900, kind: stop }
+  - { name: "Merzouga, Erg Chebbi", lat: 31.1300, lng: -4.0000, kind: sleep }

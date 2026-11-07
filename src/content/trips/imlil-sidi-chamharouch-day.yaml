@@ -1,0 +1,65 @@
+# From the original site's TREKS list (zip not received).
+# Market: ~€35–60 per person for a guided day hike from Marrakech with lunch.
+# TODO(youssef): confirm price and pickup time.
+category: trekking
+featured: true
+popularity: 80
+title:
+  en: Imlil and Sidi Chamharouch day hike
+  fr: Randonnée d’une journée à Imlil et Sidi Chamharouch
+  ar: رحلة مشي ليوم واحد إلى إمليل وسيدي شمهروش
+summary:
+  en: A real taste of the High Atlas in one day. Walk from Imlil through Aroumd to the shrine of Sidi Chamharouch, with lunch in a village house.
+  fr: Un vrai goût du Haut Atlas en une journée. Marche d’Imlil à Aroumd puis au sanctuaire de Sidi Chamharouch, avec déjeuner chez l’habitant.
+  ar: لمحة حقيقية عن الأطلس الكبير في يوم واحد. مشي من إمليل عبر أرومد إلى ضريح سيدي شمهروش، مع غداء في بيت قروي.
+about:
+  en: >-
+    Leave Marrakech in the morning and be walking in the mountains before 10. From Imlil the path
+    climbs to Aroumd, the highest village of the valley, crosses the wide riverbed and follows the
+    Mizane up to Sidi Chamharouch, a pilgrimage place built around a huge white rock. Lunch is
+    tagine in a local house; back in Marrakech before dark.
+  fr: >-
+    Départ de Marrakech le matin et marche en montagne avant 10 h. D’Imlil, le sentier monte à Aroumd,
+    le plus haut village de la vallée, traverse le large lit de la rivière et suit la Mizane jusqu’à
+    Sidi Chamharouch, lieu de pèlerinage bâti autour d’un énorme rocher blanc. Déjeuner : tajine chez
+    l’habitant ; retour à Marrakech avant la nuit.
+  ar: >-
+    تغادرون مراكش صباحا وتبدؤون المشي في الجبال قبل العاشرة. من إمليل يصعد المسار إلى أرومد، أعلى قرية في
+    الوادي، ثم يعبر مجرى النهر الواسع ويتبع وادي ميزان حتى سيدي شمهروش، مكان الزيارة المبني حول صخرة بيضاء
+    ضخمة. الغداء طاجين في بيت محلي، والعودة إلى مراكش قبل حلول الظلام.
+days: 1
+difficulty: moderate
+startCity: Marrakech
+endCity: Marrakech
+maxAltitude: 2350
+bestMonths: [3, 4, 5, 6, 7, 8, 9, 10, 11]
+price: { shared: 600, private: 850 }
+includes: { meals: true, transport: true, nights: false }
+photos: [chamharouch, aroumd, imlil-from-aroumd, imlil]
+highlights:
+  - { en: "High Atlas in a single day", fr: "Le Haut Atlas en une seule journée", ar: "الأطلس الكبير في يوم واحد" }
+  - { en: "The village of Aroumd", fr: "Le village d’Aroumd", ar: "قرية أرومد" }
+  - { en: "Lunch in a village house", fr: "Déjeuner chez l’habitant", ar: "غداء في بيت قروي" }
+itinerary:
+  - title: { en: "Imlil, Aroumd and Sidi Chamharouch", fr: "Imlil, Aroumd et Sidi Chamharouch", ar: "إمليل، أرومد وسيدي شمهروش" }
+    text:
+      en: "Drive to Imlil, walk via Aroumd to Sidi Chamharouch and back, with lunch on the way. Drive back to Marrakech."
+      fr: "Route vers Imlil, marche par Aroumd jusqu’à Sidi Chamharouch et retour, déjeuner en chemin. Retour à Marrakech."
+      ar: "التوجه إلى إمليل، والمشي عبر أرومد إلى سيدي شمهروش والعودة، مع الغداء في الطريق. ثم الرجوع إلى مراكش."
+    drive: 1 h 45 each way
+    walk: 5–6 h
+    altitude: 2350
+    meals: [lunch]
+included: [pickup-hotel, guide-mountain, lunch, tea-snacks]
+excluded: [drinks, tips, personal]
+pack: [boots, layers, sun-kit, bottle, daypack]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "08:00"
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Imlil", lat: 31.1366, lng: -7.9196, kind: stop }
+  - { name: "Aroumd", lat: 31.1240, lng: -7.9150, kind: stop }
+  - { name: "Sidi Chamharouch", lat: 31.0958, lng: -7.9112, kind: summit }

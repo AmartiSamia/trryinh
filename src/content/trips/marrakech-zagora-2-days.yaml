@@ -1,0 +1,69 @@
+# Market: ~€70–100 per person shared.
+# TODO(youssef): confirm prices and the camp.
+category: desert
+popularity: 75
+title:
+  en: Marrakech to Zagora desert, 2 days
+  fr: Désert de Zagora depuis Marrakech, 2 jours
+  ar: صحراء زاكورة من مراكش، يومان
+summary:
+  en: The shortest way to sleep in the desert from Marrakech. Aït Benhaddou, the Draa valley palm groves and a camel ride to a camp near Zagora.
+  fr: Le moyen le plus court de dormir dans le désert depuis Marrakech. Aït Benhaddou, les palmeraies du Drâa et une balade à dos de dromadaire jusqu’à un camp près de Zagora.
+  ar: أقصر طريقة للمبيت في الصحراء من مراكش. آيت بن حدو، واحات نخيل درعة وجولة على الجمال إلى مخيم قرب زاكورة.
+about:
+  en: >-
+    If you only have two days, Zagora is the realistic choice. The dunes are smaller than in
+    Merzouga, but the road is beautiful: the Tichka pass, Aït Benhaddou, then the long palm
+    valley of the Draa with its earth villages. You ride camels to the camp for dinner and a night
+    under the stars, and drive back to Marrakech the next day.
+  fr: >-
+    Avec seulement deux jours, Zagora est le choix réaliste. Les dunes sont plus petites qu’à Merzouga,
+    mais la route est superbe : le col du Tichka, Aït Benhaddou, puis la longue vallée de palmiers du
+    Drâa et ses villages en terre. Vous rejoignez le camp à dos de dromadaire pour le dîner et une nuit
+    sous les étoiles, et rentrez à Marrakech le lendemain.
+  ar: >-
+    إذا كان لديكم يومان فقط، فزاكورة هي الخيار الواقعي. الكثبان أصغر من مرزوكة، لكن الطريق رائع: ممر
+    تيشكا، آيت بن حدو، ثم وادي درعة الطويل بنخيله وقراه الطينية. تركبون الجمال إلى المخيم للعشاء وليلة
+    تحت النجوم، وتعودون إلى مراكش في اليوم الموالي.
+days: 2
+nights: 1
+difficulty: easy
+startCity: Marrakech
+endCity: Marrakech
+bestMonths: [3, 4, 5, 10, 11, 12]
+price: { shared: 850, private: 2000 }
+includes: { meals: true, transport: true, nights: true }
+photos: [zagora, ait-benhaddou-camels, draa-valley, desert-camp-2]
+highlights:
+  - { en: "A night in the desert in just two days", fr: "Une nuit dans le désert en deux jours seulement", ar: "ليلة في الصحراء في يومين فقط" }
+  - { en: "The Draa valley palm groves", fr: "Les palmeraies de la vallée du Drâa", ar: "واحات نخيل وادي درعة" }
+  - { en: "Aït Benhaddou on the way", fr: "Aït Benhaddou en chemin", ar: "آيت بن حدو في الطريق" }
+itinerary:
+  - title: { en: "Marrakech to the Zagora camp", fr: "De Marrakech au camp de Zagora", ar: "من مراكش إلى مخيم زاكورة" }
+    text:
+      en: "Over the Tichka pass to Aït Benhaddou, then through Agdz and the Draa valley. Camel ride at sunset to camp."
+      fr: "Par le col du Tichka jusqu’à Aït Benhaddou, puis Agdz et la vallée du Drâa. Dromadaires au coucher du soleil jusqu’au camp."
+      ar: "عبر ممر تيشكا إلى آيت بن حدو، ثم أكدز ووادي درعة. جولة على الجمال عند الغروب إلى المخيم."
+    drive: 8 h with stops
+    sleep: { type: camp, place: Zagora }
+    meals: [dinner]
+  - title: { en: "Back to Marrakech", fr: "Retour à Marrakech", ar: "العودة إلى مراكش" }
+    text:
+      en: "Sunrise, breakfast at camp and the drive back to Marrakech."
+      fr: "Lever du soleil, petit-déjeuner au camp et route vers Marrakech."
+      ar: "الشروق والفطور في المخيم ثم الطريق إلى مراكش."
+    drive: 7–8 h with stops
+    meals: [breakfast]
+included: [pickup-hotel, transport, driver, camel, desert-camp, breakfast-dinner]
+excluded: [lunches, drinks, entrance-fees-ex, tips, personal]
+pack: [scarf, sun-kit, warm-night, comfy-shoes, passport, cash]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "07:00"
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Aït Benhaddou", lat: 31.0472, lng: -7.1319, kind: stop }
+  - { name: "Agdz", lat: 30.6970, lng: -6.4480, kind: stop }
+  - { name: "Zagora", lat: 30.3324, lng: -5.8382, kind: sleep }

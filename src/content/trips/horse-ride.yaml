@@ -1,0 +1,51 @@
+# Market: not given in the brief; ~€30–60 per person for 1–2 hours.
+# TODO(youssef): confirm price, stable, and location (Palmeraie, Agafay or Essaouira beach).
+category: activity
+popularity: 55
+title:
+  en: Horse ride in the Palmeraie
+  fr: Balade à cheval dans la Palmeraie
+  ar: جولة على ظهر الخيل في النخيل
+summary:
+  en: An easy ride among the palm trees on the edge of Marrakech, for beginners and experienced riders, with a guide from the stable.
+  fr: Une balade facile parmi les palmiers aux portes de Marrakech, pour débutants et cavaliers confirmés, avec un guide de l’écurie.
+  ar: جولة سهلة بين أشجار النخيل على أطراف مراكش، للمبتدئين وذوي الخبرة، مع مرشد من الإسطبل.
+about:
+  en: >-
+    Calm horses, a guide who adapts to your level, and quiet tracks through the Palmeraie, with
+    the Atlas on the horizon on clear days. Rides last one or two hours. A beach ride in Essaouira
+    can also be arranged if you go there.
+  fr: >-
+    Des chevaux calmes, un guide qui s’adapte à votre niveau et des pistes tranquilles dans la Palmeraie,
+    avec l’Atlas à l’horizon par temps clair. Balades d’une ou deux heures. Une balade sur la plage
+    d’Essaouira est aussi possible si vous y allez.
+  ar: >-
+    خيول هادئة، ومرشد يتكيف مع مستواكم، ومسالك هادئة في النخيل مع الأطلس في الأفق في الأيام الصافية.
+    تدوم الجولات ساعة أو ساعتين. يمكن أيضا ترتيب جولة على شاطئ الصويرة إذا ذهبتم إليها.
+days: 0.5
+hours: "2–3 h"
+difficulty: easy
+startCity: Marrakech
+endCity: Marrakech
+bestMonths: [1, 2, 3, 4, 5, 9, 10, 11, 12]
+price: { shared: 350 }
+includes: { meals: false, transport: true, nights: false }
+photos: [horse-essaouira, palmeraie]
+highlights:
+  - { en: "Suitable for beginners", fr: "Adapté aux débutants", ar: "مناسب للمبتدئين" }
+  - { en: "Quiet tracks among palm trees", fr: "Pistes calmes entre les palmiers", ar: "مسالك هادئة بين النخيل" }
+  - { en: "Helmet provided", fr: "Casque fourni", ar: "الخوذة متوفرة" }
+itinerary:
+  - title: { en: "Horse ride", fr: "Balade à cheval", ar: "جولة على الخيل" }
+    text: { en: "Pickup, ride of one to two hours with a guide, mint tea, drive back.", fr: "Prise en charge, une à deux heures de balade avec un guide, thé à la menthe, retour.", ar: "الاستقبال، جولة من ساعة إلى ساعتين مع مرشد، شاي بالنعناع، ثم العودة." }
+included: [pickup-hotel, equipment, guide-local, tea-snacks]
+excluded: [tips]
+pack: [comfy-shoes, sun-kit]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "09:00 or 15:00"
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Palmeraie", lat: 31.6700, lng: -7.9700, kind: stop }

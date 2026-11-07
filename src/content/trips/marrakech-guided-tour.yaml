@@ -1,0 +1,61 @@
+# Market: not given in the brief; private half-day guide ~€30–60 per group.
+# TODO(youssef): confirm prices and the official guide you work with.
+category: culture
+featured: true
+popularity: 80
+title:
+  en: Marrakech medina guided tour
+  fr: Visite guidée de la médina de Marrakech
+  ar: جولة مع مرشد في مدينة مراكش العتيقة
+summary:
+  en: Half a day in the old city with a licensed guide. The Bahia Palace, the souks, the craftsmen’s quarters and Jemaa el-Fna, without getting lost or pushed into shops.
+  fr: Une demi-journée dans la vieille ville avec un guide officiel. Le palais de la Bahia, les souks, les quartiers d’artisans et Jemaa el-Fna, sans se perdre ni être poussé dans les boutiques.
+  ar: نصف يوم في المدينة القديمة مع مرشد معتمد. قصر الباهية، الأسواق، أحياء الحرفيين وساحة جامع الفنا، دون أن تضيعوا أو تُدفعوا إلى المتاجر.
+about:
+  en: >-
+    The medina of Marrakech is easier and richer with someone who grew up in it. Your licensed guide
+    starts at the Bahia Palace, walks you through the old Jewish quarter and the spice square, then
+    into the souks of the dyers, metalworkers and leatherworkers, and ends at Jemaa el-Fna. You go at
+    your pace; shopping only if you ask.
+  fr: >-
+    La médina de Marrakech est plus simple et plus riche avec quelqu’un qui y a grandi. Votre guide
+    officiel commence au palais de la Bahia, traverse le mellah et la place des épices, puis les souks
+    des teinturiers, ferronniers et maroquiniers, et termine à Jemaa el-Fna. À votre rythme ; des
+    achats seulement si vous le demandez.
+  ar: >-
+    مدينة مراكش العتيقة أسهل وأغنى برفقة شخص نشأ فيها. يبدأ مرشدكم المعتمد من قصر الباهية، ثم يمر بالملاح
+    وساحة التوابل، ثم أسواق الصباغين والحدادين والدباغين، وينتهي في ساحة جامع الفنا. بإيقاعكم الخاص، ولا
+    تسوق إلا إذا طلبتم ذلك.
+days: 0.5
+hours: "3–4 h"
+difficulty: easy
+startCity: Marrakech
+endCity: Marrakech
+bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+price: { private: 350 }
+includes: { meals: false, transport: false, nights: false }
+photos: [bahia, souk-lanterns, jemaa-sunset, bahia-2]
+highlights:
+  - { en: "The Bahia Palace", fr: "Le palais de la Bahia", ar: "قصر الباهية" }
+  - { en: "Craftsmen’s souks", fr: "Les souks des artisans", ar: "أسواق الحرفيين" }
+  - { en: "No pressure to buy", fr: "Aucune pression pour acheter", ar: "بدون ضغط للشراء" }
+itinerary:
+  - title: { en: "The medina on foot", fr: "La médina à pied", ar: "المدينة العتيقة مشيا" }
+    text:
+      en: "Bahia Palace, the mellah, the souks and Jemaa el-Fna, with stops for mint tea."
+      fr: "Palais de la Bahia, mellah, souks et Jemaa el-Fna, avec des pauses thé à la menthe."
+      ar: "قصر الباهية، الملاح، الأسواق وجامع الفنا، مع توقفات لشرب الشاي بالنعناع."
+    walk: 3–4 h
+included: [guide-city]
+excluded: [entrance-fees-ex, drinks, tips]
+pack: [comfy-shoes, sun-kit, modest-clothes, cash]
+meetingPoint:
+  en: "Your riad, or the entrance of the Bahia Palace."
+  fr: "Votre riad, ou l’entrée du palais de la Bahia."
+  ar: "الرياض الخاص بكم، أو مدخل قصر الباهية."
+pickupTime: "09:00"
+mapStops:
+  - { name: "Bahia Palace", lat: 31.6216, lng: -7.9828, kind: start }
+  - { name: "Place des Épices", lat: 31.6300, lng: -7.9860, kind: stop }
+  - { name: "Souks", lat: 31.6300, lng: -7.9880, kind: stop }
+  - { name: "Jemaa el-Fna", lat: 31.6258, lng: -7.9891, kind: end }

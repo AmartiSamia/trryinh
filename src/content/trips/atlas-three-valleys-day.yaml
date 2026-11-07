@@ -1,0 +1,60 @@
+# Market: not given in the brief; typical shared offers ~€25–40.
+# TODO(youssef): confirm prices and stops.
+category: day-trip
+popularity: 70
+title:
+  en: Atlas three valleys and Imlil day trip
+  fr: Excursion trois vallées de l’Atlas et Imlil
+  ar: رحلة يومية إلى وديان الأطلس الثلاثة وإمليل
+summary:
+  en: An easy day in the mountains with Youssef’s own village as the highlight. Asni market town, Ouirgane, a short walk around Imlil and lunch with a view of Toubkal.
+  fr: Une journée facile en montagne, avec le village de Youssef en point d’orgue. Asni et son souk, Ouirgane, une courte balade autour d’Imlil et un déjeuner face au Toubkal.
+  ar: يوم سهل في الجبال، وقرية يوسف هي أبرز محطاته. سوق أسني، أوركان، جولة قصيرة حول إمليل وغداء مطل على توبقال.
+about:
+  en: >-
+    Not a hike, a mountain day for everyone. You drive up the Moulay Brahim gorge to Asni,
+    stop by the lake and hills of Ouirgane, then go up to Imlil for a gentle walk among walnut trees
+    and earth houses, with tea in a village home. A good choice with children or older travellers.
+  fr: >-
+    Pas une randonnée, une journée en montagne pour tous. Route par les gorges de Moulay Brahim
+    jusqu’à Asni, arrêt près du lac et des collines de Ouirgane, puis montée à Imlil pour une balade
+    tranquille entre noyers et maisons en terre, avec un thé chez l’habitant. Idéal avec des enfants
+    ou des voyageurs âgés.
+  ar: >-
+    ليست رحلة مشي، بل يوم جبلي للجميع. الطريق عبر مضايق مولاي إبراهيم إلى أسني، توقف قرب بحيرة وتلال
+    أوركان، ثم الصعود إلى إمليل لجولة هادئة بين أشجار الجوز والبيوت الطينية مع شاي في بيت قروي. خيار جيد
+    مع الأطفال أو المسافرين المسنين.
+days: 1
+difficulty: easy
+startCity: Marrakech
+endCity: Marrakech
+bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+price: { shared: 350, private: 900 }
+includes: { meals: true, transport: true, nights: false }
+photos: [imlil-2, imlil-3, imlil-valley]
+highlights:
+  - { en: "Imlil, at the foot of Toubkal", fr: "Imlil, au pied du Toubkal", ar: "إمليل عند سفح توبقال" }
+  - { en: "Tea in a village home", fr: "Thé chez l’habitant", ar: "شاي في بيت قروي" }
+  - { en: "Easy, for all ages", fr: "Facile, pour tous les âges", ar: "سهلة ولجميع الأعمار" }
+itinerary:
+  - title: { en: "Asni, Ouirgane and Imlil", fr: "Asni, Ouirgane et Imlil", ar: "أسني، أوركان وإمليل" }
+    text:
+      en: "Drive through the valleys with stops, a gentle walk around Imlil, lunch, and back to Marrakech."
+      fr: "Route à travers les vallées avec arrêts, balade tranquille autour d’Imlil, déjeuner et retour à Marrakech."
+      ar: "الطريق عبر الوديان مع توقفات، جولة هادئة حول إمليل، الغداء ثم العودة إلى مراكش."
+    drive: 1 h 45 each way
+    walk: 1–2 h
+    meals: [lunch]
+included: [pickup-hotel, transport, driver, guide-local, lunch, tea-snacks]
+excluded: [drinks, tips]
+pack: [comfy-shoes, sun-kit, layers]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "09:00"
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Asni", lat: 31.2450, lng: -7.9790, kind: stop }
+  - { name: "Ouirgane", lat: 31.1730, lng: -8.0790, kind: stop }
+  - { name: "Imlil", lat: 31.1366, lng: -7.9196, kind: stop }

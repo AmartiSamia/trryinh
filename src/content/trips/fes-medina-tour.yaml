@@ -1,0 +1,60 @@
+# Market: not given in the brief; private day guide ~€40–70 per group.
+# TODO(youssef): confirm prices and the Fes guide you work with.
+category: culture
+popularity: 65
+title:
+  en: Fes medina guided tour
+  fr: Visite guidée de la médina de Fès
+  ar: جولة مع مرشد في مدينة فاس العتيقة
+summary:
+  en: The largest car-free medina in the world, with a licensed guide from Fes. Bou Inania madrasa, the Chouara tannery, Al-Qarawiyyin and the craftsmen’s alleys.
+  fr: La plus grande médina piétonne du monde, avec un guide officiel de Fès. Médersa Bou Inania, tannerie Chouara, Al-Qaraouiyine et ruelles des artisans.
+  ar: أكبر مدينة عتيقة خالية من السيارات في العالم، مع مرشد معتمد من فاس. مدرسة بوعنانية، دار الدباغة شوارة، القرويين وأزقة الحرفيين.
+about:
+  en: >-
+    Fes el-Bali has more than 9,000 lanes, and a good guide makes the difference between a maze and
+    a story. You enter by the Blue Gate, visit the Bou Inania madrasa, pass the Al-Qarawiyyin mosque
+    and university, watch the tanners at work from a terrace above Chouara, and walk through the
+    metalworkers’ square. A full or half day, as you like.
+  fr: >-
+    Fès el-Bali compte plus de 9 000 ruelles, et un bon guide fait la différence entre un labyrinthe et
+    une histoire. Entrée par Bab Boujloud, visite de la médersa Bou Inania, passage devant la mosquée-
+    université Al-Qaraouiyine, vue sur les tanneurs depuis une terrasse au-dessus de Chouara, puis la
+    place des dinandiers. Journée ou demi-journée, au choix.
+  ar: >-
+    تضم فاس البالي أكثر من 9000 زقاق، والمرشد الجيد يصنع الفرق بين متاهة وقصة. الدخول من باب بوجلود، زيارة
+    مدرسة بوعنانية، المرور بجامع وجامعة القرويين، مشاهدة الدباغين من شرفة فوق شوارة، ثم ساحة الصفارين. يوم
+    كامل أو نصف يوم حسب رغبتكم.
+days: 0.5
+hours: "4 h"
+difficulty: easy
+startCity: Fes
+endCity: Fes
+bestMonths: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+price: { private: 400 }
+includes: { meals: false, transport: false, nights: false }
+photos: [fes-tannery, fes-medina]
+highlights:
+  - { en: "The Chouara tannery from above", fr: "La tannerie Chouara vue d’en haut", ar: "دار الدباغة شوارة من الأعلى" }
+  - { en: "Bou Inania madrasa", fr: "La médersa Bou Inania", ar: "مدرسة بوعنانية" }
+  - { en: "A guide born in Fes", fr: "Un guide né à Fès", ar: "مرشد من مواليد فاس" }
+itinerary:
+  - title: { en: "Fes el-Bali on foot", fr: "Fès el-Bali à pied", ar: "فاس البالي مشيا" }
+    text:
+      en: "Blue Gate, Bou Inania, Al-Qarawiyyin, Chouara tannery and the craftsmen’s quarters."
+      fr: "Bab Boujloud, Bou Inania, Al-Qaraouiyine, tannerie Chouara et quartiers d’artisans."
+      ar: "باب بوجلود، بوعنانية، القرويين، دار الدباغة شوارة وأحياء الحرفيين."
+    walk: 4 h
+included: [guide-city]
+excluded: [entrance-fees-ex, lunch, drinks, tips]
+pack: [comfy-shoes, modest-clothes, cash]
+meetingPoint:
+  en: "Your riad in Fes, or Bab Boujloud (the Blue Gate)."
+  fr: "Votre riad à Fès, ou Bab Boujloud (la porte bleue)."
+  ar: "الرياض الخاص بكم في فاس، أو باب بوجلود."
+pickupTime: "09:00"
+mapStops:
+  - { name: "Bab Boujloud", lat: 34.0617, lng: -4.9836, kind: start }
+  - { name: "Bou Inania madrasa", lat: 34.0619, lng: -4.9822, kind: stop }
+  - { name: "Al-Qarawiyyin", lat: 34.0647, lng: -4.9734, kind: stop }
+  - { name: "Chouara tannery", lat: 34.0663, lng: -4.9711, kind: end }

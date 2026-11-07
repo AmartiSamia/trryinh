@@ -1,0 +1,58 @@
+# Market: not given in the brief; typical evening food tours ~€35–60 per person.
+# TODO(youssef): confirm price and who leads it.
+category: culture
+popularity: 74
+title:
+  en: Marrakech street food tour
+  fr: Tour street food à Marrakech
+  ar: جولة أكل الشارع في مراكش
+summary:
+  en: An evening walk through the medina, eating what people in Marrakech actually eat. Msemen, harira, tangia, snail broth for the brave, and mint tea to finish.
+  fr: Une balade du soir dans la médina pour manger ce que mangent vraiment les Marrakchis. Msemen, harira, tanjia, bouillon d’escargots pour les courageux, et thé à la menthe pour finir.
+  ar: جولة مسائية في المدينة العتيقة لتذوق ما يأكله أهل مراكش فعلا. المسمن، الحريرة، الطنجية، مرق الببوش للشجعان، وشاي بالنعناع في الختام.
+about:
+  en: >-
+    About ten tastings over three hours, in small stalls and family places away from the tourist
+    menus. Your guide explains what you eat and how it is made, from the bread ovens to the tangia
+    cooked slowly in the ashes of the hammam fire. Come hungry; vegetarians are welcome, just tell us.
+  fr: >-
+    Une dizaine de dégustations en trois heures, dans de petits stands et des adresses familiales loin
+    des menus touristiques. Votre guide explique ce que vous mangez et comment c’est préparé, des fours à
+    pain à la tanjia cuite lentement dans les cendres du feu du hammam. Venez le ventre vide ; les
+    végétariens sont les bienvenus, dites-le-nous.
+  ar: >-
+    حوالي عشر تذوقات في ثلاث ساعات، في أكشاك صغيرة ومحلات عائلية بعيدا عن القوائم السياحية. يشرح لكم
+    المرشد ما تأكلون وكيف يُحضَّر، من أفران الخبز إلى الطنجية المطبوخة ببطء في رماد نار الحمام. تعالوا
+    جائعين، والنباتيون مرحب بهم، فقط أخبرونا.
+days: 0.5
+hours: "3 h"
+difficulty: easy
+startCity: Marrakech
+endCity: Marrakech
+bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+price: { shared: 450, private: 650 }
+includes: { meals: true, transport: false, nights: false }
+photos: [jemaa-night, tagine, mint-tea]
+highlights:
+  - { en: "About ten local tastings", fr: "Une dizaine de dégustations locales", ar: "حوالي عشر تذوقات محلية" }
+  - { en: "Places locals go, not tourist menus", fr: "Des adresses locales, pas des menus touristiques", ar: "أماكن يرتادها السكان المحليون" }
+  - { en: "Jemaa el-Fna at night", fr: "Jemaa el-Fna la nuit", ar: "جامع الفنا ليلاً" }
+itinerary:
+  - title: { en: "The medina by night", fr: "La médina de nuit", ar: "المدينة العتيقة ليلاً" }
+    text:
+      en: "Start near Jemaa el-Fna, walk through the food streets with tastings, finish with mint tea."
+      fr: "Départ près de Jemaa el-Fna, parcours des rues gourmandes avec dégustations, fin autour d’un thé à la menthe."
+      ar: "الانطلاق قرب جامع الفنا، المشي في أزقة الأكل مع التذوق، والختام بشاي بالنعناع."
+    walk: 3 h
+    meals: [dinner]
+included: [guide-local, dinner, water-bottle]
+excluded: [drinks, tips]
+pack: [comfy-shoes, cash]
+meetingPoint:
+  en: "In front of the Café de France, Jemaa el-Fna."
+  fr: "Devant le Café de France, place Jemaa el-Fna."
+  ar: "أمام مقهى فرنسا، ساحة جامع الفنا."
+pickupTime: "18:30"
+mapStops:
+  - { name: "Jemaa el-Fna", lat: 31.6258, lng: -7.9891, kind: start }
+  - { name: "Medina food streets", lat: 31.6290, lng: -7.9870, kind: stop }

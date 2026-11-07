@@ -1,0 +1,97 @@
+# Market: not given in the brief; private 5-day combos ~€450–800 per person.
+# TODO(youssef): confirm price, nights and whether this combo is shared or private only.
+category: circuit
+featured: true
+popularity: 82
+title:
+  en: Atlas and Sahara, 5 days
+  fr: Atlas et Sahara, 5 jours
+  ar: الأطلس والصحراء، 5 أيام
+summary:
+  en: The best of both worlds in five days. Two days of walking from Imlil with nights in the mountains, then the road over the Atlas to the Merzouga dunes.
+  fr: Le meilleur des deux mondes en cinq jours. Deux jours de marche depuis Imlil avec nuits en montagne, puis la route de l’Atlas jusqu’aux dunes de Merzouga.
+  ar: أفضل ما في العالمين في خمسة أيام. يومان من المشي انطلاقا من إمليل مع ليالٍ في الجبل، ثم الطريق عبر الأطلس إلى كثبان مرزوكة.
+about:
+  en: >-
+    Start where Youssef lives: two days of walking among the villages of the Imlil valleys, with a
+    night in a guesthouse. Then the car takes you over the High Atlas to Aït Benhaddou, the Dades
+    valley and Merzouga, where you ride camels into Erg Chebbi for a night at camp before driving
+    back to Marrakech. Mountains, villages, kasbahs and dunes in one trip.
+  fr: >-
+    On commence là où vit Youssef : deux jours de marche entre les villages des vallées d’Imlil, avec une
+    nuit en gîte. Puis la voiture vous emmène par le Haut Atlas à Aït Benhaddou, la vallée du Dadès et
+    Merzouga, où les dromadaires vous mènent dans l’erg Chebbi pour une nuit au camp avant le retour à
+    Marrakech. Montagnes, villages, kasbahs et dunes en un seul voyage.
+  ar: >-
+    نبدأ حيث يعيش يوسف: يومان من المشي بين قرى وديان إمليل مع ليلة في دار ضيافة. ثم تأخذكم السيارة عبر
+    الأطلس الكبير إلى آيت بن حدو ووادي دادس ومرزوكة، حيث تركبون الجمال إلى عرق الشبي لقضاء ليلة في المخيم
+    قبل العودة إلى مراكش. جبال وقرى وقصبات وكثبان في رحلة واحدة.
+days: 5
+nights: 4
+difficulty: moderate
+startCity: Marrakech
+endCity: Marrakech
+bestMonths: [3, 4, 5, 9, 10, 11]
+price: { shared: 4200, private: 6500 }
+includes: { meals: true, transport: true, nights: true }
+photos: [imlil, merzouga-sunrise, tacheddirt, ait-benhaddou, erg-chebbi-camels]
+highlights:
+  - { en: "Walk the Imlil valleys with a local guide", fr: "Marcher dans les vallées d’Imlil avec un guide local", ar: "المشي في وديان إمليل مع مرشد محلي" }
+  - { en: "Night in the Erg Chebbi dunes", fr: "Nuit dans les dunes de l’erg Chebbi", ar: "ليلة في كثبان عرق الشبي" }
+  - { en: "Mountains and desert in one trip", fr: "Montagne et désert en un seul voyage", ar: "الجبل والصحراء في رحلة واحدة" }
+itinerary:
+  - title: { en: "Marrakech to Imlil, first walk", fr: "De Marrakech à Imlil, première marche", ar: "من مراكش إلى إمليل، أول مشي" }
+    text:
+      en: "Morning drive, then an afternoon walk around Aroumd. Dinner and night in Imlil."
+      fr: "Route le matin, puis balade l’après-midi vers Aroumd. Dîner et nuit à Imlil."
+      ar: "الطريق صباحا، ثم جولة بعد الظهر نحو أرومد. العشاء والمبيت في إمليل."
+    drive: 1 h 45
+    walk: 3 h
+    sleep: { type: guesthouse, place: Imlil }
+    meals: [lunch, dinner]
+  - title: { en: "Villages of the three valleys", fr: "Villages des trois vallées", ar: "قرى الوديان الثلاثة" }
+    text:
+      en: "A full day over Tizi n’Tamatert and through the villages of the Imnane valley, back to the guesthouse."
+      fr: "Une journée complète par le Tizi n’Tamatert et les villages de la vallée d’Imnane, retour au gîte."
+      ar: "يوم كامل عبر تيزي نتماترت وقرى وادي إمنان، ثم العودة إلى دار الضيافة."
+    walk: 5–6 h
+    sleep: { type: guesthouse, place: Imlil }
+    meals: [breakfast, lunch, dinner]
+  - title: { en: "Over the Atlas to the Dades valley", fr: "Par l’Atlas jusqu’au Dadès", ar: "عبر الأطلس إلى وادي دادس" }
+    text:
+      en: "Tichka pass, Aït Benhaddou and the Valley of Roses to the Dades gorges."
+      fr: "Col du Tichka, Aït Benhaddou et vallée des Roses jusqu’aux gorges du Dadès."
+      ar: "ممر تيشكا، آيت بن حدو ووادي الورود حتى مضايق دادس."
+    drive: 7 h with stops
+    sleep: { type: hotel, place: Dades valley }
+    meals: [breakfast, dinner]
+  - title: { en: "Todra gorge and the dunes", fr: "Gorges du Todra et dunes", ar: "مضيق تودغى والكثبان" }
+    text:
+      en: "Todra gorge, then Merzouga and a camel ride at sunset to camp."
+      fr: "Gorges du Todra, puis Merzouga et dromadaires au coucher du soleil jusqu’au camp."
+      ar: "مضيق تودغى، ثم مرزوكة وجولة على الجمال عند الغروب إلى المخيم."
+    drive: 5 h
+    sleep: { type: camp, place: Erg Chebbi }
+    meals: [breakfast, dinner]
+  - title: { en: "Back to Marrakech", fr: "Retour à Marrakech", ar: "العودة إلى مراكش" }
+    text:
+      en: "Sunrise on the dunes and the long road back to Marrakech."
+      fr: "Lever du soleil sur les dunes et longue route vers Marrakech."
+      ar: "الشروق فوق الكثبان والطريق الطويل إلى مراكش."
+    drive: 9–10 h with stops
+    meals: [breakfast]
+included: [pickup-hotel, transport, driver, guide-mountain, camel, desert-camp, breakfast-dinner, accommodation]
+excluded: [lunches, drinks, entrance-fees-ex, tips, insurance, personal]
+pack: [boots, layers, sun-kit, scarf, warm-night, bottle, daypack, passport, cash]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "08:30"
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Imlil", lat: 31.1366, lng: -7.9196, kind: sleep }
+  - { name: "Aït Benhaddou", lat: 31.0472, lng: -7.1319, kind: stop }
+  - { name: "Dades valley", lat: 31.4580, lng: -5.9280, kind: sleep }
+  - { name: "Todra gorge", lat: 31.5890, lng: -5.5900, kind: stop }
+  - { name: "Merzouga, Erg Chebbi", lat: 31.1300, lng: -4.0000, kind: sleep }

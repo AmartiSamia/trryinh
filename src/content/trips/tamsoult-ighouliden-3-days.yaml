@@ -1,0 +1,83 @@
+# Source: hikingtoatlas.com "Agouliden Waterfall & Tamsoult Trek": 3 days / 2 nights, from €138,
+# day 1 Imlil to Id Aissa, day 2 Tamsoult and the waterfall, two nights in mountain shelters.
+# TODO(youssef): confirm price (1,450 MAD?), the passes and the shelter names.
+category: trekking
+popularity: 65
+title:
+  en: Tamsoult and Ighouliden waterfall, 3 days
+  fr: Tamsoult et cascade d’Ighouliden, 3 jours
+  ar: تامسولت وشلال إغوليدن، 3 أيام
+summary:
+  en: West of Imlil, over Tizi Mzik into the green Azzaden valley, to the highest waterfall of the Toubkal area.
+  fr: À l’ouest d’Imlil, par le Tizi Mzik vers la verte vallée d’Azzaden, jusqu’à la plus haute cascade de la région du Toubkal.
+  ar: غرب إمليل، عبر تيزي مزيك نحو وادي أزادن الأخضر، حتى أعلى شلال في منطقة توبقال.
+about:
+  en: >-
+    A varied loop on the quieter western side of Imlil. You cross Tizi Mzik into the Azzaden
+    valley, sleep in simple mountain shelters and walk up past the shepherds’ huts of Tamsoult
+    to the Ighouliden waterfall, which drops in several steps from the cliffs. Good for walkers
+    who want real mountain views without going to the summit.
+  fr: >-
+    Une boucle variée sur le versant ouest, plus calme, d’Imlil. Vous passez le Tizi Mzik vers la
+    vallée d’Azzaden, dormez dans des abris de montagne simples et montez, par les bergeries de
+    Tamsoult, jusqu’à la cascade d’Ighouliden qui tombe en plusieurs sauts depuis les falaises.
+    Idéal pour qui veut de vrais paysages de montagne sans aller au sommet.
+  ar: >-
+    جولة متنوعة في الجهة الغربية الأهدأ من إمليل. تعبرون تيزي مزيك نحو وادي أزادن، وتبيتون في ملاجئ جبلية
+    بسيطة، وتصعدون مرورا بأكواخ الرعاة في تامسولت حتى شلال إغوليدن الذي ينحدر على عدة مراحل من الجروف.
+    مناسبة لمن يريد مناظر جبلية حقيقية دون الصعود إلى القمة.
+days: 3
+nights: 2
+difficulty: moderate
+startCity: Marrakech
+endCity: Marrakech
+maxAltitude: 2489
+bestMonths: [3, 4, 5, 6, 9, 10, 11]
+price: { shared: 1450 }
+includes: { meals: true, transport: true, nights: true }
+photos: [lepinay-refuge, imlil-valley, imlil-2]
+highlights:
+  - { en: "The Ighouliden waterfall", fr: "La cascade d’Ighouliden", ar: "شلال إغوليدن" }
+  - { en: "The green Azzaden valley", fr: "La verte vallée d’Azzaden", ar: "وادي أزادن الأخضر" }
+  - { en: "Views of the Toubkal massif from Tizi Mzik", fr: "Vue sur le massif du Toubkal depuis le Tizi Mzik", ar: "إطلالة على جبال توبقال من تيزي مزيك" }
+itinerary:
+  - title: { en: "Imlil, Tizi Mzik and Id Aissa", fr: "Imlil, Tizi Mzik et Id Aïssa", ar: "إمليل، تيزي مزيك وإيد عيسى" }
+    text:
+      en: "Drive to Imlil, then climb through juniper to Tizi Mzik (2,489 m) and down into the Azzaden valley."
+      fr: "Route vers Imlil, puis montée parmi les genévriers jusqu’au Tizi Mzik (2 489 m) et descente dans la vallée d’Azzaden."
+      ar: "التوجه إلى إمليل، ثم الصعود بين أشجار العرعار إلى تيزي مزيك (2489 م) والنزول إلى وادي أزادن."
+    drive: 1 h 45
+    walk: 5 h
+    altitude: 2489
+    sleep: { type: refuge, place: Azzaden valley }
+    meals: [lunch, dinner]
+  - title: { en: "Tamsoult and the waterfall", fr: "Tamsoult et la cascade", ar: "تامسولت والشلال" }
+    text:
+      en: "Walk up to the summer pastures of Tamsoult and on to the Ighouliden waterfall. Picnic in the valley."
+      fr: "Montée vers les pâturages d’été de Tamsoult puis jusqu’à la cascade d’Ighouliden. Pique-nique dans la vallée."
+      ar: "الصعود إلى المراعي الصيفية في تامسولت ثم إلى شلال إغوليدن. نزهة وغداء في الوادي."
+    walk: 5–6 h
+    sleep: { type: refuge, place: Tamsoult }
+    meals: [breakfast, lunch, dinner]
+  - title: { en: "Back to Imlil and Marrakech", fr: "Retour à Imlil et Marrakech", ar: "العودة إلى إمليل ومراكش" }
+    text:
+      en: "Return over the pass to Imlil and drive back to Marrakech in the afternoon."
+      fr: "Retour par le col jusqu’à Imlil et route vers Marrakech l’après-midi."
+      ar: "العودة عبر الممر إلى إمليل ثم إلى مراكش بعد الظهر."
+    walk: 5 h
+    drive: 1 h 45
+    meals: [breakfast, lunch]
+included: [transport-marrakech, guide-mountain, meals-all, accommodation, muleteer]
+excluded: [drinks, sleeping-bag, tips, insurance, personal]
+pack: [boots, layers, rain-jacket, headlamp, sun-kit, bottle, daypack, sleeping-bag-pack]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "08:00"
+mapStops:
+  - { name: "Imlil", lat: 31.1366, lng: -7.9196, kind: start }
+  - { name: "Tizi Mzik", lat: 31.1195, lng: -7.9475, kind: stop }
+  - { name: "Azzaden valley", lat: 31.1050, lng: -7.9700, kind: sleep }
+  - { name: "Tamsoult", lat: 31.0890, lng: -7.9800, kind: sleep }
+  - { name: "Ighouliden waterfall", lat: 31.0820, lng: -7.9870, kind: stop }

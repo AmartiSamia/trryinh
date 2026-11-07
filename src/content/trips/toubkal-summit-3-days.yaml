@@ -1,0 +1,138 @@
+# Source: Youssef's own programme (WhatsApp, 6 Nov 2026): 3 days / 2 nights,
+# meals and transport included, 1450 MAD per person.
+# Old site (hikingtoatlas.com) showed €138 for the same trek.
+# TODO(youssef): is 1450 MAD the shared-group price? What is the private price?
+# TODO(youssef): Day 2 "08H00 déjeuner à Imlil" was read as breakfast — confirm.
+# TODO(youssef): maximum group size.
+category: trekking
+verified: true
+featured: true
+popularity: 100
+title:
+  en: Toubkal summit trek, 3 days
+  fr: Ascension du Toubkal en 3 jours
+  ar: صعود قمة توبقال في 3 أيام
+summary:
+  en: The classic ascent of North Africa’s highest peak (4,167 m) from Imlil, with a night in the village and a night at the refuge. Sunrise on the summit.
+  fr: L’ascension classique du plus haut sommet d’Afrique du Nord (4 167 m) depuis Imlil, avec une nuit au village et une nuit au refuge. Lever du soleil au sommet.
+  ar: الصعود الكلاسيكي لأعلى قمة في شمال إفريقيا (4167 مترا) انطلاقا من إمليل، مع ليلة في القرية وليلة في الملجأ. شروق الشمس من القمة.
+about:
+  en: >-
+    This is the trek Youssef has walked more than any other. You leave Marrakech in the afternoon,
+    sleep in a guesthouse in Imlil and set off the next morning up the Mizane valley, past the
+    shrine of Sidi Chamharouch, to the Toubkal refuge at 3,207 m. On day three you start at 3 am
+    with head torches and reach the summit around sunrise, then walk all the way down to Imlil and
+    drive back to Marrakech for the evening. It is a real mountain day: long, steep in places and
+    cold at the top, but no climbing skills are needed outside winter.
+  fr: >-
+    C’est le trek que Youssef a le plus souvent parcouru. Vous quittez Marrakech l’après-midi, dormez
+    dans un gîte à Imlil et partez le lendemain matin par la vallée de la Mizane, en passant par le
+    sanctuaire de Sidi Chamharouch, jusqu’au refuge du Toubkal à 3 207 m. Le troisième jour, départ à
+    3 h à la lampe frontale pour atteindre le sommet vers le lever du soleil, puis descente jusqu’à
+    Imlil et retour à Marrakech le soir. C’est une vraie journée de montagne : longue, raide par
+    endroits et froide au sommet, mais aucune technique d’escalade n’est nécessaire hors hiver.
+  ar: >-
+    هذه هي الرحلة التي قطعها يوسف أكثر من أي رحلة أخرى. تغادرون مراكش بعد الظهر، وتبيتون في دار ضيافة
+    بإمليل، ثم تنطلقون صباح اليوم التالي عبر وادي ميزان مرورا بضريح سيدي شمهروش حتى ملجأ توبقال على
+    ارتفاع 3207 أمتار. في اليوم الثالث تنطلقون في الساعة الثالثة صباحا بمصابيح الرأس وتصلون إلى القمة
+    مع شروق الشمس، ثم تنزلون إلى إمليل وتعودون إلى مراكش مساءً. إنه يوم جبلي حقيقي: طويل وشديد الانحدار
+    في بعض المقاطع وبارد في القمة، لكنه لا يتطلب مهارات تسلق خارج فصل الشتاء.
+days: 3
+nights: 2
+difficulty: challenging
+startCity: Marrakech
+endCity: Marrakech
+maxAltitude: 4167
+bestMonths: [4, 5, 6, 7, 8, 9, 10]
+price:
+  shared: 1450
+  confirmed: true
+includes: { meals: true, transport: true, nights: true }
+photos: [toubkal-sunrise, toubkal-hikers, toubkal-refuge, imlil, chamharouch, toubkal-pyramid, toubkal-summit]
+highlights:
+  - { en: Sunrise from the roof of North Africa, fr: Lever du soleil sur le toit de l’Afrique du Nord, ar: شروق الشمس من سقف شمال إفريقيا }
+  - { en: The Mizane valley and the shrine of Sidi Chamharouch, fr: La vallée de la Mizane et le sanctuaire de Sidi Chamharouch, ar: وادي ميزان وضريح سيدي شمهروش }
+  - { en: A night in a family guesthouse in Imlil, fr: Une nuit dans un gîte familial à Imlil, ar: ليلة في دار ضيافة عائلية بإمليل }
+  - { en: Everything organised from Marrakech and back, fr: "Tout est organisé depuis Marrakech, aller et retour", ar: كل شيء منظم من مراكش ذهابا وإيابا }
+itinerary:
+  - title: { en: Marrakech to Imlil, fr: De Marrakech à Imlil, ar: من مراكش إلى إمليل }
+    text:
+      en: Afternoon drive into the High Atlas. Settle into the guesthouse, meet your guide and go through the plan for the next two days over dinner.
+      fr: Route l’après-midi vers le Haut Atlas. Installation au gîte, rencontre avec votre guide et point sur les deux jours suivants autour du dîner.
+      ar: الانطلاق بعد الظهر نحو الأطلس الكبير. الاستقرار في دار الضيافة، والتعرف على المرشد ومناقشة برنامج اليومين القادمين على العشاء.
+    drive: 1 h 45
+    altitude: 1740
+    sleep: { type: guesthouse, place: Imlil }
+    meals: [dinner]
+    schedule:
+      - { time: "15:00", text: { en: Departure from Marrakech, fr: Départ de Marrakech, ar: الانطلاق من مراكش } }
+      - { time: "16:45", text: { en: Arrival in Imlil, fr: Arrivée à Imlil, ar: الوصول إلى إمليل } }
+      - { time: "20:00", text: { en: Dinner at the guesthouse, fr: Dîner au gîte, ar: العشاء في دار الضيافة } }
+  - title: { en: Imlil to the Toubkal refuge, fr: D’Imlil au refuge du Toubkal, ar: من إمليل إلى ملجأ توبقال }
+    text:
+      en: A steady climb up the Mizane valley, with a rest near the checkpoint and lunch at Sidi Chamharouch. In the afternoon the path climbs to the refuge, where you sleep at 3,207 m.
+      fr: Une montée régulière dans la vallée de la Mizane, avec une pause près du poste de contrôle et le déjeuner à Sidi Chamharouch. L’après-midi, le sentier monte jusqu’au refuge, où vous dormez à 3 207 m.
+      ar: صعود منتظم في وادي ميزان، مع استراحة قرب نقطة المراقبة وغداء في سيدي شمهروش. بعد الظهر يصعد المسار إلى الملجأ حيث تبيتون على ارتفاع 3207 أمتار.
+    walk: 6–7 h
+    altitude: 3207
+    sleep: { type: refuge, place: Toubkal refuge }
+    meals: [breakfast, lunch, dinner]
+    schedule:
+      - { time: "08:00", text: { en: Breakfast in Imlil, fr: Petit-déjeuner à Imlil, ar: الفطور في إمليل } }
+      - { time: "09:00", text: { en: Start walking towards the refuge, fr: Départ à pied vers le refuge, ar: بداية المشي نحو الملجأ } }
+      - { time: "10:00", text: { en: Short rest near the checkpoint, fr: Courte pause près du poste de contrôle, ar: استراحة قصيرة قرب نقطة المراقبة } }
+      - { time: "11:45", text: { en: "Sidi Chamharouch, about 40 minutes for lunch", fr: "Sidi Chamharouch, environ 40 minutes pour déjeuner", ar: سيدي شمهروش، حوالي 40 دقيقة للغداء } }
+      - { time: "12:30–16:00", text: { en: Climb on to the refuge, fr: Montée jusqu’au refuge, ar: مواصلة الصعود إلى الملجأ } }
+      - { time: "19:00", text: { en: Dinner at the refuge, fr: Dîner au refuge, ar: العشاء في الملجأ } }
+  - title: { en: Toubkal summit and return to Marrakech, fr: Sommet du Toubkal et retour à Marrakech, ar: قمة توبقال والعودة إلى مراكش }
+    text:
+      en: An early start by head torch up the south cirque to the summit for sunrise. Back at the refuge for lunch, then down the valley to Imlil and the drive back to Marrakech.
+      fr: Départ très matinal à la frontale par le cirque sud pour être au sommet au lever du soleil. Retour au refuge pour le déjeuner, puis descente vers Imlil et route vers Marrakech.
+      ar: انطلاق مبكر جدا بمصابيح الرأس عبر الحلبة الجنوبية للوصول إلى القمة مع الشروق. العودة إلى الملجأ للغداء، ثم النزول إلى إمليل والعودة بالسيارة إلى مراكش.
+    walk: 9–10 h
+    altitude: 4167
+    meals: [breakfast, lunch]
+    schedule:
+      - { time: "02:30", text: { en: Breakfast, fr: Petit-déjeuner, ar: الفطور } }
+      - { time: "03:00", text: { en: Start of the summit climb, fr: Départ pour l’ascension, ar: بداية الصعود إلى القمة } }
+      - { time: "07:00", text: { en: "On the summit (4,167 m)", fr: "Au sommet (4 167 m)", ar: الوصول إلى القمة (4167 م) } }
+      - { time: "12:00", text: { en: Back at the refuge, fr: Retour au refuge, ar: العودة إلى الملجأ } }
+      - { time: "12:30", text: { en: Lunch, fr: Déjeuner, ar: الغداء } }
+      - { time: "13:00", text: { en: Walk down to Imlil, fr: Descente vers Imlil, ar: النزول نحو إمليل } }
+      - { time: "16:00", text: { en: Arrival in Imlil, fr: Arrivée à Imlil, ar: الوصول إلى إمليل } }
+      - { time: "18:00", text: { en: Back in Marrakech, fr: Retour à Marrakech, ar: العودة إلى مراكش } }
+included: [transport-marrakech, guide-mountain, meals-all, accommodation, muleteer]
+excluded: [drinks, sleeping-bag, tips, insurance, personal]
+pack: [boots, layers, rain-jacket, gloves-hat, headlamp, sun-kit, bottle, daypack, sleeping-bag-pack, poles]
+meetingPoint:
+  en: Your riad or hotel in Marrakech (or a nearby meeting point if cars can’t reach it).
+  fr: Votre riad ou hôtel à Marrakech (ou un point de rendez-vous proche si la voiture ne peut pas y accéder).
+  ar: الرياض أو الفندق في مراكش (أو نقطة لقاء قريبة إذا تعذر وصول السيارة).
+pickupTime: "15:00"
+goodToKnow:
+  - en: The summit day is long (about 9–10 hours of walking). Walking regularly in the weeks before helps a lot.
+    fr: La journée du sommet est longue (environ 9 à 10 h de marche). Marcher régulièrement les semaines précédentes aide beaucoup.
+    ar: يوم القمة طويل (حوالي 9 إلى 10 ساعات من المشي). المشي بانتظام في الأسابيع السابقة يساعد كثيرا.
+  - en: From December to March the summit is under snow and the trip becomes a winter ascent with crampons. See our winter trip.
+    fr: De décembre à mars, le sommet est enneigé et le trek devient une ascension hivernale avec crampons. Voir notre trek d’hiver.
+    ar: من دجنبر إلى مارس تكون القمة مغطاة بالثلج وتصبح الرحلة صعودا شتويا بالمسامير الثلجية. راجعوا رحلتنا الشتوية.
+  - en: Weather decides. If the guide judges the summit unsafe, you turn back. Your safety comes first.
+    fr: La météo décide. Si le guide juge le sommet dangereux, on fait demi-tour. Votre sécurité passe avant tout.
+    ar: الطقس هو الذي يقرر. إذا رأى المرشد أن القمة غير آمنة، نعود أدراجنا. سلامتكم أولا.
+mapStops:
+  - { name: Marrakech, lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: Imlil, lat: 31.1366, lng: -7.9196, kind: sleep }
+  - { name: Sidi Chamharouch, lat: 31.0958, lng: -7.9112, kind: stop }
+  - { name: Toubkal refuge, lat: 31.0713, lng: -7.9139, kind: sleep }
+  - { name: "Toubkal summit (4,167 m)", lat: 31.0597, lng: -7.9156, kind: summit }
+faq:
+  - q: { en: Do I need climbing experience?, fr: Faut-il de l’expérience en escalade ?, ar: هل أحتاج إلى خبرة في التسلق؟ }
+    a:
+      en: No. From April to November it is a walk on steep, rocky paths. You need good fitness and good shoes, not technical skills.
+      fr: Non. D’avril à novembre, c’est une marche sur des sentiers raides et caillouteux. Il faut une bonne condition physique et de bonnes chaussures, pas de technique.
+      ar: لا. من أبريل إلى نونبر هو مشي على مسالك شديدة الانحدار وصخرية. تحتاجون إلى لياقة جيدة وحذاء جيد، وليس إلى مهارات تقنية.
+  - q: { en: Will the altitude be a problem?, fr: L’altitude pose-t-elle problème ?, ar: هل سيشكل الارتفاع مشكلة؟ }
+    a:
+      en: Most people feel the altitude above 3,500 m (short breath, mild headache). Going slowly, drinking a lot and sleeping at the refuge first help. Tell your guide how you feel.
+      fr: La plupart des gens sentent l’altitude au-dessus de 3 500 m (souffle court, léger mal de tête). Marcher lentement, bien boire et dormir au refuge aident. Dites à votre guide comment vous vous sentez.
+      ar: يشعر معظم الناس بالارتفاع فوق 3500 متر (ضيق في التنفس، صداع خفيف). المشي ببطء وشرب الكثير من الماء والمبيت في الملجأ أولا يساعد. أخبروا المرشد بما تشعرون به.

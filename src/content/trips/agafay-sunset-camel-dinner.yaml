@@ -1,0 +1,70 @@
+# Market: ~€40–120 per person depending on activities (camel / quad / dinner show).
+# TODO(youssef): confirm price, the camp partner and whether a quad option is offered.
+category: desert
+featured: true
+popularity: 88
+title:
+  en: Agafay desert sunset, camel ride and dinner
+  fr: Coucher de soleil dans le désert d’Agafay, dromadaire et dîner
+  ar: غروب الشمس في صحراء أكفاي، جولة على الجمل وعشاء
+summary:
+  en: The desert is 45 minutes from Marrakech. Ride a camel across the stony hills of Agafay at sunset, with the snowy Atlas behind, then dinner at a camp.
+  fr: Le désert à 45 minutes de Marrakech. Balade à dos de dromadaire sur les collines d’Agafay au coucher du soleil, l’Atlas enneigé en fond, puis dîner au camp.
+  ar: الصحراء على بعد 45 دقيقة من مراكش. جولة على الجمل فوق تلال أكفاي عند الغروب، والأطلس المثلج في الخلفية، ثم العشاء في المخيم.
+about:
+  en: >-
+    Agafay is not a sand desert but a wide landscape of bare, golden hills, and on clear days the
+    High Atlas stands white behind it. It is the easiest way to feel the desert without a long
+    drive. You are picked up in the afternoon, ride camels for about an hour at sunset, then have
+    dinner at a camp before driving back to Marrakech.
+  fr: >-
+    Agafay n’est pas un désert de sable mais un vaste paysage de collines nues et dorées, avec, par
+    temps clair, l’Atlas tout blanc derrière. C’est la façon la plus simple de sentir le désert sans
+    longue route. Prise en charge l’après-midi, environ une heure de dromadaire au coucher du soleil,
+    puis dîner au camp avant le retour à Marrakech.
+  ar: >-
+    أكفاي ليست صحراء رملية بل منظر واسع من التلال الذهبية العارية، وفي الأيام الصافية يظهر الأطلس الكبير
+    أبيضَ خلفها. إنها أسهل طريقة للإحساس بالصحراء دون طريق طويل. يتم استقبالكم بعد الظهر، وتركبون الجمال
+    حوالي ساعة عند الغروب، ثم تتناولون العشاء في المخيم قبل العودة إلى مراكش.
+days: 0.5
+hours: "5–6 h"
+difficulty: easy
+startCity: Marrakech
+endCity: Marrakech
+bestMonths: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+price: { shared: 450, private: 900 }
+includes: { meals: true, transport: true, nights: false }
+photos: [agafay-camels, agafay]
+highlights:
+  - { en: "Sunset on camelback", fr: "Coucher de soleil à dos de dromadaire", ar: "الغروب على ظهر الجمل" }
+  - { en: "Views of the snowy High Atlas", fr: "Vue sur le Haut Atlas enneigé", ar: "إطلالة على الأطلس الكبير المثلج" }
+  - { en: "Dinner at a desert camp", fr: "Dîner dans un camp du désert", ar: "عشاء في مخيم صحراوي" }
+itinerary:
+  - title: { en: "Afternoon and evening in Agafay", fr: "Après-midi et soirée à Agafay", ar: "بعد الظهر والمساء في أكفاي" }
+    text:
+      en: "Pickup in Marrakech, mint tea at the camp, camel ride at sunset, dinner, and drive back."
+      fr: "Prise en charge à Marrakech, thé à la menthe au camp, dromadaire au coucher du soleil, dîner et retour."
+      ar: "الاستقبال في مراكش، شاي بالنعناع في المخيم، جولة على الجمال عند الغروب، العشاء ثم العودة."
+    drive: 45 min each way
+    meals: [dinner]
+    schedule:
+      - { time: "15:30", text: { en: "Pickup in Marrakech", fr: "Prise en charge à Marrakech", ar: "الاستقبال في مراكش" } }
+      - { time: "16:30", text: { en: "Mint tea at the camp", fr: "Thé à la menthe au camp", ar: "شاي بالنعناع في المخيم" } }
+      - { time: "17:00", text: { en: "Camel ride until sunset", fr: "Balade à dos de dromadaire jusqu’au coucher du soleil", ar: "جولة على الجمل حتى الغروب" } }
+      - { time: "19:30", text: { en: "Dinner at the camp", fr: "Dîner au camp", ar: "العشاء في المخيم" } }
+      - { time: "21:30", text: { en: "Back at your riad", fr: "Retour à votre riad", ar: "العودة إلى الرياض" } }
+included: [pickup-hotel, camel, dinner, tea-snacks]
+excluded: [drinks, optional-activities, tips]
+pack: [warm-night, scarf, comfy-shoes]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "15:30"
+goodToKnow:
+  - en: "Times move with the season, to match the sunset."
+    fr: "Les horaires changent avec la saison pour suivre le coucher du soleil."
+    ar: "تتغير المواعيد حسب الفصل لتتوافق مع غروب الشمس."
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Agafay desert", lat: 31.4890, lng: -8.2200, kind: stop }

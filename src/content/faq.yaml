@@ -1,0 +1,10 @@
+# Site-wide FAQ. `home: true` shows the question on the home page.
+# TODO(review-ar): Arabic answers need a native review.
+- id: how-to-book
+  group: booking
+  home: true
+  q: { en: "How do I book a trip?", fr: "Comment réserver un voyage ?", ar: "كيف أحجز رحلة؟" }
+  a:
+    en: "Choose a trip, pick your date and the number of travellers, then send the request on WhatsApp or by email. Youssef checks availability and replies himself with the final price. Nothing is paid online."
+    fr: "Choisissez un voyage, une date et le nombre de voyageurs, puis envoyez la demande par WhatsApp ou par e-mail. Youssef vérifie la disponibilité et vous répond lui-même avec le prix final. Rien n’est payé en ligne."
+    ar: "اختاروا الرحلة والتاريخ وعدد المسافرين، ثم أرسلوا الطلب عبر واتساب أو البريد الإلكتروني. يتحقق يوسف من التوفر ويجيبكم بنفسه بالسعر النهائي. لا يتم أي دفع عبر الإنترنت."

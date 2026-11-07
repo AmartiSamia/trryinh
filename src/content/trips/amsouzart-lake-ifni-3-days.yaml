@@ -1,0 +1,80 @@
+# Source: hikingtoatlas.com: 3 days, from €138 / 1,500 MAD per person.
+# Day 1 Marrakech to Amsouzart village, day 2 to the lake, day 3 return.
+# TODO(youssef): confirm price, walking times and where you sleep by the lake.
+category: trekking
+popularity: 60
+title:
+  en: Amsouzart and Lake Ifni, 3 days
+  fr: Amsouzart et lac d’Ifni, 3 jours
+  ar: أمسوزارت وبحيرة إفني، 3 أيام
+summary:
+  en: A gentler way to reach Lake Ifni, from the south side of the Toubkal massif. Village life in Amsouzart and a night by the lake.
+  fr: Une façon plus douce de rejoindre le lac d’Ifni, par le versant sud du Toubkal. La vie du village à Amsouzart et une nuit au bord du lac.
+  ar: طريقة أسهل للوصول إلى بحيرة إفني من الجهة الجنوبية لجبال توبقال. حياة القرية في أمسوزارت وليلة بجانب البحيرة.
+about:
+  en: >-
+    Amsouzart sits on the southern side of the Toubkal massif, far from the busy Imlil trails.
+    After a scenic drive you spend the first night in a village guesthouse, walk up the valley the
+    next day to Lake Ifni and sleep by the water, then walk back down and drive to Marrakech.
+    Moderate days, big landscapes and very few other walkers.
+  fr: >-
+    Amsouzart se trouve sur le versant sud du massif du Toubkal, loin des sentiers fréquentés d’Imlil.
+    Après une belle route, première nuit dans un gîte du village ; le lendemain, montée dans la vallée
+    jusqu’au lac d’Ifni et nuit au bord de l’eau ; puis descente et retour à Marrakech. Des journées
+    modérées, de grands paysages et très peu de marcheurs.
+  ar: >-
+    تقع أمسوزارت في الجهة الجنوبية لجبال توبقال بعيدا عن مسالك إمليل المزدحمة. بعد طريق جميل تقضون الليلة
+    الأولى في دار ضيافة بالقرية، وفي اليوم الموالي تصعدون الوادي إلى بحيرة إفني وتبيتون بجانب الماء، ثم
+    تنزلون وتعودون إلى مراكش. أيام معتدلة ومناظر واسعة وقلة من المتنزهين.
+days: 3
+nights: 2
+difficulty: moderate
+startCity: Marrakech
+endCity: Marrakech
+maxAltitude: 2295
+bestMonths: [4, 5, 6, 7, 8, 9, 10]
+price: { shared: 1500 }
+includes: { meals: true, transport: true, nights: true }
+photos: [lake-ifni, imlil-mountains, imlil-3]
+highlights:
+  - { en: "Lake Ifni, the only high lake of the Toubkal massif", fr: "Le lac d’Ifni, seul lac d’altitude du massif du Toubkal", ar: "بحيرة إفني، البحيرة الجبلية الوحيدة في جبال توبقال" }
+  - { en: "A night in a family guesthouse in Amsouzart", fr: "Une nuit en gîte familial à Amsouzart", ar: "ليلة في دار ضيافة عائلية بأمسوزارت" }
+  - { en: "Quiet trails away from the crowds", fr: "Des sentiers calmes, loin de la foule", ar: "مسالك هادئة بعيدا عن الزحام" }
+itinerary:
+  - title: { en: "Marrakech to Amsouzart", fr: "De Marrakech à Amsouzart", ar: "من مراكش إلى أمسوزارت" }
+    text:
+      en: "A long, beautiful drive to the south side of the massif. Afternoon walk around the village."
+      fr: "Une longue et belle route vers le versant sud du massif. Balade l’après-midi autour du village."
+      ar: "طريق طويل وجميل نحو الجهة الجنوبية للجبال. جولة بعد الظهر حول القرية."
+    drive: 4 h
+    sleep: { type: guesthouse, place: Amsouzart }
+    meals: [lunch, dinner]
+  - title: { en: "Up to Lake Ifni", fr: "Montée au lac d’Ifni", ar: "الصعود إلى بحيرة إفني" }
+    text:
+      en: "Walk up the valley to the lake. Time to rest, swim if you dare, and watch the light change on the rock walls."
+      fr: "Montée dans la vallée jusqu’au lac. Temps libre pour se reposer, se baigner si vous osez, et regarder la lumière changer sur les parois."
+      ar: "الصعود في الوادي إلى البحيرة. وقت للراحة، والسباحة لمن يجرؤ، ومشاهدة تغير الضوء على الجدران الصخرية."
+    walk: 4 h
+    altitude: 2295
+    sleep: { type: tent, place: Lake Ifni }
+    meals: [breakfast, lunch, dinner]
+  - title: { en: "Back to Marrakech", fr: "Retour à Marrakech", ar: "العودة إلى مراكش" }
+    text:
+      en: "Walk down to Amsouzart and drive back to Marrakech, arriving in the late afternoon."
+      fr: "Descente vers Amsouzart et retour en voiture à Marrakech en fin d’après-midi."
+      ar: "النزول إلى أمسوزارت والعودة بالسيارة إلى مراكش في آخر الظهيرة."
+    walk: 3 h
+    drive: 4 h
+    meals: [breakfast, lunch]
+included: [transport-marrakech, guide-mountain, meals-all, accommodation, muleteer]
+excluded: [drinks, sleeping-bag, tips, insurance, personal]
+pack: [boots, layers, rain-jacket, headlamp, sun-kit, bottle, daypack, sleeping-bag-pack, swimwear]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "08:00"
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Amsouzart", lat: 31.0270, lng: -7.8180, kind: sleep }
+  - { name: "Lake Ifni", lat: 31.0010, lng: -7.8710, kind: sleep }

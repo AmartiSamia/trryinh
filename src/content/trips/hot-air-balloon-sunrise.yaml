@@ -1,0 +1,59 @@
+# Market: not given in the brief; shared flights ~€150–250 per person.
+# TODO(youssef): confirm price and the licensed balloon operator you book with.
+category: activity
+popularity: 76
+title:
+  en: Hot-air balloon flight at sunrise
+  fr: Vol en montgolfière au lever du soleil
+  ar: رحلة بالمنطاد عند شروق الشمس
+summary:
+  en: Float over the villages and fields north of Marrakech as the sun comes up over the Atlas. About one hour in the air, then breakfast in a Berber tent.
+  fr: Survolez les villages et les champs au nord de Marrakech pendant que le soleil se lève sur l’Atlas. Environ une heure de vol, puis petit-déjeuner sous une tente berbère.
+  ar: حلّقوا فوق القرى والحقول شمال مراكش بينما تشرق الشمس فوق الأطلس. حوالي ساعة في الجو، ثم فطور في خيمة أمازيغية.
+about:
+  en: >-
+    A very early pickup takes you to the launch site outside the city. While the balloon is
+    inflated you have tea; then you rise slowly to watch the sun light up the Jbilet hills and the
+    snowy High Atlas. After landing, a traditional breakfast and a certificate. Flights are run by a
+    licensed balloon company; we organise the booking and the transfer.
+  fr: >-
+    Prise en charge très matinale vers le site de décollage hors de la ville. Thé pendant le gonflage,
+    puis montée lente pour voir le soleil éclairer les collines des Jbilet et le Haut Atlas enneigé.
+    Après l’atterrissage, petit-déjeuner traditionnel et certificat. Les vols sont assurés par une
+    compagnie agréée ; nous organisons la réservation et le transfert.
+  ar: >-
+    يتم استقبالكم في وقت مبكر جدا إلى موقع الإقلاع خارج المدينة. تشربون الشاي أثناء نفخ المنطاد، ثم ترتفعون
+    ببطء لمشاهدة الشمس تضيء تلال الجبيلات والأطلس الكبير المثلج. بعد الهبوط، فطور تقليدي وشهادة. تُنظَّم
+    الرحلات من طرف شركة منطاد مرخصة، ونحن نتكفل بالحجز والنقل.
+days: 0.5
+hours: "4 h"
+difficulty: easy
+startCity: Marrakech
+endCity: Marrakech
+bestMonths: [1, 2, 3, 4, 5, 9, 10, 11, 12]
+price: { shared: 2200 }
+includes: { meals: true, transport: true, nights: false }
+photos: [balloon, palmeraie]
+highlights:
+  - { en: "Sunrise over the Atlas from the sky", fr: "Lever du soleil sur l’Atlas vu du ciel", ar: "شروق الشمس فوق الأطلس من السماء" }
+  - { en: "About one hour of flight", fr: "Environ une heure de vol", ar: "حوالي ساعة من الطيران" }
+  - { en: "Breakfast after landing", fr: "Petit-déjeuner après l’atterrissage", ar: "فطور بعد الهبوط" }
+itinerary:
+  - title: { en: "Balloon flight", fr: "Vol en montgolfière", ar: "رحلة المنطاد" }
+    text: { en: "Pickup before dawn, flight, breakfast, back at your riad by late morning.", fr: "Prise en charge avant l’aube, vol, petit-déjeuner, retour au riad en fin de matinée.", ar: "الاستقبال قبل الفجر، الطيران، الفطور، والعودة إلى الرياض قبل الظهر." }
+    meals: [breakfast]
+included: [pickup-hotel, tea-snacks, equipment]
+excluded: [tips, personal]
+pack: [layers, comfy-shoes]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "05:30"
+goodToKnow:
+  - en: "Flights depend on the wind. If the pilot cancels, you choose another day or a full refund."
+    fr: "Les vols dépendent du vent. Si le pilote annule, vous choisissez un autre jour ou un remboursement complet."
+    ar: "تعتمد الرحلات على الرياح. إذا ألغى الطيار الرحلة، تختارون يوما آخر أو استرجاع المبلغ كاملا."
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Launch site (Jbilet area)", lat: 31.7600, lng: -7.9300, kind: stop }

@@ -1,0 +1,65 @@
+# Merges two items from the brief: "Ourika & Setti Fatma (day)" (trekking list) and
+# "Ourika valley" (day trips list), which are the same outing.
+# Market: not given in the brief; typical shared offers ~€20–35.
+# TODO(youssef): confirm prices; say if you want two separate versions (easy tour vs. hike).
+category: day-trip
+popularity: 75
+title:
+  en: Ourika valley and Setti Fatma waterfalls
+  fr: Vallée de l’Ourika et cascades de Setti Fatma
+  ar: وادي أوريكا وشلالات ستي فاطمة
+summary:
+  en: The green valley closest to Marrakech. A walk up to the Setti Fatma waterfalls with a local guide, a traditional Amazigh house and lunch by the river.
+  fr: La vallée verte la plus proche de Marrakech. Montée aux cascades de Setti Fatma avec un guide local, une maison amazighe traditionnelle et déjeuner au bord de la rivière.
+  ar: الوادي الأخضر الأقرب إلى مراكش. صعود إلى شلالات ستي فاطمة مع مرشد محلي، زيارة بيت أمازيغي تقليدي وغداء بجانب النهر.
+about:
+  en: >-
+    One hour from Marrakech, the Ourika river cuts a green valley into the Atlas. You stop at a
+    traditional Amazigh house to see how families live, then continue to Setti Fatma, where a local
+    guide leads you on a rocky path up to the first of the seven waterfalls. Lunch is a tagine on a
+    terrace over the river.
+  fr: >-
+    À une heure de Marrakech, la rivière Ourika creuse une vallée verte dans l’Atlas. Arrêt dans une
+    maison amazighe traditionnelle pour voir comment vivent les familles, puis Setti Fatma, où un guide
+    local vous conduit sur un sentier rocheux jusqu’à la première des sept cascades. Déjeuner : un
+    tajine sur une terrasse au-dessus de la rivière.
+  ar: >-
+    على بعد ساعة من مراكش، يشق نهر أوريكا واديا أخضر في الأطلس. تتوقفون في بيت أمازيغي تقليدي لمعرفة كيف
+    تعيش العائلات، ثم تواصلون إلى ستي فاطمة حيث يقودكم مرشد محلي على مسار صخري إلى أول الشلالات السبعة.
+    الغداء طاجين على شرفة فوق النهر.
+days: 1
+difficulty: easy
+startCity: Marrakech
+endCity: Marrakech
+bestMonths: [3, 4, 5, 6, 7, 8, 9, 10]
+price: { shared: 250, private: 800 }
+includes: { meals: false, transport: true, nights: false }
+photos: [setti-fatma, ourika, ourika-2]
+highlights:
+  - { en: "The Setti Fatma waterfalls", fr: "Les cascades de Setti Fatma", ar: "شلالات ستي فاطمة" }
+  - { en: "A traditional Amazigh house", fr: "Une maison amazighe traditionnelle", ar: "بيت أمازيغي تقليدي" }
+  - { en: "Lunch by the river", fr: "Déjeuner au bord de la rivière", ar: "غداء بجانب النهر" }
+itinerary:
+  - title: { en: "Ourika valley", fr: "Vallée de l’Ourika", ar: "وادي أوريكا" }
+    text:
+      en: "Drive up the valley, visit an Amazigh house, walk to the waterfalls with a local guide, lunch and drive back."
+      fr: "Route dans la vallée, visite d’une maison amazighe, marche aux cascades avec un guide local, déjeuner et retour."
+      ar: "الطريق في الوادي، زيارة بيت أمازيغي، المشي إلى الشلالات مع مرشد محلي، الغداء ثم العودة."
+    drive: 1 h 15 each way
+    walk: 2 h
+included: [pickup-hotel, transport, driver, guide-local]
+excluded: [lunch, drinks, tips]
+pack: [comfy-shoes, sun-kit, bottle]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "09:00"
+goodToKnow:
+  - en: "The path to the waterfalls is rocky and steep in places. Wear shoes with good grip."
+    fr: "Le sentier des cascades est rocheux et raide par endroits. Portez des chaussures qui accrochent."
+    ar: "مسار الشلالات صخري ومنحدر في بعض الأماكن. ارتدوا أحذية بقبضة جيدة."
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Tnine Ourika", lat: 31.3460, lng: -7.7870, kind: stop }
+  - { name: "Setti Fatma", lat: 31.2240, lng: -7.6750, kind: stop }
