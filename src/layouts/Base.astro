@@ -1,0 +1,137 @@
+---
+import '@fontsource-variable/readex-pro';
+import '@fontsource-variable/ibm-plex-sans';
+import '@fontsource/ibm-plex-sans-arabic/400.css';
+import '@fontsource/ibm-plex-sans-arabic/600.css';
+import '../styles/global.css';
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFab from '../components/WhatsAppFab.astro';
+import { langMeta, locales, defaultLang, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { analytics, currency, site } from '../config';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+  /** Same page in each language (for hreflang + language switcher). */
+  alternates: Record<Lang, string>;
+  /** Absolute or root-relative image for Open Graph. */
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  noindex?: boolean;
+  jsonLd?: object | object[];
+  /** Transparent header over a hero photo. */
+  overlayHeader?: boolean;
+  /** Custom pre-filled message for the floating WhatsApp button. */
+  waMessage?: string;
+  /** Hide the floating WhatsApp button (e.g. when the page has its own bar). */
+  hideFab?: boolean;
+}
+
+const {
+  lang,
+  title,
+  description,
+  alternates,
+  ogImage = '/og-default.jpg',
+  ogType = 'website',
+  noindex = false,
+  jsonLd,
+  overlayHeader = false,
+  waMessage,
+  hideFab = false,
+} = Astro.props;
+
+const s = t(lang);
+const meta = langMeta[lang];
+const fullTitle = title.includes(site.name) ? title : `${title} · ${site.name}`;
+const desc = description ?? s.meta.description;
+const abs = (p: string) => new URL(p, site.url).href;
+const canonical = abs(Astro.url.pathname);
+const ldList = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+---
+<!doctype html>
+<html lang={lang} dir={meta.dir} data-currency={currency.default} data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={canonical} />
+    {locales.map((l) => <link rel="alternate" hreflang={l} href={abs(alternates[l])} />)}
+    <link rel="alternate" hreflang="x-default" href={abs(alternates[defaultLang])} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={abs(ogImage)} />
+    <meta property="og:locale" content={meta.ogLocale} />
+    {locales.filter((l) => l !== lang).map((l) => <meta property="og:locale:alternate" content={langMeta[l].ogLocale} />)}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={desc} />
+    <meta name="twitter:image" content={abs(ogImage)} />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#f7f5f1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1328" media="(prefers-color-scheme: dark)" />
+
+    <!-- Theme, currency and language before first paint: no flash. -->
+    <script is:inline>
+      (function () {
+        var d = document.documentElement, mq = window.matchMedia('(prefers-color-scheme: dark)');
+        d.classList.add('js');
+        var theme = mq.matches ? 'dark' : 'light';
+        try {
+          var st = localStorage.getItem('theme');
+          if (st === 'light' || st === 'dark') theme = st;
+          var c = localStorage.getItem('currency');
+          if (c === 'EUR' || c === 'MAD' || c === 'USD') d.dataset.currency = c;
+          localStorage.setItem('lang', d.lang);
+        } catch (e) {}
+        d.dataset.theme = theme;
+      })();
+    </script>
+
+    {ldList.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
+
+    {analytics.plausibleDomain && (
+      <script defer data-domain={analytics.plausibleDomain} src="https://plausible.io/js/script.js"></script>
+    )}
+    <slot name="head" />
+  </head>
+  <body class="flex flex-col bg-bg text-ink antialiased">
+    <a href="#main" class="sr-only z-50 rounded-full bg-accent px-5 py-3 font-semibold text-on-accent focus:not-sr-only focus:fixed focus:start-4 focus:top-4">
+      {s.a11y.skip}
+    </a>
+    <Header lang={lang} alternates={alternates} overlay={overlayHeader} />
+    <main id="main" tabindex="-1" class:list={['flex-1 outline-none', { 'pt-[4.5rem]': !overlayHeader }]}>
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    {!hideFab && <WhatsAppFab lang={lang} message={waMessage} />}
+
+    <script>
+      // Gentle scroll reveals. Content is visible without JS; this only adds motion.
+      const els = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const io = new IntersectionObserver(
+          (entries) => entries.forEach((e) => {
+            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+          }),
+          { rootMargin: '0px 0px -8% 0px' },
+        );
+        els.forEach((el) => io.observe(el));
+      } else {
+        els.forEach((el) => el.classList.add('is-in'));
+      }
+    </script>
+  </body>
+</html>

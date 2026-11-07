@@ -1,0 +1,108 @@
+---
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+import { url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { contact, legal, site, social } from '../config';
+import { waLink } from '../lib/whatsapp';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const year = new Date().getFullYear();
+
+const cols = [
+  {
+    title: s.footer.explore,
+    links: [
+      { href: url(lang, 'trips'), label: s.nav.trips },
+      { href: url(lang, 'tailorMade'), label: s.nav.tailorMade },
+      { href: url(lang, 'guide'), label: s.nav.guide },
+      { href: url(lang, 'wishlist'), label: s.nav.wishlist },
+    ],
+  },
+  {
+    title: s.footer.company,
+    links: [
+      { href: url(lang, 'about'), label: s.nav.about },
+      { href: url(lang, 'reviews'), label: s.nav.reviews },
+      { href: url(lang, 'faq'), label: s.nav.faq },
+      { href: url(lang, 'contact'), label: s.nav.contact },
+    ],
+  },
+  {
+    title: s.footer.legal,
+    links: [
+      { href: url(lang, 'terms'), label: s.nav.terms },
+      { href: url(lang, 'cancellation'), label: s.nav.cancellation },
+      { href: url(lang, 'privacy'), label: s.nav.privacy },
+      { href: url(lang, 'credits'), label: s.nav.credits },
+    ],
+  },
+];
+const socials = [
+  { href: social.instagram, icon: 'instagram', label: 'Instagram' },
+  { href: social.facebook, icon: 'facebook', label: 'Facebook' },
+  { href: social.tiktok, icon: 'tiktok', label: 'TikTok' },
+].filter((x) => x.href) as { href: string; icon: 'instagram' | 'facebook' | 'tiktok'; label: string }[];
+---
+<footer data-site-footer aria-label={s.a11y.footer} class="footer mt-24 bg-brand text-on-brand">
+  <div class="motif-rule"></div>
+  <div class="container-page grid gap-10 py-14 md:grid-cols-[1.4fr_repeat(3,1fr)]">
+    <div class="max-w-sm">
+      <Logo />
+      <p class="mt-1 font-display text-sm opacity-70" lang="zgh">{site.nameTifinagh} · {s.meta.tagline}</p>
+      <p class="mt-4 text-[0.95rem] opacity-85">{s.footer.about}</p>
+      <div class="mt-6 space-y-2 text-[0.95rem]">
+        <a href={waLink(s.common.whatsappHello)} class="flex items-center gap-2.5 hover:underline" target="_blank" rel="noopener">
+          <Icon name="whatsapp" /> <span dir="ltr">{contact.phone}</span>
+        </a>
+        <a href={`mailto:${contact.email}`} class="flex items-center gap-2.5 hover:underline"><Icon name="mail" /> {contact.email}</a>
+        <p class="flex items-center gap-2.5"><Icon name="pin" /> {contact.address.locality}, {contact.address.region}</p>
+      </div>
+      <p class="mt-4 text-sm opacity-70">{s.footer.answers}</p>
+    </div>
+
+    {cols.map((c) => (
+      <nav aria-label={c.title}>
+        <h2 class="font-display text-sm font-semibold uppercase tracking-[0.12em] opacity-70">{c.title}</h2>
+        <ul class="mt-4 space-y-1">
+          {c.links.map((l) => (
+            <li><a href={l.href} class="inline-flex min-h-11 items-center hover:underline">{l.label}</a></li>
+          ))}
+        </ul>
+      </nav>
+    ))}
+  </div>
+
+  <div class="border-t border-white/15">
+    <div class="container-page flex flex-col gap-4 py-6 text-sm opacity-80 md:flex-row md:items-center md:justify-between">
+      <div class="space-y-1">
+        <p>© {year} {site.name}. {s.footer.rights}</p>
+        {legal.guideLicence && <p>{s.footer.licence}: {legal.guideLicence}</p>}
+        {legal.agencyRegistration && <p>{s.footer.registration}: {legal.agencyRegistration}</p>}
+      </div>
+      {socials.length > 0 && (
+        <ul class="flex gap-1">
+          {socials.map((x) => (
+            <li>
+              <a href={x.href} target="_blank" rel="noopener" class="grid size-11 place-items-center rounded-full hover:bg-white/10" aria-label={x.label}>
+                <Icon name={x.icon} />
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    --link: #f2b252;
+  }
+  /* Footer text in light theme sits on indigo: keep focus ring visible. */
+  .footer :focus-visible {
+    outline-color: #f2b252;
+  }
+</style>

@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { alternates, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+---
+<Base lang={lang} title={`Iberdan · ${s.meta.tagline}`} alternates={alternates('home')}>
+  <section class="container-page py-24">
+    <p class="eyebrow">Iberdan</p>
+    <h1 class="mt-3 text-display">{s.meta.tagline}</h1>
+    <p class="mt-6 max-w-xl text-lg text-ink-2">{s.meta.description}</p>
+  </section>
+</Base>

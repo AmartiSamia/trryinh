@@ -1,0 +1,9 @@
+---
+/** Renders the price in every currency; CSS shows the visitor's choice without a flash. */
+import { currencies } from '../config';
+import { formatPrice } from '../lib/price';
+import type { Lang } from '../i18n/routes';
+interface Props { mad: number; lang: Lang; class?: string }
+const { mad, lang, class: cls } = Astro.props;
+---
+<span class:list={['tabular-nums whitespace-nowrap', cls]} dir="ltr">{currencies.map((c) => <span data-cur={c}>{formatPrice(mad, c, lang)}</span>)}</span>

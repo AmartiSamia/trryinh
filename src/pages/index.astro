@@ -1,0 +1,39 @@
+---
+/**
+ * Root: send the visitor to their language. A saved choice wins, then the
+ * browser language, then English. Without JS, the links below work.
+ */
+import { site } from '../config';
+import { locales, langMeta } from '../i18n/routes';
+const abs = (p: string) => new URL(p, site.url).href;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{site.name}: Morocco, the local way</title>
+    <link rel="canonical" href={abs('/en/')} />
+    {locales.map((l) => <link rel="alternate" hreflang={l} href={abs(`/${l}/`)} />)}
+    <link rel="alternate" hreflang="x-default" href={abs('/')} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script is:inline>
+      (function () {
+        var ok = ['en', 'fr', 'ar'], lang = null;
+        try { lang = localStorage.getItem('lang'); } catch (e) {}
+        if (ok.indexOf(lang) < 0) {
+          var prefs = navigator.languages || [navigator.language || 'en'];
+          for (var i = 0; i < prefs.length && !lang; i++) {
+            var p = String(prefs[i]).slice(0, 2).toLowerCase();
+            if (ok.indexOf(p) >= 0) lang = p;
+          }
+        }
+        location.replace('/' + (ok.indexOf(lang) >= 0 ? lang : 'en') + '/');
+      })();
+    </script>
+    <style>body{font:16px system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;background:#f7f5f1;color:#161a2e}a{margin:0 .75rem;color:#2e3f8f}</style>
+  </head>
+  <body>
+    <nav>{locales.map((l) => <a href={`/${l}/`} hreflang={l}>{langMeta[l].label}</a>)}</nav>
+  </body>
+</html>

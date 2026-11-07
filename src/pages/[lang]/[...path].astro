@@ -1,0 +1,22 @@
+---
+/**
+ * Single router for all localised pages. Each language gets its own
+ * slugs (see src/i18n/routes.ts); src/views/index.ts maps a page to a view.
+ */
+import type { GetStaticPaths } from 'astro';
+import { locales, routes, type Lang, type RouteKey } from '../../i18n/routes';
+import { views } from '../../views';
+
+export const getStaticPaths = (() =>
+  locales.flatMap((lang) =>
+    (Object.keys(views) as RouteKey[]).map((key) => ({
+      params: { lang, path: routes[key][lang] || undefined },
+      props: { key },
+    })),
+  )) satisfies GetStaticPaths;
+
+const { lang } = Astro.params as { lang: Lang };
+const { key } = Astro.props as { key: RouteKey };
+const View = views[key]!;
+---
+<View lang={lang} />

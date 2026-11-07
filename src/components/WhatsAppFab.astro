@@ -1,0 +1,26 @@
+---
+import Icon from './Icon.astro';
+import { waLink } from '../lib/whatsapp';
+import { t } from '../i18n/ui';
+import type { Lang } from '../i18n/routes';
+interface Props { lang: Lang; message?: string }
+const { lang, message } = Astro.props;
+const s = t(lang);
+---
+<a
+  href={waLink(message ?? s.common.whatsappHello)}
+  target="_blank"
+  rel="noopener"
+  data-no-print
+  class="wa-fab btn-whatsapp fixed end-4 z-30 grid size-14 place-items-center rounded-full shadow-lg transition-transform hover:scale-105"
+  aria-label={s.common.chatWhatsapp}
+>
+  <Icon name="whatsapp" size={28} stroke={1.7} />
+</a>
+<style>
+  .wa-fab {
+    /* Sits above the mobile booking bar when one is present. */
+    bottom: calc(1rem + env(safe-area-inset-bottom) + var(--booking-bar-h, 0px));
+    box-shadow: 0 10px 30px -8px rgb(0 0 0 / 0.45);
+  }
+</style>

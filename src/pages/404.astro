@@ -1,0 +1,27 @@
+---
+/** One 404 for all languages: the visitor's language is unknown here, so all three are shown. */
+import Base from '../layouts/Base.astro';
+import LogoMark from '../components/LogoMark.astro';
+import { alternates, locales, url, langMeta } from '../i18n/routes';
+import { ui } from '../i18n/ui';
+---
+<Base lang="en" title="404 · Page not found" alternates={alternates('home')} noindex>
+  <section class="container-page py-20 text-center">
+    <LogoMark size={56} class="mx-auto text-brand-2" />
+    <p class="mt-6 font-display text-7xl font-semibold text-accent-text">404</p>
+    <div class="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
+      {locales.map((l, i) => {
+        const s = ui[l];
+        return (
+          <div lang={l} dir={langMeta[l].dir} class="card p-6 text-start">
+            {i === 0 ? <h1 class="text-h3">{s.notFound.title}</h1> : <h2 class="text-h3">{s.notFound.title}</h2>}
+            <p class="mt-3 text-ink-2">{s.notFound.text}</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <a href={url(l, 'home')} class="btn btn-brand !min-h-11 text-sm">{s.common.backHome}</a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+</Base>
