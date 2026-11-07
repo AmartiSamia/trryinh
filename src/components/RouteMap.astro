@@ -6,20 +6,22 @@
  */
 import { t } from '../i18n/ui';
 import type { Lang } from '../i18n/routes';
+import { placeLabel } from '../i18n/catalog';
 type Stop = { name: string; lat: number; lng: number; kind: string };
 interface Props { stops: Stop[]; lang: Lang; label?: string; showList?: boolean }
 const { stops, lang, label, showList = true } = Astro.props;
 const s = t(lang);
+const named = stops.map((st) => ({ ...st, name: placeLabel(st.name, lang) }));
 ---
 <div class:list={['grid gap-4', showList && 'md:grid-cols-[1fr_15rem]']}>
   <div class="route-map relative z-0 aspect-[4/3] overflow-hidden rounded-3xl bg-surface-2 md:aspect-auto md:min-h-96"
-    data-map={JSON.stringify(stops)} role="region" aria-label={label ?? s.trip.map} data-no-print>
+    data-map={JSON.stringify(named)} role="region" aria-label={label ?? s.trip.map} data-no-print>
     <p class="absolute inset-0 grid place-items-center text-sm text-ink-3" data-map-loading>{s.trip.mapLoading}</p>
   </div>
   {showList && <div>
     <h3 class="text-sm font-semibold">{s.trip.mapStops}</h3>
     <ol class="mt-3 space-y-2 text-sm">
-      {stops.map((st, i) => (
+      {named.map((st, i) => (
         <li class="flex items-start gap-3">
           <span class:list={['mt-0.5 grid size-6 shrink-0 place-items-center rounded-full text-xs font-bold', st.kind === 'summit' ? 'bg-accent text-on-accent' : 'bg-brand text-on-brand']}>{i + 1}</span>
           <span>{st.name}</span>
@@ -59,7 +61,13 @@ const s = t(lang);
 <script>
   document.querySelectorAll<HTMLElement>('[data-map]').forEach((el) => {
     const load = async () => {
-      const [{ default: L }] = await Promise.all([import('leaflet'), import('leaflet/dist/leaflet.css')]);
+      // Leaflet's CSS is only requested when a map is shown (kept out of the page CSS).
+      if (!document.querySelector('link[data-leaflet]')) {
+        const css = Object.assign(document.createElement('link'), { rel: 'stylesheet', href: '/vendor/leaflet/leaflet-1.9.4.css' });
+        css.setAttribute('data-leaflet', '');
+        document.head.append(css);
+      }
+      const { default: L } = await import('leaflet');
       const stops: { name: string; lat: number; lng: number; kind: string }[] = JSON.parse(el.dataset.map!);
       el.querySelector('[data-map-loading]')?.remove();
       const map = L.map(el, { scrollWheelZoom: false, attributionControl: true });

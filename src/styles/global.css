@@ -77,8 +77,8 @@
   --color-danger: var(--danger);
   --color-danger-bg: var(--danger-bg);
 
-  --font-display: 'Readex Pro Variable', 'IBM Plex Sans Arabic', system-ui, sans-serif;
-  --font-body: 'IBM Plex Sans Variable', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  --font-display: 'Readex Pro Variable', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans Variable', system-ui, sans-serif;
 
   --shadow-card: var(--shadow);
 }
@@ -107,8 +107,9 @@
     text-rendering: optimizeLegibility;
     scroll-padding-top: 5.5rem;
   }
+  /* Arabic: Readex Pro for everything (one variable file, already preloaded). */
   html:lang(ar) {
-    --font-body: 'IBM Plex Sans Arabic', 'IBM Plex Sans Variable', system-ui, sans-serif;
+    --font-body: 'Readex Pro Variable', system-ui, sans-serif;
   }
   body {
     min-height: 100dvh;

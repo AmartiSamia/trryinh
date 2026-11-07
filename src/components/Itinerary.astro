@@ -2,7 +2,7 @@
 /** Day-by-day timeline: walking/driving time, altitude, night and meals, optional hour-by-hour schedule. */
 import Icon from './Icon.astro';
 import { t } from '../i18n/ui';
-import { mealLabels, sleepLabels } from '../i18n/catalog';
+import { mealLabels, placeLabel, sleepLabels } from '../i18n/catalog';
 import type { Lang } from '../i18n/routes';
 import type { Trip } from '../lib/trips';
 
@@ -26,8 +26,8 @@ const single = days.length === 1;
         {d.walk && <div class="fact"><Icon name="walk" size={16} /><dt>{s.trip.walk}</dt><dd dir="ltr">{d.walk}</dd></div>}
         {d.drive && <div class="fact"><Icon name="car" size={16} /><dt>{s.trip.drive}</dt><dd dir="ltr">{d.drive}</dd></div>}
         {d.altitude && <div class="fact"><Icon name="mountain" size={16} /><dt>{s.trip.altitude}</dt><dd dir="ltr">{d.altitude.toLocaleString('en')} m</dd></div>}
-        {d.sleep && <div class="fact"><Icon name="bed" size={16} /><dt>{s.trip.sleep}</dt><dd>{sleepLabels[d.sleep.type][lang]}, {d.sleep.place}</dd></div>}
-        {d.meals.length > 0 && <div class="fact"><Icon name="meal" size={16} /><dt>{s.trip.meals}</dt><dd>{d.meals.map((m) => mealLabels[m][lang]).join(', ')}</dd></div>}
+        {d.sleep && <div class="fact"><Icon name="bed" size={16} /><dt>{s.trip.sleep}</dt><dd>{sleepLabels[d.sleep.type][lang]}{lang === 'ar' ? '، ' : ', '}{placeLabel(d.sleep.place, lang)}</dd></div>}
+        {d.meals.length > 0 && <div class="fact"><Icon name="meal" size={16} /><dt>{s.trip.meals}</dt><dd>{d.meals.map((m) => mealLabels[m][lang]).join(lang === 'ar' ? '، ' : ', ')}</dd></div>}
       </dl>
 
       {d.schedule && (

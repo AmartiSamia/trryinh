@@ -1,9 +1,9 @@
 ---
 import '@fontsource-variable/readex-pro';
 import '@fontsource-variable/ibm-plex-sans';
-import '@fontsource/ibm-plex-sans-arabic/400.css';
-import '@fontsource/ibm-plex-sans-arabic/600.css';
 import '../styles/global.css';
+import readexLatin from '@fontsource-variable/readex-pro/files/readex-pro-latin-wght-normal.woff2?url';
+import readexArabic from '@fontsource-variable/readex-pro/files/readex-pro-arabic-wght-normal.woff2?url';
 
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -78,6 +78,8 @@ const ldList = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     <meta name="twitter:description" content={desc} />
     <meta name="twitter:image" content={abs(ogImage)} />
 
+    <!-- Headings font, needed for the first paint. -->
+    <link rel="preload" as="font" type="font/woff2" href={lang === 'ar' ? readexArabic : readexLatin} crossorigin />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="theme-color" content="#f7f5f1" media="(prefers-color-scheme: light)" />

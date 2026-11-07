@@ -69,7 +69,7 @@ const wa = waLink(s.common.whatsappHello);
                 aria-current={l === lang ? 'true' : undefined}
                 class="lang-link grid h-10 min-w-10 place-items-center rounded-full px-1.5 text-sm font-semibold"
               >
-                <span aria-hidden="true">{langMeta[l].short}</span>
+                <span aria-hidden="true" class:list={[{ 'font-[system-ui]': l === 'ar' && lang !== 'ar' }]}>{langMeta[l].short}</span>
                 <span class="sr-only">{langMeta[l].label}</span>
               </a>
             </li>

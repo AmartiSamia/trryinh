@@ -168,7 +168,8 @@ const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
     from { transform: scale(1.08); }
   }
   @keyframes hero-rise {
-    from { opacity: 0; transform: translateY(16px); }
+    /* Movement only: text is painted at once, so it counts for LCP immediately. */
+    from { transform: translateY(14px); }
   }
   .hero h1 {
     text-shadow: 0 2px 30px rgb(0 0 0 / 0.35);
