@@ -1,0 +1,21 @@
+---
+import Icon from './Icon.astro';
+import { breadcrumbJsonLd } from '../lib/seo';
+import { t } from '../i18n/ui';
+import type { Lang } from '../i18n/routes';
+interface Props { items: { name: string; path: string }[]; lang: Lang }
+const { items, lang } = Astro.props;
+---
+<nav aria-label={t(lang).a11y.breadcrumb} class="text-sm text-ink-2" data-no-print>
+  <ol class="flex flex-wrap items-center gap-1">
+    {items.map((it, i) => (
+      <li class="flex items-center gap-1">
+        {i > 0 && <Icon name="chevron" size={14} flip class="text-ink-3" />}
+        {i < items.length - 1
+          ? <a href={it.path} class="inline-flex min-h-8 items-center hover:underline">{it.name}</a>
+          : <span aria-current="page" class="text-ink">{it.name}</span>}
+      </li>
+    ))}
+  </ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd(items))} />

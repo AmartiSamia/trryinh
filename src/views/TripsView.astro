@@ -1,0 +1,206 @@
+---
+/**
+ * All trips. Every card is rendered at build time; the filters run in the
+ * browser and are mirrored in the URL (?cat=desert&dur=short...) so a
+ * filtered list can be shared.
+ */
+import Base from '../layouts/Base.astro';
+import TripCard from '../components/TripCard.astro';
+import Icon from '../components/Icon.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { alternates, url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { categoryLabels, cityLabel, difficultyLabels } from '../i18n/catalog';
+import { categories, difficulties } from '../content.config';
+import { getTrips, tripCountForms } from '../lib/trips';
+import { currencies, currency } from '../config';
+import { convert, formatMoney } from '../lib/price';
+import { waLink } from '../lib/whatsapp';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const trips = await getTrips();
+const cities = [...new Set(trips.map((tr) => tr.data.startCity))].sort();
+
+// Price buckets, defined in EUR and stored in MAD.
+const edges = [50, 150, 500].map((eur) => Math.round(eur * currency.ratesToMad.EUR));
+const money = (mad: number) => Object.fromEntries(currencies.map((c) => [c, formatMoney(convert(mad, c), c, lang)]));
+const priceOpts = [
+  { v: 'p1', min: 0, max: edges[0], label: (c: string) => s.trips.under.replace('{p}', money(edges[0])[c]) },
+  { v: 'p2', min: edges[0], max: edges[1], label: (c: string) => `${money(edges[0])[c]} – ${money(edges[1])[c]}` },
+  { v: 'p3', min: edges[1], max: edges[2], label: (c: string) => `${money(edges[1])[c]} – ${money(edges[2])[c]}` },
+  { v: 'p4', min: edges[2], max: 1e9, label: (c: string) => s.trips.over.replace('{p}', money(edges[2])[c]) },
+];
+const crumbs = [
+  { name: 'Iberdan', path: url(lang, 'home') },
+  { name: s.trips.title, path: url(lang, 'trips') },
+];
+---
+<Base lang={lang} title={s.trips.title} description={s.trips.intro} alternates={alternates('trips')}>
+  <div class="container-page pb-6 pt-8">
+    <Breadcrumb items={crumbs} lang={lang} />
+    <h1 class="mt-4 text-h1">{s.trips.title}</h1>
+    <p class="mt-3 max-w-2xl text-ink-2">{s.trips.intro}</p>
+  </div>
+
+  <div class="container-page grid gap-8 lg:grid-cols-[17rem_1fr]">
+    <!-- Filters -->
+    <form id="filters" class="filters" data-filters aria-label={s.trips.filters} role="search">
+      <details class="group" data-filter-details>
+        <summary class="btn btn-ghost w-full justify-between lg:hidden">
+          <span class="inline-flex items-center gap-2"><Icon name="filter" /> {s.trips.filters}</span>
+          <span class="rounded-full bg-accent px-2 text-xs font-bold text-on-accent" data-active-count hidden></span>
+        </summary>
+        <div class="mt-4 space-y-6 lg:mt-0">
+          <div>
+            <label for="f-q" class="filter-label">{s.trips.search}</label>
+            <div class="relative mt-2">
+              <Icon name="search" size={18} class="pointer-events-none absolute start-3 top-1/2 -translate-y-1/2 text-ink-3" />
+              <input id="f-q" name="q" type="search" autocomplete="off" class="input ps-10" />
+            </div>
+          </div>
+
+          <fieldset>
+            <legend class="filter-label">{s.trips.category}</legend>
+            <div class="mt-2 flex flex-wrap gap-2">
+              <label class="chip"><input type="radio" name="cat" value="" checked class="sr-only" />{s.trips.all}</label>
+              {categories.map((c) => <label class="chip"><input type="radio" name="cat" value={c} class="sr-only" />{categoryLabels[c][lang]}</label>)}
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="f-dur" class="filter-label">{s.trips.duration}</label>
+            <select id="f-dur" name="dur" class="input mt-2">
+              <option value="">{s.trips.any}</option>
+              <option value="day">{s.trips.durDay}</option>
+              <option value="short">{s.trips.durShort}</option>
+              <option value="long">{s.trips.durLong}</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="f-price" class="filter-label">{s.trips.price}</label>
+            <select id="f-price" name="price" class="input mt-2" data-price-select>
+              <option value="">{s.trips.priceAny}</option>
+              {priceOpts.map((o) => (
+                <option value={o.v} data-min={o.min} data-max={o.max} {...Object.fromEntries(currencies.map((c) => [`data-label-${c.toLowerCase()}`, o.label(c)]))}>
+                  {o.label(currency.default)}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label for="f-diff" class="filter-label">{s.trips.difficulty}</label>
+            <select id="f-diff" name="diff" class="input mt-2">
+              <option value="">{s.trips.any}</option>
+              {difficulties.map((d) => <option value={d}>{difficultyLabels[d][lang]}</option>)}
+            </select>
+          </div>
+
+          <div>
+            <label for="f-city" class="filter-label">{s.trips.city}</label>
+            <select id="f-city" name="city" class="input mt-2">
+              <option value="">{s.trips.any}</option>
+              {cities.map((c) => <option value={c}>{cityLabel(c, lang)}</option>)}
+            </select>
+          </div>
+
+          <label class="flex min-h-11 cursor-pointer items-center gap-3 text-sm font-medium">
+            <input type="checkbox" name="private" value="1" class="size-5 accent-[var(--brand-2)]" />
+            {s.trips.privateOnly}
+          </label>
+
+          <button type="reset" class="btn btn-ghost w-full" data-clear>{s.trips.clear}</button>
+        </div>
+      </details>
+    </form>
+
+    <!-- Results -->
+    <section aria-labelledby="results-count">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <p id="results-count" class="font-semibold" role="status" aria-live="polite" data-count
+          data-forms={JSON.stringify(tripCountForms[lang])}>{trips.length}</p>
+        <div class="flex items-center gap-2">
+          <label for="f-sort" class="text-sm text-ink-2">{s.trips.sort}</label>
+          <select id="f-sort" name="sort" form="filters" class="input !w-auto">
+            <option value="popular">{s.trips.sortPopular}</option>
+            <option value="price-asc">{s.trips.sortPriceAsc}</option>
+            <option value="price-desc">{s.trips.sortPriceDesc}</option>
+            <option value="duration">{s.trips.sortDuration}</option>
+          </select>
+        </div>
+      </div>
+
+      <ul class="mt-6 grid gap-6 sm:grid-cols-2 xl:grid-cols-3" data-grid>
+        {trips.map((trip) => <li data-item><TripCard trip={trip} lang={lang} level="h2" sizes="(min-width: 1280px) 340px, (min-width: 640px) 50vw, 100vw" /></li>)}
+      </ul>
+
+      <div data-empty hidden class="card mt-6 flex flex-col items-center p-10 text-center">
+        <Icon name="compass" size={40} class="text-accent-text" />
+        <h2 class="mt-4 text-h3">{s.trips.noResults}</h2>
+        <p class="mt-2 max-w-md text-ink-2">{s.trips.noResultsText}</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-2">
+          <button type="reset" form="filters" class="btn btn-ghost">{s.trips.clear}</button>
+          <a href={waLink(s.common.whatsappHello)} target="_blank" rel="noopener" class="btn btn-whatsapp"><Icon name="whatsapp" /> {s.trips.askYoussef}</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .filter-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .filters :global(.input),
+  :global(.input) {
+    width: 100%;
+    min-height: 2.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding-inline: 0.875rem;
+    color: var(--ink);
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.5rem;
+    padding: 0.25rem 0.875rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .chip:has(input:checked) {
+    background: var(--brand);
+    color: var(--on-brand);
+    border-color: transparent;
+  }
+  :global([data-theme='dark']) .chip:has(input:checked) {
+    background: var(--accent);
+    color: var(--on-accent);
+  }
+  .chip:has(input:focus-visible) {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+  @media (min-width: 64rem) {
+    .filters {
+      position: sticky;
+      top: 5rem;
+      align-self: start;
+    }
+  }
+</style>
+
+<script>
+  import { initTripFilters } from '../scripts/trip-filters';
+  initTripFilters();
+</script>

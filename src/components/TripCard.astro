@@ -5,7 +5,7 @@ import Price from './Price.astro';
 import WishButton from './WishButton.astro';
 import { url, type Lang } from '../i18n/routes';
 import { t } from '../i18n/ui';
-import { categoryLabels, difficultyLabels } from '../i18n/catalog';
+import { categoryLabels, cityLabel, difficultyLabels } from '../i18n/catalog';
 import { durationBucket, durationLabel, isPrivateOnly, priceFrom, tripPhotos, type Trip } from '../lib/trips';
 
 interface Props {
@@ -67,7 +67,7 @@ const search = [d.title.en, d.title.fr, d.title.ar, d.startCity, d.endCity, ...d
       <dt class="sr-only">{s.card.duration}</dt>
       <dd class="col-span-2 flex items-center gap-2"><Icon name="clock" size={16} class="text-ink-3" />{durationLabel(trip, lang)}</dd>
       <dt class="sr-only">{s.card.start}</dt>
-      <dd class="col-span-2 flex items-center gap-2"><Icon name="pin" size={16} class="text-ink-3" />{s.card.start} {d.startCity}</dd>
+      <dd class="col-span-2 flex items-center gap-2"><Icon name="pin" size={16} class="text-ink-3" />{s.card.start} {cityLabel(d.startCity, lang)}</dd>
       <dt class="sr-only">{s.card.difficulty}</dt>
       <dd class="col-span-2 flex items-center gap-2"><Icon name="mountain" size={16} class="text-ink-3" />{difficultyLabels[d.difficulty][lang]}{d.maxAltitude && <span dir="ltr"> · {d.maxAltitude.toLocaleString('en')} m</span>}</dd>
     </dl>

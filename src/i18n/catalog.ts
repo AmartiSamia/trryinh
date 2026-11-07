@@ -106,3 +106,11 @@ export const mealLabels: Record<string, L> = {
   lunch: { en: 'Lunch', fr: 'Déjeuner', ar: 'الغداء' },
   dinner: { en: 'Dinner', fr: 'Dîner', ar: 'العشاء' },
 };
+
+/** Display names for start/end cities (data keeps the Latin name as the key). */
+const cities: Record<string, L> = {
+  Marrakech: { en: 'Marrakech', fr: 'Marrakech', ar: 'مراكش' },
+  Fes: { en: 'Fes', fr: 'Fès', ar: 'فاس' },
+  Casablanca: { en: 'Casablanca', fr: 'Casablanca', ar: 'الدار البيضاء' },
+};
+export const cityLabel = (city: string, lang: keyof L): string => cities[city]?.[lang] ?? city;
