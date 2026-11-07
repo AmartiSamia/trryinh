@@ -1,0 +1,59 @@
+---
+/**
+ * Privacy policy (template).
+ * TODO(youssef): confirm with a professional; add the CNDP declaration number if you file one
+ *   (Moroccan law 09-08 on personal data).
+ * TODO(review-ar): Arabic text needs a native review.
+ */
+import LegalPage from '../components/LegalPage.astro';
+import { contact } from '../config';
+import type { Lang } from '../i18n/routes';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const mail = `<a href="mailto:${contact.email}">${contact.email}</a>`;
+const sections = [
+  {
+    h: { en: 'Who we are', fr: 'Qui sommes-nous', ar: 'من نحن' },
+    p: [{
+      en: `Iberdan is a travel agency based in Imlil, Morocco, run by Youssef Ait Taguem. For any question about your data, write to ${mail}.`,
+      fr: `Iberdan est une agence de voyage basée à Imlil, au Maroc, dirigée par Youssef Ait Taguem. Pour toute question sur vos données, écrivez à ${mail}.`,
+      ar: `إيبردان وكالة أسفار مقرها إمليل بالمغرب، يديرها يوسف آيت تاكم. لأي سؤال حول بياناتكم، راسلوا ${mail}.`,
+    }],
+  },
+  {
+    h: { en: 'What we collect and why', fr: 'Ce que nous collectons et pourquoi', ar: 'ما نجمعه ولماذا' },
+    p: [{
+      en: 'Only what you send us when you ask for a trip: your name, email or phone number, and the details of your request (dates, number of travellers, message). We use them only to answer you and organise your trip. We do not sell or share them for marketing.',
+      fr: 'Seulement ce que vous nous envoyez en demandant un voyage : votre nom, e-mail ou téléphone, et les détails de votre demande (dates, nombre de voyageurs, message). Nous les utilisons uniquement pour vous répondre et organiser votre voyage. Nous ne les vendons pas et ne les partageons pas à des fins commerciales.',
+      ar: 'فقط ما ترسلونه إلينا عند طلب رحلة: الاسم، البريد الإلكتروني أو الهاتف، وتفاصيل الطلب (التواريخ، عدد المسافرين، الرسالة). نستعملها فقط للرد عليكم وتنظيم رحلتكم، ولا نبيعها ولا نشاركها لأغراض تجارية.',
+    }],
+  },
+  {
+    h: { en: 'Services that receive your data', fr: 'Services qui reçoivent vos données', ar: 'الخدمات التي تتلقى بياناتكم' },
+    p: [{
+      en: 'Requests sent on WhatsApp go through WhatsApp (Meta). Requests sent with the email form go through Web3Forms, which forwards them to our mailbox. The route maps load images from OpenStreetMap, which sees your IP address. Fonts and all other files are served from our own site.',
+      fr: 'Les demandes envoyées sur WhatsApp passent par WhatsApp (Meta). Celles envoyées par le formulaire e-mail passent par Web3Forms, qui les transfère à notre boîte mail. Les cartes chargent des images d’OpenStreetMap, qui voit votre adresse IP. Les polices et tous les autres fichiers sont servis depuis notre propre site.',
+      ar: 'الطلبات المرسلة عبر واتساب تمر عبر واتساب (ميتا). والطلبات المرسلة عبر استمارة البريد تمر عبر Web3Forms التي تحولها إلى بريدنا. تُحمّل الخرائط صورا من OpenStreetMap التي ترى عنوان IP الخاص بكم. الخطوط وباقي الملفات تُقدَّم من موقعنا.',
+    }],
+  },
+  {
+    h: { en: 'Cookies and storage', fr: 'Cookies et stockage', ar: 'ملفات تعريف الارتباط والتخزين' },
+    p: [{
+      en: 'We do not use cookies or tracking. Your browser stores a few settings locally (theme, language, currency, wishlist, recently viewed trips). They never leave your device and you can clear them at any time in your browser settings.',
+      fr: 'Nous n’utilisons ni cookies ni traceurs. Votre navigateur garde localement quelques réglages (thème, langue, devise, favoris, voyages vus récemment). Ils ne quittent jamais votre appareil et vous pouvez les effacer à tout moment dans votre navigateur.',
+      ar: 'لا نستعمل ملفات تعريف الارتباط ولا أدوات التتبع. يحفظ متصفحكم محليا بعض الإعدادات (المظهر، اللغة، العملة، المفضلة، الرحلات التي شوهدت مؤخرا). لا تغادر جهازكم أبدا ويمكنكم حذفها في أي وقت من إعدادات المتصفح.',
+    }],
+  },
+  {
+    h: { en: 'How long we keep it, and your rights', fr: 'Durée de conservation et vos droits', ar: 'مدة الحفظ وحقوقكم' },
+    p: [{
+      en: `We keep your messages as long as needed for your trip and our accounting obligations. You can ask to see, correct or delete your data at ${mail}, in line with Moroccan law 09-08 and, for European travellers, the GDPR.`,
+      fr: `Nous gardons vos messages le temps nécessaire à votre voyage et à nos obligations comptables. Vous pouvez demander à consulter, corriger ou supprimer vos données à ${mail}, conformément à la loi marocaine 09-08 et, pour les voyageurs européens, au RGPD.`,
+      ar: `نحتفظ برسائلكم المدة اللازمة لرحلتكم ولالتزاماتنا المحاسبية. يمكنكم طلب الاطلاع على بياناتكم أو تصحيحها أو حذفها عبر ${mail}، وفقا للقانون المغربي 09-08، وللمسافرين الأوروبيين وفقا للائحة العامة لحماية البيانات.`,
+    }],
+  },
+];
+---
+<LegalPage lang={lang} route="privacy" updated="2026-11-07" sections={sections}
+  title={{ en: 'Privacy policy', fr: 'Politique de confidentialité', ar: 'سياسة الخصوصية' }}
+  intro={{ en: 'Short version: we only use what you send us to organise your trip. No cookies, no tracking.', fr: 'En bref : nous n’utilisons que ce que vous nous envoyez pour organiser votre voyage. Pas de cookies, pas de traçage.', ar: 'باختصار: لا نستعمل إلا ما ترسلونه إلينا لتنظيم رحلتكم. بدون ملفات تعريف ارتباط وبدون تتبع.' }} />

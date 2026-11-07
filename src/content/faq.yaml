@@ -50,9 +50,9 @@
   group: payment
   q: { en: "What if I need to cancel?", fr: "Et si je dois annuler ?", ar: "ماذا لو اضطررت إلى الإلغاء؟" }
   a:
-    en: "Tell Youssef as early as possible on WhatsApp or by email. The conditions are on our cancellation page and confirmed with your booking. If we cancel for weather or safety, you choose another date or get your money back."
-    fr: "Prévenez Youssef le plus tôt possible par WhatsApp ou e-mail. Les conditions sont sur notre page annulation et confirmées avec votre réservation. Si nous annulons pour la météo ou la sécurité, vous choisissez une autre date ou êtes remboursé."
-    ar: "أخبروا يوسف في أقرب وقت عبر واتساب أو البريد الإلكتروني. الشروط موجودة في صفحة الإلغاء وتُؤكَّد مع الحجز. إذا ألغينا بسبب الطقس أو السلامة، تختارون تاريخا آخر أو تسترجعون أموالكم."
+    en: "Tell Youssef as early as possible on WhatsApp or by email. The conditions are on our cancellation page and confirmed with your booking. If we have to cancel for weather or safety, we offer you another date."
+    fr: "Prévenez Youssef le plus tôt possible par WhatsApp ou e-mail. Les conditions sont sur notre page annulation et confirmées avec votre réservation. Si nous devons annuler pour la météo ou la sécurité, nous vous proposons une autre date."
+    ar: "أخبروا يوسف في أقرب وقت عبر واتساب أو البريد الإلكتروني. الشروط موجودة في صفحة الإلغاء وتُؤكَّد مع الحجز. إذا اضطررنا إلى الإلغاء بسبب الطقس أو السلامة، نقترح عليكم تاريخا آخر."
 
 - id: fitness
   group: safety
@@ -123,6 +123,6 @@
   group: weather
   q: { en: "What happens if the weather is bad?", fr: "Que se passe-t-il s’il fait mauvais ?", ar: "ماذا يحدث إذا كان الطقس سيئا؟" }
   a:
-    en: "In the mountains the guide adapts the route or the day. If a trip cannot run safely, we offer another date or a refund."
-    fr: "En montagne, le guide adapte l’itinéraire ou le jour. Si un voyage ne peut pas se faire en sécurité, nous proposons une autre date ou un remboursement."
-    ar: "في الجبل يكيّف المرشد المسار أو اليوم. إذا تعذر تنظيم الرحلة بأمان، نقترح تاريخا آخر أو استرجاع المبلغ."
+    en: "In the mountains the guide adapts the route or the day. If a trip cannot run safely, we offer another date; refund conditions are on our cancellation page."
+    fr: "En montagne, le guide adapte l’itinéraire ou le jour. Si un voyage ne peut pas se faire en sécurité, nous proposons une autre date ; les conditions de remboursement sont sur notre page annulation."
+    ar: "في الجبل يكيّف المرشد المسار أو اليوم. إذا تعذر تنظيم الرحلة بأمان، نقترح تاريخا آخر، وشروط الاسترداد موجودة في صفحة الإلغاء."

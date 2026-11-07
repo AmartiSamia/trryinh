@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import FaqList from '../components/FaqList.astro';
+import Icon from '../components/Icon.astro';
+import { alternates, url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { faqJsonLd } from '../lib/seo';
+import { waLink } from '../lib/whatsapp';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+const c = L({
+  en: { title: 'Frequently asked questions', intro: 'Booking, payment, safety, children, food and weather. Anything missing? Ask Youssef directly.', more: 'Another question?', groups: { booking: 'Booking', payment: 'Payment', safety: 'Safety', children: 'Children', food: 'Food', weather: 'Weather' } },
+  fr: { title: 'Questions fréquentes', intro: 'Réservation, paiement, sécurité, enfants, repas et météo. Une question manque ? Demandez directement à Youssef.', more: 'Une autre question ?', groups: { booking: 'Réservation', payment: 'Paiement', safety: 'Sécurité', children: 'Enfants', food: 'Repas', weather: 'Météo' } },
+  ar: { title: 'الأسئلة الشائعة', intro: 'الحجز والدفع والسلامة والأطفال والطعام والطقس. هل ينقصكم سؤال؟ اسألوا يوسف مباشرة.', more: 'سؤال آخر؟', groups: { booking: 'الحجز', payment: 'الدفع', safety: 'السلامة', children: 'الأطفال', food: 'الطعام', weather: 'الطقس' } },
+});
+const faqs = await getCollection('faq');
+const groups = Object.keys(c.groups) as (keyof typeof c.groups)[];
+---
+<Base lang={lang} title={c.title} description={c.intro} alternates={alternates('faq')}
+  jsonLd={faqJsonLd(faqs.map((f) => ({ q: f.data.q[lang], a: f.data.a[lang] })))}>
+  <PageHeader lang={lang} title={c.title} intro={c.intro} path={url(lang, 'faq')} />
+  <div class="container-page grid gap-10 lg:grid-cols-[14rem_1fr]">
+    <nav aria-label={c.title} class="lg:sticky lg:top-24 lg:self-start">
+      <ul class="flex flex-wrap gap-2 lg:flex-col">
+        {groups.map((g) => <li><a href={`#${g}`} class="inline-flex min-h-11 items-center rounded-full px-4 hover:bg-surface-2 lg:w-full">{c.groups[g]}</a></li>)}
+      </ul>
+    </nav>
+    <div class="space-y-12">
+      {groups.map((g) => (
+        <section aria-labelledby={g}>
+          <h2 id={g} class="text-h2 scroll-mt-24">{c.groups[g]}</h2>
+          <div class="mt-4"><FaqList items={faqs.filter((f) => f.data.group === g).map((f) => f.data)} lang={lang} /></div>
+        </section>
+      ))}
+      <div class="card flex flex-wrap items-center justify-between gap-4 p-6">
+        <p class="font-display text-lg font-semibold">{c.more}</p>
+        <a href={waLink(s.common.whatsappHello)} target="_blank" rel="noopener" class="btn btn-whatsapp"><Icon name="whatsapp" /> {s.common.chatWhatsapp}</a>
+      </div>
+    </div>
+  </div>
+</Base>

@@ -6,19 +6,17 @@
  */
 import { t } from '../i18n/ui';
 import type { Lang } from '../i18n/routes';
-import type { Trip } from '../lib/trips';
-
-interface Props { trip: Trip; lang: Lang }
-const { trip, lang } = Astro.props;
+type Stop = { name: string; lat: number; lng: number; kind: string };
+interface Props { stops: Stop[]; lang: Lang; label?: string; showList?: boolean }
+const { stops, lang, label, showList = true } = Astro.props;
 const s = t(lang);
-const stops = trip.data.mapStops;
 ---
-<div class="grid gap-4 md:grid-cols-[1fr_15rem]">
+<div class:list={['grid gap-4', showList && 'md:grid-cols-[1fr_15rem]']}>
   <div class="route-map relative z-0 aspect-[4/3] overflow-hidden rounded-3xl bg-surface-2 md:aspect-auto md:min-h-96"
-    data-map={JSON.stringify(stops)} role="region" aria-label={s.trip.map} data-no-print>
+    data-map={JSON.stringify(stops)} role="region" aria-label={label ?? s.trip.map} data-no-print>
     <p class="absolute inset-0 grid place-items-center text-sm text-ink-3" data-map-loading>{s.trip.mapLoading}</p>
   </div>
-  <div>
+  {showList && <div>
     <h3 class="text-sm font-semibold">{s.trip.mapStops}</h3>
     <ol class="mt-3 space-y-2 text-sm">
       {stops.map((st, i) => (
@@ -29,7 +27,7 @@ const stops = trip.data.mapStops;
       ))}
     </ol>
     <p class="mt-4 text-xs text-ink-3">{s.trip.mapNote}</p>
-  </div>
+  </div>}
 </div>
 
 <style>

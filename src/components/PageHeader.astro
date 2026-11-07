@@ -1,0 +1,13 @@
+---
+import Breadcrumb from './Breadcrumb.astro';
+import { url, type Lang } from '../i18n/routes';
+interface Props { lang: Lang; title: string; intro?: string; path: string; eyebrow?: string }
+const { lang, title, intro, path, eyebrow } = Astro.props;
+---
+<header class="container-page pb-10 pt-8">
+  <Breadcrumb lang={lang} items={[{ name: 'Iberdan', path: url(lang, 'home') }, { name: title, path }]} />
+  {eyebrow && <p class="eyebrow mt-6">{eyebrow}</p>}
+  <h1 class:list={['text-h1', eyebrow ? 'mt-2' : 'mt-4']}>{title}</h1>
+  {intro && <p class="mt-4 max-w-2xl text-lg text-ink-2">{intro}</p>}
+  <slot />
+</header>

@@ -152,7 +152,7 @@ const tags = [
 
         <section aria-labelledby="map">
           <h2 id="map" class="text-h2">{s.trip.map}</h2>
-          <div class="mt-5"><RouteMap trip={trip} lang={lang} /></div>
+          <div class="mt-5"><RouteMap stops={d.mapStops} lang={lang} /></div>
         </section>
 
         {d.faq.length > 0 && (

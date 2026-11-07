@@ -1,0 +1,167 @@
+---
+/**
+ * About. Only facts we know are stated here.
+ * TODO(youssef): your own story (how you started guiding, since when), a portrait,
+ *   and the team (muleteers, cooks, drivers) with first names and photos if they agree.
+ * TODO(review-ar): Arabic copy needs a native review.
+ */
+import { getEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Photo from '../components/Photo.astro';
+import Icon from '../components/Icon.astro';
+import LogoMark from '../components/LogoMark.astro';
+import { alternates, url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { legal, site } from '../config';
+import { waLink } from '../lib/whatsapp';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+const imlil = (await getEntry('photos', 'imlil-2'))!;
+
+const c = L({
+  en: {
+    title: 'About Iberdan',
+    intro: 'A small travel agency from Imlil, in the High Atlas. Iberdan means “paths” in Tamazight.',
+    storyTitle: 'Youssef, guide from Imlil',
+    story: [
+      'Iberdan is run by Youssef Ait Taguem, a licensed mountain guide based in Imlil, the village at the foot of Toubkal. He started with treks in the valleys around his home and the climb to the summit, and today organises trips across Morocco: the desert, the imperial cities, the coast.',
+      'He still answers every message himself. When you write on WhatsApp, you talk to the person who plans your route, knows the families who host you and, for mountain trips, often walks with you.',
+    ],
+    portrait: 'Portrait of Youssef coming soon',
+    teamTitle: 'The team on the ground',
+    team: [
+      { icon: 'mountain', title: 'Mountain guides', text: 'Licensed guides from the Imlil valleys. They decide on safety, route and pace.' },
+      { icon: 'backpack', title: 'Muleteers', text: 'They carry the bags and the kitchen, and know every path and spring.' },
+      { icon: 'meal', title: 'Cooks', text: 'Breakfast, picnic lunches and hot dinners on trek, made with local produce.' },
+      { icon: 'car', title: 'Drivers', text: 'Experienced drivers for the mountain roads and the long desert journeys.' },
+    ],
+    teamNote: 'Photos and names of the team will be added soon.',
+    howTitle: 'How we work',
+    how: [
+      { title: 'You ask', text: 'Send your dates and ideas on WhatsApp or by email. No account, no payment online.' },
+      { title: 'Youssef answers', text: 'He checks availability, suggests the right trip and sends the final price in writing.' },
+      { title: 'You confirm', text: 'Once you agree, Youssef explains how to pay and sends the practical details.' },
+      { title: 'We travel', text: 'Pickup at your riad or hotel. Youssef stays reachable during the whole trip.' },
+    ],
+    trustTitle: 'Licences and registration',
+    licence: 'Mountain guide licence', registration: 'Agency registration', pending: 'Number to be published',
+    cta: 'Write to Youssef',
+  },
+  fr: {
+    title: 'À propos d’Iberdan',
+    intro: 'Une petite agence de voyage d’Imlil, dans le Haut Atlas. Iberdan signifie « chemins » en tamazight.',
+    storyTitle: 'Youssef, guide d’Imlil',
+    story: [
+      'Iberdan est dirigée par Youssef Ait Taguem, guide de montagne diplômé basé à Imlil, le village au pied du Toubkal. Il a commencé par les treks dans les vallées autour de chez lui et l’ascension du sommet, et organise aujourd’hui des voyages dans tout le Maroc : le désert, les villes impériales, la côte.',
+      'Il répond toujours lui-même à chaque message. Quand vous écrivez sur WhatsApp, vous parlez à celui qui prépare votre itinéraire, connaît les familles qui vous accueillent et, pour la montagne, marche souvent avec vous.',
+    ],
+    portrait: 'Portrait de Youssef bientôt',
+    teamTitle: 'L’équipe sur le terrain',
+    team: [
+      { icon: 'mountain', title: 'Guides de montagne', text: 'Des guides diplômés des vallées d’Imlil. Ils décident de la sécurité, de l’itinéraire et du rythme.' },
+      { icon: 'backpack', title: 'Muletiers', text: 'Ils portent les bagages et la cuisine, et connaissent chaque sentier et chaque source.' },
+      { icon: 'meal', title: 'Cuisiniers', text: 'Petit-déjeuner, pique-nique et dîner chaud en trek, avec des produits locaux.' },
+      { icon: 'car', title: 'Chauffeurs', text: 'Des chauffeurs expérimentés pour les routes de montagne et les longs trajets vers le désert.' },
+    ],
+    teamNote: 'Les photos et prénoms de l’équipe arrivent bientôt.',
+    howTitle: 'Comment nous travaillons',
+    how: [
+      { title: 'Vous demandez', text: 'Envoyez vos dates et vos idées par WhatsApp ou e-mail. Pas de compte, pas de paiement en ligne.' },
+      { title: 'Youssef répond', text: 'Il vérifie la disponibilité, propose le bon voyage et envoie le prix final par écrit.' },
+      { title: 'Vous confirmez', text: 'Une fois d’accord, Youssef explique comment payer et envoie les détails pratiques.' },
+      { title: 'On part', text: 'Prise en charge à votre riad ou hôtel. Youssef reste joignable pendant tout le voyage.' },
+    ],
+    trustTitle: 'Licences et immatriculation',
+    licence: 'Licence de guide de montagne', registration: 'Immatriculation de l’agence', pending: 'Numéro bientôt publié',
+    cta: 'Écrire à Youssef',
+  },
+  ar: {
+    title: 'عن إيبردان',
+    intro: 'وكالة أسفار صغيرة من إمليل في الأطلس الكبير. إيبردان تعني "المسالك" بالأمازيغية.',
+    storyTitle: 'يوسف، مرشد من إمليل',
+    story: [
+      'يدير إيبردان يوسف آيت تاكم، مرشد جبلي معتمد مقيم في إمليل، القرية الواقعة عند سفح توبقال. بدأ برحلات المشي في الوديان المحيطة ببيته وصعود القمة، وينظم اليوم رحلات في كل أنحاء المغرب: الصحراء والمدن الإمبراطورية والساحل.',
+      'ما زال يجيب على كل رسالة بنفسه. عندما تكتبون على واتساب، تتحدثون مع من يخطط لمساركم ويعرف العائلات التي تستضيفكم، وغالبا ما يمشي معكم في رحلات الجبل.',
+    ],
+    portrait: 'صورة يوسف قريبا',
+    teamTitle: 'الفريق على الأرض',
+    team: [
+      { icon: 'mountain', title: 'المرشدون الجبليون', text: 'مرشدون معتمدون من وديان إمليل، يقررون في السلامة والمسار والإيقاع.' },
+      { icon: 'backpack', title: 'البغالون', text: 'يحملون الأمتعة والمطبخ، ويعرفون كل مسلك وكل عين ماء.' },
+      { icon: 'meal', title: 'الطباخون', text: 'الفطور والغداء في الطريق وعشاء ساخن خلال الرحلة، بمنتجات محلية.' },
+      { icon: 'car', title: 'السائقون', text: 'سائقون ذوو خبرة في الطرق الجبلية والرحلات الطويلة إلى الصحراء.' },
+    ],
+    teamNote: 'ستضاف صور وأسماء الفريق قريبا.',
+    howTitle: 'كيف نعمل',
+    how: [
+      { title: 'تسألون', text: 'أرسلوا تواريخكم وأفكاركم عبر واتساب أو البريد الإلكتروني. بدون حساب وبدون دفع عبر الإنترنت.' },
+      { title: 'يوسف يجيب', text: 'يتحقق من التوفر ويقترح الرحلة المناسبة ويرسل السعر النهائي كتابةً.' },
+      { title: 'تؤكدون', text: 'بعد الاتفاق يشرح يوسف طريقة الدفع ويرسل التفاصيل العملية.' },
+      { title: 'ننطلق', text: 'الاستقبال من الرياض أو الفندق، ويبقى يوسف متاحا طوال الرحلة.' },
+    ],
+    trustTitle: 'التراخيص والتسجيل',
+    licence: 'رخصة المرشد الجبلي', registration: 'تسجيل الوكالة', pending: 'سيُنشر الرقم قريبا',
+    cta: 'راسلوا يوسف',
+  },
+});
+---
+<Base lang={lang} title={c.title} description={c.intro} alternates={alternates('about')}>
+  <PageHeader lang={lang} title={c.title} intro={c.intro} path={url(lang, 'about')} />
+
+  <section class="container-page grid items-center gap-10 lg:grid-cols-2" aria-labelledby="story">
+    <div>
+      <h2 id="story" class="text-h2">{c.storyTitle}</h2>
+      {c.story.map((p) => <p class="mt-4 text-[1.0625rem] leading-relaxed text-ink-2">{p}</p>)}
+      <a href={waLink(s.common.whatsappHello)} target="_blank" rel="noopener" class="btn btn-whatsapp mt-6"><Icon name="whatsapp" /> {c.cta}</a>
+    </div>
+    <div class="relative">
+      <Photo photo={imlil} lang={lang} sizes="(min-width: 1024px) 600px, 100vw" class="aspect-[4/3] rounded-3xl" />
+      <!-- TODO(youssef): replace this placeholder with a real portrait (src/assets/photos/youssef.jpg). -->
+      <div class="absolute -bottom-6 start-6 flex items-center gap-3 rounded-2xl bg-surface p-3 pe-5 shadow-card">
+        <span class="grid size-14 place-items-center rounded-xl bg-brand text-on-brand"><LogoMark size={30} /></span>
+        <span><span class="block font-display font-semibold">{site.founder}</span><span class="text-sm text-ink-3">{c.portrait}</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-page mt-24" aria-labelledby="team">
+    <h2 id="team" class="text-h2">{c.teamTitle}</h2>
+    <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {c.team.map((m) => (
+        <li class="card p-6">
+          <span class="grid size-12 place-items-center rounded-2xl bg-surface-2 text-accent-text"><Icon name={m.icon as any} size={24} /></span>
+          <h3 class="mt-4 text-h3">{m.title}</h3>
+          <p class="mt-2 text-ink-2">{m.text}</p>
+        </li>
+      ))}
+    </ul>
+    <p class="mt-4 text-sm text-ink-3">{c.teamNote}</p>
+  </section>
+
+  <div class="motif-rule container-page my-16" aria-hidden="true"></div>
+
+  <section class="container-page" aria-labelledby="how">
+    <h2 id="how" class="text-h2">{c.howTitle}</h2>
+    <ol class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {c.how.map((h, i) => (
+        <li>
+          <span class="font-display text-4xl font-semibold text-accent-text">{i + 1}</span>
+          <h3 class="mt-2 text-h3">{h.title}</h3>
+          <p class="mt-2 text-ink-2">{h.text}</p>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="container-page mt-20" aria-labelledby="trust">
+    <h2 id="trust" class="text-h2">{c.trustTitle}</h2>
+    <dl class="mt-6 grid gap-4 sm:grid-cols-2">
+      <div class="rounded-3xl border border-line p-6"><dt class="font-semibold">{c.licence}</dt><dd class="mt-1 text-ink-2">{legal.guideLicence || c.pending}</dd></div>
+      <div class="rounded-3xl border border-line p-6"><dt class="font-semibold">{c.registration}</dt><dd class="mt-1 text-ink-2">{legal.agencyRegistration || c.pending}</dd></div>
+    </dl>
+  </section>
+</Base>

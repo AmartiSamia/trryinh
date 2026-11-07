@@ -1,0 +1,46 @@
+---
+/** Saved trips (localStorage, this browser only) and recently viewed trips. */
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import RecentTrips from '../components/RecentTrips.astro';
+import Icon from '../components/Icon.astro';
+import { alternates, url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+const c = L({
+  en: { intro: 'Trips you saved with the heart. They are kept in this browser only, nothing is sent to us.', saved: 'Saved trips', empty: 'No saved trips yet', emptyText: 'Tap the heart on any trip to keep it here and compare later.' },
+  fr: { intro: 'Les voyages enregistrés avec le cœur. Ils restent dans ce navigateur, rien ne nous est envoyé.', saved: 'Voyages enregistrés', empty: 'Aucun voyage enregistré', emptyText: 'Touchez le cœur sur un voyage pour le garder ici et comparer plus tard.' },
+  ar: { intro: 'الرحلات التي حفظتموها بالقلب. تبقى في هذا المتصفح فقط ولا يُرسل إلينا شيء.', saved: 'الرحلات المحفوظة', empty: 'لا توجد رحلات محفوظة بعد', emptyText: 'اضغطوا على القلب في أي رحلة لحفظها هنا ومقارنتها لاحقا.' },
+});
+---
+<Base lang={lang} title={s.nav.wishlist} description={c.intro} alternates={alternates('wishlist')} noindex>
+  <PageHeader lang={lang} title={s.nav.wishlist} intro={c.intro} path={url(lang, 'wishlist')} />
+  <div data-wish-page>
+    <RecentTrips lang={lang} mode="wishlist" title={c.saved} />
+    <div class="container-page" data-wish-empty hidden>
+      <div class="card flex flex-col items-center p-10 text-center">
+        <Icon name="heart" size={40} class="text-accent-text" />
+        <h2 class="mt-4 text-h3">{c.empty}</h2>
+        <p class="mt-2 max-w-md text-ink-2">{c.emptyText}</p>
+        <a href={url(lang, 'trips')} class="btn btn-brand mt-6">{s.common.seeAll}</a>
+      </div>
+    </div>
+    <RecentTrips lang={lang} />
+  </div>
+</Base>
+
+<script>
+  // Show the wishlist list or the empty state once it has rendered.
+  const page = document.querySelector('[data-wish-page]');
+  page?.addEventListener('rendered', (e) => {
+    const target = e.target as HTMLElement;
+    if (target.dataset.recent !== 'wishlist') return;
+    const n = (e as CustomEvent<number>).detail;
+    target.hidden = n === 0;
+    page.querySelector<HTMLElement>('[data-wish-empty]')!.hidden = n > 0;
+  });
+</script>

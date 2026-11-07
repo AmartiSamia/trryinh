@@ -1,0 +1,58 @@
+---
+/** Contact: WhatsApp first, then phone and email, map of Imlil and opening hours. */
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import RouteMap from '../components/RouteMap.astro';
+import Icon from '../components/Icon.astro';
+import { alternates, url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { contact, social } from '../config';
+import { waLink } from '../lib/whatsapp';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+const c = L({
+  en: { title: 'Contact', intro: 'The fastest way is WhatsApp: Youssef answers himself, usually within a few hours.', where: 'Where we are', hours: 'Opening hours', hoursText: 'Every day', note: 'Times are Morocco time. In the mountains Youssef may be out of network for a few hours.', mapLabel: 'Map of Imlil' },
+  fr: { title: 'Contact', intro: 'Le plus rapide, c’est WhatsApp : Youssef répond lui-même, en général en quelques heures.', where: 'Où nous trouver', hours: 'Horaires', hoursText: 'Tous les jours', note: 'Heure du Maroc. En montagne, Youssef peut être hors réseau quelques heures.', mapLabel: 'Carte d’Imlil' },
+  ar: { title: 'اتصل بنا', intro: 'أسرع طريقة هي واتساب: يجيب يوسف بنفسه، عادة في غضون ساعات قليلة.', where: 'أين نحن', hours: 'أوقات العمل', hoursText: 'كل يوم', note: 'التوقيت بتوقيت المغرب. في الجبل قد يكون يوسف خارج التغطية لبضع ساعات.', mapLabel: 'خريطة إمليل' },
+});
+const ways = [
+  { icon: 'whatsapp' as const, label: s.common.whatsapp, value: contact.phone, href: waLink(s.common.whatsappHello), ext: true, primary: true },
+  { icon: 'phone' as const, label: s.common.phone, value: contact.phone, href: `tel:${contact.phone.replace(/\s/g, '')}` },
+  { icon: 'mail' as const, label: s.common.email, value: contact.email, href: `mailto:${contact.email}` },
+  ...(social.instagram ? [{ icon: 'instagram' as const, label: 'Instagram', value: social.instagram.replace(/^https?:\/\/(www\.)?/, ''), href: social.instagram, ext: true }] : []),
+];
+const a = contact.address;
+---
+<Base lang={lang} title={c.title} description={c.intro} alternates={alternates('contact')}>
+  <PageHeader lang={lang} title={c.title} intro={c.intro} path={url(lang, 'contact')} />
+  <div class="container-page grid gap-10 lg:grid-cols-[1fr_1.2fr]">
+    <div>
+      <ul class="space-y-3">
+        {ways.map((w) => (
+          <li>
+            <a href={w.href} target={w.ext ? '_blank' : undefined} rel={w.ext ? 'noopener' : undefined}
+              class:list={['flex items-center gap-4 rounded-3xl p-5 transition', w.primary ? 'btn-whatsapp' : 'card hover:shadow-lg']}>
+              <span class:list={['grid size-12 shrink-0 place-items-center rounded-2xl', w.primary ? 'bg-white/15' : 'bg-surface-2 text-accent-text']}><Icon name={w.icon} size={24} /></span>
+              <span><span class="block text-sm opacity-80">{w.label}</span><span class="font-display text-lg font-semibold" dir="ltr">{w.value}</span></span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2">
+        <div>
+          <h2 class="text-h3">{c.where}</h2>
+          <address class="mt-2 not-italic text-ink-2">{a.street}<br />{a.locality} {a.postalCode}<br />{a.region}<br />Morocco</address>
+        </div>
+        <div>
+          <h2 class="text-h3">{c.hours}</h2>
+          <p class="mt-2 text-ink-2">{c.hoursText}, <span dir="ltr">{contact.hours.open}–{contact.hours.close}</span></p>
+          <p class="mt-2 text-sm text-ink-3">{c.note}</p>
+        </div>
+      </div>
+    </div>
+    <RouteMap stops={[{ name: 'Imlil', lat: contact.geo.lat, lng: contact.geo.lng, kind: 'start' }]} lang={lang} label={c.mapLabel} showList={false} />
+  </div>
+</Base>

@@ -1,0 +1,51 @@
+---
+/**
+ * Real reviews only (src/content/reviews.json). Until there are some, the
+ * honest "coming soon" block is shown. No ratings, stars or counters are invented.
+ */
+import { getCollection, getEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import ReviewsSoon from '../components/ReviewsSoon.astro';
+import Icon from '../components/Icon.astro';
+import { alternates, langMeta, url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+const c = L({
+  en: { title: 'Reviews', intro: 'What travellers say after their trip. We publish real reviews only, with a link to where they were written.', on: 'on', source: { google: 'Google', tripadvisor: 'TripAdvisor', email: 'Email', whatsapp: 'WhatsApp' } },
+  fr: { title: 'Avis', intro: 'Ce que disent les voyageurs après leur voyage. Nous ne publions que de vrais avis, avec un lien vers leur source.', on: 'sur', source: { google: 'Google', tripadvisor: 'TripAdvisor', email: 'E-mail', whatsapp: 'WhatsApp' } },
+  ar: { title: 'آراء المسافرين', intro: 'ما يقوله المسافرون بعد رحلتهم. لا ننشر إلا آراء حقيقية مع رابط إلى مصدرها.', on: 'على', source: { google: 'غوغل', tripadvisor: 'تريب أدفايزر', email: 'البريد الإلكتروني', whatsapp: 'واتساب' } },
+});
+const reviews = (await getCollection('reviews')).sort((a, b) => +b.data.date - +a.data.date);
+const flag = (cc: string) => String.fromCodePoint(...[...cc.toUpperCase()].map((ch) => 0x1f1e6 + ch.charCodeAt(0) - 65));
+const region = new Intl.DisplayNames([langMeta[lang].intl], { type: 'region' });
+const dateFmt = new Intl.DateTimeFormat(langMeta[lang].intl, { month: 'long', year: 'numeric' });
+const withTrips = await Promise.all(reviews.map(async (r) => ({ r, trip: r.data.trip ? await getEntry(r.data.trip) : undefined })));
+---
+<Base lang={lang} title={c.title} description={c.intro} alternates={alternates('reviews')}>
+  <PageHeader lang={lang} title={c.title} intro={c.intro} path={url(lang, 'reviews')} />
+  <div class="container-page">
+    {reviews.length === 0 ? <ReviewsSoon lang={lang} /> : (
+      <ul class="grid gap-6 md:grid-cols-2">
+        {withTrips.map(({ r, trip }) => (
+          <li class="card p-6">
+            <div class="flex items-center gap-1 text-accent-text" role="img" aria-label={`${r.data.rating}/5`}>
+              {Array.from({ length: 5 }, (_, i) => <Icon name="star" size={18} class={i < r.data.rating ? '[&_path]:fill-current' : 'opacity-30'} />)}
+            </div>
+            <blockquote class="mt-3 text-ink-2" lang={r.data.lang}>“{r.data.text}”</blockquote>
+            <p class="mt-4 font-semibold"><span aria-hidden="true">{flag(r.data.country)} </span>{r.data.name} <span class="font-normal text-ink-3">· {region.of(r.data.country.toUpperCase())}</span></p>
+            <p class="mt-1 text-sm text-ink-3">
+              {trip && <><a href={url(lang, 'trips', trip.id)} class="link">{trip.data.title[lang]}</a> · </>}
+              {dateFmt.format(r.data.date)} · {c.on}{' '}
+              {r.data.sourceUrl ? <a href={r.data.sourceUrl} target="_blank" rel="noopener" class="link">{c.source[r.data.source]}</a> : c.source[r.data.source]}
+            </p>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</Base>

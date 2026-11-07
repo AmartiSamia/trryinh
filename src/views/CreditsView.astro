@@ -1,0 +1,44 @@
+---
+/** Every photo on the site with its author, licence and source (required by CC BY / CC BY-SA). */
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Photo from '../components/Photo.astro';
+import { alternates, url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { getTrips } from '../lib/trips';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+const c = L({
+  en: { intro: 'Most photos on this site come from Wikimedia Commons and are used under their licences. Thank you to every photographer. Photos of our own trips will replace them over time.', by: 'by', usedIn: 'Used in', changes: 'Resized and converted to modern formats.' },
+  fr: { intro: 'La plupart des photos de ce site viennent de Wikimedia Commons et sont utilisées selon leur licence. Merci à chaque photographe. Des photos de nos propres voyages les remplaceront peu à peu.', by: 'par', usedIn: 'Utilisée dans', changes: 'Redimensionnées et converties en formats modernes.' },
+  ar: { intro: 'معظم صور هذا الموقع من ويكيميديا كومنز وتُستعمل وفق تراخيصها. شكرا لكل مصور. ستحل محلها تدريجيا صور من رحلاتنا.', by: 'تصوير', usedIn: 'تُستعمل في', changes: 'تم تغيير حجمها وتحويلها إلى صيغ حديثة.' },
+});
+const photos = await getCollection('photos');
+const trips = await getTrips();
+const usage = (id: string) => trips.filter((tr) => tr.data.photos.some((p) => p.id === id));
+---
+<Base lang={lang} title={s.nav.credits} description={c.intro} alternates={alternates('credits')}>
+  <PageHeader lang={lang} title={s.nav.credits} intro={c.intro} path={url(lang, 'credits')}>
+    <p class="mt-2 text-sm text-ink-3">{c.changes}</p>
+  </PageHeader>
+  <ul class="container-page grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {photos.map((p) => {
+      const used = usage(p.id);
+      return (
+        <li class="card flex gap-4 p-3">
+          <Photo photo={p} lang={lang} sizes="112px" widths={[240]} class="aspect-square w-28 shrink-0 rounded-xl" />
+          <div class="min-w-0 py-1 text-sm">
+            <p class="font-medium">{p.data.alt[lang]}</p>
+            <p class="mt-1 text-ink-2">{c.by} <a href={p.data.source} target="_blank" rel="noopener" class="link">{p.data.author}</a></p>
+            <p class="text-ink-2"><a href={p.data.licenceUrl} target="_blank" rel="noopener license" class="link">{p.data.licence}</a> · {p.data.sourceName}</p>
+            {used.length > 0 && <p class="mt-1 text-xs text-ink-3">{c.usedIn}: {used.map((tr) => tr.data.title[lang]).join(', ')}</p>}
+          </div>
+        </li>
+      );
+    })}
+  </ul>
+</Base>

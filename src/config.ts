@@ -42,6 +42,8 @@ export const social = {
 export const legal = {
   guideLicence: '', // TODO(youssef): mountain guide licence number
   agencyRegistration: '', // TODO(youssef): agency registration / RC / ICE / tourism licence number
+  /** Shows a 'draft' notice on the legal pages until Youssef has validated them. */
+  draft: true, // TODO(youssef): set to false once privacy, terms and cancellation texts are confirmed
 } as const;
 
 /**

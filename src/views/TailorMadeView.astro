@@ -1,0 +1,298 @@
+---
+/**
+ * Tailor-made request: five short steps, then WhatsApp (pre-filled) or email.
+ * Without JavaScript every step is visible as one long form.
+ * TODO(review-ar): Arabic copy needs a native review.
+ */
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Icon from '../components/Icon.astro';
+import { alternates, url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { contact } from '../config';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+
+const c = L({
+  en: {
+    title: 'Plan a tailor-made trip',
+    intro: 'Five quick questions. Youssef reads every request himself and replies with a route and a clear price, usually within a day.',
+    step: 'Step {i} of {n}',
+    back: 'Back', next: 'Next',
+    s1: 'Where would you like to go?', s1help: 'Choose as many as you like.',
+    s2: 'When, and for how long?', dateFrom: 'Arrival date (approximate is fine)', flexible: 'My dates are flexible', days: 'Number of days',
+    s3: 'Who is travelling?', adults: 'Adults', children: 'Children (under 12)', style: 'Style',
+    s4: 'Budget per person', s4help: 'For everything we organise (not flights). It helps Youssef suggest the right level of comfort.',
+    s5: 'How can Youssef reach you?', interests: 'What do you enjoy?',
+    sendWa: 'Send on WhatsApp', sendEmail: 'Send by email', or: 'or',
+    errPlace: 'Choose at least one place, or "Not sure yet".',
+    msgHello: 'Hello Youssef, I would like a tailor-made trip.',
+    msgWhere: 'Where', msgWhen: 'When', msgDays: 'Days', msgWho: 'Travellers', msgBudget: 'Budget per person', msgInterests: 'Interests', msgStyle: 'Style', msgName: 'Name', msgLang: 'Language: English',
+    flexibleMsg: 'flexible',
+  },
+  fr: {
+    title: 'Préparer un voyage sur mesure',
+    intro: 'Cinq questions rapides. Youssef lit lui-même chaque demande et répond avec un itinéraire et un prix clair, en général sous 24 h.',
+    step: 'Étape {i} sur {n}',
+    back: 'Retour', next: 'Suivant',
+    s1: 'Où aimeriez-vous aller ?', s1help: 'Choisissez autant de lieux que vous voulez.',
+    s2: 'Quand, et combien de temps ?', dateFrom: 'Date d’arrivée (approximative si besoin)', flexible: 'Mes dates sont flexibles', days: 'Nombre de jours',
+    s3: 'Qui voyage ?', adults: 'Adultes', children: 'Enfants (moins de 12 ans)', style: 'Formule',
+    s4: 'Budget par personne', s4help: 'Pour tout ce que nous organisons (hors vols). Cela aide Youssef à proposer le bon niveau de confort.',
+    s5: 'Comment Youssef peut-il vous joindre ?', interests: 'Qu’aimez-vous ?',
+    sendWa: 'Envoyer sur WhatsApp', sendEmail: 'Envoyer par e-mail', or: 'ou',
+    errPlace: 'Choisissez au moins un lieu, ou « Je ne sais pas encore ».',
+    msgHello: 'Bonjour Youssef, je souhaite un voyage sur mesure.',
+    msgWhere: 'Où', msgWhen: 'Quand', msgDays: 'Jours', msgWho: 'Voyageurs', msgBudget: 'Budget par personne', msgInterests: 'Centres d’intérêt', msgStyle: 'Formule', msgName: 'Nom', msgLang: 'Langue : français',
+    flexibleMsg: 'flexible',
+  },
+  ar: {
+    title: 'خطط لرحلة حسب الطلب',
+    intro: 'خمسة أسئلة سريعة. يقرأ يوسف كل طلب بنفسه ويرد بمسار وسعر واضح، عادة في غضون يوم.',
+    step: 'الخطوة {i} من {n}',
+    back: 'رجوع', next: 'التالي',
+    s1: 'إلى أين تودون الذهاب؟', s1help: 'اختاروا ما تشاؤون.',
+    s2: 'متى، وكم من الوقت؟', dateFrom: 'تاريخ الوصول (تقريبي لا بأس)', flexible: 'تواريخي مرنة', days: 'عدد الأيام',
+    s3: 'من سيسافر؟', adults: 'البالغون', children: 'الأطفال (أقل من 12 سنة)', style: 'نوع الرحلة',
+    s4: 'الميزانية للشخص', s4help: 'لكل ما ننظمه (دون تذاكر الطيران). يساعد ذلك يوسف على اقتراح مستوى الراحة المناسب.',
+    s5: 'كيف يمكن ليوسف التواصل معكم؟', interests: 'ماذا تحبون؟',
+    sendWa: 'أرسل عبر واتساب', sendEmail: 'أرسل بالبريد الإلكتروني', or: 'أو',
+    errPlace: 'اختاروا مكانا واحدا على الأقل، أو "لست متأكدا بعد".',
+    msgHello: 'مرحبا يوسف، أود رحلة حسب الطلب.',
+    msgWhere: 'أين', msgWhen: 'متى', msgDays: 'الأيام', msgWho: 'المسافرون', msgBudget: 'الميزانية للشخص', msgInterests: 'الاهتمامات', msgStyle: 'نوع الرحلة', msgName: 'الاسم', msgLang: 'اللغة: العربية',
+    flexibleMsg: 'مرنة',
+  },
+});
+
+const places = L({
+  en: ['High Atlas & Toubkal', 'Sahara desert', 'Marrakech', 'Fes & the north', 'Chefchaouen', 'Essaouira & the coast', 'Gorges & kasbahs', 'Not sure yet'],
+  fr: ['Haut Atlas & Toubkal', 'Désert du Sahara', 'Marrakech', 'Fès & le nord', 'Chefchaouen', 'Essaouira & la côte', 'Gorges & kasbahs', 'Je ne sais pas encore'],
+  ar: ['الأطلس الكبير وتوبقال', 'الصحراء', 'مراكش', 'فاس والشمال', 'شفشاون', 'الصويرة والساحل', 'المضايق والقصبات', 'لست متأكدا بعد'],
+});
+const interests = L({
+  en: ['Trekking', 'Summits', 'Village life', 'Desert nights', 'Food', 'History & architecture', 'Photography', 'Relaxing'],
+  fr: ['Randonnée', 'Sommets', 'Vie des villages', 'Nuits dans le désert', 'Cuisine', 'Histoire & architecture', 'Photographie', 'Détente'],
+  ar: ['المشي', 'القمم', 'حياة القرى', 'ليالي الصحراء', 'الطبخ', 'التاريخ والعمارة', 'التصوير', 'الاسترخاء'],
+});
+// Budget bands in EUR (shown in the default currency), per person.
+const budgets = L({
+  en: ['Under €300', '€300–700', '€700–1,500', 'Over €1,500', 'Not sure'],
+  fr: ['Moins de 300 €', '300–700 €', '700–1 500 €', 'Plus de 1 500 €', 'Je ne sais pas'],
+  ar: ['أقل من 300 €', '300–700 €', '700–1500 €', 'أكثر من 1500 €', 'لست متأكدا'],
+});
+const styles = [s.booking.shared, s.booking.private];
+const f = s.form;
+---
+<Base lang={lang} title={c.title} description={c.intro} alternates={alternates('tailorMade')}>
+  <PageHeader lang={lang} title={c.title} intro={c.intro} path={url(lang, 'tailorMade')} eyebrow={s.home.tailorEyebrow} />
+
+  <div class="container-page grid gap-10 lg:grid-cols-[1fr_20rem]">
+    <form class="card p-6 sm:p-8" data-tailor novalidate
+      data-c={JSON.stringify({ ...c, wa: contact.whatsapp, errName: f.errName, errEmail: f.errEmail, sending: f.sending, success: f.success, error: f.error, nokey: f.noKey, mail: contact.email })}>
+      <p class="text-sm font-semibold text-accent-text" data-progress aria-live="polite" hidden></p>
+      <div class="mt-2 h-1.5 overflow-hidden rounded-full bg-surface-2" aria-hidden="true" data-bar-wrap hidden><div class="h-full w-1/5 rounded-full bg-accent transition-[width] duration-300" data-bar></div></div>
+
+      <fieldset class="step" data-step="1">
+        <legend class="text-h3">{c.s1}</legend>
+        <p class="mt-1 text-sm text-ink-2" id="places-help">{c.s1help}</p>
+        <div class="mt-4 grid gap-2 sm:grid-cols-2" aria-describedby="places-help">
+          {places.map((p) => <label class="choice"><input type="checkbox" name="places" value={p} />{p}</label>)}
+        </div>
+        <p class="field-error" data-places-err hidden id="places-err">{c.errPlace}</p>
+      </fieldset>
+
+      <fieldset class="step" data-step="2">
+        <legend class="text-h3">{c.s2}</legend>
+        <div class="mt-4 grid gap-4 sm:grid-cols-2">
+          <div><label for="tm-date" class="text-sm font-semibold">{c.dateFrom}</label><input id="tm-date" name="date" type="date" class="input mt-1.5" data-min-today /></div>
+          <div><label for="tm-days" class="text-sm font-semibold">{c.days}</label><input id="tm-days" name="days" type="number" min="1" max="60" value="7" inputmode="numeric" class="input mt-1.5" /></div>
+        </div>
+        <label class="mt-4 flex min-h-11 items-center gap-3"><input type="checkbox" name="flexible" class="size-5" />{c.flexible}</label>
+      </fieldset>
+
+      <fieldset class="step" data-step="3">
+        <legend class="text-h3">{c.s3}</legend>
+        <div class="mt-4 grid gap-4 sm:grid-cols-2">
+          <div><label for="tm-adults" class="text-sm font-semibold">{c.adults}</label><input id="tm-adults" name="adults" type="number" min="1" max="40" value="2" inputmode="numeric" class="input mt-1.5" /></div>
+          <div><label for="tm-children" class="text-sm font-semibold">{c.children}</label><input id="tm-children" name="children" type="number" min="0" max="20" value="0" inputmode="numeric" class="input mt-1.5" /></div>
+        </div>
+        <p class="mt-5 text-sm font-semibold">{c.style}</p>
+        <div class="mt-2 grid grid-cols-2 gap-2">
+          {styles.map((st, i) => <label class="choice"><input type="radio" name="style" value={st} checked={i === 1} />{st}</label>)}
+        </div>
+        <p class="mt-5 text-sm font-semibold">{c.interests}</p>
+        <div class="mt-2 grid gap-2 sm:grid-cols-2">
+          {interests.map((it) => <label class="choice"><input type="checkbox" name="interests" value={it} />{it}</label>)}
+        </div>
+      </fieldset>
+
+      <fieldset class="step" data-step="4">
+        <legend class="text-h3">{c.s4}</legend>
+        <p class="mt-1 text-sm text-ink-2">{c.s4help}</p>
+        <div class="mt-4 grid gap-2 sm:grid-cols-2">
+          {budgets.map((bd, i) => <label class="choice"><input type="radio" name="budget" value={bd} checked={i === budgets.length - 1} />{bd}</label>)}
+        </div>
+      </fieldset>
+
+      <fieldset class="step" data-step="5">
+        <legend class="text-h3">{c.s5}</legend>
+        <div class="mt-4 space-y-4">
+          <div><label for="tm-name" class="text-sm font-semibold">{f.name} <span class="text-danger" aria-hidden="true">*</span></label><input id="tm-name" name="name" autocomplete="name" required class="input mt-1.5" /></div>
+          <div><label for="tm-email" class="text-sm font-semibold">{f.email}</label><input id="tm-email" name="email" type="email" autocomplete="email" class="input mt-1.5" /></div>
+          <div><label for="tm-phone" class="text-sm font-semibold">{f.phone}</label><input id="tm-phone" name="phone" type="tel" autocomplete="tel" class="input mt-1.5" dir="ltr" /></div>
+          <div><label for="tm-msg" class="text-sm font-semibold">{f.message}</label><textarea id="tm-msg" name="message" rows="3" class="input mt-1.5" placeholder={f.messagePlaceholder}></textarea></div>
+        </div>
+        <p class="mt-4 text-sm text-ink-2">{s.booking.noPayment}</p>
+        <div class="mt-5 grid gap-2 sm:grid-cols-2">
+          <button type="button" class="btn btn-whatsapp" data-send="wa"><Icon name="whatsapp" /> {c.sendWa}</button>
+          <button type="button" class="btn btn-ghost" data-send="email"><Icon name="mail" /> {c.sendEmail}</button>
+        </div>
+        <div role="status" aria-live="polite" class="mt-3" data-status></div>
+      </fieldset>
+
+      <div class="mt-8 flex justify-between gap-3" data-nav hidden>
+        <button type="button" class="btn btn-ghost" data-prev><Icon name="arrow" size={18} class="rotate-180 rtl:rotate-0" /> {c.back}</button>
+        <button type="button" class="btn btn-brand ms-auto" data-next>{c.next} <Icon name="arrow" size={18} flip /></button>
+      </div>
+    </form>
+
+    <aside class="space-y-4 text-sm">
+      <div class="rounded-3xl bg-surface-2 p-6">
+        <Icon name="whatsapp" size={28} class="text-success" />
+        <p class="mt-3 font-semibold">{s.footer.answers}</p>
+        <p class="mt-2 text-ink-2" dir="ltr">{contact.phone}</p>
+      </div>
+      <div class="rounded-3xl border border-line p-6 text-ink-2">
+        <Icon name="shield" size={24} class="text-success" />
+        <p class="mt-3">{s.booking.noPayment}</p>
+      </div>
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .step + .step {
+    margin-top: 2.5rem;
+  }
+  :global(.js) .step + .step {
+    margin-top: 1.5rem;
+  }
+  .choice {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.875rem;
+    border: 1.5px solid var(--line);
+    cursor: pointer;
+  }
+  .choice input {
+    width: 1.125rem;
+    height: 1.125rem;
+    accent-color: var(--brand-2);
+  }
+  .choice:has(input:checked) {
+    border-color: var(--brand-2);
+    background: color-mix(in oklab, var(--brand-2) 8%, transparent);
+  }
+</style>
+
+<script>
+  import { emailConfigured, fieldError, isEmail, sendEmail } from '../scripts/send';
+  const form = document.querySelector<HTMLFormElement>('[data-tailor]');
+  if (form) {
+    const c = JSON.parse(form.dataset.c!);
+    const steps = [...form.querySelectorAll<HTMLFieldSetElement>('[data-step]')];
+    const nav = form.querySelector<HTMLElement>('[data-nav]')!;
+    const prev = form.querySelector<HTMLButtonElement>('[data-prev]')!;
+    const next = form.querySelector<HTMLButtonElement>('[data-next]')!;
+    const progress = form.querySelector<HTMLElement>('[data-progress]')!;
+    const bar = form.querySelector<HTMLElement>('[data-bar]')!;
+    const status = form.querySelector<HTMLElement>('[data-status]')!;
+    const placesErr = form.querySelector<HTMLElement>('[data-places-err]')!;
+    const date = form.querySelector<HTMLInputElement>('[data-min-today]')!;
+    date.min = new Date().toISOString().slice(0, 10);
+    let i = 0;
+
+    // Turn the long form into steps.
+    nav.hidden = false;
+    progress.hidden = false;
+    form.querySelector<HTMLElement>('[data-bar-wrap]')!.hidden = false;
+    const go = (n: number, focus = true) => {
+      i = n;
+      steps.forEach((st, k) => (st.hidden = k !== i));
+      prev.hidden = i === 0;
+      next.hidden = i === steps.length - 1;
+      progress.textContent = c.step.replace('{i}', String(i + 1)).replace('{n}', String(steps.length));
+      bar.style.width = `${((i + 1) / steps.length) * 100}%`;
+      if (focus) steps[i].querySelector<HTMLElement>('legend')?.focus();
+    };
+    steps.forEach((st) => st.querySelector('legend')!.setAttribute('tabindex', '-1'));
+    go(0, false);
+
+    const placesOk = () => {
+      const ok = form.querySelectorAll('input[name="places"]:checked').length > 0;
+      placesErr.hidden = ok;
+      return ok;
+    };
+    next.addEventListener('click', () => {
+      if (i === 0 && !placesOk()) return form.querySelector<HTMLInputElement>('input[name="places"]')!.focus();
+      go(i + 1);
+    });
+    prev.addEventListener('click', () => go(i - 1));
+    form.addEventListener('change', (e) => { if ((e.target as HTMLInputElement).name === 'places') placesOk(); });
+
+    const summary = () => {
+      const fd = new FormData(form);
+      const all = (k: string) => fd.getAll(k).join(', ');
+      const adults = fd.get('adults'), children = Number(fd.get('children'));
+      return [
+        c.msgHello,
+        `${c.msgWhere}: ${all('places')}`,
+        `${c.msgWhen}: ${fd.get('date') || '-'}${fd.get('flexible') ? ` (${c.flexibleMsg})` : ''}`,
+        `${c.msgDays}: ${fd.get('days')}`,
+        `${c.msgWho}: ${adults}${children ? ` + ${children}` : ''}`,
+        `${c.msgStyle}: ${fd.get('style')}`,
+        ...(all('interests') ? [`${c.msgInterests}: ${all('interests')}`] : []),
+        `${c.msgBudget}: ${fd.get('budget')}`,
+        `${c.msgName}: ${fd.get('name')}`,
+        ...(fd.get('message') ? ['', String(fd.get('message'))] : []),
+        '',
+        c.msgLang,
+      ].join('\n');
+    };
+    const nameI = form.querySelector<HTMLInputElement>('#tm-name')!;
+    const emailI = form.querySelector<HTMLInputElement>('#tm-email')!;
+    const p = (cls: string, text: string) => Object.assign(document.createElement('p'), { className: cls, textContent: text });
+
+    form.querySelectorAll<HTMLButtonElement>('[data-send]').forEach((btn) =>
+      btn.addEventListener('click', async () => {
+        if (!placesOk()) return go(0);
+        if (!fieldError(nameI, nameI.value.trim() ? null : c.errName)) return nameI.focus();
+        if (btn.dataset.send === 'wa') {
+          fieldError(emailI, null);
+          window.open(`https://wa.me/${c.wa}?text=${encodeURIComponent(summary())}`, '_blank', 'noopener');
+          return;
+        }
+        if (!fieldError(emailI, isEmail(emailI.value) ? null : c.errEmail)) return emailI.focus();
+        if (!emailConfigured()) {
+          const m = p('rounded-xl bg-surface-2 p-3 text-sm', `${c.nokey} `);
+          m.append(Object.assign(document.createElement('a'), { className: 'link', textContent: c.mail, href: `mailto:${c.mail}?subject=${encodeURIComponent(c.title)}&body=${encodeURIComponent(summary())}` }));
+          return status.replaceChildren(m);
+        }
+        btn.disabled = true;
+        const ok = await sendEmail(`Tailor-made request from ${nameI.value.trim()}`, {
+          name: nameI.value.trim(), email: emailI.value.trim(),
+          phone: (form.querySelector('#tm-phone') as HTMLInputElement).value,
+          message: summary(), language: document.documentElement.lang,
+        });
+        btn.disabled = false;
+        status.replaceChildren(ok ? p('rounded-xl bg-success-bg p-3 text-sm text-success', c.success) : p('rounded-xl bg-danger-bg p-3 text-sm text-danger', c.error));
+      }),
+    );
+  }
+</script>

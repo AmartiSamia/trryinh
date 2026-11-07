@@ -1,0 +1,64 @@
+---
+/**
+ * Terms (template).
+ * TODO(youssef): have these checked; add payment method, deposit and agency registration.
+ * TODO(review-ar): Arabic text needs a native review.
+ */
+import LegalPage from '../components/LegalPage.astro';
+import type { Lang } from '../i18n/routes';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tbc = { en: '<strong>[to be confirmed]</strong>', fr: '<strong>[à confirmer]</strong>', ar: '<strong>[سيتم تأكيده]</strong>' };
+const sections = [
+  {
+    h: { en: 'Requests and confirmation', fr: 'Demandes et confirmation', ar: 'الطلبات والتأكيد' },
+    p: [{
+      en: 'A request sent from this website (WhatsApp or email) is not a booking. Your trip is booked once Youssef has confirmed availability and the final price in writing, and you have accepted them.',
+      fr: 'Une demande envoyée depuis ce site (WhatsApp ou e-mail) n’est pas une réservation. Votre voyage est réservé lorsque Youssef a confirmé par écrit la disponibilité et le prix final, et que vous les avez acceptés.',
+      ar: 'الطلب المرسل من هذا الموقع (واتساب أو البريد الإلكتروني) ليس حجزا. تُحجز رحلتكم عندما يؤكد يوسف كتابةً التوفر والسعر النهائي وتوافقون عليهما.',
+    }],
+  },
+  {
+    h: { en: 'Prices and payment', fr: 'Prix et paiement', ar: 'الأسعار والدفع' },
+    p: [
+      {
+        en: 'Prices on the website are per person and indicative. The price that counts is the one confirmed in writing. Currency conversions are approximate.',
+        fr: 'Les prix affichés sont par personne et indicatifs. Le prix qui fait foi est celui confirmé par écrit. Les conversions de devises sont approximatives.',
+        ar: 'الأسعار المعروضة للشخص وتقريبية. السعر المعتمد هو المؤكد كتابةً. تحويل العملات تقريبي.',
+      },
+      {
+        en: `Payment method and deposit: ${tbc.en}. No payment is taken on this website.`,
+        fr: `Mode de paiement et acompte : ${tbc.fr}. Aucun paiement n’est encaissé sur ce site.`,
+        ar: `طريقة الدفع والعربون: ${tbc.ar}. لا يتم أي دفع على هذا الموقع.`,
+      },
+    ],
+  },
+  {
+    h: { en: 'Your health, fitness and insurance', fr: 'Santé, condition physique et assurance', ar: 'الصحة واللياقة والتأمين' },
+    p: [{
+      en: 'Tell us about any health issue that matters for the trip. Mountain treks need the fitness described on each trip page. We strongly recommend travel insurance covering trekking and medical evacuation.',
+      fr: 'Signalez-nous tout problème de santé important pour le voyage. Les treks demandent la condition physique décrite sur chaque page. Nous recommandons vivement une assurance couvrant le trek et l’évacuation médicale.',
+      ar: 'أخبرونا بأي مشكلة صحية تهم الرحلة. تتطلب رحلات الجبل اللياقة الموضحة في صفحة كل رحلة. ننصح بشدة بتأمين سفر يغطي المشي والإجلاء الطبي.',
+    }],
+  },
+  {
+    h: { en: 'Safety and changes', fr: 'Sécurité et modifications', ar: 'السلامة والتغييرات' },
+    p: [{
+      en: 'In the mountains, the guide makes the safety decisions, including changing the route or turning back. Weather, road or other conditions outside our control may change a programme; we always look for the best alternative with you.',
+      fr: 'En montagne, le guide prend les décisions de sécurité, y compris changer d’itinéraire ou faire demi-tour. La météo, l’état des routes ou d’autres conditions indépendantes de notre volonté peuvent modifier un programme ; nous cherchons toujours avec vous la meilleure alternative.',
+      ar: 'في الجبل يتخذ المرشد قرارات السلامة، بما في ذلك تغيير المسار أو العودة. قد يتغير البرنامج بسبب الطقس أو حالة الطرق أو ظروف أخرى خارجة عن إرادتنا، ونبحث دائما معكم عن أفضل بديل.',
+    }],
+  },
+  {
+    h: { en: 'Applicable law', fr: 'Droit applicable', ar: 'القانون المطبق' },
+    p: [{
+      en: `These terms are governed by Moroccan law. Agency registration: ${tbc.en}.`,
+      fr: `Ces conditions sont régies par le droit marocain. Immatriculation de l’agence : ${tbc.fr}.`,
+      ar: `تخضع هذه الشروط للقانون المغربي. تسجيل الوكالة: ${tbc.ar}.`,
+    }],
+  },
+];
+---
+<LegalPage lang={lang} route="terms" updated="2026-11-07" sections={sections}
+  title={{ en: 'Terms and conditions', fr: 'Conditions générales', ar: 'الشروط العامة' }}
+  intro={{ en: 'The simple rules of how we work together.', fr: 'Les règles simples de notre collaboration.', ar: 'القواعد البسيطة لتعاملنا معا.' }} />

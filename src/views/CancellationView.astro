@@ -1,0 +1,49 @@
+---
+/**
+ * Cancellation & refund policy (template).
+ * TODO(youssef): fill in the real deadlines and refund amounts.
+ * TODO(review-ar): Arabic text needs a native review.
+ */
+import LegalPage from '../components/LegalPage.astro';
+import { contact } from '../config';
+import type { Lang } from '../i18n/routes';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tbc = { en: '<strong>[to be confirmed]</strong>', fr: '<strong>[à confirmer]</strong>', ar: '<strong>[سيتم تأكيده]</strong>' };
+const sections = [
+  {
+    h: { en: 'If you cancel', fr: 'Si vous annulez', ar: 'إذا ألغيتم' },
+    p: [
+      {
+        en: `Tell Youssef as early as possible on WhatsApp (${contact.phone}) or by email (${contact.email}). The date of your message counts.`,
+        fr: `Prévenez Youssef le plus tôt possible par WhatsApp (${contact.phone}) ou par e-mail (${contact.email}). La date de votre message fait foi.`,
+        ar: `أخبروا يوسف في أقرب وقت عبر واتساب (<span dir="ltr">${contact.phone}</span>) أو البريد الإلكتروني (${contact.email}). يُعتمد تاريخ رسالتكم.`,
+      },
+      {
+        en: `More than ${tbc.en} days before departure: ${tbc.en}. Between ${tbc.en} and ${tbc.en} days: ${tbc.en}. Less than ${tbc.en} days or no-show: ${tbc.en}.`,
+        fr: `Plus de ${tbc.fr} jours avant le départ : ${tbc.fr}. Entre ${tbc.fr} et ${tbc.fr} jours : ${tbc.fr}. Moins de ${tbc.fr} jours ou absence : ${tbc.fr}.`,
+        ar: `أكثر من ${tbc.ar} يوما قبل الانطلاق: ${tbc.ar}. بين ${tbc.ar} و${tbc.ar} يوما: ${tbc.ar}. أقل من ${tbc.ar} يوما أو عدم الحضور: ${tbc.ar}.`,
+      },
+    ],
+  },
+  {
+    h: { en: 'If we cancel', fr: 'Si nous annulons', ar: 'إذا ألغينا' },
+    p: [{
+      en: `If a trip cannot run safely (weather, road closures, safety in the mountains), we offer another date or ${tbc.en}.`,
+      fr: `Si un voyage ne peut pas avoir lieu en sécurité (météo, routes fermées, sécurité en montagne), nous proposons une autre date ou ${tbc.fr}.`,
+      ar: `إذا تعذر تنظيم الرحلة بأمان (الطقس، إغلاق الطرق، السلامة في الجبل)، نقترح تاريخا آخر أو ${tbc.ar}.`,
+    }],
+  },
+  {
+    h: { en: 'Changes and refunds', fr: 'Modifications et remboursements', ar: 'التعديلات والاسترداد' },
+    p: [{
+      en: `Changing the date is free when possible (${tbc.en}). Refunds are paid by ${tbc.en} within ${tbc.en} days.`,
+      fr: `Changer de date est gratuit quand c’est possible (${tbc.fr}). Les remboursements sont effectués par ${tbc.fr} sous ${tbc.fr} jours.`,
+      ar: `تغيير التاريخ مجاني عندما يكون ممكنا (${tbc.ar}). يتم الاسترداد عبر ${tbc.ar} في غضون ${tbc.ar} يوما.`,
+    }],
+  },
+];
+---
+<LegalPage lang={lang} route="cancellation" updated="2026-11-07" sections={sections}
+  title={{ en: 'Cancellation and refunds', fr: 'Annulation et remboursement', ar: 'الإلغاء والاسترداد' }}
+  intro={{ en: 'Plans change. Here is what happens if you or we need to cancel.', fr: 'Les projets changent. Voici ce qui se passe si vous ou nous devons annuler.', ar: 'الخطط تتغير. إليكم ما يحدث إذا اضطررتم أو اضطررنا إلى الإلغاء.' }} />
