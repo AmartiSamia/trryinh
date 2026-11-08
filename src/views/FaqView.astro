@@ -14,9 +14,9 @@ const { lang } = Astro.props;
 const s = t(lang);
 const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
 const c = L({
-  en: { title: 'Frequently asked questions', intro: 'Booking, payment, safety, children, food and weather. Anything missing? Ask Youssef directly.', more: 'Another question?', groups: { booking: 'Booking', payment: 'Payment', safety: 'Safety', children: 'Children', food: 'Food', weather: 'Weather' } },
-  fr: { title: 'Questions fréquentes', intro: 'Réservation, paiement, sécurité, enfants, repas et météo. Une question manque ? Demandez directement à Youssef.', more: 'Une autre question ?', groups: { booking: 'Réservation', payment: 'Paiement', safety: 'Sécurité', children: 'Enfants', food: 'Repas', weather: 'Météo' } },
-  ar: { title: 'الأسئلة الشائعة', intro: 'الحجز والدفع والسلامة والأطفال والطعام والطقس. هل ينقصكم سؤال؟ اسألوا يوسف مباشرة.', more: 'سؤال آخر؟', groups: { booking: 'الحجز', payment: 'الدفع', safety: 'السلامة', children: 'الأطفال', food: 'الطعام', weather: 'الطقس' } },
+  en: { title: 'Frequently asked questions', intro: 'Booking, payment, safety, children, food and weather. Anything missing? Ask us directly.', more: 'Another question?', groups: { booking: 'Booking', payment: 'Payment', safety: 'Safety', children: 'Children', food: 'Food', weather: 'Weather' } },
+  fr: { title: 'Questions fréquentes', intro: 'Réservation, paiement, sécurité, enfants, repas et météo. Une question manque ? Demandez-nous directement.', more: 'Une autre question ?', groups: { booking: 'Réservation', payment: 'Paiement', safety: 'Sécurité', children: 'Enfants', food: 'Repas', weather: 'Météo' } },
+  ar: { title: 'الأسئلة الشائعة', intro: 'الحجز والدفع والسلامة والأطفال والطعام والطقس. هل ينقصكم سؤال؟ اسألونا مباشرة.', more: 'سؤال آخر؟', groups: { booking: 'الحجز', payment: 'الدفع', safety: 'السلامة', children: 'الأطفال', food: 'الطعام', weather: 'الطقس' } },
 });
 const faqs = await getCollection('faq');
 const groups = Object.keys(c.groups) as (keyof typeof c.groups)[];

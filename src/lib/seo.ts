@@ -15,7 +15,7 @@ export function orgJsonLd(lang: Lang) {
     url: abs(url(lang, 'home')),
     logo: abs('/logo.svg'),
     description: t(lang).meta.description,
-    founder: { '@type': 'Person', name: site.founder },
+    openingHours: 'Mo-Su 00:00-23:59',
     telephone: contact.phone.replace(/\s/g, ''),
     email: contact.email,
     address: {

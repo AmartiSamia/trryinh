@@ -37,7 +37,7 @@ photos: [chefchaouen, merzouga-dunes, ait-benhaddou, fes-medina, imlil, essaouir
 highlights:
   - { en: "Chefchaouen, Fes and Marrakech", fr: "Chefchaouen, Fès et Marrakech", ar: "شفشاون وفاس ومراكش" }
   - { en: "A night in the Sahara", fr: "Une nuit au Sahara", ar: "ليلة في الصحراء" }
-  - { en: "A night in Youssef’s village, Imlil", fr: "Une nuit dans le village de Youssef, Imlil", ar: "ليلة في قرية يوسف، إمليل" }
+  - { en: "A night in a mountain village at Imlil", fr: "Une nuit dans un village de montagne à Imlil", ar: "ليلة في قرية جبلية بإمليل" }
   - { en: "Ends on the ocean in Essaouira", fr: "Fin sur l’océan à Essaouira", ar: "الختام على المحيط في الصويرة" }
 itinerary:
   - title: { en: "Casablanca", fr: "Casablanca", ar: "الدار البيضاء" }

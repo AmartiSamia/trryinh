@@ -10,7 +10,6 @@ export const site = {
   nameAr: 'إيبردان',
   /** Production URL, used for canonical links, sitemap and Open Graph. */
   url: 'https://iberdan.com', // TODO(youssef): register iberdan.com (+ iberdan.ma) and confirm the final domain
-  founder: 'Youssef Ait Taguem',
   foundingYear: 2026, // TODO(youssef): year the agency started
 } as const;
 
@@ -28,7 +27,8 @@ export const contact = {
   },
   geo: { lat: 31.1366, lng: -7.9196 }, // Imlil village centre — TODO(youssef): exact office position
   /** Opening hours shown on the contact page (local time, Africa/Casablanca). */
-  hours: { days: 'Mon–Sun', open: '08:00', close: '20:00' }, // TODO(youssef): confirm hours
+  /** Open every day, around the clock (answers on WhatsApp). */
+  hours: { alwaysOpen: true },
 } as const;
 
 export const social = {

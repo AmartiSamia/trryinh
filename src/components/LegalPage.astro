@@ -16,7 +16,7 @@ interface Props {
   updated: string;
 }
 const { lang, route, title, intro, sections, updated } = Astro.props;
-const draft = { en: 'Draft: this text is being finalised with Youssef and may change. Ask us if anything is unclear.', fr: 'Brouillon : ce texte est en cours de validation avec Youssef et peut changer. Demandez-nous en cas de doute.', ar: 'مسودة: هذا النص قيد المراجعة مع يوسف وقد يتغير. اسألونا إذا كان هناك أي غموض.' };
+const draft = { en: 'Draft: this text is being finalised and may change. Ask us if anything is unclear.', fr: 'Brouillon : ce texte est en cours de validation et peut changer. Demandez-nous en cas de doute.', ar: 'مسودة: هذا النص قيد المراجعة وقد يتغير. اسألونا إذا كان هناك أي غموض.' };
 const upd = { en: 'Last updated', fr: 'Dernière mise à jour', ar: 'آخر تحديث' };
 const date = new Intl.DateTimeFormat(langMeta[lang].intl, { dateStyle: 'long' }).format(new Date(updated));
 ---

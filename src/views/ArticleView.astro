@@ -19,12 +19,12 @@ const photo = (await getEntry(a.photo))!;
 const related = await getEntries(a.relatedTrips);
 const og = await getImage({ src: photo.data.file, width: 1200, height: 630, fit: 'cover', format: 'jpg' });
 const date = new Intl.DateTimeFormat(langMeta[lang].intl, { dateStyle: 'long' }).format(a.date);
-const draft = { en: 'Draft: this article is waiting for Youssef’s review.', fr: 'Brouillon : cet article attend la relecture de Youssef.', ar: 'مسودة: هذا المقال في انتظار مراجعة يوسف.' }[lang];
+const draft = { en: 'Draft: this article is waiting for a final review.', fr: 'Brouillon : cet article attend une dernière relecture.', ar: 'مسودة: هذا المقال في انتظار المراجعة النهائية.' }[lang];
 const relatedTitle = { en: 'Trips for this', fr: 'Les voyages associés', ar: 'رحلات ذات صلة' }[lang];
 const jsonLd = {
   '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: a.description,
   datePublished: a.date.toISOString(), inLanguage: lang, image: new URL(og.src, site.url).href,
-  author: { '@type': 'Person', name: site.founder }, publisher: { '@id': `${site.url}/#agency` },
+  author: { '@type': 'Organization', name: site.name }, publisher: { '@id': `${site.url}/#agency` },
 };
 ---
 <Base lang={lang} title={a.title} description={a.description} alternates={alternates('guide', a.key)} ogImage={og.src} ogType="article" jsonLd={jsonLd} noindex={!a.reviewed}>
@@ -32,7 +32,7 @@ const jsonLd = {
     <Breadcrumb lang={lang} items={[{ name: 'Iberdan', path: url(lang, 'home') }, { name: s.nav.guide, path: url(lang, 'guide') }, { name: a.title, path: url(lang, 'guide', a.key) }]} />
     <h1 class="mt-4 text-h1">{a.title}</h1>
     <p class="mt-4 text-lg text-ink-2">{a.description}</p>
-    <p class="mt-3 text-sm text-ink-3">{site.founder} · {date}</p>
+    <p class="mt-3 text-sm text-ink-3">{site.name} · {date}</p>
     {!a.reviewed && <p class="mt-6 flex gap-3 rounded-2xl bg-surface-2 p-4 text-sm"><Icon name="info" class="shrink-0 text-accent-text" />{draft}</p>}
     <Photo photo={photo} lang={lang} eager sizes="(min-width: 800px) 768px, 100vw" class="mt-8 aspect-[16/9] rounded-3xl" />
     <p class="mt-2 text-xs text-ink-3">{photo.data.author} · {photo.data.licence} · {photo.data.sourceName}</p>

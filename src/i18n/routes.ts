@@ -19,7 +19,6 @@ export const routes = {
   home: { en: '', fr: '', ar: '' },
   trips: { en: 'trips', fr: 'circuits', ar: 'trips' },
   tailorMade: { en: 'tailor-made', fr: 'sur-mesure', ar: 'tailor-made' },
-  about: { en: 'about', fr: 'a-propos', ar: 'about' },
   reviews: { en: 'reviews', fr: 'avis', ar: 'reviews' },
   guide: { en: 'guide', fr: 'guide', ar: 'guide' },
   faq: { en: 'faq', fr: 'faq', ar: 'faq' },

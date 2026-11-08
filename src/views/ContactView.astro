@@ -14,9 +14,9 @@ const { lang } = Astro.props;
 const s = t(lang);
 const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
 const c = L({
-  en: { title: 'Contact', intro: 'The fastest way is WhatsApp: Youssef answers himself, usually within a few hours.', where: 'Where we are', hours: 'Opening hours', hoursText: 'Every day', note: 'Times are Morocco time. In the mountains Youssef may be out of network for a few hours.', mapLabel: 'Map of Imlil' },
-  fr: { title: 'Contact', intro: 'Le plus rapide, c’est WhatsApp : Youssef répond lui-même, en général en quelques heures.', where: 'Où nous trouver', hours: 'Horaires', hoursText: 'Tous les jours', note: 'Heure du Maroc. En montagne, Youssef peut être hors réseau quelques heures.', mapLabel: 'Carte d’Imlil' },
-  ar: { title: 'اتصل بنا', intro: 'أسرع طريقة هي واتساب: يجيب يوسف بنفسه، عادة في غضون ساعات قليلة.', where: 'أين نحن', hours: 'أوقات العمل', hoursText: 'كل يوم', note: 'التوقيت بتوقيت المغرب. في الجبل قد يكون يوسف خارج التغطية لبضع ساعات.', mapLabel: 'خريطة إمليل' },
+  en: { title: 'Contact', intro: 'The fastest way is WhatsApp. We answer every day, usually within a few hours.', where: 'Where we are', hours: 'Opening hours', hoursText: 'Open 24/7, every day of the year', note: 'Write at any time. Morocco time (GMT+1).', mapLabel: 'Map of Imlil' },
+  fr: { title: 'Contact', intro: 'Le plus rapide, c’est WhatsApp. Nous répondons tous les jours, en général en quelques heures.', where: 'Où nous trouver', hours: 'Horaires', hoursText: 'Ouvert 24 h/24, 7 j/7, toute l’année', note: 'Écrivez-nous à toute heure. Heure du Maroc (GMT+1).', mapLabel: 'Carte d’Imlil' },
+  ar: { title: 'اتصل بنا', intro: 'أسرع طريقة هي واتساب. نجيب كل يوم، عادة في غضون ساعات قليلة.', where: 'أين نحن', hours: 'أوقات العمل', hoursText: 'مفتوح 24 ساعة طوال أيام الأسبوع وطوال السنة', note: 'راسلونا في أي وقت. بتوقيت المغرب (GMT+1).', mapLabel: 'خريطة إمليل' },
 });
 const ways = [
   { icon: 'whatsapp' as const, label: s.common.whatsapp, value: contact.phone, href: waLink(s.common.whatsappHello), ext: true, primary: true },
@@ -48,7 +48,7 @@ const a = contact.address;
         </div>
         <div>
           <h2 class="text-h3">{c.hours}</h2>
-          <p class="mt-2 text-ink-2">{c.hoursText}, <span dir="ltr">{contact.hours.open}–{contact.hours.close}</span></p>
+          <p class="mt-2 flex items-center gap-2 font-semibold text-success"><span class="size-2.5 rounded-full bg-current" aria-hidden="true"></span>{c.hoursText}</p>
           <p class="mt-2 text-sm text-ink-3">{c.note}</p>
         </div>
       </div>

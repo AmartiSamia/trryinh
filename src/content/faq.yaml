@@ -8,17 +8,17 @@
   home: true
   q: { en: "How do I book a trip?", fr: "Comment réserver un voyage ?", ar: "كيف أحجز رحلة؟" }
   a:
-    en: "Choose a trip, pick your date and the number of travellers, then send the request on WhatsApp or by email. Youssef checks availability and replies himself with the final price. Nothing is paid online."
-    fr: "Choisissez un voyage, une date et le nombre de voyageurs, puis envoyez la demande par WhatsApp ou par e-mail. Youssef vérifie la disponibilité et vous répond lui-même avec le prix final. Rien n’est payé en ligne."
-    ar: "اختاروا الرحلة والتاريخ وعدد المسافرين، ثم أرسلوا الطلب عبر واتساب أو البريد الإلكتروني. يتحقق يوسف من التوفر ويجيبكم بنفسه بالسعر النهائي. لا يتم أي دفع عبر الإنترنت."
+    en: "Choose a trip, pick your date and the number of travellers, then send the request on WhatsApp or by email. We check availability and reply with the final price. Nothing is paid online."
+    fr: "Choisissez un voyage, une date et le nombre de voyageurs, puis envoyez la demande par WhatsApp ou par e-mail. Nous vérifions la disponibilité et vous répondons avec le prix final. Rien n’est payé en ligne."
+    ar: "اختاروا الرحلة والتاريخ وعدد المسافرين، ثم أرسلوا الطلب عبر واتساب أو البريد الإلكتروني. نتحقق من التوفر ونجيبكم بالسعر النهائي. لا يتم أي دفع عبر الإنترنت."
 
 - id: how-fast
   group: booking
   q: { en: "How quickly will I get an answer?", fr: "En combien de temps aurai-je une réponse ?", ar: "متى سأتلقى الرد؟" }
   a:
-    en: "Usually within a few hours on WhatsApp. When Youssef is guiding in the mountains there may be no network for part of the day; he replies as soon as he is back in range."
-    fr: "En général en quelques heures sur WhatsApp. Quand Youssef guide en montagne, il n’y a parfois pas de réseau une partie de la journée ; il répond dès qu’il capte."
-    ar: "عادة في غضون ساعات قليلة على واتساب. عندما يكون يوسف في الجبل قد لا تتوفر الشبكة لجزء من اليوم، فيرد بمجرد عودة التغطية."
+    en: "Usually within a few hours on WhatsApp, every day of the week. In the mountains the network can drop for a while; we reply as soon as we are back in range."
+    fr: "En général en quelques heures sur WhatsApp, tous les jours. En montagne, le réseau peut couper un moment ; nous répondons dès que nous captons."
+    ar: "عادة في غضون ساعات قليلة على واتساب، كل أيام الأسبوع. في الجبل قد تنقطع الشبكة لبعض الوقت، فنرد بمجرد عودة التغطية."
 
 - id: private-shared
   group: booking
@@ -33,43 +33,43 @@
   group: booking
   q: { en: "How big are the groups?", fr: "Quelle est la taille des groupes ?", ar: "ما حجم المجموعات؟" }
   a:
-    en: "Small. The exact maximum depends on the trip and is confirmed when you book. Ask Youssef if you want to know who else is on your date."
-    fr: "Petite. Le maximum exact dépend du voyage et est confirmé à la réservation. Demandez à Youssef si vous voulez savoir qui d’autre est inscrit à votre date."
-    ar: "صغير. الحد الأقصى بالضبط يختلف حسب الرحلة ويُؤكَّد عند الحجز. اسألوا يوسف إذا أردتم معرفة من سيكون معكم في نفس التاريخ."
+    en: "Small. The exact maximum depends on the trip and is confirmed when you book. Ask us if you want to know who else is on your date."
+    fr: "Petite. Le maximum exact dépend du voyage et est confirmé à la réservation. Demandez-nous si vous voulez savoir qui d’autre est inscrit à votre date."
+    ar: "صغير. الحد الأقصى بالضبط يختلف حسب الرحلة ويُؤكَّد عند الحجز. اسألونا إذا أردتم معرفة من سيكون معكم في نفس التاريخ."
 
 - id: payment
   group: payment
   home: true
   q: { en: "How and when do I pay?", fr: "Comment et quand payer ?", ar: "كيف ومتى أدفع؟" }
   a:
-    en: "Nothing is paid on this website. When Youssef confirms your trip he tells you the final price and how to pay. Ask him if you need a written quote first."
-    fr: "Rien ne se paie sur ce site. Quand Youssef confirme votre voyage, il vous indique le prix final et le mode de paiement. Demandez-lui un devis écrit si besoin."
-    ar: "لا يتم أي دفع على هذا الموقع. عندما يؤكد يوسف رحلتكم يخبركم بالسعر النهائي وطريقة الدفع. اطلبوا منه عرض سعر مكتوبا إذا احتجتم."
+    en: "Nothing is paid on this website. When we confirm your trip we send you the final price and how to pay. Ask us for a written quote first if you need one."
+    fr: "Rien ne se paie sur ce site. Quand nous confirmons votre voyage, nous vous indiquons le prix final et le mode de paiement. Demandez-nous un devis écrit si besoin."
+    ar: "لا يتم أي دفع على هذا الموقع. عندما نؤكد رحلتكم نرسل لكم السعر النهائي وطريقة الدفع. اطلبوا منا عرض سعر مكتوبا إذا احتجتم."
 
 - id: cancellation
   group: payment
   q: { en: "What if I need to cancel?", fr: "Et si je dois annuler ?", ar: "ماذا لو اضطررت إلى الإلغاء؟" }
   a:
-    en: "Tell Youssef as early as possible on WhatsApp or by email. The conditions are on our cancellation page and confirmed with your booking. If we have to cancel for weather or safety, we offer you another date."
-    fr: "Prévenez Youssef le plus tôt possible par WhatsApp ou e-mail. Les conditions sont sur notre page annulation et confirmées avec votre réservation. Si nous devons annuler pour la météo ou la sécurité, nous vous proposons une autre date."
-    ar: "أخبروا يوسف في أقرب وقت عبر واتساب أو البريد الإلكتروني. الشروط موجودة في صفحة الإلغاء وتُؤكَّد مع الحجز. إذا اضطررنا إلى الإلغاء بسبب الطقس أو السلامة، نقترح عليكم تاريخا آخر."
+    en: "Tell us as early as possible on WhatsApp or by email. The conditions are on our cancellation page and confirmed with your booking. If we have to cancel for weather or safety, we offer you another date."
+    fr: "Prévenez-nous le plus tôt possible par WhatsApp ou e-mail. Les conditions sont sur notre page annulation et confirmées avec votre réservation. Si nous devons annuler pour la météo ou la sécurité, nous vous proposons une autre date."
+    ar: "أخبرونا في أقرب وقت عبر واتساب أو البريد الإلكتروني. الشروط موجودة في صفحة الإلغاء وتُؤكَّد مع الحجز. إذا اضطررنا إلى الإلغاء بسبب الطقس أو السلامة، نقترح عليكم تاريخا آخر."
 
 - id: fitness
   group: safety
   home: true
   q: { en: "Am I fit enough for Toubkal?", fr: "Suis-je assez en forme pour le Toubkal ?", ar: "هل لياقتي كافية لصعود توبقال؟" }
   a:
-    en: "If you can walk 6 hours on hills with breaks, you can usually reach the summit. The hard part is the long summit day and the altitude, not technique. Tell Youssef about your experience and he will advise you honestly."
-    fr: "Si vous pouvez marcher 6 h en dénivelé avec des pauses, vous pouvez en général atteindre le sommet. Le plus dur, c’est la longue journée du sommet et l’altitude, pas la technique. Parlez de votre expérience à Youssef, il vous conseillera honnêtement."
-    ar: "إذا كنتم تستطيعون المشي 6 ساعات في مرتفعات مع استراحات، فيمكنكم عادة بلوغ القمة. الصعب هو يوم القمة الطويل والارتفاع، وليس التقنية. أخبروا يوسف بخبرتكم وسينصحكم بصدق."
+    en: "If you can walk 6 hours on hills with breaks, you can usually reach the summit. The hard part is the long summit day and the altitude, not technique. Tell us about your experience and we will advise you honestly."
+    fr: "Si vous pouvez marcher 6 h en dénivelé avec des pauses, vous pouvez en général atteindre le sommet. Le plus dur, c’est la longue journée du sommet et l’altitude, pas la technique. Parlez-nous de votre expérience, nous vous conseillerons honnêtement."
+    ar: "إذا كنتم تستطيعون المشي 6 ساعات في مرتفعات مع استراحات، فيمكنكم عادة بلوغ القمة. الصعب هو يوم القمة الطويل والارتفاع، وليس التقنية. أخبرونا بخبرتكم وسننصحكم بصدق."
 
 - id: safety-guide
   group: safety
   q: { en: "Who guides the treks?", fr: "Qui encadre les treks ?", ar: "من يرافق رحلات المشي؟" }
   a:
-    en: "Mountain treks are led by Youssef or a licensed mountain guide from his team. The guide decides on safety: if the weather or the group is not right for the summit, you turn back."
-    fr: "Les treks en montagne sont encadrés par Youssef ou un guide de montagne diplômé de son équipe. Le guide décide pour la sécurité : si la météo ou le groupe ne permettent pas le sommet, on fait demi-tour."
-    ar: "يقود رحلات الجبل يوسف أو مرشد جبلي معتمد من فريقه. المرشد هو من يقرر في أمور السلامة: إذا لم يكن الطقس أو حالة المجموعة مناسبين للقمة، نعود أدراجنا."
+    en: "Mountain treks are led by licensed mountain guides from the Imlil valleys. The guide decides on safety: if the weather or the group is not right for the summit, you turn back."
+    fr: "Les treks en montagne sont encadrés par des guides de montagne diplômés des vallées d’Imlil. Le guide décide pour la sécurité : si la météo ou le groupe ne permettent pas le sommet, on fait demi-tour."
+    ar: "يقود رحلات الجبل مرشدون جبليون معتمدون من وديان إمليل. المرشد هو من يقرر في أمور السلامة: إذا لم يكن الطقس أو حالة المجموعة مناسبين للقمة، نعود أدراجنا."
 
 - id: insurance
   group: safety
@@ -83,9 +83,9 @@
   group: children
   q: { en: "Can children come?", fr: "Les enfants peuvent-ils venir ?", ar: "هل يمكن للأطفال المشاركة؟" }
   a:
-    en: "Yes, many trips work well with children: day trips, Agafay, the three valleys trek, the desert. Toubkal summit is better for teenagers who already walk. Ask Youssef about ages and child prices for your trip."
-    fr: "Oui, beaucoup de voyages conviennent aux enfants : excursions, Agafay, trek des trois vallées, désert. Le sommet du Toubkal convient mieux aux adolescents qui marchent déjà. Demandez à Youssef pour l’âge et les prix enfants."
-    ar: "نعم، كثير من الرحلات مناسبة للأطفال: الرحلات اليومية، أكفاي، رحلة الوديان الثلاثة، الصحراء. قمة توبقال أنسب للمراهقين المتعودين على المشي. اسألوا يوسف عن الأعمار وأسعار الأطفال."
+    en: "Yes, many trips work well with children: day trips, Agafay, the three valleys trek, the desert. Toubkal summit is better for teenagers who already walk. Ask us about ages and child prices for your trip."
+    fr: "Oui, beaucoup de voyages conviennent aux enfants : excursions, Agafay, trek des trois vallées, désert. Le sommet du Toubkal convient mieux aux adolescents qui marchent déjà. Demandez-nous pour l’âge et les prix enfants."
+    ar: "نعم، كثير من الرحلات مناسبة للأطفال: الرحلات اليومية، أكفاي، رحلة الوديان الثلاثة، الصحراء. قمة توبقال أنسب للمراهقين المتعودين على المشي. اسألونا عن الأعمار وأسعار الأطفال."
 
 - id: children-mules
   group: children
