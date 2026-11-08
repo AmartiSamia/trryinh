@@ -17,7 +17,6 @@ Not deployed yet: connect the repository to Netlify or Vercel (see README).
 | `/en/trips/toubkal-summit-3-days/` | 98 | 100 | 100 | 100 | 2.2 s | 0.001 |
 | `/ar/trips/marrakech-merzouga-3-days/` | 98 | 100 | 100 | 100 | 2.1 s | 0.037 |
 | `/fr/sur-mesure/` | 100 | 100 | 100 | 100 | 1.7 s | 0 |
-| `/en/guide/toubkal-what-to-expect/` | 98 | 100 | 100 | 69* | 2.3 s | 0 |
 
 \* Guide articles are deliberately `noindex` while they are drafts. SEO goes to 100 once
 `reviewed: true` is set. Scores on the live host (with HTTP/2 + compression) should be similar or better.
@@ -25,7 +24,7 @@ Not deployed yet: connect the repository to Netlify or Vercel (see README).
 ### Accessibility (axe-core, WCAG 2.0/2.1/2.2 A + AA)
 
 - **0 violations** on 20 pages × light and dark theme (home, trips list, 3 trip pages, tailor-made,
-  about, reviews, FAQ, contact, wishlist, photo credits, guide, article, legal, 404), in en/fr/ar.
+  about, reviews, FAQ, contact, wishlist, photo credits, legal, booking page, 404), in all 6 languages.
 - Mobile (390 px): 0 violations on trips list, trip page (Arabic) and tailor-made.
 - Reflow at 320 px (= 400 % zoom): no horizontal scrolling on 11 checked pages.
 - Keyboard: skip link first; filters, tabs (arrow keys, RTL-aware), gallery lightbox
@@ -104,7 +103,7 @@ range found is written at the top of each trip file.
 ### Texts to review
 - [ ] **Spanish, German, Portuguese** (added 8 Nov 2026): native review recommended (`TODO(review-es/de/pt)`).
 - [ ] **Arabic**: every Arabic text needs a native review (`TODO(review-ar)` in `src/i18n/ui.ts`,
-      `src/i18n/catalog.ts`, trip files, FAQ, guide, page files).
+      `src/i18n/catalog.ts`, trip files, FAQ, page files).
 - [ ] Check the FAQ answers (payment, cancellation, children, group size).
 
 ## Not done / out of scope
