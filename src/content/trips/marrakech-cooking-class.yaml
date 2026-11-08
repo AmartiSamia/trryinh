@@ -5,50 +5,59 @@ popularity: 66
 title:
   en: Moroccan cooking class in Marrakech
   fr: Cours de cuisine marocaine à Marrakech
+  es: Clase de cocina marroquí en Marrakech
+  de: Marokkanischer Kochkurs in Marrakesch
+  pt: Aula de cozinha marroquina em Marraquexe
   ar: درس طبخ مغربي في مراكش
 summary:
   en: Shop at the market, then cook a full Moroccan meal with a local cook. Salads, a tagine of your choice, bread and mint tea, and you eat what you make.
   fr: Courses au marché, puis un vrai repas marocain avec une cuisinière locale. Salades, tajine au choix, pain et thé à la menthe, et vous mangez ce que vous préparez.
+  es: Compra en el mercado y cocine una comida marroquí completa con una cocinera local. Ensaladas, un tajín a elegir, pan y té a la menta, y se come lo que se prepara.
+  de: Einkauf auf dem Markt, dann kochen Sie mit einer einheimischen Köchin ein ganzes marokkanisches Menü. Salate, eine Tajine nach Wahl, Brot und Minztee, und Sie essen, was Sie gekocht haben.
+  pt: Compras no mercado e depois uma refeição marroquina completa com uma cozinheira local. Saladas, um tajine à escolha, pão e chá de menta, e come o que preparou.
   ar: التسوق من السوق ثم طبخ وجبة مغربية كاملة مع طباخة محلية. سلطات، طاجين من اختياركم، خبز وشاي بالنعناع، وتأكلون ما تطبخون.
 about:
   en: >-
-    A morning in the kitchen. You buy vegetables and spices with your host, learn which spice goes
-    where, and cook step by step: cooked salads, a chicken or vegetable tagine, bread, and the right
-    way to pour mint tea. You leave with the recipes and a full stomach.
+    A morning in the kitchen. You buy vegetables and spices with your host, learn which spice goes where, and cook step by step: cooked salads, a chicken or vegetable tagine, bread, and the right way to pour mint tea. You leave with the recipes and a full stomach.
   fr: >-
-    Une matinée en cuisine. Vous achetez légumes et épices avec votre hôte, apprenez quelle épice va où,
-    et cuisinez pas à pas : salades cuites, tajine au poulet ou aux légumes, pain, et la bonne façon de
-    servir le thé à la menthe. Vous repartez avec les recettes et le ventre plein.
+    Une matinée en cuisine. Vous achetez légumes et épices avec votre hôte, apprenez quelle épice va où, et cuisinez pas à pas : salades cuites, tajine au poulet ou aux légumes, pain, et la bonne façon de servir le thé à la menthe. Vous repartez avec les recettes et le ventre plein.
+  es: "Una mañana en la cocina. Compra verduras y especias con su anfitriona, aprende qué especia va con qué y cocina paso a paso: ensaladas cocidas, un tajín de pollo o de verduras, pan y la manera correcta de servir el té a la menta. Se va con las recetas y el estómago lleno."
+  de: "Ein Vormittag in der Küche. Sie kaufen mit Ihrer Gastgeberin Gemüse und Gewürze, lernen, welches Gewürz wohin gehört, und kochen Schritt für Schritt: gekochte Salate, eine Tajine mit Huhn oder Gemüse, Brot und den richtigen Aufguss von Minztee. Sie gehen mit den Rezepten und vollem Magen."
+  pt: "Uma manhã na cozinha. Compra legumes e especiarias com a sua anfitriã, aprende que especiaria vai com quê e cozinha passo a passo: saladas cozinhadas, um tajine de frango ou de legumes, pão e a forma certa de servir o chá de menta. Sai com as receitas e a barriga cheia."
   ar: >-
-    صباح في المطبخ. تشترون الخضر والتوابل مع مضيفتكم، وتتعلمون أي توابل لأي طبق، وتطبخون خطوة بخطوة:
-    السلطات المطبوخة، طاجين بالدجاج أو بالخضر، الخبز، والطريقة الصحيحة لسكب الشاي بالنعناع. تغادرون
-    بالوصفات وبطن ممتلئ.
+    صباح في المطبخ. تشترون الخضر والتوابل مع مضيفتكم، وتتعلمون أي توابل لأي طبق، وتطبخون خطوة بخطوة: السلطات المطبوخة، طاجين بالدجاج أو بالخضر، الخبز، والطريقة الصحيحة لسكب الشاي بالنعناع. تغادرون بالوصفات وبطن ممتلئ.
 days: 0.5
 hours: "4 h"
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+bestMonths: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
 price: { shared: 450, private: 700 }
 includes: { meals: true, transport: false, nights: false }
-photos: [tagine, u-spices, mint-tea, souk-lanterns]
+photos: [ tagine, u-spices, mint-tea, souk-lanterns ]
 highlights:
-  - { en: "Market visit with your cook", fr: "Marché avec votre cuisinière", ar: "زيارة السوق مع الطباخة" }
-  - { en: "Cook and eat a full Moroccan meal", fr: "Cuisiner et déguster un repas complet", ar: "طبخ وتناول وجبة مغربية كاملة" }
-  - { en: "Recipes to take home", fr: "Les recettes à emporter", ar: "وصفات تأخذونها معكم" }
+  - { en: "Market visit with your cook", fr: "Marché avec votre cuisinière", es: "Visita al mercado con su cocinera", de: "Marktbesuch mit Ihrer Köchin", pt: "Visita ao mercado com a sua cozinheira", ar: "زيارة السوق مع الطباخة" }
+  - { en: "Cook and eat a full Moroccan meal", fr: "Cuisiner et déguster un repas complet", es: "Cocinar y comer una comida marroquí completa", de: "Ein ganzes marokkanisches Menü kochen und essen", pt: "Cozinhar e comer uma refeição marroquina completa", ar: "طبخ وتناول وجبة مغربية كاملة" }
+  - { en: "Recipes to take home", fr: "Les recettes à emporter", es: "Recetas para llevar", de: "Rezepte zum Mitnehmen", pt: "Receitas para levar", ar: "وصفات تأخذونها معكم" }
 itinerary:
-  - title: { en: "From market to table", fr: "Du marché à la table", ar: "من السوق إلى المائدة" }
+  - title: { en: "From market to table", fr: "Du marché à la table", es: "Del mercado a la mesa", de: "Vom Markt auf den Tisch", pt: "Do mercado à mesa", ar: "من السوق إلى المائدة" }
     text:
       en: "Market shopping, cooking class, then lunch together."
       fr: "Courses au marché, cours de cuisine, puis déjeuner ensemble."
+      es: Compras en el mercado, clase de cocina y almuerzo juntos.
+      de: Einkauf auf dem Markt, Kochkurs und gemeinsames Mittagessen.
+      pt: Compras no mercado, aula de cozinha e almoço em conjunto.
       ar: "التسوق من السوق، درس الطبخ، ثم الغداء معا."
-    meals: [lunch]
-included: [guide-local, lunch, tea-snacks]
-excluded: [drinks, tips]
-pack: [comfy-shoes]
+    meals: [ lunch ]
+included: [ guide-local, lunch, tea-snacks ]
+excluded: [ drinks, tips ]
+pack: [ comfy-shoes ]
 meetingPoint:
   en: "Your riad in Marrakech (transfer on request)."
   fr: "Votre riad à Marrakech (transfert sur demande)."
+  es: Su riad en Marrakech (traslado bajo petición).
+  de: Ihr Riad in Marrakesch (Transfer auf Anfrage).
+  pt: O seu riad em Marraquexe (transfer a pedido).
   ar: "الرياض الخاص بكم في مراكش (النقل عند الطلب)."
 pickupTime: "09:30"
 mapStops:

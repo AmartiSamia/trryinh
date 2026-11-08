@@ -5,61 +5,71 @@ popularity: 75
 title:
   en: Marrakech to Zagora desert, 2 days
   fr: Désert de Zagora depuis Marrakech, 2 jours
+  es: Desierto de Zagora desde Marrakech, 2 días
+  de: Wüste von Zagora ab Marrakesch, 2 Tage
+  pt: Deserto de Zagora desde Marraquexe, 2 dias
   ar: صحراء زاكورة من مراكش، يومان
 summary:
   en: The shortest way to sleep in the desert from Marrakech. Aït Benhaddou, the Draa valley palm groves and a camel ride to a camp near Zagora.
   fr: Le moyen le plus court de dormir dans le désert depuis Marrakech. Aït Benhaddou, les palmeraies du Drâa et une balade à dos de dromadaire jusqu’à un camp près de Zagora.
+  es: La forma más corta de dormir en el desierto desde Marrakech. Aït Benhaddou, los palmerales del valle del Draa y un paseo en dromedario hasta un campamento cerca de Zagora.
+  de: Der kürzeste Weg zu einer Nacht in der Wüste ab Marrakesch. Aït Benhaddou, die Palmenhaine des Draa-Tals und ein Kamelritt zu einem Camp bei Zagora.
+  pt: A forma mais curta de dormir no deserto desde Marraquexe. Aït Benhaddou, os palmeirais do vale do Draa e um passeio de dromedário até um acampamento perto de Zagora.
   ar: أقصر طريقة للمبيت في الصحراء من مراكش. آيت بن حدو، واحات نخيل درعة وجولة على الجمال إلى مخيم قرب زاكورة.
 about:
   en: >-
-    If you only have two days, Zagora is the realistic choice. The dunes are smaller than in
-    Merzouga, but the road is beautiful: the Tichka pass, Aït Benhaddou, then the long palm
-    valley of the Draa with its earth villages. You ride camels to the camp for dinner and a night
-    under the stars, and drive back to Marrakech the next day.
+    If you only have two days, Zagora is the realistic choice. The dunes are smaller than in Merzouga, but the road is beautiful: the Tichka pass, Aït Benhaddou, then the long palm valley of the Draa with its earth villages. You ride camels to the camp for dinner and a night under the stars, and drive back to Marrakech the next day.
   fr: >-
-    Avec seulement deux jours, Zagora est le choix réaliste. Les dunes sont plus petites qu’à Merzouga,
-    mais la route est superbe : le col du Tichka, Aït Benhaddou, puis la longue vallée de palmiers du
-    Drâa et ses villages en terre. Vous rejoignez le camp à dos de dromadaire pour le dîner et une nuit
-    sous les étoiles, et rentrez à Marrakech le lendemain.
+    Avec seulement deux jours, Zagora est le choix réaliste. Les dunes sont plus petites qu’à Merzouga, mais la route est superbe : le col du Tichka, Aït Benhaddou, puis la longue vallée de palmiers du Drâa et ses villages en terre. Vous rejoignez le camp à dos de dromadaire pour le dîner et une nuit sous les étoiles, et rentrez à Marrakech le lendemain.
+  es: "Si solo tiene dos días, Zagora es la opción realista. Las dunas son más pequeñas que en Merzouga, pero la carretera es preciosa: el puerto de Tichka, Aït Benhaddou y luego el largo valle de palmeras del Draa con sus pueblos de adobe. Llega en dromedario al campamento para la cena y una noche bajo las estrellas, y vuelve a Marrakech al día siguiente."
+  de: "Wenn Sie nur zwei Tage haben, ist Zagora die realistische Wahl. Die Dünen sind kleiner als in Merzouga, aber die Strecke ist herrlich: der Tichka-Pass, Aït Benhaddou, dann das lange Palmental des Draa mit seinen Lehmdörfern. Sie reiten auf Kamelen ins Camp zum Abendessen und zu einer Nacht unter Sternen und fahren am nächsten Tag zurück nach Marrakesch."
+  pt: "Se tem só dois dias, Zagora é a escolha realista. As dunas são mais pequenas do que em Merzouga, mas a estrada é bonita: o passo de Tichka, Aït Benhaddou e depois o longo vale de palmeiras do Draa com as suas aldeias de terra. Chega de dromedário ao acampamento para jantar e passar a noite sob as estrelas, e regressa a Marraquexe no dia seguinte."
   ar: >-
-    إذا كان لديكم يومان فقط، فزاكورة هي الخيار الواقعي. الكثبان أصغر من مرزوكة، لكن الطريق رائع: ممر
-    تيشكا، آيت بن حدو، ثم وادي درعة الطويل بنخيله وقراه الطينية. تركبون الجمال إلى المخيم للعشاء وليلة
-    تحت النجوم، وتعودون إلى مراكش في اليوم الموالي.
+    إذا كان لديكم يومان فقط، فزاكورة هي الخيار الواقعي. الكثبان أصغر من مرزوكة، لكن الطريق رائع: ممر تيشكا، آيت بن حدو، ثم وادي درعة الطويل بنخيله وقراه الطينية. تركبون الجمال إلى المخيم للعشاء وليلة تحت النجوم، وتعودون إلى مراكش في اليوم الموالي.
 days: 2
 nights: 1
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [3, 4, 5, 10, 11, 12]
+bestMonths: [ 3, 4, 5, 10, 11, 12 ]
 price: { shared: 850, private: 2000 }
 includes: { meals: true, transport: true, nights: true }
-photos: [zagora, ait-benhaddou-camels, draa-valley, desert-camp-2]
+photos: [ zagora, ait-benhaddou-camels, draa-valley, desert-camp-2 ]
 highlights:
-  - { en: "A night in the desert in just two days", fr: "Une nuit dans le désert en deux jours seulement", ar: "ليلة في الصحراء في يومين فقط" }
-  - { en: "The Draa valley palm groves", fr: "Les palmeraies de la vallée du Drâa", ar: "واحات نخيل وادي درعة" }
-  - { en: "Aït Benhaddou on the way", fr: "Aït Benhaddou en chemin", ar: "آيت بن حدو في الطريق" }
+  - { en: "A night in the desert in just two days", fr: "Une nuit dans le désert en deux jours seulement", es: "Una noche en el desierto en solo dos días", de: "Eine Nacht in der Wüste in nur zwei Tagen", pt: "Uma noite no deserto em apenas dois dias", ar: "ليلة في الصحراء في يومين فقط" }
+  - { en: "The Draa valley palm groves", fr: "Les palmeraies de la vallée du Drâa", es: "Los palmerales del valle del Draa", de: "Die Palmenhaine des Draa-Tals", pt: "Os palmeirais do vale do Draa", ar: "واحات نخيل وادي درعة" }
+  - { en: "Aït Benhaddou on the way", fr: "Aït Benhaddou en chemin", es: "Aït Benhaddou por el camino", de: "Aït Benhaddou unterwegs", pt: "Aït Benhaddou pelo caminho", ar: "آيت بن حدو في الطريق" }
 itinerary:
-  - title: { en: "Marrakech to the Zagora camp", fr: "De Marrakech au camp de Zagora", ar: "من مراكش إلى مخيم زاكورة" }
+  - title: { en: "Marrakech to the Zagora camp", fr: "De Marrakech au camp de Zagora", es: "De Marrakech al campamento de Zagora", de: "Von Marrakesch ins Camp bei Zagora", pt: "De Marraquexe ao acampamento de Zagora", ar: "من مراكش إلى مخيم زاكورة" }
     text:
       en: "Over the Tichka pass to Aït Benhaddou, then through Agdz and the Draa valley. Camel ride at sunset to camp."
       fr: "Par le col du Tichka jusqu’à Aït Benhaddou, puis Agdz et la vallée du Drâa. Dromadaires au coucher du soleil jusqu’au camp."
+      es: Por el puerto de Tichka hasta Aït Benhaddou, después Agdz y el valle del Draa. Paseo en dromedario al atardecer hasta el campamento.
+      de: Über den Tichka-Pass nach Aït Benhaddou, dann durch Agdz und das Draa-Tal. Kamelritt bei Sonnenuntergang ins Camp.
+      pt: Pelo passo de Tichka até Aït Benhaddou, depois Agdz e o vale do Draa. Passeio de dromedário ao pôr do sol até ao acampamento.
       ar: "عبر ممر تيشكا إلى آيت بن حدو، ثم أكدز ووادي درعة. جولة على الجمال عند الغروب إلى المخيم."
     drive: 8 h with stops
     sleep: { type: camp, place: Zagora }
-    meals: [dinner]
-  - title: { en: "Back to Marrakech", fr: "Retour à Marrakech", ar: "العودة إلى مراكش" }
+    meals: [ dinner ]
+  - title: { en: "Back to Marrakech", fr: "Retour à Marrakech", es: "Regreso a Marrakech", de: "Zurück nach Marrakesch", pt: "Regresso a Marraquexe", ar: "العودة إلى مراكش" }
     text:
       en: "Sunrise, breakfast at camp and the drive back to Marrakech."
       fr: "Lever du soleil, petit-déjeuner au camp et route vers Marrakech."
+      es: Amanecer, desayuno en el campamento y regreso a Marrakech.
+      de: Sonnenaufgang, Frühstück im Camp und Rückfahrt nach Marrakesch.
+      pt: Nascer do sol, pequeno-almoço no acampamento e regresso a Marraquexe.
       ar: "الشروق والفطور في المخيم ثم الطريق إلى مراكش."
     drive: 7–8 h with stops
-    meals: [breakfast]
-included: [pickup-hotel, transport, driver, camel, desert-camp, breakfast-dinner]
-excluded: [lunches, drinks, entrance-fees-ex, tips, personal]
-pack: [scarf, sun-kit, warm-night, comfy-shoes, passport, cash]
+    meals: [ breakfast ]
+included: [ pickup-hotel, transport, driver, camel, desert-camp, breakfast-dinner ]
+excluded: [ lunches, drinks, entrance-fees-ex, tips, personal ]
+pack: [ scarf, sun-kit, warm-night, comfy-shoes, passport, cash ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "07:00"
 mapStops:

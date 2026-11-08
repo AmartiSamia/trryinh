@@ -96,13 +96,13 @@ range found is written at the top of each trip file.
 - [ ] Exchange rates (EUR 10.5, USD 9.6 MAD).
 - [ ] Season temperatures on the home page (approximate averages).
 
-### Photos and story
-- [ ] Your **portrait** and **your own story** for the About page (how you started, since when).
-- [ ] Team: first names and photos of guides, muleteers, cooks, drivers (with their agreement).
+### Photos
 - [ ] Your own trip photos to replace the Wikimedia Commons ones over time
-      (the original `images/` folder with 16 photos was never received).
+      (the original `images/` folder with 16 photos was never received). Photos now come from
+      Wikimedia Commons and Unsplash, credited on the Photo credits page.
 
 ### Texts to review
+- [ ] **Spanish, German, Portuguese** (added 8 Nov 2026): native review recommended (`TODO(review-es/de/pt)`).
 - [ ] **Arabic**: every Arabic text needs a native review (`TODO(review-ar)` in `src/i18n/ui.ts`,
       `src/i18n/catalog.ts`, trip files, FAQ, guide, page files).
 - [ ] Read the three guide articles and set `reviewed: true` (then remove the guide line in the

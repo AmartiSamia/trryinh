@@ -1,4 +1,7 @@
 import type { Lang } from './routes';
+import { es } from './ui-es';
+import { de } from './ui-de';
+import { pt } from './ui-pt';
 
 /*
  * Interface strings. English is the reference: TypeScript makes sure
@@ -824,5 +827,5 @@ const ar: UI = {
   },
 };
 
-export const ui: Record<Lang, UI> = { en, fr, ar };
+export const ui: Record<Lang, UI> = { en, fr, es, de, pt, ar };
 export const t = (lang: Lang): UI => ui[lang];

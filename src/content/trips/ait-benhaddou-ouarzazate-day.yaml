@@ -5,51 +5,58 @@ popularity: 72
 title:
   en: Aït Benhaddou and Ouarzazate day trip
   fr: Excursion à Aït Benhaddou et Ouarzazate
+  es: Excursión a Aït Benhaddou y Ouarzazate
+  de: Tagesausflug nach Aït Benhaddou und Ouarzazate
+  pt: Excursão a Aït Benhaddou e Ouarzazate
   ar: رحلة يومية إلى آيت بن حدو وورزازات
 summary:
   en: Over the Tichka pass to the earth ksar of Aït Benhaddou and the kasbahs of Ouarzazate, the gateway to the desert.
   fr: Par le col du Tichka jusqu’au ksar en terre d’Aït Benhaddou et aux kasbahs de Ouarzazate, porte du désert.
+  es: Por el puerto de Tichka hasta el ksar de adobe de Aït Benhaddou y las kasbahs de Ouarzazate, la puerta del desierto.
+  de: Über den Tichka-Pass zum Lehm-Ksar Aït Benhaddou und zu den Kasbahs von Ouarzazate, dem Tor zur Wüste.
+  pt: Pelo passo de Tichka até ao ksar de terra de Aït Benhaddou e às kasbahs de Ouarzazate, a porta do deserto.
   ar: عبر ممر تيشكا إلى قصر آيت بن حدو الطيني وقصبات ورزازات، بوابة الصحراء.
 about:
   en: >-
-    A long but spectacular day. The road climbs through Amazigh villages to the Tizi n’Tichka pass
-    at 2,260 m, then drops to Aït Benhaddou, a fortified village of earth and straw on the old
-    caravan route. A local guide takes you up through its lanes, then you continue to Ouarzazate
-    and its kasbah before driving back over the mountains.
+    A long but spectacular day. The road climbs through Amazigh villages to the Tizi n’Tichka pass at 2,260 m, then drops to Aït Benhaddou, a fortified village of earth and straw on the old caravan route. A local guide takes you up through its lanes, then you continue to Ouarzazate and its kasbah before driving back over the mountains.
   fr: >-
-    Une longue mais spectaculaire journée. La route monte par les villages amazighs jusqu’au col du
-    Tizi n’Tichka à 2 260 m, puis descend vers Aït Benhaddou, village fortifié en terre et paille sur
-    l’ancienne route des caravanes. Un guide local vous emmène dans ses ruelles, puis vous continuez
-    vers Ouarzazate et sa kasbah avant de repasser les montagnes.
+    Une longue mais spectaculaire journée. La route monte par les villages amazighs jusqu’au col du Tizi n’Tichka à 2 260 m, puis descend vers Aït Benhaddou, village fortifié en terre et paille sur l’ancienne route des caravanes. Un guide local vous emmène dans ses ruelles, puis vous continuez vers Ouarzazate et sa kasbah avant de repasser les montagnes.
+  es: Un día largo pero espectacular. La carretera sube entre pueblos amazighs hasta el puerto de Tizi n’Tichka, a 2260 m, y baja a Aït Benhaddou, un pueblo fortificado de tierra y paja en la antigua ruta de las caravanas. Un guía local le acompaña por sus callejuelas y luego sigue hasta Ouarzazate y su kasbah antes de volver por las montañas.
+  de: Ein langer, aber spektakulärer Tag. Die Straße steigt durch Amazigh-Dörfer zum Pass Tizi n’Tichka auf 2.260 m und führt dann hinab nach Aït Benhaddou, einem befestigten Dorf aus Lehm und Stroh an der alten Karawanenroute. Ein einheimischer Guide führt Sie durch die Gassen, dann geht es weiter nach Ouarzazate und zu seiner Kasbah, bevor Sie über die Berge zurückfahren.
+  pt: Um dia longo mas espetacular. A estrada sobe entre aldeias amazigh até ao passo de Tizi n’Tichka, a 2260 m, e desce até Aït Benhaddou, uma aldeia fortificada de terra e palha na antiga rota das caravanas. Um guia local leva-o pelas suas ruelas e depois segue para Ouarzazate e a sua kasbah antes de regressar pelas montanhas.
   ar: >-
-    يوم طويل لكنه مذهل. يصعد الطريق عبر القرى الأمازيغية إلى ممر تيزي نتيشكا على ارتفاع 2260 مترا، ثم
-    ينزل إلى آيت بن حدو، القرية المحصنة المبنية بالطين والتبن على طريق القوافل القديم. يرافقكم مرشد محلي
-    في أزقتها، ثم تواصلون إلى ورزازات وقصبتها قبل العودة عبر الجبال.
+    يوم طويل لكنه مذهل. يصعد الطريق عبر القرى الأمازيغية إلى ممر تيزي نتيشكا على ارتفاع 2260 مترا، ثم ينزل إلى آيت بن حدو، القرية المحصنة المبنية بالطين والتبن على طريق القوافل القديم. يرافقكم مرشد محلي في أزقتها، ثم تواصلون إلى ورزازات وقصبتها قبل العودة عبر الجبال.
 days: 1
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [1, 2, 3, 4, 5, 9, 10, 11, 12]
+bestMonths: [ 1, 2, 3, 4, 5, 9, 10, 11, 12 ]
 price: { shared: 400, private: 1400 }
 includes: { meals: false, transport: true, nights: false }
-photos: [u-aitben-aerial, u-aitben-palm, u-aitben-walk, u-kasbah-rugs, ait-benhaddou-camels]
+photos: [ u-aitben-aerial, u-aitben-palm, u-aitben-walk, u-kasbah-rugs, ait-benhaddou-camels ]
 highlights:
-  - { en: "Aït Benhaddou, UNESCO World Heritage", fr: "Aït Benhaddou, patrimoine mondial de l’UNESCO", ar: "آيت بن حدو، تراث عالمي لليونسكو" }
-  - { en: "The Tizi n’Tichka mountain road", fr: "La route de montagne du Tizi n’Tichka", ar: "الطريق الجبلي لتيزي نتيشكا" }
-  - { en: "Ouarzazate, the gateway to the desert", fr: "Ouarzazate, la porte du désert", ar: "ورزازات، بوابة الصحراء" }
+  - { en: "Aït Benhaddou, UNESCO World Heritage", fr: "Aït Benhaddou, patrimoine mondial de l’UNESCO", es: "Aït Benhaddou, Patrimonio Mundial de la UNESCO", de: "Aït Benhaddou, UNESCO-Weltkulturerbe", pt: "Aït Benhaddou, Património Mundial da UNESCO", ar: "آيت بن حدو، تراث عالمي لليونسكو" }
+  - { en: "The Tizi n’Tichka mountain road", fr: "La route de montagne du Tizi n’Tichka", es: "La carretera de montaña del Tizi n’Tichka", de: "Die Bergstraße über den Tizi n’Tichka", pt: "A estrada de montanha do Tizi n’Tichka", ar: "الطريق الجبلي لتيزي نتيشكا" }
+  - { en: "Ouarzazate, the gateway to the desert", fr: "Ouarzazate, la porte du désert", es: "Ouarzazate, la puerta del desierto", de: "Ouarzazate, das Tor zur Wüste", pt: "Ouarzazate, a porta do deserto", ar: "ورزازات، بوابة الصحراء" }
 itinerary:
-  - title: { en: "Aït Benhaddou and Ouarzazate", fr: "Aït Benhaddou et Ouarzazate", ar: "آيت بن حدو وورزازات" }
+  - title: { en: "Aït Benhaddou and Ouarzazate", fr: "Aït Benhaddou et Ouarzazate", es: "Aït Benhaddou y Ouarzazate", de: "Aït Benhaddou und Ouarzazate", pt: "Aït Benhaddou e Ouarzazate", ar: "آيت بن حدو وورزازات" }
     text:
       en: "Over the Tichka pass, guided visit of Aït Benhaddou, lunch, Ouarzazate, and back to Marrakech in the evening."
       fr: "Par le col du Tichka, visite guidée d’Aït Benhaddou, déjeuner, Ouarzazate et retour à Marrakech le soir."
+      es: Por el puerto de Tichka, visita guiada de Aït Benhaddou, almuerzo, Ouarzazate y regreso a Marrakech por la noche.
+      de: Über den Tichka-Pass, Führung in Aït Benhaddou, Mittagessen, Ouarzazate und abends zurück nach Marrakesch.
+      pt: Pelo passo de Tichka, visita guiada a Aït Benhaddou, almoço, Ouarzazate e regresso a Marraquexe à noite.
       ar: "عبر ممر تيشكا، زيارة مع مرشد لآيت بن حدو، الغداء، ورزازات ثم العودة إلى مراكش مساءً."
     drive: 4 h each way
-included: [pickup-hotel, transport, driver, guide-local]
-excluded: [lunch, drinks, entrance-fees-ex, tips]
-pack: [comfy-shoes, sun-kit, bottle, cash]
+included: [ pickup-hotel, transport, driver, guide-local ]
+excluded: [ lunch, drinks, entrance-fees-ex, tips ]
+pack: [ comfy-shoes, sun-kit, bottle, cash ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "07:30"
 mapStops:

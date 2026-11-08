@@ -14,10 +14,13 @@ import { t } from '../i18n/ui';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = t(lang);
-const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+const L = <T,>(o: Record<Lang, T>) => o[lang];
 const c = L({
   en: { title: 'Reviews', intro: 'What travellers say after their trip. We publish real reviews only, with a link to where they were written.', on: 'on', source: { google: 'Google', tripadvisor: 'TripAdvisor', email: 'Email', whatsapp: 'WhatsApp' } },
   fr: { title: 'Avis', intro: 'Ce que disent les voyageurs après leur voyage. Nous ne publions que de vrais avis, avec un lien vers leur source.', on: 'sur', source: { google: 'Google', tripadvisor: 'TripAdvisor', email: 'E-mail', whatsapp: 'WhatsApp' } },
+  es: { title: 'Opiniones', intro: 'Lo que dicen los viajeros después de su viaje. Solo publicamos opiniones reales, con un enlace a su origen.', on: 'en', source: { google: 'Google', tripadvisor: 'TripAdvisor', email: 'Correo', whatsapp: 'WhatsApp' } },
+  de: { title: 'Bewertungen', intro: 'Was Reisende nach ihrer Reise sagen. Wir veröffentlichen nur echte Bewertungen, mit Link zur Quelle.', on: 'auf', source: { google: 'Google', tripadvisor: 'TripAdvisor', email: 'E-Mail', whatsapp: 'WhatsApp' } },
+  pt: { title: 'Avaliações', intro: 'O que dizem os viajantes depois da viagem. Só publicamos avaliações reais, com ligação para a origem.', on: 'no', source: { google: 'Google', tripadvisor: 'TripAdvisor', email: 'E-mail', whatsapp: 'WhatsApp' } },
   ar: { title: 'آراء المسافرين', intro: 'ما يقوله المسافرون بعد رحلتهم. لا ننشر إلا آراء حقيقية مع رابط إلى مصدرها.', on: 'على', source: { google: 'غوغل', tripadvisor: 'تريب أدفايزر', email: 'البريد الإلكتروني', whatsapp: 'واتساب' } },
 });
 const reviews = (await getCollection('reviews')).sort((a, b) => +b.data.date - +a.data.date);

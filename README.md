@@ -1,8 +1,8 @@
 # Iberdan
 
-Website of **Iberdan** (ⵉⴱⵔⴷⴰⵏ, "paths" in Tamazight), a small Moroccan travel agency run by
-Youssef Ait Taguem from Imlil. Treks, desert, day trips and tailor-made journeys in English,
-French and Arabic (right-to-left).
+Website of **Iberdan** (ⵉⴱⵔⴷⴰⵏ, "paths" in Tamazight), a small Moroccan travel agency based in
+Imlil. Treks, desert, day trips and tailor-made journeys in English, French, Spanish, German,
+Portuguese and Arabic (right-to-left).
 
 Built with [Astro](https://astro.build) (static) and Tailwind CSS. No backend: every booking path ends
 in a pre-filled WhatsApp message or an email sent through Web3Forms. Nothing is paid online.
@@ -34,7 +34,7 @@ One YAML file per trip in **`src/content/trips/`**. The file name is the URL slu
 (`toubkal-summit-3-days.yaml` → `/en/trips/toubkal-summit-3-days/`).
 
 1. Copy an existing trip of the same kind (e.g. `ouzoud-waterfalls-day.yaml` for a day trip).
-2. Change the texts. Every text has `en`, `fr` and `ar`. **In `{ … }` one-line form, put each text in
+2. Change the texts. Every text has `en`, `fr`, `es`, `de`, `pt` and `ar`. **In `{ … }` one-line form, put each text in
    double quotes** (a comma would otherwise cut it).
 3. `price` is per person in MAD: `shared`, `private` or both. Set `confirmed: true` once the price
    is final (this removes "indicative price" under the price).
@@ -69,12 +69,26 @@ While the file is empty, the site shows "Reviews coming soon" with a link to lea
 
 ## Texts
 
-- Interface texts: `src/i18n/ui.ts`. Shared trip vocabulary: `src/i18n/catalog.ts`.
+- Interface texts: `src/i18n/ui.ts` (English, French, Arabic) and `ui-es.ts`, `ui-de.ts`, `ui-pt.ts`. Shared trip vocabulary: `src/i18n/catalog.ts`.
 - Page texts: in each page file in `src/views/`.
 - FAQ: `src/content/faq.yaml`. Travel guide articles: `src/content/guide/<key>.<lang>.md`
   (set `reviewed: true` after review: the draft notice disappears and the page becomes indexable;
   then also remove the guide line in the sitemap filter in `astro.config.mjs`).
 - URLs per language (e.g. `/fr/circuits/`): `src/i18n/routes.ts`.
+
+## Translating new content
+
+When you add a trip in English and French only, `npm run build` tells you which fields miss a language.
+For bulk work: `node scripts/i18n/extract.mjs > scripts/i18n/strings-en.json` lists every English text
+with an id; put translations in `scripts/i18n/<lang>-*.json` (id → text) and run
+`node scripts/i18n/merge.mjs` to write them into the YAML files (comments are kept).
+
+## Admin / editing without code
+
+No admin page is needed to run the site: bookings arrive on WhatsApp and by email, and trips are
+files. If someone non-technical will edit trips and prices often, add a free Git-based editor such
+as [Pages CMS](https://pagescms.org) or Decap CMS: it gives a login page and forms over the same
+YAML files, with no server or database.
 
 ## Deploy
 

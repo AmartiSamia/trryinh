@@ -5,103 +5,107 @@ popularity: 60
 title:
   en: Grand tour of Morocco, 12 days
   fr: Grand tour du Maroc, 12 jours
+  es: Gran ruta por Marruecos, 12 días
+  de: Große Marokko-Rundreise, 12 Tage
+  pt: Grande volta a Marrocos, 12 dias
   ar: الجولة الكبرى في المغرب، 12 يوما
 summary:
   en: The whole country in twelve days. Imperial cities, the blue town of Chefchaouen, the Sahara, the gorges and kasbahs, the High Atlas and Essaouira on the ocean.
   fr: Tout le pays en douze jours. Villes impériales, Chefchaouen la bleue, le Sahara, les gorges et kasbahs, le Haut Atlas et Essaouira sur l’océan.
+  es: Todo el país en doce días. Ciudades imperiales, el pueblo azul de Chefchaouen, el Sáhara, las gargantas y kasbahs, el Alto Atlas y Essaouira junto al océano.
+  de: Das ganze Land in zwölf Tagen. Königsstädte, die blaue Stadt Chefchaouen, die Sahara, Schluchten und Kasbahs, der Hohe Atlas und Essaouira am Meer.
+  pt: O país inteiro em doze dias. Cidades imperiais, a cidade azul de Chefchaouen, o Sara, as gargantas e kasbahs, o Alto Atlas e Essaouira junto ao oceano.
   ar: البلد كله في اثني عشر يوما. المدن الإمبراطورية، شفشاون الزرقاء، الصحراء، المضايق والقصبات، الأطلس الكبير والصويرة على المحيط.
 about:
   en: >-
-    A private loop from Casablanca for travellers who want to see everything once. North to Rabat
-    and Chefchaouen, then Fes and the Middle Atlas, south to the Merzouga dunes, west along the road
-    of the kasbahs to Aït Benhaddou, a night in the mountains at Imlil, Marrakech and a final day by
-    the sea in Essaouira. Your driver adapts the pace; every night is booked in advance.
+    A private loop from Casablanca for travellers who want to see everything once. North to Rabat and Chefchaouen, then Fes and the Middle Atlas, south to the Merzouga dunes, west along the road of the kasbahs to Aït Benhaddou, a night in the mountains at Imlil, Marrakech and a final day by the sea in Essaouira. Your driver adapts the pace; every night is booked in advance.
   fr: >-
-    Une boucle privée depuis Casablanca pour qui veut tout voir une fois. Au nord vers Rabat et
-    Chefchaouen, puis Fès et le Moyen Atlas, au sud vers les dunes de Merzouga, à l’ouest par la route
-    des kasbahs jusqu’à Aït Benhaddou, une nuit en montagne à Imlil, Marrakech et une dernière journée
-    au bord de la mer à Essaouira. Votre chauffeur adapte le rythme ; chaque nuit est réservée à l’avance.
+    Une boucle privée depuis Casablanca pour qui veut tout voir une fois. Au nord vers Rabat et Chefchaouen, puis Fès et le Moyen Atlas, au sud vers les dunes de Merzouga, à l’ouest par la route des kasbahs jusqu’à Aït Benhaddou, une nuit en montagne à Imlil, Marrakech et une dernière journée au bord de la mer à Essaouira. Votre chauffeur adapte le rythme ; chaque nuit est réservée à l’avance.
+  es: Un circuito privado desde Casablanca para quien quiere verlo todo una vez. Al norte hacia Rabat y Chefchaouen, después Fez y el Atlas Medio, al sur hacia las dunas de Merzouga, al oeste por la ruta de las kasbahs hasta Aït Benhaddou, una noche en la montaña en Imlil, Marrakech y un último día junto al mar en Essaouira. Su conductor adapta el ritmo; todas las noches se reservan con antelación.
+  de: Eine private Rundreise ab Casablanca für alle, die einmal alles sehen möchten. Nach Norden nach Rabat und Chefchaouen, dann Fès und der Mittlere Atlas, nach Süden zu den Dünen von Merzouga, westwärts über die Straße der Kasbahs nach Aït Benhaddou, eine Nacht in den Bergen in Imlil, Marrakesch und ein letzter Tag am Meer in Essaouira. Ihr Fahrer passt das Tempo an; alle Nächte sind im Voraus gebucht.
+  pt: Um circuito privado desde Casablanca para quem quer ver tudo uma vez. A norte, Rabat e Chefchaouen; depois Fez e o Médio Atlas; a sul, as dunas de Merzouga; a oeste, a estrada das kasbahs até Aït Benhaddou, uma noite na montanha em Imlil, Marraquexe e um último dia junto ao mar em Essaouira. O motorista adapta o ritmo; todas as noites são reservadas com antecedência.
   ar: >-
-    جولة خاصة من الدار البيضاء لمن يريد رؤية كل شيء مرة واحدة. شمالا إلى الرباط وشفشاون، ثم فاس والأطلس
-    المتوسط، جنوبا إلى كثبان مرزوكة، غربا عبر طريق القصبات إلى آيت بن حدو، ليلة في الجبل بإمليل، ثم مراكش
-    ويوم أخير على البحر في الصويرة. يتكيف السائق مع إيقاعكم، وكل ليلة محجوزة مسبقا.
+    جولة خاصة من الدار البيضاء لمن يريد رؤية كل شيء مرة واحدة. شمالا إلى الرباط وشفشاون، ثم فاس والأطلس المتوسط، جنوبا إلى كثبان مرزوكة، غربا عبر طريق القصبات إلى آيت بن حدو، ليلة في الجبل بإمليل، ثم مراكش ويوم أخير على البحر في الصويرة. يتكيف السائق مع إيقاعكم، وكل ليلة محجوزة مسبقا.
 days: 12
 nights: 11
 difficulty: easy
 startCity: Casablanca
 endCity: Marrakech
-bestMonths: [3, 4, 5, 9, 10, 11]
+bestMonths: [ 3, 4, 5, 9, 10, 11 ]
 price: { private: 15000 }
 includes: { meals: false, transport: true, nights: true }
-photos: [u-chaouen-cliff, u-camels-ward, u-aitben-aerial, fes-medina, u-atlas-hiker, u-essa-boats]
+photos: [ u-chaouen-cliff, u-camels-ward, u-aitben-aerial, fes-medina, u-atlas-hiker, u-essa-boats ]
 highlights:
-  - { en: "Chefchaouen, Fes and Marrakech", fr: "Chefchaouen, Fès et Marrakech", ar: "شفشاون وفاس ومراكش" }
-  - { en: "A night in the Sahara", fr: "Une nuit au Sahara", ar: "ليلة في الصحراء" }
-  - { en: "A night in a mountain village at Imlil", fr: "Une nuit dans un village de montagne à Imlil", ar: "ليلة في قرية جبلية بإمليل" }
-  - { en: "Ends on the ocean in Essaouira", fr: "Fin sur l’océan à Essaouira", ar: "الختام على المحيط في الصويرة" }
+  - { en: "Chefchaouen, Fes and Marrakech", fr: "Chefchaouen, Fès et Marrakech", es: "Chefchaouen, Fez y Marrakech", de: "Chefchaouen, Fès und Marrakesch", pt: "Chefchaouen, Fez e Marraquexe", ar: "شفشاون وفاس ومراكش" }
+  - { en: "A night in the Sahara", fr: "Une nuit au Sahara", es: "Una noche en el Sáhara", de: "Eine Nacht in der Sahara", pt: "Uma noite no Sara", ar: "ليلة في الصحراء" }
+  - { en: "A night in a mountain village at Imlil", fr: "Une nuit dans un village de montagne à Imlil", es: "Una noche en un pueblo de montaña en Imlil", de: "Eine Nacht in einem Bergdorf in Imlil", pt: "Uma noite numa aldeia de montanha em Imlil", ar: "ليلة في قرية جبلية بإمليل" }
+  - { en: "Ends on the ocean in Essaouira", fr: "Fin sur l’océan à Essaouira", es: "Final junto al océano en Essaouira", de: "Abschluss am Meer in Essaouira", pt: "Final junto ao oceano em Essaouira", ar: "الختام على المحيط في الصويرة" }
 itinerary:
-  - title: { en: "Casablanca", fr: "Casablanca", ar: "الدار البيضاء" }
-    text: { en: "Arrival and the Hassan II mosque.", fr: "Arrivée et mosquée Hassan II.", ar: "الوصول ومسجد الحسن الثاني." }
+  - title: { en: "Casablanca", fr: "Casablanca", es: "Casablanca", de: "Casablanca", pt: "Casablanca", ar: "الدار البيضاء" }
+    text: { en: "Arrival and the Hassan II mosque.", fr: "Arrivée et mosquée Hassan II.", es: "Llegada y mezquita Hassan II.", de: "Ankunft und Hassan-II.-Moschee.", pt: "Chegada e mesquita Hassan II.", ar: "الوصول ومسجد الحسن الثاني." }
     sleep: { type: hotel, place: Casablanca }
-  - title: { en: "Rabat to Chefchaouen", fr: "De Rabat à Chefchaouen", ar: "من الرباط إلى شفشاون" }
-    text: { en: "Morning in Rabat, afternoon drive to the Rif.", fr: "Matinée à Rabat, route l’après-midi vers le Rif.", ar: "الصباح في الرباط، والطريق بعد الظهر نحو الريف." }
+  - title: { en: "Rabat to Chefchaouen", fr: "De Rabat à Chefchaouen", es: "De Rabat a Chefchaouen", de: "Von Rabat nach Chefchaouen", pt: "De Rabat a Chefchaouen", ar: "من الرباط إلى شفشاون" }
+    text: { en: "Morning in Rabat, afternoon drive to the Rif.", fr: "Matinée à Rabat, route l’après-midi vers le Rif.", es: "Mañana en Rabat, carretera por la tarde hacia el Rif.", de: "Vormittags Rabat, nachmittags Fahrt ins Rifgebirge.", pt: "Manhã em Rabat, estrada à tarde para o Rif.", ar: "الصباح في الرباط، والطريق بعد الظهر نحو الريف." }
     drive: 4 h 30
     sleep: { type: riad, place: Chefchaouen }
-    meals: [breakfast, dinner]
-  - title: { en: "Chefchaouen", fr: "Chefchaouen", ar: "شفشاون" }
-    text: { en: "A slow day in the blue medina.", fr: "Une journée tranquille dans la médina bleue.", ar: "يوم هادئ في المدينة الزرقاء." }
+    meals: [ breakfast, dinner ]
+  - title: { en: "Chefchaouen", fr: "Chefchaouen", es: "Chefchaouen", de: "Chefchaouen", pt: "Chefchaouen", ar: "شفشاون" }
+    text: { en: "A slow day in the blue medina.", fr: "Une journée tranquille dans la médina bleue.", es: "Un día tranquilo en la medina azul.", de: "Ein ruhiger Tag in der blauen Medina.", pt: "Um dia tranquilo na medina azul.", ar: "يوم هادئ في المدينة الزرقاء." }
     sleep: { type: riad, place: Chefchaouen }
-    meals: [breakfast]
-  - title: { en: "Volubilis to Fes", fr: "De Volubilis à Fès", ar: "من وليلي إلى فاس" }
-    text: { en: "The Roman ruins of Volubilis and Moulay Idriss on the way to Fes.", fr: "Les ruines romaines de Volubilis et Moulay Idriss sur la route de Fès.", ar: "أطلال وليلي الرومانية ومولاي إدريس في الطريق إلى فاس." }
+    meals: [ breakfast ]
+  - title: { en: "Volubilis to Fes", fr: "De Volubilis à Fès", es: "De Volubilis a Fez", de: "Von Volubilis nach Fès", pt: "De Volubilis a Fez", ar: "من وليلي إلى فاس" }
+    text: { en: "The Roman ruins of Volubilis and Moulay Idriss on the way to Fes.", fr: "Les ruines romaines de Volubilis et Moulay Idriss sur la route de Fès.", es: "Las ruinas romanas de Volubilis y Moulay Idriss de camino a Fez.", de: "Die römischen Ruinen von Volubilis und Moulay Idriss auf dem Weg nach Fès.", pt: "As ruínas romanas de Volubilis e Moulay Idriss a caminho de Fez.", ar: "أطلال وليلي الرومانية ومولاي إدريس في الطريق إلى فاس." }
     drive: 4 h
     sleep: { type: riad, place: Fes }
-    meals: [breakfast, dinner]
-  - title: { en: "Fes", fr: "Fès", ar: "فاس" }
-    text: { en: "Guided day in the medina.", fr: "Journée guidée dans la médina.", ar: "يوم مع مرشد في المدينة العتيقة." }
+    meals: [ breakfast, dinner ]
+  - title: { en: "Fes", fr: "Fès", es: "Fez", de: "Fès", pt: "Fez", ar: "فاس" }
+    text: { en: "Guided day in the medina.", fr: "Journée guidée dans la médina.", es: "Día guiado en la medina.", de: "Geführter Tag in der Medina.", pt: "Dia guiado na medina.", ar: "يوم مع مرشد في المدينة العتيقة." }
     sleep: { type: riad, place: Fes }
-    meals: [breakfast]
-  - title: { en: "Middle Atlas to Merzouga", fr: "Du Moyen Atlas à Merzouga", ar: "من الأطلس المتوسط إلى مرزوكة" }
-    text: { en: "Cedar forests, the Ziz valley and camels into the dunes.", fr: "Forêts de cèdres, vallée du Ziz et dromadaires dans les dunes.", ar: "غابات الأرز، وادي زيز والجمال نحو الكثبان." }
+    meals: [ breakfast ]
+  - title: { en: "Middle Atlas to Merzouga", fr: "Du Moyen Atlas à Merzouga", es: "Del Atlas Medio a Merzouga", de: "Vom Mittleren Atlas nach Merzouga", pt: "Do Médio Atlas a Merzouga", ar: "من الأطلس المتوسط إلى مرزوكة" }
+    text: { en: "Cedar forests, the Ziz valley and camels into the dunes.", fr: "Forêts de cèdres, vallée du Ziz et dromadaires dans les dunes.", es: "Bosques de cedros, el valle del Ziz y dromedarios hacia las dunas.", de: "Zedernwälder, das Ziz-Tal und Kamele in die Dünen.", pt: "Florestas de cedros, o vale do Ziz e dromedários até às dunas.", ar: "غابات الأرز، وادي زيز والجمال نحو الكثبان." }
     drive: 8 h with stops
     sleep: { type: camp, place: Erg Chebbi }
-    meals: [breakfast, dinner]
-  - title: { en: "Todra and Dades", fr: "Todra et Dadès", ar: "تودغى ودادس" }
-    text: { en: "Sunrise on the dunes, then the gorges.", fr: "Lever de soleil sur les dunes, puis les gorges.", ar: "الشروق فوق الكثبان، ثم المضايق." }
+    meals: [ breakfast, dinner ]
+  - title: { en: "Todra and Dades", fr: "Todra et Dadès", es: "Todra y Dades", de: "Todra und Dadès", pt: "Todra e Dadès", ar: "تودغى ودادس" }
+    text: { en: "Sunrise on the dunes, then the gorges.", fr: "Lever de soleil sur les dunes, puis les gorges.", es: "Amanecer en las dunas y después las gargantas.", de: "Sonnenaufgang in den Dünen, dann die Schluchten.", pt: "Nascer do sol nas dunas e depois as gargantas.", ar: "الشروق فوق الكثبان، ثم المضايق." }
     drive: 5 h
     sleep: { type: hotel, place: Dades valley }
-    meals: [breakfast, dinner]
-  - title: { en: "Aït Benhaddou", fr: "Aït Benhaddou", ar: "آيت بن حدو" }
-    text: { en: "Valley of Roses, Ouarzazate and the ksar of Aït Benhaddou.", fr: "Vallée des Roses, Ouarzazate et ksar d’Aït Benhaddou.", ar: "وادي الورود، ورزازات وقصر آيت بن حدو." }
+    meals: [ breakfast, dinner ]
+  - title: { en: "Aït Benhaddou", fr: "Aït Benhaddou", es: "Aït Benhaddou", de: "Aït Benhaddou", pt: "Aït Benhaddou", ar: "آيت بن حدو" }
+    text: { en: "Valley of Roses, Ouarzazate and the ksar of Aït Benhaddou.", fr: "Vallée des Roses, Ouarzazate et ksar d’Aït Benhaddou.", es: "Valle de las Rosas, Ouarzazate y el ksar de Aït Benhaddou.", de: "Tal der Rosen, Ouarzazate und der Ksar von Aït Benhaddou.", pt: "Vale das Rosas, Ouarzazate e o ksar de Aït Benhaddou.", ar: "وادي الورود، ورزازات وقصر آيت بن حدو." }
     drive: 4 h
     sleep: { type: riad, place: Aït Benhaddou }
-    meals: [breakfast, dinner]
-  - title: { en: "Over the Atlas to Imlil", fr: "Par l’Atlas jusqu’à Imlil", ar: "عبر الأطلس إلى إمليل" }
-    text: { en: "Tichka pass, then up to Imlil for a walk and a night with mountain views.", fr: "Col du Tichka, puis montée à Imlil pour une balade et une nuit face aux montagnes.", ar: "ممر تيشكا، ثم الصعود إلى إمليل لجولة وليلة أمام الجبال." }
+    meals: [ breakfast, dinner ]
+  - title: { en: "Over the Atlas to Imlil", fr: "Par l’Atlas jusqu’à Imlil", es: "Por el Atlas hasta Imlil", de: "Über den Atlas nach Imlil", pt: "Pelo Atlas até Imlil", ar: "عبر الأطلس إلى إمليل" }
+    text: { en: "Tichka pass, then up to Imlil for a walk and a night with mountain views.", fr: "Col du Tichka, puis montée à Imlil pour une balade et une nuit face aux montagnes.", es: "Puerto de Tichka y subida a Imlil para un paseo y una noche con vistas a la montaña.", de: "Tichka-Pass, dann hinauf nach Imlil zu einem Spaziergang und einer Nacht mit Bergblick.", pt: "Passo de Tichka e subida a Imlil para um passeio e uma noite com vista para a montanha.", ar: "ممر تيشكا، ثم الصعود إلى إمليل لجولة وليلة أمام الجبال." }
     drive: 5 h
     walk: 2 h
     sleep: { type: guesthouse, place: Imlil }
-    meals: [breakfast, dinner]
-  - title: { en: "Marrakech", fr: "Marrakech", ar: "مراكش" }
-    text: { en: "Down to Marrakech, guided afternoon in the medina.", fr: "Descente à Marrakech, après-midi guidé dans la médina.", ar: "النزول إلى مراكش وجولة مع مرشد بعد الظهر في المدينة." }
+    meals: [ breakfast, dinner ]
+  - title: { en: "Marrakech", fr: "Marrakech", es: "Marrakech", de: "Marrakesch", pt: "Marraquexe", ar: "مراكش" }
+    text: { en: "Down to Marrakech, guided afternoon in the medina.", fr: "Descente à Marrakech, après-midi guidé dans la médina.", es: "Bajada a Marrakech, tarde guiada en la medina.", de: "Hinunter nach Marrakesch, nachmittags Führung durch die Medina.", pt: "Descida a Marraquexe, tarde guiada na medina.", ar: "النزول إلى مراكش وجولة مع مرشد بعد الظهر في المدينة." }
     drive: 1 h 45
     sleep: { type: riad, place: Marrakech }
-    meals: [breakfast]
-  - title: { en: "Essaouira", fr: "Essaouira", ar: "الصويرة" }
-    text: { en: "To the ocean, free afternoon in Essaouira.", fr: "Vers l’océan, après-midi libre à Essaouira.", ar: "نحو المحيط، وبعد ظهر حر في الصويرة." }
+    meals: [ breakfast ]
+  - title: { en: "Essaouira", fr: "Essaouira", es: "Essaouira", de: "Essaouira", pt: "Essaouira", ar: "الصويرة" }
+    text: { en: "To the ocean, free afternoon in Essaouira.", fr: "Vers l’océan, après-midi libre à Essaouira.", es: "Hacia el océano, tarde libre en Essaouira.", de: "Ans Meer, freier Nachmittag in Essaouira.", pt: "Até ao oceano, tarde livre em Essaouira.", ar: "نحو المحيط، وبعد ظهر حر في الصويرة." }
     drive: 3 h
     sleep: { type: riad, place: Essaouira }
-    meals: [breakfast]
-  - title: { en: "Back to Marrakech", fr: "Retour à Marrakech", ar: "العودة إلى مراكش" }
-    text: { en: "Drive back to Marrakech or the airport.", fr: "Retour à Marrakech ou à l’aéroport.", ar: "العودة إلى مراكش أو إلى المطار." }
+    meals: [ breakfast ]
+  - title: { en: "Back to Marrakech", fr: "Retour à Marrakech", es: "Regreso a Marrakech", de: "Zurück nach Marrakesch", pt: "Regresso a Marraquexe", ar: "العودة إلى مراكش" }
+    text: { en: "Drive back to Marrakech or the airport.", fr: "Retour à Marrakech ou à l’aéroport.", es: "Regreso a Marrakech o al aeropuerto.", de: "Rückfahrt nach Marrakesch oder zum Flughafen.", pt: "Regresso a Marraquexe ou ao aeroporto.", ar: "العودة إلى مراكش أو إلى المطار." }
     drive: 3 h
-    meals: [breakfast]
-included: [transport, driver, guide-city, camel, desert-camp, breakfast-dinner, accommodation]
-excluded: [lunches, drinks, entrance-fees-ex, flights, tips, insurance, personal]
-pack: [comfy-shoes, boots, sun-kit, layers, warm-night, scarf, modest-clothes, passport, cash]
+    meals: [ breakfast ]
+included: [ transport, driver, guide-city, camel, desert-camp, breakfast-dinner, accommodation ]
+excluded: [ lunches, drinks, entrance-fees-ex, flights, tips, insurance, personal ]
+pack: [ comfy-shoes, boots, sun-kit, layers, warm-night, scarf, modest-clothes, passport, cash ]
 meetingPoint:
   en: "Casablanca airport or your hotel."
   fr: "Aéroport de Casablanca ou votre hôtel."
+  es: Aeropuerto de Casablanca o su hotel.
+  de: Flughafen Casablanca oder Ihr Hotel.
+  pt: Aeroporto de Casablanca ou o seu hotel.
   ar: "مطار الدار البيضاء أو الفندق."
 mapStops:
   - { name: "Casablanca", lat: 33.5731, lng: -7.5898, kind: start }

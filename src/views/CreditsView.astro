@@ -11,11 +11,14 @@ import { getTrips } from '../lib/trips';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = t(lang);
-const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+const L = <T,>(o: Record<Lang, T>) => o[lang];
 const c = L({
-  en: { intro: 'Most photos on this site come from Wikimedia Commons and are used under their licences. Thank you to every photographer. Photos of our own trips will replace them over time.', by: 'by', usedIn: 'Used in', changes: 'Resized and converted to modern formats.' },
-  fr: { intro: 'La plupart des photos de ce site viennent de Wikimedia Commons et sont utilisées selon leur licence. Merci à chaque photographe. Des photos de nos propres voyages les remplaceront peu à peu.', by: 'par', usedIn: 'Utilisée dans', changes: 'Redimensionnées et converties en formats modernes.' },
-  ar: { intro: 'معظم صور هذا الموقع من ويكيميديا كومنز وتُستعمل وفق تراخيصها. شكرا لكل مصور. ستحل محلها تدريجيا صور من رحلاتنا.', by: 'تصوير', usedIn: 'تُستعمل في', changes: 'تم تغيير حجمها وتحويلها إلى صيغ حديثة.' },
+  en: { intro: 'The photos on this site come from Wikimedia Commons and Unsplash and are used under their licences. Thank you to every photographer. Photos of our own trips will replace them over time.', by: 'by', usedIn: 'Used in', changes: 'Resized and converted to modern formats.' },
+  fr: { intro: 'Les photos de ce site viennent de Wikimedia Commons et d’Unsplash et sont utilisées selon leur licence. Merci à chaque photographe. Des photos de nos propres voyages les remplaceront peu à peu.', by: 'par', usedIn: 'Utilisée dans', changes: 'Redimensionnées et converties en formats modernes.' },
+  es: { intro: 'Las fotos de esta web proceden de Wikimedia Commons y Unsplash y se usan según sus licencias. Gracias a cada fotógrafo. Poco a poco las sustituirán fotos de nuestros propios viajes.', by: 'por', usedIn: 'Usada en', changes: 'Redimensionadas y convertidas a formatos modernos.' },
+  de: { intro: 'Die Fotos auf dieser Website stammen von Wikimedia Commons und Unsplash und werden gemäß ihren Lizenzen verwendet. Danke an alle Fotografinnen und Fotografen. Nach und nach ersetzen Fotos unserer eigenen Reisen sie.', by: 'von', usedIn: 'Verwendet in', changes: 'Verkleinert und in moderne Formate umgewandelt.' },
+  pt: { intro: 'As fotos deste site vêm do Wikimedia Commons e do Unsplash e são usadas segundo as respetivas licenças. Obrigado a cada fotógrafo. Aos poucos serão substituídas por fotos das nossas próprias viagens.', by: 'de', usedIn: 'Usada em', changes: 'Redimensionadas e convertidas para formatos modernos.' },
+  ar: { intro: 'صور هذا الموقع من ويكيميديا كومنز وأنسبلاش وتُستعمل وفق تراخيصها. شكرا لكل مصور. ستحل محلها تدريجيا صور من رحلاتنا.', by: 'تصوير', usedIn: 'تُستعمل في', changes: 'تم تغيير حجمها وتحويلها إلى صيغ حديثة.' },
 });
 const photos = await getCollection('photos');
 const trips = await getTrips();

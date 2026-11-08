@@ -6,64 +6,74 @@ popularity: 88
 title:
   en: Agafay desert sunset, camel ride and dinner
   fr: Coucher de soleil dans le désert d’Agafay, dromadaire et dîner
+  es: Atardecer en el desierto de Agafay, paseo en dromedario y cena
+  de: Sonnenuntergang in der Agafay-Wüste, Kamelritt und Abendessen
+  pt: Pôr do sol no deserto de Agafay, passeio de dromedário e jantar
   ar: غروب الشمس في صحراء أكفاي، جولة على الجمل وعشاء
 summary:
   en: The desert is 45 minutes from Marrakech. Ride a camel across the stony hills of Agafay at sunset, with the snowy Atlas behind, then dinner at a camp.
   fr: Le désert à 45 minutes de Marrakech. Balade à dos de dromadaire sur les collines d’Agafay au coucher du soleil, l’Atlas enneigé en fond, puis dîner au camp.
+  es: El desierto a 45 minutos de Marrakech. Paseo en dromedario por las colinas pedregosas de Agafay al atardecer, con el Atlas nevado al fondo, y cena en un campamento.
+  de: Die Wüste liegt 45 Minuten von Marrakesch entfernt. Kamelritt über die steinigen Hügel von Agafay bei Sonnenuntergang, der verschneite Atlas im Hintergrund, danach Abendessen im Camp.
+  pt: O deserto a 45 minutos de Marraquexe. Passeio de dromedário pelas colinas pedregosas de Agafay ao pôr do sol, com o Atlas nevado ao fundo, e jantar num acampamento.
   ar: الصحراء على بعد 45 دقيقة من مراكش. جولة على الجمل فوق تلال أكفاي عند الغروب، والأطلس المثلج في الخلفية، ثم العشاء في المخيم.
 about:
   en: >-
-    Agafay is not a sand desert but a wide landscape of bare, golden hills, and on clear days the
-    High Atlas stands white behind it. It is the easiest way to feel the desert without a long
-    drive. You are picked up in the afternoon, ride camels for about an hour at sunset, then have
-    dinner at a camp before driving back to Marrakech.
+    Agafay is not a sand desert but a wide landscape of bare, golden hills, and on clear days the High Atlas stands white behind it. It is the easiest way to feel the desert without a long drive. You are picked up in the afternoon, ride camels for about an hour at sunset, then have dinner at a camp before driving back to Marrakech.
   fr: >-
-    Agafay n’est pas un désert de sable mais un vaste paysage de collines nues et dorées, avec, par
-    temps clair, l’Atlas tout blanc derrière. C’est la façon la plus simple de sentir le désert sans
-    longue route. Prise en charge l’après-midi, environ une heure de dromadaire au coucher du soleil,
-    puis dîner au camp avant le retour à Marrakech.
+    Agafay n’est pas un désert de sable mais un vaste paysage de collines nues et dorées, avec, par temps clair, l’Atlas tout blanc derrière. C’est la façon la plus simple de sentir le désert sans longue route. Prise en charge l’après-midi, environ une heure de dromadaire au coucher du soleil, puis dîner au camp avant le retour à Marrakech.
+  es: Agafay no es un desierto de arena, sino un amplio paisaje de colinas desnudas y doradas, y en los días claros el Alto Atlas se alza blanco detrás. Es la forma más fácil de sentir el desierto sin un largo trayecto. Le recogemos por la tarde, monta en dromedario cerca de una hora al atardecer y cena en un campamento antes de volver a Marrakech.
+  de: Agafay ist keine Sandwüste, sondern eine weite Landschaft aus kahlen, goldenen Hügeln; an klaren Tagen steht dahinter weiß der Hohe Atlas. So erleben Sie die Wüste am einfachsten, ohne lange Fahrt. Abholung am Nachmittag, etwa eine Stunde Kamelritt bei Sonnenuntergang, dann Abendessen im Camp und Rückfahrt nach Marrakesch.
+  pt: Agafay não é um deserto de areia, mas uma vasta paisagem de colinas nuas e douradas; nos dias limpos, o Alto Atlas ergue-se branco por trás. É a forma mais fácil de sentir o deserto sem uma longa viagem. É recolhido à tarde, anda de dromedário cerca de uma hora ao pôr do sol e janta num acampamento antes de regressar a Marraquexe.
   ar: >-
-    أكفاي ليست صحراء رملية بل منظر واسع من التلال الذهبية العارية، وفي الأيام الصافية يظهر الأطلس الكبير
-    أبيضَ خلفها. إنها أسهل طريقة للإحساس بالصحراء دون طريق طويل. يتم استقبالكم بعد الظهر، وتركبون الجمال
-    حوالي ساعة عند الغروب، ثم تتناولون العشاء في المخيم قبل العودة إلى مراكش.
+    أكفاي ليست صحراء رملية بل منظر واسع من التلال الذهبية العارية، وفي الأيام الصافية يظهر الأطلس الكبير أبيضَ خلفها. إنها أسهل طريقة للإحساس بالصحراء دون طريق طويل. يتم استقبالكم بعد الظهر، وتركبون الجمال حوالي ساعة عند الغروب، ثم تتناولون العشاء في المخيم قبل العودة إلى مراكش.
 days: 0.5
 hours: "5–6 h"
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+bestMonths: [ 1, 2, 3, 4, 5, 6, 9, 10, 11, 12 ]
 price: { shared: 450, private: 900 }
 includes: { meals: true, transport: true, nights: false }
-photos: [agafay-camels, agafay]
+photos: [ agafay-camels, agafay ]
 highlights:
-  - { en: "Sunset on camelback", fr: "Coucher de soleil à dos de dromadaire", ar: "الغروب على ظهر الجمل" }
-  - { en: "Views of the snowy High Atlas", fr: "Vue sur le Haut Atlas enneigé", ar: "إطلالة على الأطلس الكبير المثلج" }
-  - { en: "Dinner at a desert camp", fr: "Dîner dans un camp du désert", ar: "عشاء في مخيم صحراوي" }
+  - { en: "Sunset on camelback", fr: "Coucher de soleil à dos de dromadaire", es: "Atardecer a lomos de dromedario", de: "Sonnenuntergang auf dem Kamelrücken", pt: "Pôr do sol de dromedário", ar: "الغروب على ظهر الجمل" }
+  - { en: "Views of the snowy High Atlas", fr: "Vue sur le Haut Atlas enneigé", es: "Vistas del Alto Atlas nevado", de: "Blick auf den verschneiten Hohen Atlas", pt: "Vistas do Alto Atlas nevado", ar: "إطلالة على الأطلس الكبير المثلج" }
+  - { en: "Dinner at a desert camp", fr: "Dîner dans un camp du désert", es: "Cena en un campamento del desierto", de: "Abendessen in einem Wüstencamp", pt: "Jantar num acampamento no deserto", ar: "عشاء في مخيم صحراوي" }
 itinerary:
-  - title: { en: "Afternoon and evening in Agafay", fr: "Après-midi et soirée à Agafay", ar: "بعد الظهر والمساء في أكفاي" }
+  - title: { en: "Afternoon and evening in Agafay", fr: "Après-midi et soirée à Agafay", es: "Tarde y noche en Agafay", de: "Nachmittag und Abend in Agafay", pt: "Tarde e noite em Agafay", ar: "بعد الظهر والمساء في أكفاي" }
     text:
       en: "Pickup in Marrakech, mint tea at the camp, camel ride at sunset, dinner, and drive back."
       fr: "Prise en charge à Marrakech, thé à la menthe au camp, dromadaire au coucher du soleil, dîner et retour."
+      es: Recogida en Marrakech, té a la menta en el campamento, paseo en dromedario al atardecer, cena y regreso.
+      de: Abholung in Marrakesch, Minztee im Camp, Kamelritt bei Sonnenuntergang, Abendessen und Rückfahrt.
+      pt: Recolha em Marraquexe, chá de menta no acampamento, passeio de dromedário ao pôr do sol, jantar e regresso.
       ar: "الاستقبال في مراكش، شاي بالنعناع في المخيم، جولة على الجمال عند الغروب، العشاء ثم العودة."
     drive: 45 min each way
-    meals: [dinner]
+    meals: [ dinner ]
     schedule:
-      - { time: "15:30", text: { en: "Pickup in Marrakech", fr: "Prise en charge à Marrakech", ar: "الاستقبال في مراكش" } }
-      - { time: "16:30", text: { en: "Mint tea at the camp", fr: "Thé à la menthe au camp", ar: "شاي بالنعناع في المخيم" } }
-      - { time: "17:00", text: { en: "Camel ride until sunset", fr: "Balade à dos de dromadaire jusqu’au coucher du soleil", ar: "جولة على الجمل حتى الغروب" } }
-      - { time: "19:30", text: { en: "Dinner at the camp", fr: "Dîner au camp", ar: "العشاء في المخيم" } }
-      - { time: "21:30", text: { en: "Back at your riad", fr: "Retour à votre riad", ar: "العودة إلى الرياض" } }
-included: [pickup-hotel, camel, dinner, tea-snacks]
-excluded: [drinks, optional-activities, tips]
-pack: [warm-night, scarf, comfy-shoes]
+      - { time: "15:30", text: { en: "Pickup in Marrakech", fr: "Prise en charge à Marrakech", es: "Recogida en Marrakech", de: "Abholung in Marrakesch", pt: "Recolha em Marraquexe", ar: "الاستقبال في مراكش" } }
+      - { time: "16:30", text: { en: "Mint tea at the camp", fr: "Thé à la menthe au camp", es: "Té a la menta en el campamento", de: "Minztee im Camp", pt: "Chá de menta no acampamento", ar: "شاي بالنعناع في المخيم" } }
+      - { time: "17:00", text: { en: "Camel ride until sunset", fr: "Balade à dos de dromadaire jusqu’au coucher du soleil", es: "Paseo en dromedario hasta el atardecer", de: "Kamelritt bis zum Sonnenuntergang", pt: "Passeio de dromedário até ao pôr do sol", ar: "جولة على الجمل حتى الغروب" } }
+      - { time: "19:30", text: { en: "Dinner at the camp", fr: "Dîner au camp", es: "Cena en el campamento", de: "Abendessen im Camp", pt: "Jantar no acampamento", ar: "العشاء في المخيم" } }
+      - { time: "21:30", text: { en: "Back at your riad", fr: "Retour à votre riad", es: "De vuelta en su riad", de: "Zurück in Ihrem Riad", pt: "De volta ao seu riad", ar: "العودة إلى الرياض" } }
+included: [ pickup-hotel, camel, dinner, tea-snacks ]
+excluded: [ drinks, optional-activities, tips ]
+pack: [ warm-night, scarf, comfy-shoes ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "15:30"
 goodToKnow:
   - en: "Times move with the season, to match the sunset."
     fr: "Les horaires changent avec la saison pour suivre le coucher du soleil."
+    es: Los horarios cambian con la estación, para coincidir con la puesta de sol.
+    de: Die Zeiten richten sich je nach Jahreszeit nach dem Sonnenuntergang.
+    pt: Os horários mudam com a estação, para acompanhar o pôr do sol.
     ar: "تتغير المواعيد حسب الفصل لتتوافق مع غروب الشمس."
 mapStops:
   - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }

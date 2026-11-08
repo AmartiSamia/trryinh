@@ -5,52 +5,60 @@ popularity: 74
 title:
   en: Marrakech street food tour
   fr: Tour street food à Marrakech
+  es: Tour de comida callejera en Marrakech
+  de: Streetfood-Tour in Marrakesch
+  pt: Tour de comida de rua em Marraquexe
   ar: جولة أكل الشارع في مراكش
 summary:
   en: An evening walk through the medina, eating what people in Marrakech actually eat. Msemen, harira, tangia, snail broth for the brave, and mint tea to finish.
   fr: Une balade du soir dans la médina pour manger ce que mangent vraiment les Marrakchis. Msemen, harira, tanjia, bouillon d’escargots pour les courageux, et thé à la menthe pour finir.
+  es: Un paseo nocturno por la medina para comer lo que realmente comen en Marrakech. Msemen, harira, tanjia, caldo de caracoles para los valientes y té a la menta para terminar.
+  de: Ein Abendspaziergang durch die Medina, bei dem Sie essen, was die Menschen in Marrakesch wirklich essen. Msemen, Harira, Tanjia, Schneckensuppe für Mutige und zum Abschluss Minztee.
+  pt: Um passeio ao fim do dia pela medina, a comer o que se come de verdade em Marraquexe. Msemen, harira, tanjia, caldo de caracóis para os corajosos e chá de menta para terminar.
   ar: جولة مسائية في المدينة العتيقة لتذوق ما يأكله أهل مراكش فعلا. المسمن، الحريرة، الطنجية، مرق الببوش للشجعان، وشاي بالنعناع في الختام.
 about:
   en: >-
-    About ten tastings over three hours, in small stalls and family places away from the tourist
-    menus. Your guide explains what you eat and how it is made, from the bread ovens to the tangia
-    cooked slowly in the ashes of the hammam fire. Come hungry; vegetarians are welcome, just tell us.
+    About ten tastings over three hours, in small stalls and family places away from the tourist menus. Your guide explains what you eat and how it is made, from the bread ovens to the tangia cooked slowly in the ashes of the hammam fire. Come hungry; vegetarians are welcome, just tell us.
   fr: >-
-    Une dizaine de dégustations en trois heures, dans de petits stands et des adresses familiales loin
-    des menus touristiques. Votre guide explique ce que vous mangez et comment c’est préparé, des fours à
-    pain à la tanjia cuite lentement dans les cendres du feu du hammam. Venez le ventre vide ; les
-    végétariens sont les bienvenus, dites-le-nous.
+    Une dizaine de dégustations en trois heures, dans de petits stands et des adresses familiales loin des menus touristiques. Votre guide explique ce que vous mangez et comment c’est préparé, des fours à pain à la tanjia cuite lentement dans les cendres du feu du hammam. Venez le ventre vide ; les végétariens sont les bienvenus, dites-le-nous.
+  es: Unas diez degustaciones en tres horas, en pequeños puestos y locales familiares lejos de los menús turísticos. Su guía le explica qué come y cómo se prepara, desde los hornos de pan hasta la tanjia cocinada lentamente en las cenizas del fuego del hammam. Venga con hambre; los vegetarianos son bienvenidos, solo díganoslo.
+  de: Rund zehn Kostproben in drei Stunden, an kleinen Ständen und in Familienlokalen abseits der Touristenmenüs. Ihr Guide erklärt, was Sie essen und wie es zubereitet wird, von den Brotöfen bis zur Tanjia, die langsam in der Asche des Hammam-Feuers gart. Kommen Sie hungrig; Vegetarier sind willkommen, sagen Sie es uns einfach.
+  pt: Cerca de dez provas em três horas, em pequenas bancas e casas de família longe dos menus turísticos. O guia explica o que come e como se faz, dos fornos de pão à tanjia cozinhada lentamente nas cinzas do fogo do hammam. Venha com fome; vegetarianos são bem-vindos, basta dizer-nos.
   ar: >-
-    حوالي عشر تذوقات في ثلاث ساعات، في أكشاك صغيرة ومحلات عائلية بعيدا عن القوائم السياحية. يشرح لكم
-    المرشد ما تأكلون وكيف يُحضَّر، من أفران الخبز إلى الطنجية المطبوخة ببطء في رماد نار الحمام. تعالوا
-    جائعين، والنباتيون مرحب بهم، فقط أخبرونا.
+    حوالي عشر تذوقات في ثلاث ساعات، في أكشاك صغيرة ومحلات عائلية بعيدا عن القوائم السياحية. يشرح لكم المرشد ما تأكلون وكيف يُحضَّر، من أفران الخبز إلى الطنجية المطبوخة ببطء في رماد نار الحمام. تعالوا جائعين، والنباتيون مرحب بهم، فقط أخبرونا.
 days: 0.5
 hours: "3 h"
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+bestMonths: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
 price: { shared: 450, private: 650 }
 includes: { meals: true, transport: false, nights: false }
-photos: [u-market-dusk, u-spices, jemaa-night, tagine, mint-tea]
+photos: [ u-market-dusk, u-spices, jemaa-night, tagine, mint-tea ]
 highlights:
-  - { en: "About ten local tastings", fr: "Une dizaine de dégustations locales", ar: "حوالي عشر تذوقات محلية" }
-  - { en: "Places locals go, not tourist menus", fr: "Des adresses locales, pas des menus touristiques", ar: "أماكن يرتادها السكان المحليون" }
-  - { en: "Jemaa el-Fna at night", fr: "Jemaa el-Fna la nuit", ar: "جامع الفنا ليلاً" }
+  - { en: "About ten local tastings", fr: "Une dizaine de dégustations locales", es: "Unas diez degustaciones locales", de: "Rund zehn lokale Kostproben", pt: "Cerca de dez provas locais", ar: "حوالي عشر تذوقات محلية" }
+  - { en: "Places locals go, not tourist menus", fr: "Des adresses locales, pas des menus touristiques", es: "Sitios de la gente local, no menús turísticos", de: "Wo die Einheimischen essen, keine Touristenmenüs", pt: "Sítios onde vão os locais, não menus turísticos", ar: "أماكن يرتادها السكان المحليون" }
+  - { en: "Jemaa el-Fna at night", fr: "Jemaa el-Fna la nuit", es: "Jemaa el-Fna de noche", de: "Jemaa el-Fna bei Nacht", pt: "Jemaa el-Fna à noite", ar: "جامع الفنا ليلاً" }
 itinerary:
-  - title: { en: "The medina by night", fr: "La médina de nuit", ar: "المدينة العتيقة ليلاً" }
+  - title: { en: "The medina by night", fr: "La médina de nuit", es: "La medina de noche", de: "Die Medina bei Nacht", pt: "A medina à noite", ar: "المدينة العتيقة ليلاً" }
     text:
       en: "Start near Jemaa el-Fna, walk through the food streets with tastings, finish with mint tea."
       fr: "Départ près de Jemaa el-Fna, parcours des rues gourmandes avec dégustations, fin autour d’un thé à la menthe."
+      es: Salida cerca de Jemaa el-Fna, paseo por las calles de comida con degustaciones y té a la menta para terminar.
+      de: Start nahe Jemaa el-Fna, Spaziergang durch die Essensgassen mit Kostproben, Abschluss mit Minztee.
+      pt: Início perto de Jemaa el-Fna, passeio pelas ruas da comida com provas e chá de menta para terminar.
       ar: "الانطلاق قرب جامع الفنا، المشي في أزقة الأكل مع التذوق، والختام بشاي بالنعناع."
     walk: 3 h
-    meals: [dinner]
-included: [guide-local, dinner, water-bottle]
-excluded: [drinks, tips]
-pack: [comfy-shoes, cash]
+    meals: [ dinner ]
+included: [ guide-local, dinner, water-bottle ]
+excluded: [ drinks, tips ]
+pack: [ comfy-shoes, cash ]
 meetingPoint:
   en: "In front of the Café de France, Jemaa el-Fna."
   fr: "Devant le Café de France, place Jemaa el-Fna."
+  es: Delante del Café de France, plaza Jemaa el-Fna.
+  de: Vor dem Café de France, Platz Jemaa el-Fna.
+  pt: Em frente ao Café de France, praça Jemaa el-Fna.
   ar: "أمام مقهى فرنسا، ساحة جامع الفنا."
 pickupTime: "18:30"
 mapStops:

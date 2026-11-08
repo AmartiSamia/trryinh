@@ -6,70 +6,83 @@ popularity: 90
 title:
   en: Toubkal summit trek, 2 days
   fr: Ascension du Toubkal en 2 jours
+  es: Trek a la cumbre del Toubkal, 2 días
+  de: Toubkal-Gipfeltrek, 2 Tage
+  pt: Trekking ao cume do Toubkal, 2 dias
   ar: صعود قمة توبقال في يومين
 summary:
   en: The fast version of the Toubkal climb for fit walkers short on time. Up to the refuge on day one, summit and back to Marrakech on day two.
   fr: La version rapide de l’ascension du Toubkal pour marcheurs en forme et pressés. Montée au refuge le premier jour, sommet et retour à Marrakech le second.
+  es: La versión rápida de la subida al Toubkal para caminantes en forma con poco tiempo. Subida al refugio el primer día; cumbre y vuelta a Marrakech el segundo.
+  de: Die schnelle Variante des Toubkal-Aufstiegs für fitte Wanderer mit wenig Zeit. Am ersten Tag zur Hütte, am zweiten Gipfel und zurück nach Marrakesch.
+  pt: A versão rápida da subida ao Toubkal para caminhantes em forma com pouco tempo. Subida ao refúgio no primeiro dia; cume e regresso a Marraquexe no segundo.
   ar: النسخة السريعة لصعود توبقال للمتنزهين ذوي اللياقة الجيدة والوقت القصير. الصعود إلى الملجأ في اليوم الأول، ثم القمة والعودة إلى مراكش في اليوم الثاني.
 about:
   en: >-
-    An early pickup in Marrakech gets you to Imlil for breakfast, then you walk up the Mizane valley
-    to the Toubkal refuge. The next morning you leave before dawn for the summit, come back to the
-    refuge and walk down to Imlil, where the car waits to take you back to Marrakech. Two big days:
-    choose this version only if you walk in the mountains regularly.
+    An early pickup in Marrakech gets you to Imlil for breakfast, then you walk up the Mizane valley to the Toubkal refuge. The next morning you leave before dawn for the summit, come back to the refuge and walk down to Imlil, where the car waits to take you back to Marrakech. Two big days: choose this version only if you walk in the mountains regularly.
   fr: >-
-    Départ tôt de Marrakech pour un petit-déjeuner à Imlil, puis montée par la vallée de la Mizane
-    jusqu’au refuge du Toubkal. Le lendemain, départ avant l’aube pour le sommet, retour au refuge et
-    descente à Imlil, où la voiture vous attend pour Marrakech. Deux grosses journées : à choisir
-    seulement si vous marchez régulièrement en montagne.
+    Départ tôt de Marrakech pour un petit-déjeuner à Imlil, puis montée par la vallée de la Mizane jusqu’au refuge du Toubkal. Le lendemain, départ avant l’aube pour le sommet, retour au refuge et descente à Imlil, où la voiture vous attend pour Marrakech. Deux grosses journées : à choisir seulement si vous marchez régulièrement en montagne.
+  es: "Una recogida temprana en Marrakech le lleva a Imlil para desayunar y luego sube por el valle del Mizane hasta el refugio del Toubkal. A la mañana siguiente sale antes del amanecer hacia la cumbre, vuelve al refugio y baja a Imlil, donde le espera el coche para volver a Marrakech. Dos días intensos: elija esta versión solo si camina por la montaña con regularidad."
+  de: "Eine frühe Abholung in Marrakesch bringt Sie zum Frühstück nach Imlil, dann wandern Sie durch das Mizane-Tal zur Toubkal-Hütte. Am nächsten Morgen brechen Sie vor der Dämmerung zum Gipfel auf, kehren zur Hütte zurück und steigen nach Imlil ab, wo das Auto Sie nach Marrakesch bringt. Zwei große Tage: Wählen Sie diese Variante nur, wenn Sie regelmäßig in den Bergen wandern."
+  pt: "Uma recolha cedo em Marraquexe leva-o a Imlil para o pequeno-almoço e depois sobe o vale do Mizane até ao refúgio do Toubkal. Na manhã seguinte sai antes do amanhecer para o cume, volta ao refúgio e desce a Imlil, onde o carro o espera para regressar a Marraquexe. Dois dias intensos: escolha esta versão só se caminha regularmente na montanha."
   ar: >-
-    انطلاق مبكر من مراكش لتناول الفطور في إمليل، ثم الصعود عبر وادي ميزان إلى ملجأ توبقال. في الصباح
-    الموالي تنطلقون قبل الفجر نحو القمة، ثم تعودون إلى الملجأ وتنزلون إلى إمليل حيث تنتظركم السيارة
-    للعودة إلى مراكش. يومان شاقان: اختاروا هذه النسخة فقط إذا كنتم تمشون في الجبال بانتظام.
+    انطلاق مبكر من مراكش لتناول الفطور في إمليل، ثم الصعود عبر وادي ميزان إلى ملجأ توبقال. في الصباح الموالي تنطلقون قبل الفجر نحو القمة، ثم تعودون إلى الملجأ وتنزلون إلى إمليل حيث تنتظركم السيارة للعودة إلى مراكش. يومان شاقان: اختاروا هذه النسخة فقط إذا كنتم تمشون في الجبال بانتظام.
 days: 2
 nights: 1
 difficulty: hard
 startCity: Marrakech
 endCity: Marrakech
 maxAltitude: 4167
-bestMonths: [5, 6, 7, 8, 9, 10]
+bestMonths: [ 5, 6, 7, 8, 9, 10 ]
 price: { shared: 1150 }
 includes: { meals: true, transport: true, nights: true }
-photos: [u-atlas-hiker, toubkal-hikers, toubkal-refuge-2, toubkal-pyramid, imlil-valley]
+photos: [ u-atlas-hiker, toubkal-hikers, toubkal-refuge-2, toubkal-pyramid, imlil-valley ]
 highlights:
-  - { en: "Toubkal summit (4,167 m) in a weekend", fr: "Le sommet du Toubkal (4 167 m) en un week-end", ar: "قمة توبقال (4167 م) في عطلة نهاية الأسبوع" }
-  - { en: "Night at the Toubkal refuge", fr: "Nuit au refuge du Toubkal", ar: "ليلة في ملجأ توبقال" }
-  - { en: "Transport, guide and meals included", fr: "Transport, guide et repas inclus", ar: "النقل والمرشد والوجبات مشمولة" }
+  - { en: "Toubkal summit (4,167 m) in a weekend", fr: "Le sommet du Toubkal (4 167 m) en un week-end", es: "La cumbre del Toubkal (4167 m) en un fin de semana", de: "Der Toubkal-Gipfel (4.167 m) an einem Wochenende", pt: "O cume do Toubkal (4167 m) num fim de semana", ar: "قمة توبقال (4167 م) في عطلة نهاية الأسبوع" }
+  - { en: "Night at the Toubkal refuge", fr: "Nuit au refuge du Toubkal", es: "Noche en el refugio del Toubkal", de: "Nacht in der Toubkal-Hütte", pt: "Noite no refúgio do Toubkal", ar: "ليلة في ملجأ توبقال" }
+  - { en: "Transport, guide and meals included", fr: "Transport, guide et repas inclus", es: "Transporte, guía y comidas incluidos", de: "Transport, Guide und Mahlzeiten inklusive", pt: "Transporte, guia e refeições incluídos", ar: "النقل والمرشد والوجبات مشمولة" }
 itinerary:
-  - title: { en: "Marrakech, Imlil and the refuge", fr: "Marrakech, Imlil et le refuge", ar: "مراكش، إمليل والملجأ" }
+  - title: { en: "Marrakech, Imlil and the refuge", fr: "Marrakech, Imlil et le refuge", es: "Marrakech, Imlil y el refugio", de: "Marrakesch, Imlil und die Hütte", pt: "Marraquexe, Imlil e o refúgio", ar: "مراكش، إمليل والملجأ" }
     text:
       en: "Early drive to Imlil, then a long climb through Aroumd and Sidi Chamharouch to the refuge. Lunch on the way, dinner and night at the refuge."
       fr: "Route matinale vers Imlil, puis longue montée par Aroumd et Sidi Chamharouch jusqu’au refuge. Déjeuner en chemin, dîner et nuit au refuge."
+      es: Carretera temprano a Imlil y larga subida por Aroumd y Sidi Chamharouch hasta el refugio. Almuerzo en el camino, cena y noche en el refugio.
+      de: Frühe Fahrt nach Imlil, dann langer Aufstieg über Aroumd und Sidi Chamharouch zur Hütte. Mittagessen unterwegs, Abendessen und Nacht in der Hütte.
+      pt: Estrada cedo até Imlil e longa subida por Aroumd e Sidi Chamharouch até ao refúgio. Almoço pelo caminho, jantar e noite no refúgio.
       ar: "انطلاق مبكر نحو إمليل، ثم صعود طويل عبر أرومد وسيدي شمهروش إلى الملجأ. الغداء في الطريق، والعشاء والمبيت في الملجأ."
     drive: 1 h 45
     walk: 6 h
     altitude: 3207
     sleep: { type: refuge, place: Toubkal refuge }
-    meals: [breakfast, lunch, dinner]
-  - title: { en: "Summit and back to Marrakech", fr: "Sommet et retour à Marrakech", ar: "القمة والعودة إلى مراكش" }
+    meals: [ breakfast, lunch, dinner ]
+  - title: { en: "Summit and back to Marrakech", fr: "Sommet et retour à Marrakech", es: "Cumbre y regreso a Marrakech", de: "Gipfel und zurück nach Marrakesch", pt: "Cume e regresso a Marraquexe", ar: "القمة والعودة إلى مراكش" }
     text:
       en: "Pre-dawn start to the summit, back to the refuge for a late breakfast, then down to Imlil and drive to Marrakech in the evening."
       fr: "Départ avant l’aube pour le sommet, retour au refuge pour un petit-déjeuner tardif, puis descente à Imlil et retour à Marrakech en soirée."
+      es: Salida antes del amanecer hacia la cumbre, vuelta al refugio para un desayuno tardío, bajada a Imlil y regreso a Marrakech por la noche.
+      de: Aufbruch vor der Dämmerung zum Gipfel, zurück zur Hütte zu einem späten Frühstück, dann Abstieg nach Imlil und abends Fahrt nach Marrakesch.
+      pt: Partida antes do amanhecer para o cume, regresso ao refúgio para um pequeno-almoço tardio, descida a Imlil e regresso a Marraquexe à noite.
       ar: "انطلاق قبل الفجر نحو القمة، العودة إلى الملجأ لفطور متأخر، ثم النزول إلى إمليل والعودة إلى مراكش مساءً."
     walk: 9–10 h
     altitude: 4167
-    meals: [breakfast, lunch]
-included: [transport-marrakech, guide-mountain, meals-all, refuge-night, muleteer]
-excluded: [drinks, sleeping-bag, tips, insurance, personal]
-pack: [boots, layers, rain-jacket, gloves-hat, headlamp, sun-kit, bottle, daypack, poles]
+    meals: [ breakfast, lunch ]
+included: [ transport-marrakech, guide-mountain, meals-all, refuge-night, muleteer ]
+excluded: [ drinks, sleeping-bag, tips, insurance, personal ]
+pack: [ boots, layers, rain-jacket, gloves-hat, headlamp, sun-kit, bottle, daypack, poles ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "06:30"
 goodToKnow:
   - en: "Only for experienced walkers: you climb about 2,400 m in two days. If in doubt, take the 3-day trek."
     fr: "Réservé aux marcheurs expérimentés : environ 2 400 m de dénivelé en deux jours. En cas de doute, choisissez le trek de 3 jours."
+    es: "Solo para caminantes con experiencia: se suben unos 2400 m en dos días. Si tiene dudas, elija el trek de 3 días."
+    de: "Nur für erfahrene Wanderer: rund 2.400 Höhenmeter in zwei Tagen. Im Zweifel wählen Sie den 3-Tage-Trek."
+    pt: "Só para caminhantes experientes: sobe cerca de 2400 m em dois dias. Em caso de dúvida, escolha o trekking de 3 dias."
     ar: "للمتنزهين ذوي الخبرة فقط: صعود حوالي 2400 متر في يومين. إذا كنتم مترددين، اختاروا رحلة الأيام الثلاثة."
 mapStops:
   - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }

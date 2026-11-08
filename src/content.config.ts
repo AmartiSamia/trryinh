@@ -4,7 +4,14 @@ import { z } from 'astro/zod';
 import { itemKeys } from './i18n/catalog';
 
 /** A text in the three site languages. */
-const T = z.strictObject({ en: z.string().min(1), fr: z.string().min(1), ar: z.string().min(1) });
+const T = z.strictObject({
+  en: z.string().min(1),
+  fr: z.string().min(1),
+  es: z.string().min(1),
+  de: z.string().min(1),
+  pt: z.string().min(1),
+  ar: z.string().min(1),
+});
 /** A standard item (translated once in i18n/catalog.ts) or a custom text. */
 const Item = z.union([z.enum(itemKeys), T]);
 
@@ -110,7 +117,7 @@ const trips = defineCollection({
 const guide = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/guide' }),
   schema: z.object({
-    lang: z.enum(['en', 'fr', 'ar']),
+    lang: z.enum(['en', 'fr', 'es', 'de', 'pt', 'ar']),
     /** Same key across the three language versions of one article. */
     key: z.string(),
     title: z.string(),
@@ -132,7 +139,7 @@ const reviews = defineCollection({
     date: z.coerce.date(),
     rating: z.number().min(1).max(5),
     text: z.string(),
-    lang: z.enum(['en', 'fr', 'ar']).optional(),
+    lang: z.enum(['en', 'fr', 'es', 'de', 'pt', 'ar']).optional(),
     source: z.enum(['google', 'tripadvisor', 'email', 'whatsapp']),
     sourceUrl: z.url().optional(),
   }),

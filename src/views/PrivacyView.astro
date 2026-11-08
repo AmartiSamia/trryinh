@@ -3,7 +3,7 @@
  * Privacy policy (template).
  * TODO(youssef): confirm with a professional; add the CNDP declaration number if you file one
  *   (Moroccan law 09-08 on personal data).
- * TODO(review-ar): Arabic text needs a native review.
+ * TODO(review-ar/es/de/pt): native review.
  */
 import LegalPage from '../components/LegalPage.astro';
 import { contact } from '../config';
@@ -13,47 +13,62 @@ const { lang } = Astro.props;
 const mail = `<a href="mailto:${contact.email}">${contact.email}</a>`;
 const sections = [
   {
-    h: { en: 'Who we are', fr: 'Qui sommes-nous', ar: 'من نحن' },
+    h: { en: 'Who we are', fr: 'Qui sommes-nous', es: 'Quiénes somos', de: 'Wer wir sind', pt: 'Quem somos', ar: 'من نحن' },
     p: [{
       en: `Iberdan is a travel agency based in Imlil, in the High Atlas, Morocco. For any question about your data, write to ${mail}.`,
       fr: `Iberdan est une agence de voyage basée à Imlil, dans le Haut Atlas, au Maroc. Pour toute question sur vos données, écrivez à ${mail}.`,
+      es: `Iberdan es una agencia de viajes con base en Imlil, en el Alto Atlas, Marruecos. Para cualquier pregunta sobre sus datos, escriba a ${mail}.`,
+      de: `Iberdan ist eine Reiseagentur mit Sitz in Imlil im Hohen Atlas, Marokko. Bei Fragen zu Ihren Daten schreiben Sie an ${mail}.`,
+      pt: `A Iberdan é uma agência de viagens sediada em Imlil, no Alto Atlas, em Marrocos. Para qualquer questão sobre os seus dados, escreva para ${mail}.`,
       ar: `إيبردان وكالة أسفار مقرها إمليل في الأطلس الكبير بالمغرب. لأي سؤال حول بياناتكم، راسلوا ${mail}.`,
     }],
   },
   {
-    h: { en: 'What we collect and why', fr: 'Ce que nous collectons et pourquoi', ar: 'ما نجمعه ولماذا' },
+    h: { en: 'What we collect and why', fr: 'Ce que nous collectons et pourquoi', es: 'Qué datos recogemos y por qué', de: 'Welche Daten wir erheben und warum', pt: 'O que recolhemos e porquê', ar: 'ما نجمعه ولماذا' },
     p: [{
       en: 'Only what you send us when you ask for a trip: your name, email or phone number, and the details of your request (dates, number of travellers, message). We use them only to answer you and organise your trip. We do not sell or share them for marketing.',
       fr: 'Seulement ce que vous nous envoyez en demandant un voyage : votre nom, e-mail ou téléphone, et les détails de votre demande (dates, nombre de voyageurs, message). Nous les utilisons uniquement pour vous répondre et organiser votre voyage. Nous ne les vendons pas et ne les partageons pas à des fins commerciales.',
+      es: 'Solo lo que nos envía al solicitar un viaje: su nombre, correo o teléfono y los detalles de su solicitud (fechas, número de viajeros, mensaje). Los usamos únicamente para responderle y organizar su viaje. No los vendemos ni los compartimos con fines comerciales.',
+      de: 'Nur das, was Sie uns bei einer Reiseanfrage senden: Ihren Namen, Ihre E-Mail oder Telefonnummer und die Details Ihrer Anfrage (Daten, Anzahl der Reisenden, Nachricht). Wir nutzen sie ausschließlich, um Ihnen zu antworten und Ihre Reise zu organisieren. Wir verkaufen sie nicht und geben sie nicht zu Werbezwecken weiter.',
+      pt: 'Apenas o que nos envia ao pedir uma viagem: o seu nome, e-mail ou telefone e os detalhes do pedido (datas, número de viajantes, mensagem). Usamo-los apenas para lhe responder e organizar a viagem. Não os vendemos nem partilhamos para fins comerciais.',
       ar: 'فقط ما ترسلونه إلينا عند طلب رحلة: الاسم، البريد الإلكتروني أو الهاتف، وتفاصيل الطلب (التواريخ، عدد المسافرين، الرسالة). نستعملها فقط للرد عليكم وتنظيم رحلتكم، ولا نبيعها ولا نشاركها لأغراض تجارية.',
     }],
   },
   {
-    h: { en: 'Services that receive your data', fr: 'Services qui reçoivent vos données', ar: 'الخدمات التي تتلقى بياناتكم' },
+    h: { en: 'Services that receive your data', fr: 'Services qui reçoivent vos données', es: 'Servicios que reciben sus datos', de: 'Dienste, die Ihre Daten erhalten', pt: 'Serviços que recebem os seus dados', ar: 'الخدمات التي تتلقى بياناتكم' },
     p: [{
       en: 'Requests sent on WhatsApp go through WhatsApp (Meta). Requests sent with the email form go through Web3Forms, which forwards them to our mailbox. The route maps load images from OpenStreetMap, which sees your IP address. Fonts and all other files are served from our own site.',
       fr: 'Les demandes envoyées sur WhatsApp passent par WhatsApp (Meta). Celles envoyées par le formulaire e-mail passent par Web3Forms, qui les transfère à notre boîte mail. Les cartes chargent des images d’OpenStreetMap, qui voit votre adresse IP. Les polices et tous les autres fichiers sont servis depuis notre propre site.',
+      es: 'Las solicitudes enviadas por WhatsApp pasan por WhatsApp (Meta). Las enviadas con el formulario de correo pasan por Web3Forms, que las reenvía a nuestro buzón. Los mapas cargan imágenes de OpenStreetMap, que ve su dirección IP. Las fuentes y todos los demás archivos se sirven desde nuestro propio sitio.',
+      de: 'Anfragen per WhatsApp laufen über WhatsApp (Meta). Anfragen über das E-Mail-Formular laufen über Web3Forms, das sie an unser Postfach weiterleitet. Die Karten laden Bilder von OpenStreetMap, das Ihre IP-Adresse sieht. Schriften und alle anderen Dateien kommen von unserer eigenen Website.',
+      pt: 'Os pedidos enviados pelo WhatsApp passam pelo WhatsApp (Meta). Os enviados pelo formulário de e-mail passam pelo Web3Forms, que os reencaminha para a nossa caixa de correio. Os mapas carregam imagens do OpenStreetMap, que vê o seu endereço IP. As fontes e todos os outros ficheiros são servidos pelo nosso próprio site.',
       ar: 'الطلبات المرسلة عبر واتساب تمر عبر واتساب (ميتا). والطلبات المرسلة عبر استمارة البريد تمر عبر Web3Forms التي تحولها إلى بريدنا. تُحمّل الخرائط صورا من OpenStreetMap التي ترى عنوان IP الخاص بكم. الخطوط وباقي الملفات تُقدَّم من موقعنا.',
     }],
   },
   {
-    h: { en: 'Cookies and storage', fr: 'Cookies et stockage', ar: 'ملفات تعريف الارتباط والتخزين' },
+    h: { en: 'Cookies and storage', fr: 'Cookies et stockage', es: 'Cookies y almacenamiento', de: 'Cookies und Speicherung', pt: 'Cookies e armazenamento', ar: 'ملفات تعريف الارتباط والتخزين' },
     p: [{
       en: 'We do not use cookies or tracking. Your browser stores a few settings locally (theme, language, currency, wishlist, recently viewed trips). They never leave your device and you can clear them at any time in your browser settings.',
       fr: 'Nous n’utilisons ni cookies ni traceurs. Votre navigateur garde localement quelques réglages (thème, langue, devise, favoris, voyages vus récemment). Ils ne quittent jamais votre appareil et vous pouvez les effacer à tout moment dans votre navigateur.',
+      es: 'No usamos cookies ni rastreo. Su navegador guarda localmente algunos ajustes (tema, idioma, moneda, favoritos, viajes vistos recientemente). Nunca salen de su dispositivo y puede borrarlos cuando quiera en la configuración del navegador.',
+      de: 'Wir verwenden keine Cookies und kein Tracking. Ihr Browser speichert lokal einige Einstellungen (Design, Sprache, Währung, Merkliste, zuletzt angesehene Reisen). Sie verlassen nie Ihr Gerät und lassen sich jederzeit in den Browsereinstellungen löschen.',
+      pt: 'Não usamos cookies nem rastreio. O seu navegador guarda localmente algumas definições (tema, idioma, moeda, favoritos, viagens vistas recentemente). Nunca saem do seu dispositivo e pode apagá-las a qualquer momento nas definições do navegador.',
       ar: 'لا نستعمل ملفات تعريف الارتباط ولا أدوات التتبع. يحفظ متصفحكم محليا بعض الإعدادات (المظهر، اللغة، العملة، المفضلة، الرحلات التي شوهدت مؤخرا). لا تغادر جهازكم أبدا ويمكنكم حذفها في أي وقت من إعدادات المتصفح.',
     }],
   },
   {
-    h: { en: 'How long we keep it, and your rights', fr: 'Durée de conservation et vos droits', ar: 'مدة الحفظ وحقوقكم' },
+    h: { en: 'How long we keep it, and your rights', fr: 'Durée de conservation et vos droits', es: 'Cuánto tiempo los guardamos y sus derechos', de: 'Speicherdauer und Ihre Rechte', pt: 'Durante quanto tempo guardamos e os seus direitos', ar: 'مدة الحفظ وحقوقكم' },
     p: [{
       en: `We keep your messages as long as needed for your trip and our accounting obligations. You can ask to see, correct or delete your data at ${mail}, in line with Moroccan law 09-08 and, for European travellers, the GDPR.`,
       fr: `Nous gardons vos messages le temps nécessaire à votre voyage et à nos obligations comptables. Vous pouvez demander à consulter, corriger ou supprimer vos données à ${mail}, conformément à la loi marocaine 09-08 et, pour les voyageurs européens, au RGPD.`,
+      es: `Guardamos sus mensajes el tiempo necesario para su viaje y nuestras obligaciones contables. Puede pedir ver, corregir o borrar sus datos en ${mail}, conforme a la ley marroquí 09-08 y, para los viajeros europeos, al RGPD.`,
+      de: `Wir bewahren Ihre Nachrichten so lange auf, wie es für Ihre Reise und unsere Buchhaltungspflichten nötig ist. Auskunft, Berichtigung oder Löschung Ihrer Daten können Sie unter ${mail} verlangen, gemäß dem marokkanischen Gesetz 09-08 und für europäische Reisende der DSGVO.`,
+      pt: `Guardamos as suas mensagens o tempo necessário para a viagem e para as nossas obrigações contabilísticas. Pode pedir para ver, corrigir ou apagar os seus dados através de ${mail}, nos termos da lei marroquina 09-08 e, para viajantes europeus, do RGPD.`,
       ar: `نحتفظ برسائلكم المدة اللازمة لرحلتكم ولالتزاماتنا المحاسبية. يمكنكم طلب الاطلاع على بياناتكم أو تصحيحها أو حذفها عبر ${mail}، وفقا للقانون المغربي 09-08، وللمسافرين الأوروبيين وفقا للائحة العامة لحماية البيانات.`,
     }],
   },
 ];
 ---
-<LegalPage lang={lang} route="privacy" updated="2026-11-07" sections={sections}
-  title={{ en: 'Privacy policy', fr: 'Politique de confidentialité', ar: 'سياسة الخصوصية' }}
-  intro={{ en: 'Short version: we only use what you send us to organise your trip. No cookies, no tracking.', fr: 'En bref : nous n’utilisons que ce que vous nous envoyez pour organiser votre voyage. Pas de cookies, pas de traçage.', ar: 'باختصار: لا نستعمل إلا ما ترسلونه إلينا لتنظيم رحلتكم. بدون ملفات تعريف ارتباط وبدون تتبع.' }} />
+<LegalPage lang={lang} route="privacy" updated="2026-11-08" sections={sections}
+  title={{ en: 'Privacy policy', fr: 'Politique de confidentialité', es: 'Política de privacidad', de: 'Datenschutzerklärung', pt: 'Política de privacidade', ar: 'سياسة الخصوصية' }}
+  intro={{ en: 'Short version: we only use what you send us to organise your trip. No cookies, no tracking.', fr: 'En bref : nous n’utilisons que ce que vous nous envoyez pour organiser votre voyage. Pas de cookies, pas de traçage.', es: 'En resumen: solo usamos lo que nos envía para organizar su viaje. Sin cookies, sin rastreo.', de: 'Kurz gesagt: Wir nutzen nur, was Sie uns senden, um Ihre Reise zu organisieren. Keine Cookies, kein Tracking.', pt: 'Em resumo: só usamos o que nos envia para organizar a sua viagem. Sem cookies, sem rastreio.', ar: 'باختصار: لا نستعمل إلا ما ترسلونه إلينا لتنظيم رحلتكم. بدون ملفات تعريف ارتباط وبدون تتبع.' }} />

@@ -5,52 +5,60 @@ popularity: 70
 title:
   en: Atlas three valleys and Imlil day trip
   fr: Excursion trois vallées de l’Atlas et Imlil
+  es: Excursión a los tres valles del Atlas e Imlil
+  de: Tagesausflug in die drei Täler des Atlas und nach Imlil
+  pt: Excursão aos três vales do Atlas e a Imlil
   ar: رحلة يومية إلى وديان الأطلس الثلاثة وإمليل
 summary:
   en: An easy day in the mountains, with the village of Imlil as the highlight. Asni market town, Ouirgane, a short walk around Imlil and lunch with a view of Toubkal.
   fr: Une journée facile en montagne, avec le village d’Imlil en point d’orgue. Asni et son souk, Ouirgane, une courte balade autour d’Imlil et un déjeuner face au Toubkal.
+  es: Un día tranquilo en la montaña con el pueblo de Imlil como gran momento. El mercado de Asni, Ouirgane, un paseo corto por Imlil y almuerzo con vistas al Toubkal.
+  de: Ein entspannter Tag in den Bergen mit dem Dorf Imlil als Höhepunkt. Der Marktort Asni, Ouirgane, ein kurzer Spaziergang in Imlil und Mittagessen mit Blick auf den Toubkal.
+  pt: Um dia tranquilo na montanha, com a aldeia de Imlil como ponto alto. O mercado de Asni, Ouirgane, um pequeno passeio em Imlil e almoço com vista para o Toubkal.
   ar: يوم سهل في الجبال، وقرية إمليل هي أبرز محطاته. سوق أسني، أوركان، جولة قصيرة حول إمليل وغداء مطل على توبقال.
 about:
   en: >-
-    Not a hike, a mountain day for everyone. You drive up the Moulay Brahim gorge to Asni,
-    stop by the lake and hills of Ouirgane, then go up to Imlil for a gentle walk among walnut trees
-    and earth houses, with tea in a village home. A good choice with children or older travellers.
+    Not a hike, a mountain day for everyone. You drive up the Moulay Brahim gorge to Asni, stop by the lake and hills of Ouirgane, then go up to Imlil for a gentle walk among walnut trees and earth houses, with tea in a village home. A good choice with children or older travellers.
   fr: >-
-    Pas une randonnée, une journée en montagne pour tous. Route par les gorges de Moulay Brahim
-    jusqu’à Asni, arrêt près du lac et des collines de Ouirgane, puis montée à Imlil pour une balade
-    tranquille entre noyers et maisons en terre, avec un thé chez l’habitant. Idéal avec des enfants
-    ou des voyageurs âgés.
+    Pas une randonnée, une journée en montagne pour tous. Route par les gorges de Moulay Brahim jusqu’à Asni, arrêt près du lac et des collines de Ouirgane, puis montée à Imlil pour une balade tranquille entre noyers et maisons en terre, avec un thé chez l’habitant. Idéal avec des enfants ou des voyageurs âgés.
+  es: No es una caminata, es un día de montaña para todos. Se sube por las gargantas de Moulay Brahim hasta Asni, se para junto al lago y las colinas de Ouirgane y luego se sube a Imlil para un paseo tranquilo entre nogales y casas de tierra, con té en una casa del pueblo. Una buena opción con niños o personas mayores.
+  de: Keine Wanderung, sondern ein Bergtag für alle. Sie fahren durch die Schlucht von Moulay Brahim nach Asni, halten am See und an den Hügeln von Ouirgane und fahren dann hinauf nach Imlil zu einem gemütlichen Spaziergang zwischen Walnussbäumen und Lehmhäusern, mit Tee in einem Dorfhaus. Gut geeignet mit Kindern oder älteren Reisenden.
+  pt: Não é uma caminhada, é um dia de montanha para todos. Sobe pelas gargantas de Moulay Brahim até Asni, para junto ao lago e às colinas de Ouirgane e depois sobe a Imlil para um passeio calmo entre nogueiras e casas de terra, com chá numa casa da aldeia. Uma boa escolha com crianças ou viajantes mais velhos.
   ar: >-
-    ليست رحلة مشي، بل يوم جبلي للجميع. الطريق عبر مضايق مولاي إبراهيم إلى أسني، توقف قرب بحيرة وتلال
-    أوركان، ثم الصعود إلى إمليل لجولة هادئة بين أشجار الجوز والبيوت الطينية مع شاي في بيت قروي. خيار جيد
-    مع الأطفال أو المسافرين المسنين.
+    ليست رحلة مشي، بل يوم جبلي للجميع. الطريق عبر مضايق مولاي إبراهيم إلى أسني، توقف قرب بحيرة وتلال أوركان، ثم الصعود إلى إمليل لجولة هادئة بين أشجار الجوز والبيوت الطينية مع شاي في بيت قروي. خيار جيد مع الأطفال أو المسافرين المسنين.
 days: 1
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+bestMonths: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
 price: { shared: 350, private: 900 }
 includes: { meals: true, transport: true, nights: false }
-photos: [u-atlas-road, u-atlas-houses, u-atlas-valley, imlil-2, imlil-3]
+photos: [ u-atlas-road, u-atlas-houses, u-atlas-valley, imlil-2, imlil-3 ]
 highlights:
-  - { en: "Imlil, at the foot of Toubkal", fr: "Imlil, au pied du Toubkal", ar: "إمليل عند سفح توبقال" }
-  - { en: "Tea in a village home", fr: "Thé chez l’habitant", ar: "شاي في بيت قروي" }
-  - { en: "Easy, for all ages", fr: "Facile, pour tous les âges", ar: "سهلة ولجميع الأعمار" }
+  - { en: "Imlil, at the foot of Toubkal", fr: "Imlil, au pied du Toubkal", es: "Imlil, al pie del Toubkal", de: "Imlil, am Fuß des Toubkal", pt: "Imlil, no sopé do Toubkal", ar: "إمليل عند سفح توبقال" }
+  - { en: "Tea in a village home", fr: "Thé chez l’habitant", es: "Té en una casa del pueblo", de: "Tee in einem Dorfhaus", pt: "Chá numa casa da aldeia", ar: "شاي في بيت قروي" }
+  - { en: "Easy, for all ages", fr: "Facile, pour tous les âges", es: "Fácil, para todas las edades", de: "Leicht, für jedes Alter", pt: "Fácil, para todas as idades", ar: "سهلة ولجميع الأعمار" }
 itinerary:
-  - title: { en: "Asni, Ouirgane and Imlil", fr: "Asni, Ouirgane et Imlil", ar: "أسني، أوركان وإمليل" }
+  - title: { en: "Asni, Ouirgane and Imlil", fr: "Asni, Ouirgane et Imlil", es: "Asni, Ouirgane e Imlil", de: "Asni, Ouirgane und Imlil", pt: "Asni, Ouirgane e Imlil", ar: "أسني، أوركان وإمليل" }
     text:
       en: "Drive through the valleys with stops, a gentle walk around Imlil, lunch, and back to Marrakech."
       fr: "Route à travers les vallées avec arrêts, balade tranquille autour d’Imlil, déjeuner et retour à Marrakech."
+      es: Carretera por los valles con paradas, paseo tranquilo por Imlil, almuerzo y regreso a Marrakech.
+      de: Fahrt durch die Täler mit Stopps, ein gemütlicher Spaziergang in Imlil, Mittagessen und zurück nach Marrakesch.
+      pt: Estrada pelos vales com paragens, passeio calmo em Imlil, almoço e regresso a Marraquexe.
       ar: "الطريق عبر الوديان مع توقفات، جولة هادئة حول إمليل، الغداء ثم العودة إلى مراكش."
     drive: 1 h 45 each way
     walk: 1–2 h
-    meals: [lunch]
-included: [pickup-hotel, transport, driver, guide-local, lunch, tea-snacks]
-excluded: [drinks, tips]
-pack: [comfy-shoes, sun-kit, layers]
+    meals: [ lunch ]
+included: [ pickup-hotel, transport, driver, guide-local, lunch, tea-snacks ]
+excluded: [ drinks, tips ]
+pack: [ comfy-shoes, sun-kit, layers ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "09:00"
 mapStops:

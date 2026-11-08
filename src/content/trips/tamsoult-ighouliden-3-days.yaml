@@ -6,73 +6,86 @@ popularity: 65
 title:
   en: Tamsoult and Ighouliden waterfall, 3 days
   fr: Tamsoult et cascade d’Ighouliden, 3 jours
+  es: Tamsoult y la cascada de Ighouliden, 3 días
+  de: Tamsoult und Ighouliden-Wasserfall, 3 Tage
+  pt: Tamsoult e cascata de Ighouliden, 3 dias
   ar: تامسولت وشلال إغوليدن، 3 أيام
 summary:
   en: West of Imlil, over Tizi Mzik into the green Azzaden valley, to the highest waterfall of the Toubkal area.
   fr: À l’ouest d’Imlil, par le Tizi Mzik vers la verte vallée d’Azzaden, jusqu’à la plus haute cascade de la région du Toubkal.
+  es: Al oeste de Imlil, por el Tizi Mzik hasta el verde valle de Azzaden y la cascada más alta de la zona del Toubkal.
+  de: Westlich von Imlil über den Tizi Mzik ins grüne Azzaden-Tal, zum höchsten Wasserfall der Toubkal-Region.
+  pt: A oeste de Imlil, pelo Tizi Mzik até ao verde vale de Azzaden e à cascata mais alta da região do Toubkal.
   ar: غرب إمليل، عبر تيزي مزيك نحو وادي أزادن الأخضر، حتى أعلى شلال في منطقة توبقال.
 about:
   en: >-
-    A varied loop on the quieter western side of Imlil. You cross Tizi Mzik into the Azzaden
-    valley, sleep in simple mountain shelters and walk up past the shepherds’ huts of Tamsoult
-    to the Ighouliden waterfall, which drops in several steps from the cliffs. Good for walkers
-    who want real mountain views without going to the summit.
+    A varied loop on the quieter western side of Imlil. You cross Tizi Mzik into the Azzaden valley, sleep in simple mountain shelters and walk up past the shepherds’ huts of Tamsoult to the Ighouliden waterfall, which drops in several steps from the cliffs. Good for walkers who want real mountain views without going to the summit.
   fr: >-
-    Une boucle variée sur le versant ouest, plus calme, d’Imlil. Vous passez le Tizi Mzik vers la
-    vallée d’Azzaden, dormez dans des abris de montagne simples et montez, par les bergeries de
-    Tamsoult, jusqu’à la cascade d’Ighouliden qui tombe en plusieurs sauts depuis les falaises.
-    Idéal pour qui veut de vrais paysages de montagne sans aller au sommet.
+    Une boucle variée sur le versant ouest, plus calme, d’Imlil. Vous passez le Tizi Mzik vers la vallée d’Azzaden, dormez dans des abris de montagne simples et montez, par les bergeries de Tamsoult, jusqu’à la cascade d’Ighouliden qui tombe en plusieurs sauts depuis les falaises. Idéal pour qui veut de vrais paysages de montagne sans aller au sommet.
+  es: Una ruta variada por la vertiente oeste, más tranquila, de Imlil. Cruza el Tizi Mzik hasta el valle de Azzaden, duerme en sencillos refugios de montaña y sube por las cabañas de pastores de Tamsoult hasta la cascada de Ighouliden, que cae en varios saltos desde los acantilados. Para quien quiere auténticos paisajes de montaña sin subir a la cumbre.
+  de: Eine abwechslungsreiche Runde auf der ruhigeren Westseite von Imlil. Sie überqueren den Tizi Mzik ins Azzaden-Tal, schlafen in einfachen Berghütten und steigen an den Hirtenhütten von Tamsoult vorbei zum Ighouliden-Wasserfall auf, der in mehreren Stufen von den Felsen stürzt. Für alle, die echte Bergblicke wollen, ohne auf den Gipfel zu gehen.
+  pt: Um percurso variado na vertente oeste, mais calma, de Imlil. Atravessa o Tizi Mzik para o vale de Azzaden, dorme em abrigos de montanha simples e sobe pelas cabanas de pastores de Tamsoult até à cascata de Ighouliden, que cai em vários saltos das falésias. Para quem quer verdadeiras paisagens de montanha sem subir ao cume.
   ar: >-
-    جولة متنوعة في الجهة الغربية الأهدأ من إمليل. تعبرون تيزي مزيك نحو وادي أزادن، وتبيتون في ملاجئ جبلية
-    بسيطة، وتصعدون مرورا بأكواخ الرعاة في تامسولت حتى شلال إغوليدن الذي ينحدر على عدة مراحل من الجروف.
-    مناسبة لمن يريد مناظر جبلية حقيقية دون الصعود إلى القمة.
+    جولة متنوعة في الجهة الغربية الأهدأ من إمليل. تعبرون تيزي مزيك نحو وادي أزادن، وتبيتون في ملاجئ جبلية بسيطة، وتصعدون مرورا بأكواخ الرعاة في تامسولت حتى شلال إغوليدن الذي ينحدر على عدة مراحل من الجروف. مناسبة لمن يريد مناظر جبلية حقيقية دون الصعود إلى القمة.
 days: 3
 nights: 2
 difficulty: moderate
 startCity: Marrakech
 endCity: Marrakech
 maxAltitude: 2489
-bestMonths: [3, 4, 5, 6, 9, 10, 11]
+bestMonths: [ 3, 4, 5, 6, 9, 10, 11 ]
 price: { shared: 1450 }
 includes: { meals: true, transport: true, nights: true }
-photos: [lepinay-refuge, imlil-valley, imlil-2]
+photos: [ lepinay-refuge, imlil-valley, imlil-2 ]
 highlights:
-  - { en: "The Ighouliden waterfall", fr: "La cascade d’Ighouliden", ar: "شلال إغوليدن" }
-  - { en: "The green Azzaden valley", fr: "La verte vallée d’Azzaden", ar: "وادي أزادن الأخضر" }
-  - { en: "Views of the Toubkal massif from Tizi Mzik", fr: "Vue sur le massif du Toubkal depuis le Tizi Mzik", ar: "إطلالة على جبال توبقال من تيزي مزيك" }
+  - { en: "The Ighouliden waterfall", fr: "La cascade d’Ighouliden", es: "La cascada de Ighouliden", de: "Der Ighouliden-Wasserfall", pt: "A cascata de Ighouliden", ar: "شلال إغوليدن" }
+  - { en: "The green Azzaden valley", fr: "La verte vallée d’Azzaden", es: "El verde valle de Azzaden", de: "Das grüne Azzaden-Tal", pt: "O verde vale de Azzaden", ar: "وادي أزادن الأخضر" }
+  - { en: "Views of the Toubkal massif from Tizi Mzik", fr: "Vue sur le massif du Toubkal depuis le Tizi Mzik", es: "Vistas del macizo del Toubkal desde el Tizi Mzik", de: "Blick auf das Toubkal-Massiv vom Tizi Mzik", pt: "Vista do maciço do Toubkal desde o Tizi Mzik", ar: "إطلالة على جبال توبقال من تيزي مزيك" }
 itinerary:
-  - title: { en: "Imlil, Tizi Mzik and Id Aissa", fr: "Imlil, Tizi Mzik et Id Aïssa", ar: "إمليل، تيزي مزيك وإيد عيسى" }
+  - title: { en: "Imlil, Tizi Mzik and Id Aissa", fr: "Imlil, Tizi Mzik et Id Aïssa", es: "Imlil, Tizi Mzik e Id Aissa", de: "Imlil, Tizi Mzik und Id Aissa", pt: "Imlil, Tizi Mzik e Id Aissa", ar: "إمليل، تيزي مزيك وإيد عيسى" }
     text:
       en: "Drive to Imlil, then climb through juniper to Tizi Mzik (2,489 m) and down into the Azzaden valley."
       fr: "Route vers Imlil, puis montée parmi les genévriers jusqu’au Tizi Mzik (2 489 m) et descente dans la vallée d’Azzaden."
+      es: Carretera a Imlil, subida entre enebros hasta el Tizi Mzik (2489 m) y bajada al valle de Azzaden.
+      de: Fahrt nach Imlil, Aufstieg durch Wacholder zum Tizi Mzik (2.489 m) und Abstieg ins Azzaden-Tal.
+      pt: Estrada até Imlil, subida entre zimbros até ao Tizi Mzik (2489 m) e descida ao vale de Azzaden.
       ar: "التوجه إلى إمليل، ثم الصعود بين أشجار العرعار إلى تيزي مزيك (2489 م) والنزول إلى وادي أزادن."
     drive: 1 h 45
     walk: 5 h
     altitude: 2489
     sleep: { type: refuge, place: Azzaden valley }
-    meals: [lunch, dinner]
-  - title: { en: "Tamsoult and the waterfall", fr: "Tamsoult et la cascade", ar: "تامسولت والشلال" }
+    meals: [ lunch, dinner ]
+  - title: { en: "Tamsoult and the waterfall", fr: "Tamsoult et la cascade", es: "Tamsoult y la cascada", de: "Tamsoult und der Wasserfall", pt: "Tamsoult e a cascata", ar: "تامسولت والشلال" }
     text:
       en: "Walk up to the summer pastures of Tamsoult and on to the Ighouliden waterfall. Picnic in the valley."
       fr: "Montée vers les pâturages d’été de Tamsoult puis jusqu’à la cascade d’Ighouliden. Pique-nique dans la vallée."
+      es: Subida a los pastos de verano de Tamsoult y hasta la cascada de Ighouliden. Pícnic en el valle.
+      de: Aufstieg zu den Sommerweiden von Tamsoult und weiter zum Ighouliden-Wasserfall. Picknick im Tal.
+      pt: Subida às pastagens de verão de Tamsoult e até à cascata de Ighouliden. Piquenique no vale.
       ar: "الصعود إلى المراعي الصيفية في تامسولت ثم إلى شلال إغوليدن. نزهة وغداء في الوادي."
     walk: 5–6 h
     sleep: { type: refuge, place: Tamsoult }
-    meals: [breakfast, lunch, dinner]
-  - title: { en: "Back to Imlil and Marrakech", fr: "Retour à Imlil et Marrakech", ar: "العودة إلى إمليل ومراكش" }
+    meals: [ breakfast, lunch, dinner ]
+  - title: { en: "Back to Imlil and Marrakech", fr: "Retour à Imlil et Marrakech", es: "Regreso a Imlil y Marrakech", de: "Zurück nach Imlil und Marrakesch", pt: "Regresso a Imlil e Marraquexe", ar: "العودة إلى إمليل ومراكش" }
     text:
       en: "Return over the pass to Imlil and drive back to Marrakech in the afternoon."
       fr: "Retour par le col jusqu’à Imlil et route vers Marrakech l’après-midi."
+      es: Vuelta por el puerto hasta Imlil y regreso a Marrakech por la tarde.
+      de: Über den Pass zurück nach Imlil und nachmittags Fahrt nach Marrakesch.
+      pt: Volta pelo passo até Imlil e regresso a Marraquexe à tarde.
       ar: "العودة عبر الممر إلى إمليل ثم إلى مراكش بعد الظهر."
     walk: 5 h
     drive: 1 h 45
-    meals: [breakfast, lunch]
-included: [transport-marrakech, guide-mountain, meals-all, accommodation, muleteer]
-excluded: [drinks, sleeping-bag, tips, insurance, personal]
-pack: [boots, layers, rain-jacket, headlamp, sun-kit, bottle, daypack, sleeping-bag-pack]
+    meals: [ breakfast, lunch ]
+included: [ transport-marrakech, guide-mountain, meals-all, accommodation, muleteer ]
+excluded: [ drinks, sleeping-bag, tips, insurance, personal ]
+pack: [ boots, layers, rain-jacket, headlamp, sun-kit, bottle, daypack, sleeping-bag-pack ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "08:00"
 mapStops:

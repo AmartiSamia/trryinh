@@ -19,8 +19,8 @@ const photo = (await getEntry(a.photo))!;
 const related = await getEntries(a.relatedTrips);
 const og = await getImage({ src: photo.data.file, width: 1200, height: 630, fit: 'cover', format: 'jpg' });
 const date = new Intl.DateTimeFormat(langMeta[lang].intl, { dateStyle: 'long' }).format(a.date);
-const draft = { en: 'Draft: this article is waiting for a final review.', fr: 'Brouillon : cet article attend une dernière relecture.', ar: 'مسودة: هذا المقال في انتظار المراجعة النهائية.' }[lang];
-const relatedTitle = { en: 'Trips for this', fr: 'Les voyages associés', ar: 'رحلات ذات صلة' }[lang];
+const draft = { en: 'Draft: this article is waiting for a final review.', fr: 'Brouillon : cet article attend une dernière relecture.', es: 'Borrador: este artículo espera una última revisión.', de: 'Entwurf: Dieser Artikel wartet auf eine letzte Prüfung.', pt: 'Rascunho: este artigo aguarda uma última revisão.', ar: 'مسودة: هذا المقال في انتظار المراجعة النهائية.' }[lang];
+const relatedTitle = { en: 'Trips for this', fr: 'Les voyages associés', es: 'Viajes relacionados', de: 'Passende Reisen', pt: 'Viagens relacionadas', ar: 'رحلات ذات صلة' }[lang];
 const jsonLd = {
   '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: a.description,
   datePublished: a.date.toISOString(), inLanguage: lang, image: new URL(og.src, site.url).href,

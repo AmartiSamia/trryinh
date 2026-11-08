@@ -6,52 +6,59 @@ popularity: 85
 title:
   en: Ouzoud waterfalls day trip
   fr: Excursion aux cascades d’Ouzoud
+  es: Excursión a las cascadas de Ouzoud
+  de: Tagesausflug zu den Ouzoud-Wasserfällen
+  pt: Excursão às cascatas de Ouzoud
   ar: رحلة يومية إلى شلالات أوزود
 summary:
   en: Morocco’s highest waterfalls, 110 m of water dropping into a green gorge. Walk down with a local guide, take a boat to the foot of the falls, meet the macaques.
   fr: Les plus hautes cascades du Maroc, 110 m de chute dans une gorge verdoyante. Descente avec un guide local, barque jusqu’au pied des chutes, rencontre des macaques.
+  es: Las cascadas más altas de Marruecos, 110 m de agua cayendo en un barranco verde. Bajada con un guía local, barca hasta el pie de las cascadas y encuentro con los macacos.
+  de: "Marokkos höchste Wasserfälle: 110 m Wasser stürzen in eine grüne Schlucht. Abstieg mit einem einheimischen Guide, Bootsfahrt zum Fuß der Fälle und Begegnung mit den Makaken."
+  pt: As cascatas mais altas de Marrocos, 110 m de água a cair num desfiladeiro verde. Descida com um guia local, barco até ao pé das quedas e encontro com os macacos.
   ar: أعلى شلالات في المغرب، 110 أمتار من المياه المتدفقة في مضيق أخضر. نزول مع مرشد محلي، قارب إلى أسفل الشلالات ولقاء قردة المكاك.
 about:
   en: >-
-    A full day out of the city, about two and a half hours north-east of Marrakech. A local guide
-    walks you down the olive-shaded path to the bottom of the falls, where small boats go close to
-    the spray, and back up the other side past Barbary macaques. Lunch with a view of the water,
-    then the drive back.
+    A full day out of the city, about two and a half hours north-east of Marrakech. A local guide walks you down the olive-shaded path to the bottom of the falls, where small boats go close to the spray, and back up the other side past Barbary macaques. Lunch with a view of the water, then the drive back.
   fr: >-
-    Une journée entière hors de la ville, à environ deux heures et demie au nord-est de Marrakech.
-    Un guide local vous accompagne sur le sentier ombragé d’oliviers jusqu’au pied des chutes, où des
-    barques approchent des embruns, puis remonte de l’autre côté en croisant les macaques. Déjeuner
-    face à l’eau, puis retour.
+    Une journée entière hors de la ville, à environ deux heures et demie au nord-est de Marrakech. Un guide local vous accompagne sur le sentier ombragé d’oliviers jusqu’au pied des chutes, où des barques approchent des embruns, puis remonte de l’autre côté en croisant les macaques. Déjeuner face à l’eau, puis retour.
+  es: Un día completo fuera de la ciudad, a unas dos horas y media al noreste de Marrakech. Un guía local le lleva por el sendero sombreado de olivos hasta el pie de las cascadas, donde pequeñas barcas se acercan a la espuma, y sube por el otro lado entre macacos de Berbería. Almuerzo con vistas al agua y regreso.
+  de: Ein ganzer Tag außerhalb der Stadt, etwa zweieinhalb Stunden nordöstlich von Marrakesch. Ein einheimischer Guide führt Sie auf dem von Olivenbäumen beschatteten Weg hinab zum Fuß der Fälle, wo kleine Boote nahe an die Gischt fahren, und auf der anderen Seite an Berberaffen vorbei wieder hinauf. Mittagessen mit Blick aufs Wasser, dann Rückfahrt.
+  pt: Um dia inteiro fora da cidade, a cerca de duas horas e meia a nordeste de Marraquexe. Um guia local leva-o pelo trilho à sombra das oliveiras até ao pé das cascatas, onde pequenos barcos se aproximam da espuma, e sobe pelo outro lado entre macacos-de-Gibraltar. Almoço com vista para a água e regresso.
   ar: >-
-    يوم كامل خارج المدينة، على بعد حوالي ساعتين ونصف شمال شرق مراكش. يرافقكم مرشد محلي على مسار تظلله
-    أشجار الزيتون حتى أسفل الشلالات حيث تقترب القوارب الصغيرة من رذاذ الماء، ثم تصعدون من الجهة الأخرى
-    مرورا بقردة المكاك. غداء مطل على الماء ثم العودة.
+    يوم كامل خارج المدينة، على بعد حوالي ساعتين ونصف شمال شرق مراكش. يرافقكم مرشد محلي على مسار تظلله أشجار الزيتون حتى أسفل الشلالات حيث تقترب القوارب الصغيرة من رذاذ الماء، ثم تصعدون من الجهة الأخرى مرورا بقردة المكاك. غداء مطل على الماء ثم العودة.
 days: 1
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [3, 4, 5, 6, 9, 10, 11]
+bestMonths: [ 3, 4, 5, 6, 9, 10, 11 ]
 price: { shared: 200, private: 1000 }
 includes: { meals: false, transport: true, nights: false }
-photos: [ouzoud, ouzoud-2]
+photos: [ ouzoud, ouzoud-2 ]
 highlights:
-  - { en: "Morocco’s highest waterfalls", fr: "Les plus hautes cascades du Maroc", ar: "أعلى شلالات في المغرب" }
-  - { en: "Boat ride to the foot of the falls", fr: "Barque jusqu’au pied des chutes", ar: "جولة بالقارب إلى أسفل الشلالات" }
-  - { en: "Barbary macaques in the wild", fr: "Macaques de Barbarie en liberté", ar: "قردة المكاك في الطبيعة" }
+  - { en: "Morocco’s highest waterfalls", fr: "Les plus hautes cascades du Maroc", es: "Las cascadas más altas de Marruecos", de: "Marokkos höchste Wasserfälle", pt: "As cascatas mais altas de Marrocos", ar: "أعلى شلالات في المغرب" }
+  - { en: "Boat ride to the foot of the falls", fr: "Barque jusqu’au pied des chutes", es: "Paseo en barca hasta el pie de las cascadas", de: "Bootsfahrt zum Fuß der Fälle", pt: "Passeio de barco até ao pé das quedas", ar: "جولة بالقارب إلى أسفل الشلالات" }
+  - { en: "Barbary macaques in the wild", fr: "Macaques de Barbarie en liberté", es: "Macacos de Berbería en libertad", de: "Berberaffen in freier Natur", pt: "Macacos-de-Gibraltar em liberdade", ar: "قردة المكاك في الطبيعة" }
 itinerary:
-  - title: { en: "Ouzoud waterfalls", fr: "Cascades d’Ouzoud", ar: "شلالات أوزود" }
+  - title: { en: "Ouzoud waterfalls", fr: "Cascades d’Ouzoud", es: "Cascadas de Ouzoud", de: "Ouzoud-Wasserfälle", pt: "Cascatas de Ouzoud", ar: "شلالات أوزود" }
     text:
       en: "Drive to Ouzoud, guided walk around and down to the falls, free time and lunch, drive back."
       fr: "Route vers Ouzoud, marche guidée autour et au pied des chutes, temps libre et déjeuner, retour."
+      es: Carretera a Ouzoud, paseo guiado alrededor y hasta el pie de las cascadas, tiempo libre y almuerzo, regreso.
+      de: Fahrt nach Ouzoud, geführter Rundgang um die Fälle und hinab, freie Zeit und Mittagessen, Rückfahrt.
+      pt: Estrada até Ouzoud, passeio guiado à volta e até ao pé das cascatas, tempo livre e almoço, regresso.
       ar: "التوجه إلى أوزود، مشي مع مرشد حول الشلالات وأسفلها، وقت حر وغداء، ثم العودة."
     drive: 2 h 30 each way
     walk: 2 h
-included: [pickup-hotel, transport, driver, guide-local]
-excluded: [lunch, drinks, optional-activities, tips]
-pack: [comfy-shoes, sun-kit, bottle, swimwear]
+included: [ pickup-hotel, transport, driver, guide-local ]
+excluded: [ lunch, drinks, optional-activities, tips ]
+pack: [ comfy-shoes, sun-kit, bottle, swimwear ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech, or a central meeting point for shared trips."
   fr: "Votre riad ou hôtel à Marrakech, ou un point de rendez-vous central pour les sorties partagées."
+  es: Su riad u hotel en Marrakech, o un punto de encuentro céntrico para las salidas compartidas.
+  de: Ihr Riad oder Hotel in Marrakesch oder ein zentraler Treffpunkt bei Gruppenausflügen.
+  pt: O seu riad ou hotel em Marraquexe, ou um ponto de encontro central nas saídas partilhadas.
   ar: "الرياض أو الفندق في مراكش، أو نقطة لقاء مركزية للرحلات المشتركة."
 pickupTime: "08:00"
 mapStops:

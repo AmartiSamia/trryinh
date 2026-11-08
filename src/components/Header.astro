@@ -1,7 +1,7 @@
 ---
 import Logo from './Logo.astro';
 import Icon from './Icon.astro';
-import { langMeta, locales, url, type Lang } from '../i18n/routes';
+import { langMeta, locales, routes, url, type Lang } from '../i18n/routes';
 import { t } from '../i18n/ui';
 import { contact, currencies } from '../config';
 import { waLink } from '../lib/whatsapp';
@@ -24,7 +24,8 @@ const path = Astro.url.pathname;
 const isCurrent = (href: string) => path === href || (href !== `/${lang}/` && path.startsWith(href));
 const wa = waLink(s.common.whatsappHello);
 // On a trip page, Book now pre-selects that trip.
-const tripSlug = path.match(/\/(?:trips|circuits)\/([^/]+)\/$/)?.[1];
+const tripsPrefix = `/${lang}/${routes.trips[lang]}/`;
+const tripSlug = path.startsWith(tripsPrefix) ? path.slice(tripsPrefix.length).split('/')[0] || undefined : undefined;
 const bookHref = url(lang, 'book') + (tripSlug ? `?trip=${tripSlug}` : '');
 ---
 <header
@@ -59,25 +60,27 @@ const bookHref = url(lang, 'book') + (tripSlug ? `?trip=${tripSlug}` : '');
         {currencies.map((c) => <option value={c}>{c}</option>)}
       </select>
 
-      <nav aria-label={s.a11y.language}>
-        <ul class="flex items-center">
-          {locales.map((l) => (
-            <li>
-              <a
-                href={alternates[l]}
-                hreflang={l}
-                lang={l}
-                data-lang-link={l}
-                aria-current={l === lang ? 'true' : undefined}
-                class="lang-link grid h-10 min-w-10 place-items-center rounded-full px-1.5 text-sm font-semibold"
-              >
-                <span aria-hidden="true" class:list={[{ 'font-[system-ui]': l === 'ar' && lang !== 'ar' }]}>{langMeta[l].short}</span>
-                <span class="sr-only">{langMeta[l].label}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <details class="lang-menu relative" data-lang-menu>
+        <summary class="ctl flex h-11 cursor-pointer list-none items-center gap-1 rounded-full px-2.5 text-sm font-semibold">
+          <Icon name="globe" size={18} />
+          <span><span class="sr-only">{s.a11y.language}: </span>{lang === 'ar' ? 'AR' : langMeta[lang].short}</span>
+          <Icon name="chevronDown" size={14} />
+        </summary>
+        <nav aria-label={s.a11y.language} class="lang-list absolute end-0 top-full z-50 mt-2 w-52 rounded-2xl bg-surface p-1.5 text-ink shadow-card ring-1 ring-line">
+          <ul>
+            {locales.map((l) => (
+              <li>
+                <a href={alternates[l]} hreflang={l} lang={l} dir={langMeta[l].dir} data-lang-link={l}
+                  aria-current={l === lang ? 'true' : undefined}
+                  class="lang-item flex min-h-11 items-center justify-between gap-3 rounded-xl px-3 text-[0.95rem] hover:bg-surface-2">
+                  <span>{langMeta[l].label}</span>
+                  {l === lang && <Icon name="check" size={18} class="text-accent-text" />}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </details>
 
       <button type="button" class="ctl grid size-11 place-items-center rounded-full" data-theme-toggle
         data-label-dark={s.a11y.themeToDark} data-label-light={s.a11y.themeToLight} aria-label={s.a11y.themeToDark}>
@@ -153,16 +156,26 @@ const bookHref = url(lang, 'book') + (tripSlug ? `?trip=${tripSlug}` : '');
     --accent: #f2b252;
   }
   .nav-link:hover,
-  .lang-link:hover,
-  .ctl:hover {
+  .ctl:hover,
+  .lang-menu[open] > summary {
     background: color-mix(in oklab, currentColor 10%, transparent);
   }
   .nav-link[aria-current='page'] {
     box-shadow: inset 0 -2px 0 var(--accent);
     border-radius: 0;
   }
-  .lang-link[aria-current='true'] {
-    background: color-mix(in oklab, currentColor 12%, transparent);
+  .lang-menu > summary::-webkit-details-marker {
+    display: none;
+  }
+  .lang-menu:not([open]) .lang-list {
+    display: none;
+  }
+  .lang-item[aria-current='true'] {
+    font-weight: 600;
+  }
+  /* The list keeps normal colours even over the transparent hero header. */
+  .lang-list {
+    color: var(--ink);
   }
   .ctl option {
     color: var(--ink);
@@ -241,6 +254,18 @@ const bookHref = url(lang, 'book') + (tripSlug ? `?trip=${tripSlug}` : '');
       try { localStorage.setItem('lang', a.dataset.langLink!); } catch {}
     }),
   );
+
+  // Language menu: close on Escape (focus back to the button) and on outside click.
+  const langMenu = document.querySelector<HTMLDetailsElement>('[data-lang-menu]');
+  langMenu?.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && langMenu.open) {
+      langMenu.open = false;
+      langMenu.querySelector('summary')?.focus();
+    }
+  });
+  document.addEventListener('click', (e) => {
+    if (langMenu?.open && !langMenu.contains(e.target as Node)) langMenu.open = false;
+  });
 
   // Mobile menu: native <dialog> gives focus trapping and Escape to close.
   const dialog = document.querySelector<HTMLDialogElement>('[data-menu]');

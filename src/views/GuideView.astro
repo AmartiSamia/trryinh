@@ -9,7 +9,7 @@ import { t } from '../i18n/ui';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = t(lang);
-const intro = { en: 'Practical advice from Imlil: what to expect, when to go and what to bring.', fr: 'Des conseils pratiques depuis Imlil : à quoi s’attendre, quand partir et quoi emporter.', ar: 'نصائح عملية من إمليل: ماذا تتوقعون، متى تذهبون وماذا تحملون.' }[lang];
+const intro = { en: 'Practical advice from Imlil: what to expect, when to go and what to bring.', fr: 'Des conseils pratiques depuis Imlil : à quoi s’attendre, quand partir et quoi emporter.', es: 'Consejos prácticos desde Imlil: qué esperar, cuándo ir y qué llevar.', de: 'Praktische Tipps aus Imlil: was Sie erwartet, wann Sie reisen und was Sie mitnehmen sollten.', pt: 'Conselhos práticos a partir de Imlil: o que esperar, quando ir e o que levar.', ar: 'نصائح عملية من إمليل: ماذا تتوقعون، متى تذهبون وماذا تحملون.' }[lang];
 const articles = (await getCollection('guide', (a) => a.data.lang === lang)).sort((a, b) => +b.data.date - +a.data.date);
 const photos = await Promise.all(articles.map((a) => getEntry(a.data.photo)));
 const dateFmt = new Intl.DateTimeFormat(langMeta[lang].intl, { dateStyle: 'long' });

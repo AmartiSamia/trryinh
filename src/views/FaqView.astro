@@ -12,10 +12,13 @@ import { waLink } from '../lib/whatsapp';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = t(lang);
-const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+const L = <T,>(o: Record<Lang, T>) => o[lang];
 const c = L({
   en: { title: 'Frequently asked questions', intro: 'Booking, payment, safety, children, food and weather. Anything missing? Ask us directly.', more: 'Another question?', groups: { booking: 'Booking', payment: 'Payment', safety: 'Safety', children: 'Children', food: 'Food', weather: 'Weather' } },
   fr: { title: 'Questions fréquentes', intro: 'Réservation, paiement, sécurité, enfants, repas et météo. Une question manque ? Demandez-nous directement.', more: 'Une autre question ?', groups: { booking: 'Réservation', payment: 'Paiement', safety: 'Sécurité', children: 'Enfants', food: 'Repas', weather: 'Météo' } },
+  es: { title: 'Preguntas frecuentes', intro: 'Reserva, pago, seguridad, niños, comida y tiempo. ¿Falta algo? Pregúntenos directamente.', more: '¿Otra pregunta?', groups: { booking: 'Reserva', payment: 'Pago', safety: 'Seguridad', children: 'Niños', food: 'Comida', weather: 'Tiempo' } },
+  de: { title: 'Häufige Fragen', intro: 'Buchung, Zahlung, Sicherheit, Kinder, Essen und Wetter. Fehlt etwas? Fragen Sie uns direkt.', more: 'Noch eine Frage?', groups: { booking: 'Buchung', payment: 'Zahlung', safety: 'Sicherheit', children: 'Kinder', food: 'Essen', weather: 'Wetter' } },
+  pt: { title: 'Perguntas frequentes', intro: 'Reserva, pagamento, segurança, crianças, comida e tempo. Falta alguma coisa? Pergunte-nos diretamente.', more: 'Outra pergunta?', groups: { booking: 'Reserva', payment: 'Pagamento', safety: 'Segurança', children: 'Crianças', food: 'Comida', weather: 'Tempo' } },
   ar: { title: 'الأسئلة الشائعة', intro: 'الحجز والدفع والسلامة والأطفال والطعام والطقس. هل ينقصكم سؤال؟ اسألونا مباشرة.', more: 'سؤال آخر؟', groups: { booking: 'الحجز', payment: 'الدفع', safety: 'السلامة', children: 'الأطفال', food: 'الطعام', weather: 'الطقس' } },
 });
 const faqs = await getCollection('faq');

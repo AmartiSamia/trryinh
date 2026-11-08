@@ -5,47 +5,52 @@ popularity: 58
 title:
   en: Traditional hammam and massage
   fr: Hammam traditionnel et massage
+  es: Hammam tradicional y masaje
+  de: Traditioneller Hammam und Massage
+  pt: Hammam tradicional e massagem
   ar: حمام تقليدي وتدليك
 summary:
   en: The Moroccan way to rest after a trek or a day in the souks. Steam, black soap, a full scrub with the kessa glove, then an argan oil massage.
   fr: La façon marocaine de se reposer après un trek ou une journée dans les souks. Vapeur, savon noir, gommage au gant kessa, puis massage à l’huile d’argan.
+  es: La forma marroquí de descansar tras un trek o un día en los zocos. Vapor, jabón negro, exfoliación completa con el guante kessa y masaje con aceite de argán.
+  de: Die marokkanische Art, sich nach einem Trek oder einem Tag in den Souks zu erholen. Dampf, schwarze Seife, ein gründliches Peeling mit dem Kessa-Handschuh und eine Massage mit Arganöl.
+  pt: A forma marroquina de descansar depois de um trekking ou de um dia nos souks. Vapor, sabão preto, esfoliação completa com a luva kessa e massagem com óleo de argão.
   ar: الطريقة المغربية للاسترخاء بعد رحلة مشي أو يوم في الأسواق. البخار، الصابون البلدي، التكسيل بالكيس، ثم تدليك بزيت الأركان.
 about:
   en: >-
-    We book you into a clean, well-run hammam in the medina. An attendant takes you through the
-    steam rooms, washes you with black soap and scrubs you head to toe, then you relax with mint
-    tea before a massage with argan oil. Separate spaces for women and men; couples’ rooms on request.
+    We book you into a clean, well-run hammam in the medina. An attendant takes you through the steam rooms, washes you with black soap and scrubs you head to toe, then you relax with mint tea before a massage with argan oil. Separate spaces for women and men; couples’ rooms on request.
   fr: >-
-    Nous vous réservons un hammam propre et bien tenu dans la médina. Une préposée ou un préposé vous
-    accompagne dans les salles de vapeur, vous lave au savon noir et vous gomme de la tête aux pieds,
-    puis vous vous détendez avec un thé avant un massage à l’huile d’argan. Espaces séparés femmes et
-    hommes ; cabines pour couples sur demande.
+    Nous vous réservons un hammam propre et bien tenu dans la médina. Une préposée ou un préposé vous accompagne dans les salles de vapeur, vous lave au savon noir et vous gomme de la tête aux pieds, puis vous vous détendez avec un thé avant un massage à l’huile d’argan. Espaces séparés femmes et hommes ; cabines pour couples sur demande.
+  es: Le reservamos un hammam limpio y bien llevado en la medina. Una persona le acompaña por las salas de vapor, le lava con jabón negro y le exfolia de pies a cabeza; después se relaja con un té a la menta antes de un masaje con aceite de argán. Espacios separados para mujeres y hombres; cabinas para parejas bajo petición.
+  de: Wir buchen für Sie einen sauberen, gut geführten Hammam in der Medina. Eine Betreuerin oder ein Betreuer begleitet Sie durch die Dampfräume, wäscht Sie mit schwarzer Seife und peelt Sie von Kopf bis Fuß; danach entspannen Sie bei Minztee vor einer Massage mit Arganöl. Getrennte Bereiche für Frauen und Männer; Paarkabinen auf Anfrage.
+  pt: Reservamos-lhe um hammam limpo e bem gerido na medina. Uma pessoa acompanha-o pelas salas de vapor, lava-o com sabão preto e esfolia-o da cabeça aos pés; depois relaxa com chá de menta antes de uma massagem com óleo de argão. Espaços separados para mulheres e homens; cabines para casais a pedido.
   ar: >-
-    نحجز لكم في حمام نظيف ومنظم في المدينة العتيقة. يرافقكم مختص أو مختصة في غرف البخار، ويغسلكم بالصابون
-    البلدي ويكسّلكم من الرأس إلى القدمين، ثم تسترخون مع كأس شاي قبل التدليك بزيت الأركان. فضاءات منفصلة
-    للنساء والرجال، وغرف للأزواج عند الطلب.
+    نحجز لكم في حمام نظيف ومنظم في المدينة العتيقة. يرافقكم مختص أو مختصة في غرف البخار، ويغسلكم بالصابون البلدي ويكسّلكم من الرأس إلى القدمين، ثم تسترخون مع كأس شاي قبل التدليك بزيت الأركان. فضاءات منفصلة للنساء والرجال، وغرف للأزواج عند الطلب.
 days: 0.5
 hours: "2 h"
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+bestMonths: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
 price: { private: 350 }
 includes: { meals: false, transport: false, nights: false }
-photos: [hammam, mint-tea]
+photos: [ hammam, mint-tea ]
 highlights:
-  - { en: "Black soap and kessa scrub", fr: "Savon noir et gommage au kessa", ar: "الصابون البلدي والتكسيل بالكيس" }
-  - { en: "Argan oil massage", fr: "Massage à l’huile d’argan", ar: "تدليك بزيت الأركان" }
-  - { en: "Perfect after a trek", fr: "Parfait après un trek", ar: "مثالي بعد رحلة مشي" }
+  - { en: "Black soap and kessa scrub", fr: "Savon noir et gommage au kessa", es: "Jabón negro y exfoliación con kessa", de: "Schwarze Seife und Kessa-Peeling", pt: "Sabão preto e esfoliação com kessa", ar: "الصابون البلدي والتكسيل بالكيس" }
+  - { en: "Argan oil massage", fr: "Massage à l’huile d’argan", es: "Masaje con aceite de argán", de: "Massage mit Arganöl", pt: "Massagem com óleo de argão", ar: "تدليك بزيت الأركان" }
+  - { en: "Perfect after a trek", fr: "Parfait après un trek", es: "Perfecto después de un trek", de: "Perfekt nach einem Trek", pt: "Perfeito depois de um trekking", ar: "مثالي بعد رحلة مشي" }
 itinerary:
-  - title: { en: "Hammam and massage", fr: "Hammam et massage", ar: "الحمام والتدليك" }
-    text: { en: "Steam, scrub, rest and a 45-minute massage.", fr: "Vapeur, gommage, repos et massage de 45 minutes.", ar: "البخار، التكسيل، الراحة وتدليك لمدة 45 دقيقة." }
-included: [tea-snacks]
-excluded: [tips]
-pack: [swimwear]
+  - title: { en: "Hammam and massage", fr: "Hammam et massage", es: "Hammam y masaje", de: "Hammam und Massage", pt: "Hammam e massagem", ar: "الحمام والتدليك" }
+    text: { en: "Steam, scrub, rest and a 45-minute massage.", fr: "Vapeur, gommage, repos et massage de 45 minutes.", es: "Vapor, exfoliación, descanso y un masaje de 45 minutos.", de: "Dampf, Peeling, Ruhe und eine 45-minütige Massage.", pt: "Vapor, esfoliação, descanso e uma massagem de 45 minutos.", ar: "البخار، التكسيل، الراحة وتدليك لمدة 45 دقيقة." }
+included: [ tea-snacks ]
+excluded: [ tips ]
+pack: [ swimwear ]
 meetingPoint:
   en: "At the hammam in the medina (address sent with the booking)."
   fr: "Au hammam dans la médina (adresse envoyée à la réservation)."
+  es: En el hammam de la medina (la dirección se envía con la reserva).
+  de: Im Hammam in der Medina (Adresse kommt mit der Buchung).
+  pt: No hammam da medina (a morada é enviada com a reserva).
   ar: "في الحمام بالمدينة العتيقة (يُرسل العنوان مع الحجز)."
 mapStops:
   - { name: "Marrakech medina", lat: 31.6295, lng: -7.9870, kind: start }

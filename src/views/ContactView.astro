@@ -12,10 +12,13 @@ import { waLink } from '../lib/whatsapp';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = t(lang);
-const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+const L = <T,>(o: Record<Lang, T>) => o[lang];
 const c = L({
   en: { title: 'Contact', intro: 'The fastest way is WhatsApp. We answer every day, usually within a few hours.', where: 'Where we are', hours: 'Opening hours', hoursText: 'Open 24/7, every day of the year', note: 'Write at any time. Morocco time (GMT+1).', mapLabel: 'Map of Imlil' },
   fr: { title: 'Contact', intro: 'Le plus rapide, c’est WhatsApp. Nous répondons tous les jours, en général en quelques heures.', where: 'Où nous trouver', hours: 'Horaires', hoursText: 'Ouvert 24 h/24, 7 j/7, toute l’année', note: 'Écrivez-nous à toute heure. Heure du Maroc (GMT+1).', mapLabel: 'Carte d’Imlil' },
+  es: { title: 'Contacto', intro: 'Lo más rápido es WhatsApp. Respondemos todos los días, normalmente en pocas horas.', where: 'Dónde estamos', hours: 'Horario', hoursText: 'Abierto 24/7, todos los días del año', note: 'Escríbanos a cualquier hora. Hora de Marruecos (GMT+1).', mapLabel: 'Mapa de Imlil' },
+  de: { title: 'Kontakt', intro: 'Am schnellsten geht es per WhatsApp. Wir antworten jeden Tag, meist innerhalb weniger Stunden.', where: 'Wo wir sind', hours: 'Öffnungszeiten', hoursText: 'Rund um die Uhr geöffnet, an jedem Tag im Jahr', note: 'Schreiben Sie uns jederzeit. Marokkanische Zeit (GMT+1).', mapLabel: 'Karte von Imlil' },
+  pt: { title: 'Contacto', intro: 'O mais rápido é o WhatsApp. Respondemos todos os dias, normalmente em poucas horas.', where: 'Onde estamos', hours: 'Horário', hoursText: 'Aberto 24/7, todos os dias do ano', note: 'Escreva-nos a qualquer hora. Hora de Marrocos (GMT+1).', mapLabel: 'Mapa de Imlil' },
   ar: { title: 'اتصل بنا', intro: 'أسرع طريقة هي واتساب. نجيب كل يوم، عادة في غضون ساعات قليلة.', where: 'أين نحن', hours: 'أوقات العمل', hoursText: 'مفتوح 24 ساعة طوال أيام الأسبوع وطوال السنة', note: 'راسلونا في أي وقت. بتوقيت المغرب (GMT+1).', mapLabel: 'خريطة إمليل' },
 });
 const ways = [

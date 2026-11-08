@@ -5,54 +5,61 @@ popularity: 76
 title:
   en: Hot-air balloon flight at sunrise
   fr: Vol en montgolfière au lever du soleil
+  es: Vuelo en globo al amanecer
+  de: Heißluftballonfahrt bei Sonnenaufgang
+  pt: Voo de balão ao nascer do sol
   ar: رحلة بالمنطاد عند شروق الشمس
 summary:
   en: Float over the villages and fields north of Marrakech as the sun comes up over the Atlas. About one hour in the air, then breakfast in a Berber tent.
   fr: Survolez les villages et les champs au nord de Marrakech pendant que le soleil se lève sur l’Atlas. Environ une heure de vol, puis petit-déjeuner sous une tente berbère.
+  es: Sobrevuele los pueblos y campos al norte de Marrakech mientras sale el sol sobre el Atlas. Una hora de vuelo aproximadamente y después desayuno en una jaima bereber.
+  de: Schweben Sie über Dörfer und Felder nördlich von Marrakesch, während die Sonne über dem Atlas aufgeht. Etwa eine Stunde in der Luft, danach Frühstück in einem Berberzelt.
+  pt: Sobrevoe as aldeias e os campos a norte de Marraquexe enquanto o sol nasce sobre o Atlas. Cerca de uma hora no ar e depois pequeno-almoço numa tenda berbere.
   ar: حلّقوا فوق القرى والحقول شمال مراكش بينما تشرق الشمس فوق الأطلس. حوالي ساعة في الجو، ثم فطور في خيمة أمازيغية.
 about:
   en: >-
-    A very early pickup takes you to the launch site outside the city. While the balloon is
-    inflated you have tea; then you rise slowly to watch the sun light up the Jbilet hills and the
-    snowy High Atlas. After landing, a traditional breakfast and a certificate. Flights are run by a
-    licensed balloon company; we organise the booking and the transfer.
+    A very early pickup takes you to the launch site outside the city. While the balloon is inflated you have tea; then you rise slowly to watch the sun light up the Jbilet hills and the snowy High Atlas. After landing, a traditional breakfast and a certificate. Flights are run by a licensed balloon company; we organise the booking and the transfer.
   fr: >-
-    Prise en charge très matinale vers le site de décollage hors de la ville. Thé pendant le gonflage,
-    puis montée lente pour voir le soleil éclairer les collines des Jbilet et le Haut Atlas enneigé.
-    Après l’atterrissage, petit-déjeuner traditionnel et certificat. Les vols sont assurés par une
-    compagnie agréée ; nous organisons la réservation et le transfert.
+    Prise en charge très matinale vers le site de décollage hors de la ville. Thé pendant le gonflage, puis montée lente pour voir le soleil éclairer les collines des Jbilet et le Haut Atlas enneigé. Après l’atterrissage, petit-déjeuner traditionnel et certificat. Les vols sont assurés par une compagnie agréée ; nous organisons la réservation et le transfert.
+  es: Una recogida muy temprana le lleva al lugar de despegue a las afueras de la ciudad. Mientras se infla el globo toma un té; después sube despacio para ver cómo el sol ilumina las colinas de Jbilet y el Alto Atlas nevado. Tras el aterrizaje, desayuno tradicional y certificado. Los vuelos los realiza una compañía de globos autorizada; nosotros organizamos la reserva y el traslado.
+  de: Eine sehr frühe Abholung bringt Sie zum Startplatz außerhalb der Stadt. Während der Ballon gefüllt wird, gibt es Tee; dann steigen Sie langsam auf und sehen, wie die Sonne die Jbilet-Hügel und den verschneiten Hohen Atlas erleuchtet. Nach der Landung ein traditionelles Frühstück und eine Urkunde. Die Fahrten führt ein lizenziertes Ballonunternehmen durch; wir organisieren Buchung und Transfer.
+  pt: Uma recolha muito cedo leva-o ao local de descolagem fora da cidade. Enquanto o balão enche, bebe um chá; depois sobe devagar para ver o sol iluminar as colinas de Jbilet e o Alto Atlas nevado. Depois da aterragem, pequeno-almoço tradicional e certificado. Os voos são feitos por uma empresa de balões licenciada; nós tratamos da reserva e do transfer.
   ar: >-
-    يتم استقبالكم في وقت مبكر جدا إلى موقع الإقلاع خارج المدينة. تشربون الشاي أثناء نفخ المنطاد، ثم ترتفعون
-    ببطء لمشاهدة الشمس تضيء تلال الجبيلات والأطلس الكبير المثلج. بعد الهبوط، فطور تقليدي وشهادة. تُنظَّم
-    الرحلات من طرف شركة منطاد مرخصة، ونحن نتكفل بالحجز والنقل.
+    يتم استقبالكم في وقت مبكر جدا إلى موقع الإقلاع خارج المدينة. تشربون الشاي أثناء نفخ المنطاد، ثم ترتفعون ببطء لمشاهدة الشمس تضيء تلال الجبيلات والأطلس الكبير المثلج. بعد الهبوط، فطور تقليدي وشهادة. تُنظَّم الرحلات من طرف شركة منطاد مرخصة، ونحن نتكفل بالحجز والنقل.
 days: 0.5
 hours: "4 h"
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [1, 2, 3, 4, 5, 9, 10, 11, 12]
+bestMonths: [ 1, 2, 3, 4, 5, 9, 10, 11, 12 ]
 price: { shared: 2200 }
 includes: { meals: true, transport: true, nights: false }
-photos: [balloon, palmeraie]
+photos: [ balloon, palmeraie ]
 highlights:
-  - { en: "Sunrise over the Atlas from the sky", fr: "Lever du soleil sur l’Atlas vu du ciel", ar: "شروق الشمس فوق الأطلس من السماء" }
-  - { en: "About one hour of flight", fr: "Environ une heure de vol", ar: "حوالي ساعة من الطيران" }
-  - { en: "Breakfast after landing", fr: "Petit-déjeuner après l’atterrissage", ar: "فطور بعد الهبوط" }
+  - { en: "Sunrise over the Atlas from the sky", fr: "Lever du soleil sur l’Atlas vu du ciel", es: "Amanecer sobre el Atlas desde el cielo", de: "Sonnenaufgang über dem Atlas aus der Luft", pt: "Nascer do sol sobre o Atlas visto do céu", ar: "شروق الشمس فوق الأطلس من السماء" }
+  - { en: "About one hour of flight", fr: "Environ une heure de vol", es: "Una hora de vuelo aproximadamente", de: "Etwa eine Stunde Fahrt", pt: "Cerca de uma hora de voo", ar: "حوالي ساعة من الطيران" }
+  - { en: "Breakfast after landing", fr: "Petit-déjeuner après l’atterrissage", es: "Desayuno tras el aterrizaje", de: "Frühstück nach der Landung", pt: "Pequeno-almoço depois da aterragem", ar: "فطور بعد الهبوط" }
 itinerary:
-  - title: { en: "Balloon flight", fr: "Vol en montgolfière", ar: "رحلة المنطاد" }
-    text: { en: "Pickup before dawn, flight, breakfast, back at your riad by late morning.", fr: "Prise en charge avant l’aube, vol, petit-déjeuner, retour au riad en fin de matinée.", ar: "الاستقبال قبل الفجر، الطيران، الفطور، والعودة إلى الرياض قبل الظهر." }
-    meals: [breakfast]
-included: [pickup-hotel, tea-snacks, equipment]
-excluded: [tips, personal]
-pack: [layers, comfy-shoes]
+  - title: { en: "Balloon flight", fr: "Vol en montgolfière", es: "Vuelo en globo", de: "Ballonfahrt", pt: "Voo de balão", ar: "رحلة المنطاد" }
+    text: { en: "Pickup before dawn, flight, breakfast, back at your riad by late morning.", fr: "Prise en charge avant l’aube, vol, petit-déjeuner, retour au riad en fin de matinée.", es: "Recogida antes del amanecer, vuelo, desayuno y vuelta a su riad a media mañana.", de: "Abholung vor Sonnenaufgang, Fahrt, Frühstück, gegen Mittag zurück im Riad.", pt: "Recolha antes do amanhecer, voo, pequeno-almoço e regresso ao riad a meio da manhã.", ar: "الاستقبال قبل الفجر، الطيران، الفطور، والعودة إلى الرياض قبل الظهر." }
+    meals: [ breakfast ]
+included: [ pickup-hotel, tea-snacks, equipment ]
+excluded: [ tips, personal ]
+pack: [ layers, comfy-shoes ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "05:30"
 goodToKnow:
   - en: "Flights depend on the wind. If the pilot cancels, you choose another day or a full refund."
     fr: "Les vols dépendent du vent. Si le pilote annule, vous choisissez un autre jour ou un remboursement complet."
+    es: Los vuelos dependen del viento. Si el piloto cancela, elige otro día o el reembolso completo.
+    de: Die Fahrten hängen vom Wind ab. Sagt der Pilot ab, wählen Sie einen anderen Tag oder die volle Erstattung.
+    pt: Os voos dependem do vento. Se o piloto cancelar, escolhe outro dia ou o reembolso total.
     ar: "تعتمد الرحلات على الرياح. إذا ألغى الطيار الرحلة، تختارون يوما آخر أو استرجاع المبلغ كاملا."
 mapStops:
   - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }

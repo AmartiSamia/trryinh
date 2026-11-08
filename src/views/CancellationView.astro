@@ -2,48 +2,61 @@
 /**
  * Cancellation & refund policy (template).
  * TODO(youssef): fill in the real deadlines and refund amounts.
- * TODO(review-ar): Arabic text needs a native review.
+ * TODO(review-ar/es/de/pt): native review.
  */
 import LegalPage from '../components/LegalPage.astro';
 import { contact } from '../config';
-import type { Lang } from '../i18n/routes';
+import type { Lang, Text } from '../i18n/routes';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
-const tbc = { en: '<strong>[to be confirmed]</strong>', fr: '<strong>[à confirmer]</strong>', ar: '<strong>[سيتم تأكيده]</strong>' };
+const tbc: Text = { en: '<strong>[to be confirmed]</strong>', fr: '<strong>[à confirmer]</strong>', es: '<strong>[por confirmar]</strong>', de: '<strong>[wird bestätigt]</strong>', pt: '<strong>[a confirmar]</strong>', ar: '<strong>[سيتم تأكيده]</strong>' };
+const phone = `<span dir="ltr">${contact.phone}</span>`;
 const sections = [
   {
-    h: { en: 'If you cancel', fr: 'Si vous annulez', ar: 'إذا ألغيتم' },
+    h: { en: 'If you cancel', fr: 'Si vous annulez', es: 'Si usted cancela', de: 'Wenn Sie stornieren', pt: 'Se cancelar', ar: 'إذا ألغيتم' },
     p: [
       {
-        en: `Tell us as early as possible on WhatsApp (${contact.phone}) or by email (${contact.email}). The date of your message counts.`,
-        fr: `Prévenez-nous le plus tôt possible par WhatsApp (${contact.phone}) ou par e-mail (${contact.email}). La date de votre message fait foi.`,
-        ar: `أخبرونا في أقرب وقت عبر واتساب (<span dir="ltr">${contact.phone}</span>) أو البريد الإلكتروني (${contact.email}). يُعتمد تاريخ رسالتكم.`,
+        en: `Tell us as early as possible on WhatsApp (${phone}) or by email (${contact.email}). The date of your message counts.`,
+        fr: `Prévenez-nous le plus tôt possible par WhatsApp (${phone}) ou par e-mail (${contact.email}). La date de votre message fait foi.`,
+        es: `Avísenos lo antes posible por WhatsApp (${phone}) o por correo (${contact.email}). Cuenta la fecha de su mensaje.`,
+        de: `Sagen Sie uns so früh wie möglich per WhatsApp (${phone}) oder E-Mail (${contact.email}) Bescheid. Es zählt das Datum Ihrer Nachricht.`,
+        pt: `Avise-nos o mais cedo possível pelo WhatsApp (${phone}) ou por e-mail (${contact.email}). Conta a data da sua mensagem.`,
+        ar: `أخبرونا في أقرب وقت عبر واتساب (${phone}) أو البريد الإلكتروني (${contact.email}). يُعتمد تاريخ رسالتكم.`,
       },
       {
         en: `More than ${tbc.en} days before departure: ${tbc.en}. Between ${tbc.en} and ${tbc.en} days: ${tbc.en}. Less than ${tbc.en} days or no-show: ${tbc.en}.`,
         fr: `Plus de ${tbc.fr} jours avant le départ : ${tbc.fr}. Entre ${tbc.fr} et ${tbc.fr} jours : ${tbc.fr}. Moins de ${tbc.fr} jours ou absence : ${tbc.fr}.`,
+        es: `Más de ${tbc.es} días antes de la salida: ${tbc.es}. Entre ${tbc.es} y ${tbc.es} días: ${tbc.es}. Menos de ${tbc.es} días o no presentarse: ${tbc.es}.`,
+        de: `Mehr als ${tbc.de} Tage vor Abreise: ${tbc.de}. Zwischen ${tbc.de} und ${tbc.de} Tagen: ${tbc.de}. Weniger als ${tbc.de} Tage oder Nichterscheinen: ${tbc.de}.`,
+        pt: `Mais de ${tbc.pt} dias antes da partida: ${tbc.pt}. Entre ${tbc.pt} e ${tbc.pt} dias: ${tbc.pt}. Menos de ${tbc.pt} dias ou não comparência: ${tbc.pt}.`,
         ar: `أكثر من ${tbc.ar} يوما قبل الانطلاق: ${tbc.ar}. بين ${tbc.ar} و${tbc.ar} يوما: ${tbc.ar}. أقل من ${tbc.ar} يوما أو عدم الحضور: ${tbc.ar}.`,
       },
     ],
   },
   {
-    h: { en: 'If we cancel', fr: 'Si nous annulons', ar: 'إذا ألغينا' },
+    h: { en: 'If we cancel', fr: 'Si nous annulons', es: 'Si nosotros cancelamos', de: 'Wenn wir absagen', pt: 'Se nós cancelarmos', ar: 'إذا ألغينا' },
     p: [{
       en: `If a trip cannot run safely (weather, road closures, safety in the mountains), we offer another date or ${tbc.en}.`,
       fr: `Si un voyage ne peut pas avoir lieu en sécurité (météo, routes fermées, sécurité en montagne), nous proposons une autre date ou ${tbc.fr}.`,
+      es: `Si un viaje no puede hacerse con seguridad (tiempo, carreteras cortadas, seguridad en la montaña), proponemos otra fecha o ${tbc.es}.`,
+      de: `Kann eine Reise nicht sicher stattfinden (Wetter, gesperrte Straßen, Sicherheit in den Bergen), bieten wir einen anderen Termin oder ${tbc.de}.`,
+      pt: `Se uma viagem não puder decorrer em segurança (tempo, estradas cortadas, segurança na montanha), propomos outra data ou ${tbc.pt}.`,
       ar: `إذا تعذر تنظيم الرحلة بأمان (الطقس، إغلاق الطرق، السلامة في الجبل)، نقترح تاريخا آخر أو ${tbc.ar}.`,
     }],
   },
   {
-    h: { en: 'Changes and refunds', fr: 'Modifications et remboursements', ar: 'التعديلات والاسترداد' },
+    h: { en: 'Changes and refunds', fr: 'Modifications et remboursements', es: 'Cambios y reembolsos', de: 'Änderungen und Erstattungen', pt: 'Alterações e reembolsos', ar: 'التعديلات والاسترداد' },
     p: [{
       en: `Changing the date is free when possible (${tbc.en}). Refunds are paid by ${tbc.en} within ${tbc.en} days.`,
       fr: `Changer de date est gratuit quand c’est possible (${tbc.fr}). Les remboursements sont effectués par ${tbc.fr} sous ${tbc.fr} jours.`,
+      es: `Cambiar de fecha es gratis cuando es posible (${tbc.es}). Los reembolsos se hacen por ${tbc.es} en un plazo de ${tbc.es} días.`,
+      de: `Eine Terminänderung ist, wenn möglich, kostenlos (${tbc.de}). Erstattungen erfolgen per ${tbc.de} innerhalb von ${tbc.de} Tagen.`,
+      pt: `Mudar a data é gratuito quando possível (${tbc.pt}). Os reembolsos são feitos por ${tbc.pt} no prazo de ${tbc.pt} dias.`,
       ar: `تغيير التاريخ مجاني عندما يكون ممكنا (${tbc.ar}). يتم الاسترداد عبر ${tbc.ar} في غضون ${tbc.ar} يوما.`,
     }],
   },
 ];
 ---
-<LegalPage lang={lang} route="cancellation" updated="2026-11-07" sections={sections}
-  title={{ en: 'Cancellation and refunds', fr: 'Annulation et remboursement', ar: 'الإلغاء والاسترداد' }}
-  intro={{ en: 'Plans change. Here is what happens if you or we need to cancel.', fr: 'Les projets changent. Voici ce qui se passe si vous ou nous devons annuler.', ar: 'الخطط تتغير. إليكم ما يحدث إذا اضطررتم أو اضطررنا إلى الإلغاء.' }} />
+<LegalPage lang={lang} route="cancellation" updated="2026-11-08" sections={sections}
+  title={{ en: 'Cancellation and refunds', fr: 'Annulation et remboursement', es: 'Cancelación y reembolsos', de: 'Stornierung und Erstattung', pt: 'Cancelamento e reembolso', ar: 'الإلغاء والاسترداد' }}
+  intro={{ en: 'Plans change. Here is what happens if you or we need to cancel.', fr: 'Les projets changent. Voici ce qui se passe si vous ou nous devons annuler.', es: 'Los planes cambian. Esto es lo que pasa si usted o nosotros tenemos que cancelar.', de: 'Pläne ändern sich. So läuft es, wenn Sie oder wir absagen müssen.', pt: 'Os planos mudam. Eis o que acontece se você ou nós tivermos de cancelar.', ar: 'الخطط تتغير. إليكم ما يحدث إذا اضطررتم أو اضطررنا إلى الإلغاء.' }} />

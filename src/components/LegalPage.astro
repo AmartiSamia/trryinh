@@ -3,10 +3,9 @@
 import Base from '../layouts/Base.astro';
 import PageHeader from './PageHeader.astro';
 import Icon from './Icon.astro';
-import { alternates, langMeta, url, type Lang, type RouteKey } from '../i18n/routes';
+import { alternates, langMeta, url, type Lang, type RouteKey, type Text as L } from '../i18n/routes';
 import { legal } from '../config';
 
-type L = { en: string; fr: string; ar: string };
 interface Props {
   lang: Lang;
   route: RouteKey;
@@ -16,8 +15,15 @@ interface Props {
   updated: string;
 }
 const { lang, route, title, intro, sections, updated } = Astro.props;
-const draft = { en: 'Draft: this text is being finalised and may change. Ask us if anything is unclear.', fr: 'Brouillon : ce texte est en cours de validation et peut changer. Demandez-nous en cas de doute.', ar: 'مسودة: هذا النص قيد المراجعة وقد يتغير. اسألونا إذا كان هناك أي غموض.' };
-const upd = { en: 'Last updated', fr: 'Dernière mise à jour', ar: 'آخر تحديث' };
+const draft: L = {
+  en: 'Draft: this text is being finalised and may change. Ask us if anything is unclear.',
+  fr: 'Brouillon : ce texte est en cours de validation et peut changer. Demandez-nous en cas de doute.',
+  es: 'Borrador: este texto se está terminando y puede cambiar. Pregúntenos si algo no está claro.',
+  de: 'Entwurf: Dieser Text wird noch abgestimmt und kann sich ändern. Fragen Sie uns, wenn etwas unklar ist.',
+  pt: 'Rascunho: este texto está a ser finalizado e pode mudar. Pergunte-nos se algo não estiver claro.',
+  ar: 'مسودة: هذا النص قيد المراجعة وقد يتغير. اسألونا إذا كان هناك أي غموض.',
+};
+const upd: L = { en: 'Last updated', fr: 'Dernière mise à jour', es: 'Última actualización', de: 'Zuletzt aktualisiert', pt: 'Última atualização', ar: 'آخر تحديث' };
 const date = new Intl.DateTimeFormat(langMeta[lang].intl, { dateStyle: 'long' }).format(new Date(updated));
 ---
 <Base lang={lang} title={title[lang]} description={intro[lang]} alternates={alternates(route)}>

@@ -6,81 +6,97 @@ popularity: 50
 title:
   en: M’Goun summit trek, 4 days
   fr: Trek du M’Goun, 4 jours
+  es: Trek a la cumbre del M’Goun, 4 días
+  de: Trek auf den M’Goun, 4 Tage
+  pt: Trekking ao cume do M’Goun, 4 dias
   ar: رحلة قمة مكون، 4 أيام
 summary:
   en: Morocco’s third-highest summit (4,071 m), from the green Aït Bouguemez valley. Long ridges, wide views and nights under canvas.
   fr: Le troisième sommet du Maroc (4 071 m), depuis la verte vallée des Aït Bouguemez. Longues crêtes, grands horizons et nuits sous tente.
+  es: La tercera cumbre de Marruecos (4071 m), desde el verde valle de los Aït Bouguemez. Largas crestas, grandes vistas y noches en tienda.
+  de: Marokkos dritthöchster Gipfel (4.071 m), vom grünen Tal der Aït Bouguemez aus. Lange Grate, weite Ausblicke und Nächte im Zelt.
+  pt: O terceiro cume de Marrocos (4071 m), a partir do verde vale dos Aït Bouguemez. Longas cristas, grandes vistas e noites em tenda.
   ar: ثالث أعلى قمة في المغرب (4071 م)، انطلاقا من وادي آيت بوكماز الأخضر. سلاسل طويلة ومناظر واسعة وليالٍ في الخيام.
 about:
   en: >-
-    The M’Goun is a huge whaleback ridge in the Central High Atlas, far from Marrakech and far from
-    the crowds. You start in the Aït Bouguemez, the "happy valley", climb to the Tarkeddit plateau
-    and reach the summit along a long ridge with views over half of Morocco. A trek for walkers
-    who like space and silence.
+    The M’Goun is a huge whaleback ridge in the Central High Atlas, far from Marrakech and far from the crowds. You start in the Aït Bouguemez, the "happy valley", climb to the Tarkeddit plateau and reach the summit along a long ridge with views over half of Morocco. A trek for walkers who like space and silence.
   fr: >-
-    Le M’Goun est une immense crête en dos de baleine dans le Haut Atlas central, loin de Marrakech
-    et loin de la foule. Départ de la vallée des Aït Bouguemez, la « vallée heureuse », montée au
-    plateau de Tarkeddit et sommet par une longue crête avec vue sur la moitié du Maroc. Un trek pour
-    ceux qui aiment l’espace et le silence.
+    Le M’Goun est une immense crête en dos de baleine dans le Haut Atlas central, loin de Marrakech et loin de la foule. Départ de la vallée des Aït Bouguemez, la « vallée heureuse », montée au plateau de Tarkeddit et sommet par une longue crête avec vue sur la moitié du Maroc. Un trek pour ceux qui aiment l’espace et le silence.
+  es: El M’Goun es una enorme cresta en forma de lomo de ballena en el Alto Atlas central, lejos de Marrakech y de la multitud. Empieza en los Aït Bouguemez, el «valle feliz», sube a la meseta de Tarkeddit y alcanza la cumbre por una larga cresta con vistas sobre medio Marruecos. Un trek para quienes aman el espacio y el silencio.
+  de: Der M’Goun ist ein gewaltiger Walrücken im Zentralen Hohen Atlas, weit weg von Marrakesch und vom Trubel. Sie starten im Aït-Bouguemez-Tal, dem „glücklichen Tal“, steigen zur Hochebene von Tarkeddit auf und erreichen den Gipfel über einen langen Grat mit Blick über halb Marokko. Ein Trek für alle, die Weite und Stille lieben.
+  pt: O M’Goun é uma enorme crista em forma de dorso de baleia no Alto Atlas central, longe de Marraquexe e das multidões. Começa nos Aït Bouguemez, o «vale feliz», sobe ao planalto de Tarkeddit e chega ao cume por uma longa crista com vista sobre meio Marrocos. Um trekking para quem gosta de espaço e de silêncio.
   ar: >-
-    جبل مكون سلسلة ضخمة في الأطلس الكبير الأوسط، بعيدة عن مراكش وعن الزحام. تنطلقون من آيت بوكماز، "الوادي
-    السعيد"، وتصعدون إلى هضبة تاركديت، ثم تبلغون القمة عبر سلسلة طويلة تطل على نصف المغرب. رحلة لمن يحب
-    الفضاء والصمت.
+    جبل مكون سلسلة ضخمة في الأطلس الكبير الأوسط، بعيدة عن مراكش وعن الزحام. تنطلقون من آيت بوكماز، "الوادي السعيد"، وتصعدون إلى هضبة تاركديت، ثم تبلغون القمة عبر سلسلة طويلة تطل على نصف المغرب. رحلة لمن يحب الفضاء والصمت.
 days: 4
 nights: 3
 difficulty: challenging
 startCity: Marrakech
 endCity: Marrakech
 maxAltitude: 4071
-bestMonths: [5, 6, 7, 8, 9, 10]
+bestMonths: [ 5, 6, 7, 8, 9, 10 ]
 price: { shared: 3600 }
 includes: { meals: true, transport: true, nights: true }
-photos: [mgoun-arous, u-atlas-valley, mgoun-peak, mgoun-camp]
+photos: [ mgoun-arous, u-atlas-valley, mgoun-peak, mgoun-camp ]
 highlights:
-  - { en: "M’Goun summit (4,071 m)", fr: "Le sommet du M’Goun (4 071 m)", ar: "قمة مكون (4071 م)" }
-  - { en: "The Aït Bouguemez valley", fr: "La vallée des Aït Bouguemez", ar: "وادي آيت بوكماز" }
-  - { en: "Camping on the Tarkeddit plateau", fr: "Bivouac sur le plateau de Tarkeddit", ar: "التخييم في هضبة تاركديت" }
+  - { en: "M’Goun summit (4,071 m)", fr: "Le sommet du M’Goun (4 071 m)", es: "Cumbre del M’Goun (4071 m)", de: "Gipfel des M’Goun (4.071 m)", pt: "Cume do M’Goun (4071 m)", ar: "قمة مكون (4071 م)" }
+  - { en: "The Aït Bouguemez valley", fr: "La vallée des Aït Bouguemez", es: "El valle de los Aït Bouguemez", de: "Das Aït-Bouguemez-Tal", pt: "O vale dos Aït Bouguemez", ar: "وادي آيت بوكماز" }
+  - { en: "Camping on the Tarkeddit plateau", fr: "Bivouac sur le plateau de Tarkeddit", es: "Acampada en la meseta de Tarkeddit", de: "Zelten auf der Tarkeddit-Hochebene", pt: "Acampamento no planalto de Tarkeddit", ar: "التخييم في هضبة تاركديت" }
 itinerary:
-  - title: { en: "Marrakech to Aït Bouguemez", fr: "De Marrakech aux Aït Bouguemez", ar: "من مراكش إلى آيت بوكماز" }
+  - title: { en: "Marrakech to Aït Bouguemez", fr: "De Marrakech aux Aït Bouguemez", es: "De Marrakech a los Aït Bouguemez", de: "Von Marrakesch nach Aït Bouguemez", pt: "De Marraquexe aos Aït Bouguemez", ar: "من مراكش إلى آيت بوكماز" }
     text:
       en: "A long drive via Azilal into the valley. Short walk among the villages and fields."
       fr: "Longue route par Azilal jusqu’à la vallée. Courte balade entre villages et champs."
+      es: Una larga carretera por Azilal hasta el valle. Paseo corto entre pueblos y campos.
+      de: Eine lange Fahrt über Azilal ins Tal. Kurzer Spaziergang zwischen Dörfern und Feldern.
+      pt: Uma longa estrada por Azilal até ao vale. Pequeno passeio entre aldeias e campos.
       ar: "طريق طويل عبر أزيلال إلى الوادي. جولة قصيرة بين القرى والحقول."
     drive: 5 h
     sleep: { type: guesthouse, place: Aït Bouguemez }
-    meals: [lunch, dinner]
-  - title: { en: "Up to the Tarkeddit plateau", fr: "Montée au plateau de Tarkeddit", ar: "الصعود إلى هضبة تاركديت" }
+    meals: [ lunch, dinner ]
+  - title: { en: "Up to the Tarkeddit plateau", fr: "Montée au plateau de Tarkeddit", es: "Subida a la meseta de Tarkeddit", de: "Hinauf zur Tarkeddit-Hochebene", pt: "Subida ao planalto de Tarkeddit", ar: "الصعود إلى هضبة تاركديت" }
     text:
       en: "A steady climb out of the valley to the high plateau below the M’Goun ridge."
       fr: "Montée régulière hors de la vallée jusqu’au haut plateau sous la crête du M’Goun."
+      es: Una subida constante desde el valle hasta la alta meseta bajo la cresta del M’Goun.
+      de: Ein stetiger Aufstieg aus dem Tal zur Hochebene unterhalb des M’Goun-Grats.
+      pt: Uma subida constante do vale até ao planalto alto sob a crista do M’Goun.
       ar: "صعود منتظم من الوادي إلى الهضبة العالية تحت سلسلة مكون."
     walk: 6–7 h
     altitude: 2900
     sleep: { type: tent, place: Tarkeddit }
-    meals: [breakfast, lunch, dinner]
-  - title: { en: "M’Goun summit", fr: "Le sommet du M’Goun", ar: "قمة مكون" }
+    meals: [ breakfast, lunch, dinner ]
+  - title: { en: "M’Goun summit", fr: "Le sommet du M’Goun", es: "Cumbre del M’Goun", de: "Gipfel des M’Goun", pt: "Cume do M’Goun", ar: "قمة مكون" }
     text:
       en: "Early start up to the ridge and along it to the summit, then back down to camp."
       fr: "Départ tôt vers la crête puis jusqu’au sommet, et retour au camp."
+      es: Salida temprana hacia la cresta y por ella hasta la cumbre, y vuelta al campamento.
+      de: Früher Aufbruch zum Grat und über ihn zum Gipfel, dann zurück ins Camp.
+      pt: Partida cedo para a crista e por ela até ao cume, com regresso ao acampamento.
       ar: "انطلاق مبكر نحو السلسلة ثم إلى القمة، والعودة إلى المخيم."
     walk: 8–9 h
     altitude: 4071
     sleep: { type: tent, place: Tarkeddit }
-    meals: [breakfast, lunch, dinner]
-  - title: { en: "Down the valley and back to Marrakech", fr: "Descente et retour à Marrakech", ar: "النزول والعودة إلى مراكش" }
+    meals: [ breakfast, lunch, dinner ]
+  - title: { en: "Down the valley and back to Marrakech", fr: "Descente et retour à Marrakech", es: "Bajada por el valle y regreso a Marrakech", de: "Das Tal hinunter und zurück nach Marrakesch", pt: "Descida pelo vale e regresso a Marraquexe", ar: "النزول والعودة إلى مراكش" }
     text:
       en: "Walk down to the valley and drive back to Marrakech, arriving in the evening."
       fr: "Descente vers la vallée et retour à Marrakech en soirée."
+      es: Bajada al valle y regreso a Marrakech, con llegada por la noche.
+      de: Abstieg ins Tal und Rückfahrt nach Marrakesch mit Ankunft am Abend.
+      pt: Descida até ao vale e regresso a Marraquexe, com chegada à noite.
       ar: "النزول إلى الوادي والعودة إلى مراكش مساءً."
     walk: 4 h
     drive: 5 h
-    meals: [breakfast, lunch]
-included: [transport-marrakech, guide-mountain, cook, muleteer, meals-all, accommodation]
-excluded: [drinks, sleeping-bag, tips, insurance, personal]
-pack: [boots, layers, rain-jacket, gloves-hat, headlamp, sun-kit, bottle, daypack, sleeping-bag-pack, poles]
+    meals: [ breakfast, lunch ]
+included: [ transport-marrakech, guide-mountain, cook, muleteer, meals-all, accommodation ]
+excluded: [ drinks, sleeping-bag, tips, insurance, personal ]
+pack: [ boots, layers, rain-jacket, gloves-hat, headlamp, sun-kit, bottle, daypack, sleeping-bag-pack, poles ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "07:00"
 mapStops:

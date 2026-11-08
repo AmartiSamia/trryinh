@@ -30,19 +30,28 @@ export function plural(lang: Lang, n: number, forms: Forms): string {
 const dayForms: Record<Lang, Forms> = {
   en: { one: '1 day', other: '{n} days' },
   fr: { one: '1 jour', other: '{n} jours' },
+  es: { one: '1 día', other: '{n} días' },
+  de: { one: '1 Tag', other: '{n} Tage' },
+  pt: { one: '1 dia', other: '{n} dias' },
   ar: { one: 'يوم واحد', two: 'يومان', few: '{n} أيام', many: '{n} يوما', other: '{n} يوم' },
 };
 const nightForms: Record<Lang, Forms> = {
   en: { one: '1 night', other: '{n} nights' },
   fr: { one: '1 nuit', other: '{n} nuits' },
+  es: { one: '1 noche', other: '{n} noches' },
+  de: { one: '1 Nacht', other: '{n} Nächte' },
+  pt: { one: '1 noite', other: '{n} noites' },
   ar: { one: 'ليلة واحدة', two: 'ليلتان', few: '{n} ليالٍ', many: '{n} ليلة', other: '{n} ليلة' },
 };
 export const tripCountForms: Record<Lang, Forms> = {
   en: { one: '1 trip', other: '{n} trips' },
   fr: { one: '1 voyage', other: '{n} voyages' },
+  es: { one: '1 viaje', other: '{n} viajes' },
+  de: { one: '1 Reise', other: '{n} Reisen' },
+  pt: { one: '1 viagem', other: '{n} viagens' },
   ar: { one: 'رحلة واحدة', two: 'رحلتان', few: '{n} رحلات', many: '{n} رحلة', other: '{n} رحلة' },
 };
-const halfDay: Record<Lang, string> = { en: 'Half day', fr: 'Demi-journée', ar: 'نصف يوم' };
+const halfDay: Record<Lang, string> = { en: 'Half day', fr: 'Demi-journée', es: 'Medio día', de: 'Halber Tag', pt: 'Meio dia', ar: 'نصف يوم' };
 
 /** "3 days · 2 nights", "1 day", or "Half day · 3–4 h". */
 export function durationLabel(t: Trip, lang: Lang): string {

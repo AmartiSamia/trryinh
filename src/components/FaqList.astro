@@ -1,8 +1,7 @@
 ---
 /** Accordion of questions using native <details>: keyboard and screen-reader friendly with no JS. */
 import Icon from './Icon.astro';
-import type { Lang } from '../i18n/routes';
-type L = { en: string; fr: string; ar: string };
+import type { Lang, Text as L } from '../i18n/routes';
 interface Props { items: { q: L; a: L }[]; lang: Lang; headingLevel?: 'h3' | 'h4' }
 const { items, lang, headingLevel = 'h3' } = Astro.props;
 const H = headingLevel;

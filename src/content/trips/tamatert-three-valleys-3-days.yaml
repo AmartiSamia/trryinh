@@ -5,74 +5,87 @@ popularity: 60
 title:
   en: Tamatert and the three valleys, 3 days
   fr: Tamatert et les trois vallées, 3 jours
+  es: Tamatert y los tres valles, 3 días
+  de: Tamatert und die drei Täler, 3 Tage
+  pt: Tamatert e os três vales, 3 dias
   ar: تماترت والوديان الثلاثة، 3 أيام
 summary:
   en: Village to village through the Imlil, Imnane and Ourika valleys. Guesthouse nights, terraced fields and easy-going mountain paths.
   fr: De village en village entre les vallées d’Imlil, d’Imnane et de l’Ourika. Nuits en gîte, cultures en terrasses et sentiers de montagne sans difficulté.
+  es: De pueblo en pueblo por los valles de Imlil, Imnane y Ourika. Noches en casas de huéspedes, bancales y senderos de montaña cómodos.
+  de: Von Dorf zu Dorf durch die Täler von Imlil, Imnane und Ourika. Nächte in Gästehäusern, Terrassenfelder und angenehme Bergwege.
+  pt: De aldeia em aldeia pelos vales de Imlil, Imnane e Ourika. Noites em casas de hóspedes, socalcos e trilhos de montanha acessíveis.
   ar: من قرية إلى قرية عبر وديان إمليل وإمنان وأوريكا. ليالٍ في دور الضيافة، حقول مدرجة ومسالك جبلية سهلة.
 about:
   en: >-
-    The best trek if you want to see how people live in the High Atlas. You cross Tizi n’Tamatert
-    from Imlil into the Imnane valley, then over to the upper Ourika valley, sleeping in family
-    guesthouses. Walks are 4–6 hours a day on good paths, with tea stops in villages and views of
-    the Toubkal peaks behind you.
+    The best trek if you want to see how people live in the High Atlas. You cross Tizi n’Tamatert from Imlil into the Imnane valley, then over to the upper Ourika valley, sleeping in family guesthouses. Walks are 4–6 hours a day on good paths, with tea stops in villages and views of the Toubkal peaks behind you.
   fr: >-
-    Le meilleur trek pour voir comment on vit dans le Haut Atlas. Vous passez le Tizi n’Tamatert
-    d’Imlil vers la vallée d’Imnane, puis rejoignez la haute vallée de l’Ourika, en dormant dans des
-    gîtes familiaux. 4 à 6 h de marche par jour sur de bons sentiers, avec des pauses thé dans les
-    villages et les sommets du Toubkal derrière vous.
+    Le meilleur trek pour voir comment on vit dans le Haut Atlas. Vous passez le Tizi n’Tamatert d’Imlil vers la vallée d’Imnane, puis rejoignez la haute vallée de l’Ourika, en dormant dans des gîtes familiaux. 4 à 6 h de marche par jour sur de bons sentiers, avec des pauses thé dans les villages et les sommets du Toubkal derrière vous.
+  es: El mejor trek para ver cómo se vive en el Alto Atlas. Cruza el Tizi n’Tamatert desde Imlil al valle de Imnane y después pasa al alto valle del Ourika, durmiendo en casas familiares. Caminatas de 4–6 horas al día por buenos senderos, con paradas para el té en los pueblos y las cumbres del Toubkal a la espalda.
+  de: Der beste Trek, um zu sehen, wie man im Hohen Atlas lebt. Sie überqueren den Tizi n’Tamatert von Imlil ins Imnane-Tal und wechseln dann ins obere Ourika-Tal, übernachtet wird in Familien-Gästehäusern. 4–6 Stunden Gehzeit pro Tag auf guten Wegen, mit Teepausen in den Dörfern und den Toubkal-Gipfeln im Rücken.
+  pt: O melhor trekking para ver como se vive no Alto Atlas. Atravessa o Tizi n’Tamatert de Imlil para o vale de Imnane e depois passa para o alto vale de Ourika, dormindo em casas de família. Caminhadas de 4–6 horas por dia em bons trilhos, com paragens para chá nas aldeias e os cumes do Toubkal nas suas costas.
   ar: >-
-    أفضل رحلة لرؤية كيف يعيش الناس في الأطلس الكبير. تعبرون تيزي نتماترت من إمليل إلى وادي إمنان، ثم إلى
-    أعالي وادي أوريكا، وتبيتون في دور ضيافة عائلية. من 4 إلى 6 ساعات من المشي يوميا على مسالك جيدة، مع
-    استراحات شاي في القرى وقمم توبقال خلفكم.
+    أفضل رحلة لرؤية كيف يعيش الناس في الأطلس الكبير. تعبرون تيزي نتماترت من إمليل إلى وادي إمنان، ثم إلى أعالي وادي أوريكا، وتبيتون في دور ضيافة عائلية. من 4 إلى 6 ساعات من المشي يوميا على مسالك جيدة، مع استراحات شاي في القرى وقمم توبقال خلفكم.
 days: 3
 nights: 2
 difficulty: moderate
 startCity: Marrakech
 endCity: Marrakech
 maxAltitude: 2600
-bestMonths: [3, 4, 5, 6, 9, 10, 11]
+bestMonths: [ 3, 4, 5, 6, 9, 10, 11 ]
 price: { shared: 1450 }
 includes: { meals: true, transport: true, nights: true }
-photos: [u-atlas-houses, imlil-2, tacheddirt, imlil-3, ourika]
+photos: [ u-atlas-houses, imlil-2, tacheddirt, imlil-3, ourika ]
 highlights:
-  - { en: "Three valleys in three days", fr: "Trois vallées en trois jours", ar: "ثلاثة وديان في ثلاثة أيام" }
-  - { en: "Nights with Amazigh families", fr: "Nuits chez des familles amazighes", ar: "ليالٍ عند عائلات أمازيغية" }
-  - { en: "Good for families and first treks", fr: "Idéal en famille ou pour un premier trek", ar: "مناسبة للعائلات ولأول تجربة مشي" }
+  - { en: "Three valleys in three days", fr: "Trois vallées en trois jours", es: "Tres valles en tres días", de: "Drei Täler in drei Tagen", pt: "Três vales em três dias", ar: "ثلاثة وديان في ثلاثة أيام" }
+  - { en: "Nights with Amazigh families", fr: "Nuits chez des familles amazighes", es: "Noches con familias amazighs", de: "Nächte bei Amazigh-Familien", pt: "Noites com famílias amazigh", ar: "ليالٍ عند عائلات أمازيغية" }
+  - { en: "Good for families and first treks", fr: "Idéal en famille ou pour un premier trek", es: "Ideal para familias y primeros treks", de: "Ideal für Familien und den ersten Trek", pt: "Ideal para famílias e primeiros trekkings", ar: "مناسبة للعائلات ولأول تجربة مشي" }
 itinerary:
-  - title: { en: "Imlil to the Imnane valley", fr: "D’Imlil à la vallée d’Imnane", ar: "من إمليل إلى وادي إمنان" }
+  - title: { en: "Imlil to the Imnane valley", fr: "D’Imlil à la vallée d’Imnane", es: "De Imlil al valle de Imnane", de: "Von Imlil ins Imnane-Tal", pt: "De Imlil ao vale de Imnane", ar: "من إمليل إلى وادي إمنان" }
     text:
       en: "Drive to Imlil, then walk up to Tizi n’Tamatert (2,279 m) and down into the Imnane valley."
       fr: "Route vers Imlil, puis montée au Tizi n’Tamatert (2 279 m) et descente dans la vallée d’Imnane."
+      es: Carretera a Imlil, subida al Tizi n’Tamatert (2279 m) y bajada al valle de Imnane.
+      de: Fahrt nach Imlil, dann Aufstieg zum Tizi n’Tamatert (2.279 m) und Abstieg ins Imnane-Tal.
+      pt: Estrada até Imlil, subida ao Tizi n’Tamatert (2279 m) e descida ao vale de Imnane.
       ar: "التوجه إلى إمليل، ثم الصعود إلى تيزي نتماترت (2279 م) والنزول إلى وادي إمنان."
     drive: 1 h 45
     walk: 4 h
     altitude: 2279
     sleep: { type: guesthouse, place: Imnane valley }
-    meals: [lunch, dinner]
-  - title: { en: "Over to the Ourika side", fr: "Vers le versant de l’Ourika", ar: "نحو جهة أوريكا" }
+    meals: [ lunch, dinner ]
+  - title: { en: "Over to the Ourika side", fr: "Vers le versant de l’Ourika", es: "Hacia el lado del Ourika", de: "Hinüber auf die Ourika-Seite", pt: "Para o lado de Ourika", ar: "نحو جهة أوريكا" }
     text:
       en: "A higher pass towards the Ourika valley, through shepherds’ summer pastures."
       fr: "Un col plus haut vers la vallée de l’Ourika, à travers les pâturages d’été des bergers."
+      es: Un puerto más alto hacia el valle del Ourika, por los pastos de verano de los pastores.
+      de: Ein höherer Pass Richtung Ourika-Tal, durch die Sommerweiden der Hirten.
+      pt: Um passo mais alto em direção ao vale de Ourika, pelas pastagens de verão dos pastores.
       ar: "ممر أعلى نحو وادي أوريكا عبر المراعي الصيفية للرعاة."
     walk: 5–6 h
     altitude: 2600
     sleep: { type: guesthouse, place: Ourika valley }
-    meals: [breakfast, lunch, dinner]
-  - title: { en: "Down the valley to Marrakech", fr: "Descente de la vallée et Marrakech", ar: "النزول في الوادي إلى مراكش" }
+    meals: [ breakfast, lunch, dinner ]
+  - title: { en: "Down the valley to Marrakech", fr: "Descente de la vallée et Marrakech", es: "Bajada por el valle hasta Marrakech", de: "Das Tal hinab nach Marrakesch", pt: "Descida pelo vale até Marraquexe", ar: "النزول في الوادي إلى مراكش" }
     text:
       en: "A last morning walk down through the villages, then the car back to Marrakech."
       fr: "Une dernière marche matinale à travers les villages, puis retour en voiture à Marrakech."
+      es: Una última caminata matinal entre los pueblos y luego el coche de vuelta a Marrakech.
+      de: Eine letzte Morgenwanderung durch die Dörfer, dann mit dem Auto zurück nach Marrakesch.
+      pt: Uma última caminhada matinal pelas aldeias e depois o carro de volta a Marraquexe.
       ar: "مشي صباحي أخير عبر القرى، ثم العودة بالسيارة إلى مراكش."
     walk: 3 h
     drive: 1 h 30
-    meals: [breakfast, lunch]
-included: [transport-marrakech, guide-mountain, meals-all, accommodation, muleteer]
-excluded: [drinks, tips, insurance, personal]
-pack: [boots, layers, rain-jacket, sun-kit, bottle, daypack]
+    meals: [ breakfast, lunch ]
+included: [ transport-marrakech, guide-mountain, meals-all, accommodation, muleteer ]
+excluded: [ drinks, tips, insurance, personal ]
+pack: [ boots, layers, rain-jacket, sun-kit, bottle, daypack ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "08:00"
 mapStops:

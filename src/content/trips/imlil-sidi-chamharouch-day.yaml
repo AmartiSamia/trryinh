@@ -6,55 +6,62 @@ popularity: 80
 title:
   en: Imlil and Sidi Chamharouch day hike
   fr: Randonnée d’une journée à Imlil et Sidi Chamharouch
+  es: Caminata de un día a Imlil y Sidi Chamharouch
+  de: Tageswanderung Imlil und Sidi Chamharouch
+  pt: Caminhada de um dia a Imlil e Sidi Chamharouch
   ar: رحلة مشي ليوم واحد إلى إمليل وسيدي شمهروش
 summary:
   en: A real taste of the High Atlas in one day. Walk from Imlil through Aroumd to the shrine of Sidi Chamharouch, with lunch in a village house.
   fr: Un vrai goût du Haut Atlas en une journée. Marche d’Imlil à Aroumd puis au sanctuaire de Sidi Chamharouch, avec déjeuner chez l’habitant.
+  es: Un auténtico Alto Atlas en un solo día. Caminata desde Imlil por Aroumd hasta el santuario de Sidi Chamharouch, con almuerzo en una casa del pueblo.
+  de: Der Hohe Atlas an einem Tag. Wanderung von Imlil über Aroumd zum Heiligtum Sidi Chamharouch, mit Mittagessen in einem Dorfhaus.
+  pt: O verdadeiro Alto Atlas num só dia. Caminhada desde Imlil por Aroumd até ao santuário de Sidi Chamharouch, com almoço numa casa da aldeia.
   ar: لمحة حقيقية عن الأطلس الكبير في يوم واحد. مشي من إمليل عبر أرومد إلى ضريح سيدي شمهروش، مع غداء في بيت قروي.
 about:
   en: >-
-    Leave Marrakech in the morning and be walking in the mountains before 10. From Imlil the path
-    climbs to Aroumd, the highest village of the valley, crosses the wide riverbed and follows the
-    Mizane up to Sidi Chamharouch, a pilgrimage place built around a huge white rock. Lunch is
-    tagine in a local house; back in Marrakech before dark.
+    Leave Marrakech in the morning and be walking in the mountains before 10. From Imlil the path climbs to Aroumd, the highest village of the valley, crosses the wide riverbed and follows the Mizane up to Sidi Chamharouch, a pilgrimage place built around a huge white rock. Lunch is tagine in a local house; back in Marrakech before dark.
   fr: >-
-    Départ de Marrakech le matin et marche en montagne avant 10 h. D’Imlil, le sentier monte à Aroumd,
-    le plus haut village de la vallée, traverse le large lit de la rivière et suit la Mizane jusqu’à
-    Sidi Chamharouch, lieu de pèlerinage bâti autour d’un énorme rocher blanc. Déjeuner : tajine chez
-    l’habitant ; retour à Marrakech avant la nuit.
+    Départ de Marrakech le matin et marche en montagne avant 10 h. D’Imlil, le sentier monte à Aroumd, le plus haut village de la vallée, traverse le large lit de la rivière et suit la Mizane jusqu’à Sidi Chamharouch, lieu de pèlerinage bâti autour d’un énorme rocher blanc. Déjeuner : tajine chez l’habitant ; retour à Marrakech avant la nuit.
+  es: "Sale de Marrakech por la mañana y antes de las 10 ya camina por la montaña. Desde Imlil el sendero sube a Aroumd, el pueblo más alto del valle, cruza el ancho lecho del río y sigue el Mizane hasta Sidi Chamharouch, lugar de peregrinación construido junto a una enorme roca blanca. Almuerzo: tajín en una casa local; vuelta a Marrakech antes de que anochezca."
+  de: Morgens Abfahrt in Marrakesch, vor 10 Uhr sind Sie schon in den Bergen unterwegs. Von Imlil steigt der Weg nach Aroumd, dem höchsten Dorf des Tals, quert das breite Flussbett und folgt dem Mizane bis Sidi Chamharouch, einem Wallfahrtsort an einem riesigen weißen Felsen. Mittags gibt es Tajine in einem Haus im Dorf; vor Einbruch der Dunkelheit sind Sie zurück in Marrakesch.
+  pt: "Sai de Marraquexe de manhã e antes das 10 já está a caminhar na montanha. De Imlil o trilho sobe a Aroumd, a aldeia mais alta do vale, atravessa o largo leito do rio e segue o Mizane até Sidi Chamharouch, um local de peregrinação construído junto a uma enorme rocha branca. Almoço: tajine numa casa local; regresso a Marraquexe antes de anoitecer."
   ar: >-
-    تغادرون مراكش صباحا وتبدؤون المشي في الجبال قبل العاشرة. من إمليل يصعد المسار إلى أرومد، أعلى قرية في
-    الوادي، ثم يعبر مجرى النهر الواسع ويتبع وادي ميزان حتى سيدي شمهروش، مكان الزيارة المبني حول صخرة بيضاء
-    ضخمة. الغداء طاجين في بيت محلي، والعودة إلى مراكش قبل حلول الظلام.
+    تغادرون مراكش صباحا وتبدؤون المشي في الجبال قبل العاشرة. من إمليل يصعد المسار إلى أرومد، أعلى قرية في الوادي، ثم يعبر مجرى النهر الواسع ويتبع وادي ميزان حتى سيدي شمهروش، مكان الزيارة المبني حول صخرة بيضاء ضخمة. الغداء طاجين في بيت محلي، والعودة إلى مراكش قبل حلول الظلام.
 days: 1
 difficulty: moderate
 startCity: Marrakech
 endCity: Marrakech
 maxAltitude: 2350
-bestMonths: [3, 4, 5, 6, 7, 8, 9, 10, 11]
+bestMonths: [ 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
 price: { shared: 600, private: 850 }
 includes: { meals: true, transport: true, nights: false }
-photos: [u-atlas-horse, chamharouch, aroumd, imlil-from-aroumd, imlil]
+photos: [ u-atlas-horse, chamharouch, aroumd, imlil-from-aroumd, imlil ]
 highlights:
-  - { en: "High Atlas in a single day", fr: "Le Haut Atlas en une seule journée", ar: "الأطلس الكبير في يوم واحد" }
-  - { en: "The village of Aroumd", fr: "Le village d’Aroumd", ar: "قرية أرومد" }
-  - { en: "Lunch in a village house", fr: "Déjeuner chez l’habitant", ar: "غداء في بيت قروي" }
+  - { en: "High Atlas in a single day", fr: "Le Haut Atlas en une seule journée", es: "El Alto Atlas en un solo día", de: "Der Hohe Atlas an einem einzigen Tag", pt: "O Alto Atlas num só dia", ar: "الأطلس الكبير في يوم واحد" }
+  - { en: "The village of Aroumd", fr: "Le village d’Aroumd", es: "El pueblo de Aroumd", de: "Das Dorf Aroumd", pt: "A aldeia de Aroumd", ar: "قرية أرومد" }
+  - { en: "Lunch in a village house", fr: "Déjeuner chez l’habitant", es: "Almuerzo en una casa del pueblo", de: "Mittagessen in einem Dorfhaus", pt: "Almoço numa casa da aldeia", ar: "غداء في بيت قروي" }
 itinerary:
-  - title: { en: "Imlil, Aroumd and Sidi Chamharouch", fr: "Imlil, Aroumd et Sidi Chamharouch", ar: "إمليل، أرومد وسيدي شمهروش" }
+  - title: { en: "Imlil, Aroumd and Sidi Chamharouch", fr: "Imlil, Aroumd et Sidi Chamharouch", es: "Imlil, Aroumd y Sidi Chamharouch", de: "Imlil, Aroumd und Sidi Chamharouch", pt: "Imlil, Aroumd e Sidi Chamharouch", ar: "إمليل، أرومد وسيدي شمهروش" }
     text:
       en: "Drive to Imlil, walk via Aroumd to Sidi Chamharouch and back, with lunch on the way. Drive back to Marrakech."
       fr: "Route vers Imlil, marche par Aroumd jusqu’à Sidi Chamharouch et retour, déjeuner en chemin. Retour à Marrakech."
+      es: Carretera a Imlil, caminata por Aroumd hasta Sidi Chamharouch y vuelta, con almuerzo en el camino. Regreso a Marrakech.
+      de: Fahrt nach Imlil, Wanderung über Aroumd nach Sidi Chamharouch und zurück, Mittagessen unterwegs. Rückfahrt nach Marrakesch.
+      pt: Estrada até Imlil, caminhada por Aroumd até Sidi Chamharouch e volta, com almoço pelo caminho. Regresso a Marraquexe.
       ar: "التوجه إلى إمليل، والمشي عبر أرومد إلى سيدي شمهروش والعودة، مع الغداء في الطريق. ثم الرجوع إلى مراكش."
     drive: 1 h 45 each way
     walk: 5–6 h
     altitude: 2350
-    meals: [lunch]
-included: [pickup-hotel, guide-mountain, lunch, tea-snacks]
-excluded: [drinks, tips, personal]
-pack: [boots, layers, sun-kit, bottle, daypack]
+    meals: [ lunch ]
+included: [ pickup-hotel, guide-mountain, lunch, tea-snacks ]
+excluded: [ drinks, tips, personal ]
+pack: [ boots, layers, sun-kit, bottle, daypack ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "08:00"
 mapStops:

@@ -14,7 +14,7 @@ import { contact } from '../config';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = t(lang);
-const L = <T,>(o: { en: T; fr: T; ar: T }) => o[lang];
+const L = <T,>(o: Record<Lang, T>) => o[lang];
 
 const c = L({
   en: {
@@ -49,6 +49,54 @@ const c = L({
     msgWhere: 'Où', msgWhen: 'Quand', msgDays: 'Jours', msgWho: 'Voyageurs', msgBudget: 'Budget par personne', msgInterests: 'Centres d’intérêt', msgStyle: 'Formule', msgName: 'Nom', msgLang: 'Langue : français',
     flexibleMsg: 'flexible',
   },
+  es: {
+    title: 'Planificar un viaje a medida',
+    intro: 'Cinco preguntas rápidas. Leemos cada solicitud y respondemos con una ruta y un precio claro, normalmente en un día.',
+    step: 'Paso {i} de {n}',
+    back: 'Atrás', next: 'Siguiente',
+    s1: '¿Adónde le gustaría ir?', s1help: 'Elija todos los que quiera.',
+    s2: '¿Cuándo y durante cuánto tiempo?', dateFrom: 'Fecha de llegada (aproximada vale)', flexible: 'Mis fechas son flexibles', days: 'Número de días',
+    s3: '¿Quién viaja?', adults: 'Adultos', children: 'Niños (menores de 12)', style: 'Tipo',
+    s4: 'Presupuesto por persona', s4help: 'Para todo lo que organizamos (sin vuelos). Nos ayuda a proponer el nivel de comodidad adecuado.',
+    s5: '¿Cómo podemos contactarle?', interests: '¿Qué le gusta?',
+    sendWa: 'Enviar por WhatsApp', sendEmail: 'Enviar por correo', or: 'o',
+    errPlace: 'Elija al menos un lugar, o «Aún no lo sé».',
+    msgHello: 'Hola Iberdan, me gustaría un viaje a medida.',
+    msgWhere: 'Dónde', msgWhen: 'Cuándo', msgDays: 'Días', msgWho: 'Viajeros', msgBudget: 'Presupuesto por persona', msgInterests: 'Intereses', msgStyle: 'Tipo', msgName: 'Nombre', msgLang: 'Idioma: español',
+    flexibleMsg: 'flexibles',
+  },
+  de: {
+    title: 'Individuelle Reise planen',
+    intro: 'Fünf kurze Fragen. Wir lesen jede Anfrage und antworten mit einer Route und einem klaren Preis, meist innerhalb eines Tages.',
+    step: 'Schritt {i} von {n}',
+    back: 'Zurück', next: 'Weiter',
+    s1: 'Wohin möchten Sie?', s1help: 'Wählen Sie so viele, wie Sie möchten.',
+    s2: 'Wann und wie lange?', dateFrom: 'Ankunftsdatum (ungefähr reicht)', flexible: 'Meine Termine sind flexibel', days: 'Anzahl der Tage',
+    s3: 'Wer reist?', adults: 'Erwachsene', children: 'Kinder (unter 12)', style: 'Reiseart',
+    s4: 'Budget pro Person', s4help: 'Für alles, was wir organisieren (ohne Flüge). So können wir den passenden Komfort vorschlagen.',
+    s5: 'Wie erreichen wir Sie?', interests: 'Was mögen Sie?',
+    sendWa: 'Per WhatsApp senden', sendEmail: 'Per E-Mail senden', or: 'oder',
+    errPlace: 'Wählen Sie mindestens einen Ort oder „Weiß ich noch nicht“.',
+    msgHello: 'Hallo Iberdan, ich möchte eine individuelle Reise.',
+    msgWhere: 'Wohin', msgWhen: 'Wann', msgDays: 'Tage', msgWho: 'Reisende', msgBudget: 'Budget pro Person', msgInterests: 'Interessen', msgStyle: 'Reiseart', msgName: 'Name', msgLang: 'Sprache: Deutsch',
+    flexibleMsg: 'flexibel',
+  },
+  pt: {
+    title: 'Planear uma viagem à medida',
+    intro: 'Cinco perguntas rápidas. Lemos cada pedido e respondemos com um percurso e um preço claro, normalmente num dia.',
+    step: 'Passo {i} de {n}',
+    back: 'Voltar', next: 'Seguinte',
+    s1: 'Para onde gostaria de ir?', s1help: 'Escolha os que quiser.',
+    s2: 'Quando e por quanto tempo?', dateFrom: 'Data de chegada (aproximada serve)', flexible: 'As minhas datas são flexíveis', days: 'Número de dias',
+    s3: 'Quem viaja?', adults: 'Adultos', children: 'Crianças (menos de 12)', style: 'Tipo',
+    s4: 'Orçamento por pessoa', s4help: 'Para tudo o que organizamos (sem voos). Ajuda-nos a propor o nível de conforto certo.',
+    s5: 'Como o podemos contactar?', interests: 'Do que gosta?',
+    sendWa: 'Enviar pelo WhatsApp', sendEmail: 'Enviar por e-mail', or: 'ou',
+    errPlace: 'Escolha pelo menos um lugar, ou «Ainda não sei».',
+    msgHello: 'Olá Iberdan, gostaria de uma viagem à medida.',
+    msgWhere: 'Onde', msgWhen: 'Quando', msgDays: 'Dias', msgWho: 'Viajantes', msgBudget: 'Orçamento por pessoa', msgInterests: 'Interesses', msgStyle: 'Tipo', msgName: 'Nome', msgLang: 'Idioma: português',
+    flexibleMsg: 'flexíveis',
+  },
   ar: {
     title: 'خطط لرحلة حسب الطلب',
     intro: 'خمسة أسئلة سريعة. نقرأ كل طلب ونرد بمسار وسعر واضح، عادة في غضون يوم.',
@@ -70,17 +118,26 @@ const c = L({
 const places = L({
   en: ['High Atlas & Toubkal', 'Sahara desert', 'Marrakech', 'Fes & the north', 'Chefchaouen', 'Essaouira & the coast', 'Gorges & kasbahs', 'Not sure yet'],
   fr: ['Haut Atlas & Toubkal', 'Désert du Sahara', 'Marrakech', 'Fès & le nord', 'Chefchaouen', 'Essaouira & la côte', 'Gorges & kasbahs', 'Je ne sais pas encore'],
+  es: ['Alto Atlas y Toubkal', 'Desierto del Sáhara', 'Marrakech', 'Fez y el norte', 'Chefchaouen', 'Essaouira y la costa', 'Gargantas y kasbahs', 'Aún no lo sé'],
+  de: ['Hoher Atlas & Toubkal', 'Sahara', 'Marrakesch', 'Fès & der Norden', 'Chefchaouen', 'Essaouira & die Küste', 'Schluchten & Kasbahs', 'Weiß ich noch nicht'],
+  pt: ['Alto Atlas e Toubkal', 'Deserto do Sara', 'Marraquexe', 'Fez e o norte', 'Chefchaouen', 'Essaouira e a costa', 'Gargantas e kasbahs', 'Ainda não sei'],
   ar: ['الأطلس الكبير وتوبقال', 'الصحراء', 'مراكش', 'فاس والشمال', 'شفشاون', 'الصويرة والساحل', 'المضايق والقصبات', 'لست متأكدا بعد'],
 });
 const interests = L({
   en: ['Trekking', 'Summits', 'Village life', 'Desert nights', 'Food', 'History & architecture', 'Photography', 'Relaxing'],
   fr: ['Randonnée', 'Sommets', 'Vie des villages', 'Nuits dans le désert', 'Cuisine', 'Histoire & architecture', 'Photographie', 'Détente'],
+  es: ['Senderismo', 'Cumbres', 'Vida en los pueblos', 'Noches en el desierto', 'Gastronomía', 'Historia y arquitectura', 'Fotografía', 'Descanso'],
+  de: ['Wandern', 'Gipfel', 'Dorfleben', 'Wüstennächte', 'Essen', 'Geschichte & Architektur', 'Fotografie', 'Entspannung'],
+  pt: ['Caminhadas', 'Cumes', 'Vida nas aldeias', 'Noites no deserto', 'Gastronomia', 'História e arquitetura', 'Fotografia', 'Descanso'],
   ar: ['المشي', 'القمم', 'حياة القرى', 'ليالي الصحراء', 'الطبخ', 'التاريخ والعمارة', 'التصوير', 'الاسترخاء'],
 });
 // Budget bands in EUR (shown in the default currency), per person.
 const budgets = L({
   en: ['Under €300', '€300–700', '€700–1,500', 'Over €1,500', 'Not sure'],
   fr: ['Moins de 300 €', '300–700 €', '700–1 500 €', 'Plus de 1 500 €', 'Je ne sais pas'],
+  es: ['Menos de 300 €', '300–700 €', '700–1500 €', 'Más de 1500 €', 'No lo sé'],
+  de: ['Unter 300 €', '300–700 €', '700–1.500 €', 'Über 1.500 €', 'Weiß nicht'],
+  pt: ['Menos de 300 €', '300–700 €', '700–1500 €', 'Mais de 1500 €', 'Não sei'],
   ar: ['أقل من 300 €', '300–700 €', '700–1500 €', 'أكثر من 1500 €', 'لست متأكدا'],
 });
 const styles = [s.booking.shared, s.booking.private];

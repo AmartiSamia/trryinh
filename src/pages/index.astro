@@ -19,7 +19,7 @@ const abs = (p: string) => new URL(p, site.url).href;
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <script is:inline>
       (function () {
-        var ok = ['en', 'fr', 'ar'], lang = null;
+        var ok = ['en', 'fr', 'es', 'de', 'pt', 'ar'], lang = null;
         try { lang = localStorage.getItem('lang'); } catch (e) {}
         if (ok.indexOf(lang) < 0) {
           var prefs = navigator.languages || [navigator.language || 'en'];

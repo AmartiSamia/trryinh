@@ -5,45 +5,52 @@ popularity: 55
 title:
   en: Horse ride in the Palmeraie
   fr: Balade à cheval dans la Palmeraie
+  es: Paseo a caballo por el Palmeral
+  de: Ausritt im Palmenhain
+  pt: Passeio a cavalo no Palmeiral
   ar: جولة على ظهر الخيل في النخيل
 summary:
   en: An easy ride among the palm trees on the edge of Marrakech, for beginners and experienced riders, with a guide from the stable.
   fr: Une balade facile parmi les palmiers aux portes de Marrakech, pour débutants et cavaliers confirmés, avec un guide de l’écurie.
+  es: Un paseo fácil entre palmeras a las afueras de Marrakech, para principiantes y jinetes con experiencia, con un guía de la cuadra.
+  de: Ein leichter Ritt zwischen Palmen am Rand von Marrakesch, für Anfänger und erfahrene Reiter, mit einem Guide aus dem Stall.
+  pt: Um passeio fácil entre palmeiras nos arredores de Marraquexe, para principiantes e cavaleiros experientes, com um guia da cavalariça.
   ar: جولة سهلة بين أشجار النخيل على أطراف مراكش، للمبتدئين وذوي الخبرة، مع مرشد من الإسطبل.
 about:
   en: >-
-    Calm horses, a guide who adapts to your level, and quiet tracks through the Palmeraie, with
-    the Atlas on the horizon on clear days. Rides last one or two hours. A beach ride in Essaouira
-    can also be arranged if you go there.
+    Calm horses, a guide who adapts to your level, and quiet tracks through the Palmeraie, with the Atlas on the horizon on clear days. Rides last one or two hours. A beach ride in Essaouira can also be arranged if you go there.
   fr: >-
-    Des chevaux calmes, un guide qui s’adapte à votre niveau et des pistes tranquilles dans la Palmeraie,
-    avec l’Atlas à l’horizon par temps clair. Balades d’une ou deux heures. Une balade sur la plage
-    d’Essaouira est aussi possible si vous y allez.
+    Des chevaux calmes, un guide qui s’adapte à votre niveau et des pistes tranquilles dans la Palmeraie, avec l’Atlas à l’horizon par temps clair. Balades d’une ou deux heures. Une balade sur la plage d’Essaouira est aussi possible si vous y allez.
+  es: Caballos tranquilos, un guía que se adapta a su nivel y pistas tranquilas por el Palmeral, con el Atlas en el horizonte los días claros. Los paseos duran una o dos horas. También se puede organizar un paseo por la playa de Essaouira si va allí.
+  de: Ruhige Pferde, ein Guide, der sich Ihrem Niveau anpasst, und stille Wege durch den Palmenhain, an klaren Tagen mit dem Atlas am Horizont. Die Ritte dauern ein bis zwei Stunden. Wenn Sie nach Essaouira fahren, lässt sich dort auch ein Strandritt organisieren.
+  pt: Cavalos calmos, um guia que se adapta ao seu nível e trilhos tranquilos pelo Palmeiral, com o Atlas no horizonte nos dias limpos. Os passeios duram uma ou duas horas. Também se pode organizar um passeio na praia de Essaouira, se for lá.
   ar: >-
-    خيول هادئة، ومرشد يتكيف مع مستواكم، ومسالك هادئة في النخيل مع الأطلس في الأفق في الأيام الصافية.
-    تدوم الجولات ساعة أو ساعتين. يمكن أيضا ترتيب جولة على شاطئ الصويرة إذا ذهبتم إليها.
+    خيول هادئة، ومرشد يتكيف مع مستواكم، ومسالك هادئة في النخيل مع الأطلس في الأفق في الأيام الصافية. تدوم الجولات ساعة أو ساعتين. يمكن أيضا ترتيب جولة على شاطئ الصويرة إذا ذهبتم إليها.
 days: 0.5
 hours: "2–3 h"
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [1, 2, 3, 4, 5, 9, 10, 11, 12]
+bestMonths: [ 1, 2, 3, 4, 5, 9, 10, 11, 12 ]
 price: { shared: 350 }
 includes: { meals: false, transport: true, nights: false }
-photos: [horse-essaouira, palmeraie]
+photos: [ horse-essaouira, palmeraie ]
 highlights:
-  - { en: "Suitable for beginners", fr: "Adapté aux débutants", ar: "مناسب للمبتدئين" }
-  - { en: "Quiet tracks among palm trees", fr: "Pistes calmes entre les palmiers", ar: "مسالك هادئة بين النخيل" }
-  - { en: "Helmet provided", fr: "Casque fourni", ar: "الخوذة متوفرة" }
+  - { en: "Suitable for beginners", fr: "Adapté aux débutants", es: "Apto para principiantes", de: "Für Anfänger geeignet", pt: "Adequado para principiantes", ar: "مناسب للمبتدئين" }
+  - { en: "Quiet tracks among palm trees", fr: "Pistes calmes entre les palmiers", es: "Pistas tranquilas entre palmeras", de: "Ruhige Wege zwischen Palmen", pt: "Trilhos calmos entre palmeiras", ar: "مسالك هادئة بين النخيل" }
+  - { en: "Helmet provided", fr: "Casque fourni", es: "Casco incluido", de: "Helm inklusive", pt: "Capacete incluído", ar: "الخوذة متوفرة" }
 itinerary:
-  - title: { en: "Horse ride", fr: "Balade à cheval", ar: "جولة على الخيل" }
-    text: { en: "Pickup, ride of one to two hours with a guide, mint tea, drive back.", fr: "Prise en charge, une à deux heures de balade avec un guide, thé à la menthe, retour.", ar: "الاستقبال، جولة من ساعة إلى ساعتين مع مرشد، شاي بالنعناع، ثم العودة." }
-included: [pickup-hotel, equipment, guide-local, tea-snacks]
-excluded: [tips]
-pack: [comfy-shoes, sun-kit]
+  - title: { en: "Horse ride", fr: "Balade à cheval", es: "Paseo a caballo", de: "Ausritt", pt: "Passeio a cavalo", ar: "جولة على الخيل" }
+    text: { en: "Pickup, ride of one to two hours with a guide, mint tea, drive back.", fr: "Prise en charge, une à deux heures de balade avec un guide, thé à la menthe, retour.", es: "Recogida, paseo de una a dos horas con guía, té a la menta y regreso.", de: "Abholung, ein- bis zweistündiger Ritt mit Guide, Minztee, Rückfahrt.", pt: "Recolha, passeio de uma a duas horas com guia, chá de menta e regresso.", ar: "الاستقبال، جولة من ساعة إلى ساعتين مع مرشد، شاي بالنعناع، ثم العودة." }
+included: [ pickup-hotel, equipment, guide-local, tea-snacks ]
+excluded: [ tips ]
+pack: [ comfy-shoes, sun-kit ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "09:00 or 15:00"
 mapStops:

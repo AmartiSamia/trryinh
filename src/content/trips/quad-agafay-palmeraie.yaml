@@ -5,46 +5,53 @@ popularity: 62
 title:
   en: Quad bike or buggy in Agafay or the Palmeraie
   fr: Quad ou buggy à Agafay ou dans la Palmeraie
+  es: Quad o buggy en Agafay o el Palmeral
+  de: Quad oder Buggy in Agafay oder im Palmenhain
+  pt: Moto-quatro ou buggy em Agafay ou no Palmeiral
   ar: الدراجة الرباعية أو الباجي في أكفاي أو النخيل
 summary:
   en: Two hours on a quad or buggy through the palm grove or the stony hills of Agafay, with a stop for mint tea in a village.
   fr: Deux heures en quad ou en buggy dans la palmeraie ou les collines caillouteuses d’Agafay, avec une pause thé dans un village.
+  es: Dos horas en quad o buggy por el palmeral o las colinas pedregosas de Agafay, con parada para un té a la menta en un pueblo.
+  de: Zwei Stunden mit Quad oder Buggy durch den Palmenhain oder die steinigen Hügel von Agafay, mit einer Teepause in einem Dorf.
+  pt: Duas horas de moto-quatro ou buggy pelo palmeiral ou pelas colinas pedregosas de Agafay, com paragem para chá de menta numa aldeia.
   ar: ساعتان على دراجة رباعية أو باجي عبر النخيل أو تلال أكفاي الحجرية، مع توقف لشرب الشاي في قرية.
 about:
   en: >-
-    A short, fun outing for when you need a break from the medina. After a safety briefing and
-    with helmets and scarves provided, you follow a guide on tracks through the palm grove or the
-    Agafay hills. No licence needed; children can ride as passengers.
+    A short, fun outing for when you need a break from the medina. After a safety briefing and with helmets and scarves provided, you follow a guide on tracks through the palm grove or the Agafay hills. No licence needed; children can ride as passengers.
   fr: >-
-    Une sortie courte et amusante pour souffler loin de la médina. Après les consignes de sécurité,
-    casque et chèche fournis, vous suivez un guide sur des pistes dans la palmeraie ou les collines
-    d’Agafay. Pas de permis nécessaire ; les enfants peuvent monter en passagers.
+    Une sortie courte et amusante pour souffler loin de la médina. Après les consignes de sécurité, casque et chèche fournis, vous suivez un guide sur des pistes dans la palmeraie ou les collines d’Agafay. Pas de permis nécessaire ; les enfants peuvent monter en passagers.
+  es: Una salida corta y divertida para descansar de la medina. Tras las instrucciones de seguridad, con casco y pañuelo incluidos, sigue a un guía por pistas del palmeral o de las colinas de Agafay. No hace falta carné; los niños pueden ir de pasajeros.
+  de: Ein kurzer, lustiger Ausflug als Pause von der Medina. Nach der Sicherheitseinweisung, mit Helm und Tuch, folgen Sie einem Guide auf Pisten durch den Palmenhain oder die Hügel von Agafay. Kein Führerschein nötig; Kinder können als Beifahrer mitfahren.
+  pt: Uma saída curta e divertida para descansar da medina. Depois das instruções de segurança, com capacete e lenço incluídos, segue um guia por pistas no palmeiral ou nas colinas de Agafay. Não é preciso carta; as crianças podem ir como passageiras.
   ar: >-
-    خرجة قصيرة وممتعة للاستراحة من المدينة العتيقة. بعد تعليمات السلامة، ومع توفير الخوذة والوشاح، تتبعون
-    مرشدا على مسالك في النخيل أو تلال أكفاي. لا حاجة إلى رخصة، ويمكن للأطفال الركوب كركاب.
+    خرجة قصيرة وممتعة للاستراحة من المدينة العتيقة. بعد تعليمات السلامة، ومع توفير الخوذة والوشاح، تتبعون مرشدا على مسالك في النخيل أو تلال أكفاي. لا حاجة إلى رخصة، ويمكن للأطفال الركوب كركاب.
 days: 0.5
 hours: "3 h"
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+bestMonths: [ 1, 2, 3, 4, 5, 6, 9, 10, 11, 12 ]
 price: { shared: 400 }
 includes: { meals: false, transport: true, nights: false }
-photos: [u-quad, agafay, palmeraie]
+photos: [ u-quad, agafay, palmeraie ]
 highlights:
-  - { en: "Two hours of riding with a guide", fr: "Deux heures de conduite avec un guide", ar: "ساعتان من القيادة مع مرشد" }
-  - { en: "Mint tea in a village", fr: "Thé à la menthe dans un village", ar: "شاي بالنعناع في قرية" }
-  - { en: "Helmet and scarf provided", fr: "Casque et chèche fournis", ar: "الخوذة والوشاح متوفران" }
+  - { en: "Two hours of riding with a guide", fr: "Deux heures de conduite avec un guide", es: "Dos horas de conducción con guía", de: "Zwei Stunden Fahrt mit Guide", pt: "Duas horas de condução com guia", ar: "ساعتان من القيادة مع مرشد" }
+  - { en: "Mint tea in a village", fr: "Thé à la menthe dans un village", es: "Té a la menta en un pueblo", de: "Minztee in einem Dorf", pt: "Chá de menta numa aldeia", ar: "شاي بالنعناع في قرية" }
+  - { en: "Helmet and scarf provided", fr: "Casque et chèche fournis", es: "Casco y pañuelo incluidos", de: "Helm und Tuch inklusive", pt: "Capacete e lenço incluídos", ar: "الخوذة والوشاح متوفران" }
 itinerary:
-  - title: { en: "Quad or buggy ride", fr: "Balade en quad ou buggy", ar: "جولة بالدراجة الرباعية أو الباجي" }
-    text: { en: "Pickup, briefing, two hours on the tracks with a tea stop, drive back.", fr: "Prise en charge, briefing, deux heures sur les pistes avec pause thé, retour.", ar: "الاستقبال، التعليمات، ساعتان على المسالك مع توقف للشاي، ثم العودة." }
+  - title: { en: "Quad or buggy ride", fr: "Balade en quad ou buggy", es: "Paseo en quad o buggy", de: "Quad- oder Buggytour", pt: "Passeio de moto-quatro ou buggy", ar: "جولة بالدراجة الرباعية أو الباجي" }
+    text: { en: "Pickup, briefing, two hours on the tracks with a tea stop, drive back.", fr: "Prise en charge, briefing, deux heures sur les pistes avec pause thé, retour.", es: "Recogida, instrucciones, dos horas por las pistas con parada para el té y regreso.", de: "Abholung, Einweisung, zwei Stunden auf den Pisten mit Teepause, Rückfahrt.", pt: "Recolha, instruções, duas horas nas pistas com pausa para chá e regresso.", ar: "الاستقبال، التعليمات، ساعتان على المسالك مع توقف للشاي، ثم العودة." }
     drive: 30–45 min each way
-included: [pickup-hotel, equipment, tea-snacks, guide-local]
-excluded: [tips, personal]
-pack: [comfy-shoes, sun-kit, scarf]
+included: [ pickup-hotel, equipment, tea-snacks, guide-local ]
+excluded: [ tips, personal ]
+pack: [ comfy-shoes, sun-kit, scarf ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."
   fr: "Votre riad ou hôtel à Marrakech."
+  es: Su riad u hotel en Marrakech.
+  de: Ihr Riad oder Hotel in Marrakesch.
+  pt: O seu riad ou hotel em Marraquexe.
   ar: "الرياض أو الفندق في مراكش."
 pickupTime: "09:00 or 14:00"
 mapStops:

@@ -5,69 +5,82 @@ popularity: 70
 title:
   en: Fes to Marrakech via the Merzouga desert, 3 days
   fr: De Fès à Marrakech par le désert de Merzouga, 3 jours
+  es: De Fez a Marrakech por el desierto de Merzouga, 3 días
+  de: Von Fès nach Marrakesch durch die Wüste von Merzouga, 3 Tage
+  pt: De Fez a Marraquexe pelo deserto de Merzouga, 3 dias
   ar: من فاس إلى مراكش عبر صحراء مرزوكة، 3 أيام
 summary:
   en: The best way to travel between Fes and Marrakech. Cedar forests of the Middle Atlas, a night in the Erg Chebbi dunes and the road of the kasbahs.
   fr: La plus belle façon de relier Fès à Marrakech. Forêts de cèdres du Moyen Atlas, nuit dans les dunes de l’erg Chebbi et route des kasbahs.
+  es: La mejor forma de ir de Fez a Marrakech. Bosques de cedros del Atlas Medio, una noche en las dunas del Erg Chebbi y la ruta de las kasbahs.
+  de: Die schönste Art, von Fès nach Marrakesch zu reisen. Zedernwälder im Mittleren Atlas, eine Nacht in den Dünen des Erg Chebbi und die Straße der Kasbahs.
+  pt: A melhor forma de ir de Fez a Marraquexe. Florestas de cedros do Médio Atlas, uma noite nas dunas do Erg Chebbi e a estrada das kasbahs.
   ar: أجمل طريقة للتنقل بين فاس ومراكش. غابات الأرز في الأطلس المتوسط، ليلة في كثبان عرق الشبي وطريق القصبات.
 about:
   en: >-
-    Instead of the train, cross the country. You leave Fes through Ifrane and the cedar forests of
-    the Middle Atlas, follow the Ziz valley down to the Sahara and ride camels to a camp in Erg
-    Chebbi. Then the Todra and Dades gorges, Ouarzazate and the Tichka pass bring you to Marrakech.
-    A 4-day version with more time on the way is possible on request.
+    Instead of the train, cross the country. You leave Fes through Ifrane and the cedar forests of the Middle Atlas, follow the Ziz valley down to the Sahara and ride camels to a camp in Erg Chebbi. Then the Todra and Dades gorges, Ouarzazate and the Tichka pass bring you to Marrakech. A 4-day version with more time on the way is possible on request.
   fr: >-
-    Plutôt que le train, traversez le pays. Vous quittez Fès par Ifrane et les cèdres du Moyen Atlas,
-    suivez la vallée du Ziz jusqu’au Sahara et rejoignez à dos de dromadaire un camp de l’erg Chebbi.
-    Puis les gorges du Todra et du Dadès, Ouarzazate et le col du Tichka vous mènent à Marrakech.
-    Une version en 4 jours, plus tranquille, est possible sur demande.
+    Plutôt que le train, traversez le pays. Vous quittez Fès par Ifrane et les cèdres du Moyen Atlas, suivez la vallée du Ziz jusqu’au Sahara et rejoignez à dos de dromadaire un camp de l’erg Chebbi. Puis les gorges du Todra et du Dadès, Ouarzazate et le col du Tichka vous mènent à Marrakech. Une version en 4 jours, plus tranquille, est possible sur demande.
+  es: En lugar del tren, cruce el país. Sale de Fez por Ifrane y los cedros del Atlas Medio, sigue el valle del Ziz hasta el Sáhara y llega en dromedario a un campamento en el Erg Chebbi. Después, las gargantas del Todra y del Dades, Ouarzazate y el puerto de Tichka le llevan a Marrakech. Bajo petición, versión de 4 días con más tiempo por el camino.
+  de: "Statt mit dem Zug: Durchqueren Sie das Land. Sie verlassen Fès über Ifrane und die Zedernwälder des Mittleren Atlas, folgen dem Ziz-Tal bis in die Sahara und reiten auf Kamelen zu einem Camp im Erg Chebbi. Dann führen Sie die Todra- und Dadès-Schluchten, Ouarzazate und der Tichka-Pass nach Marrakesch. Auf Wunsch auch als 4-Tage-Version mit mehr Zeit unterwegs."
+  pt: Em vez do comboio, atravesse o país. Sai de Fez por Ifrane e pelos cedros do Médio Atlas, segue o vale do Ziz até ao Sara e chega de dromedário a um acampamento no Erg Chebbi. Depois, as gargantas do Todra e do Dadès, Ouarzazate e o passo de Tichka levam-no a Marraquexe. A pedido, versão de 4 dias com mais tempo pelo caminho.
   ar: >-
-    بدلا من القطار، اعبروا البلد. تغادرون فاس عبر إفران وغابات الأرز في الأطلس المتوسط، وتتبعون وادي زيز
-    حتى الصحراء، ثم تركبون الجمال إلى مخيم في عرق الشبي. بعد ذلك تقودكم مضايق تودغى ودادس وورزازات وممر
-    تيشكا إلى مراكش. نسخة من 4 أيام بوقت أكثر في الطريق ممكنة عند الطلب.
+    بدلا من القطار، اعبروا البلد. تغادرون فاس عبر إفران وغابات الأرز في الأطلس المتوسط، وتتبعون وادي زيز حتى الصحراء، ثم تركبون الجمال إلى مخيم في عرق الشبي. بعد ذلك تقودكم مضايق تودغى ودادس وورزازات وممر تيشكا إلى مراكش. نسخة من 4 أيام بوقت أكثر في الطريق ممكنة عند الطلب.
 days: 3
 nights: 2
 difficulty: easy
 startCity: Fes
 endCity: Marrakech
-bestMonths: [3, 4, 5, 9, 10, 11, 12]
+bestMonths: [ 3, 4, 5, 9, 10, 11, 12 ]
 price: { shared: 1500, private: 3200 }
 includes: { meals: true, transport: true, nights: true }
-photos: [u-camels-dima, u-camels-leret, merzouga-dunes, todra, fes-medina]
+photos: [ u-camels-dima, u-camels-leret, merzouga-dunes, todra, fes-medina ]
 highlights:
-  - { en: "Fes to Marrakech without backtracking", fr: "De Fès à Marrakech sans retour en arrière", ar: "من فاس إلى مراكش دون عودة إلى الوراء" }
-  - { en: "Cedar forests and Barbary macaques near Azrou", fr: "Forêts de cèdres et macaques près d’Azrou", ar: "غابات الأرز وقردة المكاك قرب أزرو" }
-  - { en: "A night in the Erg Chebbi dunes", fr: "Une nuit dans les dunes de l’erg Chebbi", ar: "ليلة في كثبان عرق الشبي" }
+  - { en: "Fes to Marrakech without backtracking", fr: "De Fès à Marrakech sans retour en arrière", es: "De Fez a Marrakech sin volver atrás", de: "Von Fès nach Marrakesch ohne Umweg", pt: "De Fez a Marraquexe sem voltar atrás", ar: "من فاس إلى مراكش دون عودة إلى الوراء" }
+  - { en: "Cedar forests and Barbary macaques near Azrou", fr: "Forêts de cèdres et macaques près d’Azrou", es: "Bosques de cedros y macacos de Berbería cerca de Azrou", de: "Zedernwälder und Berberaffen bei Azrou", pt: "Florestas de cedros e macacos-de-Gibraltar perto de Azrou", ar: "غابات الأرز وقردة المكاك قرب أزرو" }
+  - { en: "A night in the Erg Chebbi dunes", fr: "Une nuit dans les dunes de l’erg Chebbi", es: "Una noche en las dunas del Erg Chebbi", de: "Eine Nacht in den Dünen des Erg Chebbi", pt: "Uma noite nas dunas do Erg Chebbi", ar: "ليلة في كثبان عرق الشبي" }
 itinerary:
-  - title: { en: "Fes, Middle Atlas and Merzouga", fr: "Fès, Moyen Atlas et Merzouga", ar: "فاس، الأطلس المتوسط ومرزوكة" }
+  - title: { en: "Fes, Middle Atlas and Merzouga", fr: "Fès, Moyen Atlas et Merzouga", es: "Fez, Atlas Medio y Merzouga", de: "Fès, Mittlerer Atlas und Merzouga", pt: "Fez, Médio Atlas e Merzouga", ar: "فاس، الأطلس المتوسط ومرزوكة" }
     text:
       en: "Via Ifrane, the cedar forest, Midelt and the Ziz valley to Merzouga. Camel ride at sunset and night at camp."
       fr: "Par Ifrane, la forêt de cèdres, Midelt et la vallée du Ziz jusqu’à Merzouga. Dromadaires au coucher du soleil et nuit au camp."
+      es: Por Ifrane, el bosque de cedros, Midelt y el valle del Ziz hasta Merzouga. Paseo en dromedario al atardecer y noche en el campamento.
+      de: Über Ifrane, den Zedernwald, Midelt und das Ziz-Tal nach Merzouga. Kamelritt bei Sonnenuntergang und Nacht im Camp.
+      pt: Por Ifrane, a floresta de cedros, Midelt e o vale do Ziz até Merzouga. Passeio de dromedário ao pôr do sol e noite no acampamento.
       ar: "عبر إفران وغابة الأرز وميدلت ووادي زيز إلى مرزوكة. جولة على الجمال عند الغروب ومبيت في المخيم."
     drive: 8–9 h with stops
     sleep: { type: camp, place: Erg Chebbi }
-    meals: [dinner]
-  - title: { en: "Todra and Dades gorges", fr: "Gorges du Todra et du Dadès", ar: "مضايق تودغى ودادس" }
+    meals: [ dinner ]
+  - title: { en: "Todra and Dades gorges", fr: "Gorges du Todra et du Dadès", es: "Gargantas del Todra y del Dades", de: "Todra- und Dadès-Schluchten", pt: "Gargantas do Todra e do Dadès", ar: "مضايق تودغى ودادس" }
     text:
       en: "Sunrise on the dunes, then west to the Todra gorge and the Dades valley."
       fr: "Lever du soleil sur les dunes, puis vers l’ouest par les gorges du Todra jusqu’à la vallée du Dadès."
+      es: Amanecer en las dunas y luego hacia el oeste por la garganta del Todra hasta el valle del Dades.
+      de: Sonnenaufgang in den Dünen, dann westwärts durch die Todra-Schlucht ins Dadès-Tal.
+      pt: Nascer do sol nas dunas e depois para oeste pela garganta do Todra até ao vale do Dadès.
       ar: "الشروق فوق الكثبان، ثم غربا عبر مضيق تودغى إلى وادي دادس."
     drive: 5 h
     sleep: { type: hotel, place: Dades valley }
-    meals: [breakfast, dinner]
-  - title: { en: "Ouarzazate, Aït Benhaddou and Marrakech", fr: "Ouarzazate, Aït Benhaddou et Marrakech", ar: "ورزازات، آيت بن حدو ومراكش" }
+    meals: [ breakfast, dinner ]
+  - title: { en: "Ouarzazate, Aït Benhaddou and Marrakech", fr: "Ouarzazate, Aït Benhaddou et Marrakech", es: "Ouarzazate, Aït Benhaddou y Marrakech", de: "Ouarzazate, Aït Benhaddou und Marrakesch", pt: "Ouarzazate, Aït Benhaddou e Marraquexe", ar: "ورزازات، آيت بن حدو ومراكش" }
     text:
       en: "Through the Valley of Roses and Ouarzazate, a stop at Aït Benhaddou, and over the Tichka pass to Marrakech."
       fr: "Par la vallée des Roses et Ouarzazate, arrêt à Aït Benhaddou, puis le col du Tichka jusqu’à Marrakech."
+      es: Por el valle de las Rosas y Ouarzazate, parada en Aït Benhaddou y el puerto de Tichka hasta Marrakech.
+      de: Durch das Tal der Rosen und Ouarzazate, Halt in Aït Benhaddou und über den Tichka-Pass nach Marrakesch.
+      pt: Pelo Vale das Rosas e Ouarzazate, paragem em Aït Benhaddou e pelo passo de Tichka até Marraquexe.
       ar: "عبر وادي الورود وورزازات، توقف في آيت بن حدو، ثم ممر تيشكا إلى مراكش."
     drive: 7–8 h with stops
-    meals: [breakfast]
-included: [pickup-hotel, transport, driver, camel, desert-camp, breakfast-dinner, accommodation]
-excluded: [lunches, drinks, entrance-fees-ex, tips, insurance, personal]
-pack: [scarf, sun-kit, warm-night, comfy-shoes, passport, cash]
+    meals: [ breakfast ]
+included: [ pickup-hotel, transport, driver, camel, desert-camp, breakfast-dinner, accommodation ]
+excluded: [ lunches, drinks, entrance-fees-ex, tips, insurance, personal ]
+pack: [ scarf, sun-kit, warm-night, comfy-shoes, passport, cash ]
 meetingPoint:
   en: "Your riad or hotel in Fes."
   fr: "Votre riad ou hôtel à Fès."
+  es: Su riad u hotel en Fez.
+  de: Ihr Riad oder Hotel in Fès.
+  pt: O seu riad ou hotel em Fez.
   ar: "الرياض أو الفندق في فاس."
 pickupTime: "07:30"
 mapStops:

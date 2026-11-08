@@ -5,81 +5,85 @@ popularity: 64
 title:
   en: Imperial cities of Morocco, 8 days
   fr: Les villes impériales du Maroc, 8 jours
+  es: Ciudades imperiales de Marruecos, 8 días
+  de: Die Königsstädte Marokkos, 8 Tage
+  pt: Cidades imperiais de Marrocos, 8 dias
   ar: المدن الإمبراطورية في المغرب، 8 أيام
 summary:
   en: Casablanca, Rabat, Meknes, Volubilis, Fes and Marrakech with a private driver. History, medinas and Roman ruins, at a calm pace.
   fr: Casablanca, Rabat, Meknès, Volubilis, Fès et Marrakech avec chauffeur privé. Histoire, médinas et ruines romaines, à un rythme tranquille.
+  es: Casablanca, Rabat, Mequinez, Volubilis, Fez y Marrakech con conductor privado. Historia, medinas y ruinas romanas, a un ritmo tranquilo.
+  de: Casablanca, Rabat, Meknès, Volubilis, Fès und Marrakesch mit Privatfahrer. Geschichte, Medinas und römische Ruinen in ruhigem Tempo.
+  pt: Casablanca, Rabat, Meknès, Volubilis, Fez e Marraquexe com motorista privado. História, medinas e ruínas romanas, a um ritmo calmo.
   ar: الدار البيضاء، الرباط، مكناس، وليلي، فاس ومراكش مع سائق خاص. تاريخ ومدن عتيقة وأطلال رومانية بإيقاع هادئ.
 about:
   en: >-
-    A private circuit through the four royal capitals of Morocco. You start in Casablanca with the
-    Hassan II mosque, continue to Rabat, then Meknes and the Roman city of Volubilis, spend two full
-    days in Fes, and end in Marrakech. Local licensed guides show you each medina; the driver handles
-    the rest. Hotels or riads are chosen with you.
+    A private circuit through the four royal capitals of Morocco. You start in Casablanca with the Hassan II mosque, continue to Rabat, then Meknes and the Roman city of Volubilis, spend two full days in Fes, and end in Marrakech. Local licensed guides show you each medina; the driver handles the rest. Hotels or riads are chosen with you.
   fr: >-
-    Un circuit privé à travers les quatre capitales royales du Maroc. Départ de Casablanca avec la mosquée
-    Hassan II, puis Rabat, Meknès et la cité romaine de Volubilis, deux journées pleines à Fès, et fin à
-    Marrakech. Des guides officiels locaux vous font découvrir chaque médina ; le chauffeur s’occupe du
-    reste. Hôtels ou riads choisis avec vous.
+    Un circuit privé à travers les quatre capitales royales du Maroc. Départ de Casablanca avec la mosquée Hassan II, puis Rabat, Meknès et la cité romaine de Volubilis, deux journées pleines à Fès, et fin à Marrakech. Des guides officiels locaux vous font découvrir chaque médina ; le chauffeur s’occupe du reste. Hôtels ou riads choisis avec vous.
+  es: Un circuito privado por las cuatro capitales reales de Marruecos. Empieza en Casablanca con la mezquita Hassan II, sigue a Rabat, luego Mequinez y la ciudad romana de Volubilis, pasa dos días completos en Fez y termina en Marrakech. Guías locales oficiales le enseñan cada medina; el conductor se ocupa del resto. Los hoteles o riads se eligen con usted.
+  de: Eine private Rundreise durch die vier Königsstädte Marokkos. Sie beginnen in Casablanca mit der Hassan-II.-Moschee, fahren weiter nach Rabat, dann nach Meknès und in die Römerstadt Volubilis, verbringen zwei volle Tage in Fès und enden in Marrakesch. Lizenzierte örtliche Guides zeigen Ihnen jede Medina; um den Rest kümmert sich der Fahrer. Hotels oder Riads wählen wir gemeinsam aus.
+  pt: Um circuito privado pelas quatro capitais reais de Marrocos. Começa em Casablanca com a mesquita Hassan II, segue para Rabat, depois Meknès e a cidade romana de Volubilis, passa dois dias inteiros em Fez e termina em Marraquexe. Guias locais oficiais mostram-lhe cada medina; o motorista trata do resto. Os hotéis ou riads são escolhidos consigo.
   ar: >-
-    جولة خاصة عبر العواصم الملكية الأربع للمغرب. تبدؤون من الدار البيضاء ومسجد الحسن الثاني، ثم الرباط،
-    ثم مكناس ومدينة وليلي الرومانية، ويومان كاملان في فاس، والختام في مراكش. مرشدون محليون معتمدون يعرّفونكم
-    بكل مدينة عتيقة، والسائق يتكفل بالباقي. الفنادق أو الرياضات تُختار معكم.
+    جولة خاصة عبر العواصم الملكية الأربع للمغرب. تبدؤون من الدار البيضاء ومسجد الحسن الثاني، ثم الرباط، ثم مكناس ومدينة وليلي الرومانية، ويومان كاملان في فاس، والختام في مراكش. مرشدون محليون معتمدون يعرّفونكم بكل مدينة عتيقة، والسائق يتكفل بالباقي. الفنادق أو الرياضات تُختار معكم.
 days: 8
 nights: 7
 difficulty: easy
 startCity: Casablanca
 endCity: Marrakech
-bestMonths: [2, 3, 4, 5, 6, 9, 10, 11, 12]
+bestMonths: [ 2, 3, 4, 5, 6, 9, 10, 11, 12 ]
 price: { private: 9500 }
 includes: { meals: false, transport: true, nights: true }
-photos: [u-koutoubia, fes-medina, rabat, meknes, volubilis, u-tiles, fes-tannery]
+photos: [ u-koutoubia, fes-medina, rabat, meknes, volubilis, u-tiles, fes-tannery ]
 highlights:
-  - { en: "Four royal capitals in one trip", fr: "Quatre capitales royales en un voyage", ar: "أربع عواصم ملكية في رحلة واحدة" }
-  - { en: "The Roman city of Volubilis", fr: "La cité romaine de Volubilis", ar: "مدينة وليلي الرومانية" }
-  - { en: "Two full days in Fes", fr: "Deux journées pleines à Fès", ar: "يومان كاملان في فاس" }
-  - { en: "Private driver throughout", fr: "Chauffeur privé tout du long", ar: "سائق خاص طوال الرحلة" }
+  - { en: "Four royal capitals in one trip", fr: "Quatre capitales royales en un voyage", es: "Cuatro capitales reales en un viaje", de: "Vier Königsstädte auf einer Reise", pt: "Quatro capitais reais numa viagem", ar: "أربع عواصم ملكية في رحلة واحدة" }
+  - { en: "The Roman city of Volubilis", fr: "La cité romaine de Volubilis", es: "La ciudad romana de Volubilis", de: "Die Römerstadt Volubilis", pt: "A cidade romana de Volubilis", ar: "مدينة وليلي الرومانية" }
+  - { en: "Two full days in Fes", fr: "Deux journées pleines à Fès", es: "Dos días completos en Fez", de: "Zwei volle Tage in Fès", pt: "Dois dias inteiros em Fez", ar: "يومان كاملان في فاس" }
+  - { en: "Private driver throughout", fr: "Chauffeur privé tout du long", es: "Conductor privado durante todo el viaje", de: "Privatfahrer während der ganzen Reise", pt: "Motorista privado durante toda a viagem", ar: "سائق خاص طوال الرحلة" }
 itinerary:
-  - title: { en: "Arrival in Casablanca", fr: "Arrivée à Casablanca", ar: "الوصول إلى الدار البيضاء" }
-    text: { en: "Airport pickup, Hassan II mosque and the Corniche.", fr: "Accueil à l’aéroport, mosquée Hassan II et la Corniche.", ar: "الاستقبال في المطار، مسجد الحسن الثاني والكورنيش." }
+  - title: { en: "Arrival in Casablanca", fr: "Arrivée à Casablanca", es: "Llegada a Casablanca", de: "Ankunft in Casablanca", pt: "Chegada a Casablanca", ar: "الوصول إلى الدار البيضاء" }
+    text: { en: "Airport pickup, Hassan II mosque and the Corniche.", fr: "Accueil à l’aéroport, mosquée Hassan II et la Corniche.", es: "Recogida en el aeropuerto, mezquita Hassan II y la Corniche.", de: "Abholung am Flughafen, Hassan-II.-Moschee und die Corniche.", pt: "Recolha no aeroporto, mesquita Hassan II e a Corniche.", ar: "الاستقبال في المطار، مسجد الحسن الثاني والكورنيش." }
     sleep: { type: hotel, place: Casablanca }
-    meals: [dinner]
-  - title: { en: "Rabat", fr: "Rabat", ar: "الرباط" }
-    text: { en: "Hassan Tower, Mohammed V mausoleum and the Kasbah of the Udayas, then on to Meknes.", fr: "Tour Hassan, mausolée Mohammed V et kasbah des Oudayas, puis route vers Meknès.", ar: "صومعة حسان، ضريح محمد الخامس وقصبة الأوداية، ثم الطريق إلى مكناس." }
+    meals: [ dinner ]
+  - title: { en: "Rabat", fr: "Rabat", es: "Rabat", de: "Rabat", pt: "Rabat", ar: "الرباط" }
+    text: { en: "Hassan Tower, Mohammed V mausoleum and the Kasbah of the Udayas, then on to Meknes.", fr: "Tour Hassan, mausolée Mohammed V et kasbah des Oudayas, puis route vers Meknès.", es: "Torre Hassan, mausoleo de Mohammed V y la kasbah de los Udayas, y después hacia Mequinez.", de: "Hassan-Turm, Mausoleum Mohammed V. und Kasbah der Oudaya, dann weiter nach Meknès.", pt: "Torre Hassan, mausoléu de Mohammed V e kasbah dos Oudaias, e depois para Meknès.", ar: "صومعة حسان، ضريح محمد الخامس وقصبة الأوداية، ثم الطريق إلى مكناس." }
     drive: 3 h 30
     sleep: { type: riad, place: Meknes }
-    meals: [breakfast, dinner]
-  - title: { en: "Meknes and Volubilis", fr: "Meknès et Volubilis", ar: "مكناس ووليلي" }
-    text: { en: "Bab Mansour and the royal stables, the Roman mosaics of Volubilis, and Moulay Idriss, then Fes.", fr: "Bab Mansour et les greniers royaux, les mosaïques romaines de Volubilis et Moulay Idriss, puis Fès.", ar: "باب منصور وهري السواني، فسيفساء وليلي الرومانية ومولاي إدريس، ثم فاس." }
+    meals: [ breakfast, dinner ]
+  - title: { en: "Meknes and Volubilis", fr: "Meknès et Volubilis", es: "Mequinez y Volubilis", de: "Meknès und Volubilis", pt: "Meknès e Volubilis", ar: "مكناس ووليلي" }
+    text: { en: "Bab Mansour and the royal stables, the Roman mosaics of Volubilis, and Moulay Idriss, then Fes.", fr: "Bab Mansour et les greniers royaux, les mosaïques romaines de Volubilis et Moulay Idriss, puis Fès.", es: "Bab Mansour y los establos reales, los mosaicos romanos de Volubilis y Moulay Idriss, y después Fez.", de: "Bab Mansour und die königlichen Stallungen, die römischen Mosaiken von Volubilis und Moulay Idriss, dann Fès.", pt: "Bab Mansour e as cavalariças reais, os mosaicos romanos de Volubilis e Moulay Idriss, e depois Fez.", ar: "باب منصور وهري السواني، فسيفساء وليلي الرومانية ومولاي إدريس، ثم فاس." }
     drive: 2 h
     sleep: { type: riad, place: Fes }
-    meals: [breakfast, dinner]
-  - title: { en: "Fes medina", fr: "La médina de Fès", ar: "مدينة فاس العتيقة" }
-    text: { en: "A full day with a Fes guide: madrasas, tanneries and craftsmen.", fr: "Une journée complète avec un guide de Fès : médersas, tanneries et artisans.", ar: "يوم كامل مع مرشد من فاس: المدارس، دور الدباغة والحرفيون." }
+    meals: [ breakfast, dinner ]
+  - title: { en: "Fes medina", fr: "La médina de Fès", es: "Medina de Fez", de: "Medina von Fès", pt: "Medina de Fez", ar: "مدينة فاس العتيقة" }
+    text: { en: "A full day with a Fes guide: madrasas, tanneries and craftsmen.", fr: "Une journée complète avec un guide de Fès : médersas, tanneries et artisans.", es: "Un día completo con un guía de Fez: madrasas, curtidurías y artesanos.", de: "Ein ganzer Tag mit einem Guide aus Fès: Medersen, Gerbereien und Handwerker.", pt: "Um dia inteiro com um guia de Fez: madraças, curtumes e artesãos.", ar: "يوم كامل مع مرشد من فاس: المدارس، دور الدباغة والحرفيون." }
     sleep: { type: riad, place: Fes }
-    meals: [breakfast, dinner]
-  - title: { en: "Fes at your pace", fr: "Fès à votre rythme", ar: "فاس بإيقاعكم" }
-    text: { en: "Free day, or an optional trip to Chefchaouen.", fr: "Journée libre, ou excursion optionnelle à Chefchaouen.", ar: "يوم حر، أو رحلة اختيارية إلى شفشاون." }
+    meals: [ breakfast, dinner ]
+  - title: { en: "Fes at your pace", fr: "Fès à votre rythme", es: "Fez a su ritmo", de: "Fès in Ihrem Tempo", pt: "Fez ao seu ritmo", ar: "فاس بإيقاعكم" }
+    text: { en: "Free day, or an optional trip to Chefchaouen.", fr: "Journée libre, ou excursion optionnelle à Chefchaouen.", es: "Día libre o excursión opcional a Chefchaouen.", de: "Freier Tag oder optionaler Ausflug nach Chefchaouen.", pt: "Dia livre ou excursão opcional a Chefchaouen.", ar: "يوم حر، أو رحلة اختيارية إلى شفشاون." }
     sleep: { type: riad, place: Fes }
-    meals: [breakfast]
-  - title: { en: "Fes to Marrakech", fr: "De Fès à Marrakech", ar: "من فاس إلى مراكش" }
-    text: { en: "Through the Middle Atlas, Ifrane and Beni Mellal to Marrakech.", fr: "Par le Moyen Atlas, Ifrane et Beni Mellal jusqu’à Marrakech.", ar: "عبر الأطلس المتوسط وإفران وبني ملال إلى مراكش." }
+    meals: [ breakfast ]
+  - title: { en: "Fes to Marrakech", fr: "De Fès à Marrakech", es: "De Fez a Marrakech", de: "Von Fès nach Marrakesch", pt: "De Fez a Marraquexe", ar: "من فاس إلى مراكش" }
+    text: { en: "Through the Middle Atlas, Ifrane and Beni Mellal to Marrakech.", fr: "Par le Moyen Atlas, Ifrane et Beni Mellal jusqu’à Marrakech.", es: "Por el Atlas Medio, Ifrane y Beni Mellal hasta Marrakech.", de: "Durch den Mittleren Atlas, Ifrane und Beni Mellal nach Marrakesch.", pt: "Pelo Médio Atlas, Ifrane e Beni Mellal até Marraquexe.", ar: "عبر الأطلس المتوسط وإفران وبني ملال إلى مراكش." }
     drive: 7 h with stops
     sleep: { type: riad, place: Marrakech }
-    meals: [breakfast, dinner]
-  - title: { en: "Marrakech", fr: "Marrakech", ar: "مراكش" }
-    text: { en: "Guided tour of the medina: Bahia Palace, souks, Jemaa el-Fna.", fr: "Visite guidée de la médina : palais de la Bahia, souks, Jemaa el-Fna.", ar: "جولة مع مرشد في المدينة: قصر الباهية، الأسواق، جامع الفنا." }
+    meals: [ breakfast, dinner ]
+  - title: { en: "Marrakech", fr: "Marrakech", es: "Marrakech", de: "Marrakesch", pt: "Marraquexe", ar: "مراكش" }
+    text: { en: "Guided tour of the medina: Bahia Palace, souks, Jemaa el-Fna.", fr: "Visite guidée de la médina : palais de la Bahia, souks, Jemaa el-Fna.", es: "Visita guiada de la medina: palacio de la Bahía, zocos, Jemaa el-Fna.", de: "Führung durch die Medina: Bahia-Palast, Souks, Jemaa el-Fna.", pt: "Visita guiada à medina: palácio da Bahia, souks, Jemaa el-Fna.", ar: "جولة مع مرشد في المدينة: قصر الباهية، الأسواق، جامع الفنا." }
     sleep: { type: riad, place: Marrakech }
-    meals: [breakfast]
-  - title: { en: "Departure", fr: "Départ", ar: "المغادرة" }
-    text: { en: "Transfer to Marrakech airport.", fr: "Transfert à l’aéroport de Marrakech.", ar: "النقل إلى مطار مراكش." }
-    meals: [breakfast]
-included: [transport, driver, guide-city, breakfast-dinner, accommodation]
-excluded: [lunches, drinks, entrance-fees-ex, flights, tips, insurance, personal]
-pack: [comfy-shoes, sun-kit, layers, modest-clothes, passport, cash]
+    meals: [ breakfast ]
+  - title: { en: "Departure", fr: "Départ", es: "Salida", de: "Abreise", pt: "Partida", ar: "المغادرة" }
+    text: { en: "Transfer to Marrakech airport.", fr: "Transfert à l’aéroport de Marrakech.", es: "Traslado al aeropuerto de Marrakech.", de: "Transfer zum Flughafen Marrakesch.", pt: "Transfer para o aeroporto de Marraquexe.", ar: "النقل إلى مطار مراكش." }
+    meals: [ breakfast ]
+included: [ transport, driver, guide-city, breakfast-dinner, accommodation ]
+excluded: [ lunches, drinks, entrance-fees-ex, flights, tips, insurance, personal ]
+pack: [ comfy-shoes, sun-kit, layers, modest-clothes, passport, cash ]
 meetingPoint:
   en: "Casablanca airport or your hotel."
   fr: "Aéroport de Casablanca ou votre hôtel."
+  es: Aeropuerto de Casablanca o su hotel.
+  de: Flughafen Casablanca oder Ihr Hotel.
+  pt: Aeroporto de Casablanca ou o seu hotel.
   ar: "مطار الدار البيضاء أو الفندق."
 mapStops:
   - { name: "Casablanca", lat: 33.5731, lng: -7.5898, kind: start }

@@ -5,56 +5,66 @@ popularity: 78
 title:
   en: Essaouira day trip
   fr: Excursion à Essaouira
+  es: Excursión a Essaouira
+  de: Tagesausflug nach Essaouira
+  pt: Excursão a Essaouira
   ar: رحلة يومية إلى الصويرة
 summary:
   en: Sea air after the heat of Marrakech. The white-and-blue medina of Essaouira, its fishing port and ramparts, with a stop at an argan cooperative on the way.
   fr: L’air de la mer après la chaleur de Marrakech. La médina blanche et bleue d’Essaouira, son port et ses remparts, avec un arrêt dans une coopérative d’argan.
+  es: Aire de mar después del calor de Marrakech. La medina blanca y azul de Essaouira, su puerto pesquero y sus murallas, con una parada en una cooperativa de argán por el camino.
+  de: Meeresluft nach der Hitze von Marrakesch. Die weiß-blaue Medina von Essaouira, ihr Fischerhafen und die Stadtmauern, mit einem Stopp bei einer Arganöl-Kooperative unterwegs.
+  pt: Ar do mar depois do calor de Marraquexe. A medina branca e azul de Essaouira, o porto de pesca e as muralhas, com paragem numa cooperativa de argão pelo caminho.
   ar: نسيم البحر بعد حرارة مراكش. مدينة الصويرة العتيقة البيضاء والزرقاء، مينائها وأسوارها، مع توقف في تعاونية للأركان.
 about:
   en: >-
-    Essaouira is a calm, windy port town on the Atlantic, about three hours west of Marrakech.
-    On the way you stop at a women’s argan oil cooperative, and if you are lucky you will see the
-    famous goats in the argan trees. In town you have free time to walk the ramparts, watch the
-    fishing boats come in and eat grilled fish at the port.
+    Essaouira is a calm, windy port town on the Atlantic, about three hours west of Marrakech. On the way you stop at a women’s argan oil cooperative, and if you are lucky you will see the famous goats in the argan trees. In town you have free time to walk the ramparts, watch the fishing boats come in and eat grilled fish at the port.
   fr: >-
-    Essaouira est un port calme et venté sur l’Atlantique, à environ trois heures à l’ouest de Marrakech.
-    En chemin, arrêt dans une coopérative féminine d’huile d’argan, et avec un peu de chance les
-    fameuses chèvres dans les arganiers. En ville, temps libre pour marcher sur les remparts, voir
-    rentrer les bateaux de pêche et manger du poisson grillé au port.
+    Essaouira est un port calme et venté sur l’Atlantique, à environ trois heures à l’ouest de Marrakech. En chemin, arrêt dans une coopérative féminine d’huile d’argan, et avec un peu de chance les fameuses chèvres dans les arganiers. En ville, temps libre pour marcher sur les remparts, voir rentrer les bateaux de pêche et manger du poisson grillé au port.
+  es: Essaouira es una ciudad portuaria tranquila y ventosa en el Atlántico, a unas tres horas al oeste de Marrakech. Por el camino se para en una cooperativa de mujeres de aceite de argán y, con suerte, verá las famosas cabras en los arganes. En la ciudad tiene tiempo libre para pasear por las murallas, ver entrar los barcos de pesca y comer pescado a la brasa en el puerto.
+  de: Essaouira ist eine ruhige, windige Hafenstadt am Atlantik, etwa drei Stunden westlich von Marrakesch. Unterwegs halten Sie bei einer Frauenkooperative für Arganöl, und mit etwas Glück sehen Sie die berühmten Ziegen in den Arganbäumen. In der Stadt haben Sie Zeit für die Stadtmauern, die einlaufenden Fischerboote und gegrillten Fisch am Hafen.
+  pt: Essaouira é uma cidade portuária calma e ventosa no Atlântico, a cerca de três horas a oeste de Marraquexe. Pelo caminho para numa cooperativa de mulheres de óleo de argão e, com sorte, vê as famosas cabras nas árvores de argão. Na cidade tem tempo livre para passear nas muralhas, ver chegar os barcos de pesca e comer peixe grelhado no porto.
   ar: >-
-    الصويرة مدينة ساحلية هادئة وعاصفة على المحيط الأطلسي، على بعد حوالي ثلاث ساعات غرب مراكش. في الطريق
-    تتوقفون في تعاونية نسائية لزيت الأركان، وقد تحالفكم الحظ لرؤية الماعز الشهير فوق أشجار الأركان. في
-    المدينة لديكم وقت حر للمشي على الأسوار ومشاهدة قوارب الصيد وتناول السمك المشوي في الميناء.
+    الصويرة مدينة ساحلية هادئة وعاصفة على المحيط الأطلسي، على بعد حوالي ثلاث ساعات غرب مراكش. في الطريق تتوقفون في تعاونية نسائية لزيت الأركان، وقد تحالفكم الحظ لرؤية الماعز الشهير فوق أشجار الأركان. في المدينة لديكم وقت حر للمشي على الأسوار ومشاهدة قوارب الصيد وتناول السمك المشوي في الميناء.
 days: 1
 difficulty: easy
 startCity: Marrakech
 endCity: Marrakech
-bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+bestMonths: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
 price: { shared: 200, private: 1100 }
 includes: { meals: false, transport: true, nights: false }
-photos: [u-essa-boats, u-essa-wall, u-essa-ramparts, u-essa-camel, essaouira-port]
+photos: [ u-essa-boats, u-essa-wall, u-essa-ramparts, u-essa-camel, essaouira-port ]
 highlights:
-  - { en: "A UNESCO-listed medina by the ocean", fr: "Une médina classée par l’UNESCO face à l’océan", ar: "مدينة عتيقة مصنفة لدى اليونسكو على المحيط" }
-  - { en: "Fresh grilled fish at the port", fr: "Poisson grillé au port", ar: "سمك مشوي طازج في الميناء" }
-  - { en: "Women’s argan cooperative", fr: "Coopérative féminine d’argan", ar: "تعاونية نسائية للأركان" }
+  - { en: "A UNESCO-listed medina by the ocean", fr: "Une médina classée par l’UNESCO face à l’océan", es: "Una medina Patrimonio de la UNESCO frente al océano", de: "Eine UNESCO-Medina am Meer", pt: "Uma medina Património da UNESCO junto ao oceano", ar: "مدينة عتيقة مصنفة لدى اليونسكو على المحيط" }
+  - { en: "Fresh grilled fish at the port", fr: "Poisson grillé au port", es: "Pescado fresco a la brasa en el puerto", de: "Frischer gegrillter Fisch am Hafen", pt: "Peixe fresco grelhado no porto", ar: "سمك مشوي طازج في الميناء" }
+  - { en: "Women’s argan cooperative", fr: "Coopérative féminine d’argan", es: "Cooperativa de argán de mujeres", de: "Arganöl-Kooperative von Frauen", pt: "Cooperativa de argão de mulheres", ar: "تعاونية نسائية للأركان" }
 itinerary:
-  - title: { en: "Essaouira", fr: "Essaouira", ar: "الصويرة" }
+  - title: { en: "Essaouira", fr: "Essaouira", es: "Essaouira", de: "Essaouira", pt: "Essaouira", ar: "الصويرة" }
     text:
       en: "Drive west with a stop at an argan cooperative, free day in Essaouira, drive back in the late afternoon."
       fr: "Route vers l’ouest avec arrêt dans une coopérative d’argan, journée libre à Essaouira, retour en fin d’après-midi."
+      es: Carretera hacia el oeste con parada en una cooperativa de argán, día libre en Essaouira y regreso a última hora de la tarde.
+      de: Fahrt nach Westen mit Stopp bei einer Argan-Kooperative, freier Tag in Essaouira, Rückfahrt am späten Nachmittag.
+      pt: Estrada para oeste com paragem numa cooperativa de argão, dia livre em Essaouira e regresso ao fim da tarde.
       ar: "الطريق غربا مع توقف في تعاونية للأركان، يوم حر في الصويرة، والعودة في آخر الظهيرة."
     drive: 3 h each way
-included: [pickup-hotel, transport, driver]
-excluded: [lunch, drinks, guide-local, tips]
-pack: [comfy-shoes, sun-kit, layers]
+included: [ pickup-hotel, transport, driver ]
+excluded: [ lunch, drinks, guide-local, tips ]
+pack: [ comfy-shoes, sun-kit, layers ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech, or a central meeting point for shared trips."
   fr: "Votre riad ou hôtel à Marrakech, ou un point de rendez-vous central pour les sorties partagées."
+  es: Su riad u hotel en Marrakech, o un punto de encuentro céntrico para las salidas compartidas.
+  de: Ihr Riad oder Hotel in Marrakesch oder ein zentraler Treffpunkt bei Gruppenausflügen.
+  pt: O seu riad ou hotel em Marraquexe, ou um ponto de encontro central nas saídas partilhadas.
   ar: "الرياض أو الفندق في مراكش، أو نقطة لقاء مركزية للرحلات المشتركة."
 pickupTime: "08:00"
 goodToKnow:
   - en: "Essaouira is windy and cooler than Marrakech, even in summer. Bring a light jacket."
     fr: "Essaouira est ventée et plus fraîche que Marrakech, même en été. Prenez une veste légère."
+    es: Essaouira es ventosa y más fresca que Marrakech, incluso en verano. Lleve una chaqueta ligera.
+    de: In Essaouira ist es windig und kühler als in Marrakesch, auch im Sommer. Nehmen Sie eine leichte Jacke mit.
+    pt: Essaouira é ventosa e mais fresca do que Marraquexe, mesmo no verão. Leve um casaco leve.
     ar: "الصويرة عاصفة وأبرد من مراكش حتى في الصيف. أحضروا سترة خفيفة."
 mapStops:
   - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
