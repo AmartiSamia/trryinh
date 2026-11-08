@@ -32,7 +32,7 @@ endCity: Marrakech
 bestMonths: [1, 2, 3, 4, 5, 9, 10, 11, 12]
 price: { shared: 400, private: 1400 }
 includes: { meals: false, transport: true, nights: false }
-photos: [ait-benhaddou, ait-benhaddou-camels]
+photos: [u-aitben-aerial, u-aitben-palm, u-aitben-walk, u-kasbah-rugs, ait-benhaddou-camels]
 highlights:
   - { en: "Aït Benhaddou, UNESCO World Heritage", fr: "Aït Benhaddou, patrimoine mondial de l’UNESCO", ar: "آيت بن حدو، تراث عالمي لليونسكو" }
   - { en: "The Tizi n’Tichka mountain road", fr: "La route de montagne du Tizi n’Tichka", ar: "الطريق الجبلي لتيزي نتيشكا" }

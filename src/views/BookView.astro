@@ -121,14 +121,14 @@ const strings = {
     <aside class="lg:sticky lg:top-24 lg:self-start">
       <div class="card overflow-hidden">
         <div class="relative aspect-[16/10] bg-surface-2 bg-cover bg-center" data-prev-img-wrap>
-          <img alt="" class="size-full object-cover" data-prev-img hidden />
+          <img alt="" class="absolute inset-0 size-full object-cover" data-prev-img hidden />
           <p class="absolute inset-0 grid place-items-center p-6 text-center text-sm text-ink-3" data-prev-empty><span class="inline-flex items-center gap-2"><Icon name="compass" />{k.noTrip}</span></p>
         </div>
         <div class="p-6">
           <h2 class="text-sm font-semibold text-ink-3">{k.summary}</h2>
           <p class="mt-1 font-display text-lg font-semibold leading-snug" data-prev-title>—</p>
           <p class="text-sm text-ink-2" data-prev-duration></p>
-          <a class="link mt-1 inline-flex min-h-8 items-center gap-1 text-sm" data-prev-link hidden>{s.common.viewDetails} <Icon name="arrow" size={14} flip /></a>
+          <a href={url(lang, 'trips')} class="link mt-1 inline-flex min-h-8 items-center gap-1 text-sm" data-prev-link hidden>{s.common.viewDetails} <Icon name="arrow" size={14} flip /></a>
 
           <div class="mt-4 rounded-2xl bg-surface-2 p-4">
             <p class="flex items-baseline justify-between gap-2">

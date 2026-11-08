@@ -33,7 +33,7 @@ endCity: Marrakech
 bestMonths: [2, 3, 4, 5, 6, 9, 10, 11, 12]
 price: { private: 9500 }
 includes: { meals: false, transport: true, nights: true }
-photos: [fes-medina, rabat, meknes, volubilis, bahia, fes-tannery]
+photos: [u-koutoubia, fes-medina, rabat, meknes, volubilis, u-tiles, fes-tannery]
 highlights:
   - { en: "Four royal capitals in one trip", fr: "Quatre capitales royales en un voyage", ar: "أربع عواصم ملكية في رحلة واحدة" }
   - { en: "The Roman city of Volubilis", fr: "La cité romaine de Volubilis", ar: "مدينة وليلي الرومانية" }

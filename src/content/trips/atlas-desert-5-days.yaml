@@ -34,7 +34,7 @@ endCity: Marrakech
 bestMonths: [3, 4, 5, 9, 10, 11]
 price: { shared: 4200, private: 6500 }
 includes: { meals: true, transport: true, nights: true }
-photos: [imlil, merzouga-sunrise, tacheddirt, ait-benhaddou, erg-chebbi-camels]
+photos: [u-atlas-hiker, u-camels-lima, tacheddirt, u-aitben-palm, u-dunes-two]
 highlights:
   - { en: "Walk the Imlil valleys with a local guide", fr: "Marcher dans les vallées d’Imlil avec un guide local", ar: "المشي في وديان إمليل مع مرشد محلي" }
   - { en: "Night in the Erg Chebbi dunes", fr: "Nuit dans les dunes de l’erg Chebbi", ar: "ليلة في كثبان عرق الشبي" }

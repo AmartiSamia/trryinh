@@ -29,7 +29,7 @@ endCity: Fes
 bestMonths: [3, 4, 5, 6, 9, 10, 11]
 price: { private: 1300 }
 includes: { meals: false, transport: true, nights: false }
-photos: [chefchaouen, chefchaouen-2]
+photos: [u-chaouen-cliff, u-chaouen-stairs, u-chaouen-courtyard, u-chaouen-street, chefchaouen]
 highlights:
   - { en: "The blue medina of Chefchaouen", fr: "La médina bleue de Chefchaouen", ar: "مدينة شفشاون الزرقاء" }
   - { en: "Sunset from the Spanish mosque", fr: "Coucher de soleil depuis la mosquée espagnole", ar: "الغروب من المسجد الإسباني" }

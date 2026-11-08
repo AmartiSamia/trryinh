@@ -34,7 +34,7 @@ endCity: Marrakech
 bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 price: { private: 350 }
 includes: { meals: false, transport: false, nights: false }
-photos: [bahia, souk-lanterns, jemaa-sunset, bahia-2]
+photos: [u-koutoubia-carriage, u-tiles, u-palace-fountain, u-spices, u-lanterns, bahia]
 highlights:
   - { en: "The Bahia Palace", fr: "Le palais de la Bahia", ar: "قصر الباهية" }
   - { en: "Craftsmen’s souks", fr: "Les souks des artisans", ar: "أسواق الحرفيين" }

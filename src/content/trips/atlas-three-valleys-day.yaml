@@ -31,7 +31,7 @@ endCity: Marrakech
 bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 price: { shared: 350, private: 900 }
 includes: { meals: true, transport: true, nights: false }
-photos: [imlil-2, imlil-3, imlil-valley]
+photos: [u-atlas-road, u-atlas-houses, u-atlas-valley, imlil-2, imlil-3]
 highlights:
   - { en: "Imlil, at the foot of Toubkal", fr: "Imlil, au pied du Toubkal", ar: "إمليل عند سفح توبقال" }
   - { en: "Tea in a village home", fr: "Thé chez l’habitant", ar: "شاي في بيت قروي" }

@@ -48,7 +48,7 @@ price:
   shared: 1450
   confirmed: true
 includes: { meals: true, transport: true, nights: true }
-photos: [toubkal-sunrise, toubkal-hikers, toubkal-refuge, imlil, chamharouch, toubkal-pyramid, toubkal-summit]
+photos: [u-toubkal-snow, toubkal-sunrise, toubkal-hikers, toubkal-refuge, imlil, chamharouch, toubkal-pyramid]
 highlights:
   - { en: Sunrise from the roof of North Africa, fr: Lever du soleil sur le toit de l’Afrique du Nord, ar: شروق الشمس من سقف شمال إفريقيا }
   - { en: The Mizane valley and the shrine of Sidi Chamharouch, fr: La vallée de la Mizane et le sanctuaire de Sidi Chamharouch, ar: وادي ميزان وضريح سيدي شمهروش }

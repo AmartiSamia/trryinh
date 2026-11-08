@@ -34,7 +34,7 @@ maxAltitude: 2350
 bestMonths: [3, 4, 5, 6, 7, 8, 9, 10, 11]
 price: { shared: 600, private: 850 }
 includes: { meals: true, transport: true, nights: false }
-photos: [chamharouch, aroumd, imlil-from-aroumd, imlil]
+photos: [u-atlas-horse, chamharouch, aroumd, imlil-from-aroumd, imlil]
 highlights:
   - { en: "High Atlas in a single day", fr: "Le Haut Atlas en une seule journée", ar: "الأطلس الكبير في يوم واحد" }
   - { en: "The village of Aroumd", fr: "Le village d’Aroumd", ar: "قرية أرومد" }

@@ -30,7 +30,7 @@ endCity: Marrakech
 bestMonths: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
 price: { shared: 400 }
 includes: { meals: false, transport: true, nights: false }
-photos: [quad, agafay, palmeraie]
+photos: [u-quad, agafay, palmeraie]
 highlights:
   - { en: "Two hours of riding with a guide", fr: "Deux heures de conduite avec un guide", ar: "ساعتان من القيادة مع مرشد" }
   - { en: "Mint tea in a village", fr: "Thé à la menthe dans un village", ar: "شاي بالنعناع في قرية" }

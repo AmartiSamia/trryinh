@@ -50,7 +50,10 @@ const { file, alt, placeholder } = photo.data;
     filter: blur(14px);
     transform: scale(1.15);
   }
+  /* The picture fills the frame and is cropped: the frame (aspect ratio or size)
+     decides the height, never the photo, so portrait photos cannot stretch it. */
   .photo :global(picture) {
-    position: relative;
+    position: absolute;
+    inset: 0;
   }
 </style>

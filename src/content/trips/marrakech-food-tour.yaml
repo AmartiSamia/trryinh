@@ -32,7 +32,7 @@ endCity: Marrakech
 bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 price: { shared: 450, private: 650 }
 includes: { meals: true, transport: false, nights: false }
-photos: [jemaa-night, tagine, mint-tea]
+photos: [u-market-dusk, u-spices, jemaa-night, tagine, mint-tea]
 highlights:
   - { en: "About ten local tastings", fr: "Une dizaine de dégustations locales", ar: "حوالي عشر تذوقات محلية" }
   - { en: "Places locals go, not tourist menus", fr: "Des adresses locales, pas des menus touristiques", ar: "أماكن يرتادها السكان المحليون" }

@@ -32,7 +32,7 @@ endCity: Marrakech
 bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 price: { shared: 200, private: 1100 }
 includes: { meals: false, transport: true, nights: false }
-photos: [essaouira, essaouira-port, horse-essaouira]
+photos: [u-essa-boats, u-essa-wall, u-essa-ramparts, u-essa-camel, essaouira-port]
 highlights:
   - { en: "A UNESCO-listed medina by the ocean", fr: "Une médina classée par l’UNESCO face à l’océan", ar: "مدينة عتيقة مصنفة لدى اليونسكو على المحيط" }
   - { en: "Fresh grilled fish at the port", fr: "Poisson grillé au port", ar: "سمك مشوي طازج في الميناء" }

@@ -22,7 +22,7 @@ export interface Region {
 export const regions: Region[] = [
   {
     key: 'atlas',
-    photo: 'toubkal-massif',
+    photo: 'u-toubkal-snow',
     bestMonths: [4, 5, 6, 9, 10],
     day: '18–28',
     night: '5–14',
@@ -40,7 +40,7 @@ export const regions: Region[] = [
   },
   {
     key: 'desert',
-    photo: 'merzouga-dunes',
+    photo: 'u-camels-lima',
     bestMonths: [3, 4, 5, 10, 11],
     day: '22–30',
     night: '8–16',
@@ -58,7 +58,7 @@ export const regions: Region[] = [
   },
   {
     key: 'coast',
-    photo: 'essaouira',
+    photo: 'u-essa-wall',
     bestMonths: [4, 5, 6, 7, 8, 9, 10],
     day: '19–25',
     night: '14–18',
@@ -76,7 +76,7 @@ export const regions: Region[] = [
   },
   {
     key: 'cities',
-    photo: 'fes-medina',
+    photo: 'u-koutoubia',
     bestMonths: [3, 4, 5, 10, 11],
     day: '20–28',
     night: '9–15',

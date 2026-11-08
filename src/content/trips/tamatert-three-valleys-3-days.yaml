@@ -34,7 +34,7 @@ maxAltitude: 2600
 bestMonths: [3, 4, 5, 6, 9, 10, 11]
 price: { shared: 1450 }
 includes: { meals: true, transport: true, nights: true }
-photos: [imlil-2, tacheddirt, imlil-3, ourika]
+photos: [u-atlas-houses, imlil-2, tacheddirt, imlil-3, ourika]
 highlights:
   - { en: "Three valleys in three days", fr: "Trois vallées en trois jours", ar: "ثلاثة وديان في ثلاثة أيام" }
   - { en: "Nights with Amazigh families", fr: "Nuits chez des familles amazighes", ar: "ليالٍ عند عائلات أمازيغية" }

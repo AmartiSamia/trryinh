@@ -35,7 +35,7 @@ maxAltitude: 4071
 bestMonths: [5, 6, 7, 8, 9, 10]
 price: { shared: 3600 }
 includes: { meals: true, transport: true, nights: true }
-photos: [mgoun-arous, mgoun-peak, mgoun-camp]
+photos: [mgoun-arous, u-atlas-valley, mgoun-peak, mgoun-camp]
 highlights:
   - { en: "M’Goun summit (4,071 m)", fr: "Le sommet du M’Goun (4 071 m)", ar: "قمة مكون (4071 م)" }
   - { en: "The Aït Bouguemez valley", fr: "La vallée des Aït Bouguemez", ar: "وادي آيت بوكماز" }

@@ -37,7 +37,7 @@ endCity: Marrakech
 bestMonths: [3, 4, 5, 9, 10, 11, 12]
 price: { shared: 1100, private: 2600 }
 includes: { meals: true, transport: true, nights: true }
-photos: [erg-chebbi-camels, merzouga-sunrise, desert-camp-2, ait-benhaddou, todra, dades]
+photos: [u-camels-ward, u-merzouga-robe, u-camels-dima, desert-camp-2, u-aitben-aerial, todra, dades]
 highlights:
   - { en: "Camel ride into the Erg Chebbi dunes", fr: "Balade à dos de dromadaire dans l’erg Chebbi", ar: "جولة على الجمال في كثبان عرق الشبي" }
   - { en: "Night in a desert camp, sunrise on the dunes", fr: "Nuit en camp, lever de soleil sur les dunes", ar: "ليلة في مخيم صحراوي وشروق فوق الكثبان" }

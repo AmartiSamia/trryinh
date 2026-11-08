@@ -928,5 +928,515 @@
     "source": "https://commons.wikimedia.org/wiki/File:Bab_Mansour_Meknes_2018_1.jpg",
     "sourceName": "Wikimedia Commons",
     "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAsAA4BaJYwCdADHfVUuogAAzh98Gl7xXmvav+USerE/mWzgoyPvonhaktJt0P6/BnwflhWxrbFTTesNIrHP/bcOzrQD4p2JJWr/JTMz4AAA"
+  },
+  {
+    "id": "u-camels-ward",
+    "file": "../assets/photos/u-camels-ward.jpg",
+    "alt": {
+      "en": "A camel caravan crossing golden dunes at sunrise",
+      "fr": "Une caravane de dromadaires dans les dunes dorées au lever du soleil",
+      "ar": "قافلة جمال تعبر كثبانا ذهبية عند الشروق"
+    },
+    "author": "Jonathan Ward",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/oXNUbXuEpbQ",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JYwCdH8ADA3y9QvZzWQJY0YhoAP6YTqntxXIiy7W/F/KeGBmbl65W/1yIPV6AxUqn0AxJxx8mXshA/Z7oJPrNwP3cxRbVrTYxv27ZegPwAA=="
+  },
+  {
+    "id": "u-camels-leret",
+    "file": "../assets/photos/u-camels-leret.jpg",
+    "alt": {
+      "en": "Camels walking on a ridge of orange dunes under a blue sky",
+      "fr": "Des dromadaires sur une crête de dunes orangées sous un ciel bleu",
+      "ar": "جمال تمشي على قمة كثبان برتقالية تحت سماء زرقاء"
+    },
+    "author": "Carlos Leret",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/kiYzznir-uo",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABQAgCdASoQAAwAA4BaJbACdGuAt/8D0N1dtNgA8nLPVeLs9UPUnAr5c/wDEi0/fqZ4EeGeidPFNAHYfP+VqXBO0+NB/yOv+tvPoAAA"
+  },
+  {
+    "id": "u-camels-lima",
+    "file": "../assets/photos/u-camels-lima.jpg",
+    "alt": {
+      "en": "Travellers riding camels across high orange dunes",
+      "fr": "Des voyageurs à dos de dromadaire dans les hautes dunes orangées",
+      "ar": "مسافرون على ظهور الجمال عبر كثبان برتقالية عالية"
+    },
+    "author": "Mauro Lima",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/vjs92g9SAz0",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQAAsAA4BaJbACdGuAAs2ZouAA/pG3iGnJ4BuXrm//DIbfOruO4UN7rt45TO4t8j/z1LgAAAA="
+  },
+  {
+    "id": "u-camels-dima",
+    "file": "../assets/photos/u-camels-dima.jpg",
+    "alt": {
+      "en": "A line of camels and riders in the Sahara dunes",
+      "fr": "Une file de dromadaires et de cavaliers dans les dunes du Sahara",
+      "ar": "صف من الجمال وراكبيها في كثبان الصحراء"
+    },
+    "author": "Tienko Dima",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/Lz8x6EC4pY0",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAgAA4BaJbACdAEObhn9W4AA/fB+exMo0sVt2n0SqDAh8turemGTRipy4AwMNr1+yYZex5hFJSIMmgapndikgAA="
+  },
+  {
+    "id": "u-camels-malik",
+    "file": "../assets/photos/u-camels-malik.jpg",
+    "alt": {
+      "en": "Travellers on camels setting off from a palm grove at the edge of the desert",
+      "fr": "Des voyageurs à dos de dromadaire partant d’une palmeraie au bord du désert",
+      "ar": "مسافرون على الجمال ينطلقون من واحة نخيل عند حافة الصحراء"
+    },
+    "author": "Tomáš Malík",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/VF8P5iTbKQg",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQAAsAA4BaJbACdADcpgnB80YAAPl4dPz+uNMCZkjNkjM/4/h9FJYc09bRxXNaz5MHVNL5LlJIhFja/cFXxYz9eaYkr5N0LWV6MBIkGytH72khj3Z6Ei7T+uP2FrJnxt3eswAA"
+  },
+  {
+    "id": "u-merzouga-robe",
+    "file": "../assets/photos/u-merzouga-robe.jpg",
+    "alt": {
+      "en": "A man in a yellow turban resting with his camels in the dunes",
+      "fr": "Un homme au turban jaune au repos avec ses dromadaires dans les dunes",
+      "ar": "رجل بعمامة صفراء يستريح مع جماله بين الكثبان"
+    },
+    "author": "Tatiana Zanon",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/VP2mjtJqWvY",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAsAA4BaJbACdAEQIpQC0AD+t2c+GsCroUZanku0FVmZ+/ke9S3pqcNPMdskU2z20e+4CXZebdecVlRT5p7erexXrcimzZdbO/YbtYAAAA=="
+  },
+  {
+    "id": "u-dunes-two",
+    "file": "../assets/photos/u-dunes-two.jpg",
+    "alt": {
+      "en": "Two travellers sitting on a dune watching the sunset",
+      "fr": "Deux voyageurs assis sur une dune face au coucher du soleil",
+      "ar": "مسافران يجلسان على كثيب يشاهدان الغروب"
+    },
+    "author": "Ignacio Ceballos",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/eP94dHUaY1U",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAsAA4BaJagCdAEO9rVq4AD+kb9HyPTYrd7iQTboUMtdOWQ083PU26KkGqF+g9jNX4jFX72vRW+RDAAAAA=="
+  },
+  {
+    "id": "u-quad",
+    "file": "../assets/photos/u-quad.jpg",
+    "alt": {
+      "en": "A quad bike riding over the dunes at the end of the day",
+      "fr": "Un quad dans les dunes en fin de journée",
+      "ar": "دراجة رباعية فوق الكثبان في آخر النهار"
+    },
+    "author": "gemmmm",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/lqkHaP6P6nc",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABQAgCdASoQAAkAA4BaJbACdGuAt/8D1Lm/L4AA/mX/QqP9o7m5X7dOsvkMWlTOTcHTHTMf/9BlqR/Fi3n0V0xzqMgeq2AA"
+  },
+  {
+    "id": "u-toubkal-snow",
+    "file": "../assets/photos/u-toubkal-snow.jpg",
+    "alt": {
+      "en": "Snowy ridges of the High Atlas around Toubkal under a deep blue sky",
+      "fr": "Les crêtes enneigées du Haut Atlas autour du Toubkal sous un ciel bleu profond",
+      "ar": "قمم الأطلس الكبير المثلجة حول توبقال تحت سماء زرقاء"
+    },
+    "author": "Youssef Gahouchi",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/Lznyc4uR1hs",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAkAA4BaJbACdAEOiFqLQADeYk5zqY6ZKQ8b3BX9XTiblfULTavU8gm2acKaU0NC4Hgz2QqNUzJfLAQU0jQUr8VlbcjnsjNZmlq/BYAAAA=="
+  },
+  {
+    "id": "u-atlas-hiker",
+    "file": "../assets/photos/u-atlas-hiker.jpg",
+    "alt": {
+      "en": "A hiker looking at snowy High Atlas peaks",
+      "fr": "Un randonneur face aux sommets enneigés du Haut Atlas",
+      "ar": "متنزه يتأمل قمم الأطلس الكبير المثلجة"
+    },
+    "author": "imane ag",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/REPFlPjU7ec",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAgAA4BaJYwCdAD6e/WiEEW4AP7U+aCbBqwoMFAxf6crtJF8RdVw6TUBguRHQRUr5EIgEYKm7rREq2gAAA=="
+  },
+  {
+    "id": "u-atlas-horse",
+    "file": "../assets/photos/u-atlas-horse.jpg",
+    "alt": {
+      "en": "A man and a horse in a green Atlas valley below the mountains",
+      "fr": "Un homme et un cheval dans une vallée verte de l’Atlas",
+      "ar": "رجل وحصان في وادٍ أخضر بالأطلس تحت الجبال"
+    },
+    "author": "Patrick Ogilvie",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/lP3COOnx-Oc",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAsAA4BaJYgCdAEO5bZYexCgAP6yOq+E0VwMWZ2kwHxvmEWndlZszgJk7uR5aDNqUQ+On543hxYrfkIF3xQIxqoVccAA"
+  },
+  {
+    "id": "u-atlas-houses",
+    "file": "../assets/photos/u-atlas-houses.jpg",
+    "alt": {
+      "en": "An earth village on a slope of the High Atlas",
+      "fr": "Un village en terre accroché à une pente du Haut Atlas",
+      "ar": "قرية طينية على سفح في الأطلس الكبير"
+    },
+    "author": "Louis Hansel",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/erg9zCloOgs",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoQAAsAA4BaJbACdAE+UAvECqgAAP38O4RHI0653EKEw/CGkAScnbCW4cf8tjr92D19OVSr3byRjUAF4AA="
+  },
+  {
+    "id": "u-atlas-valley",
+    "file": "../assets/photos/u-atlas-valley.jpg",
+    "alt": {
+      "en": "Red hills and a green valley in the Atlas",
+      "fr": "Collines rouges et vallée verte dans l’Atlas",
+      "ar": "تلال حمراء ووادٍ أخضر في الأطلس"
+    },
+    "author": "Saban Onay",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/JCGDd-IRFpM",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAsAA4BaJbACdAELGuCAAP7VEIqruFDABGprsBhdzLgmLH65ymM8416CL9DeK936W4zhjr/N3pv3b1aSN1HmqtjcAAAA"
+  },
+  {
+    "id": "u-atlas-road",
+    "file": "../assets/photos/u-atlas-road.jpg",
+    "alt": {
+      "en": "A winding mountain road across the High Atlas",
+      "fr": "Une route de montagne en lacets dans le Haut Atlas",
+      "ar": "طريق جبلي متعرج عبر الأطلس الكبير"
+    },
+    "author": "Saban Onay",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/NU01b86F1OU",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoQAAgAA4BaJQBfnCHe1UXQAP5b/rWJgw6rqh139PDBZ3Me9nFf73tidUXYKgAA"
+  },
+  {
+    "id": "u-koutoubia",
+    "file": "../assets/photos/u-koutoubia.jpg",
+    "alt": {
+      "en": "The Koutoubia minaret in Marrakech with the snowy Atlas behind",
+      "fr": "Le minaret de la Koutoubia à Marrakech, l’Atlas enneigé au fond",
+      "ar": "صومعة الكتبية في مراكش والأطلس المثلج خلفها"
+    },
+    "author": "Paul Macallan",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/CFKksjYRSQ8",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAAsAA4BaJZgCdADwGWvHAAD8y71EYACtnPzFqyujcd0QffFNr8KnJBIcTVsnb/YLyrgAAAA="
+  },
+  {
+    "id": "u-koutoubia-carriage",
+    "file": "../assets/photos/u-koutoubia-carriage.jpg",
+    "alt": {
+      "en": "A horse carriage passing the Koutoubia mosque in Marrakech",
+      "fr": "Une calèche devant la mosquée de la Koutoubia à Marrakech",
+      "ar": "عربة خيل تمر قرب مسجد الكتبية في مراكش"
+    },
+    "author": "Rumman Amin",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/bzFHhYKdIa0",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwBACdASoQABgAPu1iqk2ppaQiMAgBMB2JZACdH8ADBkK2xprfCKc/cQwDAAD93TVYxNlCiFDMxBjFigvxNTGyFbGNuIX62+R+hWkhAh0ddNyGI8PvGjQKCy7Al7wwsQdXECC9sB4+DrgQYlYE20BIKiIM6dG8yQw/bqfAAAA="
+  },
+  {
+    "id": "u-lanterns",
+    "file": "../assets/photos/u-lanterns.jpg",
+    "alt": {
+      "en": "Lantern shop glowing in a Moroccan souk",
+      "fr": "Une boutique de lanternes illuminée dans un souk",
+      "ar": "متجر فوانيس مضيء في سوق مغربي"
+    },
+    "author": "quentin touvard",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/FHaZJFdoK2o",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADwAwCdASoQABgAPu1iqU2ppaOiMAgBMB2JQBOmUAS5AkOZ4DXiEzKgAP7CDTVfHaF6l6DL1YFM6AQ2qy27hLsh3cFbCdPifxQq+C8vkW9Rbx+DiVTF3giCa+yrjNMqtlJ6unMORErq8fIOSVBUvkzdm+S9YtpHA74zxqxSwH1qlRFT9n8ELTA/9rl2PC4XQ5t7+Jg/9GS4AA=="
+  },
+  {
+    "id": "u-market-dusk",
+    "file": "../assets/photos/u-market-dusk.jpg",
+    "alt": {
+      "en": "Jemaa el-Fna square at dusk with the Koutoubia minaret",
+      "fr": "La place Jemaa el-Fna au crépuscule et la Koutoubia",
+      "ar": "ساحة جامع الفنا عند الغسق وصومعة الكتبية"
+    },
+    "author": "Val Vesa",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/eEHJ1ZSAZTg",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABQBACdASoQABUAPu1iqU2ppaQiMAgBMB2JZgCdMoMjkn/AeP38xUGO8qegAP7u04+F/ePhOnG5sikCED52IMdhCxdt0VaNAbJ3OHddIVSrLNWoelGc0BjaJLwGgMVwr/K5ZqYiOz83OBCixK7/Qbx+4IMBUtG85Xn1D998cxwAAA=="
+  },
+  {
+    "id": "u-spices",
+    "file": "../assets/photos/u-spices.jpg",
+    "alt": {
+      "en": "Baskets of spices and dried flowers in a Marrakech market",
+      "fr": "Paniers d’épices et de fleurs séchées dans un marché de Marrakech",
+      "ar": "سلال توابل وأزهار مجففة في سوق بمراكش"
+    },
+    "author": "zakariae daoui",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/Dql2_LN5sRg",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JbACdMoR3ABy/vLmvXt2n5FBQAPaje4AgsugLEznnaTfB8Hd4+sjnPsBRQM1bieKnSUvxspUvc6xZ0rvhjCBzslLNTn66TerlXhSNknnx5XhKkg4ebdvJzrWmvFGniOuIsNdSEu0RGlOfP/AmW+XcGNHv1C5fVfJglPT4TvM9FJAIuN5CMMZwXo1zUIaE2sV1Lt8nh34AAA=="
+  },
+  {
+    "id": "u-tiles",
+    "file": "../assets/photos/u-tiles.jpg",
+    "alt": {
+      "en": "Carved stucco and zellige tiles in a Moroccan monument",
+      "fr": "Stuc sculpté et zellige dans un monument marocain",
+      "ar": "جبس منقوش وزليج في معلمة مغربية"
+    },
+    "author": "Bernd Dittrich",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/K_LmTcOgG6M",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JaACdMoR4GB4CtyLKRlCX0sIA4m6GUAcNuzinvJyXElFVnLVNhNDK/vE9mqzxltuL5pspvk/EA7bffxdd6KB2rKIvR9ym1F6KlWSbg3SpqQdYeJp0ql5gdTNPNlGxZd9HLNjAAAA="
+  },
+  {
+    "id": "u-palace-fountain",
+    "file": "../assets/photos/u-palace-fountain.jpg",
+    "alt": {
+      "en": "Visitors in a marble courtyard with carved arches",
+      "fr": "Des visiteurs dans une cour de marbre aux arcs sculptés",
+      "ar": "زوار في ساحة رخامية بأقواس منقوشة"
+    },
+    "author": "Carlos Leret",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/NaY693XXXpY",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAADQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZACdMoR4PoGIAAP2go3tJSXmxZZ9gAD+6fdzpTiLBaAKeem1iZG33lKzHxUs3mCUYw7DBwS4URpES6A73Ohtvj/ebS/Uyg8VVdgU9JmbNRU/hHj+4L+xRL06T7boHxze2m2pLk/hBV2voRzWsjEsfo9tnf6e2rLlniitvliBZhdBGDkuQzRv755FyAAA"
+  },
+  {
+    "id": "u-textiles",
+    "file": "../assets/photos/u-textiles.jpg",
+    "alt": {
+      "en": "Colourful textiles hanging in a red-walled lane",
+      "fr": "Des textiles colorés suspendus dans une ruelle aux murs rouges",
+      "ar": "منسوجات ملونة معلقة في زقاق بجدران حمراء"
+    },
+    "author": "Frida Aguilar Estrada",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/LhVJaRPweJc",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoQAAsAA4BaJbACdADp/xRf0yd+AAD+740H3rdI+Vv3Uc3ouMFsITOUdcGN9esM462AIc1HMI+QWJouaH5+gNUmPnqfJJEeg7ihThJcSKWpzDFI4pow9ayiQYVzVhi0AAA="
+  },
+  {
+    "id": "u-chaouen-cliff",
+    "file": "../assets/photos/u-chaouen-cliff.jpg",
+    "alt": {
+      "en": "The blue houses of Chefchaouen spread on the hillside",
+      "fr": "Les maisons bleues de Chefchaouen étagées sur la colline",
+      "ar": "بيوت شفشاون الزرقاء على سفح التل"
+    },
+    "author": "Pretty Pink",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/NncAbldgViA",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQAAsAA4BaJbACdAYvrq/Yw5JyB8AA/u3r9PJ4mpnhAAqFaxOWdPpe29VLAKoTH9cQfovRrVIvnd1AP+hk5MCK26ACZ7APXuWAtYDiSi54Awd36aMGzfgL6/gVvD9RgmwAAAAA"
+  },
+  {
+    "id": "u-chaouen-courtyard",
+    "file": "../assets/photos/u-chaouen-courtyard.jpg",
+    "alt": {
+      "en": "A blue courtyard with plants and pottery in Chefchaouen",
+      "fr": "Une cour bleue avec plantes et poteries à Chefchaouen",
+      "ar": "فناء أزرق بالنباتات والفخار في شفشاون"
+    },
+    "author": "Kyriacos Georgiou",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/CMmgfHQiYsc",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQAAwAA4BaJbACdAENnvBbuilAAPqbiU4+brYnlx8aSGXrxmjcS0KgJ71COt20InQLMbCSZr89kLD1dCtK8E2qwQQNimbayAaplNd8Vm0oeMGML0o4n0bE1H9NRTN1isAAAA=="
+  },
+  {
+    "id": "u-chaouen-stairs",
+    "file": "../assets/photos/u-chaouen-stairs.jpg",
+    "alt": {
+      "en": "Blue stairs lined with baskets and textiles in Chefchaouen",
+      "fr": "Un escalier bleu bordé de paniers et de textiles à Chefchaouen",
+      "ar": "درج أزرق تصطف عليه السلال والمنسوجات في شفشاون"
+    },
+    "author": "Mohammed",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/CBfUGtVP0QE",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBACdASoQABUAPu1iqU2ppaOiMAgBMB2JbACdMoRwAdB8+6u8Zd4jsQAA2tcnn9vzsdJ8HDfzC0eJMgQ+w0S+HW/jSRsWN7WZbGtH7xayBDIc+sA+RlPPe9kilwcX5Duh2BouMWX4GG90lemnV0G/kld0PtiB93/oN/5kuGDG3/zvKj6daEcUP76Iz9Vv5gAAAA=="
+  },
+  {
+    "id": "u-chaouen-street",
+    "file": "../assets/photos/u-chaouen-street.jpg",
+    "alt": {
+      "en": "A narrow blue street with steps in Chefchaouen",
+      "fr": "Une ruelle bleue en escalier à Chefchaouen",
+      "ar": "زقاق أزرق ضيق بدرجات في شفشاون"
+    },
+    "author": "Hasmik Ghazaryan Olson",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/bX9UO5V1tPs",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAwBACdASoQABUAPu1iqU2ppaOiMAgBMB2JbACdMoR3ACaTC1+ZiogpVgAA/P9sSa2wK4sk/yg7mGnYd1gQnHRwKKEZ1i4qzAcf8/HFLsOJXqV0TP8MRN8Aplh1YIFjnY2I88YIzX4j8iLgSJHhjBOcrVvbJQ+RlGeUTyQpsI50CHoIseEacnhQePi6zFBJYe7eEk+QUE0d4MAA"
+  },
+  {
+    "id": "u-aitben-aerial",
+    "file": "../assets/photos/u-aitben-aerial.jpg",
+    "alt": {
+      "en": "The earth ksar of Aït Benhaddou above the river and the palm grove",
+      "fr": "Le ksar en terre d’Aït Benhaddou au-dessus de l’oued et de la palmeraie",
+      "ar": "قصر آيت بن حدو الطيني فوق الوادي وواحة النخيل"
+    },
+    "author": "Toa Heftiba",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/pcbSQTQr2-I",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAsAA4BaJZACdAEOzJ+4AAD+W/k362qTcdP7Sbu3RAL4cqpPs7e982hHEdbZJi4HT5WlCzdodgZeooCzxjHYhyMobuufC5HopIEHoRzCR9iwAAA="
+  },
+  {
+    "id": "u-aitben-palm",
+    "file": "../assets/photos/u-aitben-palm.jpg",
+    "alt": {
+      "en": "Earth towers of Aït Benhaddou behind a palm tree",
+      "fr": "Les tours en terre d’Aït Benhaddou derrière un palmier",
+      "ar": "أبراج آيت بن حدو الطينية خلف نخلة"
+    },
+    "author": "sander traa",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/V8nyyixvqX4",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADQAwCdASoQABgAPu1kqU2ppaQiMAgBMB2JQBOmUGQ6h+RWFYiBBmAA/ExEkFMF3C5siit/1VKwNRs9JBC0+ExAF7zJT4QNXWS/uHcZ2LXZANotyGlFD0wmkxyLKrzQKf+AHk3DDmIcGw2sY+tOM83jd3PLM0vgp0hKUoU+xMAAAA=="
+  },
+  {
+    "id": "u-aitben-walk",
+    "file": "../assets/photos/u-aitben-walk.jpg",
+    "alt": {
+      "en": "Walking towards the ksar of Aït Benhaddou across the dry river",
+      "fr": "Marche vers le ksar d’Aït Benhaddou à travers l’oued à sec",
+      "ar": "المشي نحو قصر آيت بن حدو عبر الوادي الجاف"
+    },
+    "author": "Jannes Jacobs",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/pT15RyXDJ4Q",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAAsAA4BaJbACdAEOzMnmuUAA/u3hg/V3oEdjXdjSfh5f6JyLR2/vH5Mxcr+EHBNXjxPH0eKApbJ1g0fKkRHW4IjU3IuHl8TTywknvL0L/XEGpWmlIs8/gAA="
+  },
+  {
+    "id": "u-kasbah-rugs",
+    "file": "../assets/photos/u-kasbah-rugs.jpg",
+    "alt": {
+      "en": "Rooftops of an earth kasbah with rugs laid out in the sun",
+      "fr": "Les toits d’une kasbah en terre avec des tapis au soleil",
+      "ar": "أسطح قصبة طينية وسجاد معروض تحت الشمس"
+    },
+    "author": "Raúl Mermans García",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/gioOtYe8qv8",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAACQBACdASoQABgAPu1iqU2ppaOiMAgBMB2JYwCw7f60wEVkz6YavP0NNSZh2lgA/sxQB029xUqcVQbb0pRknY3dIJOJTzN+pZJwWStvIrg9nw1gfk/A+WIiHTiBDvnM76xtpDE2Rcx9ehZNp8cY12XQvBI4qic65fCZCNHqbZCOrmPba8EkdsR7l8t9HrFU/Mla7y7LKCEqLz1PskxsLyc7igAAAA=="
+  },
+  {
+    "id": "u-essa-boats",
+    "file": "../assets/photos/u-essa-boats.jpg",
+    "alt": {
+      "en": "Blue fishing boats in the port of Essaouira",
+      "fr": "Les barques bleues du port d’Essaouira",
+      "ar": "قوارب الصيد الزرقاء في ميناء الصويرة"
+    },
+    "author": "Emma Van Sant",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/OQT24ujdL9M",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsAA4BaJbACdAD5h+g2l/2AAP21jRIqTo13fjg+ZrFMFeR80V1fBNPIYrUbr6a9Nif83Otvx7aVvr84iVtaCRqXqF1XAKDFAhPOb1QBtW+0HUwAAA=="
+  },
+  {
+    "id": "u-essa-wall",
+    "file": "../assets/photos/u-essa-wall.jpg",
+    "alt": {
+      "en": "The sea tower of Essaouira’s port and blue boats",
+      "fr": "La tour du port d’Essaouira et les barques bleues",
+      "ar": "برج ميناء الصويرة والقوارب الزرقاء"
+    },
+    "author": "rigel",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/No_Y3bn4lNQ",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQAgCdASoQAAsAA4BaJagCdAD6GgNRXk2AAP5n267jA6RwyPVOWA1yZF36XLuOqJo199hyfJ5+XpypUeb69TYNBYn2R6GSqBxc44UzoOQKhwy3pKDBbtPK07+ArauzZuOZAAAA"
+  },
+  {
+    "id": "u-essa-ramparts",
+    "file": "../assets/photos/u-essa-ramparts.jpg",
+    "alt": {
+      "en": "The ocean ramparts of Essaouira at the end of the day",
+      "fr": "Les remparts d’Essaouira face à l’océan en fin de journée",
+      "ar": "أسوار الصويرة المطلة على المحيط في آخر النهار"
+    },
+    "author": "Dimitri Ana",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/GyIcdvrlY3U",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAwAgCdASoQAAsAA4BaJYwCdH8AGCb7bYu8cADN7WK+yvzU3pXL1ML3o4GQfIiaFEHE3DfqFlVx04CqvCOVAaQ+P8RfAujQAAA="
+  },
+  {
+    "id": "u-essa-camel",
+    "file": "../assets/photos/u-essa-camel.jpg",
+    "alt": {
+      "en": "Camels resting on the beach near Essaouira",
+      "fr": "Des dromadaires au repos sur la plage près d’Essaouira",
+      "ar": "جمال تستريح على الشاطئ قرب الصويرة"
+    },
+    "author": "Peter Schulz",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license",
+    "source": "https://unsplash.com/photos/-leOF2nzJQ8",
+    "sourceName": "Unsplash",
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsAA4BaJZACdGuAArfv/8zAAP6/yKhjb9I3M0QWeJfJvNL8nkcZumqpL9jKkRmlG8a1nL8rr5fiUTOxWUkhsT7Isj5hUHg1zAAA"
   }
 ]

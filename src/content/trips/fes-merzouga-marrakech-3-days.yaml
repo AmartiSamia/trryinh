@@ -33,7 +33,7 @@ endCity: Marrakech
 bestMonths: [3, 4, 5, 9, 10, 11, 12]
 price: { shared: 1500, private: 3200 }
 includes: { meals: true, transport: true, nights: true }
-photos: [merzouga-dunes, erg-chebbi-camels, todra, fes-medina]
+photos: [u-camels-dima, u-camels-leret, merzouga-dunes, todra, fes-medina]
 highlights:
   - { en: "Fes to Marrakech without backtracking", fr: "De Fès à Marrakech sans retour en arrière", ar: "من فاس إلى مراكش دون عودة إلى الوراء" }
   - { en: "Cedar forests and Barbary macaques near Azrou", fr: "Forêts de cèdres et macaques près d’Azrou", ar: "غابات الأرز وقردة المكاك قرب أزرو" }

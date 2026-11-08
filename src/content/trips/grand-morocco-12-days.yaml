@@ -33,7 +33,7 @@ endCity: Marrakech
 bestMonths: [3, 4, 5, 9, 10, 11]
 price: { private: 15000 }
 includes: { meals: false, transport: true, nights: true }
-photos: [chefchaouen, merzouga-dunes, ait-benhaddou, fes-medina, imlil, essaouira]
+photos: [u-chaouen-cliff, u-camels-ward, u-aitben-aerial, fes-medina, u-atlas-hiker, u-essa-boats]
 highlights:
   - { en: "Chefchaouen, Fes and Marrakech", fr: "Chefchaouen, Fès et Marrakech", ar: "شفشاون وفاس ومراكش" }
   - { en: "A night in the Sahara", fr: "Une nuit au Sahara", ar: "ليلة في الصحراء" }

@@ -90,7 +90,7 @@ const en = {
     submit: 'Search',
   },
   home: {
-    heroEyebrow: 'Imlil · High Atlas · Morocco',
+    heroEyebrow: 'High Atlas · Sahara · Medinas',
     heroTitle: 'Morocco, the local way',
     heroText:
       'Treks from Imlil, nights in the desert, day trips and journeys across the country. Organised from Imlil by local guides who answer you directly.',
@@ -364,7 +364,7 @@ const fr: UI = {
     submit: 'Rechercher',
   },
   home: {
-    heroEyebrow: 'Imlil · Haut Atlas · Maroc',
+    heroEyebrow: 'Haut Atlas · Sahara · Médinas',
     heroTitle: 'Le Maroc, avec ceux qui y vivent',
     heroText:
       'Treks depuis Imlil, nuits dans le désert, excursions et voyages dans tout le pays. Organisés depuis Imlil par des guides locaux qui vous répondent directement.',
@@ -636,7 +636,7 @@ const ar: UI = {
     submit: 'بحث',
   },
   home: {
-    heroEyebrow: 'إمليل · الأطلس الكبير · المغرب',
+    heroEyebrow: 'الأطلس الكبير · الصحراء · المدن العتيقة',
     heroTitle: 'المغرب مع أهله',
     heroText:
       'رحلات مشي من إمليل، ليالٍ في الصحراء، رحلات يومية وجولات في كل أنحاء البلد. ينظمها من إمليل مرشدون محليون يجيبونكم مباشرة.',

@@ -49,17 +49,17 @@ const vibeTrips = trips
   .filter((x) => x.keys.length);
 const faqs = (await getCollection('faq')).filter((f) => f.data.home);
 
-const hero = (await getEntry('photos', 'imlil'))!;
+const hero = (await getEntry('photos', 'u-camels-ward'))!;
 const heroImg = await getImage({ src: hero.data.file, widths: [640, 960, 1280, 1920], format: 'avif' });
 const heroSizes = '100vw';
 
 const catPhotos: Record<string, string> = {
-  trekking: 'toubkal-hikers',
-  desert: 'merzouga-sunrise',
-  'day-trip': 'ouzoud',
-  culture: 'jemaa-sunset',
-  circuit: 'chefchaouen',
-  activity: 'balloon',
+  trekking: 'u-atlas-hiker',
+  desert: 'u-camels-leret',
+  'day-trip': 'u-essa-boats',
+  culture: 'u-lanterns',
+  circuit: 'u-chaouen-cliff',
+  activity: 'u-quad',
 };
 const tiles = await Promise.all(
   categories.map(async (c) => ({
@@ -68,7 +68,7 @@ const tiles = await Promise.all(
     count: trips.filter((tr) => tr.data.category === c).length,
   })),
 );
-const tailor = (await getEntry('photos', 'merzouga-dunes'))!;
+const tailor = (await getEntry('photos', 'u-koutoubia'))!;
 const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
 ---
 <Base lang={lang} title={`Iberdan · ${s.meta.tagline}`} alternates={alternates('home')} overlayHeader jsonLd={orgJsonLd(lang)}>
@@ -77,7 +77,7 @@ const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
   <!-- Hero -->
   <section class="hero relative isolate flex min-h-[100svh] items-end overflow-hidden pb-24 pt-28 text-white sm:items-center sm:pb-16">
     <Photo photo={hero} lang={lang} eager sizes={heroSizes} widths={[640, 960, 1280, 1920]} class="hero-photo !absolute inset-0 -z-10" />
-    <div class="absolute inset-0 -z-10" style="background:var(--photo-veil)"></div>
+    <div class="hero-veil absolute inset-0 -z-10"></div>
     <div class="container-page">
       <p class="hero-in eyebrow !text-[#f2b252] [text-shadow:0_1px_12px_rgb(0_0_0/.6)]" style="--d:0ms">{s.home.heroEyebrow}</p>
       <h1 class="hero-in mt-3 max-w-3xl text-display" style="--d:80ms">{s.home.heroTitle}</h1>
@@ -229,6 +229,26 @@ const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
   :global([data-theme='dark']) .vibe[aria-pressed='true'] {
     background: var(--accent);
     color: var(--on-accent);
+  }
+  /* Readable text on the start side, photo stays vivid on the other side. */
+  .hero-veil {
+    background: linear-gradient(180deg, rgb(8 11 26 / 0.45) 0%, rgb(8 11 26 / 0.2) 30%, rgb(8 11 26 / 0.75) 100%);
+  }
+  @media (min-width: 48rem) {
+    .hero-veil {
+      background:
+        linear-gradient(90deg, rgb(8 11 26 / 0.8) 0%, rgb(8 11 26 / 0.45) 45%, rgb(8 11 26 / 0) 75%),
+        linear-gradient(180deg, rgb(8 11 26 / 0.4) 0%, transparent 25%);
+    }
+    :global([dir='rtl']) .hero-veil {
+      background:
+        linear-gradient(270deg, rgb(8 11 26 / 0.8) 0%, rgb(8 11 26 / 0.45) 45%, rgb(8 11 26 / 0) 75%),
+        linear-gradient(180deg, rgb(8 11 26 / 0.4) 0%, transparent 25%);
+    }
+  }
+  /* Mirror the photo in RTL so the subject stays away from the text. */
+  :global([dir='rtl']) .hero :global(.hero-photo) {
+    transform: scaleX(-1);
   }
   .hero h1 {
     text-shadow: 0 2px 30px rgb(0 0 0 / 0.35);
