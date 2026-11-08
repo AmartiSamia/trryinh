@@ -85,9 +85,9 @@ export const de: UI = {
   },
   home: {
     heroEyebrow: 'Hoher Atlas · Sahara · Medinas',
-    heroTitle: 'Über den Wolken aufwachen. Unter Saharasternen einschlafen.',
+    heroTitle: 'Marokko, wie nur Einheimische es kennen.',
     heroText:
-      'Der Toubkal bei Sonnenaufgang, eine Nacht in den Dünen, die Souks von Marrakesch in der Abenddämmerung. Kleine Gruppen oder Privatreisen mit einheimischen Guides – und ein echter Mensch auf WhatsApp, Tag und Nacht.',
+      'Von den Gipfeln des Atlas bis zu den Dünen der Sahara, von blauen Gassen bis zu Stadtmauern am Atlantik: Reisen in kleinen Gruppen oder privat, geführt von Menschen von hier. Nennen Sie uns Ihre Daten, um den Rest kümmern wir uns.',
     categoriesTitle: 'Welche Art von Reise?',
     featuredTitle: 'Die meistgefragten Reisen',
     featuredText: 'Ein Ausgangspunkt. Jede Reise kann privat oder an Ihre Termine angepasst werden.',

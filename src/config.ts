@@ -57,16 +57,31 @@ export const currency = {
     MAD: 1,
     EUR: 10.5, // TODO(youssef): confirm the rate you want to use
     USD: 9.6, // TODO(youssef): confirm the rate you want to use
+    GBP: 12.4, // TODO(youssef): confirm the rate you want to use
+    CHF: 11.3, // TODO(youssef): confirm the rate you want to use
+    CAD: 6.9, // TODO(youssef): confirm the rate you want to use
   },
 } as const;
 
-export type Currency = 'EUR' | 'MAD' | 'USD';
-export const currencies: Currency[] = ['EUR', 'MAD', 'USD'];
+export type Currency = 'EUR' | 'MAD' | 'USD' | 'GBP' | 'CHF' | 'CAD';
+export const currencies: Currency[] = ['EUR', 'USD', 'GBP', 'MAD', 'CHF', 'CAD'];
+/** Symbol shown next to the code in the currency menu. */
+export const currencySymbol: Record<Currency, string> = { EUR: '€', USD: '$', GBP: '£', MAD: 'DH', CHF: 'Fr', CAD: 'C$' };
 
 /** Email form endpoint (Web3Forms). The key is public by design but kept in env. */
 export const forms = {
   endpoint: 'https://api.web3forms.com/submit',
   accessKey: import.meta.env.PUBLIC_WEB3FORMS_KEY ?? '', // TODO(youssef): create a free key at web3forms.com with the agency email
+} as const;
+
+/**
+ * Call-back leads ("leave your number"). Always emailed through Web3Forms when the key is set.
+ * relay: also forward each lead as a WhatsApp message to the agency phone through
+ * netlify/functions/lead.mjs. Needs Netlify env vars PUBLIC_LEAD_RELAY=1,
+ * CALLMEBOT_PHONE and CALLMEBOT_APIKEY (free key: see README).
+ */
+export const leads = {
+  relay: import.meta.env.PUBLIC_LEAD_RELAY === '1',
 } as const;
 
 /** Privacy-friendly analytics, off by default. */

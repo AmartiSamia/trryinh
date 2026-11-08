@@ -85,9 +85,9 @@ export const es: UI = {
   },
   home: {
     heroEyebrow: 'Alto Atlas · Sáhara · Medinas',
-    heroTitle: 'Despierte sobre las nubes. Duerma bajo las estrellas del Sáhara.',
+    heroTitle: 'Marruecos, como solo lo conocen los de aquí.',
     heroText:
-      'El Toubkal al amanecer, una noche en las dunas, los zocos de Marrakech al caer la tarde. Grupos pequeños o viajes privados con guías locales, y una persona real en WhatsApp, de día y de noche.',
+      'De las cumbres del Atlas a las dunas del Sáhara, de los callejones azules a las murallas frente al océano: viajes en grupo reducido o privados, guiados por gente de aquí. Díganos sus fechas y nosotros nos ocupamos del resto.',
     categoriesTitle: '¿Qué tipo de viaje?',
     featuredTitle: 'Los viajes más solicitados',
     featuredText: 'Un punto de partida. Cada viaje puede ser privado o adaptarse a sus fechas.',

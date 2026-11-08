@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery.astro';
 import Itinerary from '../components/Itinerary.astro';
 import RouteMap from '../components/RouteMap.astro';
 import BookingCard from '../components/BookingCard.astro';
+import Callback from '../components/Callback.astro';
 import TripCard from '../components/TripCard.astro';
 import FaqList from '../components/FaqList.astro';
 import Icon from '../components/Icon.astro';
@@ -162,6 +163,7 @@ const tags = [
             <div class="mt-5"><FaqList items={d.faq} lang={lang} /></div>
           </section>
         )}
+        <Callback lang={lang} trip={{ slug: trip.id, title: d.title[lang] }} class="max-w-xl" />
       </div>
 
       <aside class="lg:order-none" data-no-print>

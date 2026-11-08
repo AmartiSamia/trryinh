@@ -63,7 +63,13 @@ Search the code for `TODO(youssef)` to find each one in place.
 - [ ] Register **iberdan.com** and **iberdan.ma** (both looked free on 7 Nov 2026), then update
       `site.url` in `src/config.ts` and `site` in `astro.config.mjs` if different.
 - [ ] Create the mailbox **contact@iberdan.com**.
-- [ ] Create a free Web3Forms key with that email and add `PUBLIC_WEB3FORMS_KEY` on the host.
+- [ ] Create a free Web3Forms key with that email and add `PUBLIC_WEB3FORMS_KEY` on the host
+      (needed for the email form **and** the call-back form).
+- [ ] Optional: WhatsApp alert for each call-back lead (CallMeBot key, see README).
+- [ ] Confirm the rates for EUR, USD, GBP, CHF and CAD in `src/config.ts`.
+- [ ] New trips to confirm (price, programme, season): **Oukaïmeden day trip** and
+      **Imilchil and the lakes, 4 days** (`src/content/trips/oukaimeden-day.yaml`,
+      `imilchil-lakes-4-days.yaml`).
 - [ ] Instagram: keep `hk_atlas20` or create an Iberdan account? Facebook and TikTok links.
 - [ ] Google Business profile and TripAdvisor page links (for "Leave a review").
 

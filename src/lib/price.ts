@@ -12,7 +12,8 @@ export function formatMoney(amount: number, cur: Currency, lang: Lang): string {
   return new Intl.NumberFormat(langMeta[lang].intl, {
     style: 'currency',
     currency: cur,
-    currencyDisplay: cur === 'MAD' ? 'code' : 'symbol',
+    // € and £ are unambiguous; $ needs "US$"/"CA$" so keep the regional symbol there.
+    currencyDisplay: cur === 'MAD' ? 'code' : cur === 'EUR' || cur === 'GBP' ? 'narrowSymbol' : 'symbol',
     maximumFractionDigits: 0,
     minimumFractionDigits: 0,
   }).format(amount);

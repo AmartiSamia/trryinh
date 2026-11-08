@@ -85,9 +85,9 @@ export const pt: UI = {
   },
   home: {
     heroEyebrow: 'Alto Atlas · Sara · Medinas',
-    heroTitle: 'Acorde acima das nuvens. Adormeça sob as estrelas do Sara.',
+    heroTitle: 'Marrocos, como só quem é de cá o conhece.',
     heroText:
-      'O Toubkal ao nascer do sol, uma noite nas dunas, os souks de Marraquexe ao cair da tarde. Grupos pequenos ou viagens privadas com guias locais, e uma pessoa real no WhatsApp, de dia e de noite.',
+      'Dos cumes do Atlas às dunas do Sara, das ruelas azuis às muralhas sobre o oceano: viagens em grupo pequeno ou privadas, guiadas por gente de cá. Diga-nos as suas datas, nós tratamos do resto.',
     categoriesTitle: 'Que tipo de viagem?',
     featuredTitle: 'As viagens mais procuradas',
     featuredText: 'Um ponto de partida. Cada viagem pode ser privada ou ajustada às suas datas.',

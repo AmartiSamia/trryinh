@@ -34,7 +34,7 @@ endCity: Marrakech
 bestMonths: [ 3, 4, 5, 6, 9, 10, 11 ]
 price: { shared: 200, private: 1000 }
 includes: { meals: false, transport: true, nights: false }
-photos: [ ouzoud, ouzoud-2 ]
+photos: [u-ouzoud-1, u-ouzoud-3, u-ouzoud-boat, u-ouzoud-2, ouzoud]
 highlights:
   - { en: "Morocco’s highest waterfalls", fr: "Les plus hautes cascades du Maroc", es: "Las cascadas más altas de Marruecos", de: "Marokkos höchste Wasserfälle", pt: "As cascatas mais altas de Marrocos", ar: "أعلى شلالات في المغرب" }
   - { en: "Boat ride to the foot of the falls", fr: "Barque jusqu’au pied des chutes", es: "Paseo en barca hasta el pie de las cascadas", de: "Bootsfahrt zum Fuß der Fälle", pt: "Passeio de barco até ao pé das quedas", ar: "جولة بالقارب إلى أسفل الشلالات" }

@@ -173,6 +173,11 @@ const places: Record<string, Partial<L>> = {
   'Bou Inania madrasa': { fr: 'Médersa Bou Inania', es: 'Madrasa Bou Inania', de: 'Medersa Bou Inania', pt: 'Madraça Bou Inania', ar: 'مدرسة بوعنانية' },
   'Al-Qarawiyyin': { fr: 'Al-Qaraouiyine', ar: 'القرويين' },
   'Chouara tannery': { fr: 'Tannerie Chouara', es: 'Curtiduría Chouara', de: 'Gerberei Chouara', pt: 'Curtumes Chouara', ar: 'دار الدباغة شوارة' },
+  Oukaïmeden: { ar: 'أوكايمدن' },
+  Imilchil: { ar: 'إملشيل' },
+  'Bin el Ouidane': { ar: 'بين الويدان' },
+  'Lake Tislit': { fr: 'Lac Tislit', es: 'Lago Tislit', de: 'Tislit-See', pt: 'Lago Tislit', ar: 'بحيرة تيسليت' },
+  'Lake Isli': { fr: 'Lac Isli', es: 'Lago Isli', de: 'Isli-See', pt: 'Lago Isli', ar: 'بحيرة إيسلي' },
   'Launch site (Jbilet area)': { fr: 'Site de décollage (Jbilet)', es: 'Zona de despegue (Jbilet)', de: 'Startplatz (Jbilet)', pt: 'Local de descolagem (Jbilet)', ar: 'موقع الإقلاع (الجبيلات)' },
 };
 export const placeLabel = (place: string, lang: keyof L): string => places[place]?.[lang] ?? place;

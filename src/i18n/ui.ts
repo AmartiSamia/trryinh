@@ -93,9 +93,9 @@ const en = {
   },
   home: {
     heroEyebrow: 'High Atlas · Sahara · Medinas',
-    heroTitle: 'Wake above the clouds. Sleep under Saharan stars.',
+    heroTitle: 'Morocco, the way only locals know it.',
     heroText:
-      'Toubkal at sunrise, a night in the dunes, the souks of Marrakech after dark. Small groups and private trips led by local guides, and a real person on WhatsApp, day and night.',
+      'From Atlas peaks to Saharan dunes, from blue alleys to ramparts on the ocean: small-group and private trips led by people born here. Tell us your dates, we take care of the rest.',
     categoriesTitle: 'What kind of trip?',
     featuredTitle: 'Trips people ask us about most',
     featuredText: 'A starting point. Every trip can be made private or adjusted to your dates.',
@@ -399,9 +399,9 @@ const fr: UI = {
   },
   home: {
     heroEyebrow: 'Haut Atlas · Sahara · Médinas',
-    heroTitle: 'Réveillez-vous au-dessus des nuages. Endormez-vous sous les étoiles du Sahara.',
+    heroTitle: 'Le Maroc, comme seuls ses habitants le connaissent.',
     heroText:
-      'Le Toubkal au lever du soleil, une nuit dans les dunes, les souks de Marrakech à la tombée du jour. Petits groupes ou voyages privés, avec des guides locaux, et une vraie personne sur WhatsApp, jour et nuit.',
+      'Des sommets de l’Atlas aux dunes du Sahara, des ruelles bleues aux remparts face à l’océan : des voyages en petit groupe ou en privé, menés par des gens d’ici. Donnez-nous vos dates, on s’occupe du reste.',
     categoriesTitle: 'Quel voyage ?',
     featuredTitle: 'Les voyages qu’on nous demande le plus',
     featuredText: 'Un point de départ. Chaque voyage peut être privé ou adapté à vos dates.',
@@ -703,9 +703,9 @@ const ar: UI = {
   },
   home: {
     heroEyebrow: 'الأطلس الكبير · الصحراء · المدن العتيقة',
-    heroTitle: 'استيقظوا فوق الغيوم، وناموا تحت نجوم الصحراء.',
+    heroTitle: 'المغرب كما لا يعرفه إلا أهله.',
     heroText:
-      'توبقال عند الشروق، ليلة بين الكثبان، وأسواق مراكش عند الغروب. مجموعات صغيرة أو رحلات خاصة مع مرشدين محليين، وشخص حقيقي يجيبكم على واتساب ليلا ونهارا.',
+      'من قمم الأطلس إلى كثبان الصحراء، ومن الأزقة الزرقاء إلى الأسوار المطلة على المحيط: رحلات في مجموعات صغيرة أو خاصة، يقودها أناس من هنا. أخبرونا بتواريخكم، ونحن نتكفل بالباقي.',
     categoriesTitle: 'أي نوع من الرحلات؟',
     featuredTitle: 'الرحلات الأكثر طلبا',
     featuredText: 'نقطة انطلاق. كل رحلة يمكن أن تكون خاصة أو أن تُكيَّف مع تواريخكم.',

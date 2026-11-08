@@ -3,6 +3,7 @@
  * Hero background slideshow: slow crossfade with a gentle zoom.
  * - Slide 1 is in the HTML (LCP image, preloaded). The others live in <template>s
  *   and are only added after the page has loaded, so they never slow the first paint.
+ * - Slide 1 (Toubkal) stays 10 s, the others 5 s each.
  * - Pause/play button and dots (WCAG 2.2.2); stops when the tab is hidden;
  *   no autoplay and no zoom with prefers-reduced-motion.
  */
@@ -17,8 +18,8 @@ const { lang } = Astro.props;
 const s = t(lang);
 const m = s.more;
 const list = [
-  { photo: 'u-camels-ward', caption: m.slides.desert, href: `${url(lang, 'trips')}?cat=desert` },
   { photo: 'u-toubkal-snow', caption: m.slides.atlas, href: url(lang, 'trips', 'toubkal-summit-3-days') },
+  { photo: 'u-camels-ward', caption: m.slides.desert, href: `${url(lang, 'trips')}?cat=desert` },
   { photo: 'u-chaouen-cliff', caption: m.slides.chaouen, href: url(lang, 'trips', 'chefchaouen-day-from-fes') },
   { photo: 'u-koutoubia', caption: m.slides.marrakech, href: url(lang, 'trips', 'marrakech-guided-tour') },
   { photo: 'u-essa-boats', caption: m.slides.coast, href: url(lang, 'trips', 'essaouira-day') },
@@ -82,7 +83,10 @@ const widths = [640, 960, 1280, 1920];
   }
   /* Slow "Ken Burns" zoom on the visible slide. */
   .slide.is-active :global(img) {
-    animation: kenburns 9s ease-out both;
+    animation: kenburns 7s ease-out both;
+  }
+  .slide[data-slide='0'].is-active :global(img) {
+    animation-duration: 12s;
   }
   @keyframes kenburns {
     from { transform: scale(1.1); }
@@ -130,8 +134,14 @@ const widths = [640, 960, 1280, 1920];
       dots.forEach((d, j) => (j === i ? d.setAttribute('aria-current', 'true') : d.removeAttribute('aria-current')));
       captions.forEach((c, j) => (c.hidden = j !== i));
     };
-    const stop = () => { window.clearInterval(timer); timer = undefined; };
-    const start = () => { stop(); if (!paused && ready) timer = window.setInterval(() => show(i + 1), 6500); };
+    // First slide (Toubkal) 10 s, the others 5 s.
+    const duration = (k: number) => (k === 0 ? 10000 : 5000);
+    const stop = () => { window.clearTimeout(timer); timer = undefined; };
+    const start = () => {
+      stop();
+      if (paused || !ready) return;
+      timer = window.setTimeout(() => { show(i + 1); start(); }, duration(i));
+    };
     const setPaused = (p: boolean) => {
       paused = p;
       ui.toggleAttribute('data-paused', p);

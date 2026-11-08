@@ -52,7 +52,7 @@ const vibeTrips = trips
   .filter((x) => x.keys.length);
 const faqs = (await getCollection('faq')).filter((f) => f.data.home);
 
-const hero = (await getEntry('photos', 'u-camels-ward'))!; // first slide (LCP)
+const hero = (await getEntry('photos', 'u-toubkal-snow'))!; // first slide (LCP)
 const heroImg = await getImage({ src: hero.data.file, widths: [640, 960, 1280, 1920], format: 'avif' });
 const heroSizes = '100vw';
 

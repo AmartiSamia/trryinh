@@ -1,0 +1,161 @@
+---
+/**
+ * "We call you back" lead form. The visitor leaves name + phone; the request is
+ * sent to the agency automatically:
+ *  - by email through Web3Forms (PUBLIC_WEB3FORMS_KEY), and
+ *  - optionally as a WhatsApp message to the agency phone, through the Netlify
+ *    function netlify/functions/lead.mjs (PUBLIC_LEAD_RELAY=1 + CallMeBot secrets).
+ * Without any of these, it falls back to opening WhatsApp with a pre-filled message.
+ */
+import Icon from './Icon.astro';
+import { type Lang } from '../i18n/routes';
+import { callback, dialCodes, defaultRegion } from '../i18n/callback';
+import { contact, leads } from '../config';
+
+interface Props {
+  lang: Lang;
+  /** Trip slug + title, when shown on a trip page. */
+  trip?: { slug: string; title: string };
+  class?: string;
+}
+const { lang, trip, class: cls } = Astro.props;
+const c = callback[lang];
+const names = new Intl.DisplayNames([lang], { type: 'region' });
+const uid = `cb-${trip?.slug ?? 'general'}`;
+const defRegion = defaultRegion[lang];
+---
+<section class:list={['callback rounded-3xl p-6', cls]} aria-labelledby={`${uid}-t`} data-no-print>
+  <p class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-accent-text"><Icon name="phone" size={14} />{c.eyebrow}</p>
+  <h2 id={`${uid}-t`} class="mt-1.5 font-display text-xl font-semibold leading-snug">{c.title}</h2>
+  <p class="mt-1.5 text-sm text-ink-2">{c.text}</p>
+
+  <form class="mt-4 space-y-3" novalidate data-callback
+    data-relay={leads.relay ? '1' : undefined}
+    data-wa={contact.whatsapp}
+    data-trip={trip?.title ?? ''}
+    data-lang={lang}
+    data-msg-sending={c.sending} data-msg-ok={c.ok} data-msg-err={c.err}
+    data-msg-phone={c.invalidPhone} data-msg-name={c.invalidName}
+    data-subject={c.mailSubject} data-wa-text={c.waText}>
+    <div>
+      <label for={`${uid}-name`} class="text-sm font-medium">{c.name}</label>
+      <input id={`${uid}-name`} name="name" autocomplete="name" required maxlength="80" class="input mt-1" />
+    </div>
+    <div>
+      <span class="text-sm font-medium" id={`${uid}-pl`}>{c.phone}</span>
+      <div class="mt-1 flex gap-2" dir="ltr">
+        <label for={`${uid}-code`} class="sr-only">{c.code}</label>
+        <select id={`${uid}-code`} name="code" class="input !w-[7.5rem] shrink-0 !px-2" autocomplete="tel-country-code">
+          {dialCodes.map((d) => (
+            <option value={d.code} selected={d.region === defRegion}>{d.region} +{d.code} {names.of(d.region)}</option>
+          ))}
+        </select>
+        <input id={`${uid}-phone`} name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required maxlength="20"
+          aria-labelledby={`${uid}-pl`} class="input min-w-0 flex-1" placeholder="6 12 34 56 78" />
+      </div>
+    </div>
+    <fieldset>
+      <legend class="text-sm font-medium">{c.channel}</legend>
+      <div class="mt-1 flex flex-wrap gap-2">
+        <label class="choice"><input type="radio" name="channel" value="WhatsApp" checked /> <Icon name="whatsapp" size={16} /> {c.viaWa}</label>
+        <label class="choice"><input type="radio" name="channel" value="Call" /> <Icon name="phone" size={16} /> {c.viaCall}</label>
+      </div>
+    </fieldset>
+    <!-- Spam trap for bots (Web3Forms honeypot). -->
+    <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <button type="submit" class="btn btn-accent w-full"><Icon name="phone" size={18} /> {c.submit}</button>
+    <p class="flex gap-1.5 text-xs text-ink-3"><Icon name="shield" size={14} class="mt-0.5 shrink-0" />{c.privacy}</p>
+    <div role="status" aria-live="polite" data-cb-status></div>
+  </form>
+</section>
+
+<style>
+  .callback {
+    background: linear-gradient(160deg, color-mix(in oklab, var(--accent) 12%, var(--surface)) 0%, var(--surface) 70%);
+    box-shadow: inset 0 0 0 1px var(--line);
+  }
+  .choice {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 2.75rem;
+    padding: 0 0.9rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .choice:has(input:checked) {
+    border-color: var(--accent);
+    box-shadow: inset 0 0 0 1px var(--accent);
+  }
+  .choice input {
+    accent-color: var(--accent);
+  }
+</style>
+
+<script>
+  import { fieldError, sendEmail, emailConfigured } from '../scripts/send';
+
+  document.querySelectorAll<HTMLFormElement>('form[data-callback]').forEach((form) => {
+    const ds = form.dataset;
+    const status = form.querySelector<HTMLElement>('[data-cb-status]')!;
+    const nameI = form.querySelector<HTMLInputElement>('[name=name]')!;
+    const phoneI = form.querySelector<HTMLInputElement>('[name=phone]')!;
+    const codeS = form.querySelector<HTMLSelectElement>('[name=code]')!;
+    const btn = form.querySelector<HTMLButtonElement>('button[type=submit]')!;
+    const say = (text: string, ok: boolean) => {
+      status.innerHTML = '';
+      const p = document.createElement('p');
+      p.className = ok ? 'text-sm font-medium text-success' : 'field-error';
+      p.textContent = text;
+      status.append(p);
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if ((form.elements.namedItem('botcheck') as HTMLInputElement).checked) return;
+      const name = nameI.value.trim();
+      // Accept "+33 6…" typed by hand; otherwise prefix the chosen country code.
+      const raw = phoneI.value.replace(/[^\d+]/g, '');
+      const digits = raw.replace(/\D/g, '');
+      const full = raw.startsWith('+') || raw.startsWith('00') ? `+${digits.replace(/^00/, '')}` : `+${codeS.value}${digits.replace(/^0/, '')}`;
+      const okName = fieldError(nameI, name ? null : ds.msgName!);
+      const okPhone = fieldError(phoneI, digits.length >= 6 && digits.length <= 15 ? null : ds.msgPhone!);
+      if (!okName) return nameI.focus();
+      if (!okPhone) return phoneI.focus();
+
+      const channel = (form.elements.namedItem('channel') as RadioNodeList).value;
+      const fields = { name, phone: full, channel, trip: ds.trip || '-', language: ds.lang!, page: location.href };
+      btn.disabled = true;
+      say(ds.msgSending!, true);
+
+      const jobs: Promise<boolean>[] = [];
+      if (emailConfigured()) jobs.push(sendEmail(`${ds.subject}: ${name} (${full})`, fields));
+      if (ds.relay) {
+        jobs.push(
+          fetch('/.netlify/functions/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(fields) })
+            .then((r) => r.ok)
+            .catch(() => false),
+        );
+      }
+      const sent = jobs.length ? (await Promise.all(jobs)).some(Boolean) : false;
+      btn.disabled = false;
+      if (sent) {
+        say(ds.msgOk!.replace('{name}', name), true);
+        form.reset();
+        return;
+      }
+      if (!jobs.length) {
+        // Nothing configured yet: hand over to WhatsApp with the details filled in.
+        const text = ds.waText!.replace('{name}', name).replace('{phone}', full) + (ds.trip ? ` (${ds.trip})` : '');
+        window.open(`https://wa.me/${ds.wa}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+        status.innerHTML = '';
+        return;
+      }
+      say(ds.msgErr!, false);
+    });
+  });
+</script>

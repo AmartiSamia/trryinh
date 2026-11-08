@@ -10,7 +10,7 @@ import Footer from '../components/Footer.astro';
 import WhatsAppFab from '../components/WhatsAppFab.astro';
 import { langMeta, locales, defaultLang, type Lang } from '../i18n/routes';
 import { t } from '../i18n/ui';
-import { analytics, currency, site } from '../config';
+import { analytics, currencies, currency, site } from '../config';
 
 interface Props {
   lang: Lang;
@@ -86,7 +86,7 @@ const ldList = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     <meta name="theme-color" content="#0c0e12" media="(prefers-color-scheme: dark)" />
 
     <!-- Theme, currency and language before first paint: no flash. -->
-    <script is:inline>
+    <script is:inline define:vars={{ curs: currencies }}>
       (function () {
         var d = document.documentElement, mq = window.matchMedia('(prefers-color-scheme: dark)');
         d.classList.add('js');
@@ -95,7 +95,8 @@ const ldList = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
           var st = localStorage.getItem('theme');
           if (st === 'light' || st === 'dark') theme = st;
           var c = localStorage.getItem('currency');
-          if (c === 'EUR' || c === 'MAD' || c === 'USD') d.dataset.currency = c;
+          if (curs.indexOf(c) > -1) d.dataset.currency = c;
+          else if (d.lang === 'ar') d.dataset.currency = 'MAD'; // Arabic visitors: dirhams by default
           localStorage.setItem('lang', d.lang);
         } catch (e) {}
         d.dataset.theme = theme;

@@ -6,7 +6,7 @@ import WishButton from './WishButton.astro';
 import { url, type Lang } from '../i18n/routes';
 import { t } from '../i18n/ui';
 import { categoryLabels, cityLabel, difficultyLabels } from '../i18n/catalog';
-import { durationBucket, durationLabel, isPrivateOnly, priceFrom, tripPhotos, type Trip } from '../lib/trips';
+import { durationBucket, durationLabel, priceFrom, tripPhotos, type Trip } from '../lib/trips';
 
 interface Props {
   trip: Trip;
@@ -18,7 +18,8 @@ interface Props {
 const { trip, lang, level = 'h3', sizes = '(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw' } = Astro.props;
 const s = t(lang);
 const d = trip.data;
-const [cover] = await tripPhotos(trip);
+const photos = await tripPhotos(trip);
+const cover = photos[0];
 const href = url(lang, 'trips', trip.id);
 const price = priceFrom(trip);
 const bookHref = `${url(lang, 'book')}?trip=${trip.id}`;
@@ -45,53 +46,78 @@ const search = [d.title.en, d.title.fr, d.title.ar, d.startCity, d.endCity, ...d
   data-private={d.price.private ? '1' : '0'}
   data-search={search}
 >
-  <div class="relative aspect-[4/3]">
-    <Photo photo={cover} lang={lang} sizes={sizes} widths={[400, 640, 800]} class="size-full" imgClass="transition-transform duration-700 ease-[var(--ease-out-soft)] group-hover:scale-[1.04]" />
-    <span class="absolute start-3 top-3 rounded-full bg-black/55 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+  <div class="relative aspect-[4/3] overflow-hidden">
+    <Photo photo={cover} lang={lang} sizes={sizes} widths={[400, 640, 800]} class="size-full" imgClass="transition-transform duration-700 ease-[var(--ease-out-soft)] group-hover:scale-[1.06]" />
+    <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/65 to-transparent" aria-hidden="true"></div>
+    <span class="absolute start-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-[#1a1d24] shadow-sm backdrop-blur-sm">
       {categoryLabels[d.category][lang]}
     </span>
     <WishButton slug={trip.id} lang={lang} class="absolute end-2 top-2 z-10" />
+    <span class="absolute bottom-3 start-3 inline-flex items-center gap-1.5 rounded-full bg-black/45 px-3 py-1 text-sm font-semibold text-white backdrop-blur-sm">
+      <Icon name="clock" size={15} />{durationLabel(trip, lang)}
+    </span>
+    {photos.length > 1 && (
+      <span class="absolute bottom-3 end-3 inline-flex items-center gap-1 rounded-full bg-black/45 px-2.5 py-1 text-xs font-semibold text-white backdrop-blur-sm" aria-hidden="true" dir="ltr">
+        <Icon name="camera" size={14} />{photos.length}
+      </span>
+    )}
   </div>
 
   <div class="flex flex-1 flex-col p-5">
-    {inc.length > 0 && (
-      <p class="mb-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-medium text-success">
-        <span class="sr-only">{s.card.included}:</span>
-        {inc.map((i) => (
-          <span class="inline-flex items-center gap-1"><Icon name={i.icon} size={15} />{i.label}</span>
-        ))}
-      </p>
-    )}
-    <H class="text-h3 font-display">
+    <p class="flex flex-wrap items-center gap-x-2 text-xs font-semibold uppercase tracking-wide text-accent-text">
+      <span class="inline-flex items-center gap-1"><Icon name="pin" size={14} /><span class="sr-only">{s.card.start}</span>{cityLabel(d.startCity, lang)}</span>
+      <span aria-hidden="true" class="text-ink-3">·</span>
+      <span><span class="sr-only">{s.card.difficulty}: </span>{difficultyLabels[d.difficulty][lang]}</span>
+      {d.maxAltitude && <><span aria-hidden="true" class="text-ink-3">·</span><span dir="ltr">{d.maxAltitude.toLocaleString('en')} m</span></>}
+    </p>
+    <H class="mt-2 text-h3 font-display">
       <a href={href} class="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none">{d.title[lang]}</a>
     </H>
-    <dl class="mt-3 grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 text-sm text-ink-2">
-      <dt class="sr-only">{s.card.duration}</dt>
-      <dd class="col-span-2 flex items-center gap-2"><Icon name="clock" size={16} class="text-ink-3" />{durationLabel(trip, lang)}</dd>
-      <dt class="sr-only">{s.card.start}</dt>
-      <dd class="col-span-2 flex items-center gap-2"><Icon name="pin" size={16} class="text-ink-3" />{s.card.start} {cityLabel(d.startCity, lang)}</dd>
-      <dt class="sr-only">{s.card.difficulty}</dt>
-      <dd class="col-span-2 flex items-center gap-2"><Icon name="mountain" size={16} class="text-ink-3" />{difficultyLabels[d.difficulty][lang]}{d.maxAltitude && <span dir="ltr"> · {d.maxAltitude.toLocaleString('en')} m</span>}</dd>
-      <dt class="sr-only">{s.book.options}</dt>
-      <dd class="col-span-2 flex items-center gap-2"><Icon name="users" size={16} class="text-ink-3" />{groupLabel}</dd>
-    </dl>
+    <p class="mt-2 line-clamp-2 text-sm text-ink-2">{d.summary[lang]}</p>
+    <ul class="mt-3 flex flex-wrap gap-1.5 text-xs font-medium">
+      {inc.length > 0 && <li class="sr-only">{s.card.included}:</li>}
+      {inc.map((i) => (
+        <li class="chip-ok inline-flex items-center gap-1 rounded-full px-2.5 py-1"><Icon name={i.icon} size={14} />{i.label}</li>
+      ))}
+      <li class="inline-flex items-center gap-1 rounded-full bg-surface-2 px-2.5 py-1 text-ink-2"><Icon name="users" size={14} />{groupLabel}</li>
+    </ul>
     <div class="mt-auto pt-5">
-      <p class="leading-tight">
-        <span class="text-xs text-ink-3">{s.common.from} </span>
-        <Price mad={price} lang={lang} class="font-display text-xl font-semibold" />
-        <span class="text-xs text-ink-3"> {s.common.perPerson}</span>
-      </p>
-      <div class="mt-3 grid grid-cols-2 gap-2">
-        <span class="btn btn-ghost pointer-events-none !min-h-11 !px-3 text-sm" aria-hidden="true">{s.common.viewDetails}</span>
-        <a href={bookHref} class="btn btn-accent relative z-10 !min-h-11 !px-3 text-sm" aria-label={`${s.book.cta}: ${d.title[lang]}`}>{s.book.cta}</a>
+      <div class="border-t border-line pt-4">
+        <p class="leading-tight">
+          <span class="text-xs text-ink-3">{s.common.from} </span>
+          <Price mad={price} lang={lang} class="font-display text-2xl font-semibold" />
+          <span class="whitespace-nowrap text-xs text-ink-3"> {s.common.perPerson}</span>
+        </p>
+        <div class="mt-3 flex items-center justify-between gap-3">
+          <p class="inline-flex min-w-0 items-center gap-1 text-xs font-medium text-success"><Icon name="check" size={14} class="shrink-0" />{s.more.trust[0].title}</p>
+          <a href={bookHref} class="btn btn-accent relative z-10 !min-h-11 shrink-0 !px-4 text-sm" aria-label={`${s.book.cta}: ${d.title[lang]}`}>{s.book.cta}</a>
+        </div>
       </div>
     </div>
   </div>
 </article>
 
 <style>
+  .trip-card {
+    transition: transform 0.35s var(--ease-out-soft), box-shadow 0.35s;
+  }
+  .trip-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px -18px rgb(0 0 0 / 0.35);
+  }
   .trip-card:focus-within {
     outline: 3px solid var(--focus);
     outline-offset: 2px;
+  }
+  .chip-ok {
+    color: var(--success);
+    background: color-mix(in oklab, var(--success) 12%, transparent);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .trip-card,
+    .trip-card:hover {
+      transform: none;
+      transition: none;
+    }
   }
 </style>

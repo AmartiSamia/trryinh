@@ -1,0 +1,117 @@
+# New trip (8 Nov 2026). Market: private 4-day circuits ~€400–700 per person.
+# TODO(youssef): confirm price, route, nights, and the wedding festival dates (usually September).
+# TODO(review-ar/es/de/pt): native review.
+category: trekking
+featured: false
+popularity: 66
+title:
+  en: Imilchil and the lakes of the Eastern Atlas, 4 days
+  fr: Imilchil et les lacs du Haut Atlas oriental, 4 jours
+  es: Imilchil y los lagos del Atlas oriental, 4 días
+  de: Imilchil und die Seen des östlichen Atlas, 4 Tage
+  pt: Imilchil e os lagos do Atlas oriental, 4 dias
+  ar: إملشيل وبحيرات الأطلس الشرقي، 4 أيام
+summary:
+  en: The legendary lakes of Isli and Tislit, high plateaus and Amazigh villages far from any crowd. Walk the land of the famous Imilchil wedding festival.
+  fr: Les lacs légendaires d’Isli et de Tislit, les hauts plateaux et des villages amazighs loin de toute foule. Marchez sur la terre du célèbre moussem des fiançailles d’Imilchil.
+  es: Los legendarios lagos de Isli y Tislit, mesetas altas y pueblos amazighs lejos de cualquier multitud. Camine por la tierra del famoso festival de bodas de Imilchil.
+  de: Die legendären Seen Isli und Tislit, Hochebenen und Amazigh-Dörfer fernab jeder Menge. Wandern Sie im Land des berühmten Hochzeitsfestes von Imilchil.
+  pt: Os lendários lagos de Isli e Tislit, planaltos e aldeias amazigh longe de qualquer multidão. Caminhe na terra do famoso festival de casamentos de Imilchil.
+  ar: بحيرتا إيسلي وتيسليت الأسطوريتان، والهضاب العالية والقرى الأمازيغية بعيدا عن الزحام. امشوا في أرض موسم الخطوبة الشهير في إملشيل.
+about:
+  en: Imilchil sits at 2,200 m in the Eastern High Atlas, a land of wide plateaus, earth villages and two deep blue lakes. Legend says Isli and Tislit, "the groom" and "the bride", were formed by the tears of two lovers from rival tribes, and every September the region celebrates its famous wedding festival. Over four days you cross the Atlas to Imilchil, walk around both lakes with a local guide, visit villages of the Assif Melloul valley and sleep in family guesthouses, before the long, beautiful road back to Marrakech.
+  fr: Imilchil se trouve à 2 200 m dans le Haut Atlas oriental, une terre de grands plateaux, de villages en terre et de deux lacs d’un bleu profond. La légende dit qu’Isli et Tislit, « le fiancé » et « la fiancée », sont nés des larmes de deux amoureux de tribus rivales, et chaque septembre la région célèbre son fameux moussem des fiançailles. En quatre jours, vous traversez l’Atlas jusqu’à Imilchil, marchez autour des deux lacs avec un guide local, visitez les villages de la vallée de l’Assif Melloul et dormez en gîtes familiaux, avant la longue et belle route du retour vers Marrakech.
+  es: Imilchil está a 2200 m en el Alto Atlas oriental, tierra de grandes mesetas, pueblos de adobe y dos lagos de un azul profundo. Cuenta la leyenda que Isli y Tislit, «el novio» y «la novia», nacieron de las lágrimas de dos enamorados de tribus rivales, y cada septiembre la región celebra su famoso festival de bodas. En cuatro días cruza el Atlas hasta Imilchil, camina alrededor de los dos lagos con un guía local, visita los pueblos del valle del Assif Melloul y duerme en casas familiares, antes de la larga y bonita carretera de vuelta a Marrakech.
+  de: Imilchil liegt auf 2.200 m im östlichen Hohen Atlas, einem Land weiter Hochebenen, Lehmdörfer und zweier tiefblauer Seen. Der Legende nach entstanden Isli und Tislit, „der Bräutigam“ und „die Braut“, aus den Tränen zweier Liebender verfeindeter Stämme, und jeden September feiert die Region ihr berühmtes Hochzeitsfest. In vier Tagen überqueren Sie den Atlas nach Imilchil, wandern mit einem einheimischen Guide um beide Seen, besuchen Dörfer im Assif-Melloul-Tal und übernachten in Familien-Gästehäusern, bevor es über die lange, schöne Straße zurück nach Marrakesch geht.
+  pt: Imilchil fica a 2200 m no Alto Atlas oriental, terra de grandes planaltos, aldeias de terra e dois lagos de um azul profundo. Diz a lenda que Isli e Tislit, «o noivo» e «a noiva», nasceram das lágrimas de dois apaixonados de tribos rivais, e todos os setembros a região celebra o seu famoso festival de casamentos. Em quatro dias atravessa o Atlas até Imilchil, caminha à volta dos dois lagos com um guia local, visita aldeias do vale do Assif Melloul e dorme em casas de família, antes da longa e bonita estrada de regresso a Marraquexe.
+  ar: تقع إملشيل على ارتفاع 2200 متر في الأطلس الكبير الشرقي، أرض الهضاب الواسعة والقرى الطينية وبحيرتين زرقاوين عميقتين. تقول الأسطورة إن إيسلي وتيسليت، "العريس" و"العروس"، تكونتا من دموع حبيبين من قبيلتين متخاصمتين، وفي كل شتنبر تحتفل المنطقة بموسم الخطوبة الشهير. في أربعة أيام تعبرون الأطلس إلى إملشيل، وتمشون حول البحيرتين مع مرشد محلي، وتزورون قرى وادي أسيف ملول وتبيتون في دور ضيافة عائلية، قبل طريق العودة الطويل والجميل إلى مراكش.
+days: 4
+nights: 3
+difficulty: moderate
+startCity: Marrakech
+endCity: Marrakech
+maxAltitude: 2400
+bestMonths: [5, 6, 7, 8, 9, 10]
+price: { shared: 3800, private: 5500 }
+includes: { meals: true, transport: true, nights: true }
+photos: [imilchil-tislit-2, imilchil-tislit, u-imilchil-road, u-imilchil-village]
+highlights:
+  - { en: "Lakes Isli and Tislit, the lakes of the legend", fr: "Les lacs Isli et Tislit, les lacs de la légende", es: "Los lagos Isli y Tislit, los lagos de la leyenda", de: "Die Seen Isli und Tislit, die Seen der Legende", pt: "Os lagos Isli e Tislit, os lagos da lenda", ar: "بحيرتا إيسلي وتيسليت، بحيرتا الأسطورة" }
+  - { en: "Amazigh villages far from the tourist trail", fr: "Des villages amazighs loin des circuits touristiques", es: "Pueblos amazighs lejos de las rutas turísticas", de: "Amazigh-Dörfer abseits der Touristenpfade", pt: "Aldeias amazigh longe dos roteiros turísticos", ar: "قرى أمازيغية بعيدة عن المسارات السياحية" }
+  - { en: "Possible during the September wedding festival", fr: "Possible pendant le moussem de septembre", es: "Posible durante el festival de bodas de septiembre", de: "Auch während des Hochzeitsfests im September möglich", pt: "Possível durante o festival de casamentos de setembro", ar: "ممكنة خلال موسم الخطوبة في شتنبر" }
+itinerary:
+  - title: { en: "Marrakech to Imilchil", fr: "De Marrakech à Imilchil", es: "De Marrakech a Imilchil", de: "Von Marrakesch nach Imilchil", pt: "De Marraquexe a Imilchil", ar: "من مراكش إلى إملشيل" }
+    text:
+      en: "A long scenic drive via Beni Mellal and the Bin el Ouidane lake, then up to the high plateaus of Imilchil."
+      fr: "Une longue et belle route par Beni Mellal et le lac de Bin el Ouidane, puis la montée vers les hauts plateaux d’Imilchil."
+      es: "Una larga y bonita carretera por Beni Mellal y el lago de Bin el Ouidane, y la subida a las mesetas altas de Imilchil."
+      de: "Eine lange, schöne Fahrt über Beni Mellal und den Stausee Bin el Ouidane, dann hinauf auf die Hochebenen von Imilchil."
+      pt: "Uma longa e bonita estrada por Beni Mellal e o lago de Bin el Ouidane, e depois a subida aos planaltos de Imilchil."
+      ar: "طريق طويل وجميل عبر بني ملال وبحيرة بين الويدان، ثم الصعود إلى هضاب إملشيل العالية."
+    drive: 7–8 h with stops
+    altitude: 2200
+    sleep: { type: guesthouse, place: Imilchil }
+    meals: [dinner]
+  - title: { en: "Lakes Tislit and Isli", fr: "Lacs Tislit et Isli", es: "Lagos Tislit e Isli", de: "Seen Tislit und Isli", pt: "Lagos Tislit e Isli", ar: "بحيرتا تيسليت وإيسلي" }
+    text:
+      en: "Walk around Lake Tislit in the morning, then continue to the larger Lake Isli for a picnic by the water."
+      fr: "Tour du lac Tislit le matin, puis le grand lac Isli pour un pique-nique au bord de l’eau."
+      es: "Vuelta al lago Tislit por la mañana y después el lago Isli, más grande, para un pícnic junto al agua."
+      de: "Vormittags rund um den Tislit-See, dann weiter zum größeren Isli-See für ein Picknick am Wasser."
+      pt: "Volta ao lago Tislit de manhã e depois o lago Isli, maior, para um piquenique junto à água."
+      ar: "جولة حول بحيرة تيسليت صباحا، ثم بحيرة إيسلي الأكبر لنزهة وغداء بجانب الماء."
+    walk: 4–5 h
+    altitude: 2400
+    sleep: { type: guesthouse, place: Imilchil }
+    meals: [breakfast, lunch, dinner]
+  - title: { en: "Villages of the Assif Melloul", fr: "Villages de l’Assif Melloul", es: "Pueblos del Assif Melloul", de: "Dörfer am Assif Melloul", pt: "Aldeias do Assif Melloul", ar: "قرى أسيف ملول" }
+    text:
+      en: "A walk through the Assif Melloul valley, its fields, granaries and earth villages, with tea in a family home."
+      fr: "Une marche dans la vallée de l’Assif Melloul, ses champs, ses greniers et ses villages en terre, avec un thé chez l’habitant."
+      es: "Una caminata por el valle del Assif Melloul, sus campos, graneros y pueblos de adobe, con un té en una casa familiar."
+      de: "Eine Wanderung durch das Assif-Melloul-Tal mit seinen Feldern, Speichern und Lehmdörfern, mit Tee bei einer Familie."
+      pt: "Uma caminhada pelo vale do Assif Melloul, os seus campos, celeiros e aldeias de terra, com chá numa casa de família."
+      ar: "مشي في وادي أسيف ملول بين الحقول والمخازن والقرى الطينية، مع شاي في بيت عائلي."
+    walk: 4 h
+    sleep: { type: guesthouse, place: Imilchil }
+    meals: [breakfast, lunch, dinner]
+  - title: { en: "Back to Marrakech", fr: "Retour à Marrakech", es: "Regreso a Marrakech", de: "Zurück nach Marrakesch", pt: "Regresso a Marraquexe", ar: "العودة إلى مراكش" }
+    text:
+      en: "The long road back to Marrakech, arriving in the evening."
+      fr: "La longue route du retour vers Marrakech, arrivée le soir."
+      es: "La larga carretera de vuelta a Marrakech, con llegada por la noche."
+      de: "Die lange Rückfahrt nach Marrakesch mit Ankunft am Abend."
+      pt: "A longa estrada de regresso a Marraquexe, com chegada à noite."
+      ar: "طريق العودة الطويل إلى مراكش والوصول مساءً."
+    drive: 7–8 h with stops
+    meals: [breakfast]
+included: [transport-marrakech, guide-local, meals-all, accommodation]
+excluded: [drinks, tips, insurance, personal]
+pack: [boots, layers, rain-jacket, sun-kit, bottle, daypack, cash]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  es: "Su riad u hotel en Marrakech."
+  de: "Ihr Riad oder Hotel in Marrakesch."
+  pt: "O seu riad ou hotel em Marraquexe."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "07:00"
+goodToKnow:
+  - en: "The famous Imilchil wedding festival (moussem) usually takes place in September. Ask us for this year’s dates."
+    fr: "Le célèbre moussem des fiançailles d’Imilchil a lieu en général en septembre. Demandez-nous les dates de cette année."
+    es: "El famoso festival de bodas (moussem) de Imilchil suele celebrarse en septiembre. Pregúntenos las fechas de este año."
+    de: "Das berühmte Hochzeitsfest (Moussem) von Imilchil findet meist im September statt. Fragen Sie uns nach den diesjährigen Daten."
+    pt: "O famoso festival de casamentos (moussem) de Imilchil realiza-se normalmente em setembro. Pergunte-nos as datas deste ano."
+    ar: "يُقام موسم الخطوبة الشهير في إملشيل عادة في شتنبر. اسألونا عن تواريخ هذه السنة."
+  - en: "Nights at 2,200 m are cold even in summer. Bring a warm layer."
+    fr: "Les nuits à 2 200 m sont froides même en été. Prévoyez une couche chaude."
+    es: "Las noches a 2200 m son frías incluso en verano. Lleve una capa de abrigo."
+    de: "Die Nächte auf 2.200 m sind selbst im Sommer kalt. Nehmen Sie eine warme Schicht mit."
+    pt: "As noites a 2200 m são frias mesmo no verão. Leve uma camada quente."
+    ar: "الليالي على ارتفاع 2200 متر باردة حتى في الصيف. أحضروا ملابس دافئة."
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Bin el Ouidane", lat: 32.1050, lng: -6.4570, kind: stop }
+  - { name: "Imilchil", lat: 32.1550, lng: -5.6350, kind: sleep }
+  - { name: "Lake Tislit", lat: 32.1947, lng: -5.6394, kind: stop }
+  - { name: "Lake Isli", lat: 32.2260, lng: -5.5460, kind: summit }

@@ -36,7 +36,7 @@ maxAltitude: 4167
 bestMonths: [ 5, 6, 7, 8, 9, 10 ]
 price: { shared: 1150 }
 includes: { meals: true, transport: true, nights: true }
-photos: [ u-atlas-hiker, toubkal-hikers, toubkal-refuge-2, toubkal-pyramid, imlil-valley ]
+photos: [u-toubkal-peak, u-atlas-hiker, toubkal-hikers, toubkal-refuge-2, toubkal-pyramid]
 highlights:
   - { en: "Toubkal summit (4,167 m) in a weekend", fr: "Le sommet du Toubkal (4 167 m) en un week-end", es: "La cumbre del Toubkal (4167 m) en un fin de semana", de: "Der Toubkal-Gipfel (4.167 m) an einem Wochenende", pt: "O cume do Toubkal (4167 m) num fim de semana", ar: "قمة توبقال (4167 م) في عطلة نهاية الأسبوع" }
   - { en: "Night at the Toubkal refuge", fr: "Nuit au refuge du Toubkal", es: "Noche en el refugio del Toubkal", de: "Nacht in der Toubkal-Hütte", pt: "Noite no refúgio do Toubkal", ar: "ليلة في ملجأ توبقال" }

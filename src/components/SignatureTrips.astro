@@ -39,13 +39,20 @@ const cards = await Promise.all(trips.map(async (tr) => ({ tr, cover: (await tri
         {i !== 0 && <span class="absolute start-4 top-4 rounded-full bg-black/55 px-3 py-1 text-xs font-semibold backdrop-blur-sm">{categoryLabels[tr.data.category][lang]}</span>}
         <WishButton slug={tr.id} lang={lang} class="absolute end-3 top-3 z-10" />
         <div class="absolute inset-x-0 bottom-0 p-5 sm:p-6">
-          <p class="text-sm text-white/80">{durationLabel(tr, lang)} · {difficultyLabels[tr.data.difficulty][lang]}{tr.data.maxAltitude && <span dir="ltr"> · {tr.data.maxAltitude.toLocaleString('en')} m</span>}</p>
-          <h3 class="mt-1 font-display text-2xl font-semibold leading-tight">
+          <ul class="flex flex-wrap gap-1.5 text-xs font-semibold">
+            <li class="glass inline-flex items-center gap-1 rounded-full px-2.5 py-1"><Icon name="clock" size={14} />{durationLabel(tr, lang)}</li>
+            <li class="glass inline-flex items-center gap-1 rounded-full px-2.5 py-1"><Icon name="mountain" size={14} />{difficultyLabels[tr.data.difficulty][lang]}{tr.data.maxAltitude && <span dir="ltr">&nbsp;· {tr.data.maxAltitude.toLocaleString('en')} m</span>}</li>
+            {tr.data.includes.meals && tr.data.includes.transport && <li class="glass inline-flex items-center gap-1 rounded-full px-2.5 py-1"><Icon name="meal" size={14} />{s.card.meals} + <Icon name="car" size={14} />{s.card.transport}</li>}
+          </ul>
+          <h3 class="mt-3 font-display text-2xl font-semibold leading-tight">
             <a href={url(lang, 'trips', tr.id)} class="after:absolute after:inset-0">{tr.data.title[lang]}</a>
           </h3>
           <p class="mt-2 line-clamp-2 text-sm text-white/85">{tr.data.summary[lang]}</p>
           <div class="mt-4 flex items-center justify-between gap-3">
-            <p class="leading-tight"><span class="text-xs text-white/75">{s.common.from} </span><Price mad={priceFrom(tr)} lang={lang} class="font-display text-xl font-semibold" /></p>
+            <div class="leading-tight">
+              <p><span class="text-xs text-white/75">{s.common.from} </span><Price mad={priceFrom(tr)} lang={lang} class="font-display text-xl font-semibold" /><span class="text-xs text-white/75"> {s.common.perPerson}</span></p>
+              <p class="mt-1 inline-flex items-center gap-1 text-xs font-medium text-[#a7e3b3]"><Icon name="check" size={14} />{m.trust[0].title}</p>
+            </div>
             <a href={`${url(lang, 'book')}?trip=${tr.id}`} class="btn btn-accent relative z-10 !min-h-11 !px-5 text-sm" aria-label={`${s.book.cta}: ${tr.data.title[lang]}`}>{s.book.cta}</a>
           </div>
         </div>
@@ -63,6 +70,11 @@ const cards = await Promise.all(trips.map(async (tr) => ({ tr, cover: (await tri
   }
   .track::-webkit-scrollbar {
     display: none;
+  }
+  .glass {
+    background: rgb(255 255 255 / 0.16);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
   }
   .sig-card {
     width: min(82vw, 25rem);

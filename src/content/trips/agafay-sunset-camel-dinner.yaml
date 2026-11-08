@@ -35,7 +35,7 @@ endCity: Marrakech
 bestMonths: [ 1, 2, 3, 4, 5, 6, 9, 10, 11, 12 ]
 price: { shared: 450, private: 900 }
 includes: { meals: true, transport: true, nights: false }
-photos: [ agafay-camels, agafay ]
+photos: [u-agafay-view, u-agafay-camels, u-agafay-tent, agafay-camels]
 highlights:
   - { en: "Sunset on camelback", fr: "Coucher de soleil à dos de dromadaire", es: "Atardecer a lomos de dromedario", de: "Sonnenuntergang auf dem Kamelrücken", pt: "Pôr do sol de dromedário", ar: "الغروب على ظهر الجمل" }
   - { en: "Views of the snowy High Atlas", fr: "Vue sur le Haut Atlas enneigé", es: "Vistas del Alto Atlas nevado", de: "Blick auf den verschneiten Hohen Atlas", pt: "Vistas do Alto Atlas nevado", ar: "إطلالة على الأطلس الكبير المثلج" }

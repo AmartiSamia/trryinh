@@ -151,10 +151,12 @@
 }
 
 /* Prices are rendered in every currency; only the chosen one is shown (no JS flash). */
-html:not([data-currency='MAD']) [data-cur='MAD'],
+html:not([data-currency='EUR']) [data-cur='EUR'],
 html:not([data-currency='USD']) [data-cur='USD'],
-html[data-currency='MAD'] [data-cur='EUR'],
-html[data-currency='USD'] [data-cur='EUR'] {
+html:not([data-currency='GBP']) [data-cur='GBP'],
+html:not([data-currency='MAD']) [data-cur='MAD'],
+html:not([data-currency='CHF']) [data-cur='CHF'],
+html:not([data-currency='CAD']) [data-cur='CAD'] {
   display: none;
 }
 

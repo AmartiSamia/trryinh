@@ -23,8 +23,10 @@ Node 22 or newer.
 Everything lives in **`src/config.ts`**: WhatsApp number, phone, email, address, social links,
 licence numbers, currency rates, email-form key and analytics.
 
-- **Currency**: trip prices are stored in **MAD**. EUR and USD are converted with `currency.ratesToMad`
-  (EUR and USD rounded to whole units, MAD to the nearest 10).
+- **Currency**: trip prices are stored in **MAD**. EUR, USD, GBP, CHF and CAD are converted with
+  `currency.ratesToMad` (rounded to whole units, MAD to the nearest 10). To add a currency, add it to
+  `Currency`, `currencies`, `currencySymbol` and `ratesToMad` in `src/config.ts`, and one line to the
+  currency rules in `src/styles/global.css`. Arabic pages show MAD by default.
 - **Children**: `booking.childFactor` (1 = full price, 0.5 = half price).
 - **Legal pages**: set `legal.draft` to `false` once the texts are confirmed.
 
@@ -95,7 +97,17 @@ YAML files, with no server or database.
 
 Add the environment variable `PUBLIC_WEB3FORMS_KEY` (free key from web3forms.com, created with the
 agency email) to enable the email forms. Without it, the forms fall back to opening the visitor's
-email app. Update `site` in `astro.config.mjs` and `site.url` in `src/config.ts` with the final domain.
+email app.
+
+**Call-back leads** ("leave your number, we call you"): the form on the booking, contact and trip pages
+emails each lead through Web3Forms. To also receive each lead **as a WhatsApp message** on the agency
+phone (Netlify only):
+1. From the agency phone, follow the free CallMeBot activation at callmebot.com (WhatsApp API) to get an API key.
+2. On Netlify add `PUBLIC_LEAD_RELAY=1`, `CALLMEBOT_PHONE=212668395368` and `CALLMEBOT_APIKEY=<key>`.
+   The key stays on the server (`netlify/functions/lead.mjs`), never in the page.
+Without any key, the form opens WhatsApp with the visitor's details pre-filled.
+
+Update `site` in `astro.config.mjs` and `site.url` in `src/config.ts` with the final domain.
 
 ## Quality checks
 

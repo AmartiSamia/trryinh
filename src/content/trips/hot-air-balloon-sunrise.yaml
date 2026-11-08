@@ -34,7 +34,7 @@ endCity: Marrakech
 bestMonths: [ 1, 2, 3, 4, 5, 9, 10, 11, 12 ]
 price: { shared: 2200 }
 includes: { meals: true, transport: true, nights: false }
-photos: [ balloon, palmeraie ]
+photos: [u-balloons, balloon, palmeraie]
 highlights:
   - { en: "Sunrise over the Atlas from the sky", fr: "Lever du soleil sur l’Atlas vu du ciel", es: "Amanecer sobre el Atlas desde el cielo", de: "Sonnenaufgang über dem Atlas aus der Luft", pt: "Nascer do sol sobre o Atlas visto do céu", ar: "شروق الشمس فوق الأطلس من السماء" }
   - { en: "About one hour of flight", fr: "Environ une heure de vol", es: "Una hora de vuelo aproximadamente", de: "Etwa eine Stunde Fahrt", pt: "Cerca de uma hora de voo", ar: "حوالي ساعة من الطيران" }

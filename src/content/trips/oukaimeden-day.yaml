@@ -1,0 +1,74 @@
+# New trip (8 Nov 2026). Market: private day trips ~€60–100 per car; shared ~€30–40.
+# TODO(youssef): confirm price, season (ski only Jan–Mar when there is snow) and stops.
+# TODO(review-ar/es/de/pt): native review.
+category: day-trip
+featured: false
+popularity: 72
+title:
+  en: Oukaïmeden day trip, the Atlas at 2,600 m
+  fr: Excursion à Oukaïmeden, l’Atlas à 2 600 m
+  es: Excursión a Oukaïmeden, el Atlas a 2600 m
+  de: Tagesausflug nach Oukaïmeden, der Atlas auf 2.600 m
+  pt: Excursão a Oukaïmeden, o Atlas a 2600 m
+  ar: رحلة يومية إلى أوكايمدن، الأطلس على ارتفاع 2600 متر
+summary:
+  en: Africa’s highest ski station, one hour from Marrakech. Snow and sledges in winter, green pastures, lakes and prehistoric rock engravings in summer.
+  fr: La plus haute station de ski d’Afrique, à une heure de Marrakech. Neige et luges en hiver, pâturages verts, lacs et gravures rupestres préhistoriques en été.
+  es: La estación de esquí más alta de África, a una hora de Marrakech. Nieve y trineos en invierno; prados verdes, lagos y grabados rupestres prehistóricos en verano.
+  de: Afrikas höchstes Skigebiet, eine Stunde von Marrakesch. Schnee und Schlitten im Winter, grüne Almen, Seen und prähistorische Felsgravuren im Sommer.
+  pt: A estância de esqui mais alta de África, a uma hora de Marraquexe. Neve e trenós no inverno; prados verdes, lagos e gravuras rupestres pré-históricas no verão.
+  ar: أعلى محطة تزلج في إفريقيا، على بعد ساعة من مراكش. ثلج وزلاجات في الشتاء، ومراعٍ خضراء وبحيرات ونقوش صخرية من عصور ما قبل التاريخ في الصيف.
+about:
+  en: The road climbs from the Ourika valley through pine forests to Oukaïmeden, a high plateau at 2,600 m ringed by peaks above 3,000 m. In winter you can ski, rent a sledge or simply play in the snow. In summer, a local guide walks you across the shepherds’ pastures to rock engravings several thousand years old and to the small lake below the ridges. Lunch in a mountain restaurant, then back down to Marrakech.
+  fr: La route monte depuis la vallée de l’Ourika à travers les forêts de pins jusqu’à Oukaïmeden, un haut plateau à 2 600 m entouré de sommets de plus de 3 000 m. En hiver, ski, luge ou simplement jeux dans la neige. En été, un guide local vous emmène à travers les pâturages des bergers jusqu’à des gravures rupestres vieilles de plusieurs millénaires et au petit lac sous les crêtes. Déjeuner dans un restaurant de montagne, puis retour à Marrakech.
+  es: La carretera sube desde el valle del Ourika entre pinares hasta Oukaïmeden, una meseta a 2600 m rodeada de cumbres de más de 3000 m. En invierno puede esquiar, alquilar un trineo o simplemente jugar en la nieve. En verano, un guía local le lleva por los pastos de los pastores hasta grabados rupestres de varios miles de años y al pequeño lago bajo las crestas. Almuerzo en un restaurante de montaña y regreso a Marrakech.
+  de: Die Straße steigt vom Ourika-Tal durch Kiefernwälder nach Oukaïmeden, einer Hochebene auf 2.600 m, umgeben von Gipfeln über 3.000 m. Im Winter können Sie Ski fahren, einen Schlitten leihen oder einfach im Schnee spielen. Im Sommer führt Sie ein einheimischer Guide über die Hirtenweiden zu jahrtausendealten Felsgravuren und zum kleinen See unter den Graten. Mittagessen in einem Bergrestaurant, dann zurück nach Marrakesch.
+  pt: A estrada sobe do vale de Ourika entre pinhais até Oukaïmeden, um planalto a 2600 m rodeado de cumes acima dos 3000 m. No inverno pode esquiar, alugar um trenó ou simplesmente brincar na neve. No verão, um guia local leva-o pelas pastagens dos pastores até gravuras rupestres com milhares de anos e ao pequeno lago sob as cristas. Almoço num restaurante de montanha e regresso a Marraquexe.
+  ar: يصعد الطريق من وادي أوريكا عبر غابات الصنوبر إلى أوكايمدن، هضبة على ارتفاع 2600 متر تحيط بها قمم تتجاوز 3000 متر. في الشتاء يمكنكم التزلج أو كراء زلاجة أو اللعب في الثلج. وفي الصيف يرافقكم مرشد محلي عبر مراعي الرعاة إلى نقوش صخرية عمرها آلاف السنين وإلى البحيرة الصغيرة تحت القمم. غداء في مطعم جبلي ثم العودة إلى مراكش.
+days: 1
+difficulty: easy
+startCity: Marrakech
+endCity: Marrakech
+maxAltitude: 2600
+bestMonths: [1, 2, 3, 5, 6, 7, 8, 9]
+price: { shared: 450, private: 1100 }
+includes: { meals: false, transport: true, nights: false }
+photos: [u-ouka-lake, oukaimeden-village, oukaimeden, u-ouka-badlands]
+highlights:
+  - { en: "Snow at 2,600 m, one hour from Marrakech", fr: "La neige à 2 600 m, à une heure de Marrakech", es: "Nieve a 2600 m, a una hora de Marrakech", de: "Schnee auf 2.600 m, eine Stunde von Marrakesch", pt: "Neve a 2600 m, a uma hora de Marraquexe", ar: "الثلج على ارتفاع 2600 متر، على بعد ساعة من مراكش" }
+  - { en: "Prehistoric rock engravings", fr: "Des gravures rupestres préhistoriques", es: "Grabados rupestres prehistóricos", de: "Prähistorische Felsgravuren", pt: "Gravuras rupestres pré-históricas", ar: "نقوش صخرية من عصور ما قبل التاريخ" }
+  - { en: "The Ourika valley on the way", fr: "La vallée de l’Ourika en chemin", es: "El valle del Ourika por el camino", de: "Das Ourika-Tal unterwegs", pt: "O vale de Ourika pelo caminho", ar: "وادي أوريكا في الطريق" }
+itinerary:
+  - title: { en: "Ourika valley and Oukaïmeden", fr: "Vallée de l’Ourika et Oukaïmeden", es: "Valle del Ourika y Oukaïmeden", de: "Ourika-Tal und Oukaïmeden", pt: "Vale de Ourika e Oukaïmeden", ar: "وادي أوريكا وأوكايمدن" }
+    text:
+      en: "Drive up the Ourika valley to Oukaïmeden. Snow activities in winter, or a guided walk to the rock engravings and the lake in summer. Lunch, then back to Marrakech."
+      fr: "Route par la vallée de l’Ourika jusqu’à Oukaïmeden. Activités de neige en hiver, ou marche guidée vers les gravures rupestres et le lac en été. Déjeuner, puis retour à Marrakech."
+      es: "Carretera por el valle del Ourika hasta Oukaïmeden. Actividades de nieve en invierno o caminata guiada a los grabados rupestres y al lago en verano. Almuerzo y regreso a Marrakech."
+      de: "Fahrt durch das Ourika-Tal nach Oukaïmeden. Im Winter Schneeaktivitäten, im Sommer eine geführte Wanderung zu den Felsgravuren und zum See. Mittagessen, dann zurück nach Marrakesch."
+      pt: "Estrada pelo vale de Ourika até Oukaïmeden. Atividades na neve no inverno, ou caminhada guiada até às gravuras rupestres e ao lago no verão. Almoço e regresso a Marraquexe."
+      ar: "الطريق عبر وادي أوريكا إلى أوكايمدن. أنشطة الثلج في الشتاء، أو مشي مع مرشد إلى النقوش الصخرية والبحيرة في الصيف. الغداء ثم العودة إلى مراكش."
+    drive: 1 h 30 each way
+    walk: 2–3 h
+    altitude: 2600
+included: [pickup-hotel, transport, driver, guide-local]
+excluded: [lunch, optional-activities, drinks, tips]
+pack: [layers, comfy-shoes, sun-kit, gloves-hat]
+meetingPoint:
+  en: "Your riad or hotel in Marrakech."
+  fr: "Votre riad ou hôtel à Marrakech."
+  es: "Su riad u hotel en Marrakech."
+  de: "Ihr Riad oder Hotel in Marrakesch."
+  pt: "O seu riad ou hotel em Marraquexe."
+  ar: "الرياض أو الفندق في مراكش."
+pickupTime: "08:30"
+goodToKnow:
+  - en: "Ski and sledge rental are paid on the spot and depend on snow (usually January to March)."
+    fr: "La location de skis et de luges se paie sur place et dépend de la neige (en général de janvier à mars)."
+    es: "El alquiler de esquís y trineos se paga allí y depende de la nieve (normalmente de enero a marzo)."
+    de: "Ski- und Schlittenverleih zahlen Sie vor Ort; er hängt vom Schnee ab (meist Januar bis März)."
+    pt: "O aluguer de esquis e trenós paga-se no local e depende da neve (normalmente de janeiro a março)."
+    ar: "يُدفع كراء معدات التزلج والزلاجات في عين المكان ويعتمد على الثلج (عادة من يناير إلى مارس)."
+mapStops:
+  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Tnine Ourika", lat: 31.3460, lng: -7.7870, kind: stop }
+  - { name: "Oukaïmeden", lat: 31.2060, lng: -7.8620, kind: summit }
