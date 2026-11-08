@@ -105,8 +105,6 @@ range found is written at the top of each trip file.
 - [ ] **Spanish, German, Portuguese** (added 8 Nov 2026): native review recommended (`TODO(review-es/de/pt)`).
 - [ ] **Arabic**: every Arabic text needs a native review (`TODO(review-ar)` in `src/i18n/ui.ts`,
       `src/i18n/catalog.ts`, trip files, FAQ, guide, page files).
-- [ ] Read the three guide articles and set `reviewed: true` (then remove the guide line in the
-      sitemap filter in `astro.config.mjs`).
 - [ ] Check the FAQ answers (payment, cancellation, children, group size).
 
 ## Not done / out of scope

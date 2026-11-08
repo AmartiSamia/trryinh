@@ -5,7 +5,7 @@ export const es: UI = {
   meta: {
     tagline: 'Marruecos, a la manera local',
     description:
-      'Treks, desierto, excursiones de un día y viajes a medida por todo Marruecos, organizados desde Imlil por guías locales titulados. Respondemos por WhatsApp, todos los días.',
+      'El Toubkal al amanecer, una noche en las dunas del Sáhara, los zocos de Marrakech. Viajes en grupo pequeño o privados por todo Marruecos, con guías locales de Imlil. Reserve ahora, pague después.',
   },
   a11y: {
     skip: 'Ir al contenido',
@@ -23,7 +23,6 @@ export const es: UI = {
   nav: {
     trips: 'Viajes',
     tailorMade: 'A medida',
-    guide: 'Guía de viaje',
     reviews: 'Opiniones',
     faq: 'Preguntas frecuentes',
     contact: 'Contacto',
@@ -86,9 +85,9 @@ export const es: UI = {
   },
   home: {
     heroEyebrow: 'Alto Atlas · Sáhara · Medinas',
-    heroTitle: 'Marruecos, a la manera local',
+    heroTitle: 'Despierte sobre las nubes. Duerma bajo las estrellas del Sáhara.',
     heroText:
-      'Treks desde Imlil, noches en el desierto, excursiones y viajes por todo el país. Organizados desde Imlil por guías locales que le responden directamente.',
+      'El Toubkal al amanecer, una noche en las dunas, los zocos de Marrakech al caer la tarde. Grupos pequeños o viajes privados con guías locales, y una persona real en WhatsApp, de día y de noche.',
     categoriesTitle: '¿Qué tipo de viaje?',
     featuredTitle: 'Los viajes más solicitados',
     featuredText: 'Un punto de partida. Cada viaje puede ser privado o adaptarse a sus fechas.',
@@ -264,6 +263,39 @@ export const es: UI = {
     options: 'Compartido o privado',
     privateOnlyLabel: 'Viaje privado',
     sharedOnlyLabel: 'Grupo pequeño',
+  },
+  more: {
+    trust: [
+      { title: 'Reserve ahora, pague después', text: 'Nada que pagar en línea. Solo paga cuando confirmamos.' },
+      { title: 'Personas reales, 24/7', text: 'Respuesta por WhatsApp en pocas horas, todos los días del año.' },
+      { title: 'Guías locales titulados', text: 'Nacidos en los valles del Atlas y en las viejas medinas.' },
+      { title: 'Privado o grupo pequeño', text: 'Cada viaje puede organizarse solo para usted.' },
+    ],
+    signatureEyebrow: 'Viajes estrella',
+    signatureTitle: 'Los viajes de los que más orgullosos estamos',
+    signatureText: 'Rutas elegidas para mostrar Marruecos en su mejor versión, del techo del norte de África a las puertas del Sáhara.',
+    destTitle: 'Destinos populares',
+    destText: '¿Dónde sueña con despertar?',
+    continueTitle: 'Siga explorando',
+    pause: 'Pausar la presentación',
+    play: 'Reanudar la presentación',
+    slide: 'Foto {i} de {n}',
+    prev: 'Anterior',
+    next: 'Siguiente',
+    discover: 'Descubrir',
+    slides: { desert: 'Dunas del Erg Chebbi, Sáhara', atlas: 'Toubkal, Alto Atlas', chaouen: 'Chefchaouen, el pueblo azul', marrakech: 'Marrakech y el Atlas', coast: 'Essaouira, en el Atlántico' },
+    dest: { marrakech: 'Marrakech', atlas: 'Alto Atlas y Toubkal', sahara: 'Desierto del Sáhara', essaouira: 'Essaouira', fes: 'Fez', chefchaouen: 'Chefchaouen' },
+    wishCount: 'Favoritos, {n} guardados',
+    wishShare: 'Compartir mi lista',
+    wishAsk: 'Preguntar por estos viajes',
+    wishClear: 'Vaciar la lista',
+    wishCleared: 'Lista vaciada.',
+    wishUndo: 'Deshacer',
+    wishShareText: 'Mis deseos de Marruecos:',
+    wishAskText: 'Hola Iberdan, me interesan estos viajes:',
+    wishSuggest: 'Viajes populares para empezar',
+    wishCopied: 'Enlace copiado',
+    share: 'Compartir',
   },
   regions: {
     atlas: 'Alto Atlas',

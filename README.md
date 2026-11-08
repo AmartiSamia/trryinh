@@ -71,9 +71,7 @@ While the file is empty, the site shows "Reviews coming soon" with a link to lea
 
 - Interface texts: `src/i18n/ui.ts` (English, French, Arabic) and `ui-es.ts`, `ui-de.ts`, `ui-pt.ts`. Shared trip vocabulary: `src/i18n/catalog.ts`.
 - Page texts: in each page file in `src/views/`.
-- FAQ: `src/content/faq.yaml`. Travel guide articles: `src/content/guide/<key>.<lang>.md`
-  (set `reviewed: true` after review: the draft notice disappears and the page becomes indexable;
-  then also remove the guide line in the sitemap filter in `astro.config.mjs`).
+- FAQ: `src/content/faq.yaml`.
 - URLs per language (e.g. `/fr/circuits/`): `src/i18n/routes.ts`.
 
 ## Translating new content
@@ -113,8 +111,8 @@ node scripts/shot.mjs <outDir> /ar/                                         # sc
 ```
 src/
   config.ts             contact, prices, rates, keys
-  content.config.ts     content schemas (trips, photos, guide, reviews, faq)
-  content/              trips/*.yaml, photos.json, faq.yaml, guide/*.md, reviews.json
+  content.config.ts     content schemas (trips, photos, reviews, faq)
+  content/              trips/*.yaml, photos.json, faq.yaml, reviews.json
   i18n/                 routes (localised URLs), ui strings, catalog (shared vocabulary)
   pages/[lang]/[...path].astro   one router for every localised page
   views/                one file per page type

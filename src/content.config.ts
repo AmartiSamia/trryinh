@@ -114,22 +114,6 @@ const trips = defineCollection({
   }),
 });
 
-const guide = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/guide' }),
-  schema: z.object({
-    lang: z.enum(['en', 'fr', 'es', 'de', 'pt', 'ar']),
-    /** Same key across the three language versions of one article. */
-    key: z.string(),
-    title: z.string(),
-    description: z.string(),
-    photo: reference('photos'),
-    date: z.coerce.date(),
-    /** Articles stay marked as drafts until Youssef reviews them. */
-    reviewed: z.boolean().default(false),
-    relatedTrips: z.array(reference('trips')).default([]),
-  }),
-});
-
 const reviews = defineCollection({
   loader: file('src/content/reviews.json'),
   schema: z.object({
@@ -155,4 +139,4 @@ const faq = defineCollection({
   }),
 });
 
-export const collections = { photos, trips, guide, reviews, faq };
+export const collections = { photos, trips, reviews, faq };

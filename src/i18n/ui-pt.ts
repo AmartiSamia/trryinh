@@ -5,7 +5,7 @@ export const pt: UI = {
   meta: {
     tagline: 'Marrocos, à maneira local',
     description:
-      'Trekking, deserto, excursões de um dia e viagens à medida por todo o Marrocos, organizados a partir de Imlil por guias locais credenciados. Respondemos no WhatsApp, todos os dias.',
+      'O Toubkal ao nascer do sol, uma noite nas dunas do Sara, os souks de Marraquexe. Viagens em grupo pequeno ou privadas por todo o Marrocos, com guias locais de Imlil. Reserve agora, pague depois.',
   },
   a11y: {
     skip: 'Saltar para o conteúdo',
@@ -23,7 +23,6 @@ export const pt: UI = {
   nav: {
     trips: 'Viagens',
     tailorMade: 'À medida',
-    guide: 'Guia de viagem',
     reviews: 'Avaliações',
     faq: 'Perguntas frequentes',
     contact: 'Contacto',
@@ -86,9 +85,9 @@ export const pt: UI = {
   },
   home: {
     heroEyebrow: 'Alto Atlas · Sara · Medinas',
-    heroTitle: 'Marrocos, à maneira local',
+    heroTitle: 'Acorde acima das nuvens. Adormeça sob as estrelas do Sara.',
     heroText:
-      'Trekking a partir de Imlil, noites no deserto, excursões e viagens por todo o país. Organizados em Imlil por guias locais que lhe respondem diretamente.',
+      'O Toubkal ao nascer do sol, uma noite nas dunas, os souks de Marraquexe ao cair da tarde. Grupos pequenos ou viagens privadas com guias locais, e uma pessoa real no WhatsApp, de dia e de noite.',
     categoriesTitle: 'Que tipo de viagem?',
     featuredTitle: 'As viagens mais procuradas',
     featuredText: 'Um ponto de partida. Cada viagem pode ser privada ou ajustada às suas datas.',
@@ -264,6 +263,39 @@ export const pt: UI = {
     options: 'Partilhada ou privada',
     privateOnlyLabel: 'Viagem privada',
     sharedOnlyLabel: 'Grupo pequeno',
+  },
+  more: {
+    trust: [
+      { title: 'Reserve agora, pague depois', text: 'Nada a pagar online. Só paga depois da nossa confirmação.' },
+      { title: 'Pessoas reais, 24/7', text: 'Resposta no WhatsApp em poucas horas, todos os dias do ano.' },
+      { title: 'Guias locais credenciados', text: 'Nascidos nos vales do Atlas e nas velhas medinas.' },
+      { title: 'Privada ou grupo pequeno', text: 'Cada viagem pode ser só para si.' },
+    ],
+    signatureEyebrow: 'Viagens de assinatura',
+    signatureTitle: 'As viagens de que mais nos orgulhamos',
+    signatureText: 'Percursos escolhidos para mostrar Marrocos no seu melhor, do teto do Norte de África às portas do Sara.',
+    destTitle: 'Destinos populares',
+    destText: 'Onde sonha acordar?',
+    continueTitle: 'Continue a explorar',
+    pause: 'Pausar a apresentação',
+    play: 'Retomar a apresentação',
+    slide: 'Foto {i} de {n}',
+    prev: 'Anterior',
+    next: 'Seguinte',
+    discover: 'Descobrir',
+    slides: { desert: 'Dunas do Erg Chebbi, Sara', atlas: 'Toubkal, Alto Atlas', chaouen: 'Chefchaouen, a cidade azul', marrakech: 'Marraquexe e o Atlas', coast: 'Essaouira, no Atlântico' },
+    dest: { marrakech: 'Marraquexe', atlas: 'Alto Atlas e Toubkal', sahara: 'Deserto do Sara', essaouira: 'Essaouira', fes: 'Fez', chefchaouen: 'Chefchaouen' },
+    wishCount: 'Favoritos, {n} guardados',
+    wishShare: 'Partilhar a minha lista',
+    wishAsk: 'Perguntar por estas viagens',
+    wishClear: 'Limpar a lista',
+    wishCleared: 'Lista limpa.',
+    wishUndo: 'Anular',
+    wishShareText: 'Os meus desejos de Marrocos:',
+    wishAskText: 'Olá Iberdan, tenho interesse nestas viagens:',
+    wishSuggest: 'Viagens populares para começar',
+    wishCopied: 'Ligação copiada',
+    share: 'Partilhar',
   },
   regions: {
     atlas: 'Alto Atlas',

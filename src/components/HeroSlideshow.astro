@@ -1,0 +1,155 @@
+---
+/**
+ * Hero background slideshow: slow crossfade with a gentle zoom.
+ * - Slide 1 is in the HTML (LCP image, preloaded). The others live in <template>s
+ *   and are only added after the page has loaded, so they never slow the first paint.
+ * - Pause/play button and dots (WCAG 2.2.2); stops when the tab is hidden;
+ *   no autoplay and no zoom with prefers-reduced-motion.
+ */
+import { getEntry } from 'astro:content';
+import Photo from './Photo.astro';
+import Icon from './Icon.astro';
+import { url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const m = s.more;
+const list = [
+  { photo: 'u-camels-ward', caption: m.slides.desert, href: `${url(lang, 'trips')}?cat=desert` },
+  { photo: 'u-toubkal-snow', caption: m.slides.atlas, href: url(lang, 'trips', 'toubkal-summit-3-days') },
+  { photo: 'u-chaouen-cliff', caption: m.slides.chaouen, href: url(lang, 'trips', 'chefchaouen-day-from-fes') },
+  { photo: 'u-koutoubia', caption: m.slides.marrakech, href: url(lang, 'trips', 'marrakech-guided-tour') },
+  { photo: 'u-essa-boats', caption: m.slides.coast, href: url(lang, 'trips', 'essaouira-day') },
+];
+const slides = await Promise.all(list.map(async (x) => ({ ...x, entry: (await getEntry('photos', x.photo))! })));
+const n = slides.length;
+const sizes = '100vw';
+const widths = [640, 960, 1280, 1920];
+---
+<div class="slideshow absolute inset-0 -z-10" data-slideshow data-slide-label={m.slide} data-pause={m.pause} data-play={m.play}>
+  <div class="slide is-active" data-slide="0">
+    <Photo photo={slides[0].entry} lang={lang} eager decorative sizes={sizes} widths={widths} class="!absolute inset-0" />
+  </div>
+  {slides.slice(1).map((sl, i) => (
+    <template data-slide-template={i + 1}>
+      <div class="slide" data-slide={i + 1}>
+        <Photo photo={sl.entry} lang={lang} decorative sizes={sizes} widths={widths} class="!absolute inset-0" />
+      </div>
+    </template>
+  ))}
+</div>
+
+<!-- Caption + controls, bottom of the hero -->
+<div class="slideshow-ui absolute inset-x-0 bottom-12 z-10 hidden sm:block" data-no-print>
+  <div class="container-page flex items-center justify-between gap-4 pb-4">
+    <ul class="captions" aria-live="polite">
+      {slides.map((sl, i) => (
+        <li data-caption={i} hidden={i !== 0}>
+          <a href={sl.href} class="inline-flex min-h-11 items-center gap-2 rounded-full bg-black/35 px-4 text-sm text-white backdrop-blur-sm hover:bg-black/50">
+            <Icon name="pin" size={16} class="text-[#f2b252]" />
+            <span>{sl.caption}</span>
+            <span class="font-semibold text-[#f2b252]">· {m.discover}</span>
+            <Icon name="arrow" size={14} flip />
+          </a>
+        </li>
+      ))}
+    </ul>
+    <div class="flex items-center gap-1 rounded-full bg-black/35 p-1 backdrop-blur-sm">
+      {slides.map((_, i) => (
+        <button type="button" class="dot grid size-8 place-items-center" data-dot={i} aria-label={m.slide.replace('{i}', String(i + 1)).replace('{n}', String(n))} aria-current={i === 0 ? 'true' : undefined}>
+          <span class="block h-1.5 rounded-full bg-white/60 transition-all"></span>
+        </button>
+      ))}
+      <button type="button" class="grid size-9 place-items-center rounded-full text-white hover:bg-white/15" data-toggle aria-label={m.pause}>
+        <svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1" /><rect x="14" y="5" width="4" height="14" rx="1" /></svg>
+        <svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" /></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.6s ease-in-out;
+  }
+  .slide.is-active {
+    opacity: 1;
+  }
+  /* Slow "Ken Burns" zoom on the visible slide. */
+  .slide.is-active :global(img) {
+    animation: kenburns 9s ease-out both;
+  }
+  @keyframes kenburns {
+    from { transform: scale(1.1); }
+    to { transform: scale(1); }
+  }
+  .dot span {
+    width: 0.375rem;
+  }
+  .dot[aria-current='true'] span {
+    width: 1.5rem;
+    background: #f2b252;
+  }
+  [data-toggle] .icon-play,
+  [data-paused] [data-toggle] .icon-pause {
+    display: none;
+  }
+  [data-paused] [data-toggle] .icon-play {
+    display: block;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .slide.is-active :global(img) {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-slideshow]');
+  const ui = document.querySelector<HTMLElement>('.slideshow-ui');
+  if (root && ui) {
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const dots = [...ui.querySelectorAll<HTMLButtonElement>('[data-dot]')];
+    const captions = [...ui.querySelectorAll<HTMLElement>('[data-caption]')];
+    const toggle = ui.querySelector<HTMLButtonElement>('[data-toggle]')!;
+    const n = dots.length;
+    let i = 0;
+    let timer: number | undefined;
+    let paused = reduce;
+    let ready = false;
+
+    const show = (k: number) => {
+      if (!ready) return;
+      i = (k + n) % n;
+      root.querySelectorAll<HTMLElement>('[data-slide]').forEach((el) => el.classList.toggle('is-active', Number(el.dataset.slide) === i));
+      dots.forEach((d, j) => (j === i ? d.setAttribute('aria-current', 'true') : d.removeAttribute('aria-current')));
+      captions.forEach((c, j) => (c.hidden = j !== i));
+    };
+    const stop = () => { window.clearInterval(timer); timer = undefined; };
+    const start = () => { stop(); if (!paused && ready) timer = window.setInterval(() => show(i + 1), 6500); };
+    const setPaused = (p: boolean) => {
+      paused = p;
+      ui.toggleAttribute('data-paused', p);
+      toggle.setAttribute('aria-label', (p ? root.dataset.play : root.dataset.pause)!);
+      p ? stop() : start();
+    };
+
+    // Add the other slides only once the page (and the first photo) has loaded.
+    const hydrate = () => {
+      root.querySelectorAll<HTMLTemplateElement>('template[data-slide-template]').forEach((tpl) => root.append(tpl.content.cloneNode(true)));
+      ready = true;
+      setPaused(paused);
+    };
+    if (document.readyState === 'complete') setTimeout(hydrate, 600);
+    else window.addEventListener('load', () => setTimeout(hydrate, 600), { once: true });
+
+    dots.forEach((d, j) => d.addEventListener('click', () => { show(j); start(); }));
+    toggle.addEventListener('click', () => setPaused(!paused));
+    document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+  }
+</script>

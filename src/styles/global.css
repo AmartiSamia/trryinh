@@ -32,29 +32,31 @@
   --photo-veil: linear-gradient(180deg, rgb(10 14 32 / 0.2) 0%, rgb(10 14 32 / 0.45) 40%, rgb(10 14 32 / 0.82) 100%);
 }
 
+/* Dark: warm graphite night. Surfaces step up in lightness so cards and
+   sections stay distinct; indigo is kept for small accents only. */
 [data-theme='dark'] {
   color-scheme: dark;
-  --bg: #0e1328;
-  --surface: #151c3a;
-  --surface-2: #1c2449;
-  --line: #2a3361;
-  --ink: #efe9dd;
-  --ink-2: #c6c1b6;
-  --ink-3: #a09eaa;
-  --brand: #1c2449;
-  --brand-2: #8ea2f0;
-  --on-brand: #efe9dd;
-  --link: #a9b8f5;
+  --bg: #0c0e12;
+  --surface: #15181e;
+  --surface-2: #1d2128;
+  --line: #2b3039;
+  --ink: #f3eee6;
+  --ink-2: #c9c4bb;
+  --ink-3: #9d9890;
+  --brand: #12151b;
+  --brand-2: #a3b3f2;
+  --on-brand: #f3eee6;
+  --link: #b6c3f7;
   --accent: #f2b252;
   --on-accent: #1a1305;
   --accent-text: #f2b252;
   --success: #8fbf96;
-  --success-bg: #1d3326;
+  --success-bg: #17261c;
   --danger: #ff8a80;
-  --danger-bg: #3a1a1c;
+  --danger-bg: #2e1718;
   --focus: #f2b252;
-  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 10px 30px -12px rgb(0 0 0 / 0.6);
-  --photo-veil: linear-gradient(180deg, rgb(5 8 20 / 0.25) 0%, rgb(5 8 20 / 0.3) 45%, rgb(5 8 20 / 0.82) 100%);
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 12px 32px -14px rgb(0 0 0 / 0.75);
+  --photo-veil: linear-gradient(180deg, rgb(6 7 10 / 0.25) 0%, rgb(6 7 10 / 0.3) 45%, rgb(6 7 10 / 0.82) 100%);
 }
 
 @theme inline {

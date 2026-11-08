@@ -32,6 +32,7 @@ const stepper = [
     data-shared={price.shared ?? ''} data-private={price.private ?? ''} data-child={booking.childFactor}
     data-title={title[lang]} data-url={pageUrl}
     data-s={JSON.stringify({ hello: b.msgHello, date: b.msgDate, adults: b.msgAdults, children: b.msgChildren, option: b.msgOption, total: b.msgTotal, lang: b.msgLang, langName: b.msgLangName, link: b.msgLink, shared: b.shared, private: b.private, missing: b.dateMissing })}>
+    <p class="mb-3 inline-flex items-center gap-1.5 rounded-full bg-success-bg px-3 py-1 text-xs font-semibold text-success"><Icon name="check" size={14} />{s.more.trust[0].title}</p>
     <h2 class="font-display text-lg font-semibold">{b.title}</h2>
     <p class="mt-2 flex items-baseline gap-1.5">
       <span class="text-sm text-ink-3">{s.common.from}</span>

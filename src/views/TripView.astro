@@ -69,6 +69,7 @@ const tags = [
       </div>
       <div class="flex gap-2" data-no-print>
         <WishButton slug={trip.id} lang={lang} class="!bg-surface-2 !text-ink hover:!bg-line" />
+        <button type="button" class="grid size-11 place-items-center rounded-full bg-surface-2 hover:bg-line" data-share data-copied={s.more.wishCopied} aria-label={s.more.share}><Icon name="share" /></button>
         <button type="button" class="grid size-11 place-items-center rounded-full bg-surface-2 hover:bg-line" data-print aria-label={s.trip.print}><Icon name="print" /></button>
       </div>
     </header>
@@ -211,5 +212,16 @@ const tags = [
 <script>
   // Print: open collapsed timelines and FAQ first so everything is on paper.
   document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
+  // Share: native share sheet on phones, otherwise copy the link.
+  const shareBtn = document.querySelector<HTMLButtonElement>('[data-share]');
+  shareBtn?.addEventListener('click', async () => {
+    const data = { title: document.title, url: location.href.split('?')[0] };
+    if (navigator.share) { try { await navigator.share(data); } catch {} return; }
+    try {
+      await navigator.clipboard.writeText(data.url);
+      shareBtn.setAttribute('aria-label', shareBtn.dataset.copied!);
+      shareBtn.classList.add('!bg-success-bg', '!text-success');
+    } catch {}
+  });
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach((d) => (d.open = true)));
 </script>

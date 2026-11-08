@@ -24,7 +24,6 @@ export const routes = {
   book: { en: 'book', fr: 'reserver', es: 'reservar', de: 'buchen', pt: 'reservar', ar: 'book' },
   tailorMade: { en: 'tailor-made', fr: 'sur-mesure', es: 'a-medida', de: 'individuell', pt: 'a-medida', ar: 'tailor-made' },
   reviews: { en: 'reviews', fr: 'avis', es: 'opiniones', de: 'bewertungen', pt: 'avaliacoes', ar: 'reviews' },
-  guide: { en: 'guide', fr: 'guide', es: 'guia', de: 'reisefuehrer', pt: 'guia', ar: 'guide' },
   faq: { en: 'faq', fr: 'faq', es: 'preguntas-frecuentes', de: 'faq', pt: 'perguntas-frequentes', ar: 'faq' },
   contact: { en: 'contact', fr: 'contact', es: 'contacto', de: 'kontakt', pt: 'contacto', ar: 'contact' },
   wishlist: { en: 'wishlist', fr: 'favoris', es: 'favoritos', de: 'merkliste', pt: 'favoritos', ar: 'wishlist' },

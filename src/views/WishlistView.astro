@@ -1,15 +1,24 @@
 ---
-/** Saved trips (localStorage, this browser only) and recently viewed trips. */
+/**
+ * Wishlist: full trip cards (price, Book now) for the trips saved with the heart,
+ * kept in this browser. Share the list, ask about all of them on WhatsApp in one
+ * message, clear it (with undo). Popular trips are suggested when it is empty.
+ * All cards are rendered at build time; the script shows the saved ones in saved order.
+ */
 import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
 import RecentTrips from '../components/RecentTrips.astro';
+import TripCard from '../components/TripCard.astro';
 import Icon from '../components/Icon.astro';
 import { alternates, url, type Lang } from '../i18n/routes';
 import { t } from '../i18n/ui';
+import { contact, site } from '../config';
+import { getTrips } from '../lib/trips';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = t(lang);
+const m = s.more;
 const L = <T,>(o: Record<Lang, T>) => o[lang];
 const c = L({
   en: { intro: 'Trips you saved with the heart. They are kept in this browser only, nothing is sent to us.', saved: 'Saved trips', empty: 'No saved trips yet', emptyText: 'Tap the heart on any trip to keep it here and compare later.' },
@@ -19,31 +28,113 @@ const c = L({
   pt: { intro: 'As viagens que guardou com o coração. Ficam apenas neste navegador; nada nos é enviado.', saved: 'Viagens guardadas', empty: 'Ainda não guardou viagens', emptyText: 'Toque no coração de qualquer viagem para a guardar aqui e comparar mais tarde.' },
   ar: { intro: 'الرحلات التي حفظتموها بالقلب. تبقى في هذا المتصفح فقط ولا يُرسل إلينا شيء.', saved: 'الرحلات المحفوظة', empty: 'لا توجد رحلات محفوظة بعد', emptyText: 'اضغطوا على القلب في أي رحلة لحفظها هنا ومقارنتها لاحقا.' },
 });
+const trips = await getTrips();
+const featured = trips.filter((tr) => tr.data.featured).slice(0, 3);
+const info = Object.fromEntries(trips.map((tr) => [tr.id, { title: tr.data.title[lang], url: new URL(url(lang, 'trips', tr.id), site.url).href }]));
 ---
 <Base lang={lang} title={s.nav.wishlist} description={c.intro} alternates={alternates('wishlist')} noindex>
   <PageHeader lang={lang} title={s.nav.wishlist} intro={c.intro} path={url(lang, 'wishlist')} />
-  <div data-wish-page>
-    <RecentTrips lang={lang} mode="wishlist" title={c.saved} />
-    <div class="container-page" data-wish-empty hidden>
+
+  <div class="container-page" data-wish-page
+    data-info={JSON.stringify(info)} data-wa={contact.whatsapp}
+    data-s={JSON.stringify({ count: m.wishCount, shareText: m.wishShareText, askText: m.wishAskText, copied: m.wishCopied, cleared: m.wishCleared, undo: m.wishUndo })}>
+
+    <!-- Toolbar (shown when the list has trips) -->
+    <div class="wish-bar card mb-8 flex flex-wrap items-center justify-between gap-3 p-4 sm:p-5" data-wish-bar hidden>
+      <p class="flex items-center gap-2 font-semibold"><Icon name="heart" class="text-accent-text" /><span data-wish-count></span></p>
+      <div class="flex flex-wrap gap-2">
+        <button type="button" class="btn btn-whatsapp !min-h-11 text-sm" data-wish-ask><Icon name="whatsapp" size={18} /> {m.wishAsk}</button>
+        <button type="button" class="btn btn-ghost !min-h-11 text-sm" data-wish-share><Icon name="share" size={18} /> {m.wishShare}</button>
+        <button type="button" class="btn btn-ghost !min-h-11 text-sm" data-wish-clear><Icon name="x" size={18} /> {m.wishClear}</button>
+      </div>
+    </div>
+    <div role="status" aria-live="polite" class="mb-6" data-wish-status></div>
+
+    <h2 class="sr-only">{c.saved}</h2>
+    <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-wish-grid>
+      {trips.map((trip) => <li data-wish-item={trip.id} hidden><TripCard trip={trip} lang={lang} level="h3" /></li>)}
+    </ul>
+
+    <!-- Empty state + suggestions -->
+    <div data-wish-empty hidden>
       <div class="card flex flex-col items-center p-10 text-center">
-        <Icon name="heart" size={40} class="text-accent-text" />
+        <span class="grid size-16 place-items-center rounded-full bg-accent/15 text-accent-text"><Icon name="heart" size={32} /></span>
         <h2 class="mt-4 text-h3">{c.empty}</h2>
         <p class="mt-2 max-w-md text-ink-2">{c.emptyText}</p>
         <a href={url(lang, 'trips')} class="btn btn-brand mt-6">{s.common.seeAll}</a>
       </div>
+      <h2 class="mt-14 text-h2">{m.wishSuggest}</h2>
+      <ul class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {featured.map((trip) => <li><TripCard trip={trip} lang={lang} level="h3" /></li>)}
+      </ul>
     </div>
-    <RecentTrips lang={lang} />
   </div>
+
+  <RecentTrips lang={lang} />
 </Base>
 
 <script>
-  // Show the wishlist list or the empty state once it has rendered.
-  const page = document.querySelector('[data-wish-page]');
-  page?.addEventListener('rendered', (e) => {
-    const target = e.target as HTMLElement;
-    if (target.dataset.recent !== 'wishlist') return;
-    const n = (e as CustomEvent<number>).detail;
-    target.hidden = n === 0;
-    page.querySelector<HTMLElement>('[data-wish-empty]')!.hidden = n > 0;
-  });
+  import { getWishlist } from '../scripts/wishlist';
+  import { syncHearts } from '../scripts/wishlist';
+
+  const page = document.querySelector<HTMLElement>('[data-wish-page]');
+  if (page) {
+    const info: Record<string, { title: string; url: string }> = JSON.parse(page.dataset.info!);
+    const s = JSON.parse(page.dataset.s!);
+    const grid = page.querySelector<HTMLElement>('[data-wish-grid]')!;
+    const bar = page.querySelector<HTMLElement>('[data-wish-bar]')!;
+    const empty = page.querySelector<HTMLElement>('[data-wish-empty]')!;
+    const status = page.querySelector<HTMLElement>('[data-wish-status]')!;
+    const countEl = page.querySelector<HTMLElement>('[data-wish-count]')!;
+    const items = new Map([...grid.querySelectorAll<HTMLElement>('[data-wish-item]')].map((li) => [li.dataset.wishItem!, li]));
+    const list = () => getWishlist().filter((id) => items.has(id));
+
+    const render = () => {
+      const ids = list();
+      items.forEach((li, id) => (li.hidden = !ids.includes(id)));
+      ids.forEach((id) => grid.append(items.get(id)!)); // saved order, newest first
+      bar.hidden = ids.length === 0;
+      empty.hidden = ids.length > 0;
+      countEl.textContent = s.count.replace('{n}', String(ids.length));
+    };
+    const lines = () => list().map((id) => `• ${info[id].title}\n  ${info[id].url}`);
+    const say = (text: string, action?: { label: string; run: () => void }) => {
+      const p = Object.assign(document.createElement('p'), { className: 'inline-flex items-center gap-3 rounded-full bg-surface-2 px-4 py-2 text-sm', textContent: text });
+      if (action) {
+        const b = Object.assign(document.createElement('button'), { type: 'button', className: 'link font-semibold', textContent: action.label });
+        b.addEventListener('click', () => { action.run(); status.replaceChildren(); });
+        p.append(b);
+      }
+      status.replaceChildren(p);
+    };
+
+    page.querySelector('[data-wish-ask]')!.addEventListener('click', () => {
+      const text = [s.askText, '', ...lines()].join('\n');
+      window.open(`https://wa.me/${page.dataset.wa}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    });
+    page.querySelector('[data-wish-share]')!.addEventListener('click', async () => {
+      const text = [s.shareText, '', ...lines()].join('\n');
+      if (navigator.share) {
+        try { await navigator.share({ title: document.title, text }); } catch {}
+        return;
+      }
+      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    });
+    page.querySelector('[data-wish-clear]')!.addEventListener('click', () => {
+      const before = getWishlist();
+      try { localStorage.setItem('wishlist', '[]'); } catch {}
+      window.dispatchEvent(new CustomEvent('wishlistchange'));
+      say(s.cleared, {
+        label: s.undo,
+        run: () => {
+          try { localStorage.setItem('wishlist', JSON.stringify(before)); } catch {}
+          window.dispatchEvent(new CustomEvent('wishlistchange'));
+        },
+      });
+    });
+
+    render();
+    window.addEventListener('wishlistchange', () => { render(); syncHearts(); });
+    window.addEventListener('storage', render);
+  }
 </script>

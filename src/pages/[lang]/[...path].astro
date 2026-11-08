@@ -8,36 +8,27 @@ import type { GetStaticPaths } from 'astro';
 import { locales, routes, type Lang, type RouteKey } from '../../i18n/routes';
 import { views } from '../../views';
 import TripView from '../../views/TripView.astro';
-import ArticleView from '../../views/ArticleView.astro';
-import { getCollection, type CollectionEntry } from 'astro:content';
 import { getTrips, type Trip } from '../../lib/trips';
 
-type Key = RouteKey | 'trip' | 'article';
-type Article = CollectionEntry<'guide'>;
+type Key = RouteKey | 'trip';
 
 export const getStaticPaths = (async () => {
   const trips = await getTrips();
-  const articles = await getCollection('guide');
   return locales.flatMap((lang) => [
     ...(Object.keys(views) as RouteKey[]).map((key) => ({
       params: { lang, path: routes[key][lang] || undefined },
-      props: { key: key as Key, trip: undefined as Trip | undefined, article: undefined as Article | undefined },
+      props: { key: key as Key, trip: undefined as Trip | undefined },
     })),
     ...trips.map((trip) => ({
       params: { lang, path: `${routes.trips[lang]}/${trip.id}` },
-      props: { key: 'trip' as Key, trip: trip as Trip | undefined, article: undefined as Article | undefined },
-    })),
-    ...articles.filter((a) => a.data.lang === lang).map((article) => ({
-      params: { lang, path: `${routes.guide[lang]}/${article.data.key}` },
-      props: { key: 'article' as Key, trip: undefined as Trip | undefined, article: article as Article | undefined },
+      props: { key: 'trip' as Key, trip: trip as Trip | undefined },
     })),
   ]);
 }) satisfies GetStaticPaths;
 
 const { lang } = Astro.params as { lang: Lang };
-const { key, trip, article } = Astro.props;
-const View = key === 'trip' || key === 'article' ? null : views[key]!;
+const { key, trip } = Astro.props;
+const View = key === 'trip' ? null : views[key]!;
 ---
 {trip && <TripView lang={lang} trip={trip} />}
-{article && <ArticleView lang={lang} article={article} />}
 {View && <View lang={lang} />}

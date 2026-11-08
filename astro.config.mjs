@@ -16,10 +16,7 @@ export default defineConfig({
       // like /fr/circuits/ can't be paired automatically by the sitemap plugin).
       filter: (page) =>
         page !== `${SITE}/` && // language redirect
-        !/\/(wishlist|favoris|favoritos|merkliste)\/$/.test(page) && // personal page, noindex
-        // Guide articles are noindex while they are drafts (reviewed: false).
-        // TODO(youssef): remove this line once the articles are reviewed.
-        !/\/(guide|guia|reisefuehrer)\/[^/]+\/$/.test(page),
+        !/\/(wishlist|favoris|favoritos|merkliste)\/$/.test(page), // personal page, noindex
     }),
   ],
   vite: { plugins: [tailwindcss()] },

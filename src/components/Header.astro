@@ -17,7 +17,7 @@ const s = t(lang);
 const nav = [
   { href: url(lang, 'trips'), label: s.nav.trips, key: 'trips' },
   { href: url(lang, 'tailorMade'), label: s.nav.tailorMade, key: 'tailorMade' },
-  { href: url(lang, 'guide'), label: s.nav.guide, key: 'guide' },
+  { href: url(lang, 'faq'), label: s.nav.faq, key: 'faq' },
   { href: url(lang, 'contact'), label: s.nav.contact, key: 'contact' },
 ];
 const path = Astro.url.pathname;
@@ -88,6 +88,12 @@ const bookHref = url(lang, 'book') + (tripSlug ? `?trip=${tripSlug}` : '');
         <Icon name="sun" class="theme-icon-sun" />
       </button>
 
+      <a href={url(lang, 'wishlist')} class="ctl relative grid size-11 place-items-center rounded-full" data-wish-link
+        data-label={s.more.wishCount} aria-label={s.nav.wishlist}>
+        <Icon name="heart" />
+        <span class="wish-badge absolute end-0.5 top-0.5 grid h-5 min-w-5 place-items-center rounded-full bg-accent px-1 text-[0.7rem] font-bold text-on-accent" data-wish-badge hidden aria-hidden="true"></span>
+      </a>
+
       <a href={wa} class="btn btn-whatsapp ms-1 hidden !min-h-10 !px-3 text-sm lg:inline-flex xl:!px-4" target="_blank" rel="noopener" aria-label={s.common.chatWhatsapp}>
         <Icon name="whatsapp" size={18} /> <span class="hidden xl:inline">{s.common.whatsapp}</span>
       </a>
@@ -110,7 +116,7 @@ const bookHref = url(lang, 'book') + (tripSlug ? `?trip=${tripSlug}` : '');
     </div>
     <nav aria-label={s.a11y.mainNav} class="flex-1 overflow-y-auto px-4">
       <ul class="divide-y divide-line border-y border-line">
-        {[...nav, { href: url(lang, 'faq'), label: s.nav.faq, key: 'faq' }, { href: url(lang, 'wishlist'), label: s.nav.wishlist, key: 'wishlist' }].map((n) => (
+        {nav.map((n) => (
           <li>
             <a href={n.href} class="flex min-h-14 items-center justify-between font-display text-lg font-medium" aria-current={isCurrent(n.href) ? 'page' : undefined}>
               {n.label}
@@ -185,6 +191,12 @@ const bookHref = url(lang, 'book') + (tripSlug ? `?trip=${tripSlug}` : '');
   :global(html:not([data-theme='dark']) .theme-icon-sun) {
     display: none;
   }
+  .wish-badge.pop {
+    animation: pop 0.35s var(--ease-out-soft);
+  }
+  @keyframes pop {
+    50% { transform: scale(1.35); }
+  }
   .menu-dialog::backdrop {
     background: rgb(8 11 26 / 0.5);
   }
@@ -254,6 +266,22 @@ const bookHref = url(lang, 'book') + (tripSlug ? `?trip=${tripSlug}` : '');
       try { localStorage.setItem('lang', a.dataset.langLink!); } catch {}
     }),
   );
+
+  // Wishlist counter in the header, kept in sync across pages and tabs.
+  const wishLink = document.querySelector<HTMLAnchorElement>('[data-wish-link]');
+  const syncWish = () => {
+    if (!wishLink) return;
+    let n = 0;
+    try { n = (JSON.parse(localStorage.getItem('wishlist') ?? '[]') as string[]).length; } catch {}
+    const badge = wishLink.querySelector<HTMLElement>('[data-wish-badge]')!;
+    badge.hidden = n === 0;
+    badge.textContent = n > 9 ? '9+' : String(n);
+    if (n) wishLink.setAttribute('aria-label', wishLink.dataset.label!.replace('{n}', String(n)));
+    if (n) { badge.classList.remove('pop'); void badge.offsetWidth; badge.classList.add('pop'); }
+  };
+  syncWish();
+  window.addEventListener('wishlistchange', syncWish);
+  window.addEventListener('storage', syncWish);
 
   // Language menu: close on Escape (focus back to the button) and on outside click.
   const langMenu = document.querySelector<HTMLDetailsElement>('[data-lang-menu]');

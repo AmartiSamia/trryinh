@@ -11,7 +11,6 @@ import CreditsView from './CreditsView.astro';
 import PrivacyView from './PrivacyView.astro';
 import TermsView from './TermsView.astro';
 import CancellationView from './CancellationView.astro';
-import GuideView from './GuideView.astro';
 
 /** Which view renders each page key. Add a page here and in i18n/routes.ts. */
 export const views: Partial<Record<RouteKey, (props: any) => any>> = {
@@ -27,5 +26,4 @@ export const views: Partial<Record<RouteKey, (props: any) => any>> = {
   privacy: PrivacyView,
   terms: TermsView,
   cancellation: CancellationView,
-  guide: GuideView,
 };

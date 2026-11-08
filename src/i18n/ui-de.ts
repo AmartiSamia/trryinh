@@ -5,7 +5,7 @@ export const de: UI = {
   meta: {
     tagline: 'Marokko mit Einheimischen',
     description:
-      'Trekking, Wüste, Tagesausflüge und individuelle Reisen in ganz Marokko, organisiert in Imlil von lizenzierten einheimischen Guides. Wir antworten jeden Tag auf WhatsApp.',
+      'Den Toubkal bei Sonnenaufgang besteigen, in den Dünen der Sahara schlafen, durch die Souks von Marrakesch streifen. Kleingruppen- und Privatreisen in ganz Marokko mit einheimischen Guides aus Imlil. Jetzt reservieren, später zahlen.',
   },
   a11y: {
     skip: 'Zum Inhalt springen',
@@ -23,7 +23,6 @@ export const de: UI = {
   nav: {
     trips: 'Reisen',
     tailorMade: 'Individuell',
-    guide: 'Reiseführer',
     reviews: 'Bewertungen',
     faq: 'FAQ',
     contact: 'Kontakt',
@@ -86,9 +85,9 @@ export const de: UI = {
   },
   home: {
     heroEyebrow: 'Hoher Atlas · Sahara · Medinas',
-    heroTitle: 'Marokko mit Einheimischen',
+    heroTitle: 'Über den Wolken aufwachen. Unter Saharasternen einschlafen.',
     heroText:
-      'Trekking ab Imlil, Nächte in der Wüste, Tagesausflüge und Rundreisen im ganzen Land. Organisiert von einheimischen Guides in Imlil, die Ihnen direkt antworten.',
+      'Der Toubkal bei Sonnenaufgang, eine Nacht in den Dünen, die Souks von Marrakesch in der Abenddämmerung. Kleine Gruppen oder Privatreisen mit einheimischen Guides – und ein echter Mensch auf WhatsApp, Tag und Nacht.',
     categoriesTitle: 'Welche Art von Reise?',
     featuredTitle: 'Die meistgefragten Reisen',
     featuredText: 'Ein Ausgangspunkt. Jede Reise kann privat oder an Ihre Termine angepasst werden.',
@@ -264,6 +263,39 @@ export const de: UI = {
     options: 'Gruppe oder privat',
     privateOnlyLabel: 'Privatreise',
     sharedOnlyLabel: 'Kleine Gruppe',
+  },
+  more: {
+    trust: [
+      { title: 'Jetzt reservieren, später zahlen', text: 'Nichts online zu bezahlen. Sie zahlen erst nach unserer Bestätigung.' },
+      { title: 'Echte Menschen, rund um die Uhr', text: 'Antwort auf WhatsApp innerhalb weniger Stunden, an jedem Tag im Jahr.' },
+      { title: 'Lizenzierte einheimische Guides', text: 'Aufgewachsen in den Atlastälern und alten Medinas.' },
+      { title: 'Privat oder Kleingruppe', text: 'Jede Reise geht auch nur für Sie.' },
+    ],
+    signatureEyebrow: 'Unsere Signature-Reisen',
+    signatureTitle: 'Die Reisen, auf die wir am stolzesten sind',
+    signatureText: 'Ausgewählte Routen, die Marokko von seiner besten Seite zeigen – vom Dach Nordafrikas bis an den Rand der Sahara.',
+    destTitle: 'Beliebte Reiseziele',
+    destText: 'Wo möchten Sie aufwachen?',
+    continueTitle: 'Weiter entdecken',
+    pause: 'Diashow anhalten',
+    play: 'Diashow abspielen',
+    slide: 'Foto {i} von {n}',
+    prev: 'Zurück',
+    next: 'Weiter',
+    discover: 'Entdecken',
+    slides: { desert: 'Dünen des Erg Chebbi, Sahara', atlas: 'Toubkal, Hoher Atlas', chaouen: 'Chefchaouen, die blaue Stadt', marrakech: 'Marrakesch und der Atlas', coast: 'Essaouira am Atlantik' },
+    dest: { marrakech: 'Marrakesch', atlas: 'Hoher Atlas & Toubkal', sahara: 'Sahara', essaouira: 'Essaouira', fes: 'Fès', chefchaouen: 'Chefchaouen' },
+    wishCount: 'Merkliste, {n} gespeichert',
+    wishShare: 'Meine Liste teilen',
+    wishAsk: 'Zu diesen Reisen anfragen',
+    wishClear: 'Liste leeren',
+    wishCleared: 'Liste geleert.',
+    wishUndo: 'Rückgängig',
+    wishShareText: 'Meine Marokko-Merkliste:',
+    wishAskText: 'Hallo Iberdan, mich interessieren diese Reisen:',
+    wishSuggest: 'Beliebte Reisen für den Anfang',
+    wishCopied: 'Link kopiert',
+    share: 'Teilen',
   },
   regions: {
     atlas: 'Hoher Atlas',
