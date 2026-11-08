@@ -21,6 +21,8 @@ const d = trip.data;
 const [cover] = await tripPhotos(trip);
 const href = url(lang, 'trips', trip.id);
 const price = priceFrom(trip);
+const bookHref = `${url(lang, 'book')}?trip=${trip.id}`;
+const groupLabel = d.price.shared && d.price.private ? s.book.options : d.price.private ? s.book.privateOnlyLabel : s.book.sharedOnlyLabel;
 const H = level;
 const inc = [
   d.includes.meals && { icon: 'meal' as const, label: s.card.meals },
@@ -70,16 +72,19 @@ const search = [d.title.en, d.title.fr, d.title.ar, d.startCity, d.endCity, ...d
       <dd class="col-span-2 flex items-center gap-2"><Icon name="pin" size={16} class="text-ink-3" />{s.card.start} {cityLabel(d.startCity, lang)}</dd>
       <dt class="sr-only">{s.card.difficulty}</dt>
       <dd class="col-span-2 flex items-center gap-2"><Icon name="mountain" size={16} class="text-ink-3" />{difficultyLabels[d.difficulty][lang]}{d.maxAltitude && <span dir="ltr"> · {d.maxAltitude.toLocaleString('en')} m</span>}</dd>
+      <dt class="sr-only">{s.book.options}</dt>
+      <dd class="col-span-2 flex items-center gap-2"><Icon name="users" size={16} class="text-ink-3" />{groupLabel}</dd>
     </dl>
-    <div class="mt-auto flex items-end justify-between gap-3 pt-5">
+    <div class="mt-auto pt-5">
       <p class="leading-tight">
-        <span class="block text-xs text-ink-3">{s.common.from}{isPrivateOnly(trip) && ` · ${s.card.privateOnly}`}</span>
+        <span class="text-xs text-ink-3">{s.common.from} </span>
         <Price mad={price} lang={lang} class="font-display text-xl font-semibold" />
-        <span class="block text-xs text-ink-3">{s.common.perPerson}</span>
+        <span class="text-xs text-ink-3"> {s.common.perPerson}</span>
       </p>
-      <span class="btn btn-brand pointer-events-none !min-h-10 !px-4 text-sm" aria-hidden="true">
-        {s.common.viewDetails} <Icon name="arrow" size={16} flip />
-      </span>
+      <div class="mt-3 grid grid-cols-2 gap-2">
+        <span class="btn btn-ghost pointer-events-none !min-h-11 !px-3 text-sm" aria-hidden="true">{s.common.viewDetails}</span>
+        <a href={bookHref} class="btn btn-accent relative z-10 !min-h-11 !px-3 text-sm" aria-label={`${s.book.cta}: ${d.title[lang]}`}>{s.book.cta}</a>
+      </div>
     </div>
   </div>
 </article>

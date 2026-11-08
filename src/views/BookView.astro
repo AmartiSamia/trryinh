@@ -1,0 +1,299 @@
+---
+/**
+ * "Book now" page: any trip, date, travellers, shared/private, live estimate,
+ * then WhatsApp (pre-filled) or email. Opened from every "Book now" button,
+ * with ?trip=<slug> (and optional ?date= & ?people=) to pre-select.
+ * No payment: the request is confirmed by reply.
+ */
+import { getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Icon from '../components/Icon.astro';
+import { alternates, url, type Lang } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { categoryLabels } from '../i18n/catalog';
+import { categories } from '../content.config';
+import { booking, contact, site } from '../config';
+import { durationLabel, getTrips, tripPhotos } from '../lib/trips';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t(lang);
+const b = s.booking;
+const k = s.book;
+const f = s.form;
+const trips = await getTrips();
+const data = await Promise.all(
+  trips.map(async (tr) => {
+    const [cover] = await tripPhotos(tr);
+    const img = await getImage({ src: cover.data.file, width: 640, format: 'webp' });
+    return {
+      slug: tr.id,
+      title: tr.data.title[lang],
+      cat: tr.data.category,
+      duration: durationLabel(tr, lang),
+      shared: tr.data.price.shared ?? 0,
+      private: tr.data.price.private ?? 0,
+      href: url(lang, 'trips', tr.id),
+      abs: new URL(url(lang, 'trips', tr.id), site.url).href,
+      img: img.src,
+      ph: cover.data.placeholder,
+      alt: cover.data.alt[lang],
+    };
+  }),
+);
+const strings = {
+  hello: b.msgHello, date: b.msgDate, adults: b.msgAdults, children: b.msgChildren, option: b.msgOption,
+  total: b.msgTotal, lang: b.msgLang, langName: b.msgLangName, link: b.msgLink, shared: b.shared, private: b.private,
+  missing: b.dateMissing, errTrip: k.errTrip, errDate: k.errDate, errName: f.errName, errEmail: f.errEmail,
+  sending: f.sending, send: f.send, success: f.success, error: f.error, nokey: f.noKey, mail: contact.email,
+  wa: contact.whatsapp, childFactor: booking.childFactor, nameLabel: f.name,
+};
+---
+<Base lang={lang} title={k.title} description={k.intro} alternates={alternates('book')} hideFab>
+  <PageHeader lang={lang} title={k.title} intro={k.intro} path={url(lang, 'book')} />
+
+  <form class="container-page grid grid-cols-1 gap-8 lg:grid-cols-[1fr_24rem]" data-book novalidate
+    data-trips={JSON.stringify(data)} data-s={JSON.stringify(strings)}>
+    <div class="space-y-6">
+      <fieldset class="card p-6 sm:p-8">
+        <legend class="sr-only">{k.step1}</legend>
+        <p class="flex items-center gap-3 text-h3 font-display" aria-hidden="true"><span class="num">1</span>{k.step1}</p>
+        <label for="bk-trip" class="mt-5 block text-sm font-semibold">{k.chooseTrip}</label>
+        <select id="bk-trip" name="trip" class="input mt-1.5" required>
+          <option value="">{k.chooseTrip}…</option>
+          {categories.map((c) => (
+            <optgroup label={categoryLabels[c][lang]}>
+              {data.filter((d) => d.cat === c).map((d) => <option value={d.slug}>{d.title}</option>)}
+            </optgroup>
+          ))}
+        </select>
+        <fieldset class="mt-5" data-options hidden>
+          <legend class="text-sm font-semibold">{b.option}</legend>
+          <div class="mt-2 grid grid-cols-2 gap-2">
+            {(['shared', 'private'] as const).map((o) => (
+              <label class="opt" data-opt={o}>
+                <input type="radio" name="option" value={o} class="sr-only" />
+                <span class="font-semibold">{b[o]}</span>
+                <span class="text-sm tabular-nums" dir="ltr" data-opt-price></span>
+                <span class="text-xs text-ink-3">{b[`${o}Help`]}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      </fieldset>
+
+      <fieldset class="card p-6 sm:p-8">
+        <legend class="sr-only">{k.step2}</legend>
+        <p class="flex items-center gap-3 text-h3 font-display" aria-hidden="true"><span class="num">2</span>{k.step2}</p>
+        <div class="mt-5 grid gap-5 sm:grid-cols-2">
+          <div>
+            <label for="bk-date" class="text-sm font-semibold">{b.date}</label>
+            <input id="bk-date" name="date" type="date" class="input mt-1.5" required />
+          </div>
+          <div class="space-y-3">
+            {[{ name: 'adults', label: b.adults, min: 1, value: 2 }, { name: 'children', label: b.children, min: 0, value: 0 }].map((st) => (
+              <div class="flex items-center justify-between gap-3">
+                <label for={`bk-${st.name}`} class="text-sm font-semibold">{st.label}</label>
+                <div class="flex items-center gap-1">
+                  <button type="button" class="step" data-step={`-${st.name}`} aria-label={b.less.replace('{x}', st.label.toLowerCase())}>−</button>
+                  <input id={`bk-${st.name}`} name={st.name} type="number" inputmode="numeric" min={st.min} max="30" value={st.value} class="input !w-14 text-center tabular-nums" />
+                  <button type="button" class="step" data-step={`+${st.name}`} aria-label={b.more.replace('{x}', st.label.toLowerCase())}>+</button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="card p-6 sm:p-8">
+        <legend class="sr-only">{k.step3}</legend>
+        <p class="flex items-center gap-3 text-h3 font-display" aria-hidden="true"><span class="num">3</span>{k.step3}</p>
+        <div class="mt-5 grid gap-4 sm:grid-cols-2">
+          <div><label for="bk-name" class="text-sm font-semibold">{f.name}</label><input id="bk-name" name="name" autocomplete="name" class="input mt-1.5" /></div>
+          <div><label for="bk-email" class="text-sm font-semibold">{f.email}</label><input id="bk-email" name="email" type="email" autocomplete="email" class="input mt-1.5" /></div>
+          <div><label for="bk-phone" class="text-sm font-semibold">{f.phone}</label><input id="bk-phone" name="phone" type="tel" autocomplete="tel" dir="ltr" class="input mt-1.5" /></div>
+          <div><label for="bk-msg" class="text-sm font-semibold">{f.message}</label><input id="bk-msg" name="message" class="input mt-1.5" placeholder={f.messagePlaceholder} /></div>
+        </div>
+      </fieldset>
+    </div>
+
+    <aside class="lg:sticky lg:top-24 lg:self-start">
+      <div class="card overflow-hidden">
+        <div class="relative aspect-[16/10] bg-surface-2 bg-cover bg-center" data-prev-img-wrap>
+          <img alt="" class="size-full object-cover" data-prev-img hidden />
+          <p class="absolute inset-0 grid place-items-center p-6 text-center text-sm text-ink-3" data-prev-empty><span class="inline-flex items-center gap-2"><Icon name="compass" />{k.noTrip}</span></p>
+        </div>
+        <div class="p-6">
+          <h2 class="text-sm font-semibold text-ink-3">{k.summary}</h2>
+          <p class="mt-1 font-display text-lg font-semibold leading-snug" data-prev-title>—</p>
+          <p class="text-sm text-ink-2" data-prev-duration></p>
+          <a class="link mt-1 inline-flex min-h-8 items-center gap-1 text-sm" data-prev-link hidden>{s.common.viewDetails} <Icon name="arrow" size={14} flip /></a>
+
+          <div class="mt-4 rounded-2xl bg-surface-2 p-4">
+            <p class="flex items-baseline justify-between gap-2">
+              <span class="text-sm font-semibold">{b.estimate}</span>
+              <output class="font-display text-2xl font-semibold tabular-nums" dir="ltr" data-total aria-live="polite">—</output>
+            </p>
+            <p class="mt-1 text-xs text-ink-3" data-child-note hidden>{b.childNote}</p>
+          </div>
+          <p class="mt-4 flex gap-2 text-sm text-ink-2"><Icon name="shield" size={18} class="mt-0.5 shrink-0 text-success" />{b.noPayment}</p>
+          <div class="mt-5 grid gap-2">
+            <button type="button" class="btn btn-whatsapp w-full" data-send="wa"><Icon name="whatsapp" /> {b.whatsapp}</button>
+            <button type="button" class="btn btn-ghost w-full" data-send="email"><Icon name="mail" /> {b.email}</button>
+          </div>
+          <div role="status" aria-live="polite" class="mt-3" data-status></div>
+        </div>
+      </div>
+
+      <div class="mt-6 rounded-3xl border border-line p-6">
+        <h2 class="font-display font-semibold">{k.howTitle}</h2>
+        <ol class="mt-3 space-y-3 text-sm text-ink-2">
+          {[k.how1, k.how2, k.how3].map((h, i) => <li class="flex gap-3"><span class="num !size-6 !text-xs">{i + 1}</span><span>{h}</span></li>)}
+        </ol>
+      </div>
+    </aside>
+  </form>
+</Base>
+
+<style>
+  .num {
+    display: inline-grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+</style>
+
+<script>
+  import type { Currency } from '../config';
+  import { convert, formatMoney } from '../lib/price';
+  import { fieldError, isEmail, emailConfigured, sendEmail } from '../scripts/send';
+  import { langMeta, type Lang } from '../i18n/routes';
+
+  type T = { slug: string; title: string; duration: string; shared: number; private: number; href: string; abs: string; img: string; ph: string; alt: string };
+  const form = document.querySelector<HTMLFormElement>('[data-book]');
+  if (form) {
+    const trips: T[] = JSON.parse(form.dataset.trips!);
+    const s = JSON.parse(form.dataset.s!);
+    const lang = document.documentElement.lang as Lang;
+    const $ = <E extends Element = HTMLElement>(sel: string) => form.querySelector<E>(sel)!;
+    const tripSel = $<HTMLSelectElement>('#bk-trip');
+    const dateI = $<HTMLInputElement>('#bk-date');
+    const opts = $('[data-options]');
+    const status = $('[data-status]');
+    const today = new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    dateI.min = today;
+
+    // Pre-fill from the URL (?trip=, ?date=, ?people=)
+    const qs = new URLSearchParams(location.search);
+    if (qs.get('trip') && trips.some((x) => x.slug === qs.get('trip'))) tripSel.value = qs.get('trip')!;
+    if ((qs.get('date') ?? '') >= today) dateI.value = qs.get('date') ?? '';
+    const ppl = Number(qs.get('people'));
+    if (ppl >= 1 && ppl <= 30) $<HTMLInputElement>('#bk-adults').value = String(ppl);
+
+    const cur = () => (document.documentElement.dataset.currency ?? 'EUR') as Currency;
+    const money = (mad: number) => formatMoney(convert(mad, cur()), cur(), lang);
+    const clamp = (name: string, min: number) => {
+      const el = $<HTMLInputElement>(`[name="${name}"]`);
+      return Math.min(30, Math.max(min, Math.round(Number(el.value) || 0)));
+    };
+    let lines: string[] = [];
+    let trip: T | undefined;
+
+    function update() {
+      trip = trips.find((x) => x.slug === tripSel.value);
+      const img = $<HTMLImageElement>('[data-prev-img]');
+      $('[data-prev-empty]').hidden = !!trip;
+      img.hidden = !trip;
+      $('[data-prev-title]').textContent = trip?.title ?? '—';
+      $('[data-prev-duration]').textContent = trip?.duration ?? '';
+      const link = $<HTMLAnchorElement>('[data-prev-link]');
+      link.hidden = !trip;
+      if (trip) {
+        if (img.getAttribute('src') !== trip.img) { $('[data-prev-img-wrap]').style.backgroundImage = `url(${trip.ph})`; img.src = trip.img; img.alt = trip.alt; }
+        link.href = trip.href;
+      }
+      // Options available for this trip
+      const both = !!(trip?.shared && trip?.private);
+      opts.hidden = !both;
+      form!.querySelectorAll<HTMLElement>('[data-opt]').forEach((l) => {
+        const o = l.dataset.opt as 'shared' | 'private';
+        l.querySelector('[data-opt-price]')!.textContent = trip?.[o] ? money(trip[o]) : '';
+      });
+      let option = (new FormData(form!).get('option') as 'shared' | 'private' | null) ?? null;
+      if (!trip?.[option ?? 'shared']) option = trip?.shared ? 'shared' : 'private';
+      form!.querySelectorAll<HTMLInputElement>('[name="option"]').forEach((r) => (r.checked = r.value === option));
+
+      const adults = clamp('adults', 1), children = clamp('children', 0);
+      $('[data-child-note]').hidden = children === 0;
+      if (!trip) { $('[data-total]').textContent = '—'; return; }
+      const per = trip[option!] || trip.shared || trip.private;
+      const totalText = money(per * (adults + children * s.childFactor));
+      $('[data-total]').textContent = totalText;
+      const date = dateI.value ? new Intl.DateTimeFormat(langMeta[lang].intl, { dateStyle: 'full' }).format(new Date(`${dateI.value}T12:00`)) : s.missing;
+      const name = $<HTMLInputElement>('#bk-name').value.trim();
+      const msg = $<HTMLInputElement>('#bk-msg').value.trim();
+      lines = [
+        s.hello, `*${trip.title}*`, `${s.date}: ${date}`, `${s.adults}: ${adults}`,
+        ...(children ? [`${s.children}: ${children}`] : []),
+        `${s.option}: ${s[option!]}`, `${s.total}: ${totalText}`,
+        ...(name ? [`${s.nameLabel}: ${name}`] : []), ...(msg ? ['', msg] : []),
+        '', `${s.lang}: ${s.langName}`, `${s.link}: ${trip.abs}`,
+      ];
+    }
+
+    form.addEventListener('input', update);
+    form.addEventListener('change', update);
+    window.addEventListener('currencychange', update);
+    form.querySelectorAll<HTMLButtonElement>('[data-step]').forEach((btn) =>
+      btn.addEventListener('click', () => {
+        const [sign, name] = [btn.dataset.step![0], btn.dataset.step!.slice(1)];
+        const el = $<HTMLInputElement>(`[name="${name}"]`);
+        el.value = String(Math.min(30, Math.max(Number(el.min), Number(el.value) + (sign === '+' ? 1 : -1))));
+        update();
+      }),
+    );
+    update();
+
+    const p = (cls: string, text: string) => Object.assign(document.createElement('p'), { className: cls, textContent: text });
+    const check = () => {
+      const okTrip = !!trip;
+      const tripErr = fieldError(tripSel as unknown as HTMLInputElement, okTrip ? null : s.errTrip);
+      if (!tripErr) { tripSel.focus(); return false; }
+      if (!fieldError(dateI, dateI.value ? null : s.errDate)) { dateI.focus(); return false; }
+      return true;
+    };
+    form.querySelectorAll<HTMLButtonElement>('[data-send]').forEach((btn) =>
+      btn.addEventListener('click', async () => {
+        update();
+        if (!check()) return;
+        if (btn.dataset.send === 'wa') {
+          window.open(`https://wa.me/${s.wa}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
+          return;
+        }
+        const nameI = $<HTMLInputElement>('#bk-name'), emailI = $<HTMLInputElement>('#bk-email');
+        if (!fieldError(nameI, nameI.value.trim() ? null : s.errName)) return nameI.focus();
+        if (!fieldError(emailI, isEmail(emailI.value) ? null : s.errEmail)) return emailI.focus();
+        if (!emailConfigured()) {
+          const m = p('rounded-xl bg-surface-2 p-3 text-sm', `${s.nokey} `);
+          m.append(Object.assign(document.createElement('a'), { className: 'link', textContent: s.mail, href: `mailto:${s.mail}?subject=${encodeURIComponent(trip!.title)}&body=${encodeURIComponent(lines.join('\n'))}` }));
+          return status.replaceChildren(m);
+        }
+        btn.disabled = true;
+        const ok = await sendEmail(`Booking request: ${trip!.title}`, {
+          name: nameI.value.trim(), email: emailI.value.trim(), phone: $<HTMLInputElement>('#bk-phone').value,
+          message: lines.join('\n'), language: lang,
+        });
+        btn.disabled = false;
+        status.replaceChildren(ok ? p('rounded-xl bg-success-bg p-3 text-sm text-success', s.success) : p('rounded-xl bg-danger-bg p-3 text-sm text-danger', s.error));
+      }),
+    );
+  }
+</script>

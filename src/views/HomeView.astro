@@ -22,6 +22,31 @@ const s = t(lang);
 
 const trips = await getTrips();
 const featured = trips.filter((tr) => tr.data.featured).slice(0, 6);
+
+// "Pick your vibe": each vibe shows its 6 most popular trips; "all" shows the featured ones.
+const vibeOf = (tr: (typeof trips)[number]): string => {
+  const c = tr.data.category;
+  if (c === 'trekking') return 'adventure';
+  if (c === 'desert') return 'desert';
+  if (c === 'culture' || c === 'circuit') return 'culture';
+  if (c === 'activity') return tr.id.startsWith('hammam') ? 'easy' : 'adventure';
+  return 'easy';
+};
+const vibes = [
+  { key: 'all', label: s.book.vibeAll },
+  { key: 'adventure', label: s.book.vibeAdventure },
+  { key: 'desert', label: s.book.vibeDesert },
+  { key: 'culture', label: s.book.vibeCulture },
+  { key: 'easy', label: s.book.vibeEasy },
+];
+const vibeTrips = trips
+  .map((trip) => {
+    const v = vibeOf(trip);
+    const rank = trips.filter((x) => vibeOf(x) === v).indexOf(trip);
+    const keys = [...(featured.includes(trip) ? ['all'] : []), ...(rank < 6 ? [v] : [])];
+    return { trip, keys };
+  })
+  .filter((x) => x.keys.length);
 const faqs = (await getCollection('faq')).filter((f) => f.data.home);
 
 const hero = (await getEntry('photos', 'imlil'))!;
@@ -57,7 +82,11 @@ const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
       <p class="hero-in eyebrow !text-[#f2b252] [text-shadow:0_1px_12px_rgb(0_0_0/.6)]" style="--d:0ms">{s.home.heroEyebrow}</p>
       <h1 class="hero-in mt-3 max-w-3xl text-display" style="--d:80ms">{s.home.heroTitle}</h1>
       <p class="hero-in mt-5 max-w-xl text-lg text-white/90 sm:text-xl" style="--d:160ms">{s.home.heroText}</p>
-      <div class="hero-in mt-8 max-w-4xl" style="--d:240ms">
+      <div class="hero-in mt-7 flex flex-wrap gap-3" style="--d:200ms">
+        <a href={url(lang, 'book')} class="btn btn-accent !min-h-12 !px-6">{s.book.cta} <Icon name="arrow" size={18} flip /></a>
+        <a href={url(lang, 'trips')} class="btn !min-h-12 !px-6 text-white ring-1 ring-white/60 ring-inset backdrop-blur-sm hover:bg-white/10">{s.book.explore}</a>
+      </div>
+      <div class="hero-in mt-6 max-w-4xl" style="--d:280ms">
         <SearchBar lang={lang} />
       </div>
     </div>
@@ -92,8 +121,16 @@ const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
         </div>
         <a href={url(lang, 'trips')} class="btn btn-ghost">{s.common.seeAll} <Icon name="arrow" size={18} flip /></a>
       </div>
-      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {featured.map((trip) => <div class="reveal"><TripCard trip={trip} lang={lang} /></div>)}
+      <div class="reveal mt-8 flex flex-wrap gap-2" role="group" aria-label={s.book.vibeTitle} data-vibes>
+        <span class="me-2 self-center text-sm font-semibold text-ink-2">{s.book.vibeTitle}</span>
+        {vibes.map((v, i) => (
+          <button type="button" class="vibe" aria-pressed={i === 0 ? 'true' : 'false'} data-vibe={v.key}>{v.label}</button>
+        ))}
+      </div>
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-vibe-grid>
+        {vibeTrips.map(({ trip, keys }) => (
+          <div class="reveal" data-in={keys.join(' ')} hidden={!keys.includes('all')}><TripCard trip={trip} lang={lang} /></div>
+        ))}
       </div>
     </div>
   </section>
@@ -171,7 +208,44 @@ const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
     /* Movement only: text is painted at once, so it counts for LCP immediately. */
     from { transform: translateY(14px); }
   }
+  .vibe {
+    min-height: 2.75rem;
+    padding: 0.4rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  .vibe:hover {
+    border-color: var(--ink-3);
+  }
+  .vibe[aria-pressed='true'] {
+    background: var(--brand);
+    color: var(--on-brand);
+    border-color: transparent;
+  }
+  :global([data-theme='dark']) .vibe[aria-pressed='true'] {
+    background: var(--accent);
+    color: var(--on-accent);
+  }
   .hero h1 {
     text-shadow: 0 2px 30px rgb(0 0 0 / 0.35);
   }
 </style>
+
+<script>
+  // Vibe chips: show the trips of the chosen vibe (featured trips for "all").
+  const bar = document.querySelector('[data-vibes]');
+  const grid = document.querySelector('[data-vibe-grid]');
+  bar?.addEventListener('click', (e) => {
+    const btn = (e.target as Element).closest<HTMLButtonElement>('[data-vibe]');
+    if (!btn || !grid) return;
+    bar.querySelectorAll('[data-vibe]').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+    grid.querySelectorAll<HTMLElement>('[data-in]').forEach((el) => {
+      el.hidden = !el.dataset.in!.split(' ').includes(btn.dataset.vibe!);
+      el.classList.add('is-in');
+    });
+  });
+</script>

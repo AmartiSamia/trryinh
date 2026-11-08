@@ -18,6 +18,7 @@ export const isLang = (v: unknown): v is Lang => locales.includes(v as Lang);
 export const routes = {
   home: { en: '', fr: '', ar: '' },
   trips: { en: 'trips', fr: 'circuits', ar: 'trips' },
+  book: { en: 'book', fr: 'reserver', ar: 'book' },
   tailorMade: { en: 'tailor-made', fr: 'sur-mesure', ar: 'tailor-made' },
   reviews: { en: 'reviews', fr: 'avis', ar: 'reviews' },
   guide: { en: 'guide', fr: 'guide', ar: 'guide' },

@@ -23,6 +23,9 @@ const nav = [
 const path = Astro.url.pathname;
 const isCurrent = (href: string) => path === href || (href !== `/${lang}/` && path.startsWith(href));
 const wa = waLink(s.common.whatsappHello);
+// On a trip page, Book now pre-selects that trip.
+const tripSlug = path.match(/\/(?:trips|circuits)\/([^/]+)\/$/)?.[1];
+const bookHref = url(lang, 'book') + (tripSlug ? `?trip=${tripSlug}` : '');
 ---
 <header
   data-site-header
@@ -82,9 +85,10 @@ const wa = waLink(s.common.whatsappHello);
         <Icon name="sun" class="theme-icon-sun" />
       </button>
 
-      <a href={wa} class="btn btn-whatsapp ms-1 hidden !min-h-10 !px-4 text-sm lg:inline-flex" target="_blank" rel="noopener">
-        <Icon name="whatsapp" size={18} /> {s.common.whatsapp}
+      <a href={wa} class="btn btn-whatsapp ms-1 hidden !min-h-10 !px-3 text-sm lg:inline-flex xl:!px-4" target="_blank" rel="noopener" aria-label={s.common.chatWhatsapp}>
+        <Icon name="whatsapp" size={18} /> <span class="hidden xl:inline">{s.common.whatsapp}</span>
       </a>
+      <a href={bookHref} class="btn btn-accent hidden !min-h-10 !px-4 text-sm sm:inline-flex">{s.book.cta}</a>
 
       <button type="button" class="ctl grid size-11 place-items-center rounded-full lg:hidden" data-menu-open aria-haspopup="dialog" aria-label={s.a11y.openMenu}>
         <Icon name="menu" />
@@ -120,6 +124,7 @@ const wa = waLink(s.common.whatsappHello);
       </div>
     </nav>
     <div class="space-y-2 p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+      <a href={bookHref} class="btn btn-accent w-full">{s.book.cta}</a>
       <a href={wa} class="btn btn-whatsapp w-full" target="_blank" rel="noopener"><Icon name="whatsapp" /> {s.common.chatWhatsapp}</a>
       <a href={`tel:${contact.phone.replace(/\s/g, '')}`} class="btn btn-ghost w-full" dir="ltr"><Icon name="phone" /> {contact.phone}</a>
     </div>
