@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iberdan.com/sitemap-index.xml
+Sitemap: https://hikingtoatlas.com/sitemap-index.xml

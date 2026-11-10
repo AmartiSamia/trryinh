@@ -80,7 +80,7 @@ const ldList = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
     <!-- Headings font, needed for the first paint. -->
     <link rel="preload" as="font" type="font/woff2" href={lang === 'ar' ? readexArabic : readexLatin} crossorigin />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="theme-color" content="#f7f5f1" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0c0e12" media="(prefers-color-scheme: dark)" />
@@ -103,7 +103,7 @@ const ldList = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
       })();
     </script>
 
-    {ldList.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
+    {ldList.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld).replace(/</g, '\\u003c')} />)}
 
     {analytics.plausibleDomain && (
       <script defer data-domain={analytics.plausibleDomain} src="https://plausible.io/js/script.js"></script>

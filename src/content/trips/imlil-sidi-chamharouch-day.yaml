@@ -54,7 +54,7 @@ itinerary:
     altitude: 2350
     meals: [ lunch ]
 included: [ pickup-hotel, guide-mountain, lunch, tea-snacks ]
-excluded: [ drinks, tips, personal ]
+excluded: [ drinks, personal ]
 pack: [ boots, layers, sun-kit, bottle, daypack ]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."

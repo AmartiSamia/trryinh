@@ -1,5 +1,6 @@
 /** Booking card behaviour: estimate, WhatsApp link, mobile sheet, email dialog hand-off. */
-import { contact, type Currency } from '../config';
+import { booking, contact, type Currency } from '../config';
+const PRIVATE_MIN = booking.privateMin;
 import { convert, formatMoney } from '../lib/price';
 import { langMeta, type Lang } from '../i18n/routes';
 
@@ -43,9 +44,14 @@ export function initBooking() {
   };
 
   function update() {
-    const adults = num('adults', 1);
+    let adults = num('adults', 1);
     const children = num('children', 0);
     const option = (new FormData(form!).get('option') as 'shared' | 'private') ?? 'shared';
+    // Private groups start at PRIVATE_MIN people.
+    if (option === 'private' && adults + children < PRIVATE_MIN) {
+      adults = PRIVATE_MIN - children;
+      (form!.elements.namedItem('adults') as HTMLInputElement).value = String(adults);
+    }
     const perPerson = prices[option] || prices.shared || prices.private;
     const totalMad = perPerson * (adults + children * childFactor);
     const cur = (root.dataset.currency ?? 'EUR') as Currency;

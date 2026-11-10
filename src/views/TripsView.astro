@@ -33,7 +33,7 @@ const priceOpts = [
   { v: 'p4', min: edges[2], max: 1e9, label: (c: string) => s.trips.over.replace('{p}', money(edges[2])[c]) },
 ];
 const crumbs = [
-  { name: 'Iberdan', path: url(lang, 'home') },
+  { name: 'Hiking to Atlas', path: url(lang, 'home') },
   { name: s.trips.title, path: url(lang, 'trips') },
 ];
 ---
@@ -65,7 +65,7 @@ const crumbs = [
             <legend class="filter-label">{s.trips.category}</legend>
             <div class="mt-2 flex flex-wrap gap-2">
               <label class="chip"><input type="radio" name="cat" value="" checked class="sr-only" />{s.trips.all}</label>
-              {categories.map((c) => <label class="chip"><input type="radio" name="cat" value={c} class="sr-only" />{categoryLabels[c][lang]}</label>)}
+              {categories.filter((c) => trips.some((tr) => tr.data.category === c)).map((c) => <label class="chip"><input type="radio" name="cat" value={c} class="sr-only" />{categoryLabels[c][lang]}</label>)}
             </div>
           </fieldset>
 

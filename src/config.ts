@@ -4,20 +4,18 @@
  */
 
 export const site = {
-  name: 'Iberdan',
-  /** Tifinagh spelling of the name ("paths" in Tamazight). */
-  nameTifinagh: 'ⵉⴱⵔⴷⴰⵏ',
-  nameAr: 'إيبردان',
+  name: 'Hiking to Atlas',
+  /** Short name used in the logo. */
+  short: 'HTA',
   /** Production URL, used for canonical links, sitemap and Open Graph. */
-  url: 'https://iberdan.com', // TODO(youssef): register iberdan.com (+ iberdan.ma) and confirm the final domain
-  foundingYear: 2026, // TODO(youssef): year the agency started
+  url: 'https://hikingtoatlas.com', // domain from the business card
 } as const;
 
 export const contact = {
   /** International format, digits only — used for wa.me links. */
-  whatsapp: '212668395368', // TODO(youssef): confirm this is the agency WhatsApp (taken from hikingtoatlas.com)
-  phone: '+212 6 68 39 53 68', // TODO(youssef): confirm
-  email: 'contact@iberdan.com', // TODO(youssef): create this mailbox once the domain is registered
+  whatsapp: '212694379415', // from the business card (+212 694-379415). TODO(youssef): confirm it is on WhatsApp
+  phone: '+212 694 379 415', // from the business card
+  email: 'contact@hikingtoatlas.com', // TODO(youssef): confirm this mailbox exists
   address: {
     street: 'Elhaous', // TODO(youssef): confirm exact address
     locality: 'Imlil',
@@ -32,7 +30,7 @@ export const contact = {
 } as const;
 
 export const social = {
-  instagram: 'https://instagram.com/hk_atlas20', // TODO(youssef): new account for Iberdan?
+  instagram: 'https://instagram.com/hikingtoatlas', // from the business card
   facebook: '', // TODO(youssef)
   tiktok: '', // TODO(youssef)
   googleBusiness: '', // TODO(youssef): Google Business profile link (for reviews)
@@ -86,11 +84,13 @@ export const leads = {
 
 /** Privacy-friendly analytics, off by default. */
 export const analytics = {
-  plausibleDomain: '', // set to e.g. 'iberdan.com' to enable Plausible
+  plausibleDomain: '', // set to e.g. 'hikingtoatlas.com' to enable Plausible
 } as const;
 
 /** Booking estimate settings. */
 export const booking = {
   /** Child price as a share of the adult price (1 = full price). */
+  /** Private trips are for groups of at least this many people. */
+  privateMin: 6,
   childFactor: 1, // TODO(youssef): child discount (e.g. 0.5 for half price) and the age limit
 } as const;

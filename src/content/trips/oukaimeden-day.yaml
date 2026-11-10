@@ -51,7 +51,7 @@ itinerary:
     walk: 2–3 h
     altitude: 2600
 included: [pickup-hotel, transport, driver, guide-local]
-excluded: [lunch, optional-activities, drinks, tips]
+excluded: [lunch, optional-activities, drinks]
 pack: [layers, comfy-shoes, sun-kit, gloves-hat]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."

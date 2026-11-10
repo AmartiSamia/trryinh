@@ -8,6 +8,8 @@ import type { Text as L } from './routes';
 export const items = {
   // Included
   'transport-marrakech': { en: 'Return transport from Marrakech', fr: 'Transport aller-retour depuis Marrakech', es: 'Transporte de ida y vuelta desde Marrakech', de: 'Hin- und Rücktransfer ab Marrakesch', pt: 'Transporte de ida e volta desde Marraquexe', ar: 'النقل ذهابا وإيابا من مراكش' },
+  'transport-imlil': { en: 'All transport Marrakech – Imlil, there and back', fr: 'Tout le transport Marrakech – Imlil, aller et retour', es: 'Todo el transporte Marrakech – Imlil, ida y vuelta', de: 'Alle Fahrten Marrakesch – Imlil, hin und zurück', pt: 'Todo o transporte Marraquexe – Imlil, ida e volta', ar: 'كل التنقلات بين مراكش وإمليل ذهابا وإيابا' },
+  'sleeping-bag-inc': { en: 'Sleeping bag', fr: 'Sac de couchage', es: 'Saco de dormir', de: 'Schlafsack', pt: 'Saco-cama', ar: 'كيس النوم' },
   'transport-fes': { en: 'Transport from Fes', fr: 'Transport depuis Fès', es: 'Transporte desde Fez', de: 'Transfer ab Fès', pt: 'Transporte desde Fez', ar: 'النقل من فاس' },
   transport: { en: 'Transport in an air-conditioned vehicle', fr: 'Transport en véhicule climatisé', es: 'Transporte en vehículo con aire acondicionado', de: 'Fahrt im klimatisierten Fahrzeug', pt: 'Transporte em veículo com ar condicionado', ar: 'النقل في سيارة مكيفة' },
   'pickup-hotel': { en: 'Pickup and drop-off at your riad or hotel', fr: 'Prise en charge et retour à votre riad ou hôtel', es: 'Recogida y regreso a su riad u hotel', de: 'Abholung und Rückfahrt zu Ihrem Riad oder Hotel', pt: 'Recolha e regresso ao seu riad ou hotel', ar: 'الاستقبال والإرجاع من الرياض أو الفندق' },
@@ -40,6 +42,7 @@ export const items = {
   personal: { en: 'Personal expenses', fr: 'Dépenses personnelles', es: 'Gastos personales', de: 'Persönliche Ausgaben', pt: 'Despesas pessoais', ar: 'المصاريف الشخصية' },
   'entrance-fees-ex': { en: 'Monument entrance fees', fr: 'Entrées des monuments', es: 'Entradas a los monumentos', de: 'Eintritt für Sehenswürdigkeiten', pt: 'Entradas nos monumentos', ar: 'رسوم دخول المعالم' },
   'sleeping-bag': { en: 'Sleeping bag (can be rented)', fr: 'Sac de couchage (location possible)', es: 'Saco de dormir (se puede alquilar)', de: 'Schlafsack (kann gemietet werden)', pt: 'Saco-cama (pode ser alugado)', ar: 'كيس النوم (يمكن استئجاره)' },
+  'hiking-gear-ex': { en: 'Hiking equipment (shoes, poles, crampons): can be rented in Imlil', fr: 'Matériel de randonnée (chaussures, bâtons, crampons) : location possible à Imlil', es: 'Material de senderismo (calzado, bastones, crampones): se puede alquilar en Imlil', de: 'Wanderausrüstung (Schuhe, Stöcke, Steigeisen): in Imlil mietbar', pt: 'Material de caminhada (calçado, bastões, crampons): pode ser alugado em Imlil', ar: 'معدات المشي (الأحذية، العصي، المسامير الثلجية): يمكن استئجارها في إمليل' },
   'winter-gear-ex': { en: 'Crampons and ice axe (can be rented in Imlil)', fr: 'Crampons et piolet (location possible à Imlil)', es: 'Crampones y piolet (se pueden alquilar en Imlil)', de: 'Steigeisen und Eispickel (in Imlil mietbar)', pt: 'Crampons e piolet (podem ser alugados em Imlil)', ar: 'المسامير الثلجية وفأس الجليد (يمكن استئجارها في إمليل)' },
   flights: { en: 'Flights', fr: 'Vols', es: 'Vuelos', de: 'Flüge', pt: 'Voos', ar: 'تذاكر الطيران' },
   'hotel-marrakech': { en: 'Hotel in Marrakech', fr: 'Hôtel à Marrakech', es: 'Hotel en Marrakech', de: 'Hotel in Marrakesch', pt: 'Hotel em Marraquexe', ar: 'الفندق في مراكش' },
@@ -174,6 +177,8 @@ const places: Record<string, Partial<L>> = {
   'Al-Qarawiyyin': { fr: 'Al-Qaraouiyine', ar: 'القرويين' },
   'Chouara tannery': { fr: 'Tannerie Chouara', es: 'Curtiduría Chouara', de: 'Gerberei Chouara', pt: 'Curtumes Chouara', ar: 'دار الدباغة شوارة' },
   Oukaïmeden: { ar: 'أوكايمدن' },
+  Aremd: { ar: 'أرمد' },
+  'Marrakech railway station': { fr: 'Gare de Marrakech', es: 'Estación de tren de Marrakech', de: 'Bahnhof Marrakesch', pt: 'Estação de comboios de Marraquexe', ar: 'محطة القطار بمراكش' },
   Imilchil: { ar: 'إملشيل' },
   'Bin el Ouidane': { ar: 'بين الويدان' },
   'Lake Tislit': { fr: 'Lac Tislit', es: 'Lago Tislit', de: 'Tislit-See', pt: 'Lago Tislit', ar: 'بحيرة تيسليت' },

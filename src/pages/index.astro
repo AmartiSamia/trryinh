@@ -16,7 +16,7 @@ const abs = (p: string) => new URL(p, site.url).href;
     <link rel="canonical" href={abs('/en/')} />
     {locales.map((l) => <link rel="alternate" hreflang={l} href={abs(`/${l}/`)} />)}
     <link rel="alternate" hreflang="x-default" href={abs('/')} />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
     <script is:inline>
       (function () {
         var ok = ['en', 'fr', 'es', 'de', 'pt', 'ar'], lang = null;

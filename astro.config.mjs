@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
-const SITE = 'https://iberdan.com'; // keep in sync with src/config.ts
+const SITE = 'https://hikingtoatlas.com'; // keep in sync with src/config.ts
 
 export default defineConfig({
   site: SITE,

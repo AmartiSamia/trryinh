@@ -52,7 +52,7 @@ export const callback: Record<Lang, Strings> = {
       ['You confirm, we take care of the rest', 'Programme, pickup time and a direct contact for your trip. You pay nothing online.'],
     ],
     mailSubject: 'Call-back request',
-    waText: 'Hello Iberdan, please contact me: {name}, {phone}.',
+    waText: 'Hello Hiking to Atlas, please contact me: {name}, {phone}.',
   },
   fr: {
     eyebrow: 'Rappel gratuit',
@@ -78,7 +78,7 @@ export const callback: Record<Lang, Strings> = {
       ['Vous confirmez, on s’occupe du reste', 'Programme, heure de prise en charge et un contact direct pour votre voyage. Rien à payer en ligne.'],
     ],
     mailSubject: 'Demande de rappel',
-    waText: 'Bonjour Iberdan, merci de me contacter : {name}, {phone}.',
+    waText: 'Bonjour Hiking to Atlas, merci de me contacter : {name}, {phone}.',
   },
   es: {
     eyebrow: 'Le llamamos gratis',
@@ -104,7 +104,7 @@ export const callback: Record<Lang, Strings> = {
       ['Usted confirma y nosotros nos ocupamos del resto', 'Programa, hora de recogida y un contacto directo para su viaje. No paga nada en línea.'],
     ],
     mailSubject: 'Solicitud de llamada',
-    waText: 'Hola Iberdan, por favor contáctenme: {name}, {phone}.',
+    waText: 'Hola Hiking to Atlas, por favor contáctenme: {name}, {phone}.',
   },
   de: {
     eyebrow: 'Kostenloser Rückruf',
@@ -130,7 +130,7 @@ export const callback: Record<Lang, Strings> = {
       ['Sie bestätigen, wir kümmern uns um den Rest', 'Programm, Abholzeit und ein direkter Kontakt für Ihre Reise. Sie zahlen nichts online.'],
     ],
     mailSubject: 'Rückrufbitte',
-    waText: 'Hallo Iberdan, bitte kontaktieren Sie mich: {name}, {phone}.',
+    waText: 'Hallo Hiking to Atlas, bitte kontaktieren Sie mich: {name}, {phone}.',
   },
   pt: {
     eyebrow: 'Ligamos-lhe grátis',
@@ -156,7 +156,7 @@ export const callback: Record<Lang, Strings> = {
       ['Confirma e nós tratamos do resto', 'Programa, hora de recolha e um contacto direto para a sua viagem. Não paga nada online.'],
     ],
     mailSubject: 'Pedido de contacto',
-    waText: 'Olá Iberdan, por favor contactem-me: {name}, {phone}.',
+    waText: 'Olá Hiking to Atlas, por favor contactem-me: {name}, {phone}.',
   },
   ar: {
     eyebrow: 'نتصل بكم مجانا',
@@ -182,7 +182,7 @@ export const callback: Record<Lang, Strings> = {
       ['تؤكدون ونحن نتكفل بالباقي', 'البرنامج وموعد الانطلاق ورقم مباشر خاص برحلتكم. لا تدفعون شيئا عبر الإنترنت.'],
     ],
     mailSubject: 'طلب اتصال',
-    waText: 'مرحبا إبردان، المرجو التواصل معي: {name}، {phone}.',
+    waText: 'مرحبا Hiking to Atlas، المرجو التواصل معي: {name}، {phone}.',
   },
 };
 
@@ -205,4 +205,5 @@ export const dialCodes: { region: string; code: string }[] = [
   { region: 'SA', code: '966' },
 ];
 
-export const defaultRegion: Record<Lang, string> = { en: 'GB', fr: 'FR', es: 'ES', de: 'DE', pt: 'PT', ar: 'MA' };
+/** The phone field starts on Morocco (+212) in every language. */
+export const defaultRegion: Record<Lang, string> = { en: 'MA', fr: 'MA', es: 'MA', de: 'MA', pt: 'MA', ar: 'MA' };

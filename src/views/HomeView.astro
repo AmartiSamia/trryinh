@@ -5,8 +5,6 @@ import Base from '../layouts/Base.astro';
 import Photo from '../components/Photo.astro';
 import Icon from '../components/Icon.astro';
 import SearchBar from '../components/SearchBar.astro';
-import TripCard from '../components/TripCard.astro';
-import SeasonTabs from '../components/SeasonTabs.astro';
 import FaqList from '../components/FaqList.astro';
 import ReviewsSoon from '../components/ReviewsSoon.astro';
 import HeroSlideshow from '../components/HeroSlideshow.astro';
@@ -14,9 +12,7 @@ import SignatureTrips from '../components/SignatureTrips.astro';
 import RecentTrips from '../components/RecentTrips.astro';
 import { alternates, url, type Lang } from '../i18n/routes';
 import { t } from '../i18n/ui';
-import { categoryLabels } from '../i18n/catalog';
-import { categories } from '../content.config';
-import { getTrips, plural, tripCountForms } from '../lib/trips';
+import { getTrips } from '../lib/trips';
 import { orgJsonLd } from '../lib/seo';
 
 interface Props { lang: Lang }
@@ -24,74 +20,22 @@ const { lang } = Astro.props;
 const s = t(lang);
 
 const trips = await getTrips();
-const featured = trips.filter((tr) => tr.data.featured).slice(0, 6);
-
-// "Pick your vibe": each vibe shows its 6 most popular trips; "all" shows the featured ones.
-const vibeOf = (tr: (typeof trips)[number]): string => {
-  const c = tr.data.category;
-  if (c === 'trekking') return 'adventure';
-  if (c === 'desert') return 'desert';
-  if (c === 'culture' || c === 'circuit') return 'culture';
-  if (c === 'activity') return tr.id.startsWith('hammam') ? 'easy' : 'adventure';
-  return 'easy';
-};
-const vibes = [
-  { key: 'all', label: s.book.vibeAll },
-  { key: 'adventure', label: s.book.vibeAdventure },
-  { key: 'desert', label: s.book.vibeDesert },
-  { key: 'culture', label: s.book.vibeCulture },
-  { key: 'easy', label: s.book.vibeEasy },
-];
-const vibeTrips = trips
-  .map((trip) => {
-    const v = vibeOf(trip);
-    const rank = trips.filter((x) => vibeOf(x) === v).indexOf(trip);
-    const keys = [...(featured.includes(trip) ? ['all'] : []), ...(rank < 6 ? [v] : [])];
-    return { trip, keys };
-  })
-  .filter((x) => x.keys.length);
 const faqs = (await getCollection('faq')).filter((f) => f.data.home);
 
 const hero = (await getEntry('photos', 'u-toubkal-snow'))!; // first slide (LCP)
 const heroImg = await getImage({ src: hero.data.file, widths: [640, 960, 1280, 1920], format: 'avif' });
 const heroSizes = '100vw';
 
-const catPhotos: Record<string, string> = {
-  trekking: 'u-atlas-hiker',
-  desert: 'u-camels-leret',
-  'day-trip': 'u-essa-boats',
-  culture: 'u-lanterns',
-  circuit: 'u-chaouen-cliff',
-  activity: 'u-quad',
-};
-const tiles = await Promise.all(
-  categories.map(async (c) => ({
-    key: c,
-    photo: (await getEntry('photos', catPhotos[c]))!,
-    count: trips.filter((tr) => tr.data.category === c).length,
-  })),
-);
-const tailor = (await getEntry('photos', 'u-koutoubia'))!;
+const tailor = (await getEntry('photos', 'u-atlas-valley'))!;
 
 // Signature trips, in this order (Toubkal first).
-const signatureIds = ['toubkal-summit-3-days', 'marrakech-merzouga-3-days', 'atlas-desert-5-days', 'ifni-lake-toubkal-6-days', 'grand-morocco-12-days', 'imperial-cities-8-days'];
+const signatureIds = ['toubkal-summit-3-days', 'toubkal-2-days', 'imilchil-lakes-4-days', 'oukaimeden-day', 'imlil-sidi-chamharouch-day'];
 const signature = signatureIds.map((id) => trips.find((tr) => tr.id === id)).filter((x): x is (typeof trips)[number] => !!x);
-
-// Popular destinations: photo + link to the filtered trips list.
 const m = s.more;
-const destDefs = [
-  { key: 'marrakech', photo: 'u-market-dusk', query: 'q=Marrakech' },
-  { key: 'atlas', photo: 'u-atlas-houses', query: 'cat=trekking' },
-  { key: 'sahara', photo: 'u-merzouga-robe', query: 'cat=desert' },
-  { key: 'essaouira', photo: 'u-essa-ramparts', query: 'q=Essaouira' },
-  { key: 'fes', photo: 'fes-tannery', query: 'q=Fes' },
-  { key: 'chefchaouen', photo: 'u-chaouen-stairs', query: 'q=Chefchaouen' },
-] as const;
-const destinations = await Promise.all(destDefs.map(async (d) => ({ ...d, entry: (await getEntry('photos', d.photo))! })));
 const trustIcons = ['shield', 'whatsapp', 'mountain', 'users'] as const;
 const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
 ---
-<Base lang={lang} title={`Iberdan · ${s.meta.tagline}`} alternates={alternates('home')} overlayHeader jsonLd={orgJsonLd(lang)}>
+<Base lang={lang} title={`Hiking to Atlas · ${s.meta.tagline}`} alternates={alternates('home')} overlayHeader jsonLd={orgJsonLd(lang)}>
   <link slot="head" rel="preload" as="image" type="image/avif" imagesrcset={heroImg.srcSet.attribute} imagesizes={heroSizes} fetchpriority="high" />
 
   <!-- Hero -->
@@ -126,68 +70,6 @@ const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
 
   <SignatureTrips lang={lang} trips={signature} />
 
-  <!-- Categories -->
-  <section class="container-page pb-20 pt-4" aria-labelledby="cat-title">
-    <h2 id="cat-title" class="reveal text-h2">{s.home.categoriesTitle}</h2>
-    <ul class="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3">
-      {tiles.map((c) => (
-        <li class="reveal">
-          <a href={`${url(lang, 'trips')}?cat=${c.key}`} class="tile group relative block aspect-[4/5] overflow-hidden rounded-3xl sm:aspect-[4/3]">
-            <Photo photo={c.photo} lang={lang} decorative sizes="(min-width: 1024px) 400px, 50vw" widths={[400, 640, 800]} class="!absolute inset-0" imgClass="transition-transform duration-700 group-hover:scale-105" />
-            <span class="absolute inset-0" style="background:linear-gradient(180deg,transparent 35%,rgb(8 11 26/.8))"></span>
-            <span class="absolute inset-x-0 bottom-0 p-4 text-white sm:p-5">
-              <span class="block font-display text-lg font-semibold leading-tight sm:text-2xl">{categoryLabels[c.key][lang]}</span>
-              <span class="mt-1 flex items-center gap-1 text-sm text-white/85">{plural(lang, c.count, tripCountForms[lang])} <Icon name="arrow" size={16} flip /></span>
-            </span>
-          </a>
-        </li>
-      ))}
-    </ul>
-  </section>
-
-  <!-- Popular destinations -->
-  <section class="container-page pb-20" aria-labelledby="dest-title">
-    <div class="reveal">
-      <h2 id="dest-title" class="text-h2">{m.destTitle}</h2>
-      <p class="mt-2 text-ink-2">{m.destText}</p>
-    </div>
-    <ul class="dest -mx-4 mt-8 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:px-0 lg:grid-cols-6">
-      {destinations.map((d) => (
-        <li class="reveal w-40 shrink-0 snap-start sm:w-auto">
-          <a href={`${url(lang, 'trips')}?${d.query}`} class="group relative block aspect-[3/4] overflow-hidden rounded-3xl text-white">
-            <Photo photo={d.entry} lang={lang} decorative sizes="(min-width: 1024px) 200px, (min-width: 640px) 33vw, 160px" widths={[240, 400, 600]} class="!absolute inset-0" imgClass="transition-transform duration-700 group-hover:scale-110" />
-            <span class="absolute inset-0" style="background:linear-gradient(180deg,transparent 45%,rgb(8 9 12/.85))"></span>
-            <span class="absolute inset-x-0 bottom-0 p-4 font-display text-lg font-semibold leading-tight">{m.dest[d.key]}</span>
-          </a>
-        </li>
-      ))}
-    </ul>
-  </section>
-
-  <!-- Featured trips -->
-  <section class="bg-surface-2/60 py-20" aria-labelledby="featured-title">
-    <div class="container-page">
-      <div class="reveal flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <h2 id="featured-title" class="text-h2">{s.home.featuredTitle}</h2>
-          <p class="mt-2 max-w-xl text-ink-2">{s.home.featuredText}</p>
-        </div>
-        <a href={url(lang, 'trips')} class="btn btn-ghost">{s.common.seeAll} <Icon name="arrow" size={18} flip /></a>
-      </div>
-      <div class="reveal mt-8 flex flex-wrap gap-2" role="group" aria-label={s.book.vibeTitle} data-vibes>
-        <span class="me-2 self-center text-sm font-semibold text-ink-2">{s.book.vibeTitle}</span>
-        {vibes.map((v, i) => (
-          <button type="button" class="vibe" aria-pressed={i === 0 ? 'true' : 'false'} data-vibe={v.key}>{v.label}</button>
-        ))}
-      </div>
-      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-vibe-grid>
-        {vibeTrips.map(({ trip, keys }) => (
-          <div class="reveal" data-in={keys.join(' ')} hidden={!keys.includes('all')}><TripCard trip={trip} lang={lang} /></div>
-        ))}
-      </div>
-    </div>
-  </section>
-
   <!-- Tailor-made -->
   <section class="container-page py-20">
     <div class="reveal relative isolate overflow-hidden rounded-[2rem] text-white">
@@ -214,17 +96,6 @@ const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
         </li>
       ))}
     </ul>
-  </section>
-
-  <div class="motif-rule container-page my-12" aria-hidden="true"></div>
-
-  <!-- Seasons -->
-  <section class="container-page py-12" aria-labelledby="season-title">
-    <div class="reveal max-w-2xl">
-      <h2 id="season-title" class="text-h2">{s.home.seasonsTitle}</h2>
-      <p class="mt-2 text-ink-2">{s.home.seasonsText}</p>
-    </div>
-    <div class="reveal mt-8"><SeasonTabs lang={lang} /></div>
   </section>
 
   <RecentTrips lang={lang} title={m.continueTitle} />
@@ -256,28 +127,6 @@ const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
   @keyframes hero-rise {
     /* Movement only: text is painted at once, so it counts for LCP immediately. */
     from { transform: translateY(14px); }
-  }
-  .vibe {
-    min-height: 2.75rem;
-    padding: 0.4rem 1.1rem;
-    border-radius: 999px;
-    border: 1px solid var(--line);
-    background: var(--surface);
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: background-color 0.2s, color 0.2s;
-  }
-  .vibe:hover {
-    border-color: var(--ink-3);
-  }
-  .vibe[aria-pressed='true'] {
-    background: var(--brand);
-    color: var(--on-brand);
-    border-color: transparent;
-  }
-  :global([data-theme='dark']) .vibe[aria-pressed='true'] {
-    background: var(--accent);
-    color: var(--on-accent);
   }
   /* Readable text on the start side, photo stays vivid on the other side. */
   .hero-veil {
@@ -311,17 +160,3 @@ const whyIcons = ['mountain', 'users', 'tag', 'whatsapp'] as const;
   }
 </style>
 
-<script>
-  // Vibe chips: show the trips of the chosen vibe (featured trips for "all").
-  const bar = document.querySelector('[data-vibes]');
-  const grid = document.querySelector('[data-vibe-grid]');
-  bar?.addEventListener('click', (e) => {
-    const btn = (e.target as Element).closest<HTMLButtonElement>('[data-vibe]');
-    if (!btn || !grid) return;
-    bar.querySelectorAll('[data-vibe]').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
-    grid.querySelectorAll<HTMLElement>('[data-in]').forEach((el) => {
-      el.hidden = !el.dataset.in!.split(' ').includes(btn.dataset.vibe!);
-      el.classList.add('is-in');
-    });
-  });
-</script>

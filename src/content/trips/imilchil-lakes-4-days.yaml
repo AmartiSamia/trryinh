@@ -86,7 +86,7 @@ itinerary:
     drive: 7–8 h with stops
     meals: [breakfast]
 included: [transport-marrakech, guide-local, meals-all, accommodation]
-excluded: [drinks, tips, insurance, personal]
+excluded: [drinks, insurance, personal]
 pack: [boots, layers, rain-jacket, sun-kit, bottle, daypack, cash]
 meetingPoint:
   en: "Your riad or hotel in Marrakech."

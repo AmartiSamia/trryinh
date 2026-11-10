@@ -1,4 +1,4 @@
-# Iberdan: launch checklist
+# Hiking to Atlas: launch checklist
 
 Status on 7 November 2026. Site built locally (`npm run build`: 0 type errors, 140 pages).
 Not deployed yet: connect the repository to Netlify or Vercel (see README).
@@ -60,9 +60,11 @@ axe contrast checks pass in both.
 Search the code for `TODO(youssef)` to find each one in place.
 
 ### Name, domain, accounts
-- [ ] Register **iberdan.com** and **iberdan.ma** (both looked free on 7 Nov 2026), then update
-      `site.url` in `src/config.ts` and `site` in `astro.config.mjs` if different.
-- [ ] Create the mailbox **contact@iberdan.com**.
+- [ ] Confirm **+212 694 379 415** (from the business card) is the WhatsApp number that receives bookings
+      (`contact.whatsapp` in `src/config.ts`).
+- [ ] Confirm the mailbox **contact@hikingtoatlas.com** exists.
+- [ ] Point **hikingtoatlas.com** to the new host when ready.
+- [ ] Cancellation: confirm what happens **less than 48 hours** before departure (still marked "to be confirmed").
 - [ ] Create a free Web3Forms key with that email and add `PUBLIC_WEB3FORMS_KEY` on the host
       (needed for the email form **and** the call-back form).
 - [ ] Optional: WhatsApp alert for each call-back lead (CallMeBot key, see README).
@@ -70,7 +72,7 @@ Search the code for `TODO(youssef)` to find each one in place.
 - [ ] New trips to confirm (price, programme, season): **Oukaïmeden day trip** and
       **Imilchil and the lakes, 4 days** (`src/content/trips/oukaimeden-day.yaml`,
       `imilchil-lakes-4-days.yaml`).
-- [ ] Instagram: keep `hk_atlas20` or create an Iberdan account? Facebook and TikTok links.
+- [ ] Instagram is @hikingtoatlas (from the business card). Add Facebook and TikTok links if any.
 - [ ] Google Business profile and TripAdvisor page links (for "Leave a review").
 
 ### Contact and legal

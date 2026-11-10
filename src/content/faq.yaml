@@ -31,12 +31,12 @@
   home: true
   q: { en: "What is the difference between shared and private?", fr: "Quelle différence entre partagé et privé ?", es: "¿Qué diferencia hay entre compartido y privado?", de: "Was ist der Unterschied zwischen Gruppe und privat?", pt: "Qual é a diferença entre partilhada e privada?", ar: "ما الفرق بين الرحلة المشتركة والخاصة؟" }
   a:
-    en: "On a shared trip you travel with other guests in a small group, which keeps the price low. A private trip is just you and your companions, with your own guide or driver and more freedom on timing."
-    fr: "En partagé, vous voyagez en petit groupe avec d’autres voyageurs, ce qui garde un prix bas. En privé, vous êtes seuls avec vos proches, avec votre guide ou chauffeur et plus de liberté sur les horaires."
-    es: En un viaje compartido viaja con otros viajeros en un grupo pequeño, lo que mantiene el precio bajo. Un viaje privado es solo para usted y sus acompañantes, con su propio guía o conductor y más libertad de horarios.
-    de: Bei einer Gruppenreise reisen Sie mit anderen Gästen in einer kleinen Gruppe, das hält den Preis niedrig. Eine Privatreise ist nur für Sie und Ihre Mitreisenden, mit eigenem Guide oder Fahrer und mehr Freiheit bei den Zeiten.
-    pt: Numa viagem partilhada viaja com outros viajantes num grupo pequeno, o que mantém o preço baixo. Uma viagem privada é só para si e os seus acompanhantes, com o seu próprio guia ou motorista e mais liberdade de horários.
-    ar: "في الرحلة المشتركة تسافرون مع ضيوف آخرين في مجموعة صغيرة، مما يبقي السعر منخفضا. أما الخاصة فهي لكم ولمرافقيكم فقط، مع مرشد أو سائق خاص ومرونة أكبر في المواعيد."
+    en: "On a shared trip you travel with other guests in a small group, which keeps the price low. A private trip is just your own group, minimum 6 people, with your own guide and more freedom on timing."
+    fr: "En partagé, vous voyagez en petit groupe avec d’autres voyageurs, ce qui garde un prix bas. Le voyage privé est réservé à votre groupe, 6 personnes minimum, avec votre propre guide et plus de liberté sur les horaires."
+    es: "En un viaje compartido viaja con otros viajeros en un grupo pequeño, lo que mantiene el precio bajo. Un viaje privado es solo para su grupo, mínimo 6 personas, con su propio guía y más libertad de horarios."
+    de: "Bei einer Gruppenreise reisen Sie mit anderen Gästen in einer kleinen Gruppe, das hält den Preis niedrig. Eine Privatreise ist nur für Ihre Gruppe, mindestens 6 Personen, mit eigenem Guide und mehr Freiheit bei den Zeiten."
+    pt: "Numa viagem partilhada viaja com outros viajantes num grupo pequeno, o que mantém o preço baixo. Uma viagem privada é só para o seu grupo, mínimo 6 pessoas, com o seu próprio guia e mais liberdade de horários."
+    ar: "في الرحلة المشتركة تسافرون مع ضيوف آخرين في مجموعة صغيرة، مما يبقي السعر منخفضا. أما الرحلة الخاصة فهي لمجموعتكم فقط، 6 أشخاص على الأقل، مع مرشد خاص ومرونة أكبر في المواعيد."
 
 - id: group-size
   group: booking
@@ -65,12 +65,12 @@
   group: payment
   q: { en: "What if I need to cancel?", fr: "Et si je dois annuler ?", es: "¿Y si tengo que cancelar?", de: "Was, wenn ich stornieren muss?", pt: "E se tiver de cancelar?", ar: "ماذا لو اضطررت إلى الإلغاء؟" }
   a:
-    en: "Tell us as early as possible on WhatsApp or by email. The conditions are on our cancellation page and confirmed with your booking. If we have to cancel for weather or safety, we offer you another date."
-    fr: "Prévenez-nous le plus tôt possible par WhatsApp ou e-mail. Les conditions sont sur notre page annulation et confirmées avec votre réservation. Si nous devons annuler pour la météo ou la sécurité, nous vous proposons une autre date."
-    es: Avísenos lo antes posible por WhatsApp o por correo. Las condiciones están en nuestra página de cancelación y se confirman con la reserva. Si tenemos que cancelar por el tiempo o por seguridad, le proponemos otra fecha.
-    de: Sagen Sie uns so früh wie möglich per WhatsApp oder E-Mail Bescheid. Die Bedingungen stehen auf unserer Stornoseite und werden mit der Buchung bestätigt. Müssen wir wegen Wetter oder Sicherheit absagen, bieten wir Ihnen einen anderen Termin an.
-    pt: Avise-nos o mais cedo possível pelo WhatsApp ou por e-mail. As condições estão na nossa página de cancelamento e são confirmadas com a reserva. Se tivermos de cancelar por causa do tempo ou da segurança, propomos-lhe outra data.
-    ar: "أخبرونا في أقرب وقت عبر واتساب أو البريد الإلكتروني. الشروط موجودة في صفحة الإلغاء وتُؤكَّد مع الحجز. إذا اضطررنا إلى الإلغاء بسبب الطقس أو السلامة، نقترح عليكم تاريخا آخر."
+    en: "Cancellation is free up to 48 hours before departure, and anything you have paid is refunded in full. Just tell us on WhatsApp or by email. If we have to cancel for weather or safety, we offer you another date."
+    fr: "L’annulation est gratuite jusqu’à 48 heures avant le départ, et tout ce que vous avez payé vous est intégralement remboursé. Prévenez-nous simplement par WhatsApp ou e-mail. Si nous devons annuler pour la météo ou la sécurité, nous vous proposons une autre date."
+    es: "La cancelación es gratuita hasta 48 horas antes de la salida, y le devolvemos íntegramente lo que haya pagado. Solo avísenos por WhatsApp o por correo. Si tenemos que cancelar por el tiempo o por seguridad, le proponemos otra fecha."
+    de: "Die Stornierung ist bis 48 Stunden vor Abreise kostenlos, und alles, was Sie bezahlt haben, wird vollständig erstattet. Sagen Sie uns einfach per WhatsApp oder E-Mail Bescheid. Müssen wir wegen Wetter oder Sicherheit absagen, bieten wir Ihnen einen anderen Termin an."
+    pt: "O cancelamento é gratuito até 48 horas antes da partida, e devolvemos na íntegra tudo o que tiver pago. Basta avisar-nos pelo WhatsApp ou por e-mail. Se tivermos de cancelar por causa do tempo ou da segurança, propomos-lhe outra data."
+    ar: "الإلغاء مجاني حتى 48 ساعة قبل الانطلاق، ونرد لكم كامل المبلغ الذي دفعتموه. يكفي أن تخبرونا عبر واتساب أو البريد الإلكتروني. إذا اضطررنا إلى الإلغاء بسبب الطقس أو السلامة، نقترح عليكم تاريخا آخر."
 
 - id: fitness
   group: safety
@@ -88,12 +88,12 @@
   group: safety
   q: { en: "Who guides the treks?", fr: "Qui encadre les treks ?", es: "¿Quién guía los treks?", de: "Wer führt die Treks?", pt: "Quem guia os trekkings?", ar: "من يرافق رحلات المشي؟" }
   a:
-    en: "Mountain treks are led by licensed mountain guides from the Imlil valleys. The guide decides on safety: if the weather or the group is not right for the summit, you turn back."
-    fr: "Les treks en montagne sont encadrés par des guides de montagne diplômés des vallées d’Imlil. Le guide décide pour la sécurité : si la météo ou le groupe ne permettent pas le sommet, on fait demi-tour."
-    es: "Los treks de montaña los guían guías de montaña titulados de los valles de Imlil. El guía decide sobre la seguridad: si el tiempo o el grupo no permiten la cumbre, se da la vuelta."
-    de: "Bergtreks werden von lizenzierten Bergführern aus den Tälern um Imlil geführt. Der Guide entscheidet über die Sicherheit: Passen Wetter oder Gruppe nicht für den Gipfel, kehren Sie um."
-    pt: "Os trekkings de montanha são guiados por guias de montanha credenciados dos vales de Imlil. O guia decide sobre a segurança: se o tempo ou o grupo não permitirem o cume, volta-se para trás."
-    ar: "يقود رحلات الجبل مرشدون جبليون معتمدون من وديان إمليل. المرشد هو من يقرر في أمور السلامة: إذا لم يكن الطقس أو حالة المجموعة مناسبين للقمة، نعود أدراجنا."
+    en: "Our treks are led by mountain guides from the Imlil valleys with more than 12 years of experience on these trails. The guide decides on safety: if the weather or the group is not right for the summit, you turn back."
+    fr: "Nos treks sont encadrés par des guides de montagne des vallées d’Imlil, qui ont plus de 12 ans d’expérience sur ces sentiers. Le guide décide pour la sécurité : si la météo ou le groupe ne permettent pas le sommet, on fait demi-tour."
+    es: "Nuestros treks los dirigen guías de montaña de los valles de Imlil con más de 12 años de experiencia en estos senderos. El guía decide sobre la seguridad: si el tiempo o el grupo no permiten la cumbre, se da la vuelta."
+    de: "Unsere Treks werden von Bergführern aus den Tälern um Imlil geführt, die über 12 Jahre Erfahrung auf diesen Wegen haben. Der Guide entscheidet über die Sicherheit: Passen Wetter oder Gruppe nicht für den Gipfel, kehren Sie um."
+    pt: "Os nossos trekkings são guiados por guias de montanha dos vales de Imlil com mais de 12 anos de experiência nestes trilhos. O guia decide sobre a segurança: se o tempo ou o grupo não permitirem o cume, volta-se para trás."
+    ar: "يقود رحلاتنا مرشدون جبليون من وديان إمليل بخبرة تتجاوز 12 سنة في هذه المسالك. المرشد هو من يقرر في أمور السلامة: إذا لم يكن الطقس أو حالة المجموعة مناسبين للقمة، نعود أدراجنا."
 
 - id: insurance
   group: safety
@@ -110,12 +110,12 @@
   group: children
   q: { en: "Can children come?", fr: "Les enfants peuvent-ils venir ?", es: "¿Pueden venir niños?", de: "Können Kinder mitkommen?", pt: "As crianças podem vir?", ar: "هل يمكن للأطفال المشاركة؟" }
   a:
-    en: "Yes, many trips work well with children: day trips, Agafay, the three valleys trek, the desert. Toubkal summit is better for teenagers who already walk. Ask us about ages and child prices for your trip."
-    fr: "Oui, beaucoup de voyages conviennent aux enfants : excursions, Agafay, trek des trois vallées, désert. Le sommet du Toubkal convient mieux aux adolescents qui marchent déjà. Demandez-nous pour l’âge et les prix enfants."
-    es: "Sí, muchos viajes funcionan bien con niños: excursiones de un día, Agafay, el trek de los tres valles, el desierto. La cumbre del Toubkal es más adecuada para adolescentes que ya caminan. Pregúntenos por las edades y los precios para niños."
-    de: "Ja, viele Reisen sind gut für Kinder: Tagesausflüge, Agafay, der Drei-Täler-Trek, die Wüste. Der Toubkal-Gipfel eignet sich eher für Jugendliche, die schon wandern. Fragen Sie uns nach Alter und Kinderpreisen für Ihre Reise."
-    pt: "Sim, muitas viagens são boas para crianças: excursões de um dia, Agafay, o trekking dos três vales, o deserto. O cume do Toubkal é mais indicado para adolescentes que já caminham. Pergunte-nos sobre idades e preços para crianças."
-    ar: "نعم، كثير من الرحلات مناسبة للأطفال: الرحلات اليومية، أكفاي، رحلة الوديان الثلاثة، الصحراء. قمة توبقال أنسب للمراهقين المتعودين على المشي. اسألونا عن الأعمار وأسعار الأطفال."
+    en: "Yes. The Imlil day hike and the Oukaïmeden day trip work well with children. The Toubkal summit is better for teenagers who already walk. Ask us about ages and child prices for your trip."
+    fr: "Oui. La randonnée d’une journée à Imlil et l’excursion à Oukaïmeden conviennent bien aux enfants. Le sommet du Toubkal convient mieux aux adolescents qui marchent déjà. Demandez-nous pour l’âge et les prix enfants."
+    es: "Sí. La caminata de un día en Imlil y la excursión a Oukaïmeden van bien con niños. La cumbre del Toubkal es más adecuada para adolescentes que ya caminan. Pregúntenos por las edades y los precios para niños."
+    de: "Ja. Die Tageswanderung in Imlil und der Ausflug nach Oukaïmeden sind gut für Kinder. Der Toubkal-Gipfel eignet sich eher für Jugendliche, die schon wandern. Fragen Sie uns nach Alter und Kinderpreisen."
+    pt: "Sim. A caminhada de um dia em Imlil e a excursão a Oukaïmeden são boas para crianças. O cume do Toubkal é mais indicado para adolescentes que já caminham. Pergunte-nos sobre idades e preços para crianças."
+    ar: "نعم. رحلة المشي اليومية في إمليل والرحلة إلى أوكايمدن مناسبتان للأطفال. قمة توبقال أنسب للمراهقين المتعودين على المشي. اسألونا عن الأعمار وأسعار الأطفال."
 
 - id: children-mules
   group: children
@@ -154,12 +154,12 @@
   group: weather
   q: { en: "When is the best time to visit?", fr: "Quelle est la meilleure période ?", es: "¿Cuál es la mejor época para ir?", de: "Wann ist die beste Reisezeit?", pt: "Qual é a melhor altura para ir?", ar: "ما أفضل وقت للزيارة؟" }
   a:
-    en: "Spring (March–May) and autumn (September–November) suit almost everything. Summer is great for the mountains and the coast, winter for the desert and the cities, and for a snowy Toubkal."
-    fr: "Le printemps (mars–mai) et l’automne (septembre–novembre) conviennent à presque tout. L’été est idéal pour la montagne et la côte, l’hiver pour le désert, les villes et le Toubkal enneigé."
-    es: La primavera (marzo–mayo) y el otoño (septiembre–noviembre) van bien para casi todo. El verano es ideal para la montaña y la costa; el invierno, para el desierto, las ciudades y el Toubkal nevado.
-    de: Frühling (März–Mai) und Herbst (September–November) passen für fast alles. Der Sommer ist ideal für Berge und Küste, der Winter für Wüste, Städte und den verschneiten Toubkal.
-    pt: A primavera (março–maio) e o outono (setembro–novembro) servem para quase tudo. O verão é ótimo para a montanha e a costa; o inverno, para o deserto, as cidades e o Toubkal com neve.
-    ar: "الربيع (مارس–ماي) والخريف (شتنبر–نونبر) يناسبان كل شيء تقريبا. الصيف ممتاز للجبل والساحل، والشتاء للصحراء والمدن ولتوبقال المثلج."
+    en: "For Toubkal without snow, April to October. Spring and autumn are the most pleasant for walking. In winter (December–March) the summit is under snow and Oukaïmeden becomes a ski station. Imilchil is best from May to October."
+    fr: "Pour le Toubkal sans neige, d’avril à octobre. Le printemps et l’automne sont les plus agréables pour marcher. En hiver (décembre–mars), le sommet est enneigé et Oukaïmeden devient une station de ski. Imilchil se visite surtout de mai à octobre."
+    es: "Para el Toubkal sin nieve, de abril a octubre. La primavera y el otoño son lo más agradable para caminar. En invierno (diciembre–marzo) la cumbre está nevada y Oukaïmeden se convierte en estación de esquí. Imilchil, mejor de mayo a octubre."
+    de: "Für den Toubkal ohne Schnee April bis Oktober. Frühling und Herbst sind zum Wandern am angenehmsten. Im Winter (Dezember–März) liegt der Gipfel unter Schnee und Oukaïmeden wird zum Skigebiet. Imilchil am besten von Mai bis Oktober."
+    pt: "Para o Toubkal sem neve, de abril a outubro. A primavera e o outono são o mais agradável para caminhar. No inverno (dezembro–março) o cume tem neve e Oukaïmeden torna-se estância de esqui. Imilchil, melhor de maio a outubro."
+    ar: "لتوبقال بدون ثلج: من أبريل إلى أكتوبر. الربيع والخريف أجمل فترات المشي. في الشتاء (دجنبر–مارس) تكون القمة مغطاة بالثلج وتصبح أوكايمدن محطة للتزلج. أفضل وقت لإملشيل من ماي إلى أكتوبر."
 
 - id: weather-change
   group: weather

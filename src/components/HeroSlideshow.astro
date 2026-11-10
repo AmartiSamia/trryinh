@@ -12,17 +12,19 @@ import Photo from './Photo.astro';
 import Icon from './Icon.astro';
 import { url, type Lang } from '../i18n/routes';
 import { t } from '../i18n/ui';
+import { placeLabel } from '../i18n/catalog';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = t(lang);
 const m = s.more;
+const atlas = s.regions.atlas;
 const list = [
   { photo: 'u-toubkal-snow', caption: m.slides.atlas, href: url(lang, 'trips', 'toubkal-summit-3-days') },
-  { photo: 'u-camels-ward', caption: m.slides.desert, href: `${url(lang, 'trips')}?cat=desert` },
-  { photo: 'u-chaouen-cliff', caption: m.slides.chaouen, href: url(lang, 'trips', 'chefchaouen-day-from-fes') },
-  { photo: 'u-koutoubia', caption: m.slides.marrakech, href: url(lang, 'trips', 'marrakech-guided-tour') },
-  { photo: 'u-essa-boats', caption: m.slides.coast, href: url(lang, 'trips', 'essaouira-day') },
+  { photo: 'u-toubkal-arms', caption: `${placeLabel('Toubkal summit (4,167 m)', lang)}`, href: url(lang, 'trips', 'toubkal-2-days') },
+  { photo: 'imilchil-tislit-2', caption: `${placeLabel('Lake Tislit', lang)} · Imilchil`, href: url(lang, 'trips', 'imilchil-lakes-4-days') },
+  { photo: 'u-ouka-lake', caption: `${placeLabel('Oukaïmeden', lang)} · ${atlas}`, href: url(lang, 'trips', 'oukaimeden-day') },
+  { photo: 'u-atlas-houses', caption: `${placeLabel('Imlil', lang)} · ${atlas}`, href: url(lang, 'trips', 'imlil-sidi-chamharouch-day') },
 ];
 const slides = await Promise.all(list.map(async (x) => ({ ...x, entry: (await getEntry('photos', x.photo))! })));
 const n = slides.length;

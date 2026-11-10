@@ -19,14 +19,14 @@ summary:
   ar: النسخة السريعة لصعود توبقال للمتنزهين ذوي اللياقة الجيدة والوقت القصير. الصعود إلى الملجأ في اليوم الأول، ثم القمة والعودة إلى مراكش في اليوم الثاني.
 about:
   en: >-
-    An early pickup in Marrakech gets you to Imlil for breakfast, then you walk up the Mizane valley to the Toubkal refuge. The next morning you leave before dawn for the summit, come back to the refuge and walk down to Imlil, where the car waits to take you back to Marrakech. Two big days: choose this version only if you walk in the mountains regularly.
+    An early pickup in Marrakech gets you to Imlil for breakfast, then you walk up the Mizane valley, through the village of Aremd, to the Toubkal refuge. The next morning you leave before dawn for the summit, come back to the refuge and walk down to Imlil, where the car waits to take you back to Marrakech. Two big days: choose this version only if you walk in the mountains regularly.
   fr: >-
-    Départ tôt de Marrakech pour un petit-déjeuner à Imlil, puis montée par la vallée de la Mizane jusqu’au refuge du Toubkal. Le lendemain, départ avant l’aube pour le sommet, retour au refuge et descente à Imlil, où la voiture vous attend pour Marrakech. Deux grosses journées : à choisir seulement si vous marchez régulièrement en montagne.
-  es: "Una recogida temprana en Marrakech le lleva a Imlil para desayunar y luego sube por el valle del Mizane hasta el refugio del Toubkal. A la mañana siguiente sale antes del amanecer hacia la cumbre, vuelve al refugio y baja a Imlil, donde le espera el coche para volver a Marrakech. Dos días intensos: elija esta versión solo si camina por la montaña con regularidad."
-  de: "Eine frühe Abholung in Marrakesch bringt Sie zum Frühstück nach Imlil, dann wandern Sie durch das Mizane-Tal zur Toubkal-Hütte. Am nächsten Morgen brechen Sie vor der Dämmerung zum Gipfel auf, kehren zur Hütte zurück und steigen nach Imlil ab, wo das Auto Sie nach Marrakesch bringt. Zwei große Tage: Wählen Sie diese Variante nur, wenn Sie regelmäßig in den Bergen wandern."
-  pt: "Uma recolha cedo em Marraquexe leva-o a Imlil para o pequeno-almoço e depois sobe o vale do Mizane até ao refúgio do Toubkal. Na manhã seguinte sai antes do amanhecer para o cume, volta ao refúgio e desce a Imlil, onde o carro o espera para regressar a Marraquexe. Dois dias intensos: escolha esta versão só se caminha regularmente na montanha."
+    Départ tôt de Marrakech pour un petit-déjeuner à Imlil, puis montée par la vallée de la Mizane, en traversant le village d’Aremd, jusqu’au refuge du Toubkal. Le lendemain, départ avant l’aube pour le sommet, retour au refuge et descente à Imlil, où la voiture vous attend pour Marrakech. Deux grosses journées : à choisir seulement si vous marchez régulièrement en montagne.
+  es: "Una recogida temprana en Marrakech le lleva a Imlil para desayunar y luego sube por el valle del Mizane, atravesando el pueblo de Aremd, hasta el refugio del Toubkal. A la mañana siguiente sale antes del amanecer hacia la cumbre, vuelve al refugio y baja a Imlil, donde le espera el coche para volver a Marrakech. Dos días intensos: elija esta versión solo si camina por la montaña con regularidad."
+  de: "Eine frühe Abholung in Marrakesch bringt Sie zum Frühstück nach Imlil, dann wandern Sie durch das Mizane-Tal und das Dorf Aremd zur Toubkal-Hütte. Am nächsten Morgen brechen Sie vor der Dämmerung zum Gipfel auf, kehren zur Hütte zurück und steigen nach Imlil ab, wo das Auto Sie nach Marrakesch bringt. Zwei große Tage: Wählen Sie diese Variante nur, wenn Sie regelmäßig in den Bergen wandern."
+  pt: "Uma recolha cedo em Marraquexe leva-o a Imlil para o pequeno-almoço e depois sobe o vale do Mizane, atravessando a aldeia de Aremd, até ao refúgio do Toubkal. Na manhã seguinte sai antes do amanhecer para o cume, volta ao refúgio e desce a Imlil, onde o carro o espera para regressar a Marraquexe. Dois dias intensos: escolha esta versão só se caminha regularmente na montanha."
   ar: >-
-    انطلاق مبكر من مراكش لتناول الفطور في إمليل، ثم الصعود عبر وادي ميزان إلى ملجأ توبقال. في الصباح الموالي تنطلقون قبل الفجر نحو القمة، ثم تعودون إلى الملجأ وتنزلون إلى إمليل حيث تنتظركم السيارة للعودة إلى مراكش. يومان شاقان: اختاروا هذه النسخة فقط إذا كنتم تمشون في الجبال بانتظام.
+    انطلاق مبكر من مراكش لتناول الفطور في إمليل، ثم الصعود عبر وادي ميزان مرورا بقرية أرمد إلى ملجأ توبقال. في الصباح الموالي تنطلقون قبل الفجر نحو القمة، ثم تعودون إلى الملجأ وتنزلون إلى إمليل حيث تنتظركم السيارة للعودة إلى مراكش. يومان شاقان: اختاروا هذه النسخة فقط إذا كنتم تمشون في الجبال بانتظام.
 days: 2
 nights: 1
 difficulty: hard
@@ -66,16 +66,16 @@ itinerary:
     walk: 9–10 h
     altitude: 4167
     meals: [ breakfast, lunch ]
-included: [ transport-marrakech, guide-mountain, meals-all, refuge-night, muleteer ]
-excluded: [ drinks, sleeping-bag, tips, insurance, personal ]
+included: [ transport-imlil, guide-mountain, meals-all, refuge-night, sleeping-bag-inc, muleteer ]
+excluded: [ hiking-gear-ex, drinks, insurance, personal ]
 pack: [ boots, layers, rain-jacket, gloves-hat, headlamp, sun-kit, bottle, daypack, poles ]
 meetingPoint:
-  en: "Your riad or hotel in Marrakech."
-  fr: "Votre riad ou hôtel à Marrakech."
-  es: Su riad u hotel en Marrakech.
-  de: Ihr Riad oder Hotel in Marrakesch.
-  pt: O seu riad ou hotel em Marraquexe.
-  ar: "الرياض أو الفندق في مراكش."
+  en: "In front of Marrakech railway station (Gare ONCF, Avenue Hassan II)."
+  fr: "Devant la gare de Marrakech (gare ONCF, avenue Hassan II)."
+  es: "Delante de la estación de tren de Marrakech (Gare ONCF, avenida Hassan II)."
+  de: "Vor dem Bahnhof von Marrakesch (Gare ONCF, Avenue Hassan II)."
+  pt: "Em frente à estação de comboios de Marraquexe (Gare ONCF, avenida Hassan II)."
+  ar: "أمام محطة القطار بمراكش (محطة ONCF، شارع الحسن الثاني)."
 pickupTime: "06:30"
 goodToKnow:
   - en: "Only for experienced walkers: you climb about 2,400 m in two days. If in doubt, take the 3-day trek."
@@ -85,8 +85,9 @@ goodToKnow:
     pt: "Só para caminhantes experientes: sobe cerca de 2400 m em dois dias. Em caso de dúvida, escolha o trekking de 3 dias."
     ar: "للمتنزهين ذوي الخبرة فقط: صعود حوالي 2400 متر في يومين. إذا كنتم مترددين، اختاروا رحلة الأيام الثلاثة."
 mapStops:
-  - { name: "Marrakech", lat: 31.6295, lng: -7.9811, kind: start }
+  - { name: "Marrakech railway station", lat: 31.6306, lng: -8.0167, kind: start }
   - { name: "Imlil", lat: 31.1366, lng: -7.9196, kind: stop }
+  - { name: Aremd, lat: 31.1236, lng: -7.9182, kind: stop }
   - { name: "Sidi Chamharouch", lat: 31.0958, lng: -7.9112, kind: stop }
   - { name: "Toubkal refuge", lat: 31.0713, lng: -7.9139, kind: sleep }
   - { name: "Toubkal summit", lat: 31.0597, lng: -7.9156, kind: summit }

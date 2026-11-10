@@ -9,7 +9,7 @@ export async function sendEmail(subject: string, fields: Record<string, string>)
     const res = await fetch(forms.endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify({ access_key: forms.accessKey, subject, from_name: 'Iberdan website', ...fields }),
+      body: JSON.stringify({ access_key: forms.accessKey, subject, from_name: 'Hiking to Atlas website', ...fields }),
     });
     const json = await res.json().catch(() => ({}));
     return res.ok && json.success !== false;

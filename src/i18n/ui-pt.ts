@@ -3,9 +3,8 @@ import type { UI } from './ui';
 /* Portuguese interface strings (European Portuguese). TODO(review-pt): native review recommended. */
 export const pt: UI = {
   meta: {
-    tagline: 'Marrocos, à maneira local',
-    description:
-      'O Toubkal ao nascer do sol, uma noite nas dunas do Sara, os souks de Marraquexe. Viagens em grupo pequeno ou privadas por todo o Marrocos, com guias locais de Imlil. Reserve agora, pague depois.',
+    tagline: 'Trekkings e excursões no Alto Atlas',
+    description: 'Suba ao Toubkal ao nascer do sol, atravesse aldeias berberes, descubra Oukaïmeden e os lagos de Imilchil. Trekkings e excursões desde Marraquexe com guias de montanha de Imlil. Reserve agora, pague depois.',
   },
   a11y: {
     skip: 'Saltar para o conteúdo',
@@ -35,7 +34,7 @@ export const pt: UI = {
   common: {
     whatsapp: 'WhatsApp',
     chatWhatsapp: 'Escrever no WhatsApp',
-    whatsappHello: 'Olá Iberdan, tenho uma pergunta sobre uma viagem a Marrocos.',
+    whatsappHello: 'Olá Hiking to Atlas, tenho uma pergunta sobre uma viagem a Marrocos.',
     email: 'E-mail',
     phone: 'Telefone',
     from: 'desde',
@@ -46,8 +45,7 @@ export const pt: UI = {
     backHome: 'Voltar à página inicial',
   },
   footer: {
-    about:
-      'Uma pequena agência de viagens marroquina sediada em Imlil, no Alto Atlas. Trekking, deserto, excursões e viagens por todo o país, com quem vive cá.',
+    about: 'A Hiking to Atlas é uma agência de viagens de montanha sediada em Imlil, no sopé do Toubkal. Trekkings, cumes e excursões no Alto Atlas, com guias nascidos aqui.',
     explore: 'Explorar',
     company: 'Agência',
     legal: 'Legal',
@@ -84,10 +82,9 @@ export const pt: UI = {
     submit: 'Procurar',
   },
   home: {
-    heroEyebrow: 'Alto Atlas · Sara · Medinas',
-    heroTitle: 'Marrocos, como só quem é de cá o conhece.',
-    heroText:
-      'Dos cumes do Atlas às dunas do Sara, das ruelas azuis às muralhas sobre o oceano: viagens em grupo pequeno ou privadas, guiadas por gente de cá. Diga-nos as suas datas, nós tratamos do resto.',
+    heroEyebrow: 'Toubkal · Imlil · Oukaïmeden · Imilchil',
+    heroTitle: 'O Atlas, como só quem é de cá o conhece.',
+    heroText: 'O Toubkal ao nascer do sol, aldeias berberes, lagos de altitude e planaltos nevados: trekkings e excursões com guias de montanha de Imlil com mais de 12 anos de experiência. Diga-nos as suas datas, nós tratamos do resto.',
     categoriesTitle: 'Que tipo de viagem?',
     featuredTitle: 'As viagens mais procuradas',
     featuredText: 'Um ponto de partida. Cada viagem pode ser privada ou ajustada às suas datas.',
@@ -98,8 +95,8 @@ export const pt: UI = {
     tailorCta: 'Planear a minha viagem',
     whyTitle: 'Porquê viajar connosco',
     why: [
-      { title: 'Guias de montanha locais', text: 'Os nossos guias são credenciados e vivem em Imlil, no sopé do Toubkal. Os trilhos e as aldeias são a casa deles.' },
-      { title: 'Grupos pequenos', text: 'As viagens partilhadas são em grupos pequenos e cada viagem pode ser privada. Nunca será um entre cinquenta.' },
+      { title: 'Guias de montanha locais', text: 'Os nossos guias vivem em Imlil, no sopé do Toubkal, e percorrem estes trilhos há mais de 12 anos.' },
+      { title: 'Grupos pequenos', text: 'As saídas partilhadas são pequenas e, a partir de 6 pessoas, a viagem pode ser privada. Nunca é um entre cinquenta.' },
       { title: 'Preços claros', text: 'Preço por pessoa, o que está incluído por escrito e o preço final confirmado antes da viagem. Sem surpresas.' },
       { title: 'WhatsApp 24/7', text: 'Fala com pessoas que conhecem a viagem, antes e durante. Uma pergunta às 7 da manhã na montanha? Envie uma mensagem.' },
     ],
@@ -113,14 +110,14 @@ export const pt: UI = {
     reviewsTitle: 'Avaliações',
     reviewsSoon: 'Avaliações em breve',
     reviewsSoonText:
-      'A Iberdan é nova e só mostramos avaliações reais de viajantes reais. Depois da sua viagem, algumas palavras sinceras no Google ou no TripAdvisor ajudam-nos muito.',
+      'Só mostramos avaliações reais de viajantes reais. Depois da sua viagem, algumas palavras sinceras no Google ou no TripAdvisor ajudam-nos muito.',
     leaveReview: 'Deixar uma avaliação',
     faqTitle: 'Perguntas antes de reservar',
     faqAll: 'Todas as perguntas',
   },
   trips: {
     title: 'Todas as viagens',
-    intro: 'Trekking, noites no deserto, excursões e viagens mais longas por todo o Marrocos. Preços por pessoa; confirmamos a disponibilidade e o preço final.',
+    intro: 'Trekkings, cumes e excursões no Alto Atlas. Preços por pessoa; confirmamos a disponibilidade e o preço final.',
     filters: 'Filtros',
     search: 'Procurar por nome ou lugar',
     category: 'Tipo de viagem',
@@ -175,10 +172,10 @@ export const pt: UI = {
     pickup: 'Hora de recolha',
     pickupConfirm: 'confirmada com a reserva',
     groupSize: 'Tamanho do grupo',
-    groupSmall: 'Grupos pequenos; privado a pedido',
+    groupSmall: 'Grupos pequenos; viagem privada a partir de 6 pessoas',
     groupMax: 'Até {n} pessoas',
     cancellation: 'Cancelamento',
-    cancellationText: 'Leia a nossa política de cancelamento e reembolso.',
+    cancellationText: 'Cancelamento gratuito até 48 horas antes da partida, com reembolso total.',
     pack: 'O que levar',
     map: 'Mapa do percurso',
     mapStops: 'Etapas do percurso',
@@ -201,7 +198,7 @@ export const pt: UI = {
     shared: 'Partilhada',
     sharedHelp: 'Grupo pequeno com outros viajantes',
     private: 'Privada',
-    privateHelp: 'Só você e os seus acompanhantes',
+    privateHelp: 'Só o seu grupo, mínimo 6 pessoas',
     estimate: 'Total estimado',
     childNote: 'Os preços para crianças são confirmados na nossa resposta.',
     noPayment: 'Sem pagamento online. Confirmamos a disponibilidade e o preço final antes de qualquer pagamento.',
@@ -210,7 +207,7 @@ export const pt: UI = {
     checkDates: 'Ver disponibilidade',
     sheetTitle: 'O seu pedido',
     dateMissing: 'ainda por escolher',
-    msgHello: 'Olá Iberdan, gostaria de reservar esta viagem:',
+    msgHello: 'Olá Hiking to Atlas, gostaria de reservar esta viagem:',
     msgDate: 'Data',
     msgAdults: 'Adultos',
     msgChildren: 'Crianças',
@@ -268,12 +265,12 @@ export const pt: UI = {
     trust: [
       { title: 'Reserve agora, pague depois', text: 'Nada a pagar online. Só paga depois da nossa confirmação.' },
       { title: 'Pessoas reais, 24/7', text: 'Resposta no WhatsApp em poucas horas, todos os dias do ano.' },
-      { title: 'Guias locais credenciados', text: 'Nascidos nos vales do Atlas e nas velhas medinas.' },
-      { title: 'Privada ou grupo pequeno', text: 'Cada viagem pode ser só para si.' },
+      { title: 'Guias com mais de 12 anos de experiência', text: 'Guias de montanha nascidos nos vales do Atlas.' },
+      { title: 'Privado ou grupo pequeno', text: 'Viagens privadas para grupos de 6 ou mais pessoas.' },
     ],
     signatureEyebrow: 'Viagens de assinatura',
     signatureTitle: 'As viagens de que mais nos orgulhamos',
-    signatureText: 'Percursos escolhidos para mostrar Marrocos no seu melhor, do teto do Norte de África às portas do Sara.',
+    signatureText: 'As nossas rotas preferidas no Alto Atlas, do cume do Toubkal aos lagos de Imilchil.',
     destTitle: 'Destinos populares',
     destText: 'Onde sonha acordar?',
     continueTitle: 'Continue a explorar',
@@ -292,7 +289,7 @@ export const pt: UI = {
     wishCleared: 'Lista limpa.',
     wishUndo: 'Anular',
     wishShareText: 'Os meus desejos de Marrocos:',
-    wishAskText: 'Olá Iberdan, tenho interesse nestas viagens:',
+    wishAskText: 'Olá Hiking to Atlas, tenho interesse nestas viagens:',
     wishSuggest: 'Viagens populares para começar',
     wishCopied: 'Ligação copiada',
     share: 'Partilhar',

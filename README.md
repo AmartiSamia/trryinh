@@ -1,6 +1,6 @@
-# Iberdan
+# Hiking to Atlas
 
-Website of **Iberdan** (ⵉⴱⵔⴷⴰⵏ, "paths" in Tamazight), a small Moroccan travel agency based in
+Website of **Hiking to Atlas** (hikingtoatlas.com), a mountain travel agency based in
 Imlil. Treks, desert, day trips and tailor-made journeys in English, French, Spanish, German,
 Portuguese and Arabic (right-to-left).
 
@@ -46,6 +46,17 @@ One YAML file per trip in **`src/content/trips/`**. The file name is the URL slu
 6. Run `npm run dev`. If something is missing or misspelled, the error says which field.
 
 `featured: true` puts a trip on the home page (keep six). `draft: true` hides it.
+
+## Trips on the site
+
+Only 5 trips are online (Toubkal 3 days, Toubkal 2 days, Imlil day hike, Oukaïmeden, Imilchil).
+The other trips written earlier are kept in `archive/trips/`: move a `.yaml` file back into
+`src/content/trips/` to put it online again.
+
+## Logo
+
+The logo comes from `brand-src/hta-logo.jpg`. After replacing that file, run `node scripts/build-logo.mjs`:
+it rebuilds the transparent mark used in the header (`public/brand/`), the favicon and the touch icon.
 
 ## Add a photo
 
@@ -103,7 +114,7 @@ email app.
 emails each lead through Web3Forms. To also receive each lead **as a WhatsApp message** on the agency
 phone (Netlify only):
 1. From the agency phone, follow the free CallMeBot activation at callmebot.com (WhatsApp API) to get an API key.
-2. On Netlify add `PUBLIC_LEAD_RELAY=1`, `CALLMEBOT_PHONE=212668395368` and `CALLMEBOT_APIKEY=<key>`.
+2. On Netlify add `PUBLIC_LEAD_RELAY=1`, `CALLMEBOT_PHONE=212694379415` and `CALLMEBOT_APIKEY=<key>`.
    The key stays on the server (`netlify/functions/lead.mjs`), never in the page.
 Without any key, the form opens WhatsApp with the visitor's details pre-filled.
 
@@ -117,6 +128,16 @@ With `npm run preview` running in another terminal:
 node scripts/axe.mjs /en/ /fr/circuits/ /ar/trips/toubkal-summit-3-days/   # accessibility (light + dark)
 node scripts/shot.mjs <outDir> /ar/                                         # screenshots (W=, THEME=, FULL=1)
 ```
+
+## Security
+
+- The site is **static**: no database, no server code, no login. SQL injection and similar attacks
+  have nothing to reach.
+- Forms only send data to Web3Forms (email) or to `netlify/functions/lead.mjs`, which checks the
+  origin, the size and the format of every field, and keeps the CallMeBot key on the server.
+- Everything visitors type is shown with `textContent`, never inserted as HTML.
+- `netlify.toml` sets strict security headers: Content-Security-Policy (only our own scripts, forms
+  limited to Web3Forms), HSTS, no framing (clickjacking), nosniff, referrer policy.
 
 ## Structure
 

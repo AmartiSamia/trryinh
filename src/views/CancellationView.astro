@@ -24,12 +24,12 @@ const sections = [
         ar: `أخبرونا في أقرب وقت عبر واتساب (${phone}) أو البريد الإلكتروني (${contact.email}). يُعتمد تاريخ رسالتكم.`,
       },
       {
-        en: `More than ${tbc.en} days before departure: ${tbc.en}. Between ${tbc.en} and ${tbc.en} days: ${tbc.en}. Less than ${tbc.en} days or no-show: ${tbc.en}.`,
-        fr: `Plus de ${tbc.fr} jours avant le départ : ${tbc.fr}. Entre ${tbc.fr} et ${tbc.fr} jours : ${tbc.fr}. Moins de ${tbc.fr} jours ou absence : ${tbc.fr}.`,
-        es: `Más de ${tbc.es} días antes de la salida: ${tbc.es}. Entre ${tbc.es} y ${tbc.es} días: ${tbc.es}. Menos de ${tbc.es} días o no presentarse: ${tbc.es}.`,
-        de: `Mehr als ${tbc.de} Tage vor Abreise: ${tbc.de}. Zwischen ${tbc.de} und ${tbc.de} Tagen: ${tbc.de}. Weniger als ${tbc.de} Tage oder Nichterscheinen: ${tbc.de}.`,
-        pt: `Mais de ${tbc.pt} dias antes da partida: ${tbc.pt}. Entre ${tbc.pt} e ${tbc.pt} dias: ${tbc.pt}. Menos de ${tbc.pt} dias ou não comparência: ${tbc.pt}.`,
-        ar: `أكثر من ${tbc.ar} يوما قبل الانطلاق: ${tbc.ar}. بين ${tbc.ar} و${tbc.ar} يوما: ${tbc.ar}. أقل من ${tbc.ar} يوما أو عدم الحضور: ${tbc.ar}.`,
+        en: `<strong>Free cancellation up to 48 hours before departure</strong>: you are refunded in full for anything you have already paid. Less than 48 hours before departure, or no-show: ${tbc.en}.`,
+        fr: `<strong>Annulation gratuite jusqu’à 48 heures avant le départ</strong> : tout ce que vous avez déjà payé vous est intégralement remboursé. Moins de 48 heures avant le départ, ou absence : ${tbc.fr}.`,
+        es: `<strong>Cancelación gratuita hasta 48 horas antes de la salida</strong>: le devolvemos íntegramente lo que haya pagado. Menos de 48 horas antes de la salida, o no presentarse: ${tbc.es}.`,
+        de: `<strong>Kostenlose Stornierung bis 48 Stunden vor Abreise</strong>: Sie erhalten alles, was Sie bereits bezahlt haben, vollständig zurück. Weniger als 48 Stunden vor Abreise oder Nichterscheinen: ${tbc.de}.`,
+        pt: `<strong>Cancelamento gratuito até 48 horas antes da partida</strong>: devolvemos-lhe na íntegra tudo o que já pagou. Menos de 48 horas antes da partida, ou não comparência: ${tbc.pt}.`,
+        ar: `<strong>إلغاء مجاني حتى 48 ساعة قبل الانطلاق</strong>: نرد لكم كامل المبلغ الذي دفعتموه. أقل من 48 ساعة قبل الانطلاق أو عدم الحضور: ${tbc.ar}.`,
       },
     ],
   },
@@ -57,6 +57,6 @@ const sections = [
   },
 ];
 ---
-<LegalPage lang={lang} route="cancellation" updated="2026-11-08" sections={sections}
+<LegalPage lang={lang} route="cancellation" updated="2026-11-10" sections={sections}
   title={{ en: 'Cancellation and refunds', fr: 'Annulation et remboursement', es: 'Cancelación y reembolsos', de: 'Stornierung und Erstattung', pt: 'Cancelamento e reembolso', ar: 'الإلغاء والاسترداد' }}
   intro={{ en: 'Plans change. Here is what happens if you or we need to cancel.', fr: 'Les projets changent. Voici ce qui se passe si vous ou nous devons annuler.', es: 'Los planes cambian. Esto es lo que pasa si usted o nosotros tenemos que cancelar.', de: 'Pläne ändern sich. So läuft es, wenn Sie oder wir absagen müssen.', pt: 'Os planos mudam. Eis o que acontece se você ou nós tivermos de cancelar.', ar: 'الخطط تتغير. إليكم ما يحدث إذا اضطررتم أو اضطررنا إلى الإلغاء.' }} />

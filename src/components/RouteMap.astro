@@ -1,30 +1,51 @@
 ---
 /**
- * Route map with Leaflet + OpenStreetMap tiles. Leaflet (~40 kB) is only
- * downloaded when the map scrolls into view. The stops are also listed as
- * text, which is what screen readers and the printed page use.
+ * Route map with Leaflet. Leaflet (~40 kB) is only downloaded when the map
+ * scrolls into view. Tiles: OpenTopoMap (relief and mountain paths, no key
+ * needed); falls back to the OpenStreetMap tile server if it cannot be reached.
+ * - Opens zoomed on the trek itself when the start city is far away, with a
+ *   button to show the whole route (so the stops never pile up on each other).
+ * - The stop list is clickable: it moves the map to that stop.
+ * - The stops are also plain text for screen readers and print.
  */
 import { t } from '../i18n/ui';
-import type { Lang } from '../i18n/routes';
+import type { Lang, Text } from '../i18n/routes';
 import { placeLabel } from '../i18n/catalog';
 type Stop = { name: string; lat: number; lng: number; kind: string };
 interface Props { stops: Stop[]; lang: Lang; label?: string; showList?: boolean }
 const { stops, lang, label, showList = true } = Astro.props;
 const s = t(lang);
 const named = stops.map((st) => ({ ...st, name: placeLabel(st.name, lang) }));
+const L10N: Record<'all' | 'trek' | 'fail' | 'open', Text> = {
+  all: { en: 'Show the whole route', fr: 'Voir tout l’itinéraire', es: 'Ver toda la ruta', de: 'Ganze Route zeigen', pt: 'Ver o percurso todo', ar: 'عرض المسار كاملا' },
+  trek: { en: 'Zoom on the trek', fr: 'Zoomer sur le trek', es: 'Ampliar el trek', de: 'Auf den Trek zoomen', pt: 'Ampliar o trekking', ar: 'تكبير على مسار المشي' },
+  fail: { en: 'The map could not be loaded.', fr: 'La carte n’a pas pu être chargée.', es: 'No se pudo cargar el mapa.', de: 'Die Karte konnte nicht geladen werden.', pt: 'Não foi possível carregar o mapa.', ar: 'تعذر تحميل الخريطة.' },
+  open: { en: 'Open in Google Maps', fr: 'Ouvrir dans Google Maps', es: 'Abrir en Google Maps', de: 'In Google Maps öffnen', pt: 'Abrir no Google Maps', ar: 'فتح في خرائط Google' },
+};
+const last = named[named.length - 1];
+const gmaps = `https://www.google.com/maps/search/?api=1&query=${last.lat},${last.lng}`;
 ---
-<div class:list={['grid gap-4', showList && 'md:grid-cols-[1fr_15rem]']}>
-  <div class="route-map relative z-0 aspect-[4/3] overflow-hidden rounded-3xl bg-surface-2 md:aspect-auto md:min-h-96"
-    data-map={JSON.stringify(named)} role="region" aria-label={label ?? s.trip.map} data-no-print>
-    <p class="absolute inset-0 grid place-items-center text-sm text-ink-3" data-map-loading>{s.trip.mapLoading}</p>
+<div class:list={['grid gap-4', showList && 'md:grid-cols-[1fr_15rem]']} data-route>
+  <div class="relative">
+    <div class="route-map relative z-0 aspect-[4/3] overflow-hidden rounded-3xl bg-surface-2 md:aspect-auto md:h-[26rem]"
+      data-map={JSON.stringify(named)} role="region" aria-label={label ?? s.trip.map} data-no-print
+      data-l-all={L10N.all[lang]} data-l-trek={L10N.trek[lang]}>
+      <p class="absolute inset-0 grid place-items-center p-6 text-center text-sm text-ink-3" data-map-loading>{s.trip.mapLoading}</p>
+      <p class="absolute inset-0 grid place-items-center p-6 text-center text-sm text-ink-2" data-map-fail hidden>
+        <span>{L10N.fail[lang]} <a class="link" href={gmaps} target="_blank" rel="noopener">{L10N.open[lang]}</a></span>
+      </p>
+    </div>
+    <button type="button" class="map-toggle absolute bottom-3 start-3 z-[500] rounded-full bg-surface px-3.5 text-sm font-semibold text-ink shadow-card ring-1 ring-line" data-map-toggle hidden></button>
   </div>
   {showList && <div>
     <h3 class="text-sm font-semibold">{s.trip.mapStops}</h3>
-    <ol class="mt-3 space-y-2 text-sm">
+    <ol class="mt-3 space-y-1 text-sm">
       {named.map((st, i) => (
-        <li class="flex items-start gap-3">
-          <span class:list={['mt-0.5 grid size-6 shrink-0 place-items-center rounded-full text-xs font-bold', st.kind === 'summit' ? 'bg-accent text-on-accent' : 'bg-brand text-on-brand']}>{i + 1}</span>
-          <span>{st.name}</span>
+        <li>
+          <button type="button" class="stop-btn flex w-full items-start gap-3 rounded-xl px-2 py-1.5 text-start hover:bg-surface-2" data-stop={i}>
+            <span class:list={['mt-0.5 grid size-6 shrink-0 place-items-center rounded-full text-xs font-bold', st.kind === 'summit' ? 'bg-accent text-on-accent' : 'bg-brand text-on-brand']}>{i + 1}</span>
+            <span>{st.name}</span>
+          </button>
         </li>
       ))}
     </ol>
@@ -38,7 +59,7 @@ const named = stops.map((st) => ({ ...st, name: placeLabel(st.name, lang) }));
     background: var(--surface-2);
   }
   :global([data-theme='dark']) .route-map :global(.leaflet-tile-pane) {
-    filter: brightness(0.75) contrast(1.1) saturate(0.85);
+    filter: brightness(0.8) contrast(1.05) saturate(0.85);
   }
   .route-map :global(.stop-num) {
     display: grid;
@@ -50,49 +71,107 @@ const named = stops.map((st) => ({ ...st, name: placeLabel(st.name, lang) }));
     background: #1f2a5c;
     color: #fff;
     font: 700 12px/1 system-ui, sans-serif;
-    box-shadow: 0 0 0 2px #fff;
+    box-shadow: 0 0 0 2px #fff, 0 2px 6px rgb(0 0 0 / 0.3);
   }
   .route-map :global(.stop-num.summit) {
     background: #e8a33d;
     color: #1a1305;
   }
+  .map-toggle {
+    min-height: 2.5rem;
+  }
 </style>
 
 <script>
-  document.querySelectorAll<HTMLElement>('[data-map]').forEach((el) => {
+  type Stop = { name: string; lat: number; lng: number; kind: string };
+
+  document.querySelectorAll<HTMLElement>('[data-route]').forEach((wrap) => {
+    const el = wrap.querySelector<HTMLElement>('[data-map]');
+    if (!el) return;
+    const toggle = wrap.querySelector<HTMLButtonElement>('[data-map-toggle]')!;
+    const stops: Stop[] = JSON.parse(el.dataset.map!);
+    let started = false;
+
     const load = async () => {
-      // Leaflet's CSS is only requested when a map is shown (kept out of the page CSS).
-      if (!document.querySelector('link[data-leaflet]')) {
-        const css = Object.assign(document.createElement('link'), { rel: 'stylesheet', href: '/vendor/leaflet/leaflet-1.9.4.css' });
-        css.setAttribute('data-leaflet', '');
-        document.head.append(css);
+      if (started) return;
+      started = true;
+      try {
+        // Leaflet's CSS is only requested when a map is shown (kept out of the page CSS).
+        if (!document.querySelector('link[data-leaflet]')) {
+          const css = Object.assign(document.createElement('link'), { rel: 'stylesheet', href: '/vendor/leaflet/leaflet-1.9.4.css' });
+          css.setAttribute('data-leaflet', '');
+          document.head.append(css);
+        }
+        const { default: L } = await import('leaflet');
+        el.querySelector('[data-map-loading]')?.remove();
+        const map = L.map(el, { scrollWheelZoom: false, attributionControl: true, zoomSnap: 0.5 });
+
+        // Tiles: OpenTopoMap (relief, paths, refuges: ideal for treks), OpenStreetMap if it keeps failing.
+        const osmAttr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+        let layer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+          subdomains: 'abc',
+          maxZoom: 17,
+          attribution: `${osmAttr}, SRTM | &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)`,
+        }).addTo(map);
+        let errors = 0;
+        layer.on('tileerror', () => {
+          if (++errors !== 4) return;
+          map.removeLayer(layer);
+          layer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: osmAttr }).addTo(map);
+        });
+
+        const pts = stops.map((s) => L.latLng(s.lat, s.lng));
+        L.polyline(pts, { color: '#e8a33d', weight: 4, opacity: 0.9, dashArray: '8 8' }).addTo(map);
+        const markers = stops.map((s, i) =>
+          L.marker([s.lat, s.lng], {
+            icon: L.divIcon({ className: `stop-num ${s.kind === 'summit' ? 'summit' : ''}`, html: String(i + 1) }),
+            title: s.name,
+            alt: s.name,
+            zIndexOffset: s.kind === 'summit' ? 1000 : 0,
+          })
+            .bindTooltip(s.name)
+            .addTo(map),
+        );
+
+        // When the start (e.g. Marrakech) is far from the trek, open on the trek itself.
+        const all = L.latLngBounds(pts);
+        const rest = pts.length > 2 ? L.latLngBounds(pts.slice(1)) : all;
+        const far = pts.length > 2 && pts[0].distanceTo(rest.getCenter()) > 25000;
+        let showingAll = !far;
+        const fit = () => {
+          if (pts.length === 1) map.setView(pts[0], 13);
+          else map.fitBounds(showingAll ? all : rest, { padding: [36, 36], maxZoom: 14 });
+          toggle.textContent = (showingAll ? el.dataset.lTrek : el.dataset.lAll) ?? '';
+        };
+        fit();
+        if (far) {
+          toggle.hidden = false;
+          toggle.addEventListener('click', () => { showingAll = !showingAll; fit(); });
+        }
+
+        // Clickable stop list.
+        wrap.querySelectorAll<HTMLButtonElement>('[data-stop]').forEach((b) =>
+          b.addEventListener('click', () => {
+            const i = Number(b.dataset.stop);
+            map.flyTo(pts[i], Math.max(map.getZoom(), 13), { duration: 0.8 });
+            markers[i].openTooltip();
+          }),
+        );
+
+        // Keep the map correct when its box changes size (rotation, sidebar, fonts).
+        new ResizeObserver(() => map.invalidateSize()).observe(el);
+      } catch {
+        el.querySelector('[data-map-loading]')?.remove();
+        el.querySelector<HTMLElement>('[data-map-fail]')!.hidden = false;
       }
-      const { default: L } = await import('leaflet');
-      const stops: { name: string; lat: number; lng: number; kind: string }[] = JSON.parse(el.dataset.map!);
-      el.querySelector('[data-map-loading]')?.remove();
-      const map = L.map(el, { scrollWheelZoom: false, attributionControl: true });
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 17,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      }).addTo(map);
-      const pts = stops.map((s) => L.latLng(s.lat, s.lng));
-      L.polyline(pts, { color: '#e8a33d', weight: 4, opacity: 0.9, dashArray: '8 8' }).addTo(map);
-      stops.forEach((s, i) =>
-        L.marker([s.lat, s.lng], {
-          icon: L.divIcon({ className: `stop-num ${s.kind === 'summit' ? 'summit' : ''}`, html: String(i + 1) }),
-          title: s.name,
-          alt: s.name,
-        })
-          .bindTooltip(s.name)
-          .addTo(map),
-      );
-      if (pts.length === 1) map.setView(pts[0], 13);
-      else map.fitBounds(L.latLngBounds(pts), { padding: [30, 30] });
     };
+
     if (!('IntersectionObserver' in window)) return void load();
     const io = new IntersectionObserver((entries) => {
       if (entries.some((e) => e.isIntersecting)) { io.disconnect(); load(); }
     }, { rootMargin: '300px' });
     io.observe(el);
+    // Clicking a stop before the map is near the viewport also starts it.
+    wrap.querySelectorAll('[data-stop]').forEach((b) => b.addEventListener('click', load, { once: true }));
   });
 </script>

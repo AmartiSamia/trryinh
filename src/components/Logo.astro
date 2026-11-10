@@ -1,9 +1,9 @@
 ---
 import LogoMark from './LogoMark.astro';
 interface Props { class?: string; size?: number }
-const { class: cls, size = 30 } = Astro.props;
+const { class: cls, size = 34 } = Astro.props;
 ---
-<span class:list={['inline-flex items-center gap-2.5', cls]} dir="ltr">
+<span class:list={['inline-flex items-center gap-2', cls]} dir="ltr">
   <LogoMark size={size} />
-  <span class="font-display text-[1.375rem] font-semibold leading-none tracking-[-0.02em] max-[359px]:sr-only">iberdan</span>
+  <span class="font-display text-[0.92rem] font-bold uppercase leading-[1.02] tracking-[0.08em] max-[359px]:sr-only">Hiking<br />to Atlas</span>
 </span>

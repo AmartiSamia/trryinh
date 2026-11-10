@@ -154,6 +154,12 @@ const bookHref = url(lang, 'book') + (tripSlug ? `?trip=${tripSlug}` : '');
   :global(html[data-scrolled]) .site-header {
     --hh: 3.75rem;
   }
+  /* Very small phones: a slightly smaller logo mark keeps every button on screen. */
+  @media (max-width: 359px) {
+    .site-header {
+      --mark-h: 26px;
+    }
+  }
   /* Over the hero photo: transparent, light text, until the page scrolls. */
   :global(html:not([data-scrolled])) .site-header[data-overlay] {
     background: linear-gradient(180deg, rgb(8 11 26 / 0.55), transparent);

@@ -1,7 +1,7 @@
 /**
  * Forwards a call-back lead to the agency's WhatsApp through CallMeBot.
  * The API key stays secret on the server (Netlify env vars):
- *   CALLMEBOT_PHONE   agency number in international format, e.g. 212668395368
+ *   CALLMEBOT_PHONE   agency number in international format, e.g. 212694379415
  *   CALLMEBOT_APIKEY  key received from CallMeBot (see README)
  * Enable the call from the site with PUBLIC_LEAD_RELAY=1.
  */
@@ -9,6 +9,13 @@ const clean = (v, max) => String(v ?? '').replace(/[\r\n\t]+/g, ' ').trim().slic
 
 export default async (req) => {
   if (req.method !== 'POST') return new Response('Method not allowed', { status: 405 });
+  // Only accept requests sent by our own pages (blocks other sites from using the relay).
+  const origin = req.headers.get('origin') ?? '';
+  const allowed = (process.env.URL ?? '').replace(/\/$/, '');
+  if (allowed && origin && origin !== allowed) {
+    return new Response('Forbidden', { status: 403 });
+  }
+  if (Number(req.headers.get('content-length') ?? 0) > 2000) return new Response('Too large', { status: 413 });
   const phone = process.env.CALLMEBOT_PHONE;
   const apikey = process.env.CALLMEBOT_APIKEY;
   if (!phone || !apikey) return new Response('Relay not configured', { status: 503 });

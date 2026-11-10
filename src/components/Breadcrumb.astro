@@ -18,4 +18,4 @@ const { items, lang } = Astro.props;
     ))}
   </ol>
 </nav>
-<script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd(items))} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd(items)).replace(/</g, '\\u003c')} />

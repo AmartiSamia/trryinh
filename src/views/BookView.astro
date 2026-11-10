@@ -49,7 +49,7 @@ const strings = {
   total: b.msgTotal, lang: b.msgLang, langName: b.msgLangName, link: b.msgLink, shared: b.shared, private: b.private,
   missing: b.dateMissing, errTrip: k.errTrip, errDate: k.errDate, errName: f.errName, errEmail: f.errEmail,
   sending: f.sending, send: f.send, success: f.success, error: f.error, nokey: f.noKey, mail: contact.email,
-  wa: contact.whatsapp, childFactor: booking.childFactor, nameLabel: f.name,
+  wa: contact.whatsapp, childFactor: booking.childFactor, privateMin: booking.privateMin, nameLabel: f.name,
 };
 ---
 <Base lang={lang} title={k.title} description={k.intro} alternates={alternates('book')} hideFab>
@@ -241,7 +241,13 @@ const strings = {
       if (!trip?.[option ?? 'shared']) option = trip?.shared ? 'shared' : 'private';
       form!.querySelectorAll<HTMLInputElement>('[name="option"]').forEach((r) => (r.checked = r.value === option));
 
-      const adults = clamp('adults', 1), children = clamp('children', 0);
+      let adults = clamp('adults', 1);
+      const children = clamp('children', 0);
+      // Private groups start at s.privateMin people.
+      if (trip && option === 'private' && adults + children < s.privateMin) {
+        adults = s.privateMin - children;
+        $<HTMLInputElement>('[name="adults"]').value = String(adults);
+      }
       $('[data-child-note]').hidden = children === 0;
       if (!trip) { $('[data-total]').textContent = '—'; return; }
       const per = trip[option!] || trip.shared || trip.private;
